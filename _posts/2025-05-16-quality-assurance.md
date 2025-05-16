@@ -2,7 +2,7 @@
 layout: post
 title: "Quality Control vs Quality Assurance Know the Difference"
 categories: Software Testing
-image: /assets/images/Quality Control and Quality Assurance.png
+image: /assets/images/Quality-Assrance.png
 ---
 
 # Introduction
