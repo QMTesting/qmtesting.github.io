@@ -1,0 +1,14 @@
+---
+layout: null
+---
+
+[
+  {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": "{{ post.url | absolute_url }}",
+      "thumb": "{{ post.image | default: '/assets/images/no-thumbnail.png' | absolute_url }}",
+      "label": {{ post.categories[0] | default: 'Uncategorized' | jsonify }}
+    }{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+]
