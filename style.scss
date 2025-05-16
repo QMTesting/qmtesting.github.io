@@ -282,8 +282,123 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+// Desktop
+/* Format post category image list  --------------------------------------------------------------------------------------------------*/
+
+.CategoryContainer{
+           
+            margin-left: 30px;
+            display: flex;
+            flex-direction: row;
+            width: 1310px;
+            font-weight: 900;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 10px 0 0;
+
+                  
+            
+        }
+
+        .TestCat {
+          
+          text-align: center;          
+          font-weight: 900;
+          
+          /*max-width: 21%;*/
+          
+          border-radius: 4px;
+          padding: 2px;
+          margin-left: 15px;
+          transition: transform 0.3s ease-in-out;
+          width: 262px;
+          height: 280px
+            
+        }
+        .TestCat img {
+          padding: 2px;
+          padding-right: 2px;
+          height: 200px;
+          width: 100%;
+        }
+
+       .TypesCat { 
+           margin-left: 0px;
+           text-align: center;    
+           text-align: center;    
+           font-weight: 900;
+           
+           /*max-width: 21%;*/
+            
+           border-radius: 4px;
+           padding: 2px;
+           margin-left: 6px;
+           transition: transform 0.3s ease-in-out;
+           width: 262px;
+           height: 280px
+        }
+        .TypesCat img {
+          padding: 2px;
+          padding-right: 2px;
+          height: 200px;
+          width: 100%;
+        }
+
+       .AutoCat {  
+            margin-left: 0px;
+           text-align: center;        
+            font-weight: 900;
+            
+            /*max-width: 21%;*/
+             
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: 6px;
+            transition: transform 0.3s ease-in-out;
+            width: 262px;
+            height: 280px
+        }
+        .AutoCat img {
+          padding: 2px;
+          padding-right: 2px;
+          height: 200px;
+          width: 100%;
+        }
+
+      .DevOpsCat { 
+            margin-left: 0px;
+            text-align: center;        
+            font-weight: 900;
+            
+            /*max-width: 21%;*/
+             
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: 6px;
+            transition: transform 0.3s ease-in-out;
+            width: 262px;
+            height: 280px
+        }
+        .DevOpsCat img {
+          padding: 2px;
+          padding-right: 2px;
+          height: 200px;
+          width: 100%;
+        }
+
+       .TestCat .text1 { font-size: 20px; font-weight: 700; margin-left: 20px; }
+       .TypesCat .text2 { font-size: 20px; font-weight: 700; margin-left: 0px;}
+       .AutoCat .text3 { font-size: 20px; font-weight: 700; margin-left: 0px;}
+       .DevOpsCat .text4 { font-size: 20px; font-weight: 700; margin-left: 0px;}               
+       
+       .TestCat p {margin-left: 30px; margin-right: 10px;}
+       .TypesCat p {margin-left: 10px; margin-right: 10px;}
+       .AutoCat p {margin-left: 15px; margin-right: 10px;}
+       .DevOpsCat p {margin-left: 10px; margin-right: 10px;}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
