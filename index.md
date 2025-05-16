@@ -1,6 +1,6 @@
 ---
 layout: page
-title: COMING SOON...
+title: HOME
 permalink: /
 ---
 
