@@ -4,4 +4,4 @@ title: Welcome QM Testing!
 ---
 
 
-#The QM (Quality Management) Testing sites shares tutorials, tips, and insights about test automation, quality assurance, and DevOps best practices.
+The QM (Quality Management) Testing sites shares tutorials, tips, and insights about software testing, test automation, and DevOps best practices.
