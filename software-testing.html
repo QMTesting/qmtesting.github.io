@@ -1,0 +1,206 @@
+---
+layout: default
+title: Software Testing
+category: Software Testing
+permalink: /software-testing/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <style>
+    #related-posts-cat {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0px;
+      max-width: 1100px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    #related-posts-cat a {
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .related_img {
+      width: 260px;
+      height: 200px;
+      border-radius: 1px;
+      margin: 0px;
+      object-fit: cover;
+    }
+
+    #related-title {
+      color: #000;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 18px;
+      text-decoration: underline;
+      overflow: hidden;
+      padding: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      width: 250px;
+      text-align: center;
+    }
+
+    #pagination {
+      text-align: center;
+      margin: 30px auto;
+    }
+
+    .page-button {
+      margin: 0 5px;
+      background-color: #bc960d;
+      color: #000;
+      font-size: 16px;
+      font-weight: 900;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 10px;
+    }
+
+    .page-button:disabled {
+      background-color: #bdaf7b;
+      color: #847d7f;
+      cursor: default;
+    }
+
+    @media only screen and (max-width: 780px) {
+      #related-posts-cat {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0 15px;
+      }
+
+      .related_img {
+        width: 100%;
+        max-width: 320px;
+        height: 200px;
+        border-radius: 5px;
+        margin: 20px auto 5px;
+      }
+
+      #related-title {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 30px;">
+    <h2>Showing posts for:</h2>
+    <h2>{{ page.category }}</h2>
+  </div>
+
+  <div id="related-posts-cat"></div>
+  <div id="pagination">
+    <button class="page-button" disabled id="prev-btn">Prev</button>
+    <button class="page-button" id="next-btn">Next</button>
+  </div>
+
+  <script>
+    const relatedTitles = [];
+    const relatedUrls = [];
+    const thumburl = [];
+    const postsPerPage = 8;
+    let currentPage = 0;
+
+    const currentposturl = window.location.href;
+    const category = "{{ page.category }}";
+
+    function displayPage(page, validPosts) {
+      const container = document.getElementById("related-posts-cat");
+      container.innerHTML = "";
+
+      const totalPages = Math.ceil(validPosts.length / postsPerPage);
+      currentPage = Math.min(Math.max(page, 0), totalPages - 1);
+
+      const start = currentPage * postsPerPage;
+      const end = start + postsPerPage;
+
+      for (let i = start; i < end && i < validPosts.length; i++) {
+        const index = validPosts[i];
+        const a = document.createElement("a");
+        a.href = relatedUrls[index];
+
+        const img = document.createElement("img");
+        img.className = "related_img";
+        img.src = thumburl[index];
+
+        const title = document.createElement("div");
+        title.id = "related-title";
+        title.textContent = relatedTitles[index];
+
+        a.appendChild(img);
+        a.appendChild(title);
+        container.appendChild(a);
+      }
+
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+      const pagination = document.getElementById("pagination");
+
+      if (totalPages <= 1) {
+        pagination.style.display = "none";
+      } else {
+        pagination.style.display = "block";
+        prevBtn.disabled = currentPage === 0;
+        nextBtn.disabled = currentPage >= totalPages - 1;
+      }
+    }
+
+    function removeRelatedDuplicates(validPosts) {
+      const seen = new Set();
+      const unique = [];
+
+      for (let i of validPosts) {
+        if (!seen.has(relatedUrls[i])) {
+          seen.add(relatedUrls[i]);
+          unique.push(i);
+        }
+      }
+
+      return unique;
+    }
+
+    fetch("/assets/data/posts.json")
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(post => {
+          if (post.label === category && post.url !== currentposturl) {
+            relatedTitles.push(post.title);
+            relatedUrls.push(post.url);
+            thumburl.push(post.thumb);
+          }
+        });
+
+        const validPosts = removeRelatedDuplicates(
+          relatedTitles.map((_, index) => index)
+        );
+        displayPage(0, validPosts);
+
+        document.getElementById("prev-btn").addEventListener("click", () => {
+          if (currentPage > 0) displayPage(currentPage - 1, validPosts);
+        });
+
+        document.getElementById("next-btn").addEventListener("click", () => {
+          if ((currentPage + 1) * postsPerPage < validPosts.length) {
+            displayPage(currentPage + 1, validPosts);
+          }
+        });
+      })
+      .catch(error => {
+        console.error("Error loading post data:", error);
+      });
+  </script>
+</body>
+</html>
