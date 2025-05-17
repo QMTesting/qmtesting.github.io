@@ -5,6 +5,10 @@ categories: ["Azure DevOps"]
 image: /assets/images/DevOps/Azure-DevOps-Testing.png
 ---
 
+| ![Alt Automation Testing Tools](/assets/images/DevOps/Azure-DevOps-Testing.png) |
+|:--:|
+| *Image by vectorjuice on Freepik* |
+
 Introduction
 Test automation, when combined with a robust DevOps platform like Azure DevOps, can elevate software testing to new heights, enabling teams to achieve more powerful results while streamlining their development processes. In this comprehensive guide, we'll explore the benefits of leveraging Azure DevOps with test automation and how it can revolutionize your software testing efforts.
 
