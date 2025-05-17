@@ -5,6 +5,9 @@ categories: ["Software Testing"]
 image: /assets/images/Quality-Assrance.png
 ---
 
+
+![Alt quality assurance](/assets/images/Quality-Assrance.png)
+
 # Introduction
 Ensuring the quality of the final product is paramount in software development. Two essential processes that contribute to achieving this goal are Quality Assurance (QA) and Quality Control (QC). While these terms are often incorrectly used interchangeably, they represent distinct phases in the software development lifecycle (SDLC) with different objectives and methodologies.
 
