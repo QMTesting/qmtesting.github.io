@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Azure Devops"
+permalink: /azure-devops/
+---
+
+<h2 style="font-size: 40px; text-align: center;">Showing posts for:</h2>
+<h2 style="font-size: 35px; text-align: center;">Azure Devops</h2>
+
+<div id="related-posts-cat" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; max-width: 1100px; margin: 30px auto;">
+  {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Azure Devops'" %}
+  {% for post in software_posts %}
+    <a href="{{ post.url | relative_url }}" style="text-decoration: none; text-align: center;">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width: 260px; height: 200px; object-fit: cover; border-radius: 4px;" />
+      <div style="color: #000; font-size: 18px; font-weight: bold; text-decoration: underline; padding: 10px 0;">{{ post.title }}</div>
+    </a>
+  {% endfor %}
+</div>
