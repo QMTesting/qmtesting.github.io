@@ -2,7 +2,7 @@
 layout: post
 title: "Leverage Azure DevOps for Better Test Results"
 categories: ["Azure DevOps"]
-image: /assets/images/DevOps/Azure DevOps-Testing.png
+image: /assets/images/DevOps/Azure-DevOps-Testing.png
 ---
 
 Introduction
