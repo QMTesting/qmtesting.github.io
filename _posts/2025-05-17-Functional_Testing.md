@@ -2,7 +2,7 @@
 layout: post
 title: "Functional Testing Know the Fundamentals in the SDLC"
 categories: ["Types of Testing"]
-image: /assets/images/Quality-Assrance.png
+image: /assets/images/Types/Functional-Testing.png
 ---
 
 Functional testing is a crucial aspect of software testing that ensures an application performs as expected according to its functional requirements. It verifies that each feature of the software operates in conformance with the required specifications. This type of testing mainly involves black-box testing, where the tester is unaware of the internal workings of the system.
