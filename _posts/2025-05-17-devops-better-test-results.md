@@ -5,7 +5,7 @@ categories: ["Azure DevOps"]
 image: /assets/images/DevOps/Azure-DevOps-Testing.png
 ---
 
-| ![Alt Automation Testing Tools](/assets/images/DevOps/Azure-DevOps-Testing.png) |
+| ![Alt Azure DevOps Testing](/assets/images/DevOps/Azure-DevOps-Testing.png) |
 |:--:|
 | *Image by vectorjuice on Freepik* |
 
