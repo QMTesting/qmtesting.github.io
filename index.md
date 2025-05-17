@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "## Welcome to QM Testing"
+title: "Welcome to QM Testing"
 permalink: /
 ---
 
