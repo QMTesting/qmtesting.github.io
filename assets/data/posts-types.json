@@ -1,1 +1,26 @@
+---
+layout: default
+title: Types of Testing
+category: Types of Testing
+---
 
+[
+  {
+    "title": "Quality Control vs Quality Assurance Know the Difference",
+    "url": "/_posts/2025-05-16-quality-assurance.md",
+    "thumb": "/assets/images/Quality Control and Quality Assurance.png",
+    "label": "Types of Testing"
+  },
+  {
+    "title": "Manual vs Automated Testing",
+    "url": "/2024/12/manual-vs-automated.html",
+    "thumb": "/assets/images/testing.png",
+    "label": "Software Testing"
+  },
+  {
+    "title": "JUnit Basics",
+    "url": "/2024/11/junit-basics.html",
+    "thumb": "/assets/images/junit.png",
+    "label": "Java"
+  }
+]
