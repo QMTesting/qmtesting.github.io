@@ -2,10 +2,8 @@
 layout: post
 title: "Quality Control vs Quality Assurance Know the Difference"
 categories: ["Software Testing"]
-image: /assets/images/Quality-Assrance.png
+image: "/assets/images/Quality-Assrance.png"
 ---
-
-# Quality Control vs Quality Assurance Know the Difference
 
 ![Alt quality assurance](/assets/images/Quality-Assrance.png)
 
