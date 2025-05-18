@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const query = params.get("q");
 
   if (query) {
+    // Display the search query
+    const queryTitle = document.getElementById("search-query-title");
+    queryTitle.textContent = `Search results for: "${query}"`;
+
+    // Fetch and filter posts
     fetch("/search.json")
       .then(response => response.json())
       .then(data => {
@@ -11,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const results = data.filter(post =>
           post.title.toLowerCase().includes(lowerQuery) ||
-          (post.content && post.content.toLowerCase().includes(lowerQuery)) ||
+          post.content.toLowerCase().includes(lowerQuery) ||
           (post.tags && post.tags.join(" ").toLowerCase().includes(lowerQuery)) ||
           (post.categories && post.categories.join(" ").toLowerCase().includes(lowerQuery))
         );
@@ -32,3 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 });
+
