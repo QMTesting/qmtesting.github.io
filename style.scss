@@ -525,8 +525,8 @@ img {
 #search-results {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  gap: 5px;
+  padding: 5px;
   max-width: 1000px;
   margin: 0 auto;
 }
