@@ -514,6 +514,32 @@ img {
     border: 2px solid;
     border-color: black;	
 }
+
+#search-results.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  transition: box-shadow 0.3s;
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.post-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
