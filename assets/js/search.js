@@ -7,9 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(response => response.json())
       .then(data => {
         const resultsContainer = document.getElementById("search-results");
+        const lowerQuery = query.toLowerCase();
+
         const results = data.filter(post =>
-          post.title.toLowerCase().includes(query.toLowerCase()) ||
-          post.content.toLowerCase().includes(query.toLowerCase())
+          post.title.toLowerCase().includes(lowerQuery) ||
+          (post.content && post.content.toLowerCase().includes(lowerQuery)) ||
+          (post.tags && post.tags.join(" ").toLowerCase().includes(lowerQuery)) ||
+          (post.categories && post.categories.join(" ").toLowerCase().includes(lowerQuery))
         );
 
         if (results.length === 0) {
