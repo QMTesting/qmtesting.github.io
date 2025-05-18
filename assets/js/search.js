@@ -1,13 +1,15 @@
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const query = params.get("q");
 
   if (query) {
-    // Display the search query
+    // Set the search query title before loading results
     const queryTitle = document.getElementById("search-query-title");
-    queryTitle.textContent = `Search results for: "${query}"`;
+    if (queryTitle) {
+      queryTitle.textContent = `Search results for: "${query}"`;
+    }
 
-    // Fetch and filter posts
     fetch("/search.json")
       .then(response => response.json())
       .then(data => {
@@ -37,4 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 });
+</script>
 
