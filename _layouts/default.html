@@ -8,6 +8,10 @@
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
+    <form id="search-form" action="/search-results/" method="get">
+      <input type="search" name="q" id="search-input" placeholder="Search posts..." />
+    </form>
+
     {% include meta.html %}
 
     <!--[if lt IE 9]>
