@@ -9,4 +9,58 @@ permalink: /search-results/
   <div id="search-results" class="search-grid"></div>
 </div>
 
-<script src="/assets/js/search.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("q");
+
+  if (!query) return;
+
+  // Set the heading before loading posts
+  const queryTitle = document.getElementById("search-query-title");
+  if (queryTitle) {
+    queryTitle.textContent = `Search results for: "${query}"`;
+  }
+
+  fetch("/search.json")
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load search.json");
+      return response.json();
+    })
+    .then(data => {
+      const resultsContainer = document.getElementById("search-results");
+      const lowerQuery = query.toLowerCase();
+
+      const results = data.filter(post =>
+        post.title?.toLowerCase().includes(lowerQuery) ||
+        post.content?.toLowerCase().includes(lowerQuery) ||
+        (post.tags && post.tags.join(" ").toLowerCase().includes(lowerQuery)) ||
+        (post.categories && post.categories.join(" ").toLowerCase().includes(lowerQuery))
+      );
+
+      if (!resultsContainer) return;
+
+      if (results.length === 0) {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
+        return;
+      }
+
+      resultsContainer.innerHTML = results.map(post => `
+        <div class="post-card">
+          <a href="${post.url}">
+            <img src="${post.image}" alt="${post.title}" />
+            <h3>${post.title}</h3>
+          </a>
+        </div>
+      `).join("");
+    })
+    .catch(error => {
+      console.error("Search failed:", error);
+      const resultsContainer = document.getElementById("search-results");
+      if (resultsContainer) {
+        resultsContainer.innerHTML = "<p>There was an error loading results.</p>";
+      }
+    });
+});
+</script>
+
