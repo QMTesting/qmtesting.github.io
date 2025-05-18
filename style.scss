@@ -539,6 +539,12 @@ img {
 
 /* Responsive fix for smaller screens */
 @media screen and (max-width: 600px) {
+  #search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}	
   .post-card img {
     height: 300px;
   }
