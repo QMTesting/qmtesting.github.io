@@ -288,8 +288,9 @@ footer {
 .CategoryContainer{
            
             margin-left: -20px;
-            display: flex;
-            flex-direction: row;
+            display: grid;
+  	    gap: 5px;
+            grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
             width: 1025px;
             font-weight: 900;
             display: flex;
