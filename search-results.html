@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set the heading before loading posts
   const queryTitle = document.getElementById("search-query-title");
   if (queryTitle) {
-    queryTitle.textContent = `Search results for: "${query}"`;
+    queryTitle.textContent = `You searched for: "${query}"`;
   }
 
   fetch("/search.json")
