@@ -287,7 +287,7 @@ footer {
 
 .CategoryContainer{
            
-            margin-left: -20px;
+            margin-left: 0px;
             display: grid;
   	    gap: 0px;
             grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
@@ -312,7 +312,7 @@ footer {
         .TestCat img {
 	  border-radius: 5px;	
           height: 200px;
-          width: 245px;
+          width: 250px;
 	  border: 2px solid;	
         }
 
@@ -330,7 +330,7 @@ footer {
         .TypesCat img {
           border-radius: 5px;
           height: 200px;
-          width: 245px;
+          width: 250px;
 	  border: 2px solid;	
         }
 
@@ -348,7 +348,7 @@ footer {
         .AutoCat img {
           border-radius: 5px;
           height: 200px;
-          width: 245px;
+          width: 250px;
 	  border: 2px solid;	
         }
 
@@ -366,7 +366,7 @@ footer {
         .DevOpsCat img {
           border-radius: 5px;
           height: 200px;
-          width: 245px;
+          width: 250px;
 	  border: 2px solid;
         }
 
