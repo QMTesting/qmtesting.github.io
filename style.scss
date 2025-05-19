@@ -519,7 +519,7 @@ img {
 
 .search-grid {
   display: grid;
-  gap: 0.5rem;
+  gap: 5px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
   margin-top: 1rem;
   width: 1100px;	
@@ -553,7 +553,7 @@ img {
   object-fit: cover;
   border-radius: 6px;
   align-items: center;	
-  margin-left: 15px;	
+  margin-left: 10px;	
 }
 
 /* Search box */
