@@ -595,6 +595,30 @@ img {
   
 }
 
+/* RELATED POSTS */
+.related-posts-grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  margin-top: 1.5em;
+}
+.related-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+.related-post img {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+.related-post p {
+  padding: 0.5em;
+  font-size: 1em;
+  text-align: center;
+}
+
 
 
 	
