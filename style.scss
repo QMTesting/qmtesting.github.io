@@ -293,7 +293,6 @@ footer {
             grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
             width: 1025px;
             font-weight: 900;
-            display: flex;
             flex-wrap: wrap;
             padding: 0 10px 0 0;
         }
@@ -314,7 +313,7 @@ footer {
             
         }
         .TestCat img {
-          padding: 2px;
+	  border-radius: 5px;	
           padding-right: 2px;
           height: 200px;
           width: 240px;
@@ -337,7 +336,7 @@ footer {
            height: 280px
         }
         .TypesCat img {
-          padding: 2px;
+          border-radius: 5px;
           padding-right: 2px;
           height: 200px;
           width: 240px;
@@ -359,7 +358,7 @@ footer {
             height: 280px
         }
         .AutoCat img {
-          padding: 2px;
+          border-radius: 5px;
           padding-right: 2px;
           height: 200px;
           width: 240px;
@@ -381,7 +380,7 @@ footer {
             height: 280px
         }
         .DevOpsCat img {
-          padding: 2px;
+          border-radius: 5px;
           padding-right: 2px;
           height: 200px;
           width: 240px;
