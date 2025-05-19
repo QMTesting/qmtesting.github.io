@@ -304,7 +304,6 @@ footer {
           /*max-width: 21%;*/
           
           border-radius: 4px;
-          margin-left: 15px;
           transition: transform 0.3s ease-in-out;
           width: 250px;
           height: 280px
@@ -317,16 +316,13 @@ footer {
 	  border: 2px solid;	
         }
 
-       .TypesCat { 
-           margin-left: 0px;
-           text-align: center;    
+       .TypesCat {   
            text-align: center;    
            font-weight: 900;
            
            /*max-width: 21%;*/
             
            border-radius: 4px;
-           margin-left: 6px;
            transition: transform 0.3s ease-in-out;
            width: 250px;
            height: 280px
@@ -339,14 +335,12 @@ footer {
         }
 
        .AutoCat {  
-            margin-left: 0px;
             text-align: center;        
             font-weight: 900;
             
             /*max-width: 21%;*/
              
             border-radius: 4px;
-            margin-left: 6px;
             transition: transform 0.3s ease-in-out;
             width: 250px;
             height: 280px
@@ -359,14 +353,12 @@ footer {
         }
 
       .DevOpsCat { 
-            margin-left: 0px;
             text-align: center;        
             font-weight: 900;
             
             /*max-width: 21%;*/
              
             border-radius: 4px;
-            margin-left: 6px;
             transition: transform 0.3s ease-in-out;
             width: 250px;
             height: 280px
@@ -378,7 +370,7 @@ footer {
 	  border: 2px solid;
         }
 
-       .TestCat .text1 { font-size: 20px; font-weight: 700; margin-left: 20px; }
+       .TestCat .text1 { font-size: 20px; font-weight: 700; margin-left: 0px; }
        .TypesCat .text2 { font-size: 20px; font-weight: 700; margin-left: 0px;}
        .AutoCat .text3 { font-size: 20px; font-weight: 700; margin-left: 0px;}
        .DevOpsCat .text4 { font-size: 20px; font-weight: 700; margin-left: 0px;}               
