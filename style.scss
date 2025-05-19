@@ -522,8 +522,8 @@ img {
   gap: 5px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
   margin-top: 1rem;
-  margin-left: -10px;	
-  width: 1075px;	
+  margin-left: -20px;	
+  width: 1050px;	
 }
 
 .post-card {
@@ -558,7 +558,7 @@ img {
 
 /* Search box */
 #search-form {
- margin-left: 80px;
+ margin-left: 1200px;
 /* border: 2px solid;*/
  width: 400px;
  height: 40px;
