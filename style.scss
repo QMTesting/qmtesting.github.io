@@ -646,6 +646,7 @@ img {
   overflow: hidden;
   background: #fff;
   margin-bottom: 30px;	
+  width: 250px;		
 }
 
 .related-post p {
@@ -759,6 +760,18 @@ img {
   gap: 0px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em;
+}
+
+.recent-post-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+  width: 250px;	
+  margin-bottom: 30px;	
 }
 
 .recent-post-title {
