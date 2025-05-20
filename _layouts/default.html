@@ -55,7 +55,14 @@
     <div id="main" role="main" class="container">
       {{ content }}
 
-      <!--Welcome Message on Home Page-->
+      
+        
+
+
+      <!--Category Grid Home Page-->
+      {% if page.url == "/" %}
+
+   <!--Welcome Message on Home Page-->
       <h2 class="welcome-heding">Welcome to QM Testing</h2>
       <p class="welcome-text">Welcome to QM (Quality Management) Testing — your go-to resource for software testing, test automation, and DevOps testing insights.</p>
        
@@ -67,18 +74,10 @@
         }
        .welcome-text {
          text-align: center;
-        margin-left: 150px;
+        margin-left: 250px;
        } 
-      
 
-       }  /* End Mobile */
-       
-      </style>
-        
-
-
-      <!--Category Grid Home Page-->
-      {% if page.url == "/" %}
+      </style>   
   <div class="CategoryContainer">
     <style>
       .widget.title { font-size: 40px; font-weight: 700; }
