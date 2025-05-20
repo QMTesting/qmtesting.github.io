@@ -671,8 +671,7 @@ img {
   text-align: center;
   color: #000000;
 }
-.post-grid {
- .related-posts-grid {
+ .recent-post-grid {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
@@ -681,7 +680,7 @@ img {
   flex-wrap: wrap;	 
 }
 
-.post-card {
+.recent-post-card {
   border: 1px solid #ddd;
   border-radius: 6px;
   overflow: hidden;
@@ -692,24 +691,24 @@ img {
   width: 250px;	
 }
 
-.post-card:hover {
+.recent-post-card:hover {
   transform: translateY(-5px);
 }
 
-.post-card a {
+.recent-post-card a {
   text-decoration: none;
   color: inherit;
   display: block;
   padding: 1em;
 }
 
-.thumbnail img {
+.recent-thumbnail img {
   width: 250px;
   height: 200px;
   object-fit: cover;
 }
 
-.post-title {
+.recent-post-title {
   font-size: 1.1em;
   margin: 0.5em 0 0;
 }
