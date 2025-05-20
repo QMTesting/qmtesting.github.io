@@ -640,10 +640,19 @@ img {
   margin-top: 1.5em;
 }
 
+.related-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 30px;	
+}
+
 .related-post p {
   padding: 0.5em;
   font-size: 18px;
   text-align: center;
+  color: #000000;	
 }
 	
 } /* End Mobile */
