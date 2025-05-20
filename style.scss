@@ -674,6 +674,14 @@ img {
   gap: 5px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em;
+  margin-left: 30px;	  
+	  
+}
+
+.related-post img {
+  display: block;
+  width: 320px;
+  height: 260px;
 }
 
 .related-post {
@@ -812,7 +820,14 @@ img {
   transition: transform 0.2s;
   width: 250px;	
   margin-bottom: 30px;	
+  margin-left: 30px;	
 }
+
+.recent-thumbnail img {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}	
 
 .recent-post-title {
   font-size: 18px;
