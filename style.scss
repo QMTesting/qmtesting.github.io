@@ -555,6 +555,11 @@ img {
  /* margin-left: 10px;*/
 }
 
+.search-query-title {
+   text-align: center;
+   margin-left: 200px;	
+}	
+
 @media screen and (max-width: 768px) {
  .search-grid {
   display: grid;
@@ -585,6 +590,11 @@ img {
   align-items: center;	
  /* margin-left: 10px;*/
 }
+
+.search-query-title {
+   text-align: center;
+   margin-left: 0px;	
+}		
 	
 
 } /* End Mobile */
