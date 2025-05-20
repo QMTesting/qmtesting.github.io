@@ -425,7 +425,7 @@ footer {
          .TestCat img {
           padding: 2px;
           padding-right: 2px;
-          max-height: 200px;
+          max-height: 260px;
           width: 100%;
          }
 
@@ -448,7 +448,7 @@ footer {
         .TypesCat img {
           padding: 2px;
           padding-right: 2px;
-          max-height: 200px;
+          max-height: 260px;
           width: 100%;
          }
 
@@ -470,7 +470,7 @@ footer {
           .AutoCat img {
            padding: 2px;
            padding-right: 2px;
-           max-height: 200px;
+           max-height: 260px;
            width: 100%;
          }
 
@@ -492,7 +492,7 @@ footer {
           .DevOpsCat img {
            padding: 2px;
            padding-right: 2px;
-           max-height: 200px;
+           max-height: 260px;
            width: 100%;
          }
 
@@ -501,10 +501,10 @@ footer {
        .text3 { font-size: 20px; font-weight: 700; margin-left: 90px; margin-right: 10px; color: #000000;}
        .text4 { font-size: 20px; font-weight: 700; margin-left: 90px; margin-right: 10px; color: #000000;}
       
-       .TestCat p {margin-left: 100px; margin-right: 10px; color: #000000;}
-       .TypesCat p {margin-left: 95px; margin-right: 10px; color: #000000;}
-       .AutoCat p {margin-left: 120px; margin-right: 10px; color: #000000;}
-       .DevOpsCat p {margin-left: 160px; margin-right: 10px; color: #000000;}
+       .TestCat p {margin-left: 70px; margin-right: 10px; color: #000000;}
+       .TypesCat p {margin-left: 65px; margin-right: 10px; color: #000000;}
+       .AutoCat p {margin-left: 90px; margin-right: 10px; color: #000000;}
+       .DevOpsCat p {margin-left: 130px; margin-right: 10px; color: #000000;}
 
 	
 	
@@ -674,7 +674,7 @@ img {
   gap: 5px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em;
-  margin-left: 40px;	  
+  margin-left: 30px;	  
 	  
 }
 .related-post {
@@ -683,6 +683,7 @@ img {
   overflow: hidden;
   background: #fff;
   width: 320px;	
+  margin-bottom: 30px;	
 }	
 	
 
@@ -690,15 +691,6 @@ img {
   display: block;
   width: 320px;
   height: 260px;
-}
-
-.related-post {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
-  margin-bottom: 30px;	
-  width: 250px;		
 }
 
 .related-post p {
@@ -811,12 +803,13 @@ img {
 }
 
 @media only screen and (max-width: 780px) {
+	
  .recent-post-grid {
   display: grid;
   gap: 0px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em; 
-  margin-left: 40px;	 	 
+  margin-left: 30px;	 	 
 }
 
 .recent-post-card {
@@ -829,7 +822,7 @@ img {
   transition: transform 0.2s;
   width: 320px;	
   margin-bottom: 30px;	
-  margin-left: 40px;	
+  margin-left: 30px;	
 }
 
 .recent-thumbnail img {
