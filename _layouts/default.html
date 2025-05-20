@@ -100,6 +100,22 @@
 
     
   </div>
+
+
+  <!--Recent Posts-->    
+  <div class="post-grid">
+  {% for post in site.posts limit:4 %}
+    <div class="post-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="thumbnail">
+          <img src="{{ post.image | default: '/assets/default-thumbnail.jpg' }}" alt="{{ post.title }}">
+        </div>
+        <h3 class="post-title">{{ post.title }}</h3>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+      
 {% endif %}
 
       
