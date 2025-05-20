@@ -640,23 +640,27 @@ img {
   border-radius: 100%;	
 }
 
+.social-share a svg {
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.social-share a:hover img,
+.social-share a:hover svg {
+  transform: scale(1.1);
+}
+
+
+
 /* Optional Media Query */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
   .social-share {
     margin-left: 325px;
   }
-
-  #PageList2 {
-    margin-left: -70px;
-  }
-
-  #PageList2 a {
-    color: #000000;
-  }
-
-  .brand-new img {
-    margin-left: 115px;
-  }
+  
 }
 
 
