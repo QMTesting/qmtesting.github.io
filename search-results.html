@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Search Results
+title: 
 permalink: /search-results/
 ---
 
 <div id="search-results-wrapper">
+  
   <h2 id="search-query-title"></h2>
   <div id="search-results" class="search-grid"></div>
 </div>
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set the heading before loading posts
   const queryTitle = document.getElementById("search-query-title");
   if (queryTitle) {
-    queryTitle.textContent = `You searched for: "${query}"`;
+    queryTitle.textContent = `Search Results for: "${query}"`;
   }
 
   fetch("/search.json")
