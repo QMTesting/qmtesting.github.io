@@ -19,3 +19,39 @@
   </a>
 </div>
 
+<script>
+  function shareOnFacebook() {
+    const title = document.title;
+    const url = window.location.href;
+    const shareUrl = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url) + '&t=' + encodeURIComponent(title);
+    window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  }
+
+  function shareOnPinterest() {
+    const title = document.title;
+    const url = window.location.href;
+    const shareUrl = 'https://www.pinterest.com/pin/create/button/?url=' + encodeURIComponent(url) + '&media=&description=' + encodeURIComponent(title);
+    window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  }
+
+  function shareOnX() {
+    let title = document.title;
+    title = "QM Test Management BLOG PAGE: " + title;
+    const url = window.location.href;
+    const shareUrl = 'https://x.com/intent/post?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+    window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.social-share a');
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        const shareType = this.classList[0];
+        if (shareType === 'facebook') shareOnFacebook();
+        else if (shareType === 'pinterest') shareOnPinterest();
+        else if (shareType === 'Xbtn') shareOnX();
+      });
+    });
+  });
+</script>
