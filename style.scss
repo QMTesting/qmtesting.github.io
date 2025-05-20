@@ -673,7 +673,7 @@ img {
 }
  .recent-post-grid {
   display: grid;
-  gap: 5px;
+  gap: 0px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
   width: 1025px;
   font-weight: 900;
@@ -699,7 +699,6 @@ img {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 1em;
 }
 
 .recent-thumbnail img {
@@ -711,6 +710,7 @@ img {
 .recent-post-title {
   font-size: 1.1em;
   margin: 0.5em 0 0;
+  text-align: center;	
 }
 
 /* Tables */
