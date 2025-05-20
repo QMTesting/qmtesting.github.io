@@ -620,6 +620,23 @@ img {
   text-align: center;
 }
 
+@media only screen and (max-width: 780px) {
+  .related-posts-grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
+  margin-top: 1.5em;
+}
+
+.related-post p {
+  padding: 0.5em;
+  font-size: 18px;
+  text-align: center;
+}
+	
+} /* End Mobile */
+	
+
 
 
 /* Social Share Styling */
@@ -714,6 +731,23 @@ img {
   text-align: center;
   line-height: 20px;	
 }
+
+@media only screen and (max-width: 780px) {
+ .recent-post-grid {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
+  margin-top: 1.5em;
+}
+
+.recent-post-title {
+  font-size: 18px;
+  margin: 0.5em 0 0;
+  text-align: center;
+  line-height: 18px;	
+}
+	
+} /* End Mobile */
 
 /* Tables */
 th, td {
