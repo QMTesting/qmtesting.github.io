@@ -579,7 +579,7 @@ img {
 }		
 .post-card img {
   width: 320px;
-  height: 260px;
+  height: 200px;
   object-fit: cover;
   border-radius: 6px;
   align-items: center;	
@@ -690,7 +690,7 @@ img {
 .related-post img {
   display: block;
   width: 320px;
-  height: 260px;
+  height: 200px;
 }
 
 .related-post p {
@@ -809,7 +809,7 @@ img {
   gap: 0px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em; 
-  margin-left: 10px;	 	 
+  margin-left: 30px;	 	 
 }
 
 .recent-post-card {
@@ -826,7 +826,7 @@ img {
 
 .recent-thumbnail img {
   width: 320px;
-  height: 260px;
+  height: 200px;
   object-fit: cover;
 }	
 
