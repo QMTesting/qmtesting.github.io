@@ -406,7 +406,7 @@ footer {
 
         .TestCat {
      
-            margin-left: 0px;
+            margin-bottom: 30px;
            /* text-align: center;  */      
             font-weight: 900;
             
@@ -414,7 +414,7 @@ footer {
              
             border-radius: 4px;
             padding: 2px;
-            margin-left: -5px;
+            margin-left: 0px;
             transition: transform 0.3s ease-in-out;
             width: 320px;
             height: 260px
@@ -430,7 +430,7 @@ footer {
 
        .TypesCat {
           
-              margin-left: 0px;
+            margin-bottom: 30px;
            /* text-align: center;  */      
             font-weight: 900;
             
@@ -438,7 +438,7 @@ footer {
              
             border-radius: 4px;
             padding: 2px;
-            margin-left: -5px;
+            margin-left: 0px;
             transition: transform 0.3s ease-in-out;
             width: 320px;
             height: 260px
@@ -452,7 +452,7 @@ footer {
          }
 
        .AutoCat {
-              margin-left: 0px;
+            margin-bottom: 30px;
            /* text-align: center;  */      
             font-weight: 900;
             
@@ -460,7 +460,7 @@ footer {
              
             border-radius: 4px;
             padding: 2px;
-            margin-left: -5px;
+            margin-left: 0px;
             transition: transform 0.3s ease-in-out;
             width: 320px;
             height: 260px
@@ -474,7 +474,7 @@ footer {
          }
 
           .DevOpsCat {
-             margin-left: 0px;
+            margin-bottom: 30px;
            /* text-align: center;  */      
             font-weight: 900;
             
@@ -482,7 +482,7 @@ footer {
              
             border-radius: 4px;
             padding: 2px;
-            margin-left: -5px;
+            margin-left: 0px;
             transition: transform 0.3s ease-in-out;
             width: 320px;
             height: 260px
@@ -512,7 +512,6 @@ img {
 }
 
 /* SEARCH GRID RESULTS */
-
 .search-grid {
   display: grid;
   gap: 5px;
@@ -551,6 +550,40 @@ img {
   align-items: center;	
  /* margin-left: 10px;*/
 }
+
+@media screen and (max-width: 768px) {
+ .search-grid {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
+  margin-top: 1rem;
+  margin-left: 0px;		
+}
+.post-card {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  width: 320px;	
+}
+.post-card h3 {
+  text-align: center;
+  font-size: 18px;	
+  line-height: 19px;	
+}		
+.post-card img {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+  align-items: center;	
+ /* margin-left: 10px;*/
+}
+	
+
+} /* End Mobile */
 
 /* Search box */
 #search-form {
