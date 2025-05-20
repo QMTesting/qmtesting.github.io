@@ -624,7 +624,7 @@ img {
 /* Social Share Styling */
 .social-share {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   justify-content: center;
   padding: 20px 0;
 }
@@ -637,6 +637,7 @@ img {
 .social-share image {
   width: 100%;
   height: 100%;
+  border-radius: 100%;	
 }
 
 /* Optional Media Query */
