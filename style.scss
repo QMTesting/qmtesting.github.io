@@ -674,9 +674,17 @@ img {
   gap: 5px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em;
-  margin-left: 30px;	  
+  margin-left: 40px;	  
 	  
 }
+.related-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  width: 320px;	
+}	
+	
 
 .related-post img {
   display: block;
@@ -807,7 +815,8 @@ img {
   display: grid;
   gap: 0px;
   grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
-  margin-top: 1.5em;
+  margin-top: 1.5em; 
+  margin-left: 40px;	 	 
 }
 
 .recent-post-card {
@@ -818,7 +827,7 @@ img {
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.2s;
-  width: 325px;	
+  width: 320px;	
   margin-bottom: 30px;	
   margin-left: 40px;	
 }
