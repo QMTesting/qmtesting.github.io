@@ -12,7 +12,7 @@ permalink: /automation/
   {% for post in software_posts %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; text-align: center;">
      <img class="related-img" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
-      <div style="color: #000; font-size: 18px; font-weight: bold;>{{ post.title }}</div>
+      <div style="color: #000; font-size: 18px; font-weight: bold;">{{ post.title }}</div>
     </a>
   {% endfor %}
 </div>
@@ -45,7 +45,7 @@ permalink: /automation/
  .related-img {
     width: 320px;
     height: 200px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 30px;
   }  
   
