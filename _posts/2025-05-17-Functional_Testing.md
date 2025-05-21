@@ -11,67 +11,77 @@ image: /assets/images/Types/Functional-Testing.png
 
 Functional testing is a crucial aspect of software testing that ensures an application performs as expected according to its functional requirements. It verifies that each feature of the software operates in conformance with the required specifications. This type of testing mainly involves black-box testing, where the tester is unaware of the internal workings of the system.
 
-# What is Functional Testing?
+## What is Functional Testing?
 Functional testing validates the behavior of the software by focusing on its functionality rather than its internal logic or structure. It checks whether the application is doing what it is supposed to do by providing input and verifying the output against expected results.
 
-# Key points about functional testing:
+## Key points about functional testing:
 
 - It tests user interactions and the system's response.
 - It validates business requirements.
 - It is conducted from an end-user perspective.
 - It involves black-box testing techniques, meaning the testers are unaware of how the application is built or structured.
 
-# Main Types of Functional Testing
+## Main Types of Functional Testing
 Functional testing can be categorized into several types based on the purpose and scope of testing. Here are the main types along with the job roles typically responsible for each:
 
-1. Unit Testing
-• Purpose: Tests individual units or components of a software application.
-• Focus: Validates the functionality of a specific section of code, typically at the function or method level.
-• Job Role: Software Developers or Software Engineers
-• Example: Testing a calculator app's addition method to ensure it returns the correct sum.
-2. Integration Testing
-• Purpose: Tests the interactions between integrated units or components.
-• Focus: Ensures that combined components work together as expected.
-• Job Role: Software Developers, Integration Testers, or QA Engineers
-• Example: Verifying data flow between a frontend form and the backend database.
-3. System Testing
-• Purpose: Evaluates the complete and integrated software system.
-• Focus: Ensures the system meets specified requirements.
-• Job Role: QA Engineers or Software Testers
-• Example: Testing an e-commerce website’s complete order placement process.
-4. Sanity Testing
-• Purpose: Checks for basic functionality after a minor change or bug fix.
-• Focus: Confirms that the new functionality works as expected.
-• Job Role: QA Engineers or Software Testers
-• Example: Verifying a fixed login issue without performing a full regression.
-5. Smoke Testing
-• Purpose: Conducted to check whether the critical functionalities of the application are working.
-• Focus: Ensures the stability of the software for further testing.
-• Job Role: QA Engineers, Software Testers, or DevOps Engineers (in CI/CD pipelines)
-• Example: Confirming the successful launch of a web application’s homepage.
-6. User Acceptance Testing (UAT)
-• Purpose: Validates the system from the end-user's perspective.
-• Focus: Confirms that the system meets business requirements and is ready for deployment.
-• Job Role: End Users, Business Analysts, or Product Owners
-• Example: End-users testing a new feature in a mobile banking app.
-7. Regression Testing
-• Purpose: Ensures that recent code changes have not negatively impacted the existing functionality of the software.
-• Focus: Verifies that previously working features still function correctly after updates or bug fixes.
-• Job Role: QA Engineers, Software Testers, or Automation Test Engineers
-• Example: Re-running test cases on a web application after a new feature is added to ensure no existing functionality is broken.
-Positive and Negative Functional Testing Approaches
+### 1. Unit Testing
+- Purpose: Tests individual units or components of a software application.
+- Focus: Validates the functionality of a specific section of code, typically at the function or method level.
+- Job Role: Software Developers or Software Engineers
+- Example: Testing a calculator app's addition method to ensure it returns the correct sum.
+
+### 2. Integration Testing
+- Purpose: Tests the interactions between integrated units or components.
+- Focus: Ensures that combined components work together as expected.
+- Job Role: Software Developers, Integration Testers, or QA Engineers
+- Example: Verifying data flow between a frontend form and the backend database.
+
+### 3. System Testing
+- Purpose: Evaluates the complete and integrated software system.
+- Focus: Ensures the system meets specified requirements.
+- Job Role: QA Engineers or Software Testers
+- Example: Testing an e-commerce website’s complete order placement process.
+  
+### 4. Sanity Testing
+- Purpose: Checks for basic functionality after a minor change or bug fix.
+- Focus: Confirms that the new functionality works as expected.
+- Job Role: QA Engineers or Software Testers
+- Example: Verifying a fixed login issue without performing a full regression.
+  
+### 5. Smoke Testing
+- Purpose: Conducted to check whether the critical functionalities of the application are working.
+- Focus: Ensures the stability of the software for further testing.
+- Job Role: QA Engineers, Software Testers, or DevOps Engineers (in CI/CD pipelines)
+- Example: Confirming the successful launch of a web application’s homepage.
+  
+### 6. User Acceptance Testing (UAT)
+- Purpose: Validates the system from the end-user's perspective.
+- Focus: Confirms that the system meets business requirements and is ready for deployment.
+- Job Role: End Users, Business Analysts, or Product Owners
+- Example: End-users testing a new feature in a mobile banking app.
+  
+### 7. Regression Testing
+- Purpose: Ensures that recent code changes have not negatively impacted the existing functionality of the software.
+- Focus: Verifies that previously working features still function correctly after updates or bug fixes.
+- Job Role: QA Engineers, Software Testers, or Automation Test Engineers
+- Example: Re-running test cases on a web application after a new feature is added to ensure no existing functionality is broken.
+
+## Positive and Negative Functional Testing Approaches
+
 Positive and negative testing are two fundamental approaches used in functional testing to ensure the robustness and reliability of software applications.
 
-## Positive Testing
+### Positive Testing
 
-• Description: Positive testing validates that the software works as expected when given valid and correct input data. It verifies that the system behaves as intended under normal conditions.
-• Example: Entering a valid username and password on a login form to check if the user is successfully redirected to the dashboard.
-Negative Testing
-• Description: Negative testing ensures that the software gracefully handles invalid or unexpected input data. It verifies that the system does not crash or produce incorrect results under erroneous conditions.
-• Example: Entering an invalid password or leaving the username field blank on a login form to check if appropriate error messages are displayed.
+- Description: Positive testing validates that the software works as expected when given valid and correct input data. It verifies that the system behaves as intended under normal conditions.
+- Example: Entering a valid username and password on a login form to check if the user is successfully redirected to the dashboard.
+
+### Negative Testing
+- Description: Negative testing ensures that the software gracefully handles invalid or unexpected input data. It verifies that the system does not crash or produce incorrect results under erroneous conditions.
+- Example: Entering an invalid password or leaving the username field blank on a login form to check if appropriate error messages are displayed.
+
 By performing both positive and negative testing, testers can validate the application’s behavior under normal and exceptional scenarios, ensuring a more robust and user-friendly product.
 
-# Functional Testing Techniques
+### Functional Testing Techniques
 
 Functional testing techniques involve designing test cases and scenarios to ensure comprehensive coverage. Here are the commonly used techniques:
 
@@ -93,7 +103,7 @@ Functional testing techniques involve designing test cases and scenarios to ensu
 Examples of Functional Testing
 Here are some real-world examples that illustrate the use of functional testing:
 
-# Login Functionality Test
+### Login Functionality Test
 
 Input: Username and Password.
 Action: Click on the login button.
@@ -103,7 +113,7 @@ Input: Keyword in the search bar.
 Action: Press the search button.
 Expected Result: Displays relevant search results matching the keyword.
 
-# Integrating Functional Testing into the Software Development Lifecycle
+## Integrating Functional Testing into the Software Development Lifecycle
 
 Effective functional testing requires seamless integration into the software development lifecycle (SDLC). By incorporating functional testing at various stages of the SDLC, organizations can ensure that software applications meet the desired quality standards and user expectations. Here's how functional testing can be integrated into the SDLC:
 
@@ -114,7 +124,7 @@ Effective functional testing requires seamless integration into the software dev
 Challenges and Best Practices in Functional Testing
 While functional testing is a vital component of the software development process, it also presents several challenges that organizations must address to ensure the effectiveness of their testing efforts. Here are some common challenges and best practices in functional testing:
 
-# Best Practices
+## Best Practices
 
 Here are some key best practices for functional testing:
 
@@ -134,7 +144,7 @@ Here are some key best practices for functional testing:
 14. Metrics and Reporting: Define relevant metrics to measure the effectiveness and progress of testing activities. Generate regular reports to communicate test results, coverage, defects, and other relevant information to stakeholders.
 15. Continuous Improvement: Continuously evaluate and improve the testing process based on lessons learned, feedback, and industry best practices. Foster a culture of learning and adaptation to drive continuous improvement in testing practices.
     
-# Some Challenges
+## Some Challenges
 
 Functional software testing, while crucial for ensuring the quality and reliability of software, it can present several challenges. Here are some key challenges faced in functional software testing:
 
@@ -153,7 +163,7 @@ Functional software testing, while crucial for ensuring the quality and reliabil
 13. Communication and Collaboration: Effective communication and collaboration between stakeholders, including developers, testers, and business analysts, are essential for successful testing. Poor communication and misalignment of expectations can lead to misunderstandings, delays, and quality issues.
 14. Non-functional Testing Considerations: Functional testing focuses on verifying the correctness of software functionalities but may overlook non-functional aspects such as performance, security, and usability. Ensuring comprehensive testing coverage across both functional and non-functional requirements is essential for delivering high-quality software.
 
-# How to Address the Challenges of Functional Testing
+## How to Address the Challenges of Functional Testing
 
 Addressing the challenges of functional testing requires a combination of strategies, processes, and tools to ensure effective testing and high-quality software delivery. Here are some approaches to address these challenges:
 
@@ -170,7 +180,7 @@ Addressing the challenges of functional testing requires a combination of strate
 11. Continuous Improvement: Continuously evaluate and improve testing processes, practices, and tools based on lessons learned, feedback, and industry best practices. Encourage experimentation, innovation, and adaptation to address evolving challenges and optimize testing outcomes.
 By implementing these strategies and practices, organizations can overcome the challenges of functional software testing and deliver high-quality software that meets user expectati
 
-# Conclusion
+## Conclusion
 
 Functional testing plays a vital role in delivering high-quality software that meets user expectations. It focuses on verifying the functional aspects of the application, ensuring that each feature works as intended. By leveraging various types and techniques of functional testing, software teams can build robust and reliable applications.
 
