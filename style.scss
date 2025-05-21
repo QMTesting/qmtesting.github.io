@@ -870,19 +870,23 @@ th, td {
 
 /* REMOVE SIDEBAR */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
-	.sidebar {
-	  display: none;
+	body {
+	  display: flex;
+	  justify-content: center;
 	}
 	
-	.wrapper {
-	  display: block;
-	  margin: 0 auto;
-	  max-width: 800px;
-	  padding: 20px;
+	body > * {
+	  width: 100%;
+	  max-width: 900px;
+	  padding: 0 20px;
 	}
 } /* End Desktop */
 
-
+/* SIDE NAME */
+.site-name {
+  font-size: 50px; 
+  font-weight: 900px;	
+}	
 	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
