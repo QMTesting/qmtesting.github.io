@@ -881,6 +881,13 @@ th, td {
 }
 .site-description {
   display: none;
+}
+
+/* SITE AVATAR/LOGO */
+.site-avatar {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;	
 }	
 	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
