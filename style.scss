@@ -887,11 +887,12 @@ th, td {
 }
 
 /* SITE AVATAR/LOGO */
-.site-avatar {
+.site-avatar img {
  display:block	
  border-radius: 50%;
   width: 120px;
   height: 120px;
+  border: none;	
 }		
 	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
