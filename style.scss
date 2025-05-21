@@ -878,6 +878,9 @@ th, td {
   font-size: 50px; 
   font-weight: 900px;
   text-align: center;	
+}
+.site-description {
+  display: none;
 }	
 	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
