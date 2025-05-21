@@ -11,7 +11,7 @@ permalink: /types-of-testing/
   {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Types of Testing'" %}
   {% for post in software_posts %}
     <a href="{{ post.url | relative_url }}" style="text-decoration: none; text-align: center;">
-      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width: 250px; height: 200px; object-fit: cover; border-radius: 4px;" />
+      <img class="related-img" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
       <div style="color: #000; font-size: 18px; font-weight: bold;">{{ post.title }}</div>
     </a>
   {% endfor %}
@@ -25,6 +25,30 @@ permalink: /types-of-testing/
   width: 1025px;
   font-weight: 900;
   flex-wrap: wrap;	
+}
+  .related-img {
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
 } 
+
+@media only screen and (max-width: 780px) {
+  #related-posts-cat {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(1, 1fr); /* 1 equal-width columns */
+  width: 325px;
+  font-weight: 900;
+  flex-wrap: wrap; 
+} 
+
+ .related-img {
+    width: 320px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 30px;
+  }  
+  
+} /* End Mobile */
 
 </style>
