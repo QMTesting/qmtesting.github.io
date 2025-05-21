@@ -16,10 +16,10 @@ Functional testing validates the behavior of the software by focusing on its fun
 
 # Key points about functional testing:
 
-• It tests user interactions and the system's response.
-• It validates business requirements.
-• It is conducted from an end-user perspective.
-• It involves black-box testing techniques, meaning the testers are unaware of how the application is built or structured.
+- It tests user interactions and the system's response.
+- It validates business requirements.
+- It is conducted from an end-user perspective.
+- It involves black-box testing techniques, meaning the testers are unaware of how the application is built or structured.
 
 # Main Types of Functional Testing
 Functional testing can be categorized into several types based on the purpose and scope of testing. Here are the main types along with the job roles typically responsible for each:
