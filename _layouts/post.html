@@ -9,25 +9,24 @@ layout: default
     {{ content }}
   </div>
 
+{% assign primary_category = page.categories[0] %}
+{% assign related_posts = site.posts | where_exp: "post", "post.url != page.url and post.categories contains primary_category" %}
+{% assign related_posts = related_posts | slice: 0, 4 %}
+
+{% if related_posts.size > 0 %}
   <h2 class="related-posts-title">Related Posts</h2>
   <div class="related-posts-grid">
-    {% assign primary_category = page.categories[0] %}
-    {% assign counter = 0 %}
-    {% for related in site.posts %}
-      {% if related.url != page.url and related.categories contains primary_category %}
-        <div class="related-post">
-          <a href="{{ related.url }}">
-            <img src="{{ related.image }}" alt="{{ related.title }}" style="width:100%;height:auto;">
-            <p>{{ related.title }}</p>
-          </a>
-        </div>
-        {% assign counter = counter | plus: 1 %}
-        {% if counter == 4 %}
-          {% break %}
-        {% endif %}
-      {% endif %}
+    {% for related in related_posts %}
+      <div class="related-post">
+        <a href="{{ related.url }}">
+          <img src="{{ related.image }}" alt="{{ related.title }}" style="width:100%;height:auto;">
+          <p>{{ related.title }}</p>
+        </a>
+      </div>
     {% endfor %}
   </div>
+{% endif %}
+
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
