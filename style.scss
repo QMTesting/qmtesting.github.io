@@ -868,8 +868,19 @@ th, td {
  border: 2px solid;     
 }
 
-
-
+/* REMOVE SIDEBAR */
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
+	.sidebar {
+	  display: none;
+	}
+	
+	.wrapper {
+	  display: block;
+	  margin: 0 auto;
+	  max-width: 800px;
+	  padding: 20px;
+	}
+} /* End Desktop */
 
 
 	
