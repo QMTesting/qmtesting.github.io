@@ -680,6 +680,11 @@ img {
   text-align: center;
 }
 
+.related-posts-title {
+  text-align: center;
+  margin-left: 250px;	
+}	
+
 @media only screen and (max-width: 780px) {
   .related-posts-grid {
   display: grid;
@@ -689,6 +694,7 @@ img {
   margin-left: 30px;	  
 	  
 }
+	
 .related-post {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -715,6 +721,10 @@ img {
 .related-post a {
   color: #000000;	
 }
+.related-posts-title {
+  text-align: center;
+  margin-left: 0px;	
+}	
 	
 } /* End Mobile */
 	
