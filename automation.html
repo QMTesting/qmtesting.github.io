@@ -58,7 +58,8 @@ permalink: /automation/
   
 } /* End Mobile */
 
-.breadcrumbs .current {
+
+  .breadcrumbs .current {
   font-weight: bold;
   color: #000; 
   margin-left: 4px; 
@@ -82,13 +83,34 @@ permalink: /automation/
 }
 
 .breadcrumbs {
-  text-align: left;
+  text-align: center;
   margin-left: 0px;
-  text-indent: 10px;   /* indent wrapped lines */
+  text-indent: 0px;   /* indent wrapped lines */
   padding-left: 0;      /* no left padding */
 }
 
 .breadcrumbs a:first-child {
   text-indent: 0;       /* "Home" line stays flush */
-}     
+} 
+  
+ @media only screen and (min-width: 820px) and (max-width: 2000px) { 
+  .breadcrumbs {
+    text-align: center;
+    margin-left: 400px;
+    text-indent: 0px;   /* indent wrapped lines */
+    padding-left: 0;      /* no left padding */
+  }
+
+ }   /* End Desktop */
+
+ @media only screen and (max-width: 780px) {
+   .breadcrumbs {
+    text-align: center;
+    margin-left: 75px;
+    text-indent: 0px;   /* indent wrapped lines */
+    padding-left: 0;      /* no left padding */
+  }
+
+ } /* End Mobile */ 
+  
 </style>
