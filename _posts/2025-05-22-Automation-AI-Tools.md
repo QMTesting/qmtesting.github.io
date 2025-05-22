@@ -75,7 +75,7 @@ Both open-source and licensed automation regression testing tools offer unique a
 ### Selenium
 Selenium continues to reign supreme as a powerhouse in the realm of regression testing automation. This open-source testing framework supports the automation of web applications across different browsers and platforms, making it a go-to choice for web developers and QA professionals alike. With its robust WebDriver API and support for various programming languages such as Java, Python, and C#, Selenium enables testers to create reliable and maintainable test scripts. Its versatility, scalability, and extensive community support make it an indispensable tool for regression testing.
 
-Refer to the Selenium website for more information.
+Refer to the [Selenium](https://www.selenium.dev/) website for more information.
 
 ### Katalon Studio
 Katalon Studio emerges as a comprehensive automation testing platform tailored for regression testing. This all-in-one solution offers a range of features for test case creation, execution, reporting, and integration with various testing frameworks and systems. Its user-friendly interface, support for multiple platforms and technologies, and seamless integration capabilities make it a top choice for QA teams seeking to streamline regression testing processes. With its advanced reporting and analytics features, Katalon Studio empowers teams to track test execution results, analyze test metrics, and ensure the quality of applications across successive releases.
