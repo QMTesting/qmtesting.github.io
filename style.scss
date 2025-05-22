@@ -893,7 +893,20 @@ th, td {
   width: 100px;
   height: 70px;
   border: none;	
-}		
+} 
+
+/* Change Page Size */
+body {
+  max-width: 100%; /* makes body full width */
+  margin: 0 auto;   /* centers the content if max-width is limited */
+}
+
+.container, .wrapper, .content {
+  max-width: 1000px; /* or whatever width you want */
+  margin: 0 auto;    /* center it */
+  padding: 0 20px;   /* optional spacing on sides */
+}
+
 	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
