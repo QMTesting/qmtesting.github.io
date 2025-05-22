@@ -898,13 +898,13 @@ th, td {
 /* Change Page Size */
 body {
   width: 1400px; /* makes body full width */
-  margin: 0 auto;   /* centers the content if max-width is limited */
+  margin: 0;   /* centers the content if max-width is limited */
 }
 
 .container, .wrapper, .content {
   width: 1025px; /* or whatever width you want */
-  margin: 0 auto;    /* center it */
-  padding: 0 auto;   /* optional spacing on sides */
+  margin: 0;    /* center it */
+  padding: 0;   /* optional spacing on sides */
 }
 
 } / * End Desktop */	
