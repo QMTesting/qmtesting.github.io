@@ -12,15 +12,9 @@ category: Automation
     "label": "Automation"
   },
   {
-    "title": "Manual vs Automated Testing",
-    "url": "/2024/12/manual-vs-automated.html",
-    "thumb": "/assets/images/testing.png",
-    "label": "Software Testing"
-  },
-  {
-    "title": "JUnit Basics",
-    "url": "/2024/11/junit-basics.html",
-    "thumb": "/assets/images/junit.png",
-    "label": "Java"
+    "title": "Powerful Automation Tools in the World of Regression Testing",
+    "url": /_posts/2025-05-22-Automation-AI-Tools.md",
+    "thumb": "/assets/images/Auto/Automation-AI-Tools.png",
+    "label": "Automation"
   }
 ]
