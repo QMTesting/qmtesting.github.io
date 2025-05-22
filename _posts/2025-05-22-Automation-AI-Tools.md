@@ -5,7 +5,7 @@ categories: ["Automation"]
 image: "/assets/images/Auto/Automation-AI-Tools.png"
 ---
 
-| ![Alt Testing Best Practice Techniques](/assets/images/Auto/Automation-AI-Tools.png) |
+| ![Alt Automation Testing Tools](/assets/images/Auto/Automation-AI-Tools.png) |
 |:--:|
 | *Image on Freepik* |
 
