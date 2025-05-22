@@ -894,7 +894,7 @@ th, td {
   height: 70px;
   border: none;	
 } 
-
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
 /* Change Page Size */
 body {
   max-width: 100%; /* makes body full width */
@@ -907,7 +907,7 @@ body {
   padding: 0 20px;   /* optional spacing on sides */
 }
 
-	
+} / * End Desktop */	
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
