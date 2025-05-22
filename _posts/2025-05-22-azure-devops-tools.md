@@ -207,68 +207,79 @@ Azure Monitor emerges as a robust monitoring tool facilitating comprehensive mon
 Azure Monitor is a comprehensive monitoring solution that plays a vital role in the Software Development Life Cycle (SDLC). Let’s explore its features and benefits:
 
 ### 1. Monitoring Across Environments:
-Azure Monitor collects, analyzes, and responds to monitoring data from both cloud and on-premises environments.
-It ensures maximum availability and performance of your applications and services.
+- Azure Monitor collects, analyzes, and responds to monitoring data from both cloud and on-premises environments.
+- It ensures maximum availability and performance of your applications and services.
 
-Granular Data Collection:
-Azure Monitor aggregates data from every layer and component of your system across multiple Azure and non-Azure subscriptions and tenants.
-It stores this data in a common platform for consumption by various tools.
+### 2. Granular Data Collection:
+- Azure Monitor aggregates data from every layer and component of your system across multiple Azure and non-Azure subscriptions and tenants.
+- It stores this data in a common platform for consumption by various tools.
 
-Types of Resources Monitored:
-Azure Monitor can monitor various resource types:
-Applications
-Virtual machines
-Guest operating systems
-Containers (including Prometheus metrics)
-Databases
-Security events (in combination with Azure Sentinel)
-Networking events (in combination with Network Watcher)
-Custom sources using APIs
-Integration with Third-Party Tools:
-You can export monitoring data from Azure Monitor into other systems:
-Third-party monitoring and visualization tools
-Ticketing and ITSM systems
-Azure Monitor SCOM Managed Instance (SCOM MI):
-If you’re a System Center Operations Manager (SCOM) user, Azure Monitor now includes SCOM MI.
-SCOM MI represents a cloud-hosted iteration of Operations Manager, offering the capability to transition your on-premises setup to Azure.
-Benefits for the SDLC and Automation:
-Continuous Monitoring: Azure Monitor enables continuous monitoring throughout workflows.
-Seamless Integration: It works seamlessly with development tools like Visual Studio, Visual Studio Code, and Azure DevOps.
-Platform Metrics and Logs: Automatically collect platform metrics, activity logs, and diagnostics logs from most Azure resources.
-Custom Insights: Customize visualizations and gain deeper insights into your applications and services.
+### 3. Types of Resources Monitored:
+- Azure Monitor can monitor various resource types:
+  - Applications
+  - Virtual machines
+  - Guest operating systems
+  - Containers (including Prometheus metrics)
+  - Databases
+  - Security events (in combination with Azure Sentinel)
+  - Networking events (in combination with Network Watcher)
+  - Custom sources using APIs
+
+### 4. Integration with Third-Party Tools:
+- You can export monitoring data from Azure Monitor into other systems:
+- Third-party monitoring and visualization tools
+- Ticketing and ITSM systems
+
+## 5. Azure Monitor SCOM Managed Instance (SCOM MI):
+- If you’re a System Center Operations Manager (SCOM) user, Azure Monitor now includes SCOM MI.
+- SCOM MI represents a cloud-hosted iteration of Operations Manager, offering the capability to transition your on-premises setup to Azure.
+
+### 6. Benefits for the SDLC and Automation:
+- Continuous Monitoring: Azure Monitor enables continuous monitoring throughout workflows.
+- Seamless Integration: It works seamlessly with development tools like Visual Studio, Visual Studio Code, and Azure DevOps.
+- Platform Metrics and Logs: Automatically collect platform metrics, activity logs, and diagnostics logs from most Azure resources.
+- Custom Insights: Customize visualizations and gain deeper insights into your applications and services.
+
 In summary, Azure Monitor simplifies monitoring, enhances collaboration, and ensures efficient software delivery. 
 
-Azure DevOps CLI
+## Azure DevOps CLI
+
 Azure DevOps Command Line Interface (CLI) stands as a versatile command-line interface tool enabling access and management of Azure DevOps resources directly from the command line. Developers can efficiently manage Azure DevOps projects, repositories, pipelines, and interact with other Azure DevOps tools, with support across Windows, Linux, and macOS platforms.
 
 Let’s explore its features and benefits in the context of the Software Development Life Cycle (SDLC) and automation:
 
-Streamlined Tasks and Automation:
-With the Azure DevOps CLI, you can perform tasks more efficiently by bypassing user interface workflows.
-It enables faster and more flexible interactions, allowing you to manage Azure DevOps Services directly from the command line.
-Integration with Azure Pipelines:
-Seamlessly integrates with Azure Pipelines, creating an end-to-end solution for managing the entire software delivery pipeline.
-You can trigger builds, tests, and deployments using CLI commands, ensuring a smooth flow of software through different stages.
-Efficient Configuration and Defaults:
-Configure default settings for your organization and project using the CLI.
-Set up defaults for organization and project parameters, ensuring consistency across your workflows.
-Rich Set of Commands:
-The Azure DevOps CLI provides a wide range of commands for managing different aspects of your projects:
-devops: Manage Azure DevOps organization-level operations.
-pipelines: Manage Azure Pipelines.
-boards: Manage Azure Boards.
-repos: Manage Azure Repos.
-artifacts: Manage Azure Artifacts.
-And more…
-Automation and Scripting:
-Use CLI in your automation scripts to build pipelines and deployment workflows.
-Automate repetitive tasks, such as creating work items, managing repositories, or configuring pipelines.
-Version Control Integration:
-The CLI supports both Git and Azure Repos for version control.
-You can create, clone, and manage repositories directly from the command line.
-Increased Efficiency and Consistency:
-By using the Azure DevOps CLI, you reduce manual effort and ensure consistent execution of tasks.
-It’s especially beneficial for teams practicing Continuous Integration (CI) and Continuous Delivery (CD).
+### 1. Streamlined Tasks and Automation:
+- With the Azure DevOps CLI, you can perform tasks more efficiently by bypassing user interface workflows.
+- It enables faster and more flexible interactions, allowing you to manage Azure DevOps Services directly from the command line.
+
+### 2. Integration with Azure Pipelines:
+- Seamlessly integrates with Azure Pipelines, creating an end-to-end solution for managing the entire software delivery pipeline.
+- You can trigger builds, tests, and deployments using CLI commands, ensuring a smooth flow of software through different stages.
+
+### 3. Efficient Configuration and Defaults:
+- Configure default settings for your organization and project using the CLI.
+- Set up defaults for organization and project parameters, ensuring consistency across your workflows.
+
+### 4. Rich Set of Commands:
+- The Azure DevOps CLI provides a wide range of commands for managing different aspects of your projects:
+  - devops: Manage Azure DevOps organization-level operations.
+  - pipelines: Manage Azure Pipelines.
+  - boards: Manage Azure Boards.
+  - repos: Manage Azure Repos.
+  - artifacts: Manage Azure Artifacts.
+
+### 5. Automation and Scripting:
+- Use CLI in your automation scripts to build pipelines and deployment workflows.
+- Automate repetitive tasks, such as creating work items, managing repositories, or configuring pipelines.
+
+### 6. Version Control Integration:
+- The CLI supports both Git and Azure Repos for version control.
+- You can create, clone, and manage repositories directly from the command line.
+
+### 7. Increased Efficiency and Consistency:
+- By using the Azure DevOps CLI, you reduce manual effort and ensure consistent execution of tasks.
+- It’s especially beneficial for teams practicing Continuous Integration (CI) and Continuous Delivery (CD).
+
 In summary, the Azure DevOps CLI simplifies management tasks, enhances automation, and contributes to a more efficient SDLC. 
 
 ## Conclusion
