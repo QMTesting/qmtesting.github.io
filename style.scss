@@ -898,13 +898,14 @@ th, td {
 /* Change Page Size */
 body {
   width: 1400px; /* makes body full width */
-  margin: 0;   /* centers the content if max-width is limited */
+  margin-left: 100px;   /* centers the content if max-width is limited */
+  margin-right: 100px; 	
 }
 
 .container, .wrapper, .content {
   width: 1025px; /* or whatever width you want */
-  margin: 0;    /* center it */
-  padding: 0;   /* optional spacing on sides */
+  margin-left: 25px;   /* centers the content if max-width is limited */
+  margin-right: 25px; 	
 }
 
 } / * End Desktop */	
