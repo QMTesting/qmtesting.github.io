@@ -58,15 +58,38 @@ permalink: /software-testing/
   
 } /* End Mobile */
 
-.breadcrumbs {
-  margin-left: 0px;
-  color: #000000;
+.breadcrumbs .current {
+  font-weight: bold;
+  color: #000; 
+  margin-left: 4px; 
+  
+} 
+ .breadcrumbs {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.5;
+  white-space: normal;
+  text-indent: 0;
+  padding-left: 0;
+  margin: 0;
+  color: #000;
 }
+
 .breadcrumbs a {
-  text-decoration: underline;
-}  
-.current { 
-  font-weight: 900;
-}      
+   text-decoration: underline;
+   color: #000;
+   margin-right: 4px;
+}
+
+.breadcrumbs {
+  text-align: left;
+  margin-left: 0px;
+  text-indent: 2.5em;   /* indent wrapped lines */
+  padding-left: 0;      /* no left padding */
+}
+
+.breadcrumbs a:first-child {
+  text-indent: 0;       /* "Home" line stays flush */
+}   
 
 </style>
