@@ -12,15 +12,9 @@ category: "Azure DevOps"
     "label": "Azure DevOps"
   },
   {
-    "title": "Manual vs Automated Testing",
-    "url": "/2024/12/manual-vs-automated.html",
-    "thumb": "/assets/images/testing.png",
-    "label": "Software Testing"
-  },
-  {
-    "title": "JUnit Basics",
-    "url": "/2024/11/junit-basics.html",
-    "thumb": "/assets/images/junit.png",
-    "label": "Java"
+    "title": "Best DevOps Tools & Services To Build Powerful Pipelines",
+    "url": "/_posts/2025-05-22-azure-devops-tools.md",
+    "thumb": "/assets/images/DevOps/Azure-DevOps-Tools.png",
+    "label": "Azure DevOps"
   }
 ]
