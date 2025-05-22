@@ -73,9 +73,9 @@ Azure Pipelines emerges as a powerful continuous integration and deployment tool
 - Automated Build-Deploy-Test Workflows: Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows.
 - Technology Agnostic: Choose your preferred test technologies and frameworks.
 - Benefits:
-a. Maintain Quality: Continuous testing ensures your app still works after every check-in and build.
-b. Early Problem Detection: Running tests automatically with each build helps find problems earlier.
-c. Rich Analytics: Review test results to resolve issues and measure the quality of your app.
+  - Maintain Quality: Continuous testing ensures your app still works after every check-in and build.
+  - Early Problem Detection: Running tests automatically with each build helps find problems earlier.
+  - Rich Analytics: Review test results to resolve issues and measure the quality of your app.
 
 In summary, Azure Pipeline automates the entire process from building code to running tests and deploying applications, saving time and ensuring consistency in every release. 
 
