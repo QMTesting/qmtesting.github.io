@@ -897,14 +897,14 @@ th, td {
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
 /* Change Page Size */
 body {
-  max-width: 100%; /* makes body full width */
+  max-width: 1000px; /* makes body full width */
   margin: 0 auto;   /* centers the content if max-width is limited */
 }
 
 .container, .wrapper, .content {
   max-width: 1000px; /* or whatever width you want */
   margin: 0 auto;    /* center it */
-  padding: 0 20px;   /* optional spacing on sides */
+  padding: 0 auto;   /* optional spacing on sides */
 }
 
 } / * End Desktop */	
