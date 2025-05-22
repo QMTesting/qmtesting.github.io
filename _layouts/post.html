@@ -6,7 +6,7 @@ layout: default
   <a href="{{ site.baseurl }}/">Home</a>
   {% assign cat = page.categories[0] %}
   &gt; <a href="{{ site.baseurl }}/{{ cat | downcase | replace: ' ', '-' }}/">{{ cat }}</a>
-  &gt; {{ page.title }}
+  &gt; <span class="current-page-title">{{ page.title }}</span>
 </nav>
 
 <br/><br/>
@@ -58,5 +58,8 @@ layout: default
     margin-left: 0px;
   }  
 
-  
+ .breadcrumbs .current-page-title {
+  font-weight: bold;
+  color: #000; 
+} 
 </style>
