@@ -163,7 +163,8 @@ Here are some key best practices for functional testing:
 #### 7. Prioritize Test Cases:
    Focusing on the most critical and high-risk functionalities first, and then expanding the test coverage incrementally, can help optimize the testing process and ensure that the most important aspects of the software are thoroughly validated.
 
-#### 8. Test Data Management:Manage test data effectively to ensure that it is relevant, representative, and covers a wide range of scenarios. Consider using automated tools or scripts for generating and managing test data.
+#### 8. Test Data Management:
+Manage test data effectively to ensure that it is relevant, representative, and covers a wide range of scenarios. Consider using automated tools or scripts for generating and managing test data.
 
 #### 9. Test Automation:Automate repetitive and time-consuming test cases to improve efficiency and reduce manual effort. Focus on automating regression tests, smoke tests, and critical functionalities.
 
