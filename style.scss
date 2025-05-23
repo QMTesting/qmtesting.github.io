@@ -738,12 +738,7 @@ img {
   justify-content: center;
   padding: 20px 0;	
 }
- @media only screen and (min-width: 820px) and (max-width: 2000px) {
-   .social-share {	 
-     justify-content: left;	 
-     margin-left: 425px; 
-    }	   
- }	 
+ 
 
 .social-share svg {
   width: 40px;
@@ -774,7 +769,8 @@ img {
 /* Optional Media Query */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
   .social-share {
-    margin-left: 300px;
+   justify-content: left;	 
+   margin-left: 425px; 
   }
   
 } /* End Desktop */
