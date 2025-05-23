@@ -948,10 +948,10 @@ th, td {
   .breadcrumbs {
     text-align: left;
     margin-left: 250px;
-    text-indent: 0px;   /* indent wrapped lines */
-    padding-left: 0;      /* no left padding */
     margin-right: 25px;
     width: 700px;
+    padding-left: 3em;     /* Indentation width */
+    text-indent: -3em;     /* Negative indent pulls first line back */	  
   }
  } 
 
@@ -959,8 +959,8 @@ th, td {
    .breadcrumbs {
     text-align: left;
     margin-left: 0px;
-    text-indent: 0px;   /* indent wrapped lines */
-    padding-left: 0;      /* no left padding */
+    padding-left: 3em;     /* Indentation width */
+    text-indent: -3em;     /* Negative indent pulls first line back */
     margin-right: 10px; 
   }
  } /* End Mobile */   
