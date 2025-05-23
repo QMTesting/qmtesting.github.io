@@ -3,10 +3,7 @@ layout: default
 ---
 
 <nav class="breadcrumbs">
-  <a href="{{ site.baseurl }}/">Home</a>
-  {% assign cat = page.categories[0] %}
-  &gt;<a href="{{ site.baseurl }}/{{ cat | downcase | replace: ' ', '-' }}/">{{ cat }}</a>
-  &gt;<span class="current-page-title">{{ page.title }}</span>
+  <a href="{{ site.baseurl }}/">Home</a>{% assign cat = page.categories[0] %}&gt;<a href="{{ site.baseurl }}/{{ cat | downcase | replace: ' ', '-' }}/">{{ cat }}</a>&gt;<span class="current-page-title">{{ page.title }}</span>
 </nav>
 
 <br/><br/><br/><br/>
