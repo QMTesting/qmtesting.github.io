@@ -11,8 +11,8 @@ permalink: /automation/
 
 <br/><br/>
 
-<h2 style="font-size: 40px; line-height: 40px; text-align: center;">Showing posts for:</h2>
-<h2 style="font-size: 35px; line-height: 35px; text-align: center;">Automation</h2>
+<h2 class="post-title" style="font-size: 40px; line-height: 40px; text-align: center;">Showing posts for:</h2>
+<h2 class="post-label" style="font-size: 35px; line-height: 35px; text-align: center;">Automation</h2>
 
 <div id="related-posts-cat">
   {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Automation'" %}
@@ -72,6 +72,13 @@ permalink: /automation/
     margin-left: 25px;   /* centers the content if max-width is limited */
     margin-right: 25px; 	
   }
+
+  .post-title {
+    margin-left: 150px;
+  } 
+  .post-label {
+    margin-left: 150px;
+  } 
   
   } / * End Desktop */	 
   
