@@ -736,8 +736,11 @@ img {
   display: flex;
   gap: 5px;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 0;	
 }
+ @media only screen and (min-width: 820px) and (max-width: 2000px) {
+     margin-left: 0; 
+ }	 
 
 .social-share svg {
   width: 40px;
