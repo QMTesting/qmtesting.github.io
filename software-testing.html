@@ -11,8 +11,8 @@ permalink: /software-testing/
 
 <br /><br />
 
-<h2 style="font-size: 40px; line-height: 40px; text-align: center;">Showing posts for:</h2>
-<h2 style="font-size: 35px; line-height: 35px; text-align: center;">Software Testing</h2>
+<h2 class="post-title" style="font-size: 40px; line-height: 40px; text-align: center;">Showing posts for:</h2>
+<h2 class="post-label" style="font-size: 35px; line-height: 35px; text-align: center;">Software Testing</h2>
 
 <div id="related-posts-cat">
   {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Software Testing'" %}
@@ -73,5 +73,12 @@ permalink: /software-testing/
   }
   
   } / * End Desktop */	
+
+   .post-title {
+    margin-left: 350px;
+  } 
+  .post-label {
+    margin-left: 350px;
+  } 
 
 </style>
