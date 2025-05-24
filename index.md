@@ -4,7 +4,9 @@ title: Welcome
 body_class: homepage
 ---
 
+<style>
   .site-name {	 
     margin-top: -10px;
     display: none;	   
   } 
+</style>
