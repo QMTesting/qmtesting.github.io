@@ -58,7 +58,8 @@ layout: default
   <form action="https://docs.google.com/forms/d/e/1FAIpQLSfnM0iyn-3Pv-MEJLDqruBteB8cg7vT9fdko11sWueo4slCVA/formResponse"
         id="customCommentForm"
         method="POST"
-        target="hidden_iframe">
+        target="hidden_iframe"
+        onsubmit="return validateRating();">
     
     <!-- Rating Field -->
     <label style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Rating</label>
@@ -96,23 +97,50 @@ layout: default
   </div>
 </div>
 
+<!-- Rating Script -->
+<style>
+  .star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .star.selected,
+  .star:hover,
+  .star:hover ~ .star {
+    color: #bc960d;
+  }
+</style>
 
 <script>
-  fetch("https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec")
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('comments');
-      container.innerHTML = data.reverse().map(comment => `
-        <div style="border-bottom: 1px solid #ccc; padding: 10px 0;">
-          <strong>${comment.Name}</strong> <br />
-          <p>${comment.Comment}</p>
-        </div>
-      `).join('');
-    })
-    .catch(error => {
-      document.getElementById('comments').innerText = 'Error loading comments.';
-      console.error(error);
+  const stars = document.querySelectorAll("#rating-stars .star");
+  const ratingField = document.getElementById("ratingField");
+
+  stars.forEach((star, idx) => {
+    star.addEventListener("click", () => {
+      // Remove selected class from all
+      stars.forEach(s => s.classList.remove("selected"));
+      // Add selected class to all up to the clicked one
+      for (let i = 0; i <= idx; i++) {
+        stars[i].classList.add("selected");
+      }
+      // Set rating value
+      ratingField.value = star.getAttribute("data-value");
     });
+  });
+
+  function validateRating() {
+    if (!ratingField.value) {
+      alert("Please select a rating before submitting.");
+      return false;
+    }
+    // Show thank you after short delay (optional)
+    setTimeout(() => {
+      document.getElementById("customCommentForm").style.display = "none";
+      document.getElementById("thankyou_message").style.display = "block";
+    }, 500);
+    return true;
+  }
 </script>
 
 
