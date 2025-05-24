@@ -49,6 +49,580 @@ layout: default
   {% include disqus.html %}
 </article>
 
+<!--VIEWER COMMENTS CODE ************************************************************************************************************************************-->
+<!-- COMMENTS START -->     
+    
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+
+<h2 id='form-heading'>Leave a Comment</h2>   
+
+<div id='commentSection'>
+
+  <form action='https://docs.google.com/forms/d/e/1FAIpQLSfnM0iyn-3Pv-MEJLDqruBteB8cg7vT9fdko11sWueo4slCVA/formResponse' id='customCommentForm' method='POST' target='hidden_iframe'>
+
+    <!-- Rating Field -->
+    <label style='display:block;margin-bottom:8px;font-weight:bold;color:#000000;'>Rating</label>
+    <div id='rating-stars' style='margin-bottom: 20px;'>
+      <span class='star' data-value='1'>&#9733;</span>
+      <span class='star' data-value='2'>&#9733;</span>
+      <span class='star' data-value='3'>&#9733;</span>
+      <span class='star' data-value='4'>&#9733;</span>
+      <span class='star' data-value='5'>&#9733;</span>
+    </div>
+    <input id='ratingField' name='entry.1611467638' type='hidden'/>
+
+    <!-- Name Field -->
+    <label for='nameField' style='display:block;margin-bottom:8px;font-weight:bold;color:#000000;'>Name *</label>
+    <input id='nameField' name='entry.533251169' placeholder='Your Name' required='required' style='width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background: #f3efdf;' type='text'/> 
+
+    <!-- Comment Field -->
+    <label for='commentField' style='display:block;margin-bottom:8px;font-weight:bold;color:#000000;'>Comment *</label>
+    <textarea id='commentField' name='entry.1803333929' placeholder='Your Comment' required='required' rows='5' style='width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background: #f3efdf;'/>
+
+    <!-- Post URL Hidden -->
+    <input id='postUrlField' name='entry.1243799819' required='required' type='hidden'/>
+
+    <!-- Honeypot Field -->
+    <input id='honeypot' name='honeypot_field' style='display:none;' type='text'/>
+
+    <!-- Submit Button -->
+    <button style='width:100%;padding:12px;background:#bc960d;color:black;border:none;border-radius:6px;font-size:18px;cursor:pointer;transition:background 0.3s;font-weight:900;'>Post Comment</button>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe id='hidden_iframe' name='hidden_iframe' style='display:none;'/>
+
+  </form>
+
+  <div id='thankyou_message' style='display:none;text-align:center;margin-top:20px;font-size:18px;color:#dd4472;'>
+    🎉 Thank you for your comment!
+  </div>
+</div>
+  
+  
+<h2 id='resp-heading'>Visitor Comments</h2>   
+<div id='commentsSection'>Loading comments...</div>    
+  
+</b:if>  
+    
+<!-- COMMENTS - START-->    
+    
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+
+<!-- Optional styling -->
+<style>
+  #customCommentForm button:hover {
+    background: #f2e9cb;
+  }
+  #customCommentForm input:focus,
+  #customCommentForm textarea:focus {
+    border-color: #f2e9cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(222,168,184,0.5);
+  }
+  @media only screen and (max-width: 768px) {
+    #commentSection {
+      margin-left: -15px;
+    }
+  }
+</style>
+
+<script>
+  const currentPageUrl = window.location.origin + window.location.pathname;
+
+  fetch(&#39;https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec?url=&#39; + encodeURIComponent(currentPageUrl))
+    .then(response =&gt; response.json())
+    .then(data =&gt; {
+      const container = document.getElementById(&#39;commentsSection&#39;);
+      container.innerHTML = &#39;&#39;;
+
+      if (data.length === 0) {
+        container.innerHTML = &#39;<p>No comments yet. Be the first!</p>&#39;;
+        return;
+      }
+
+      const ratings = data
+        .map(comment =&gt; {
+          const num = parseFloat(comment.rating);
+          return isNaN(num) ? null : num;
+        })
+        .filter(r =&gt; r !== null);
+
+      if (ratings.length &gt; 0) {
+        const averageRating = (ratings.reduce((sum, r) =&gt; sum + r, 0) / ratings.length).toFixed(1);
+        const avgRatingDiv = document.createElement(&#39;div&#39;);
+        avgRatingDiv.style.marginBottom = &#39;20px&#39;;
+        avgRatingDiv.style.fontSize = &#39;18px&#39;;
+        avgRatingDiv.style.fontWeight = &#39;bold&#39;;
+        avgRatingDiv.className = &#39;average-rating&#39;;
+        
+        if (averageRating &gt; 0 &amp;&amp; averageRating &lt; 1) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating &gt; 1 &amp;&amp; averageRating &lt; 2) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star-half-stroke'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating &gt; 2 &amp;&amp; averageRating &lt; 3) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star-half-stroke'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+      
+      if (averageRating &gt; 3 &amp;&amp; averageRating &lt; 4) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star-half-stroke'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating &gt; 4 &amp;&amp; averageRating &lt; 5) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star-half-stroke'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+     
+      if (averageRating == 5) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating == 4) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating == 3) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating == 2) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating == 1) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-solid fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+  
+      if (averageRating == 0) {
+        avgRatingDiv.innerHTML = `
+          Average Rating: ${averageRating} / 5 
+          <span style='color:#bc960d;font-size:20px;'>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+            <i class='fa-regular fa-star'/>
+          </span>`;
+        container.appendChild(avgRatingDiv);
+      }
+                            
+  
+  
+      } else {
+        const avgRatingDiv = document.createElement(&#39;div&#39;);
+        avgRatingDiv.style.marginBottom = &#39;20px&#39;;
+        avgRatingDiv.style.fontSize = &#39;18px&#39;;
+        avgRatingDiv.style.fontWeight = &#39;bold&#39;;
+        avgRatingDiv.className = &#39;average-rating&#39;;
+        avgRatingDiv.innerHTML = `&#11088; Average Rating: No ratings yet.<br/>`;
+        container.appendChild(avgRatingDiv);
+      }
+
+      data.slice(0, 10).forEach(comment =&gt; {
+        const div = document.createElement(&#39;div&#39;);
+        div.className = &#39;comment&#39;;
+        div.style.marginBottom = &#39;20px&#39;;
+        div.innerHTML = `
+        <strong>${comment.name}</strong> 
+        <em style='display:block; color: #555;'>${new Date(comment.timestamp).toLocaleString()}</em>
+        <p style='margin-top:10px;'>${comment.comment}</p>
+        ${comment.reply ? `
+          <div style='margin-top:10px; margin-left: 20px; padding: 10px; background: #fce8b2; border-left: 4px solid #bc960d; border-top: 2px solid #bc960d; border-bottom: 2px solid #bc960d; border-right: 2px solid #bc960d;'>
+            <strong>Author Reply:</strong> ${comment.reply}
+          </div>` : &quot;&quot;}
+        <hr/>
+      `;
+        container.appendChild(div);
+      });
+    })
+    .catch(err =&gt; {
+      console.error(&#39;&#10060; Error loading comments:&#39;, err);
+      document.getElementById(&#39;commentsSection&#39;).innerHTML = &#39;<p>Failed to load comments.</p>&#39;;
+    });
+</script>
+
+<script>
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  const form = document.getElementById(&#39;customCommentForm&#39;);
+  const thankYouMessage = document.getElementById(&#39;thankyou_message&#39;);
+  const postUrlField = document.getElementById(&#39;postUrlField&#39;);
+
+  postUrlField.value = window.location.origin + window.location.pathname;
+
+  document.querySelectorAll(&#39;#rating-stars .star&#39;).forEach(function(star) {
+    star.addEventListener(&#39;click&#39;, function() {
+      const rating = this.getAttribute(&#39;data-value&#39;);
+      document.getElementById(&#39;ratingField&#39;).value = rating;
+
+      document.querySelectorAll(&#39;#rating-stars .star&#39;).forEach(function(s) {
+        s.classList.remove(&#39;selected&#39;);
+      });
+
+      for (let i = 0; i &lt; rating; i++) {
+        document.querySelectorAll(&#39;#rating-stars .star&#39;)[i].classList.add(&#39;selected&#39;);
+      }
+    });
+  });
+
+  form.addEventListener(&#39;submit&#39;, function(e) {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: &#39;POST&#39;,
+      body: formData,
+      mode: &#39;no-cors&#39;
+    }).then(() =&gt; {
+      form.reset();
+      showThankYouMessage();
+    }).catch((error) =&gt; {
+      console.error(&#39;Error!&#39;, error.message);
+      alert(&#39;Something went wrong. Please try again.&#39;);
+    });
+  });
+
+  function validateForm() {
+    const name = document.getElementById(&#39;nameField&#39;).value.trim();
+    const comment = document.getElementById(&#39;commentField&#39;).value.trim();
+    if (!name || !comment) {
+      alert(&#39;Please fill out both Name and Comment.&#39;);
+      return false;
+    }
+    return true;
+  }
+
+  function showThankYouMessage() {
+    thankYouMessage.style.display = &#39;block&#39;;
+    thankYouMessage.style.opacity = &#39;1&#39;;
+
+    setTimeout(() =&gt; {
+      thankYouMessage.style.opacity = &#39;0&#39;;
+      setTimeout(() =&gt; {
+        thankYouMessage.style.display = &#39;none&#39;;
+        thankYouMessage.style.opacity = &#39;1&#39;;
+        location.reload();
+      }, 1000);
+    }, 5000);
+  }
+});
+//document.body.style.blur = &#39;none&#39;;  
+</script>
+
+  
+</b:if>
+
+<style>
+  
+   #form-heading {
+   text-align: left;
+   margin-bottom:25px;
+   color:#000000;
+   font-size:30px;
+   margin-left: 40px;   
+   }
+   #rating-stars .star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+    }
+    #rating-stars .star.selected {
+      color: #ffcc00;
+    }
+  .comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 4px solid #bc960d;
+    border-radius: 12px; 
+    background: #f3efdf;
+    width: 780px;
+    margin-left: 0px;
+  }
+  .comment strong {
+    font-size: 16px;
+    color: #333;
+  }
+  .comment em {
+    font-size: 12px;
+    color: #660;
+    float: right;
+  }
+  .comment hr {
+    width: 0px;
+   }
+  #commentsSection {
+     margin-left: 30px;
+  }
+  .reply-box {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 3px solid #c88a9a;
+  font-style: italic;
+}
+
+  /* Comment Section Styling */
+  #commentSection {
+    width: 780px;
+    padding: 15px;
+    background: #fce8b2;
+    border: 4px solid #bc960d;
+    border-radius: 12px;
+    /*box-sizing: border-box;*/
+    margin-left: 40px;
+  }
+ 
+  #customCommentForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  #customCommentForm input[type=&quot;text&quot;],
+  #customCommentForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  /* Submit Button Styling */
+  #customCommentForm button[type=&quot;submit&quot;] {
+    width: 100%;
+    padding: 10px;
+    background-color: #bc960d;
+    color: black; /* Black text */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #customCommentForm button[type=&quot;submit&quot;]:hover {
+    background-color: #d28da5;
+  }
+  
+
+  /* Thank You Message */
+  #thankyou_message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+  }
+  
+  /* Response Comment Section */
+  #resp-heading {  
+     margin-bottom:25px;
+     color:#000000;
+     font-size: 30px;
+     margin-left: 40px;
+   }
+  
+  #commentsSection {
+    margin-left: 45px;
+  } 
+  
+   @media (max-width: 768px) {
+ 
+     #form-heading {
+     text-align: left;
+     margin-bottom:25px;
+     color:#000000;
+     font-size:30px;
+     margin-left: 10px;
+    }
+  
+   #commentSection {
+    width: 360px;
+    padding: 10px;
+    background: #fce8b2;
+    border: 4px solid #bc960d;
+    border-radius: 12px;
+    margin-left: 10px; 
+  }
+  
+   .average-rating {
+    text-align: left;  
+    margin-left: 10px;
+  }
+  
+   #commentsSection {
+     margin-left: 0px;
+     width: 385px;
+     text-align: left;
+     margin-left: 10px;
+     /*border: 4px solid #bc960d;*/
+     border-radius: 12px;
+    }
+
+    #commentsSection h2 {
+      margin-left: 10px;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: bold;
+      position: relative; /* for the underline effect */
+      display: inline-block; /* shrink underline width */
+    }
+
+    #commentsSection h2::after {
+      content: &quot;&quot;;
+      position: absolute;
+      left: 0;
+      bottom: -5px; /* position slightly below the text */
+      width: 100%;
+      height: 5px;
+      background-color: #f5e9bc; /* soft pink underline */
+      border-radius: 12px;
+      opacity: 0.6; /* make it soft */
+    }
+    #commentsSection p {      
+       margin-left: 10px; 
+       width: 300px;
+     }
+  
+   /* Comment Response Section */
+  
+    #resp-heading {  
+       margin-bottom:20px;
+       color:#000000;
+       font-size: 30px;
+       margin-left: 10px;
+      
+     }
+  
+     .comment {
+      margin-left: 0px;
+      width: 360px; 
+      background: #f3efdf;
+      
+    }
+     .comment P {
+      margin-left: 0px;
+      width: 350px; 
+      font-size: 16px;
+      line-height: 18px;
+    }
+  
+    .average-rating {
+    padding-left: 0px; 
+   }
+  
+  
+  } /* Mobile End */
+  
+
+</style>
+    
+<!-- COMMENT RESPONSES END-->   
+
+
+
+
+  
+<!--NON-COMMENTS STYLING-->
 <style>
   /* H1 Titles */
   h1 {
