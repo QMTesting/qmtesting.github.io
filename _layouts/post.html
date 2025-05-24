@@ -193,7 +193,7 @@ layout: default
         const commentsList = document.getElementById('commentsList');
         commentsList.innerHTML = "";
 
-        const filtered = comments.filter(c => c.postUrl === currentPostUrl);
+        const filtered = comments.filter(c => c.url === currentPostUrl);
         if (filtered.length === 0) {
           commentsList.innerHTML = "<p>No comments yet. Be the first to comment!</p>";
           return;
