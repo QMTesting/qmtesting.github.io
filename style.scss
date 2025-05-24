@@ -954,7 +954,10 @@ th, td {
     padding-left: 1em;     /* Indentation width */
     text-indent: -1em;     /* Negative indent pulls first line back */	  
   }
- } 
+
+   body.layout-home .site-name {	 
+    margin-top: -10px; 
+  } 
 
  @media only screen and (max-width: 780px) {
    .breadcrumbs {
