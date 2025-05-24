@@ -145,7 +145,6 @@ layout: default
 
 <!--Retrieve Comments Responses - Start -->
 
-
 <!-- Display Comments -->
 <div id="commentsContainer" style="margin-top: 40px;">
   <h3>🗨️ Reader Comments</h3>
@@ -154,7 +153,7 @@ layout: default
 
 <!-- SCRIPT -->
 <script>
-  const commentsEndpoint = 'https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec'; // Replace with your Apps Script URL
+  const commentsEndpoint = 'https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec';
   const currentPostUrl = "{{ page.url | absolute_url }}";
 
   // Handle star rating
@@ -187,19 +186,20 @@ layout: default
 
   // Fetch and display comments
   function fetchComments() {
-    fetch(commentsEndpoint)
+    const urlWithParam = `${commentsEndpoint}?url=${encodeURIComponent(currentPostUrl)}`;
+
+    fetch(urlWithParam)
       .then(response => response.json())
       .then(comments => {
         const commentsList = document.getElementById('commentsList');
         commentsList.innerHTML = "";
 
-        const filtered = comments.filter(c => c.url === currentPostUrl);
-        if (filtered.length === 0) {
+        if (!comments || comments.length === 0) {
           commentsList.innerHTML = "<p>No comments yet. Be the first to comment!</p>";
           return;
         }
 
-        filtered.reverse().forEach(entry => {
+        comments.reverse().forEach(entry => {
           const commentBlock = document.createElement('div');
           commentBlock.style = "border:1px solid #ddd;padding:12px;border-radius:8px;margin-bottom:15px;background:#f9f9f9;";
 
@@ -219,11 +219,11 @@ layout: default
       });
   }
 
-  // Initial load
+  // Load comments when page loads
   fetchComments();
 </script>
 
-<!--Retrieve Comments Responses - Start -->
+<!--Retrieve Comments Responses - End -->
 
 
 <!--VIEWER COMMENTS CODE - END*******************************************************************************************************************************-->
