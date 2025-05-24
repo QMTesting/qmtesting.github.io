@@ -51,11 +51,51 @@ layout: default
 
 <!--VIEWER COMMENTS CODE - START*****************************************************************************************************************************-->
 
-h3>Leave a Comment</h3>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnM0iyn-3Pv-MEJLDqruBteB8cg7vT9fdko11sWueo4slCVA/formResponse/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!-- COMMENTS START -->
+<h2 id="form-heading">Leave a Comment</h2>
 
-<h3>Recent Comments</h3>
-<div id="comments"></div>
+<div id="commentSection">
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfnM0iyn-3Pv-MEJLDqruBteB8cg7vT9fdko11sWueo4slCVA/formResponse"
+        id="customCommentForm"
+        method="POST"
+        target="hidden_iframe">
+    
+    <!-- Rating Field -->
+    <label style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Rating</label>
+    <div id="rating-stars" style="margin-bottom: 20px;">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <input id="ratingField" name="entry.1611467638" type="hidden"/>
+
+    <!-- Name -->
+    <label for="nameField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Name *</label>
+    <input id="nameField" name="entry.533251169" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background:#f3efdf;" type="text"/>
+
+    <!-- Comment -->
+    <label for="commentField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Comment *</label>
+    <textarea id="commentField" name="entry.1803333929" placeholder="Your Comment" required rows="5" style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background:#f3efdf;"></textarea>
+
+    <!-- Post URL -->
+    <input id="postUrlField" name="entry.1243799819" value="{{ page.url | absolute_url }}" type="hidden"/>
+
+    <!-- Honeypot -->
+    <input id="honeypot" name="honeypot_field" style="display:none;" type="text"/>
+
+    <!-- Submit -->
+    <button type="submit" style="width:100%;padding:12px;background:#bc960d;color:black;border:none;border-radius:6px;font-size:18px;cursor:pointer;font-weight:900;">Post Comment</button>
+    
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </form>
+
+  <div id="thankyou_message" style="display:none;text-align:center;margin-top:20px;font-size:18px;color:#dd4472;">
+    🎉 Thank you for your comment!
+  </div>
+</div>
+
 
 <script>
   fetch("https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec")
