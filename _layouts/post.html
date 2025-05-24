@@ -143,6 +143,88 @@ layout: default
   }
 </script>
 
+<!--Retrieve Comments Responses - Start -->
+
+
+<!-- Display Comments -->
+<div id="commentsContainer" style="margin-top: 40px;">
+  <h3>🗨️ Reader Comments</h3>
+  <div id="commentsList" style="margin-top: 10px;"></div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  const commentsEndpoint = 'https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec'; // Replace with your Apps Script URL
+  const currentPostUrl = "{{ page.url | absolute_url }}";
+
+  // Handle star rating
+  document.querySelectorAll(".star").forEach(star => {
+    star.addEventListener("click", () => {
+      const value = star.getAttribute("data-value");
+      document.getElementById("ratingField").value = value;
+      document.querySelectorAll(".star").forEach(s => {
+        s.style.color = s.getAttribute("data-value") <= value ? "#bc960d" : "#aaa";
+      });
+    });
+  });
+
+  // Handle form submission
+  function handleFormSubmit() {
+    document.getElementById("customCommentForm").style.display = "none";
+  }
+
+  // After iframe loads (form submitted)
+  function afterSubmit() {
+    document.getElementById("thankyou_message").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("thankyou_message").style.display = "none";
+      document.getElementById("customCommentForm").reset();
+      document.querySelectorAll(".star").forEach(s => s.style.color = "#aaa");
+      document.getElementById("customCommentForm").style.display = "block";
+      fetchComments(); // Refresh comments
+    }, 2000);
+  }
+
+  // Fetch and display comments
+  function fetchComments() {
+    fetch(commentsEndpoint)
+      .then(response => response.json())
+      .then(comments => {
+        const commentsList = document.getElementById('commentsList');
+        commentsList.innerHTML = "";
+
+        const filtered = comments.filter(c => c.postUrl === currentPostUrl);
+        if (filtered.length === 0) {
+          commentsList.innerHTML = "<p>No comments yet. Be the first to comment!</p>";
+          return;
+        }
+
+        filtered.reverse().forEach(entry => {
+          const commentBlock = document.createElement('div');
+          commentBlock.style = "border:1px solid #ddd;padding:12px;border-radius:8px;margin-bottom:15px;background:#f9f9f9;";
+
+          commentBlock.innerHTML = `
+            <p style="margin:0;font-weight:bold;color:#bc960d;">${entry.name} 
+              <span style="font-weight:normal;color:#999;">(${new Date(entry.timestamp).toLocaleString()})</span>
+            </p>
+            <p style="margin:8px 0 0;color:#444;">${entry.comment}</p>
+            <p style="margin:6px 0 0;font-size:14px;color:#bc960d;">Rating: ${"★".repeat(entry.rating)}${"☆".repeat(5 - entry.rating)}</p>
+          `;
+          commentsList.appendChild(commentBlock);
+        });
+      })
+      .catch(error => {
+        console.error("Error fetching comments:", error);
+        document.getElementById("commentsList").innerHTML = "<p>Unable to load comments at this time.</p>";
+      });
+  }
+
+  // Initial load
+  fetchComments();
+</script>
+
+<!--Retrieve Comments Responses - Start -->
+
 
 <!--VIEWER COMMENTS CODE - END*******************************************************************************************************************************-->
   
