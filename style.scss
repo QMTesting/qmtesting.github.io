@@ -275,13 +275,14 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
 }
+
 
 // Desktop
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
@@ -893,21 +894,6 @@ th, td {
   border: none;	
 } 
 
- @media only screen and (min-width: 820px) and (max-width: 2000px) {
-   .wrapper-footer {
-     margin-top: 50px;
-     border-top: 1px solid #eee;
-     border-bottom: 1px solid #eee;
-     background-color: #eee;
-     width: 1075px;
-   }
-     
-} 
-
- .footer {
-     background-color: #eee;	   
-  }
-
   /* BREADCRUMBS */  
 .breadcrumbs .current-page-title {
   font-weight: 900;
@@ -987,6 +973,28 @@ th, td {
     text-indent: -1em;     /* Negative indent pulls first line back */
     margin-right: 10px; 
   }
+
+  /* Footer menu */
+  .footer-menu {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-menu nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}	 
  } /* End Mobile */   
 
 /* HEADER STYLING */
