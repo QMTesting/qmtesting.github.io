@@ -6,11 +6,11 @@ permalink: /disclaimer/
 
 ## Last Updated: 2025-02-04
 
-QM Testing | [https://qmtesting.github.io](https://qmtesting.github.io) (the “Site”), a personal blog I manage serves as an informational platform.
+QM Testing / [https://qmtesting.github.io](https://qmtesting.github.io) (the “Site”), a personal blog I manage serves as an informational platform.
 
 The content on the Site (referred to as the “Services”) is provided for general informational purposes only. The Site does not accept responsibility for any errors or omissions in the content of the Services.
 
-This statement governs our privacy policies concerning those users of the Site (“Visitors” / “Authorized Customers”) who visit or subscribe/register and make use of the various Services offered by the Site. References to “us,” “our,” “we”, and “I” in this document pertain to QM Testing | [https://qmtesting.github.io](https://qmtesting.github.io).
+This statement governs our privacy policies concerning those users of the Site (“Visitors” / “Authorized Customers”) who visit or subscribe/register and make use of the various Services offered by the Site. References to “us,” “our,” “we”, and “I” in this document pertain to QM Testing / [https://qmtesting.github.io](https://qmtesting.github.io).
 
 Under no circumstances shall the Site be held liable for any special, direct, indirect, consequential, or incidental damages arising from the use of the Services or its contents, whether in contract, negligence, or other tort actions. The Site reserves the right to update, modify, or delete the content of the Services without prior notice.
 
@@ -24,4 +24,4 @@ The content of our articles is not meant to substitute for individualized guidan
 
 ## Contact Us
 
-For inquiries, please contact QM Testing | [https://qmtesting.github.io](https://qmtesting.github.io) via email at Ask.TestingQM@outlook.com
+For inquiries, please contact QM Testing / [https://qmtesting.github.io](https://qmtesting.github.io) via email at Ask.TestingQM@outlook.com
