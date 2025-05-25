@@ -13,3 +13,9 @@ Whether you're curious about manual testing methodologies, eager to learn about 
 We are passionate about sharing knowledge and empowering newcomers to excel in software testing and quality assurance. Everyone has the potential to become a proficient tester, and we're dedicated to providing the resources you need to succeed.
 
 Join us on this exciting journey as we demystify the world of software testing, quality assurance, and automation, making it accessible and enjoyable for beginners. Let's learn, grow, and innovate together!
+
+<style>
+  .site-name {
+    margin-top: -10px;
+  }  
+</style>
