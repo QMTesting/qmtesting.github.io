@@ -36,7 +36,7 @@ When visitors leave comments on the Site we collect the data shown in the commen
 
 When a visitor submits a comment only the visitor's Name, Avatar, Date Submitted, and Comment Contents will be published.
 
-An anonymized string, known as a hash, derived from your email address may be transmitted to the Gravatar service to determine if you have an associated account. The Gravatar service's Privacy Policy can be found here: https://automattic.com/privacy/. Upon approval of your comment, your profile picture/Avatar will be displayed publicly alongside your comment.
+An anonymized string, known as a hash, derived from your email address may be transmitted to the Gravatar service to determine if you have an associated account. The Gravatar service's Privacy Policy can be found here: [https://automattic.com/privacy/](https://automattic.com/privacy/). Upon approval of your comment, your profile picture/Avatar will be displayed publicly alongside your comment.
 
 Any Personal information a visitor shares in blog post comments on this Site or on social media platforms is visible to other users and may be read, collected, or used by others. This Site bears no responsibility for Personal information that a visitor shares in blog post comments on this site or social media platforms that is visible to others. Visitors should exercise caution when disclosing Personal Information in such forums.
 
@@ -48,7 +48,7 @@ If you upload images to the Site, you should avoid uploading images with embedde
 
 ### Cookies
 
-Cookies are data files placed on your device or computer, typically containing an anonymous unique identifier. For detailed information on cookies and how to disable them, please refer to http://www.allaboutcookies.org..
+Cookies are data files placed on your device or computer, typically containing an anonymous unique identifier. For detailed information on cookies and how to disable them, please refer to [http://www.allaboutcookies.org](http://www.allaboutcookies.org).
 
 If you choose to leave a comment on our Site, you have the option to consent to saving your Name, Email Address, and Website in cookies. These cookies are crafted for your convenience, eliminating the necessity to re-enter your details when leaving subsequent comments. They will remain active for one year.
 
@@ -110,7 +110,7 @@ To ensure compliance with GDPR, we utilize analytics software to understand how 
 
 • AMP users are given the option to agree to the Google AMP Consent Box before being tracked.
 
-For further information on how Google utilizes your Personal Information, please refer to their Privacy Policy here. Additionally, you can opt-out of Google Analytics here..
+For further information on how Google utilizes your Personal Information, please refer to their Privacy Policy [here](https://www.google.com/intl/en/policies/privacy/). Additionally, you can opt-out of Google Analytics [here](https://tools.google.com/dlpage/gaoptout).
 
 ## Search Feature:
 
@@ -134,9 +134,9 @@ Additionally, we may share your Personal Information to adhere to pertinent laws
 
 ## Behavioral Advertising
 
-With your consent, we utilize your Personal Information to deliver targeted advertisements or marketing communications that we believe align with your interests, as explained earlier. To gain a better understanding of how targeted advertising functions, you can explore the Network Advertising Initiative’s educational page at http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.
+With your consent, we utilize your Personal Information to deliver targeted advertisements or marketing communications that we believe align with your interests, as explained earlier. To gain a better understanding of how targeted advertising functions, you can explore the Network Advertising Initiative’s educational page at [http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work](http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work).
 
-You have the option to opt out of targeted advertising by visiting https://www.google.com/settings/ads/anonymous. You also have the option to opt out of specific services by accessing the Digital Advertising Alliance’s opt-out portal at: http://optout.aboutads.info/. It's important to note that certain correspondence related to your account transactions cannot be unsubscribed from or opted out of.
+You have the option to opt out of targeted advertising by visiting [https://www.google.com/settings/ads/anonymous](https://www.google.com/settings/ads/anonymous). You also have the option to opt out of specific services by accessing the Digital Advertising Alliance’s opt-out portal at: [http://optout.aboutads.info](http://optout.aboutads.info/). It's important to note that certain correspondence related to your account transactions cannot be unsubscribed from or opted out of.
 
 ## Disclosure Of Personal Information
 
