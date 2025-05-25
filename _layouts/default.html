@@ -169,6 +169,17 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          <!-- Add this menu INSIDE the existing footer structure -->
+          <div class="footer-menu">
+            <nav>
+             <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
         </footer>
       </div>
     </div>
@@ -198,16 +209,6 @@
 
 </style>    
 
-<footer class="footer-menu">
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
-  </nav>
-</footer>
 
     
   </body>
