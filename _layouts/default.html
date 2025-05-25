@@ -44,7 +44,7 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
+          <nav id="header-nav">
             <a href="/">Home</a>
             <a href="{{ site.baseurl }}/software-testing">Software Testing</a>
             <a href="{{ site.baseurl }}/types-of-testing">Types of Testing</a>
@@ -75,12 +75,14 @@
          text-align: center;
          margin-left: 300px;
        } 
-
-       nav {
-        text-align: center;
-        text-decoration: underline; 
-        justify-content: center; 
-       }  
+       @media only screen and (min-width: 820px) and (max-width: 2000px) {
+         header nav {
+          text-align: center;
+          text-decoration: underline; 
+          justify-content: center; 
+           margin-left: 200px;
+         } 
+       } /* End Desktop */  
 
        @media only screen and (max-width: 780px) {
           .welcome-heding {
