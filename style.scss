@@ -956,26 +956,25 @@ th, td {
   }
 
   /* Footer menu */
- .footer-menu {
-  background: #f7f7f7;
-  border-top: 1px solid #ddd;
-  padding: 20px 0;
+  .footer-menu {
+  margin-top: 20px;
   text-align: center;
+}
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+.footer-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
+.footer-menu nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
  }/* End Desktop */ 	 
