@@ -43,7 +43,7 @@ For inquiries, please contact QM Testing / [https://qmtesting.github.io](https:/
   @media only screen and (max-width: 780px) { 
     .page {
     margin-left: 15px;
-    margin-right: 20x;
+    margin-right: 20px;
     }
 
   } /* End Mobile */  
