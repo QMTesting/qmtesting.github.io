@@ -661,7 +661,7 @@ img {
 /* RELATED POSTS */
 .related-posts-grid {
   display: grid;
-  gap: 5px;
+  gap: 3px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
   margin-top: 1.5em;
 }
@@ -678,7 +678,7 @@ img {
   height: auto;
 }
 .related-post p {
-  padding: 0.5em;
+  padding: 0.25em;
   font-size: 14px;
   font-weight: 600;	
   text-align: center;
