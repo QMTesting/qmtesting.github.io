@@ -38,6 +38,13 @@ For inquiries, please contact QM Testing / [https://qmtesting.github.io](https:/
     margin-left: 100px;
     margin-right: 50px;
   }
-
   } /*End Desktop */
+
+  @media only screen and (max-width: 780px) { 
+    .page {
+    margin-left: 15px;
+    margin-right: 20x;
+    }
+
+  } /* End Mobile */  
 </style>
