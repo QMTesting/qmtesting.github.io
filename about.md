@@ -18,4 +18,10 @@ Join us on this exciting journey as we demystify the world of software testing, 
   .site-name {
     margin-top: -10px;
   }  
+
+  .content-wrapper {
+    max-width: 800px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 </style>
