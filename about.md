@@ -20,8 +20,8 @@ Join us on this exciting journey as we demystify the world of software testing, 
   }  
 
  .page {
-    max-width: 800px;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 1000px;
+    margin-left: 250px;
+    margin-right: 250px;
   }
 </style>
