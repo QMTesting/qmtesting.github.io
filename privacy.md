@@ -251,8 +251,15 @@ If you have any questions please contact us at Ask.TestingQM@outlook.com
     width: 800px;
     margin-left: 100px;
     margin-right: 50px;
-  }
+  }    
 
   } /*End Desktop */
+
+  @media only screen and (max-width: 780px) { 
+    .page {
+    margin-left: 15px;
+    margin-right: 20px;
+    }
+  } /* End Mobile */
 </style>
 
