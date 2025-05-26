@@ -17,7 +17,7 @@ permalink: /types-of-testing/
 <div id="related-posts-cat" >
   {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Types of Testing'" %}
   {% for post in software_posts %}
-    <a href="{{ post.url | relative_url }}" style="text-decoration: none; text-align: center;">
+    <a href="{{ post.url | relative_url }}" style="text-decoration:  underline; text-align: center;">
       <img class="related-img" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
       <div style="color: #000; font-size: 18px; font-weight: bold;">{{ post.title }}</div>
     </a>
