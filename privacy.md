@@ -239,3 +239,13 @@ We recommend reviewing this Privacy Policy periodically for any alterations. Cha
 ## Contact Us
 
 If you have any questions please contact us at Ask.TestingQM@outlook.com
+
+<style>
+  @media only screen and (min-width: 820px) and (max-width: 2000px) {
+  /* Indent Content  */  
+    #main .container (
+      margin-left: 150px;
+    }
+  } /*End Desktop */
+</style>
+
