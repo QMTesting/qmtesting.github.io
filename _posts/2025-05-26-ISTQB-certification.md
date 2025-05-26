@@ -30,7 +30,7 @@ The ASTQB represents the American arm of ISTQB, while the CSTB is the Canadian I
 
 Refer to this link for a list of all of the ISTQB branches around the globe:
 
-[ISTQB branches](https://www.istqb.org/certifications/member-board-list)
+[ISTQB branches](https://https://www.istqb.org/member-boards/)
 
 ## ISTQB Industry Standardization
 
@@ -108,7 +108,7 @@ This certification addresses usability testing principles and techniques used to
 
 ## ISTQB Exam Preparation
 
-Prepare for these ISTQB certification exams by studying the free software testing glossary, exam syllabus, sample questions, and answers provided by ISTQB, and then register for the exams through the official global ISTQB exam provider [ISTQA](https://atsqa.org/?_gl=1*1ulqxvs*_gcl_aw*R0NMLjE3MTI3NTM4MjEuQ2p3S0NBanc4ZGl3QmhBYkVpd0E3aV9zSlRHYzBzSHp5bVdoSUV4b2JxdFVQcC02TmRBaXI5WG9nUlN5TFphbHVLYXNXVDZkT1YtR2JSb0MxWVVRQXZEX0J3RQ..*_gcl_au*MjIyMzk1NDY1LjE3MTI3NTM4MjE.*_ga*MTcyMjg4OTM3NS4xNzEyNzUzODIx*_ga_4PE1SH988B*MTcxMjc2NDQ5My4yLjEuMTcxMjc2NDQ5NC41OS4wLjA.*_ga_9D304MHQJK*MTcxMjc1MzgyMS4xLjEuMTcxMjc2NDQ5NC41OS4wLjA.&_ga=2.66936877.28680175.1712753821-1722889375.1712753821&_gac=1.258664312.1712753821.CjwKCAjw8diwBhAbEiwA7i_sJTGc0sHzymWhIExobqtUPp-6NdAir9XogRSyLZaluKasWT6dOV-GbRoC1YUQAvD_BwE) in the US or [CSTB](https://cstb.ca/exams-offered) in Canada. 
+Prepare for these ISTQB certification exams by studying the free software testing glossary, exam syllabus, sample questions, and answers provided by ISTQB, and then register for the exams through the official global ISTQB exam provider [ISTQA](https://atsqa.org/?_gl=1*1ulqxvs*_gcl_aw*R0NMLjE3MTI3NTM4MjEuQ2p3S0NBanc4ZGl3QmhBYkVpd0E3aV9zSlRHYzBzSHp5bVdoSUV4b2JxdFVQcC02TmRBaXI5WG9nUlN5TFphbHVLYXNXVDZkT1YtR2JSb0MxWVVRQXZEX0J3RQ..*_gcl_au*MjIyMzk1NDY1LjE3MTI3NTM4MjE.*_ga*MTcyMjg4OTM3NS4xNzEyNzUzODIx*_ga_4PE1SH988B*MTcxMjc2NDQ5My4yLjEuMTcxMjc2NDQ5NC41OS4wLjA.*_ga_9D304MHQJK*MTcxMjc1MzgyMS4xLjEuMTcxMjc2NDQ5NC41OS4wLjA.&_ga=2.66936877.28680175.1712753821-1722889375.1712753821&_gac=1.258664312.1712753821.CjwKCAjw8diwBhAbEiwA7i_sJTGc0sHzymWhIExobqtUPp-6NdAir9XogRSyLZaluKasWT6dOV-GbRoC1YUQAvD_BwE) in the US or [CSTB](https://cstb.ca/exams-offered) in Canada. You can refer to [ISTQB branches](https://https://www.istqb.org/member-boards/) for information on exam preparation outside the US and Canada.
 
 ## Conclusion
 
