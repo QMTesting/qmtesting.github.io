@@ -54,4 +54,13 @@ For general inquiries, you can contact us at the following email address: Ask.Te
   }
 
   } /*End Desktop */
+
+   @media only screen and (max-width: 780px) { 
+    .page {
+    margin-left: 15px;
+    margin-right: 20px;
+    }
+
+  } /* End Mobile */  
+  
 </style>
