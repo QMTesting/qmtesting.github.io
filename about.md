@@ -21,7 +21,7 @@ Join us on this exciting journey as we demystify the world of software testing, 
 
  .page {
     width: 800px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
   }
 </style>
