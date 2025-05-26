@@ -832,7 +832,11 @@ img {
   font-size: 1.1em;
   margin: 0.5em 0 0;
   text-align: center;
-  line-height: 20px;	
+  line-height: 20px;
+  text-decoration: underline;	
+}
+.recent-post-title a {
+  text-decoration: underline;	
 }
 
 @media only screen and (max-width: 780px) {
