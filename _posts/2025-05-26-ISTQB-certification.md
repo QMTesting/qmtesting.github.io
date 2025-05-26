@@ -30,7 +30,7 @@ The ASTQB represents the American arm of ISTQB, while the CSTB is the Canadian I
 
 Refer to this link for a list of all of the ISTQB branches around the globe:
 
-[ISTQB branches](https://https://www.istqb.org/member-boards/)
+[ISTQB branches](https://www.istqb.org/member-boards/)
 
 ## ISTQB Industry Standardization
 
