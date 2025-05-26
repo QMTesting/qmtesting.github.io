@@ -27,6 +27,8 @@ The content of our articles is not meant to substitute for individualized guidan
 For inquiries, please contact QM Testing / [https://qmtesting.github.io](https://qmtesting.github.io) via email at Ask.TestingQM@outlook.com
 
 <style>
+  @media only screen and (min-width: 820px) and (max-width: 2000px) {
+  /* Indent Content  */  
   .site-name {
     margin-top: -10px;
   }  
@@ -36,4 +38,6 @@ For inquiries, please contact QM Testing / [https://qmtesting.github.io](https:/
     margin-left: 100px;
     margin-right: 50px;
   }
+
+  } /*End Desktop */
 </style>
