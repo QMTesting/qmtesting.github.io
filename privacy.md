@@ -243,9 +243,16 @@ If you have any questions please contact us at Ask.TestingQM@outlook.com
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
   /* Indent Content  */  
-    #main .container {
-      margin-left: 150px;
-    }
+  .site-name {
+    margin-top: -10px;
+  }  
+
+ .page {
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 50px;
+  }
+
   } /*End Desktop */
 </style>
 
