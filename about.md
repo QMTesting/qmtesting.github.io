@@ -19,7 +19,7 @@ Join us on this exciting journey as we demystify the world of software testing, 
     margin-top: -10px;
   }  
 
-  .content-wrapper {
+  article .page {
     max-width: 800px;
     margin-left: 150px;
     margin-right: 150px;
