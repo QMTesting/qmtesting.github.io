@@ -1045,7 +1045,12 @@ th, td {
   }
 } /* End Desktop */ 
 
-
+/* Style Link Text */
+a {
+ color: #000000;
+ text-decoration: underline;	
+}	
+	
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
