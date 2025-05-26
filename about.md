@@ -15,6 +15,8 @@ We are passionate about sharing knowledge and empowering newcomers to excel in s
 Join us on this exciting journey as we demystify the world of software testing, quality assurance, and automation, making it accessible and enjoyable for beginners. Let's learn, grow, and innovate together!
 
 <style>
+  @media only screen and (min-width: 820px) and (max-width: 2000px) {
+  /* Indent Content  */  
   .site-name {
     margin-top: -10px;
   }  
@@ -24,4 +26,6 @@ Join us on this exciting journey as we demystify the world of software testing, 
     margin-left: 100px;
     margin-right: 50px;
   }
+
+  } /*End Desktop */
 </style>
