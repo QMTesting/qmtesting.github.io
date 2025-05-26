@@ -5,7 +5,7 @@ categories: ["Software Testing"]
 image: "/assets/images/Test/ISTQB.png"
 ---
 
-| ![Alt ISTQB certification](https://www.istqb.org/member-boards/) |
+| ![Alt ISTQB certification](/assets/images/Test/ISTQB.png) |
 |:--:|
 | *Image on Freepik* |
 
