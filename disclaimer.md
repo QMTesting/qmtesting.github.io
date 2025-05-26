@@ -25,3 +25,15 @@ The content of our articles is not meant to substitute for individualized guidan
 ## Contact Us
 
 For inquiries, please contact QM Testing / [https://qmtesting.github.io](https://qmtesting.github.io) via email at Ask.TestingQM@outlook.com
+
+<style>
+  .site-name {
+    margin-top: -10px;
+  }  
+
+ .page {
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 50px;
+  }
+</style>
