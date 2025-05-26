@@ -44,4 +44,10 @@ For general inquiries, you can contact us at the following email address: Ask.Te
   .site-name {
     margin-top: -10px;
   }  
+
+ .page {
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 50px;
+  }
 </style>
