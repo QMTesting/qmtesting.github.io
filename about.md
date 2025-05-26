@@ -28,4 +28,12 @@ Join us on this exciting journey as we demystify the world of software testing, 
   }
 
   } /*End Desktop */
+
+   @media only screen and (max-width: 780px) { 
+    .page {
+    margin-left: 15px;
+    margin-right: 20px;
+    }
+
+  } /* End Mobile */  
 </style>
