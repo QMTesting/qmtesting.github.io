@@ -36,7 +36,7 @@ When visitors leave comments on the Site we collect the data shown in the commen
 
 When a visitor submits a comment only the visitor's Name, Avatar, Date Submitted, and Comment Contents will be published.
 
-An anonymized string, known as a hash, derived from your email address may be transmitted to the Gravatar service to determine if you have an associated account. The Gravatar service's Privacy Policy can be found here: [https://automattic.com/privacy/](https://automattic.com/privacy/). Upon approval of your comment, your profile picture/Avatar will be displayed publicly alongside your comment.
+An anonymized string, known as a hash, derived from your email address may be transmitted to the Gravatar service to determine if you have an associated account. The Gravatar service's Privacy Policy can be found [here](https://automattic.com/privacy/). Upon approval of your comment, your profile picture/Avatar will be displayed publicly alongside your comment.
 
 Any Personal information a visitor shares in blog post comments on this Site or on social media platforms is visible to other users and may be read, collected, or used by others. This Site bears no responsibility for Personal information that a visitor shares in blog post comments on this site or social media platforms that is visible to others. Visitors should exercise caution when disclosing Personal Information in such forums.
 
@@ -134,9 +134,9 @@ Additionally, we may share your Personal Information to adhere to pertinent laws
 
 ## Behavioral Advertising
 
-With your consent, we utilize your Personal Information to deliver targeted advertisements or marketing communications that we believe align with your interests, as explained earlier. To gain a better understanding of how targeted advertising functions, you can explore the Network Advertising Initiative’s educational page at [http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work](http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work).
+With your consent, we utilize your Personal Information to deliver targeted advertisements or marketing communications that we believe align with your interests, as explained earlier. To gain a better understanding of how targeted advertising functions, you can explore the [Network Advertising Initiative’s educational page](http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work).
 
-You have the option to opt out of targeted advertising by visiting [https://www.google.com/settings/ads/anonymous](https://www.google.com/settings/ads/anonymous). You also have the option to opt out of specific services by accessing the Digital Advertising Alliance’s opt-out portal at: [http://optout.aboutads.info](http://optout.aboutads.info/). It's important to note that certain correspondence related to your account transactions cannot be unsubscribed from or opted out of.
+You have the option to opt out of targeted advertising by visiting [here](https://www.google.com/settings/ads/anonymous). You also have the option to opt out of specific services by accessing the Digital Advertising Alliance’s [opt-out portal](http://optout.aboutads.info/). It's important to note that certain correspondence related to your account transactions cannot be unsubscribed from or opted out of.
 
 ## Disclosure Of Personal Information
 
@@ -218,7 +218,7 @@ While these links and embedded content from third-party websites are provided fo
 
 This Site utilizes caching to facilitate a faster response time and better user experience. Caching potentially stores a duplicate copy of every web page that is on display on this site. All cache files are temporary, and are not accessed by any third party, except as necessary to obtain technical support from the cache plugin vendor.
 
-Cache files expire on a schedule set by the site administrator, but may easily be purged by the admin before their natural expiration, if necessary. We may use QUIC.cloud services to process & cache your data temporarily. Please see https://quic.cloud/privacy-policy/ for more details.
+Cache files expire on a schedule set by the site administrator, but may easily be purged by the admin before their natural expiration, if necessary. We may use [QUIC.cloud services](https://quic.cloud/privacy-policy/) to process & cache your data temporarily.
 
 ## Children’s Privacy
 
