@@ -44,22 +44,25 @@
   <body>
 
     <!-- HAMBURGER NENU HTML -->
-    <!-- Hamburger Icon -->
-      <div class="hamburger" onclick="toggleMenu()">
+    <!-- Hamburger Icon (only visible when menu is closed) -->
+      <div id="hamburgerIcon" class="hamburger" onclick="toggleMenu()">
         &#9776;
       </div>
       
-      <!-- Navigation Menu -->
-      <nav id="mobileMenu" class="mobile-menu hidden">
+      <!-- Fullscreen Mobile Menu -->
+      <div id="mobileMenu" class="mobile-menu hidden">
+        <div class="menu-header">
+          <span class="close-icon" onclick="toggleMenu()">&#10006;</span>
+        </div>
         <ul>
           <li><a href="{{ '/' | relative_url }}">Home</a></li>
           <li><a href="{{ '/software-testing' | relative_url }}">Software Testing</a></li>
           <li><a href="{{ '/types-of-testing' | relative_url }}">Types of Testing</a></li>
           <li><a href="{{ '/automation' | relative_url }}">Automation</a></li>
           <li><a href="{{ '/azure-devops' | relative_url }}">Azure DevOps</a></li>
-          <!-- Add other links here -->
+          <!-- Add more links as needed -->
         </ul>
-      </nav>
+      </div>
     <!-- HAMBURGER NENU HTML - END -->
     
     <div class="wrapper-masthead">
