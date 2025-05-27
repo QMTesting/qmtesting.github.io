@@ -1160,7 +1160,7 @@ a {
    }	  
 } /* End Desktop */
 
-?* HAMBURBER MENU - END */
+/* HAMBURBER MENU - END */
 
 /* SEARCH RESULTS - MOBILE */
 @media (max-width: 768px) {
@@ -1193,11 +1193,10 @@ a {
   cursor: pointer;
 }
 
-
-  /* Hide mobile search on larger screens */
-  .mobile-search-container {
-    display: none;
-  }
+/* Hide mobile search on larger screens */
+.mobile-search-container {
+  display: none;
+}
 
 
 } /* End Mobile */
