@@ -200,82 +200,80 @@ layout: default
 
   // Fetch and display comments
   function fetchComments() {
-    const urlWithParam = `${commentsEndpoint}?url=${encodeURIComponent(currentPostUrl)}`;
+  const urlWithParam = `${commentsEndpoint}?url=${encodeURIComponent(currentPostUrl)}`;
 
-    fetch(urlWithParam)
-      .then(response => response.json())
-      .then(comments => {
-        const commentsList = document.getElementById('commentsList');
-        const ratingDisplay = document.getElementById('ratingDisplay');
-        const ratingStars = document.getElementById('ratingStars');
+  fetch(urlWithParam)
+    .then(response => response.json())
+    .then(comments => {
+      const commentsList = document.getElementById('commentsList');
+      const ratingDisplay = document.getElementById('ratingDisplay');
+      const ratingStars = document.getElementById('ratingStars');
 
-        commentsList.innerHTML = "";
-        ratingDisplay.innerHTML = "";
+      commentsList.innerHTML = "";
+
+      if (!comments || comments.length === 0) {
+        commentsList.innerHTML = "<p>No comments yet. Be the first to comment!</p>";
+        ratingDisplay.textContent = "No ratings yet.";
         ratingStars.innerHTML = "";
+        return;
+      }
 
-        if (!comments || comments.length === 0) {
-          commentsList.innerHTML = "<p>No comments yet. Be the first to comment!</p>";
-          ratingDisplay.innerText = "N/A";
-          return;
-        }
+      // Calculate average rating
+      const ratings = comments.map(c => parseFloat(c.rating)).filter(r => !isNaN(r));
+      const avgRating = ratings.length > 0
+        ? ratings.reduce((a, b) => a + b, 0) / ratings.length
+        : 0;
 
-        // Calculate average rating
-        let totalRating = 0;
-        let count = 0;
+      ratingDisplay.textContent = `Average Rating: ${avgRating.toFixed(1)} / 5`;
 
-        comments.reverse().forEach(entry => {
-          const rating = parseInt(entry.rating);
-          if (!isNaN(rating)) {
-            totalRating += rating;
-            count++;
-          }
+      // Build star icons using Font Awesome
+      const fullStars = Math.floor(avgRating);
+      const hasHalfStar = (avgRating - fullStars) >= 0.25 && (avgRating - fullStars) < 0.75;
+      const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
 
-          // Display individual comment
-          const commentBlock = document.createElement('div');
-          commentBlock.style = "border:1px solid #ddd;padding:12px;border-radius:8px;margin-bottom:15px;background:#f9f9f9;";
+      let starsHtml = "";
 
-          const stars = "★".repeat(rating) + "☆".repeat(5 - rating);
-          commentBlock.innerHTML = `
-            <p style="margin:0;font-weight:bold;color:#bc960d;">${entry.name} 
-              <span style="font-weight:normal;color:#999;">(${new Date(entry.timestamp).toLocaleString()})</span>
-            </p>
-            <p style="margin:8px 0 0;color:#444;">${entry.comment}</p>
-            <p style="margin:6px 0 0;font-size:14px;color:#bc960d;">Rating: ${stars}</p>
-            ${entry.reply ? `<div style="margin-top:10px;padding:10px;background:#eee;border-left:4px solid #bc960d;color:#333;">
-              <strong>Reply:</strong> ${entry.reply}
-            </div>` : ''}
-          `;
-          commentsList.appendChild(commentBlock);
-        });
+      for (let i = 0; i < fullStars; i++) {
+        starsHtml += `<i class="fas fa-star" style="color:#bc960d;"></i>`;
+      }
 
-        if (count > 0) {
-          const avgRating = totalRating / count;
-          const avgRounded = Math.round(avgRating * 10) / 10; // e.g. 4.3
-          ratingDisplay.innerText = `${avgRounded} / 5`;
+      if (hasHalfStar) {
+        starsHtml += `<i class="fas fa-star-half-alt" style="color:#bc960d;"></i>`;
+      }
 
-          // Generate Font Awesome stars
-          const fullStars = Math.floor(avgRating);
-          const hasHalfStar = avgRating - fullStars >= 0.25 && avgRating - fullStars < 0.75;
-          const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+      for (let i = 0; i < emptyStars; i++) {
+        starsHtml += `<i class="far fa-star" style="color:#bc960d;"></i>`;
+      }
 
-          let starsHtml = "";
-          for (let i = 0; i < fullStars; i++) {
-            starsHtml += '<i class="fas fa-star"></i>';
-          }
-          if (hasHalfStar) {
-            starsHtml += '<i class="fas fa-star-half-alt"></i>';
-          }
-          for (let i = 0; i < emptyStars; i++) {
-            starsHtml += '<i class="far fa-star"></i>';
-          }
-          ratingStars.innerHTML = starsHtml;
-        }
-      })
-      .catch(error => {
-        console.error("Error fetching comments:", error);
-        document.getElementById("commentsList").innerHTML = "<p>Unable to load comments at this time.</p>";
+      ratingStars.innerHTML = starsHtml;
+
+      // Display each comment
+      comments.reverse().forEach(entry => {
+        const commentBlock = document.createElement('div');
+        commentBlock.style = "border:1px solid #ddd;padding:12px;border-radius:8px;margin-bottom:15px;background:#f9f9f9;";
+
+        commentBlock.innerHTML = `
+          <p style="margin:0;font-weight:bold;color:#bc960d;">${entry.name} 
+            <span style="font-weight:normal;color:#999;">(${new Date(entry.timestamp).toLocaleString()})</span>
+          </p>
+          <p style="margin:8px 0 0;color:#444;">${entry.comment}</p>
+          <p style="margin:6px 0 0;font-size:14px;color:#bc960d;">Rating: 
+            ${"★".repeat(entry.rating)}${"☆".repeat(5 - entry.rating)}
+          </p>
+          ${entry.reply ? `<div style="margin-top:10px;padding:10px;background:#eee;border-left:4px solid #bc960d;color:#333;">
+            <strong>Reply:</strong> ${entry.reply}
+          </div>` : ''}
+        `;
+        commentsList.appendChild(commentBlock);
       });
-  }
+    })
+    .catch(error => {
+      console.error("Error fetching comments:", error);
+      document.getElementById("commentsList").innerHTML = "<p>Unable to load comments at this time.</p>";
+    });
+}
+
+  
   // Load comments when page loads
   fetchComments();
 </script>
