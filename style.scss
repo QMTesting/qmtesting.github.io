@@ -1168,13 +1168,13 @@ a {
 .mobile-search-container {
   position: fixed;
   top: 10px;
-  right: 10px;
-  z-index: 999;
+  right: 0;
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  max-width: 100%;
-  overflow: hidden;
-  padding-right: 10px;
+  padding: 0 10px;
+  z-index: 999;
   box-sizing: border-box;
 }
 
@@ -1210,8 +1210,7 @@ a {
   color: red;
   margin-left: 6px;
   cursor: pointer;
-}
-	
+}	
 	
 #search-form {
  display: none;	
