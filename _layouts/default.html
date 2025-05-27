@@ -39,6 +39,9 @@
     crossorigin="anonymous"
   >
     
+  <!-- VIEWPORT META TAG --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
   </head>
 
   <body>
@@ -67,14 +70,14 @@
     
     <!-- SEARCH RESULTS MOBILE -->
     <!-- Mobile Search Toggle UI -->
-    <div class="mobile-search-container">
-      <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
-      
-      <form id="mobile-search-form" action="/search-results.html" method="get">
-        <input type="text" name="q" id="mobile-search-input" placeholder="Search..." />
-        <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
-      </form>
-    </div>
+      <div class="mobile-search-container">
+        <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
+        
+        <form id="mobile-search-form" action="/search-results.html" method="get">
+          <input type="text" name="q" id="mobile-search-input" placeholder="Search..." />
+          <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
+        </form>
+      </div>
     <!-- SEARCH RESULTS MOBILE - END -->
     
     
@@ -319,23 +322,23 @@
 <!--HAMBURGER JAVASCRIPT FOR MOBILE-END--> 
 
 <!-- SEARCH RESULTS - MOBILE --> 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleBtn = document.getElementById("mobile-search-toggle");
-      const searchForm = document.getElementById("mobile-search-form");
-      const searchInput = document.getElementById("mobile-search-input");
-      const closeBtn = document.getElementById("mobile-search-close");
-    
-      toggleBtn.addEventListener("click", function () {
-        searchForm.style.display = "flex";
-        searchInput.focus();
-      });
-    
-      closeBtn.addEventListener("click", function () {
-        searchForm.style.display = "none";
-        searchInput.value = "";
-      });
-    });
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("mobile-search-toggle");
+  const searchForm = document.getElementById("mobile-search-form");
+  const searchInput = document.getElementById("mobile-search-input");
+  const closeBtn = document.getElementById("mobile-search-close");
+
+  toggleBtn.addEventListener("click", function () {
+    searchForm.style.display = "flex";
+    searchInput.focus();
+  });
+
+  closeBtn.addEventListener("click", function () {
+    searchForm.style.display = "none";
+    searchInput.value = "";
+  });
+});
 </script>
 <!-- SEARCH RESULTS - MOBILE - END -->       
 
