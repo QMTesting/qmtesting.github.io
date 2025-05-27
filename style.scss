@@ -1071,41 +1071,35 @@ a {
 }	
 
 /* HAMBURGER MENU ON MOBILE */
+
 @media (max-width: 768px) {
-/* Hamburger icon styles */
+/* Hamburger Icon */
 .hamburger {
   font-size: 30px;
   cursor: pointer;
   display: none;
   padding: 10px;
+  z-index: 1100;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: white;
+  border-radius: 5px;
 }
 
-/* Navigation menu for mobile */
+/* Fullscreen Menu */
 .mobile-menu {
-  background-color: #f9f9f9;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
   z-index: 1000;
-  border-top: 1px solid #ddd;
-}
-
-.mobile-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.mobile-menu li {
-  border-bottom: 1px solid #eee;
-}
-
-.mobile-menu li a {
-  display: block;
-  padding: 12px 20px;
-  text-decoration: none;
-  color: #333;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Hide menu by default */
@@ -1113,14 +1107,46 @@ a {
   display: none;
 }
 
-/* Show hamburger only on small screens */
+/* Menu Header */
+.menu-header {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Close Icon */
+.close-icon {
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Menu Links */
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin: 20px 0;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+
 
   .hamburger {
     display: block;
   }
 
   nav.main-nav {
-    display: none; /* Optionally hide regular nav */
+    display: none; /* Hide default nav if needed */
   }
 } /* End Mobile */
 
