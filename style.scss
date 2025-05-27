@@ -1165,27 +1165,42 @@ a {
 /* SEARCH RESULTS - MOBILE */
 @media (max-width: 768px) {
 
+/* Prevent entire page from horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix the magnifying glass container positioning */
 .mobile-search-container {
   position: fixed;
   top: 10px;
-  right: 0;
-  width: 100%;
+  right: 10px;
+  z-index: 1000;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   padding: 0 10px;
-  z-index: 999;
   box-sizing: border-box;
 }
 
-/* Hide input and close button by default */
+/* Prevent the container from exceeding screen */
+@media (max-width: 767px) {
+  .mobile-search-container {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* Hide search form by default */
 #mobile-search-form {
   display: none;
   flex-direction: row;
   align-items: center;
   margin-left: 8px;
+  background: white;
 }
 
+/* Input field styling */
 #mobile-search-input {
   padding: 6px 10px;
   font-size: 16px;
@@ -1195,6 +1210,7 @@ a {
   max-width: 60vw;
 }
 
+/* Button styling */
 #mobile-search-toggle {
   font-size: 22px;
   background: none;
@@ -1210,7 +1226,8 @@ a {
   color: red;
   margin-left: 6px;
   cursor: pointer;
-}	
+}
+
 	
 #search-form {
  display: none;	
