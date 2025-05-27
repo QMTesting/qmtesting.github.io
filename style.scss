@@ -1122,7 +1122,17 @@ a {
   nav.main-nav {
     display: none; /* Optionally hide regular nav */
   }
-} /* End Mobile */	
+} /* End Mobile */
+
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;	  
+   }	  
+} /* End Desktop */	
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
