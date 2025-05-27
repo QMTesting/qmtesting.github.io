@@ -1069,7 +1069,60 @@ a {
 .site-name a:hover {
   color: #000000;	
 }	
-	
+
+/* HAMBURGER MENU ON MOBILE */
+@media (max-width: 768px) {
+/* Hamburger icon styles */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  padding: 10px;
+}
+
+/* Navigation menu for mobile */
+.mobile-menu {
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu li a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hide menu by default */
+.hidden {
+  display: none;
+}
+
+/* Show hamburger only on small screens */
+
+  .hamburger {
+    display: block;
+  }
+
+  nav.main-nav {
+    display: none; /* Optionally hide regular nav */
+  }
+} /* End Mobile */	
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
