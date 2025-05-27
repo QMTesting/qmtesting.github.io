@@ -220,16 +220,15 @@ layout: default
 
       // Calculate average rating
       const ratings = comments.map(c => parseFloat(c.rating)).filter(r => !isNaN(r));
-      const avgRating = ratings.length > 0
-        ? ratings.reduce((a, b) => a + b, 0) / ratings.length
-        : 0;
+      const avgRating = ratings.reduce((a, b) => a + b, 0) / ratings.length;
 
       ratingDisplay.textContent = `Average Rating: ${avgRating.toFixed(1)} / 5`;
 
-      // Build star icons using Font Awesome
+      // Determine star icons using Font Awesome
       const fullStars = Math.floor(avgRating);
-      const hasHalfStar = (avgRating - fullStars) >= 0.25 && (avgRating - fullStars) < 0.75;
-      const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+      const hasHalfStar = avgRating % 1 > 0;
+      const totalIcons = fullStars + (hasHalfStar ? 1 : 0);
+      const emptyStars = 5 - totalIcons;
 
       let starsHtml = "";
 
@@ -247,7 +246,7 @@ layout: default
 
       ratingStars.innerHTML = starsHtml;
 
-      // Display each comment
+      // Display each individual comment
       comments.reverse().forEach(entry => {
         const commentBlock = document.createElement('div');
         commentBlock.style = "border:1px solid #ddd;padding:12px;border-radius:8px;margin-bottom:15px;background:#f9f9f9;";
@@ -272,6 +271,7 @@ layout: default
       document.getElementById("commentsList").innerHTML = "<p>Unable to load comments at this time.</p>";
     });
 }
+
 
   
   // Load comments when page loads
