@@ -66,13 +66,13 @@
     <!-- HAMBURGER NENU HTML - END -->
     
     <!-- SEARCH RESULTS MOBILE -->
-        <!-- Mobile Search Bar -->
+    <!-- Mobile Search Toggle UI -->
     <div class="mobile-search-container">
-      <button id="mobile-search-toggle" aria-label="Toggle search">
-        🔍
-      </button>
+      <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
+      
       <form id="mobile-search-form" action="/search-results.html" method="get">
         <input type="text" name="q" id="mobile-search-input" placeholder="Search..." />
+        <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
       </form>
     </div>
     <!-- SEARCH RESULTS MOBILE - END -->
@@ -320,21 +320,23 @@
 
 <!-- SEARCH RESULTS - MOBILE --> 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("mobile-search-toggle");
-    const searchForm = document.getElementById("mobile-search-form");
-    const searchInput = document.getElementById("mobile-search-input");
-
-    toggleBtn.addEventListener("click", function () {
-      if (searchForm.style.display === "block") {
-        searchForm.style.display = "none";
-      } else {
-        searchForm.style.display = "block";
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("mobile-search-toggle");
+      const searchForm = document.getElementById("mobile-search-form");
+      const searchInput = document.getElementById("mobile-search-input");
+      const closeBtn = document.getElementById("mobile-search-close");
+    
+      toggleBtn.addEventListener("click", function () {
+        searchForm.style.display = "flex";
         searchInput.focus();
-      }
+      });
+    
+      closeBtn.addEventListener("click", function () {
+        searchForm.style.display = "none";
+        searchInput.value = "";
+      });
     });
-  });
-</script>  
+</script>
 <!-- SEARCH RESULTS - MOBILE - END -->       
 
       
