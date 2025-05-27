@@ -1171,10 +1171,19 @@ html, body {
   overflow-x: hidden;
 }
 
+.site-avatar img {
+   margin-top: 30px; 	  
+ }	
+
+ .site-name {
+   margin-top: 30px; 	 
+  }	 
+	  
+
 /* Fix the magnifying glass container positioning */
 .mobile-search-container {
   position: fixed;
-  top: 10px;
+  top: 30px;
   right: 10px;
   z-index: 1000;
   display: flex;
