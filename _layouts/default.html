@@ -298,14 +298,20 @@
 </style>    
 
 <!--HAMBURGER JAVASCRIPT FOR MOBILE-->
- <script>
+<script>
   function toggleMenu() {
     const menu = document.getElementById("mobileMenu");
     const hamburger = document.getElementById("hamburgerIcon");
+    const searchBox = document.getElementById("searchBox");
+
     menu.classList.toggle("hidden");
     hamburger.classList.toggle("hidden");
+
+    if (searchBox) {
+      searchBox.style.display = menu.classList.contains("hidden") ? "block" : "none";
+    }
   }
-</script>
+</script>    
 <!--HAMBURGER JAVASCRIPT FOR MOBILE-END--> 
 
 <!-- SEARCH RESULTS - MOBILE --> 
@@ -331,14 +337,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- SEARCH RESULTS HTML - MOBILE -->
 <!-- Mobile Search Toggle UI -->
-<div class="mobile-search-container">
-  <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
-  
-  <form id="mobile-search-form" action="/search-results/" method="get">
-    <input type="text" name="q" id="mobile-search-input" placeholder="Search..." />
-    <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
-  </form>
-</div>
+<div id="searchBox">
+  <div class="mobile-search-container">
+    <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
+    
+    <form id="mobile-search-form" action="/search-results/" method="get">
+      <input type="text" name="q" id="mobile-search-input" placeholder="Search..." />
+      <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
+    </form>
+  </div>
+</div>    
 <!-- SEARCH RESULTS HTML - MOBILE -->
     
     
