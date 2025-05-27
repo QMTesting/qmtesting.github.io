@@ -42,6 +42,24 @@
   </head>
 
   <body>
+
+    <!-- HAMBURGER NENU HTML -->
+    <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav id="mobileMenu" class="mobile-menu hidden">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/about' | relative_url }}">About</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+          <!-- Add other links here -->
+        </ul>
+      </nav>
+    <!-- HAMBURGER NENU HTML - END -->
+    
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -251,8 +269,6 @@
     {% include analytics.html %}
     {% include head.html %}
     {% include footer.html %}
-
-    
 
 <style>
       @media only screen and (min-width: 820px) and (max-width: 2000px) {
