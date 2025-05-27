@@ -62,8 +62,21 @@
           <li><a href="{{ '/azure-devops' | relative_url }}">Azure DevOps</a></li>
           <!-- Add more links as needed -->
         </ul>
-      </div>
+      </div>   
     <!-- HAMBURGER NENU HTML - END -->
+    
+    <!-- SEARCH RESULTS MOBILE -->
+        <!-- Mobile Search Bar -->
+    <div class="mobile-search-container">
+      <button id="mobile-search-toggle" aria-label="Toggle search">
+        🔍
+      </button>
+      <form id="mobile-search-form" action="/search-results.html" method="get">
+        <input type="text" name="q" id="mobile-search-input" placeholder="Search..." />
+      </form>
+    </div>
+    <!-- SEARCH RESULTS MOBILE - END -->
+    
     
     <div class="wrapper-masthead">
       <div class="container">
@@ -303,7 +316,28 @@
     hamburger.classList.toggle("hidden");
   }
 </script>
-<!--HAMBURGER JAVASCRIPT FOR MOBILE-END-->    
+<!--HAMBURGER JAVASCRIPT FOR MOBILE-END--> 
+
+<!-- SEARCH RESULTS - MOBILE --> 
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("mobile-search-toggle");
+    const searchForm = document.getElementById("mobile-search-form");
+    const searchInput = document.getElementById("mobile-search-input");
+
+    toggleBtn.addEventListener("click", function () {
+      if (searchForm.style.display === "block") {
+        searchForm.style.display = "none";
+      } else {
+        searchForm.style.display = "block";
+        searchInput.focus();
+      }
+    });
+  });
+</script>  
+<!-- SEARCH RESULTS - MOBILE - END -->       
+
+      
     
   </body>
 </html>
