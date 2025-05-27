@@ -1164,42 +1164,54 @@ a {
 
 /* SEARCH RESULTS - MOBILE */
 @media (max-width: 768px) {
-
   .mobile-search-container {
   position: fixed;
   top: 10px;
   right: 10px;
+  z-index: 999;
   display: flex;
   align-items: center;
-  z-index: 999;
 }
 
+/* Hide input and close button by default */
 #mobile-search-form {
   display: none;
-  margin-left: 5px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 8px;
 }
 
 #mobile-search-input {
-  padding: 5px 10px;
+  padding: 6px 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 20px;
+  width: 160px;
 }
 
 #mobile-search-toggle {
+  font-size: 22px;
   background: none;
   border: none;
-  font-size: 24px;
   cursor: pointer;
 }
 
-/* Hide mobile search on larger screens */
-.mobile-search-container {
-  display: none;
+#mobile-search-close {
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: red;
+  margin-left: 6px;
+  cursor: pointer;
 }
-
-
+ 
 } /* End Mobile */
+
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
+  .mobile-search-container 
+    display: none;
+  }
+} /* End Desktop */
 /* SEARCH RESULTS - END */
 
 
