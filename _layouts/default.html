@@ -90,7 +90,7 @@
             <span class="desktop-search">
               <button id="desktop-search-toggle" aria-label="Open search">🔍</button>
               <div id="desktop-search-form">
-                <form action="/search-results/" method="get">
+                <form action="/search-results/" method="get" id="desktop-search-form-element">
                   <input type="text" name="q" id="desktop-search-input" placeholder="Search..." />
                   <button type="button" id="desktop-search-close" aria-label="Close search">❌</button>
                 </form>
@@ -169,51 +169,51 @@
           }
 
           /* Desktop Search Button Area */
-        .desktop-search {
-          position: relative;
-          display: inline-block;
-          margin-left: 20px;
-        }
-        
-        /* Hidden search box initially */
-        #desktop-search-form {
-          display: none;
-          position: absolute;
-          top: 30px;
-          right: 0;
-          background: #fff;
-          padding: 8px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-          z-index: 999;
-          border-radius: 6px;
-        }
-        
-        /* Input styling */
-        #desktop-search-input {
-          padding: 6px 10px;
-          font-size: 14px;
-          border: 1px solid #ccc;
-          border-radius: 20px;
-          width: 200px;
-        }
-        
-        /* Toggle and Close Buttons */
-        #desktop-search-toggle {
-          font-size: 20px;
-          background: none;
-          border: none;
-          cursor: pointer;
-        }
-        
-        #desktop-search-close {
-          font-size: 16px;
-          background: none;
-          border: none;
-          color: red;
-          margin-left: 8px;
-          cursor: pointer;
-        }
-         
+          /* Container for magnifying glass and search input */
+          .desktop-search {
+            display: inline-block;
+            margin-left: 20px;
+          }
+          
+          /* Show/hide the search box */
+          #desktop-search-form {
+            display: none;
+            margin-top: 10px;
+          }
+          
+          /* Form layout: input and X in a row */
+          #desktop-search-form form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+          }
+          
+          /* Input field styling */
+          #desktop-search-input {
+            padding: 6px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            width: 200px;
+          }
+          
+          /* Button styles */
+          #desktop-search-toggle {
+            font-size: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+          
+          #desktop-search-close {
+            font-size: 18px;
+            background: none;
+            border: none;
+            color: red;
+            cursor: pointer;
+          }
+
        } /* End Desktop */  
 
        @media only screen and (max-width: 780px) {
@@ -415,18 +415,26 @@ document.addEventListener("DOMContentLoaded", function () {
  <script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggleDesktop = document.getElementById("desktop-search-toggle");
-    const formDesktop = document.getElementById("desktop-search-form");
+    const formWrapper = document.getElementById("desktop-search-form");
     const inputDesktop = document.getElementById("desktop-search-input");
     const closeDesktop = document.getElementById("desktop-search-close");
+    const formElement = document.getElementById("desktop-search-form-element");
   
+    // Show form on 🔍 click
     toggleDesktop.addEventListener("click", function () {
-      formDesktop.style.display = "block";
+      formWrapper.style.display = "block";
       inputDesktop.focus();
     });
   
+    // Hide form on ❌ click
     closeDesktop.addEventListener("click", function () {
-      formDesktop.style.display = "none";
+      formWrapper.style.display = "none";
       inputDesktop.value = "";
+    });
+  
+    // Hide form after submitting
+    formElement.addEventListener("submit", function () {
+      formWrapper.style.display = "none";
     });
   });
 </script>
