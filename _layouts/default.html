@@ -430,34 +430,44 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- SEARCH RESULTS HTML - MOBILE-END -->
     
 <!-- SEARCH RESULTS HTML - DESKTOP -->  
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("desktop-search-toggle");
-    const formContainer = document.getElementById("desktop-search-form");
-    const closeBtn = document.getElementById("desktop-search-close");
-    const input = document.getElementById("desktop-search-input");
-    const form = document.getElementById("desktop-search-form-element");
-  
-    // Show form on 🔍 click, hide the toggle icon
-    toggleBtn.addEventListener("click", function () {
-      formContainer.classList.add("show");
-      toggleBtn.style.display = "none";
-      input.focus();
-    });
-  
-    // Hide form and show 🔍 again
-    closeBtn.addEventListener("click", function () {
-      formContainer.classList.remove("show");
-      input.value = "";
-      toggleBtn.style.display = "inline-block";
-    });
-  
-    // After form submission, hide form and show 🔍 again
-    form.addEventListener("submit", function () {
-      formContainer.classList.remove("show");
-      toggleBtn.style.display = "inline-block";
-    });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("desktop-search-toggle");
+  const formContainer = document.getElementById("desktop-search-form");
+  const closeBtn = document.getElementById("desktop-search-close");
+  const input = document.getElementById("desktop-search-input");
+  const form = document.getElementById("desktop-search-form-element");
+
+  // Show form on 🔍 click, hide the toggle icon
+  toggleBtn.addEventListener("click", function () {
+    formContainer.classList.add("show");
+    toggleBtn.style.display = "none";
+    input.focus();
   });
+
+  // Hide form and show 🔍 again
+  closeBtn.addEventListener("click", function () {
+    formContainer.classList.remove("show");
+    input.value = "";
+    toggleBtn.style.display = "inline-block";
+  });
+
+  // After form submission
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop default form action
+
+    const searchQuery = input.value.trim();
+    if (searchQuery === "") return;
+
+    // Hide everything and reset UI
+    formContainer.classList.remove("show");
+    input.value = "";
+    toggleBtn.style.display = "inline-block";
+
+    // Redirect to search results
+    window.location.href = `/search-results/?q=${encodeURIComponent(searchQuery)}`;
+  });
+});
 </script>
 <!-- SEARCH RESULTS HTML - DESKTOP-END -->    
     
