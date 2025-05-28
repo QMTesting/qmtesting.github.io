@@ -179,19 +179,19 @@
           margin-left: 20px;
         }
         
-        /* Initially hide search form */
+        /* Initially hidden */
         #desktop-search-form {
           display: none;
           margin-top: 10px;
           flex-direction: column;
         }
         
-        /* Show form as vertical block */
+        /* Shown when class "show" is added */
         #desktop-search-form.show {
           display: flex;
         }
         
-        /* ❌ (close) styling */
+        /* ❌ close button */
         #desktop-search-close {
           font-size: 18px;
           background: none;
@@ -199,9 +199,10 @@
           color: red;
           cursor: pointer;
           align-self: flex-end;
+          margin-bottom: 5px;
         }
         
-        /* Input row: input + 🔍 icon */
+        /* Input + Submit 🔍 in a row */
         #desktop-search-form form {
           display: flex;
           flex-direction: row;
@@ -210,7 +211,7 @@
           margin-top: 8px;
         }
         
-        /* Search input styling */
+        /* Search input */
         #desktop-search-input {
           padding: 6px 10px;
           font-size: 14px;
@@ -219,7 +220,7 @@
           width: 200px;
         }
         
-        /* 🔍 submit button */
+        /* Submit 🔍 inside form */
         #desktop-submit-btn {
           font-size: 16px;
           background: none;
@@ -227,10 +228,11 @@
           cursor: pointer;
         }
         
-        /* Ensure nav expands */
+        /* Nav transition */
         #header-nav {
           transition: all 0.3s ease;
         }
+        
 
        } /* End Desktop */  
 
@@ -438,35 +440,38 @@ document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("desktop-search-input");
   const form = document.getElementById("desktop-search-form-element");
 
-  // Show form on 🔍 click, hide the toggle icon
+  // Show the search input
   toggleBtn.addEventListener("click", function () {
     formContainer.classList.add("show");
     toggleBtn.style.display = "none";
     input.focus();
   });
 
-  // Hide form and show 🔍 again
+  // Close button (❌) behavior
   closeBtn.addEventListener("click", function () {
-    formContainer.classList.remove("show");
-    input.value = "";
-    toggleBtn.style.display = "inline-block";
+    hideSearchForm();
   });
 
-  // After form submission
+  // Submit behavior
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Stop default form action
+    e.preventDefault();
 
-    const searchQuery = input.value.trim();
-    if (searchQuery === "") return;
+    const query = input.value.trim();
+    if (query === "") return;
 
-    // Hide everything and reset UI
-    formContainer.classList.remove("show");
-    input.value = "";
-    toggleBtn.style.display = "inline-block";
+    // Hide search form UI
+    hideSearchForm();
 
-    // Redirect to search results
-    window.location.href = `/search-results/?q=${encodeURIComponent(searchQuery)}`;
+    // Redirect to search results page
+    window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
   });
+
+  // Shared function to hide everything and reset
+  function hideSearchForm() {
+    formContainer.classList.remove("show");        // Hide form block
+    input.value = "";                              // Clear input
+    toggleBtn.style.display = "inline-block";      // Show main 🔍 again
+  }
 });
 </script>
 <!-- SEARCH RESULTS HTML - DESKTOP-END -->    
