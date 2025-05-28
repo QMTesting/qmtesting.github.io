@@ -16,10 +16,7 @@
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <form id="search-form" action="/search-results/" method="get" class="search-bar">
-      <input type="search" name="q" id="search-input" placeholder="Search posts..." required />
-       <button type="submit" class="search-button" aria-label="Search">🔍</button>
-     </form>
+    
 
     {% include meta.html %}
 
@@ -155,7 +152,7 @@
           #header-nav {
             display: flex;
             justify-content: center; /* centers items horizontally */
-            gap: 7px;
+            gap: 3px;
             margin-top: 15px;
             width: 1000px; /* takes full width of its container */
             background: #bc960d;
