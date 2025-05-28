@@ -462,6 +462,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 </script>  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth < 768) {
+      var headerNav = document.getElementById("header-nav");
+      if (headerNav) {
+        headerNav.remove(); // Removes it completely from the page
+      }
+    }
+  });
+</script>    
 
 <!-- SEARCH RESULTS HTML - DESKTOP-END -->    
     
