@@ -431,46 +431,20 @@ document.addEventListener("DOMContentLoaded", function () {
     
 <!-- SEARCH RESULTS HTML - DESKTOP -->  
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("desktop-search-toggle");
-  const formContainer = document.getElementById("desktop-search-form");
-  const closeBtn = document.getElementById("desktop-search-close");
-  const input = document.getElementById("desktop-search-input");
-  const form = document.getElementById("desktop-search-form-element");
+    document.addEventListener("DOMContentLoaded", function () {
+      var searchToggle = document.getElementById("desktop-search-toggle");
+      var searchClose = document.getElementById("desktop-search-close");
+      var formContainer = document.getElementById("desktop-search-form");
 
-  // Show search UI
-  toggleBtn.addEventListener("click", function () {
-    formContainer.style.display = "flex";
-    toggleBtn.style.display = "none";
-    input.focus();
-  });
+      searchToggle.addEventListener("click", function () {
+        formContainer.style.display = "flex";
+      });
 
-  // Close (X) button
-  closeBtn.addEventListener("click", function () {
-    hideSearchForm();
-  });
-
-  // Submit handler
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const query = input.value.trim();
-    if (!query) return;
-
-    // Hide everything before redirect
-    hideSearchForm();
-
-    // Redirect to search results page
-    window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
-  });
-
-  function hideSearchForm() {
-    formContainer.style.display = "none";         // Hide form container
-    toggleBtn.style.display = "inline-block";     // Show main icon
-    input.value = "";                             // Clear text
-  }
-});
-</script>
+      searchClose.addEventListener("click", function () {
+        formContainer.style.display = "none";
+      });
+    });
+  </script>
 
 <!-- SEARCH RESULTS HTML - DESKTOP-END -->    
     
