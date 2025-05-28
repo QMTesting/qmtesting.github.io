@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-## Last Updated: 2025-02-04
+## Last Updated: 2025-05-19
 
 Welcome to QM Testing, located at [https://qmtesting.github.io](https://qmtesting.github.io/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
