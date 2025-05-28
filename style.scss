@@ -1258,7 +1258,11 @@ html, body {
  }	
  .site-name {
    margin-top: -5px; 	 
-  }	 
+  }
+
+  #header-nav {
+   display: none;	  
+  }	  
 } /* End Mobile */	
 
 
