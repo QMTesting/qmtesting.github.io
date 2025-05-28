@@ -174,7 +174,12 @@
           }
 
           /* Desktop Search Button Area */
-          /* Desktop Search Container */
+        
+          /* Hide desktop search form by default */
+        #desktop-search-form {
+          display: none !important;
+        } 
+        /* Desktop Search Container */
         .desktop-search {
           position: relative;
           display: inline-block;
@@ -196,10 +201,7 @@
           margin-top: 10px;
         }
 
-        /* Hide desktop search form by default */
-        #desktop-search-form {
-          display: none !important;
-        } 
+       
         
         #desktop-search-close {
           font-size: 18px;
@@ -229,6 +231,11 @@
           border: none;
           cursor: pointer;
         }
+
+        /* Optional: Prevent flicker before JS */
+        body.js-enabled #desktop-search-form {
+          display: none;
+        } 
 
        } /* End Desktop */  
 
