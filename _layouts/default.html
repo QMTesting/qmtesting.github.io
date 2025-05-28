@@ -439,6 +439,13 @@ document.addEventListener("DOMContentLoaded", function () {
       searchToggle.addEventListener("click", function () {
         formContainer.style.display = "flex";
         searchToggle.style.display = "none";
+        e.preventDefault();
+
+        const query = input.value.trim();
+        if (!query) return;
+    
+        // Redirect to search results page
+        window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
       });
 
       searchClose.addEventListener("click", function () {
