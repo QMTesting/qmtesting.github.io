@@ -4,7 +4,7 @@ title: Disclaimer
 permalink: /disclaimer/
 ---
 
-## Last Updated: 2025-02-04
+## Last Updated: 2025-05-19
 
 QM Testing / [https://qmtesting.github.io](https://qmtesting.github.io) (the “Site”), a personal blog I manage serves as an informational platform.
 
