@@ -84,19 +84,19 @@
             <a href="{{ site.baseurl }}/automation">Automation</a>
             <a href="{{ site.baseurl }}/azure-devops">Azure DevOps</a>
 
-            <div class="desktop-search">
+            <div class="desktop-search" style="position: relative; display: inline-block; margin-left: 20px;">
             <!-- Main nav magnifying glass icon -->
-            <button id="desktop-search-toggle" aria-label="Search" style="background: #bc960d;"=>
+            <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer;"=>
               🔍
             </button>
           
             <!-- Container shown on toggle -->
-            <div id="desktop-search-form" style="display: none;">
-              <button id="desktop-search-close" aria-label="Close Search">❌</button>
+            <div id="desktop-search-form" style="display: none; flex-direction: column; align-items: flex-start; gap: 5px; margin-top: 10px;">
+              <button id="desktop-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">❌</button>
           
-              <form id="desktop-search-form-element">
-                <input type="text" id="desktop-search-input" placeholder="Search..." />
-                <button type="submit" id="desktop-submit-btn">🔍</button>
+              <form id="desktop-search-form-element" style="display: flex; gap: 5px;">
+                <input type="text" id="desktop-search-input" style="padding: 5px 10px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" placeholder="Search..." />
+                <button type="submit" id="desktop-submit-btn" style="font-size: 16px; background: none; border: none; cursor: pointer;">🔍</button>
               </form>
             </div>
           </div>
