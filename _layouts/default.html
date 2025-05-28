@@ -87,18 +87,22 @@
             <a href="{{ site.baseurl }}/automation">Automation</a>
             <a href="{{ site.baseurl }}/azure-devops">Azure DevOps</a>
 
-            <span class="desktop-search">
-              <button id="desktop-search-toggle" aria-label="Open search">🔍</button>
-            
-              <div id="desktop-search-form">
-                <button id="desktop-search-close" aria-label="Close search">❌</button>
-            
-                <form action="/search-results/" method="get" id="desktop-search-form-element">
-                  <input type="text" name="q" id="desktop-search-input" placeholder="Search..." />
-                  <button type="submit" id="desktop-submit-btn" aria-label="Submit search">🔍</button>
-                </form>
-              </div>
-            </span>
+            <div class="desktop-search">
+            <!-- Main nav magnifying glass icon -->
+            <button id="desktop-search-toggle" aria-label="Search">
+              🔍
+            </button>
+          
+            <!-- Container shown on toggle -->
+            <div id="desktop-search-form">
+              <button id="desktop-search-close" aria-label="Close Search">❌</button>
+          
+              <form id="desktop-search-form-element">
+                <input type="text" id="desktop-search-input" placeholder="Search..." />
+                <button type="submit" id="desktop-submit-btn">🔍</button>
+              </form>
+            </div>
+          </div>
 
             
           </nav>
@@ -175,23 +179,26 @@
           /* Desktop Search Button Area */
           /* Desktop Search Container */
         .desktop-search {
+          position: relative;
           display: inline-block;
           margin-left: 20px;
         }
         
-        /* Initially hidden */
+        #desktop-search-toggle {
+          font-size: 18px;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+        
         #desktop-search-form {
           display: none;
-          margin-top: 10px;
           flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+          margin-top: 10px;
         }
         
-        /* Shown when class "show" is added */
-        #desktop-search-form.show {
-          display: flex;
-        }
-        
-        /* ❌ close button */
         #desktop-search-close {
           font-size: 18px;
           background: none;
@@ -199,40 +206,27 @@
           color: red;
           cursor: pointer;
           align-self: flex-end;
-          margin-bottom: 5px;
         }
         
-        /* Input + Submit 🔍 in a row */
-        #desktop-search-form form {
+        #desktop-search-form-element {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 8px;
-          margin-top: 8px;
+          gap: 5px;
         }
         
-        /* Search input */
         #desktop-search-input {
-          padding: 6px 10px;
+          padding: 5px 10px;
           font-size: 14px;
+          border-radius: 5px;
           border: 1px solid #ccc;
-          border-radius: 20px;
           width: 200px;
         }
         
-        /* Submit 🔍 inside form */
         #desktop-submit-btn {
           font-size: 16px;
           background: none;
           border: none;
           cursor: pointer;
         }
-        
-        /* Nav transition */
-        #header-nav {
-          transition: all 0.3s ease;
-        }
-        
 
        } /* End Desktop */  
 
@@ -440,37 +434,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("desktop-search-input");
   const form = document.getElementById("desktop-search-form-element");
 
-  // Show the search input
+  // Show search UI
   toggleBtn.addEventListener("click", function () {
-    formContainer.classList.add("show");
+    formContainer.style.display = "flex";
     toggleBtn.style.display = "none";
     input.focus();
   });
 
-  // Close button (❌) behavior
+  // Close (X) button
   closeBtn.addEventListener("click", function () {
     hideSearchForm();
   });
 
-  // Submit behavior
+  // Submit handler
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const query = input.value.trim();
-    if (query === "") return;
+    if (!query) return;
 
-    // Hide search form UI
+    // Hide everything before redirect
     hideSearchForm();
 
     // Redirect to search results page
     window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
   });
 
-  // Shared function to hide everything and reset
   function hideSearchForm() {
-    formContainer.classList.remove("show");        // Hide form block
-    input.value = "";                              // Clear input
-    toggleBtn.style.display = "inline-block";      // Show main 🔍 again
+    formContainer.style.display = "none";         // Hide form container
+    toggleBtn.style.display = "inline-block";     // Show main icon
+    input.value = "";                             // Clear text
   }
 });
 </script>
