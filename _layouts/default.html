@@ -89,13 +89,17 @@
 
             <span class="desktop-search">
               <button id="desktop-search-toggle" aria-label="Open search">🔍</button>
+            
               <div id="desktop-search-form">
+                <button id="desktop-search-close" aria-label="Close search">❌</button>
+            
                 <form action="/search-results/" method="get" id="desktop-search-form-element">
                   <input type="text" name="q" id="desktop-search-input" placeholder="Search..." />
-                  <button type="button" id="desktop-search-close" aria-label="Close search">❌</button>
+                  <button type="submit" id="desktop-submit-btn" aria-label="Submit search">🔍</button>
                 </form>
               </div>
             </span>
+
             
           </nav>
         </header>
@@ -169,50 +173,64 @@
           }
 
           /* Desktop Search Button Area */
-          /* Container for magnifying glass and search input */
-          .desktop-search {
-            display: inline-block;
-            margin-left: 20px;
-          }
-          
-          /* Show/hide the search box */
-          #desktop-search-form {
-            display: none;
-            margin-top: 10px;
-          }
-          
-          /* Form layout: input and X in a row */
-          #desktop-search-form form {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 8px;
-          }
-          
-          /* Input field styling */
-          #desktop-search-input {
-            padding: 6px 10px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            width: 200px;
-          }
-          
-          /* Button styles */
-          #desktop-search-toggle {
-            font-size: 20px;
-            background: none;
-            border: none;
-            cursor: pointer;
-          }
-          
-          #desktop-search-close {
-            font-size: 18px;
-            background: none;
-            border: none;
-            color: red;
-            cursor: pointer;
-          }
+          /* Desktop Search Container */
+        .desktop-search {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        
+        /* Initially hide search form */
+        #desktop-search-form {
+          display: none;
+          margin-top: 10px;
+          flex-direction: column;
+        }
+        
+        /* Show form as vertical block */
+        #desktop-search-form.show {
+          display: flex;
+        }
+        
+        /* ❌ (close) styling */
+        #desktop-search-close {
+          font-size: 18px;
+          background: none;
+          border: none;
+          color: red;
+          cursor: pointer;
+          align-self: flex-end;
+        }
+        
+        /* Input row: input + 🔍 icon */
+        #desktop-search-form form {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+          margin-top: 8px;
+        }
+        
+        /* Search input styling */
+        #desktop-search-input {
+          padding: 6px 10px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          width: 200px;
+        }
+        
+        /* 🔍 submit button */
+        #desktop-submit-btn {
+          font-size: 16px;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+        
+        /* Ensure nav expands */
+        #header-nav {
+          transition: all 0.3s ease;
+        }
 
        } /* End Desktop */  
 
@@ -414,27 +432,30 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- SEARCH RESULTS HTML - DESKTOP -->  
  <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const toggleDesktop = document.getElementById("desktop-search-toggle");
-    const formWrapper = document.getElementById("desktop-search-form");
-    const inputDesktop = document.getElementById("desktop-search-input");
-    const closeDesktop = document.getElementById("desktop-search-close");
-    const formElement = document.getElementById("desktop-search-form-element");
+    const toggleBtn = document.getElementById("desktop-search-toggle");
+    const formContainer = document.getElementById("desktop-search-form");
+    const closeBtn = document.getElementById("desktop-search-close");
+    const input = document.getElementById("desktop-search-input");
+    const form = document.getElementById("desktop-search-form-element");
   
-    // Show form on 🔍 click
-    toggleDesktop.addEventListener("click", function () {
-      formWrapper.style.display = "block";
-      inputDesktop.focus();
+    // Show form on 🔍 click, hide the toggle icon
+    toggleBtn.addEventListener("click", function () {
+      formContainer.classList.add("show");
+      toggleBtn.style.display = "none";
+      input.focus();
     });
   
-    // Hide form on ❌ click
-    closeDesktop.addEventListener("click", function () {
-      formWrapper.style.display = "none";
-      inputDesktop.value = "";
+    // Hide form and show 🔍 again
+    closeBtn.addEventListener("click", function () {
+      formContainer.classList.remove("show");
+      input.value = "";
+      toggleBtn.style.display = "inline-block";
     });
   
-    // Hide form after submitting
-    formElement.addEventListener("submit", function () {
-      formWrapper.style.display = "none";
+    // After form submission, hide form and show 🔍 again
+    form.addEventListener("submit", function () {
+      formContainer.classList.remove("show");
+      toggleBtn.style.display = "inline-block";
     });
   });
 </script>
