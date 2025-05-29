@@ -5,9 +5,10 @@ categories: ["Automation"]
 image: "/assets/images/Auto/Automation-AI-Tools.png"
 ---
 
-| ![Alt Automation Testing Tools](/assets/images/Auto/Automation-AI-Tools.png) |
-|:--:|
-| *Image on Freepik* |
+<figure>
+  <img src="/assets/images/Auto/Automation-AI-Tools.png" alt="Automation Testing Tools" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
 
 ## Introduction
 
