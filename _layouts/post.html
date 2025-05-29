@@ -222,7 +222,7 @@ layout: default
       const ratings = comments.map(c => parseFloat(c.rating)).filter(r => !isNaN(r));
       const avgRating = ratings.reduce((a, b) => a + b, 0) / ratings.length;
 
-      ratingDisplay.textContent = `Average Rating: ${avgRating.toFixed(1)} / 5`;
+      ratingDisplay.textContent = ` ${avgRating.toFixed(1)} / 5`;
 
       // Determine star icons using Font Awesome
       const fullStars = Math.floor(avgRating);
@@ -311,10 +311,10 @@ layout: default
 
   @media only screen and (max-width: 780px) {
     #ratingDisplay {
-      font-size: 16px;
+      font-size: 20px;
     }
     #ratingStars {
-      font-size: 16px;
+      font-size: 20px;
     }
 
   } /* End Desktop */  
