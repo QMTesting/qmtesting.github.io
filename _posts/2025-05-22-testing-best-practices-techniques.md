@@ -2,11 +2,11 @@
 layout: post
 title: "Testing Best Practices and Techniques"
 categories: ["Types of Testing"]
-image: "/assets/images/Types/software-testing-types.png"
+image: "/assets/images/Types/software-testing-types.webp"
 ---
 
 <figure>
-  <img src="/assets/images/Types/software-testing-types.png" alt="Best Testing Techniques" />
+  <img src="/assets/images/Types/software-testing-types.webp" alt="Best Testing Techniques" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
