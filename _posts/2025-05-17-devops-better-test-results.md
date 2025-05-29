@@ -5,9 +5,10 @@ categories: ["Azure DevOps"]
 image: /assets/images/DevOps/Azure-DevOps-Testing.png
 ---
 
-| ![Alt Azure DevOps Testing](/assets/images/DevOps/Azure-DevOps-Testing.png) |
-|:--:|
-| *Image by vectorjuice on Freepik* |
+<figure>
+  <img src="/assets/images/DevOps/Azure-DevOps-Testing.png" alt="Azure DevOps Testing" />
+  <figcaption>Image by vectorjuice on Freepik</figcaption>
+</figure>
 
 ## Introduction
 
