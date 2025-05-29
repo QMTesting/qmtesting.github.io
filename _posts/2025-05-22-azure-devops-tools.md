@@ -5,9 +5,10 @@ categories: ["Azure DevOps"]
 image: "/assets/images/DevOps/Azure-DevOps-Tools.png"
 ---
 
-| ![Alt DevOps Pipeline Tools](/assets/images/DevOps/Azure-DevOps-Tools.png) |
-|:--:|
-| *Image on Freepik* |
+<figure>
+  <img src="/assets/images/DevOps/Azure-DevOps-Tools.png" alt="DevOps Pipeline Tools" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
 
 ## Introduction
 
