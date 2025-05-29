@@ -5,7 +5,7 @@ categories: ["Types of Testing"]
 image: "/assets/images/Types/software-testing-types.png"
 ---
 
-| ![Alt Testing Best Practice Techniques](/assets/images/Types/software-testing-types.png) |
+| ![Alt Testing Best Techniques](/assets/images/Types/software-testing-types.png) |
 |:--:|
 | *Image on Freepik* |
 
