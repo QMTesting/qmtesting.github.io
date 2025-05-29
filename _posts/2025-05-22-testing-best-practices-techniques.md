@@ -5,9 +5,10 @@ categories: ["Types of Testing"]
 image: "/assets/images/Types/software-testing-types.png"
 ---
 
-| ![Alt Testing Best Techniques](/assets/images/Types/software-testing-types.png) |
-|:--:|
-| *Image on Freepik* |
+<figure>
+  <img src="/assets/images/Types/software-testing-types.png" alt="Best Testing Techniques" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
 
 ## Introduction
 
