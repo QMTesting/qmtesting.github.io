@@ -5,9 +5,11 @@ categories: ["Software Testing"]
 image: "/assets/images/Test/ISTQB.png"
 ---
 
-<img src="/assets/images/Test/ISTQB.png" alt="Alt ISTQB certification" />
-|:--:|
-| *Image on Freepik* |
+<figure>
+  <img src="/assets/images/Test/ISTQB.png" alt="Alt ISTQB certification" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
+
 
 
 
