@@ -5,9 +5,12 @@ categories: ["Automation"]
 image: /assets/images/Auto/automation-testing-tools.png
 ---
 
-| ![Alt Automation Testing Tools](/assets/images/Auto/automation-testing-tools.png) |
-|:--:|
-| *Image by vectorjuice on Freepik* |
+<figure>
+  <img src="/assets/images/Auto/automation-testing-tools.png" alt="Automation Testing Tools" />
+  <figcaption>Image by vectorjuice on Freepik</figcaption>
+</figure>
+
+## Introduction
 
 The demand for efficient and effective testing solutions has never been higher in today's fast-paced software development landscape. As technology continues to advance, AI Testing Tools have emerged as a game-changer in the realm of software testing automation. In this blog post, we'll explore the intersection of AI and software testing, examining the benefits, challenges, and innovative tools shaping the future of automated testing.
 
