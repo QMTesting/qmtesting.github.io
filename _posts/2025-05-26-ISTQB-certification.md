@@ -2,11 +2,11 @@
 layout: post
 title: "Know How To Elevate Your Testing Career with an ISTQB Certification"
 categories: ["Software Testing"]
-image: "/assets/images/Test/ISTQB.png"
+image: "/assets/images/Test/ISTQB.webp"
 ---
 
 <figure>
-  <img src="/assets/images/Test/ISTQB.png" alt="Alt ISTQB certification" />
+  <img src="/assets/images/Test/ISTQB.webp" alt="Alt ISTQB certification" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
