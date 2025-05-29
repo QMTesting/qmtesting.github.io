@@ -1198,7 +1198,10 @@ html, body {
     width: 100%;
     justify-content: flex-end;
   }
-}
+  #mobile-search-input {
+    border-radius: 5px;	   
+   }	  
+} /* End Mobile */
 
 /* Hide search form by default */
 #mobile-search-form {
