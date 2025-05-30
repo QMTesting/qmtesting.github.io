@@ -259,8 +259,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            padding: 10px;
-            background-color: #f9f9f9;
+            padding: 0px;
+            background-color: none;
           }
       
           #mobile-search-toggle {
@@ -273,14 +273,13 @@
           }
       
           #mobile-search-form {
-            display: none;
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
             padding: 10px;
           }
       
           #mobile-search-input {
-            width: 90%;
+            width: 100px;
             padding: 8px;
             font-size: 16px;
             border: 1px solid #ccc;
@@ -532,7 +531,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
     
     <form id="mobile-search-form" action="/search-results/" method="get">
-      <input type="text" name="q" id="mobile-search-input" style="border-radius: 5px;" placeholder="Search..." />
+      <input type="text" name="q" id="mobile-search-input" style="border-radius: 5px; width: 100px;" placeholder="Search..." />
       <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
     </form>
   </div>
