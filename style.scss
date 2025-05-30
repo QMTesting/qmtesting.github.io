@@ -1194,9 +1194,12 @@ html, body {
   .mobile-search-container {
     width: 100%;
     justify-content: flex-end;
+    display: none;	  
+	  
   }
   #mobile-search-input {
-    border-radius: 5px;	   
+    border-radius: 5px;	 
+    display: none;	  
    }	  
 } /* End Mobile */
 
