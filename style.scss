@@ -1030,23 +1030,6 @@ th, td {
     margin-left: 250px;
   }
 
-  /* Center the nav across the whole page */
-  #header-nav {
-    display: flex;
-    justify-content: center; /* centers items horizontally */
-    gap: 7px;
-    margin-top: 15px;
-    width: 1000px; /* takes full width of its container */
-    background: #bc960d;
-    margin-left: 300px;
-  }
-
-  #header-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    color: #333;
-  }
 
   .masthead {
     width: 100%;
