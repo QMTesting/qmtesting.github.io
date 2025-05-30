@@ -526,16 +526,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- SEARCH RESULTS HTML - MOBILE -->
 <!-- Mobile Search Toggle UI -->
-<div id="searchBox">
-  <div class="mobile-search-container">
-    <button id="mobile-search-toggle" aria-label="Open search">🔍</button>
-    
-    <form id="mobile-search-form" action="/search-results/" method="get">
-      <input type="text" name="q" id="mobile-search-input" style="border-radius: 5px; width: 100px;" placeholder="Search..." />
-      <button type="button" id="mobile-search-close" aria-label="Close search">❌</button>
-    </form>
-  </div>
-</div>    
+  
 <!-- SEARCH RESULTS HTML - MOBILE-END -->
     
 <!-- SEARCH RESULTS HTML - DESKTOP -->  
@@ -580,16 +571,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 </script>  
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth < 768) {
-      var headerNav = document.getElementById("header-nav");
-      if (headerNav) {
-        headerNav.remove(); // Removes it completely from the page
-      }
-    }
-  });
-</script>    
+  
 
 <!-- SEARCH RESULTS HTML - DESKTOP-END -->    
     
