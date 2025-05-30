@@ -1173,7 +1173,7 @@ html, body {
 }
 
 /* Prevent the container from exceeding screen */
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .mobile-search-container {
     width: 100%;
     justify-content: flex-end;
@@ -1247,10 +1247,6 @@ html, body {
   }
 	  
 } /* End Mobile */	
-
-#header-nav {
-   display: none;	  
-  }
 
 /* Post Image Capture */
 figcaption {
