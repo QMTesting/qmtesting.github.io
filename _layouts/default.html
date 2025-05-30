@@ -318,8 +318,6 @@
           margin-left: 10px;
         }
 
-       
-        
         #mobile-search-close {
           font-size: 18px;
           background: none;
@@ -362,10 +360,10 @@
           display: none;
         }
         .head-devops {
-        display: none;
+          display: none;
         } 
         .desktop-header-nav {
-            display: none
+          display: none
         }     
 
         } /* End Mobile*/
@@ -505,28 +503,7 @@
     }
   }
 </script>    
-<!--HAMBURGER JAVASCRIPT FOR MOBILE-END--> 
-
-<!-- SEARCH RESULTS - MOBILE --> 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("mobile-search-toggle");
-  const searchForm = document.getElementById("mobile-search-form");
-  const searchInput = document.getElementById("mobile-search-input");
-  const closeBtn = document.getElementById("mobile-search-close");
-
-  toggleBtn.addEventListener("click", function () {
-    searchForm.style.display = "flex";
-    searchInput.focus();
-  });
-
-  closeBtn.addEventListener("click", function () {
-    searchForm.style.display = "none";
-    searchInput.value = "";
-  });
-});
-</script>
-<!-- SEARCH RESULTS JAVA - MOBILE - END -->       
+<!--HAMBURGER JAVASCRIPT FOR MOBILE-END-->       
 
 <!-- SEARCH RESULTS JAVA - MOBILE -->
 <!-- Mobile Search Toggle UI -->
