@@ -276,9 +276,7 @@
        } /* End Desktop */  
 
        @media only screen and (max-width: 767px) {
-          #header-nav {
-            display: none
-          }  
+          
           .mobile-header-nav {
             display: block;
           }  
@@ -294,43 +292,7 @@
              width: 350px;
            } 
 
-          .mobile-search-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 0px;
-            background-color: none;
-          }
-      
-          #mobile-search-toggle {
-            font-size: 20px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #000;
-            padding: 5px;
-          }
-      
-          #mobile-search-form {
-            flex-direction: column;
-            gap: 5px;
-            padding: 10px;
-          }
-      
-          #mobile-search-input {
-            width: 100px;
-            padding: 8px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-          }
-      
-          #mobile-search-close {
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: red;
-            cursor: pointer;
-          }
+         
          .head-home {
            display: none;
          } 
@@ -403,6 +365,12 @@
         .head-devops {
         display: none;
         } 
+        #header-nav {
+            display: none
+        }   
+        #header-nav a {
+            display: none
+        }    
 
         } /* End Mobile*/
 
