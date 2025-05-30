@@ -71,6 +71,27 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
+          
+         <div class="mobile-header-nav">
+          <div class="desktop-search" style="position: relative; display: inline-block;">
+            <!-- Main nav magnifying glass icon -->
+            <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer;"=>
+              🔍
+            </button>
+          
+            <!-- Container shown on toggle -->
+            <div id="desktop-search-form" style="display: none; flex-direction: column; align-items: flex-start; gap: 5px;">
+              <button id="desktop-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">❌</button>
+          
+              <form id="desktop-search-form-element" style="display: flex; gap: 5px;">
+                <input type="text" id="desktop-search-input" style="padding: 5px 5px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" placeholder="Search..." />
+                <button type="submit" id="desktop-submit-btn" style="font-size: 16px; background: none; border: none; cursor: pointer;">🔍</button>
+              </form>
+            </div>
+          </div>
+         </div>  
+
+          
           <div class="header-top">
             <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }} avatar" /></a>
         
@@ -169,6 +190,12 @@
 
         /* Desktop Search Button Area */
         /* Desktop Search Container */
+          #header-nav {
+            display: block
+          }  
+          .mobile-header-nav {
+            display: none;
+          }  
          #header-nav {
           display: inline-block;
           width: 1000px; 
@@ -249,12 +276,12 @@
        } /* End Desktop */  
 
        @media only screen and (max-width: 768px) {
-           #header-nav {
-            order: 1;
-          }
-          #site-avatar {
-            order: 2;
-          }        
+          #header-nav {
+            display: none
+          }  
+          .mobile-header-nav {
+            display: block;
+          }  
           .welcome-heding {
             text-align: center;
             margin-left: 15px;
