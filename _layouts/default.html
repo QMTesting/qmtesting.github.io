@@ -255,14 +255,46 @@
              width: 350px;
            } 
 
-           /* Show only on desktop */      
-              #header-nav {
-                margin-left: 0px;
-                width: 150px;
-         }  
+          .mobile-search-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: #f9f9f9;
+          }
+      
+          #mobile-search-toggle {
+            font-size: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #000;
+            padding: 5px;
+          }
+      
+          #mobile-search-form {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+          }
+      
+          #mobile-search-input {
+            width: 90%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+          }
+      
+          #mobile-search-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: red;
+            cursor: pointer;
+          }
+        } /* End Mobile*/
 
-            
-       } /* End Mobile */  
          
       </style>   
       
