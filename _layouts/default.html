@@ -84,7 +84,7 @@
               <button id="mobile-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">❌</button>
         
               <form id="mobile-search-form-element" style="display: flex; gap: 5px;">
-                <input type="text" id="mobile-search-input" placeholder="Search..." style="padding: 5px 5px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 80px;" />
+                <input type="text" id="mobile-search-input" placeholder="Search..." />
                 <button type="submit" id="mobile-submit-btn" style="font-size: 16px; background: none; border: none; cursor: pointer;">🔍</button>
               </form>
             </div>
@@ -310,12 +310,11 @@
         }
         
         #mobile-search-form {
-          flex-direction: row;
-          align-items: inline-block;
-          gap: 0px;
-          margin-top: 10px;
-          margin-left: 10px;
-        }
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+        } 
 
         #mobile-search-close {
           font-size: 18px;
@@ -331,13 +330,16 @@
           gap: 5px;
         }
         
-        /* #mobile-search-input {
-          padding: 5px 10px;
+        #mobile-search-input {
+          display: inline-block;
+          width: 180px;
+          padding: 6px 8px;
           font-size: 14px;
-          border-radius: 5px;
           border: 1px solid #ccc;
-          width: 150px;
-        }*/
+          border-radius: 5px;
+          background: white;
+          color: black;
+        }
         
         #mobile-submit-btn {
           font-size: 16px;
