@@ -506,23 +506,48 @@
 
 <!-- SEARCH RESULTS JAVA - MOBILE -->
 <!-- Mobile Search Toggle UI -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const mobileSearchToggle = document.getElementById('mobile-search-toggle');
-    const mobileSearchForm = document.getElementById('mobile-search-form');
-    const mobileSearchClose = document.getElementById('mobile-search-close');
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileToggleBtn = document.getElementById("mobile-search-toggle");
+  const mobileFormContainer = document.getElementById("mobile-search-form");
+  const mobileCloseBtn = document.getElementById("mobile-search-close");
+  const mobileInput = document.getElementById("mobile-search-input");
+  const mobileForm = document.getElementById("mobile-search-form-element");
 
-    if (mobileSearchToggle && mobileSearchForm && mobileSearchClose) {
-      mobileSearchToggle.addEventListener('click', function () {
-        mobileSearchForm.style.display = 'flex'; // Show the form
-      });
-
-      mobileSearchClose.addEventListener('click', function () {
-        mobileSearchForm.style.display = 'none'; // Hide the form
-      });
-    }
+  // Show search UI
+  mobileToggleBtn.addEventListener("click", function () {
+    mobileFormContainer.style.display = "flex";
+    mobileToggleBtn.style.display = "none";
+    mobileInput.focus();
   });
+
+  // Close (X) button
+  mobileCloseBtn.addEventListener("click", function () {
+    hideSearchForm();
+  });
+
+  // Submit handler
+  mobileForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const query = mobileInput.value.trim();
+    if (!query) return;
+
+    // Hide all search UI before redirect
+    hideSearchForm();
+
+    // Redirect to search results page
+    window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+  });
+
+  function hideSearchForm() {
+    mobileFormContainer.style.display = "none";         // Hide entire form container
+    mobileToggleBtn.style.display = "inline-block";     // Show main toggle button
+    mobileInput.value = "";                             // Clear input field
+  }
+});
 </script>
+
 
   
 <!-- SEARCH RESULTS JAVA - MOBILE-END -->
