@@ -132,6 +132,12 @@
          text-align: center;
          margin-left: 300px;
        } 
+
+        .header-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+
        @media only screen and (min-width: 820px) and (max-width: 2000px) {
           .header-top {
             display: flex;
@@ -243,6 +249,12 @@
        } /* End Desktop */  
 
        @media only screen and (max-width: 768px) {
+           #header-nav {
+            order: 2;
+          }
+          #site-avatar {
+            order: 1;
+          }        
           .welcome-heding {
             text-align: center;
             margin-left: 15px;
