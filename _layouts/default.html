@@ -73,19 +73,19 @@
         <header class="masthead clearfix">
           
          <div class="mobile-header-nav">
-          <div class="desktop-search" style="position: relative; display: inline-block;">
+          <div class="mobile-search" style="position: relative; display: inline-block;">
             <!-- Main nav magnifying glass icon -->
-            <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer;"=>
+            <button id="mobile-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer;"=>
               🔍
             </button>
           
             <!-- Container shown on toggle -->
-            <div id="desktop-search-form" style="display: none; flex-direction: column; align-items: flex-start; gap: 5px;">
-              <button id="desktop-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">❌</button>
+            <div id="mobile-search-form" style="display: none; flex-direction: column; align-items: flex-start; gap: 5px;">
+              <button id="mobile-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">❌</button>
           
-              <form id="desktop-search-form-element" style="display: flex; gap: 5px;">
-                <input type="text" id="desktop-search-input" style="padding: 5px 5px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" placeholder="Search..." />
-                <button type="submit" id="desktop-submit-btn" style="font-size: 16px; background: none; border: none; cursor: pointer;">🔍</button>
+              <form id="mobile-search-form-element" style="display: flex; gap: 5px;">
+                <input type="text" id="mobile-search-input" style="padding: 5px 5px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" placeholder="Search..." />
+                <button type="submit" id="mobile-submit-btn" style="font-size: 16px; background: none; border: none; cursor: pointer;">🔍</button>
               </form>
             </div>
           </div>
@@ -301,17 +301,13 @@
              width: 350px;
            } 
 
-         
-         .head-home {
-           display: none;
-         } 
-        .desktop-search {
+        .mobile-search {
           position: relative;
           display: inline-block;
           margin-left: 0px;
         }
         
-        #desktop-search-toggle {
+        #mobile-search-toggle {
           font-size: 18px;
           background: none;
           border: none;
@@ -320,7 +316,7 @@
           margin-top: 15px;
         }
         
-        #desktop-search-form {
+        #mobile-search-form {
           flex-direction: row;
           align-items: inline-block;
           gap: 0px;
@@ -330,7 +326,7 @@
 
        
         
-        #desktop-search-close {
+        #mobile-search-close {
           font-size: 18px;
           background: none;
           border: none;
@@ -339,12 +335,12 @@
           align-self: flex-end;
         }
         
-        #desktop-search-form-element {
+        #mobile-search-form-element {
           display: flex;
           gap: 5px;
         }
         
-        #desktop-search-input {
+        #mobile-search-input {
           padding: 5px 10px;
           font-size: 14px;
           border-radius: 5px;
@@ -352,7 +348,7 @@
           width: 150px;
         }
         
-        #desktop-submit-btn {
+        #mobile-submit-btn {
           font-size: 16px;
           background: none;
           border: none;
@@ -538,12 +534,53 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <!-- SEARCH RESULTS JAVA - MOBILE - END -->       
 
-<!-- SEARCH RESULTS HTML - MOBILE -->
+<!-- SEARCH RESULTS JAVA - MOBILE -->
 <!-- Mobile Search Toggle UI -->
+    <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const mobileToggleBtn = document.getElementById("mobile-search-toggle");
+    const mobileFormContainer = document.getElementById("mobile-search-form");
+    const mobileCloseBtn = document.getElementById("mobile-search-close");
+    const mobileInput = document.getElementById("mobile-search-input");
+    const mobileForm = document.getElementById("mobile-search-form-element");
+
+  // Show search UI
+    mobileToggleBtn.addEventListener("click", function () {
+    mobileFormContainer.style.display = "flex";
+    mobileToggleBtn.style.display = "none";
+    mobileInput.focus();
+  });
+
+  // Close (X) button
+    mobileCloseBtn.addEventListener("click", function () {
+    hideSearchForm();
+  });
+
+  // Submit handler
+    mobileForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const query = input.value.trim();
+    if (!query) return;
+
+    // Hide everything before redirect
+    hideSearchForm();
+
+    // Redirect to search results page
+    window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+  });
+
+  function hideSearchForm() {
+    mobileFormContainer.style.display = "none";         // Hide form container
+    mobileToggleBtn.style.display = "inline-block";     // Show main icon
+    mobileInput.value = "";                             // Clear text
+  }
+});
+</script>  
   
-<!-- SEARCH RESULTS HTML - MOBILE-END -->
+<!-- SEARCH RESULTS JAVA - MOBILE-END -->
     
-<!-- SEARCH RESULTS HTML - DESKTOP -->  
+<!-- SEARCH RESULTS JAVA - DESKTOP -->  
   <script>
    document.addEventListener("DOMContentLoaded", function () {
     const toggleBtn = document.getElementById("desktop-search-toggle");
@@ -587,7 +624,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>  
   
 
-<!-- SEARCH RESULTS HTML - DESKTOP-END -->    
+<!-- SEARCH RESULTS JAVA - DESKTOP-END -->    
     
   </body>
 </html>
