@@ -75,7 +75,7 @@
          <div class="mobile-header-nav">
           <div class="mobile-search" style="position: relative; display: inline-block;">
             <!-- Magnifying Glass Icon -->
-            <button id="mobile-search-toggle" aria-label="Search" style="font-size: 24px; background: none; border: none; cursor: pointer; margin-left: 120px;">
+            <button id="mobile-search-toggle" aria-label="Search" style="font-size: 24px; background: none; border: none; cursor: pointer;">
               🔍
             </button>
         
@@ -300,23 +300,32 @@
           display: inline-block;
           margin-left: 0px;
         }
+      
         
         #mobile-search-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
           font-size: 18px;
           background: none;
           border: none;
           cursor: pointer;
-          margin-top: 5px;
-          margin-left: 50px;
+          z-index: 10001; /* Above other elements */
         }
         
         #mobile-search-form {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          background: white;
+          padding: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          z-index: 10000;
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
-          gap: 5px;
-          margin-left: 30px;
-        } 
+          align-items: flex-end;
+        }
 
         #mobile-search-close {
           font-size: 18px;
