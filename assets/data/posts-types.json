@@ -18,9 +18,9 @@ category: Types of Testing
     "label": "Types of Testing"
   },
   {
-    "title": "JUnit Basics",
-    "url": "/_posts/junit-basics.html",
-    "thumb": "/_posts/assets/images/Types/junit.png",
+    "title": "Regression Testing Know the Fundamentals in the STLC",
+    "url": "/_posts/2025-06-02-regression-testing-fundamentals.md",
+    "thumb": "/assets/images/Types/regression-testing.webp",
     "label": "Types of Testing"
   }
 ]
