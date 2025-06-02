@@ -95,8 +95,12 @@ Prone to human error and variability in test execution and results interpretatio
 Provides repeatability and consistency in test execution, ensuring uniformity in regression testing results across multiple runs and environments.
 
 ### Maintenance Effort:
-Manual Testing: Test cases need to be executed manually for each regression testing cycle, requiring ongoing effort and resources for test case maintenance.
-Automation: Initial investment in test script development and maintenance, followed by reduced effort for regression testing as automated tests can be reused and updated easily.
+
+#### Manual Testing: 
+Test cases need to be executed manually for each regression testing cycle, requiring ongoing effort and resources for test case maintenance.
+
+#### Automation: 
+Initial investment in test script development and maintenance, followed by reduced effort for regression testing as automated tests can be reused and updated easily.
 
 ### Test Environment Stability:
 
@@ -236,8 +240,12 @@ Managing relevant and representative test data can be challenging, especially wh
 Implement data anonymization and masking techniques to protect sensitive data during regression testing. Maintain a comprehensive test data management strategy to ensure data integrity, confidentiality, and relevance. Regularly refresh test data to maintain its validity and relevance.
 
 ### Automation Challenges:
-Challenge: Automation may face challenges such as script maintenance, tool compatibility, and scalability.
-Mitigation: Choose robust automation tools and frameworks that align with project requirements and technology stack. Invest in automation script design and architecture to enhance maintainability and scalability. Regularly review and update automation scripts to adapt to changes in the application.
+
+#### Challenge: 
+Automation may face challenges such as script maintenance, tool compatibility, and scalability.
+
+#### Mitigation: 
+Choose robust automation tools and frameworks that align with project requirements and technology stack. Invest in automation script design and architecture to enhance maintainability and scalability. Regularly review and update automation scripts to adapt to changes in the application.
 
 ### Dependency Management:
 
