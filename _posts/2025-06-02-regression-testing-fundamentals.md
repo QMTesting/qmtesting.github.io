@@ -2,11 +2,11 @@
 layout: post
 title: "Regression Testing Know the Fundamentals in the STLC"
 categories: ["Types of Testing"]
-image: "/assets/images/regression-testing.webp"
+image: "/assets/images/Types/regression-testing.webp"
 ---
 
 <figure>
-  <img src="/assets/images/regression-testing.webp" alt="regresion testing fundamentals" />
+  <img src="/assets/images/Types/regression-testing.webp" alt="regresion testing fundamentals" />
   <figcaption>Image by vector4stock on Freepik</figcaption>
 </figure>
 
