@@ -1056,8 +1056,8 @@ a {
 @media (max-width: 768px) {
 /* Hamburger Icon */
 .hamburger {
-  font-size: 40px;
-  font-weight: 900;	
+  font-size: 30px;
+  font-weight: 600;	
   cursor: pointer;
   display: none;
   padding: 10px;
@@ -1083,6 +1083,8 @@ a {
   flex-direction: column;
   align-items: center;
   background: #fce8b2;	
+  font-size: 40px;
+  font-weight: 900;	
 }
 
 /* Hide menu by default */
