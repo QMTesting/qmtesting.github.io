@@ -117,30 +117,30 @@ Start by reviewing the project documentation, such as the requirements specifica
 ### 2. Identify Test Objectives
 Test objectives define the purpose of each test case. They help testers understand what they are trying to achieve with each test and guide them in designing appropriate test scenarios. When identifying test objectives, consider the following:
 
-##### Functional Coverage: 
+#### Functional Coverage: 
 Ensure that the test cases cover all the functional requirements.
 
-##### Risk-based Testing: 
+#### Risk-based Testing: 
 Identify high-risk areas of the software and prioritize test cases accordingly.
 
-##### User Scenarios: 
+#### User Scenarios: 
 Design test cases that mimic real-world user scenarios to validate the software's usability.
 
-##### Boundary Conditions: Include test cases that test the limits and boundaries of the software's functionality.
+#### Boundary Conditions: Include test cases that test the limits and boundaries of the software's functionality.
 
 ### 3. Use Test Design Techniques
 Test design techniques are systematic approaches to designing test cases. They help ensure that test cases are comprehensive and cover a wide range of scenarios. Some commonly used test design techniques include:
 
-##### Equivalence Partitioning: 
+#### Equivalence Partitioning: 
 Divide the input domain into equivalent classes and design test cases for each class.
 
-##### Boundary Value Analysis: 
+#### Boundary Value Analysis: 
 Test the boundaries and limits of input values to identify any issues.
 
-##### Decision Table Testing: 
+#### Decision Table Testing: 
 Create a decision table to capture different combinations of inputs and expected outputs.
 
-##### State Transition Testing: 
+#### State Transition Testing: 
 Design test cases to validate the transitions between different states of the software.
 
 By using these techniques, you can ensure that your test cases are well-designed and cover a wide range of scenarios, increasing the chances of finding defects in the software.
