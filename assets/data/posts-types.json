@@ -22,5 +22,11 @@ category: Types of Testing
     "url": "/_posts/2025-06-02-regression-testing-fundamentals.md",
     "thumb": "/assets/images/Types/regression-testing.webp",
     "label": "Types of Testing"
+  },
+  {
+    "title": "Positive Testing in the STLC Best How To Techniques",
+    "url": "/_posts/2025-06-04-positive-testing-techniques.md",
+    "thumb": "/assets/images/Types/positive-testing.webp",
+    "label": "Types of Testing"
   }
 ]
