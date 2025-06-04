@@ -9,7 +9,7 @@ name: QM Testing
 description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: "/images/logo-bug.webp"
+avatar: "/images/logo-bug.png"
 
 #
 # Flags below are optional
@@ -60,7 +60,7 @@ baseurl: ""
 #
 
 # Site Logo
-logo: "/images/logo-bug.webp"
+logo: "/images/logo-bug.png"
 
 permalink: /:title/
 
