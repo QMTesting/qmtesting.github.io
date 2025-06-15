@@ -28,5 +28,11 @@ category: Types of Testing
     "url": "/_posts/2025-06-04-positive-testing-techniques.md",
     "thumb": "/assets/images/Types/positive-testing.webp",
     "label": "Types of Testing"
+  },
+  {
+    "title": "Negative Testing How To Strategies",
+    "url": "/_posts/2025-06-11-negative-testing-how-to-strategies.md",
+    "thumb": "/assets/images/Types/Negative Testing.webp",
+    "label": "Types of Testing"
   }
 ]
