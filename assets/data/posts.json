@@ -22,5 +22,11 @@ category: Software Testing
     "url": "/_posts/2025-05-26-ISTQB-certification.md",
     "thumb": "/assets/images/Test/ISTQB.webp",
     "label": "Software Testing"
+  },
+  {
+    "title": "Test Basis: Know How To Build Software Testing Success",
+    "url": "/_posts/2025-06-20-Test-Basis-Know-How-To-Build-Software-Testing-Success.md",
+    "thumb": "/assets/images/Test/Test-Basis.webp",
+    "label": "Software Testing"
   }
 ]
