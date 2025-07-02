@@ -56,7 +56,8 @@ Leverages tester intuition to predict areas vulnerable to issues.
 
 A systematic approach enhances Black Box Testing efficiency:
 
-### Analyze Requirements: Develop a deep understanding of the application's functional expectations.
+### Analyze Requirements: 
+Develop a deep understanding of the application's functional expectations.
 
 #### Select Suitable Techniques: 
 Choose testing methods aligned with the project’s needs.
@@ -107,15 +108,15 @@ Testing diverse input conditions can be labor-intensive.
 
 To address its limitations, implementing complementary strategies improves testing effectiveness:
 
-### 1. Integrate White Testing (test the internal structure or code of an application) & Gray Box Testing (combines knowledge of internal code with black box testing) for comprehensive coverage.
-### 2. Use Automated Testing Tools to enhance efficiency and scalability.
-### 3. Perform Thorough Requirement Analysis for better-defined test cases.
-### 4. Adopt Risk-Based Testing to prioritize critical functionality checks.
-### 5. Engage in User Acceptance Testing (UAT) to collect feedback on usability.
-### 6. Practice Exploratory Testing to identify issues beyond structured test cases.
-### 7. Apply Incremental Testing to detect issues progressively.
-### 8. Establish Continuous Feedback Loops for rapid improvements.
-### 9. Regularly Review & Optimize Test Cases to maintain effectiveness.
+1. Integrate White Testing (test the internal structure or code of an application) & Gray Box Testing (combines knowledge of internal code with black box testing) for comprehensive coverage.
+2. Use Automated Testing Tools to enhance efficiency and scalability.
+3. Perform Thorough Requirement Analysis for better-defined test cases.
+4. Adopt Risk-Based Testing to prioritize critical functionality checks.
+5. Engage in User Acceptance Testing (UAT) to collect feedback on usability.
+6. Practice Exploratory Testing to identify issues beyond structured test cases.
+7. Apply Incremental Testing to detect issues progressively.
+8. Establish Continuous Feedback Loops for rapid improvements.
+9. Regularly Review & Optimize Test Cases to maintain effectiveness.
 
 ## Conclusion
 
