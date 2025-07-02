@@ -59,16 +59,16 @@ A systematic approach enhances Black Box Testing efficiency:
 ### Analyze Requirements: 
 Develop a deep understanding of the application's functional expectations.
 
-#### Select Suitable Techniques: 
+### Select Suitable Techniques: 
 Choose testing methods aligned with the project’s needs.
 
-#### Create Test Cases: 
+### Create Test Cases: 
 Design scenarios covering a broad spectrum of functionalities.
 
-#### Execute Tests: 
+### Execute Tests: 
 Run test cases and record outcomes.
 
-#### Document Findings: 
+### Document Findings: 
 Report discrepancies between expected and actual behaviors for resolution.
 
 ## Advantages & Limitations
