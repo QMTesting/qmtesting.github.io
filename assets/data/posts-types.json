@@ -34,5 +34,11 @@ category: Types of Testing
     "url": "/_posts/2025-06-11-negative-testing-how-to-strategies.md",
     "thumb": "/assets/images/Types/Negative Testing.webp",
     "label": "Types of Testing"
+  },
+  {
+    "title": "Black Box Testing in the STLC Best How To Techniques",
+    "url": "/_posts/2025-06-28-Black-Box-Testing-in-the-STLC-Best-How-To-Techniques.md",
+    "thumb": "/assets/images/Types/black-box-testing.webp",
+    "label": "Types of Testing"
   }
 ]
