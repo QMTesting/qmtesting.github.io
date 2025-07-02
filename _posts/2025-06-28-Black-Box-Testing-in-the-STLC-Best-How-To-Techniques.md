@@ -119,7 +119,7 @@ Here’s a practical process QA teams can adopt when conducting Black Box Testin
    Validate resolved issues and confirm no regressions have occurred.
 
 8. **Refactor and Reuse**  
-   Update your test suite regularly to include new features and retire obsolete scenarios.
+   Regularly review your test suite to include new features and remove obsolete scenarios.
 
 ---
 
