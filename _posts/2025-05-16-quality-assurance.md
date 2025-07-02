@@ -11,11 +11,13 @@ image: "/assets/images/Quality-Assurance.webp"
 </figure>
 
 ## Introduction
+
 Ensuring the quality of the final product is paramount in software development. Two essential processes that contribute to achieving this goal are Quality Assurance (QA) and Quality Control (QC). While these terms are often incorrectly used interchangeably, they represent distinct phases in the software development lifecycle (SDLC) with different objectives and methodologies.
 
 In this article, I explore the key differences between Quality Assurance and Quality Control and how they complement each other to deliver high-quality software solutions.
 
 ## Quality Assurance (QA): Ensuring Quality Throughout the Process
+
 Quality Assurance (QA) is a proactive approach to preventing defects and ensuring that the software development process adheres to predefined quality standards. It focuses on improving the development process itself rather than identifying and fixing defects in the end product. The primary goal of QA is to establish processes, standards, and guidelines that facilitate the delivery of high-quality software solutions.
 
 Here are some key features of Quality Assurance:
