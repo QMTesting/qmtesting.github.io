@@ -2,11 +2,11 @@
 layout: post
 title: "Quality Control vs Quality Assurance Know the Difference"
 categories: ["Software Testing"]
-image: "/assets/images/Quality-Assrance.png"
+image: "/assets/images/Quality-Assurance.webp"
 ---
 
 <figure>
-  <img src="/assets/images/Quality-Assrance.png" alt="quality assurance/control" />
+  <img src="/assets/images/Quality-Assurance.webp" alt="quality assurance/control" />
   <figcaption>Image by upklyak on Freepik</figcaption>
 </figure>
 
