@@ -75,7 +75,7 @@ Each of these forms addresses a different layer of quality—ranging from system
 To create comprehensive and high-coverage test cases, QA professionals lean on a range of methodical techniques:
 
 - **Equivalence Partitioning**  
-  Divides input data into groups where all values are expected to produce similar results. It reduces redundancy and maximizes test coverage.
+  Categorizes input values into segments that are anticipated to yield equivalent outcomes. It reduces redundancy and maximizes test coverage.
 
 - **Boundary Value Analysis**  
   Focuses on edge conditions where input transitions from valid to invalid or vice versa—often revealing hidden bugs.
