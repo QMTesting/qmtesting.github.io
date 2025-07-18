@@ -40,5 +40,11 @@ category: Types of Testing
     "url": "/_posts/2025-06-28-Black-Box-Testing-in-the-STLC-Best-How-To-Techniques.md",
     "thumb": "/assets/images/Types/black-box-testing.webp",
     "label": "Types of Testing"
+  },
+  {
+    "title": "Know the Fundamentals of Sanity Testing",
+    "url": "/_posts/2025-06-30-Know-the-Fundamentals-of-Sanity-Testing.md",
+    "thumb": "/assets/images/Types/Sanity-Testing.webp",
+    "label": "Types of Testing"
   }
 ]
