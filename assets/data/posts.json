@@ -28,12 +28,17 @@ category: Software Testing
     "url": "/_posts/2025-06-20-Test-Basis-Know-How-To-Build-Software-Testing-Success.md",
     "thumb": "/assets/images/Test/Test-Basis.webp",
     "label": "Software Testing"
-  }
-  ,
+  },
   {
     "title": "Seven Principles of Testing: Know How To Best Apply Them",
     "url": "/_posts/2025-07-17-Seven-Principles-of-Testing.md",
     "thumb": "/assets/images/Test/Principles-of-Testing.webp",
+    "label": "Software Testing"
+  },
+  {
+    "title": "How to Write Effective Test Cases",
+    "url": "/_posts/2025-07-23-software-testing-write-effective-test-cases.md",
+    "thumb": "/assets/images/Test/software-testing-effective-test-cases.webp",
     "label": "Software Testing"
   }
 ]
