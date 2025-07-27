@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://qmstesting.com/sitemap.xml
