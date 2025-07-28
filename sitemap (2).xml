@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://qmstesting.com/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/software-testing/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/types-of-testing/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/automation/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/azure-devops/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/software-testing-write-effective-test-cases/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/Seven-Principles-of-Testing/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/Know-the-Fundamentals-of-Sanity-Testing/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/Black-Box-Testing-in-the-STLC-Best-How-To-Techniques/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/about/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/contact/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/disclaimer/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/privacy/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/Test-Basis-Know-How-To-Build-Software-Testing-Success/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/ISTQB-certification/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/STLC/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/quality-assurance/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/negative-testing-how-to-strategies/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/positive-testing-techniques/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/regression-testing-fundamentals/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/testing-best-practices-techniques/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/Functional_Testing/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/Automation-AI-Tools/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/automation-testing-tools/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/azure-devops-tools/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qmstesting.com/devops-better-test-results/</loc>
+  <lastmod>2025-07-28T14:37:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
