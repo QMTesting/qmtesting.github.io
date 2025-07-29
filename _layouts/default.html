@@ -18,9 +18,16 @@
        window.location.href = "https://qmstesting.com";
      }
    </script>
-
-    <!--"canonical-->
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://qmstesting.com{{ page.url }}" />
+
+    <!-- Redirect from GitHub Pages default domain -->
+    <script>
+      if (location.hostname === "qmtesting.github.io") {
+        location.replace("https://qmstesting.com" + location.pathname);
+      }
+    </script>
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     
