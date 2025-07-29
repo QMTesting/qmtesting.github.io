@@ -11,13 +11,6 @@
     
       gtag('config', 'G-2XX8QBYYZ6');
     </script>
-
-     <!-- Redirect script -->
-    <script>
-     if (window.location.hostname !== "qmstesting.com") {
-       window.location.href = "https://qmstesting.com";
-     }
-   </script>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://qmstesting.com{{ page.url }}" />
@@ -25,7 +18,7 @@
     <!-- Redirect from GitHub Pages default domain -->
     <script>
       if (location.hostname === "qmtesting.github.io") {
-        location.replace("https://qmstesting.com" + location.pathname);
+        location.replace("https://qmstesting.com" + location.pathname + location.search + location.hash);
       }
     </script>
     
