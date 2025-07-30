@@ -3,6 +3,8 @@ layout: post
 title: "Quality Control vs Quality Assurance Know the Difference"
 categories: ["Software Testing"]
 image: "/assets/images/Quality-Assurance.webp"
+redirect_from:
+  - /quality-assurance/
 ---
 
 <figure>
