@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">   
   <head>
 
     <!-- Google tag (gtag.js) -->
@@ -13,7 +13,7 @@
     </script>
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://qmstesting.com{{ page.url }}" />
+   <link rel="canonical" href="https://qmstesting.com{{ page.url | replace: 'index.html', '' | append: '/' }}" />
 
     <!-- Redirect from GitHub Pages default domain -->
     <script>
