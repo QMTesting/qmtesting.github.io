@@ -48,6 +48,7 @@ url: "https://qmstesting.com"
 # Plugins
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
