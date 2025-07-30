@@ -5,6 +5,7 @@ categories: ["Software Testing"]
 image: "/assets/images/Quality-Assurance.webp"
 redirect_from:
   - /quality-assurance/
+  - https://qmtesting.github.io/quality-assurance/
 ---
 
 <figure>
