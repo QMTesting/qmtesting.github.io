@@ -4,8 +4,7 @@ title: "Quality Control vs Quality Assurance: What is the Difference"
 categories: ["Software Testing"]
 image: "/assets/images/Quality-Assurance.webp"
 redirect_from:
-  - /quality-assurance/
-  - https://qmtesting.github.io/quality-assurance/
+  - /2025-05-16-quality-assurance.md"/
 ---
 
 <figure>
