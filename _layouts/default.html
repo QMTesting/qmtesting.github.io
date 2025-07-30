@@ -13,9 +13,10 @@
     </script>
     
     <!-- Canonical URL -->
-  {% if page.url %}
-    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
-  {% endif %}
+    {% if page.url %}
+      <link rel="canonical" href="https://qmstesting.com{{ page.url | replace: 'index.html', '' | append: '/' }}" />
+    {% endif %}
+
 
 
 
