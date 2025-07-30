@@ -6,8 +6,10 @@ image: "/assets/images/Quality-Assurance.webp"
 permalink: /quality-assurance-quality-control/
 redirect_from:
   - /quality-assurance/
+  - /2025/07/30/quality-assurance/
+  - /2025-07-30-quality-assurance-quality-control/
+  - /quality-control-vs-quality-assurance/
 ---
-
 
 <figure>
   <img src="/assets/images/Quality-Assurance.webp" alt="quality assurance/control" />
