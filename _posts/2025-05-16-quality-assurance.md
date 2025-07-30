@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quality Control vs Quality Assurance Know the Difference"
+title: "Quality Control vs Quality Assurance: What is the Difference"
 categories: ["Software Testing"]
 image: "/assets/images/Quality-Assurance.webp"
 redirect_from:
