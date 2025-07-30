@@ -13,7 +13,10 @@
     </script>
     
     <!-- Canonical URL -->
-   <link rel="canonical" href="https://qmstesting.com{{ page.url | replace: 'index.html', '' | append: '/' }}" />
+   {% if page.url %}
+      <link rel="canonical" href="https://qmstesting.com{{ page.url | replace: 'index.html', '' | append: '/' }}" />
+   {% endif %}
+
 
     <!-- Redirect from GitHub Pages default domain -->
     <script>
