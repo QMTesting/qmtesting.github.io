@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Seven Principles of Testing: Know How To Best Apply Them"
+title: "7 Principles of Testing: Know How To Best Apply Them"
 categories: ["Software Testing"]
 image: "/assets/images/Test/Principles-of-Testing.webp"
+permalink: /7-Principles-of-Testing/
+redirect_from:
+  - /Seven-Principles-of-Testing/
+  - /2025/07/17-Seven-Principles-of-Testing/
 ---
 
 <figure>
