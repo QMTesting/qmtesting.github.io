@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+redirect_to: https://qmstesting.com/contact/
 ---
 
 #### Last Updated: 2025-05-19
