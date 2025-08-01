@@ -3,6 +3,10 @@ layout: post
 title: "Know How To Harness The Power of AI Testing Tools"
 categories: ["Automation"]
 image: /assets/images/Auto/automation-testing-tools.png
+permalink: /power-of-automation-testing-tools/
+redirect_from:
+  - /automation-testing-tools/
+  - /2025/05/17/automation-testing-tools/
 ---
 
 <figure>
