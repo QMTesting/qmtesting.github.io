@@ -3,6 +3,10 @@ layout: post
 title: "Powerful Automation Tools in the World of Regression Testing"
 categories: ["Automation"]
 image: "/assets/images/Auto/Automation-AI-Tools.png"
+permalink: /Powerful-Automation-AI-Tools/
+redirect_from:
+  - /Automation-AI-Tools/
+  - /2025/05/22/Automation-AI-Tools/
 ---
 
 <figure>
