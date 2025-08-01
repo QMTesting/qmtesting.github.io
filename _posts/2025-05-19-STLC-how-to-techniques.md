@@ -3,6 +3,10 @@ layout: post
 title: "Software Testing Life Cycle-Know The Best How To Techniques"
 categories: ["Software Testing"]
 image: "/assets/images/Test/STLC.png"
+permalink: /STLC-how-to-techniques/
+redirect_from:
+  - /STLC/
+  - /2025/05/19/STLC/
 ---
 
 <figure>
