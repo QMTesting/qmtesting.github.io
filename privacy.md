@@ -7,7 +7,7 @@ redirect_to: https://qmstesting.com/privacy/
 
 ## Last Updated: 2025-05-19
 
-Welcome to QM Testing, located at [https://qmtesting.github.io](https://qmtesting.github.io/) (the “Site”). We acknowledge the significance of online privacy to users of our website.
+Welcome to QM Testing, located at [(https://qmstesting.com](https://qmstesting.com) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
 This privacy policy governs all content available on the Site and its associated properties.
 
