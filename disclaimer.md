@@ -2,7 +2,8 @@
 layout: page
 title: Disclaimer
 permalink: /disclaimer/
-redirect_to: https://qmstesting.com/disclaimer/
+redirect_from:
+  - /disclaimer/
 ---
 
 ## Last Updated: 2025-05-19
