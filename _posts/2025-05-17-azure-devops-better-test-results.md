@@ -3,6 +3,10 @@ layout: post
 title: "Leverage Azure DevOps for Better Test Results"
 categories: ["Azure DevOps"]
 image: /assets/images/DevOps/Azure-DevOps-Testing.png
+permalink: /azure-devops-better-test-results/
+redirect_from:
+  - /devops-better-test-results/
+  - /2025/05/17/devops-better-test-results/
 ---
 
 <figure>
