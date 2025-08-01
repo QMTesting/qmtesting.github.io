@@ -3,6 +3,9 @@ layout: post
 title: "Functional Testing Know the Fundamentals in the SDLC"
 categories: ["Types of Testing"]
 image: /assets/images/Types/Functional-Testing.png
+redirect_from:
+  - /Functional_Testing/
+  - /2025/05/17/Functional_Testing/
 ---
 
 <figure>
