@@ -2,7 +2,8 @@
 layout: page
 title: Privacy Policy
 permalink: /privacy/
-redirect_to: https://qmstesting.com/privacy/
+redirect_from:
+  - /privacy/
 ---
 
 ## Last Updated: 2025-05-19
