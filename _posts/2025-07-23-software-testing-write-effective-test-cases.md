@@ -3,8 +3,7 @@ layout: post
 title: "How to Write Effective Test Cases"
 categories: ["Software Testing"]
 image: "/assets/images/Test/software-testing-effective-test-cases.webp"
-permalink: /software-testing-effective-test-cases/
-
+permalink: /software-testing-write-effective-test-cases/
 ---
 
 <figure>
