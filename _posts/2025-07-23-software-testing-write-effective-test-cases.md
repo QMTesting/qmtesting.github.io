@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective Test Case How tos"
+title: "Effective Test Case How to Techniques"
 categories: ["Software Testing"]
 image: "/assets/images/Test/software-testing-effective-test-cases.webp"
 permalink: /software-testing-write-effective-test-cases/
