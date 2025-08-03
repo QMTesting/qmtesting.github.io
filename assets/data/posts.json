@@ -40,5 +40,11 @@ category: Software Testing
     "url": "/_posts/2025-07-23-software-testing-write-effective-test-cases.md",
     "thumb": "/assets/images/Test/software-testing-effective-test-cases.webp",
     "label": "Software Testing"
+  },
+  {
+    "title": "12 Fail Proof Tips To Create Effective Test Plans",
+    "url": "/_posts/2025-06-03-12-Fail-Proof-Tips-To-Create-Effective-Test-Plans.md",
+    "thumb": "/assets/images/Test/Test-Plan.webp",
+    "label": "Software Testing"
   }
 ]
