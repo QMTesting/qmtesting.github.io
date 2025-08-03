@@ -61,7 +61,7 @@ baseurl: ""
 #
 
 # Site Logo
-logo: "/images/logo22.png"
+logo: "/images/Logo22.png"
 
 permalink: /:title/
 
