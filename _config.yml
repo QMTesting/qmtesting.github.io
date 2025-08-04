@@ -9,7 +9,7 @@ name: QMSTesting
 description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: "/images/Logo22.png"
+avatar: "/images/logo-bug.webp"
 
 #
 # Flags below are optional
@@ -20,7 +20,7 @@ footer-links:
   X:
   facebook:
   flickr:
-  # github: QMTesting
+  # github: QMSTesting
   instagram:
   linkedin:
   pinterest:
@@ -61,7 +61,7 @@ baseurl: ""
 #
 
 # Site Logo
-logo: "/images/Logo22.png"
+logo: "/images/logo-bug.webp"
 
 permalink: /:title/
 
