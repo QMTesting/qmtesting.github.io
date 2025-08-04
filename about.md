@@ -2,8 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-redirect_from:
-  - /about/
 ---
 
 Welcome to our software testing, quality assurance, and automation blog - your go-to resource for beginners embarking on their journey into the fascinating world of ensuring software reliability and efficiency.
