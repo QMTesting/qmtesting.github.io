@@ -2,8 +2,6 @@
 layout: page
 title: Disclaimer
 permalink: /disclaimer/
-redirect_from:
-  - /disclaimer/
 ---
 
 ## Last Updated: 2025-05-19
