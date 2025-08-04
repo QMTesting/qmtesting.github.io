@@ -2,8 +2,6 @@
 layout: page
 title: Contact
 permalink: /contact/
-redirect_from:
-  - /contact/
 ---
 
 #### Last Updated: 2025-05-19
