@@ -654,7 +654,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- SEARCH RESULTS JAVA - DESKTOP-END -->    
 
-
+<!--Split the site.name so the first 4 characters can be styled differently -->
+<h1>
+   <span class="highlight">{{ site.name | slice: 0, 4 }}</span>{{ site.name | slice: 4 }}
+</h1>
         
 
     
