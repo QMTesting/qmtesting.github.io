@@ -171,7 +171,9 @@ Here are some key best practices for functional testing:
    Maintain traceability between requirements, test cases, and defects. This helps in ensuring that all requirements are covered by test cases and allows for better tracking and management of defects.
 
 ### 6. Test Case Design:
-   Design test cases that are clear, concise, and focused on specific functionalities or scenarios. Use techniques like boundary value analysis, equivalence partitioning, and error guessing to design effective test cases. For a deeper dive into the step-by-step process of designing powerful test cases, check out my guide on [Effective Test Case How-To Techniques](https://qmstesting.com/software-testing-write-effective-test-cases/).
+   Design test cases that are clear, concise, and focused on specific functionalities or scenarios. Use techniques like boundary value analysis, equivalence partitioning, and error guessing to design effective test cases. 
+   
+   For a deeper dive into the step-by-step process of designing powerful test cases, check out my guide on [Effective Test Case How-To Techniques](https://qmstesting.com/software-testing-write-effective-test-cases/).
 
 ### 7. Prioritize Test Cases:
    Focusing on the most critical and high-risk functionalities first, and then expanding the test coverage incrementally, can help optimize the testing process and ensure that the most important aspects of the software are thoroughly validated.
