@@ -86,6 +86,8 @@ Positive and negative testing are two fundamental approaches used in functional 
 - Description: Negative testing ensures that the software gracefully handles invalid or unexpected input data. It verifies that the system does not crash or produce incorrect results under erroneous conditions.
 - Example: Entering an invalid password or leaving the username field blank on a login form to check if appropriate error messages are displayed.
 
+To explore the value of negative testing, head over to my post on [Negative Testing How-To Strategies[(https://qmstesting.com/negative-testing-how-to-strategies/).
+
 By performing both positive and negative testing, testers can validate the application’s behavior under normal and exceptional scenarios, ensuring a more robust and user-friendly product.
 
 ## Functional Testing Techniques
