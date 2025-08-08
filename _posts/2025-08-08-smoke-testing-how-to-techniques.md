@@ -21,7 +21,7 @@ Smoke testing derives its name from a hardware testing analogy where a device is
 
 ## Techniques for Effective Smoke Testing
 
-###1. Identify Critical Paths: 
+### 1. Identify Critical Paths: 
 Begin by identifying the essential functionalities of the application—the core features that must work for the software to be considered minimally viable. These are often determined based on user requirements and business priorities.
 
 ### 2. Create Minimal Test Cases: 
