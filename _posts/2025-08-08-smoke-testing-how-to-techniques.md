@@ -52,7 +52,7 @@ Automating smoke tests can significantly speed up the testing process and reduce
 - Jenkins (for CI integration)
 
 ### 4. ⚙️ Prioritize Stability Over Depth
-As smoke testing focuses on the surface-level functionality, avoid testing edge cases or intricate scenarios during this phase. Save detailed and edge-case testing for subsequent stages like functional testing and regression testing. Avoid testing rare scenarios or edge cases.  Instead, make sure the main features are working as expected.
+As smoke testing focuses on the surface-level functionality, avoid testing edge cases or intricate scenarios during this phase. Save detailed and edge-case testing for subsequent stages like functional testing and regression testing. Instead, make sure the main features function as expected.
 
 ### 5. 📝Document Results and Report Defects
 Maintain clear documentation of the smoke testing process, including test cases, expected results, and actual outcomes. If any critical functionality fails, report defects promptly, allowing developers to address issues early in the development cycle.
