@@ -32,33 +32,33 @@ The Goal: To confirm that the software is stable enough to move forward.
 
 ## 🛠️ How to Perform Smoke Testing Effectively
 
-### 1. 🔍 Focus on Essential Features
-Start by identifying the most important parts of your application—those that users rely on every day. These might include login systems, navigation menus, data entry forms, or dashboards. If these don’t work, deeper testing is pointless.
+### 1. 🔍 Identify Critical Paths
+Begin by identifying the essential functionalities of the application—the core features that must work for the software to be considered minimally viable. These are often determined based on user requirements and business priorities.
 
-### 2. 🧪 Build Simple Test Scenarios
-Create a small set of test cases that cover the critical features. These should be easy to run and quick to evaluate. Think of them as a checklist for basic functionality.
+### 2. 🧪 Build Simple Test Scenarios 
+Develop a set of concise test cases that cover the identified critical paths. These test cases should be simple yet comprehensive enough to verify basic functionalities like login, basic navigation, data input, and output.
 
 #### Examples:
 - Can users log in successfully?
 - Does the homepage load without errors?
 - Can data be entered and saved?
 
-### 3. 🚀 Use Automation to Speed Things Up
-To provide quick feedback, automae smoke tests to run every time a new build is created. This helps catch problems early and keeps the development process moving smoothly.
+### 3. 🚀 Automate Where Possible
+Automating smoke tests can significantly speed up the testing process and reduce human error. Use automated testing tools to execute repetitive smoke tests consistently and integrate them into the continuous integration/continuous deployment (CI/CD) pipeline for faster feedback.
 
 #### Tools to consider:
 - Selenium
 - Cypress
 - Jenkins (for CI integration)
 
-### 4. ⚙️ Keep It Shallow but Wide
-Smoke testing isn’t about deep analysis—it’s about broad coverage. Avoid testing rare scenarios or edge cases.  Instead, make sure the main features are working as expected.
+### 4. ⚙️ Prioritize Stability Over Depth
+As smoke testing focuses on the surface-level functionality, avoid testing edge cases or intricate scenarios during this phase. Save detailed and edge-case testing for subsequent stages like functional testing and regression testing. Avoid testing rare scenarios or edge cases.  Instead, make sure the main features are working as expected.
 
-### 5. 📝 Track Results and Flag Issues
-Document what you test, what you expect, and what actually happens. If something fails, report it immediately so developers can fix it before more time is spent on deeper testing.
+### 5. 📝Document Results and Report Defects
+Maintain clear documentation of the smoke testing process, including test cases, expected results, and actual outcomes. If any critical functionality fails, report defects promptly, allowing developers to address issues early in the development cycle.
 
-### 6. 🔄 Adjust as the Project Evolves
-As your software grows, so should your smoke tests. Update your test cases to reflect new features or changes in user behavior. Regular reviews help keep your testing relevant and effective.
+### 6. 🔄 Iterate and Improve
+Continuously refine your smoke testing approach based on feedback and the evolving needs of the project. Update test cases as the application's critical functionalities change or expand. Regular reviews help keep your testing relevant and effective.
 
 ## 🎯 Conclusion
 Smoke testing is a simple yet powerful tool for maintaining software quality. By checking the basics early, teams can avoid wasting time on unstable builds and focus their efforts where it matters most.
