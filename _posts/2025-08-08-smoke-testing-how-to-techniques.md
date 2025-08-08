@@ -25,6 +25,12 @@ This type of testing is typically performed:
 - Following major updates or bug fixes
 - As part of continuous integration workflows
 
+## Why Smoke Testing Matters:
+
+- It catches major issues before they escalate
+- It saves time by preventing unnecessary deep testing
+- It builds confidence in the development process
+
 ## The Goal of Smoke Testing: 
 The goal of smoke testing is to quickly determine whether the most critical functions of a software build are working well enough to proceed with further, more detailed testing.
 
@@ -34,7 +40,7 @@ Think of it as a basic health check for your application:
 
 - If the build fails smoke testing → testing stops, the build is rejected, and the development team fixes the critical issues first.
 
-### Key points about the goal:
+### Key Points:
 
 - Verify basic stability:
 Ensure that the core features (like login, navigation, and essential workflows) work without crashing.
@@ -86,11 +92,5 @@ Continuously refine your smoke testing approach based on feedback and the evolvi
 
 ## 🎯 Conclusion
 Smoke testing is a simple yet powerful tool for maintaining software quality. By checking the basics early, teams can avoid wasting time on unstable builds and focus their efforts where it matters most.
-
-### Why it matters:
-
-- It catches major issues before they escalate
-- It saves time by preventing unnecessary deep testing
-- It builds confidence in the development process
 
 In short, smoke testing lays the groundwork for successful software delivery. When done right, it ensures that every build starts off on solid footing—making the entire testing process more efficient and reliable. 
