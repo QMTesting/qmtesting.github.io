@@ -21,14 +21,38 @@ Smoke testing acts as a gatekeeper in the Software Testing Life Cycle (STLC), he
 In software, it refers to a brief series of tests that validate core functionality, ensuring the application doesn’t crash or behave unpredictably.
 
 This type of testing is typically performed:
+- Right after a new build is deployed
+- Following major updates or bug fixes
+- As part of continuous integration workflows
 
-Right after a new build is deployed
+## The Goal of Smoke Testing: 
+The goal of smoke testing is to quickly determine whether the most critical functions of a software build are working well enough to proceed with further, more detailed testing.
 
-Following major updates or bug fixes
+Think of it as a basic health check for your application:
 
-As part of continuous integration workflows
+- If the build passes smoke testing → it’s stable enough to move on to deeper functional, regression, or performance testing.
 
-The Goal: To confirm that the software is stable enough to move forward.
+- If the build fails smoke testing → testing stops, the build is rejected, and the development team fixes the critical issues first.
+
+### Key points about the goal:
+
+- Verify basic stability:
+Ensure that the core features (like login, navigation, and essential workflows) work without crashing.
+
+- Detect major issues early:
+Catch showstopper bugs before wasting time on detailed testing.
+
+- Save time and resources:
+Prevents QA teams from running full test suites on a fundamentally broken build.
+
+💡 Example:
+If you’re testing an e-commerce site, a smoke test might just check if:
+- The site loads without errors.
+- You can log in.
+- You can search for a product.
+- You can add it to the cart.
+
+If adding to the cart fails here, there’s no point in doing checkout or payment testing yet.
 
 ## 🛠️ How to Perform Smoke Testing Effectively
 
