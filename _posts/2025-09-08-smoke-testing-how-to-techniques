@@ -1,5 +1,15 @@
+---
+layout: post
+title: "Smoke Testing in the STLC - Best How To Techniques"
+categories: ["Types of Testing"]
+image: /assets/images/Types/Functional-Testing.png
+permalink: /smoke-testing-how-to-techniques/
+---
 
-
+<figure>
+  <img src="/assets/images/Types/Functional-Testing.png" alt="smoke testing techniques" />
+  <figcaption>Image by vectorjuice on Freepik</figcaption>
+</figure>
 
 Introduction
 In the realm of software testing, ensuring the reliability and functionality of applications is paramount. Among the various testing methodologies, smoke testing stands out as a crucial initial step in the Software Testing Life Cycle (STLC). Often referred to as build verification testing or confidence testing, smoke testing validates the basic functionality of the software without delving into finer details. Its primary goal is to determine if the application is stable enough for more comprehensive testing.
