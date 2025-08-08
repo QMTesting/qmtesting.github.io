@@ -52,7 +52,7 @@ To provide quick feedback, automae smoke tests to run every time a new build is 
 - Jenkins (for CI integration)
 
 ### 4. ⚙️ Keep It Shallow but Wide
-Smoke testing isn’t about deep analysis—it’s about broad coverage. Avoid testing rare scenarios or edge cases to make sure the main features work as expected.
+Smoke testing isn’t about deep analysis—it’s about broad coverage. Avoid testing rare scenarios or edge cases.  Instead, make sure the main features are working as expected.
 
 ### 5. 📝 Track Results and Flag Issues
 Document what you test, what you expect, and what actually happens. If something fails, report it immediately so developers can fix it before more time is spent on deeper testing.
