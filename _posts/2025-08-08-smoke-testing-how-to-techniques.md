@@ -11,7 +11,7 @@ permalink: /smoke-testing-how-to-techniques/
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
-## 🚀 Introduction
+## 🧭 Introduction
 
 In software development, catching issues early can save teams time, money, and frustration. One of the most effective ways to ensure a new build is ready for deeper testing is through smoke testing—a quick, high-level check that confirms the application’s most essential features are functioning.
 
@@ -43,7 +43,7 @@ Create a small set of test cases that cover the critical features. These should 
 - Does the homepage load without errors?
 - Can data be entered and saved?
 
-### 3. ⚙️ Use Automation to Speed Things Up
+### 3. 🚀 Use Automation to Speed Things Up
 To provide quick feedback, automae smoke tests to run every time a new build is created. This helps catch problems early and keeps the development process moving smoothly.
 
 #### Tools to consider:
@@ -51,7 +51,7 @@ To provide quick feedback, automae smoke tests to run every time a new build is 
 - Cypress
 - Jenkins (for CI integration)
 
-### 4. 🧭 Keep It Shallow but Wide
+### 4. ⚙️ Keep It Shallow but Wide
 Smoke testing isn’t about deep analysis—it’s about broad coverage. Avoid testing rare scenarios or edge cases to make sure the main features work as expected.
 
 ### 5. 📝 Track Results and Flag Issues
