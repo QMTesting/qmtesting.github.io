@@ -45,6 +45,7 @@ google_fonts: 'Pacifico'
 # Used for Sitemap.xml and your RSS feed
 url: "https://qmstesting.com"
 
+
 # Plugins
 plugins:
   - jekyll-sitemap
