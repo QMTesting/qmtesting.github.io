@@ -16,16 +16,22 @@
     <script async src="https://us.umami.is/script.js" data-website-id="f120136b-9fbd-46b7-8ec1-77e176fbdd37"></script>
 
     
+    {% comment %}
+    Set your domain in _config.yml:
+    url: "https://qmstesting.com"
+    {% endcomment %}
+    
     <!-- Canonical URL -->
-    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
-
-   
-    <!-- Redirect from GitHub Pages default domain -->
+    {% if page.url %}
+      <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+    {% endif %}
+    
+    <!-- Optional client-side redirect from GitHub Pages default domain -->
     <script>
-    if (location.hostname === "qmtesting.github.io") {
-      location.replace("https://qmstesting.com" + location.pathname + location.search + location.hash);
-    }
-  </script>
+      if (location.hostname === "qmtesting.github.io") {
+        location.replace("{{ site.url }}" + location.pathname + location.search + location.hash);
+      }
+    </script>
 
 
     
