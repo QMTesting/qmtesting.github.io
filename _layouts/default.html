@@ -17,24 +17,16 @@
 
     
     <!-- Canonical URL -->
-    {% if page.permalink %}
-      <link rel="canonical" href="https://qmstesting.com{{ page.permalink | replace: 'index.html', '' | replace: '//', '/' }}" />
-    {% elsif page.url %}
-      <link rel="canonical" href="https://qmstesting.com{{ page.url | replace: 'index.html', '' | remove: '.html' | append: '/' | replace: '//', '/' }}" />
-    {% endif %}
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+
    
     <!-- Redirect from GitHub Pages default domain -->
     <script>
-      if (location.hostname === "qmtesting.github.io") {
-        location.replace("https://qmstesting.com" + location.pathname + location.search + location.hash);
-      }
-    </script>
+    if (location.hostname === "qmtesting.github.io") {
+      location.replace("https://qmstesting.com" + location.pathname + location.search + location.hash);
+    }
+  </script>
 
-    <script>
-      if (location.hostname === "qmtesting.github.io") {
-        location.href = location.href.replace("qmtesting.github.io", "qmstesting.com");
-      }
-    </script>
 
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
