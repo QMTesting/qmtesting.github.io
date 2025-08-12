@@ -10,7 +10,7 @@ image: "/assets/images/Auto/Intellij_IDEA_Selenium.webp"
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
-## Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines
+## Introduction
 
 If you’re planning to automate browser testing with Selenium WebDriver, pairing it with IntelliJ IDEA offers a smooth development experience. IntelliJ provides smart code suggestions, debugging tools, and solid integration with testing frameworks.
 
