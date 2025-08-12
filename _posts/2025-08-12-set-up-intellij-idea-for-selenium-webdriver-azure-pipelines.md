@@ -1,3 +1,15 @@
+---
+layout: post
+title: "Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines"
+categories: ["Automation"]
+image: "/assets/images/Auto/"
+---
+
+<figure>
+  <img src="/assets/images/Auto/" alt="set up Intellij IDEA for Selenium WebDriver" />
+  <figcaption>Image on Freepik</figcaption>
+</figure>
+
 ## Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines
 
 If you’re planning to automate browser testing with Selenium WebDriver, pairing it with IntelliJ IDEA offers a smooth development experience. IntelliJ provides smart code suggestions, debugging tools, and solid integration with testing frameworks.
@@ -6,28 +18,23 @@ And if you intend to later execute your Selenium tests in an Azure DevOps pipeli
 
 In this guide, you’ll learn how to:
 
-Install IntelliJ IDEA
-
-Set up the Java Development Kit (JDK)
-
-Add Selenium WebDriver to your project
-
-Run a test locally
-
-Prepare the project for execution in Azure DevOps
+- Install IntelliJ IDEA
+- Set up the Java Development Kit (JDK)
+- Add Selenium WebDriver to your project
+- Run a test locally
+- Prepare the project for execution in Azure DevOps
 
 By the end, you’ll have a functioning local Selenium project that’s ready to be connected to a CI/CD pipeline.
 
-1. Installing IntelliJ IDEA
-Step 1 – Download the IDE
+## 1. Installing IntelliJ IDEA
 
-Visit https://www.jetbrains.com/idea/download
+### Step 1 – Download the IDE
 
-Choose the Community Edition unless you need the advanced features of the Ultimate version
+- Visit https://www.jetbrains.com/idea/download
+- Choose the Community Edition unless you need the advanced features of the Ultimate version
+- Download the correct installer for your operating system
 
-Download the correct installer for your operating system
-
-Step 2 – Run the Installer
+### Step 2 – Run the Installer
 
 Follow the on-screen steps to complete installation
 
