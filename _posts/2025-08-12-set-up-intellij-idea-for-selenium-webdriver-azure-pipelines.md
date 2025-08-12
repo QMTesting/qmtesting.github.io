@@ -7,7 +7,7 @@ image: "/assets/images/Auto/"
 
 <figure>
   <img src="/assets/images/Auto/" alt="set up Intellij IDEA for Selenium WebDriver" />
-  <figcaption>Image on Freepik</figcaption>
+  <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
 ## Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines
