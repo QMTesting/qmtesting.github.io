@@ -92,142 +92,118 @@ You can add Selenium in two ways:
 - Save the file — IntelliJ will download the required libraries automatically
 
 #### Option 2 – Manual Download
+- Go to https://www.selenium.dev/downloads/
+- Download the Selenium Java client ZIP file and extract it
+- In IntelliJ, open Project Structure → Libraries → Add Java and select all .jar files from the extracted folder
 
-Go to https://www.selenium.dev/downloads/
-
-Download the Selenium Java client ZIP file and extract it
-
-In IntelliJ, open Project Structure → Libraries → Add Java and select all .jar files from the extracted folder
-
-4. Running Your First Selenium Script
+## 4. Running Your First Selenium Script
+   
 Before diving into Azure DevOps, let’s verify the setup locally.
 
-Example Java Class:
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-public class FirstTest {
-    public static void main(String[] args) {
-        // Tell Selenium where ChromeDriver is located
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-
-        // Launch Chrome
-        WebDriver driver = new ChromeDriver();
-
-        // Open a website
-        driver.get("https://www.example.com");
-
-        // Output the page title
-        System.out.println("Page title: " + driver.getTitle());
-
-        // Close the browser
-        driver.quit();
+### Example Java Class:
+- import org.openqa.selenium.WebDriver;
+- import org.openqa.selenium.chrome.ChromeDriver;
+    public class FirstTest {
+        public static void main(String[] args) {
+            // Tell Selenium where ChromeDriver is located
+            System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+    
+            // Launch Chrome
+            WebDriver driver = new ChromeDriver();
+    
+            // Open a website
+            driver.get("https://www.example.com");
+    
+            // Output the page title
+            System.out.println("Page title: " + driver.getTitle());
+    
+            // Close the browser
+            driver.quit();
+        }
     }
-}
-Steps to Run:
-
-Download ChromeDriver from https://chromedriver.chromium.org/downloads
-
-Make sure the version matches your installed Chrome browser
-
-Replace "path/to/chromedriver" with the actual file location
-
-Right-click the Java file → Run 'FirstTest.main()'
+- Steps to Run:
+- Download ChromeDriver from https://chromedriver.chromium.org/downloads
+- Make sure the version matches your installed Chrome browser
+- Replace "path/to/chromedriver" with the actual file location
+- Right-click the Java file → Run 'FirstTest.main()'
 
 If configured correctly, Chrome will launch, open example.com, display the title in the console, and close.
 
-5. Preparing for Azure DevOps Pipeline Execution
+## 5. Preparing for Azure DevOps Pipeline Execution
+   
 Running tests locally is good, but integrating them into an Azure DevOps CI/CD pipeline allows automated execution on every commit.
 
-Step 1 – Use Maven or Gradle for Dependencies
-Maven or Gradle ensures that your pipeline can automatically fetch all required libraries, avoiding manual .jar uploads.
+### Step 1 – Use Maven or Gradle for Dependencies
+- Maven or Gradle ensures that your pipeline can automatically fetch all required libraries, avoiding manual .jar uploads.
 
-Step 2 – Organize Tests with TestNG
-TestNG provides structured test management, reporting, and parallel execution capabilities that integrate well with Azure DevOps.
-
-Add TestNG to Maven:
-
-xml
-Copy
-Edit
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.2</version>
-    <scope>test</scope>
-</dependency>
-Sample TestNG Class:
-
-java
-Copy
-Edit
-import org.testng.annotations.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-public class GoogleTest {
-    @Test
-    public void openGoogle() {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com");
-        System.out.println("Page title: " + driver.getTitle());
-        driver.quit();
+### Step 2 – Organize Tests with TestNG
+- TestNG provides structured test management, reporting, and parallel execution capabilities that integrate well with Azure DevOps.
+- Add TestNG to Maven:
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.10.2</version>
+        <scope>test</scope>
+    </dependency>
+    Sample TestNG Class:
+    
+    java
+    Copy
+    Edit
+    import org.testng.annotations.Test;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+    
+    public class GoogleTest {
+        @Test
+        public void openGoogle() {
+            System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+            WebDriver driver = new ChromeDriver();
+            driver.get("https://www.google.com");
+            System.out.println("Page title: " + driver.getTitle());
+            driver.quit();
+        }
     }
-}
-Step 3 – Create testng.xml
+  
+### Step 3 – Create testng.xml
 This file tells TestNG which tests to run:
 
-xml
-Copy
-Edit
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Selenium Suite">
-    <test name="Google Test">
-        <classes>
-            <class name="GoogleTest"/>
-        </classes>
-    </test>
-</suite>
-Step 4 – Plan for Pipeline Setup
+    <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+    <suite name="Selenium Suite">
+        <test name="Google Test">
+            <classes>
+                <class name="GoogleTest"/>
+            </classes>
+        </test>
+    </suite>
+
+### Step 4 – Plan for Pipeline Setup
 When pushing to a Git repository for Azure DevOps:
-
-Include your pom.xml and testng.xml
-
-Ensure ChromeDriver is either included or installed during the pipeline run
-
-Use pipeline commands to install JDK, Chrome, and dependencies before running tests
+- Include your pom.xml and testng.xml
+- Ensure ChromeDriver is either included or installed during the pipeline run
+- Use pipeline commands to install JDK, Chrome, and dependencies before running tests
 
 Example Maven Pipeline Step:
 
-yaml
-Copy
-Edit
 - script: mvn clean test
   displayName: 'Run Selenium Tests'
-6. Quick Pre-Pipeline Checklist
+  
+## 6. Quick Pre-Pipeline Checklist
+   
 Before sending your project to Azure DevOps, make sure:
+- IntelliJ IDEA is installed and linked to the JDK
+- Selenium libraries are in place
+- ChromeDriver is working locally
+- TestNG is installed and configured
+- All files are committed to your repository
 
-IntelliJ IDEA is installed and linked to the JDK
+## Final Thoughts
 
-Selenium libraries are in place
-
-ChromeDriver is working locally
-
-TestNG is installed and configured
-
-All files are committed to your repository
-
-Final Thoughts
 By setting up IntelliJ IDEA with Selenium WebDriver correctly, you’re laying the groundwork for a robust automation framework. This local setup ensures that when you push your code to Azure DevOps, your tests will execute smoothly in the pipeline without endless troubleshooting.
 
 From here, you can extend your configuration to:
-
-Run tests in parallel
-
-Capture screenshots and generate HTML reports
-
-Test across multiple browsers
+- Run tests in parallel
+- Capture screenshots and generate HTML reports
+- Test across multiple browsers
 
 A clean and well-prepared local environment will save time and make your Azure DevOps automation journey much easier.
