@@ -121,7 +121,8 @@ Before diving into Azure DevOps, let’s verify the setup locally.
             driver.quit();
         }
     }
-- Steps to Run:
+
+#### Steps to Run:
 - Download ChromeDriver from https://chromedriver.chromium.org/downloads
 - Make sure the version matches your installed Chrome browser
 - Replace "path/to/chromedriver" with the actual file location
