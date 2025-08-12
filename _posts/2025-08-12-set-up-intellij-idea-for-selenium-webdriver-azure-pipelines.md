@@ -2,11 +2,11 @@
 layout: post
 title: "Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines"
 categories: ["Automation"]
-image: "/assets/images/Auto/"
+image: "/assets/images/Auto/Intellij_IDEA_Selenium.webp"
 ---
 
 <figure>
-  <img src="/assets/images/Auto/" alt="set up Intellij IDEA for Selenium WebDriver" />
+  <img src="/assets/images/Auto/Intellij_IDEA_Selenium.webp" alt="set up Intellij IDEA for Selenium WebDriver" />
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
@@ -36,85 +36,62 @@ By the end, you’ll have a functioning local Selenium project that’s ready to
 
 ### Step 2 – Run the Installer
 
-Follow the on-screen steps to complete installation
+- Follow the on-screen steps to complete installation
+- On Windows, you may be asked whether to create shortcuts, associate .java files, or add IntelliJ to your system PATH — choose options that suit your workflow
 
-On Windows, you may be asked whether to create shortcuts, associate .java files, or add IntelliJ to your system PATH — choose options that suit your workflow
+### Step 3 – First-Time Setup
+- When IntelliJ opens for the first time:
+- Pick a light or dark UI theme
+- Install any recommended plugins (you can skip this if unsure)
+- Confirm where you want IntelliJ to store projects
 
-Step 3 – First-Time Setup
-When IntelliJ opens for the first time:
-
-Pick a light or dark UI theme
-
-Install any recommended plugins (you can skip this if unsure)
-
-Confirm where you want IntelliJ to store projects
-
-2. Installing and Configuring the Java Development Kit (JDK)
+## 2. Installing and Configuring the Java Development Kit (JDK)
+   
 Selenium in Java requires the Java Development Kit to compile and run.
 
-Step 1 – Download JDK
+### Step 1 – Download JDK
+- Visit https://adoptium.net or Oracle’s Java downloads
+- Select the latest long-term support (LTS) release, such as Java 17 or Java 21
 
-Visit https://adoptium.net or Oracle’s Java downloads
+### Step 2 – Install JDK
+- Run the installer and note where it is installed — you’ll need this path shortly
 
-Select the latest long-term support (LTS) release, such as Java 17 or Java 21
+### Step 3 – Link the JDK in IntelliJ
+- Open IntelliJ
+- Go to File → Project Structure (or press Ctrl+Alt+Shift+S)
+- Under Project SDK, click Add SDK → JDK
+- Point IntelliJ to your JDK installation folder and confirm
 
-Step 2 – Install JDK
+## 3. Creating a Selenium Project
 
-Run the installer and note where it is installed — you’ll need this path shortly
-
-Step 3 – Link the JDK in IntelliJ
-
-Open IntelliJ
-
-Go to File → Project Structure (or press Ctrl+Alt+Shift+S)
-
-Under Project SDK, click Add SDK → JDK
-
-Point IntelliJ to your JDK installation folder and confirm
-
-3. Creating a Selenium Project
 Once the IDE and JDK are ready, we can set up a Selenium project.
 
-Step 1 – Create a New Java Project
+### Step 1 – Create a New Java Project
+- Click New Project from IntelliJ’s welcome screen
+- Select Java from the left-hand menu
+- Make sure the Project SDK is set to your JDK
+- Name your project (e.g., SeleniumSetup) and choose a folder location
+- Click Finish
 
-Click New Project from IntelliJ’s welcome screen
-
-Select Java from the left-hand menu
-
-Make sure the Project SDK is set to your JDK
-
-Name your project (e.g., SeleniumSetup) and choose a folder location
-
-Click Finish
-
-Step 2 – Add Selenium Libraries
+### Step 2 – Add Selenium Libraries
 You can add Selenium in two ways:
+- Option 1: Maven (recommended)
+- Option 2: Manual JAR files
 
-Option 1: Maven (recommended)
+#### Option 1 – Using Maven
+- Right-click the project → Add Framework Support → select Maven
+- IntelliJ will create a pom.xml file
+- Add Selenium as a dependency:
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.21.0</version>
+        </dependency>
+    </dependencies>
+- Save the file — IntelliJ will download the required libraries automatically
 
-Option 2: Manual JAR files
-
-Option 1 – Using Maven
-
-Right-click the project → Add Framework Support → select Maven
-
-IntelliJ will create a pom.xml file
-
-Add Selenium as a dependency:
-
-xml
-Copy
-Edit
-<dependencies>
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.21.0</version>
-    </dependency>
-</dependencies>
-Save the file — IntelliJ will download the required libraries automatically
-
-Option 2 – Manual Download
+#### Option 2 – Manual Download
 
 Go to https://www.selenium.dev/downloads/
 
@@ -127,9 +104,6 @@ Before diving into Azure DevOps, let’s verify the setup locally.
 
 Example Java Class:
 
-java
-Copy
-Edit
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
