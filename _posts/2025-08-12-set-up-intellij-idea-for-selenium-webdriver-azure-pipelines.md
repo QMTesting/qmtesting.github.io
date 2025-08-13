@@ -2,11 +2,11 @@
 layout: post
 title: "Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines"
 categories: ["Automation"]
-image: "/assets/images/Auto/Intellij_IDEA_Selenium.webp"
+image: "/assets/images/Auto/Intellij_Selenium.webp"
 ---
 
 <figure>
-  <img src="/assets/images/Auto/Intellij_IDEA_Selenium.webp" alt="set up Intellij IDEA for Selenium WebDriver" />
+  <img src="/assets/images/Auto/Intellij_Selenium.webp" alt="set up Intellij IDEA for Selenium WebDriver" />
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
