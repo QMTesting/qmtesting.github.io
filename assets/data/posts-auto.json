@@ -20,7 +20,7 @@ category: Automation
   {
     "title": "Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines",
     "url": "/_posts/2025-08-12-set-up-intellij-idea-for-selenium-webdriver-azure-pipelines.md",
-    "thumb": "/assets/images/Auto/Intellij_IDEA_Selenium.webp",
+    "thumb": "/assets/images/Auto/Intellij_Selenium.webp",
     "label": "Automation"
   }
 ]
