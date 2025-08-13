@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting Up IntelliJ IDEA for Selenium WebDriver and Preparing for Azure DevOps Pipelines"
+title: "Setting Up IntelliJ IDEA for Selenium WebDriver"
 categories: ["Automation"]
 image: "/assets/images/Auto/Intellij_Selenium.webp"
 ---
