@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="refresh" content="0; url=https://qmstesting.com/" />
-  <title>Redirecting...</title>
-  <link rel="canonical" href="https://qmstesting.com/" />
-</head>
-<body>
-  <p>If you are not redirected automatically, <a href="https://qmstesting.com/">click here</a>.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+    </article>
+  {% endfor %}
+</div>
