@@ -139,27 +139,27 @@ Before setting up CI/CD, verify that everything works locally.
 
 ### Example Java Class
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-public class FirstTest {
-    public static void main(String[] args) {
-        // Path to ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-
-        // Launch Chrome
-        WebDriver driver = new ChromeDriver();
-
-        // Open a website
-        driver.get("https://www.example.com");
-
-        // Output the page title
-        System.out.println("Page title: " + driver.getTitle());
-
-        // Close browser
-        driver.quit();
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+    
+    public class FirstTest {
+        public static void main(String[] args) {
+            // Path to ChromeDriver
+            System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+    
+            // Launch Chrome
+            WebDriver driver = new ChromeDriver();
+    
+            // Open a website
+            driver.get("https://www.example.com");
+    
+            // Output the page title
+            System.out.println("Page title: " + driver.getTitle());
+    
+            // Close browser
+            driver.quit();
+        }
     }
-}
 
 ### Steps to Run
 
@@ -187,43 +187,43 @@ TestNG provides structured test execution, annotations, parallel runs, and detai
 
 #### Add TestNG to Maven:
 
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.2</version>
-    <scope>test</scope>
-</dependency>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.10.2</version>
+        <scope>test</scope>
+    </dependency>
 
 
 #### Example TestNG Class:
 
-import org.testng.annotations.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-public class GoogleTest {
-    @Test
-    public void openGoogle() {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com");
-        System.out.println("Page title: " + driver.getTitle());
-        driver.quit();
+    import org.testng.annotations.Test;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+    
+    public class GoogleTest {
+        @Test
+        public void openGoogle() {
+            System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+            WebDriver driver = new ChromeDriver();
+            driver.get("https://www.google.com");
+            System.out.println("Page title: " + driver.getTitle());
+            driver.quit();
+        }
     }
-}
 
 ### Step 3 – Create testng.xml
 
 This configuration file tells TestNG which tests to run:
 
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Selenium Suite">
-    <test name="Google Test">
-        <classes>
-            <class name="GoogleTest"/>
-        </classes>
-    </test>
-</suite>
+    <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+    <suite name="Selenium Suite">
+        <test name="Google Test">
+            <classes>
+                <class name="GoogleTest"/>
+            </classes>
+        </test>
+    </suite>
 
 ### Step 4 – Plan for Pipeline Setup
 
