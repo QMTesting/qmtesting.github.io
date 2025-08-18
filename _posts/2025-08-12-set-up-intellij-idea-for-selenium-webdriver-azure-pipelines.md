@@ -43,73 +43,76 @@ Download the installer for your operating system (Windows, macOS, or Linux).
 
 ### Step 2 – Run the Installer
 
-- On Windows: the installer will ask if you want to create a desktop shortcut, add IntelliJ to PATH, or associate .java files with IntelliJ. Choose based on preference, but adding IntelliJ to PATH makes it easier to open projects from the terminal.
+#### On Windows: 
+the installer will ask if you want to create a desktop shortcut, add IntelliJ to PATH, or associate .java files with IntelliJ. Choose based on preference, but adding IntelliJ to PATH makes it easier to open projects from the terminal.
 
-- On macOS: drag IntelliJ IDEA into the Applications folder.
+#### On macOS: 
+drag IntelliJ IDEA into the Applications folder.
 
-- On Linux: extract the .tar.gz and run the idea.sh script.
+#### On Linux: 
+extract the .tar.gz and run the idea.sh script.
 
-Step 3 – First-Time Setup
+### Step 3 – First-Time Setup
 
-Choose a UI theme (Light or Dark).
+- Choose a UI theme (Light or Dark).
 
-Optionally install recommended plugins like Git Integration, Lombok support, or Maven Helper. These can speed up development but aren’t required initially.
+- Optionally install recommended plugins like Git Integration, Lombok support, or Maven Helper. These can speed up development but aren’t required initially.
 
-Configure your default project location — this is where new projects will be created.
+- Configure your default project location — this is where new projects will be created.
 
-2. Installing and Configuring the Java Development Kit (JDK)
+## 2. Installing and Configuring the Java Development Kit (JDK)
 
 Selenium in Java requires a Java Development Kit (JDK) to compile and run your tests. IntelliJ does not include one by default, so you need to install it separately.
 
-Step 1 – Download JDK
+### Step 1 – Download JDK
 
-Visit Adoptium or Oracle Java.
+- Visit Adoptium or Oracle Java.
 
-Choose the latest Long-Term Support (LTS) version (e.g., Java 17 or Java 21). LTS versions receive updates for years, ensuring stability.
+- Choose the latest Long-Term Support (LTS) version (e.g., Java 17 or Java 21). LTS versions receive updates for years, ensuring stability.
 
-Step 2 – Install JDK
+### Step 2 – Install JDK
 
-During installation, make note of the installation path (e.g., C:\Program Files\Java\jdk-17 on Windows). You’ll need this to configure IntelliJ.
+- During installation, make note of the installation path (e.g., C:\Program Files\Java\jdk-17 on Windows). You’ll need this to configure IntelliJ.
 
-On macOS, JDKs are typically installed under /Library/Java/JavaVirtualMachines/.
+- On macOS, JDKs are typically installed under /Library/Java/JavaVirtualMachines/.
 
-Step 3 – Link the JDK in IntelliJ
+### Step 3 – Link the JDK in IntelliJ
 
-Open IntelliJ → File → Project Structure (Ctrl+Alt+Shift+S).
+- Open IntelliJ → File → Project Structure (Ctrl+Alt+Shift+S).
 
-Under Project SDK, click Add SDK → JDK.
+- Under Project SDK, click Add SDK → JDK.
 
-Browse to the installation folder of your JDK and confirm.
+- Browse to the installation folder of your JDK and confirm.
 
-Make sure Project language level is set to match your JDK (e.g., 17).
+- Make sure Project language level is set to match your JDK (e.g., 17).
 
 💡 Tip: If IntelliJ still can’t detect the JDK, verify that your environment variable JAVA_HOME is set correctly.
 
-3. Creating a Selenium Project
+## 3. Creating a Selenium Project
 
-With IntelliJ and JDK ready, the next step is to set up a Selenium project.
+- With IntelliJ and JDK ready, the next step is to set up a Selenium project.
 
-Step 1 – Create a New Java Project
+### Step 1 – Create a New Java Project
 
-From IntelliJ’s welcome screen, click New Project.
+- From IntelliJ’s welcome screen, click New Project.
 
-Select Java on the left, ensure the SDK points to your installed JDK.
+- Select Java on the left, ensure the SDK points to your installed JDK.
 
-Name your project (e.g., SeleniumSetup) and choose a folder location.
+- Name your project (e.g., SeleniumSetup) and choose a folder location.
 
-Click Finish. IntelliJ will generate the project structure.
+- Click Finish. IntelliJ will generate the project structure.
 
-Step 2 – Add Selenium Libraries
+### Step 2 – Add Selenium Libraries
 
 Selenium is not included by default. You can integrate it in two ways:
 
-Option 1 – Maven (Recommended)
+#### Option 1 – Maven (Recommended)
 
-Right-click the project → Add Framework Support → Maven.
+- Right-click the project → Add Framework Support → Maven.
 
-IntelliJ generates a pom.xml file.
+- IntelliJ generates a pom.xml file.
 
-Add Selenium as a dependency:
+- Add Selenium as a dependency:
 
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -118,23 +121,24 @@ Add Selenium as a dependency:
 </dependency>
 
 
-Save the file. IntelliJ automatically downloads all required Selenium libraries.
+- Save the file. IntelliJ automatically downloads all required Selenium libraries.
 
-Option 2 – Manual JAR Download
+#### Option 2 – Manual JAR Download
 
-Visit Selenium Downloads.
+- Visit Selenium Downloads.
 
-Download the Java Client Library ZIP file and extract it.
+- Download the Java Client Library ZIP file and extract it.
 
-In IntelliJ → File → Project Structure → Libraries → Add Java, select all .jar files from the extracted folder.
+- In IntelliJ → File → Project Structure → Libraries → Add Java, select all .jar files from the extracted folder.
 
 💡 If you’re planning to run tests in Azure DevOps later, Maven is strongly preferred since it handles dependency management automatically.
 
-4. Running Your First Selenium Script
+## 4. Running Your First Selenium Script
 
 Before setting up CI/CD, verify that everything works locally.
 
-Example Java Class
+### Example Java Class
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -157,31 +161,31 @@ public class FirstTest {
     }
 }
 
-Steps to Run
+### Steps to Run
 
-Download ChromeDriver from ChromeDriver Downloads.
+- Download ChromeDriver from ChromeDriver Downloads.
 
-Ensure the ChromeDriver version matches your installed Chrome browser version.
+- Ensure the ChromeDriver version matches your installed Chrome browser version.
 
-Replace "path/to/chromedriver" with the actual path where ChromeDriver is stored.
+- Replace "path/to/chromedriver" with the actual path where ChromeDriver is stored.
 
-Right-click your Java file → Run ‘FirstTest.main()’.
+- Right-click your Java file → Run ‘FirstTest.main()’.
 
-If successful, Chrome launches, navigates to example.com, prints the page title in the console, and closes.
+- If successful, Chrome launches, navigates to example.com, prints the page title in the console, and closes.
 
-5. Preparing for Azure DevOps Pipeline Execution
+## 5. Preparing for Azure DevOps Pipeline Execution
 
 Running tests locally is useful, but CI/CD pipelines allow you to execute them automatically whenever you push code.
 
-Step 1 – Use Maven or Gradle for Dependencies
+### Step 1 – Use Maven or Gradle for Dependencies
 
 This ensures that your pipeline can download Selenium, TestNG, and other libraries automatically instead of relying on manually uploaded JARs.
 
-Step 2 – Organize Tests with TestNG
+### Step 2 – Organize Tests with TestNG
 
 TestNG provides structured test execution, annotations, parallel runs, and detailed reports. It integrates seamlessly with Azure DevOps pipelines.
 
-Add TestNG to Maven:
+#### Add TestNG to Maven:
 
 <dependency>
     <groupId>org.testng</groupId>
@@ -191,7 +195,7 @@ Add TestNG to Maven:
 </dependency>
 
 
-Example TestNG Class:
+#### Example TestNG Class:
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -208,7 +212,7 @@ public class GoogleTest {
     }
 }
 
-Step 3 – Create testng.xml
+### Step 3 – Create testng.xml
 
 This configuration file tells TestNG which tests to run:
 
@@ -221,20 +225,20 @@ This configuration file tells TestNG which tests to run:
     </test>
 </suite>
 
-Step 4 – Plan for Pipeline Setup
+### Step 4 – Plan for Pipeline Setup
 
-When pushing to a Git repo for Azure DevOps:
+#### When pushing to a Git repo for Azure DevOps:
 
-Commit pom.xml, testng.xml, and all test classes.
+- Commit pom.xml, testng.xml, and all test classes.
 
-Ensure ChromeDriver is available (install it dynamically in the pipeline or store in repo).
+- Ensure ChromeDriver is available (install it dynamically in the pipeline or store in repo).
 
-In Azure DevOps YAML pipeline:
+#### In Azure DevOps YAML pipeline:
 
 - script: mvn clean test
   displayName: 'Run Selenium Tests'
 
-6. Quick Pre-Pipeline Checklist
+## 6. Quick Pre-Pipeline Checklist
 
 ✅ IntelliJ IDEA installed and linked to JDK
 ✅ Selenium libraries added via Maven
@@ -242,18 +246,18 @@ In Azure DevOps YAML pipeline:
 ✅ TestNG added and testng.xml configured
 ✅ All files pushed to repository
 
-Final Thoughts
+## Final Thoughts
 
 By setting up IntelliJ IDEA with Selenium WebDriver correctly, you’re laying the foundation for a scalable automation framework. This careful preparation ensures that when you push your project to Azure DevOps, your builds will run smoothly without unexpected dependency issues.
 
 From here, you can extend your setup to:
 
-Run tests in parallel for faster execution
+- Run tests in parallel for faster execution
 
-Capture screenshots and generate detailed HTML reports
+- Capture screenshots and generate detailed HTML reports
 
-Add logging frameworks (Log4j, SLF4J) for better debugging
+- Add logging frameworks (Log4j, SLF4J) for better debugging
 
-Integrate with cross-browser tools like Selenium Grid or BrowserStack
+- Integrate with cross-browser tools like Selenium Grid or BrowserStack
 
 💡 A clean local environment saves time, prevents frustration, and makes your journey into CI/CD with Azure DevOps far smoother.
