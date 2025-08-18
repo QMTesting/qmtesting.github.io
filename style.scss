@@ -1508,6 +1508,20 @@ figcaption {
     background-color: #fce8b2; /* Replace with your desired color */
   }
 
+// Style buttons for script snippets in blog posts
+.copy-btn {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #666;
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
