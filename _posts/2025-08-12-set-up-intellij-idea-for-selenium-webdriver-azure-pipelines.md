@@ -114,11 +114,11 @@ Selenium is not included by default. You can integrate it in two ways:
 
 - Add Selenium as a dependency:
 
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.21.0</version>
-</dependency>
+      <dependency>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+          <version>4.21.0</version>
+      </dependency>
 
 
 - Save the file. IntelliJ automatically downloads all required Selenium libraries.
