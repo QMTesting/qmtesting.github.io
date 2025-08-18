@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Limit to code blocks inside blog post content
-  document.querySelectorAll(".post-content pre > code").forEach((codeBlock) => {
-    // Create a copy button
+  // Target all code blocks inside posts
+  const codeBlocks = document.querySelectorAll(".post pre > code");
+
+  codeBlocks.forEach((codeBlock) => {
+    // Create copy button
     const button = document.createElement("button");
     button.innerText = "Copy";
     button.className = "copy-btn";
 
-    // Style the button inline (fallback if no CSS)
+    // Inline styling (can be moved to CSS)
     button.style.position = "absolute";
     button.style.right = "5px";
     button.style.top = "5px";
@@ -14,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     button.style.fontSize = "12px";
     button.style.cursor = "pointer";
 
-    // Wrap <pre> in relative container so button positions correctly
+    // Make the parent <pre> relative so button positions correctly
     const pre = codeBlock.parentNode;
     pre.style.position = "relative";
     pre.appendChild(button);
 
-    // Copy code to clipboard on click
+    // Copy code to clipboard
     button.addEventListener("click", () => {
       navigator.clipboard.writeText(codeBlock.innerText).then(() => {
         button.innerText = "Copied!";
@@ -27,4 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  console.log("Copy buttons added to code blocks:", codeBlocks.length);
 });
