@@ -1593,6 +1593,11 @@ article ul ul, main ul ul {
   margin-left: 1.6em;
 }
 
+/* Post title */
+.post h1 {
+width: 400px;
+}	
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
