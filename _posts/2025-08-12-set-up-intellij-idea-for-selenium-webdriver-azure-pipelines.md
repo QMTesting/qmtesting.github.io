@@ -238,7 +238,7 @@ This configuration file tells TestNG which tests to run:
 - script: mvn clean test
   displayName: 'Run Selenium Tests'
 
-## 6. Quick Pre-Pipeline Checklist
+## ✅ 6. Quick Pre-Pipeline Checklist
 
 ✅ IntelliJ IDEA installed and linked to JDK
 
@@ -250,7 +250,7 @@ This configuration file tells TestNG which tests to run:
 
 ✅ All files pushed to repository
 
-## Final Thoughts
+## 🎯 Final Thoughts
 
 By setting up IntelliJ IDEA with Selenium WebDriver correctly, you’re laying the foundation for a scalable automation framework. This careful preparation ensures that when you push your project to Azure DevOps, your builds will run smoothly without unexpected dependency issues.
 
