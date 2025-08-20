@@ -1398,6 +1398,19 @@ figcaption {
           display: none;
         } 
 
+		/* Post title */
+		.post h1 {
+		  margin-left: 215px;
+		  margin-right: -50px;	
+		  text-align: center;	
+		}	
+		
+		.post-title h2 {
+		  margin-left: 0x;
+		  margin-right: 0px;		
+		 text-align: center;	
+		}	   
+
        } /* End Desktop */  
 
        @media only screen and (max-width: 767px) {
@@ -1593,18 +1606,7 @@ article ul ul, main ul ul {
   margin-left: 1.6em;
 }
 
-/* Post title */
-.post h1 {
-  margin-left: 215px;
-  margin-right: -50px;	
-  text-align: center;	
-}	
 
-.post-title h2 {
-  margin-left: 0x;
-  margin-right: 0px;		
- text-align: center;	
-}	
 
 
 
