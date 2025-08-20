@@ -1567,17 +1567,15 @@ h4 {
 }	
 
 /* Convert bullets to 👉 */
-.post-content ul li::before {
+.arrow-list {
   list-style: none;
   padding-left: 1.2em;
 }
 
-/* Add 👉 before each list item */
-.post-content ul li::before {
+.arrow-list li::before {
   content: "👉 ";
   margin-right: 6px;
 }
-
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
