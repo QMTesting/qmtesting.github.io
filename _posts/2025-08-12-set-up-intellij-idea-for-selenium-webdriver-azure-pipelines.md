@@ -240,15 +240,11 @@ This configuration file tells TestNG which tests to run:
 
 ## ✅ 6. Quick Pre-Pipeline Checklist
 
-✅ IntelliJ IDEA installed and linked to JDK
-
-✅ Selenium libraries added via Maven
-
-✅ ChromeDriver downloaded and working locally
-
-✅ TestNG added and testng.xml configured
-
-✅ All files pushed to repository
+- IntelliJ IDEA installed and linked to JDK
+- Selenium libraries added via Maven
+- ChromeDriver downloaded and working locally
+- TestNG added and testng.xml configured
+- All files pushed to repository
 
 ## 🎯 Final Thoughts
 
