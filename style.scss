@@ -1573,33 +1573,6 @@ h4 {
 	font-weight: 700;
 }	
 
-/* Convert bullets to 👉 */
-/* Scoped version — apply to lists inside article/main only */
-article ul, main ul { 
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-/* Add spacing and the arrow */
-/*article ul > li, main ul > li {
-  position: relative;
-  padding-left: 1.6em; /* room for the arrow */
-}*/
-
-/*article ul > li::before, main ul > li::before {
-  content: "👉";
-  position: absolute;
-  left: 0;
-  top: 0.15em; /* adjust to taste */
-  line-height: 1;
-}*/
-
-/* Keep indentation for nested lists */
-/*article ul ul, main ul ul {
-  margin-left: 1.6em;
-}*/
-
 
 
 
