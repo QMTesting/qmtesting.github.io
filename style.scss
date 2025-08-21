@@ -1582,23 +1582,23 @@ article ul, main ul {
 }
 
 /* Add spacing and the arrow */
-article ul > li, main ul > li {
+/*article ul > li, main ul > li {
   position: relative;
   padding-left: 1.6em; /* room for the arrow */
-}
+}*/
 
-article ul > li::before, main ul > li::before {
+/*article ul > li::before, main ul > li::before {
   content: "👉";
   position: absolute;
   left: 0;
   top: 0.15em; /* adjust to taste */
   line-height: 1;
-}
+}*/
 
 /* Keep indentation for nested lists */
-article ul ul, main ul ul {
+/*article ul ul, main ul ul {
   margin-left: 1.6em;
-}
+}*/
 
 
 
