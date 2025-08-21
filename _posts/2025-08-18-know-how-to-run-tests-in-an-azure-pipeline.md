@@ -64,49 +64,49 @@ Refer to the following information on the Microsoft website regarding configurin
 
 ##### Step 1: At the Powershell prompt, change the directory path to your Agent folder on your c:/ drive.
 
-###### PS C:\WINDOWS\system32> cd C:\Users\Default\Automation\Pipelines\Agent_X
+  PS C:\WINDOWS\system32> cd C:\Users\Default\Automation\Pipelines\Agent_X
 
 ##### Step 2: Enter the following command to start the configuration process, as follows:
 
-###### PS C:\Users\Default\Automation\Pipelines\Agent_Z> .\config.cmd
+  PS C:\Users\Default\Automation\Pipelines\Agent_Z> .\config.cmd
 
 ##### Step 3: Enter your Azure DevOps Organization server URL at the prompt and then press the Enter key as follows:
 
-###### Enter server URL > https://dev.azure.com/My-Project-X/
+  Enter server URL > https://dev.azure.com/My-Project-X/
 
 ##### Step 4: Select PAT as the authentication type by pressing the Enter key at the following prompt:
 
-###### Enter authentication type (press enter for PAT) > 
+  Enter authentication type (press enter for PAT) > 
 
 ##### Step 5: Enter your personal access code (PAT) at the following prompt and then press the Enter key:
 
-###### Enter personal access token > *********************************
+  Enter personal access token > *********************************
 
 This action will trigger a connection to the agent server and then prompt you to Register the Agent (see image below). To Register the Agent, complete the information requested under Steps 6 to 10.
 
 ##### Step 6: Enter the name of the agent pool associated with the agent, then press the Enter key.
 
-###### Enter agent pool (press enter for default) > Agent_Pool_X
+  Enter agent pool (press enter for default) > Agent_Pool_X
 
 ##### Step 7: Enter the name of the agent, then press the Enter key.
 
-###### Enter agent name (press enter for DESKTOP-K64FEVM) > Agent_X
+  Enter agent name (press enter for DESKTOP-K64FEVM) > Agent_X
 
 ##### Step 8: Press the Enter key to select the work folder "_word" at the following prompt.
 
-###### Enter work folder (press enter for _work) >
+  Enter work folder (press enter for _work) >
 
 ##### Step 9: Press the Enter key to select N (to run the agent in interactive mode) at the following prompt:
 
-###### Enter run agent as service? (Y/N) (press enter for N) >
+  Enter run agent as service? (Y/N) (press enter for N) >
 
 ##### Step 10: Press the Enter key to select N (do not configure autologon and run agent on startup) at the following prompt:
 
-###### Enter configure autologon and run agent on startup? (Y/N) (press enter for N) >
+  Enter configure autologon and run agent on startup? (Y/N) (press enter for N) >
 
 ###### The following prompt should be displayed, which signals the completion of the Agent configuration process:
 
-###### PS C:\Users\Default\Automation\Pipelines\Agent_X>
+  PS C:\Users\Default\Automation\Pipelines\Agent_X>
 
 #### Important Notes:
 - It is strongly recommend that you configure the agent from an elevated PowerShell window. This is required if you want to configure it as a service.
