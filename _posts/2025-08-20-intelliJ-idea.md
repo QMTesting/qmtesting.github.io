@@ -75,21 +75,21 @@ If you rename getUserData() to fetchUserData() in IntelliJ IDEA, the IDE automat
 
 Getting Started with IntelliJ IDEA
 
-If you’re new to IntelliJ IDEA, here’s how to get started:
+If you’re new to IntelliJ IDEA, here’s how to get started with the free IntelliJ IDEA Community Edition:
 
-1. Download and Install
+Step 1: Download and Install
 
-IntelliJ IDEA Community Edition Download[https://www.jetbrains.com/idea/download/?section=windows#section=windows]
+Click this link to download [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows#section=windows)
 
 On that page:
 
-Choose your operating system (Windows, macOS, or Linux).
+1. Choose your operating system (Windows, macOS, or Linux).
 
-Under Community, click Download.
+2. click Download.
 
 This edition is completely free and perfect for Java, Kotlin, and basic development projects.
 
-Choose Community Edition (free) or Ultimate Edition (paid with advanced features).
+You can also download and install the IntelliJ IDEA Ultimate paid version with advanced features.
 
 Install following the instructions for your operating system (Windows, macOS, or Linux).
 
