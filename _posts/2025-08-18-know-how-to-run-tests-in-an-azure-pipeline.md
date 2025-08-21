@@ -21,10 +21,14 @@ Get a free Azure DevOps account [here](https://azure.microsoft.com/en-us/pricing
 ## Create an Azure DevOps Organization
 
 1. Log in to your Azure DevOps Account
-2. Click on the blue Azure DevOps link in the upper left-hand corner.
-3. Select the New organization link.
-4. Select Continue on the Get started with Azure DevOps window below
-5. Complete the Organization Name, Country, "Enter the characters you see", and then select the Continue button to create the Organization.
+   
+3. Click on the blue Azure DevOps link in the upper left-hand corner.
+   
+5. Select the New organization link.
+   
+7. Select Continue on the Get started with Azure DevOps window.
+   
+9. Complete the Organization Name, Country, "Enter the characters you see", and then select the Continue button to create the Organization.
 
 ## Create a Project Under Your Organization
 Enter your project name, then select the Create project button.
@@ -39,27 +43,41 @@ You will need a user account that has the following permission to register the s
 
 ### Create an Agent Pool:
 1. Select the Project settings link in the bottom left corner of the screen.
-2. Select Agent pool under the Pipelines menu in the left-hand menu.
-3. Select the Add pool button in the top right corner of the screen.
-4. Complete the Add agent pool form. Select Self-hosted under Pool type, enter the pool Name field, select the Grant access permission to all pipelines for the Pipeline permissions checkbox, and select the Create button.
+   
+3. Select Agent pool under the Pipelines menu in the left-hand menu.
+   
+5. Select the Add pool button in the top right corner of the screen.
+   
+7. Complete the Add agent pool form. Select Self-hosted under Pool type, enter the pool Name field, select the Grant access permission to all pipelines for the Pipeline permissions checkbox, and select the Create button.
 
 ### Create a Self-Hosted Agent:
 1. Select the Name of the agent pool you just created ("Agent_Pool_X") under the list of Agent pools
-2. Select the New agent button in the top right corner of the Agent_Pool_X screen
-3. On the Get the agent dialog box, perform the following actions 
+   
+3. Select the New agent button in the top right corner of the Agent_Pool_X screen.
+   
+5. On the Get the agent dialog box, perform the following actions 
 
 #### Choose the Windows tab:
 1. Select Agent version x64 if you have a 64-bit Windows machine or select Agent version x86 if you have a 32-bit Windows machine.
+   
 2. Select the Download button to download the Agent software.
+   
 3. Open a PowerShell window. in the c:\directory, type the following command:
-    PS C:\WINDOWS\system32> cd C:\Users\<user name>\Automation\Pipeline
-5. Then, type in the following command in the Powershell window:
-    PS C:\Users\<user name>\Automation\Pipeline> mkdir Agent_X 
-7. Type the following command in the Powershell window (see Create the agent section under the image below):
-    PS C:\Users\carol\Automation\Pipeline> cd Agent_X
-9. Enter the following command in the Powershell window (see Create the agent section under the image below):
-    PS C:\Users\Default\Automation\Pipelines\Agent_X> Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-3.238.0.zip", "$PWD")
-DevOps
+   
+    - PS C:\WINDOWS\system32> cd C:\Users\<user name>\Automation\Pipeline
+   
+4. Then, type in the following command in the Powershell window
+   
+    - PS C:\Users\<user name>\Automation\Pipeline> mkdir Agent_X
+   
+5. Type the following command in the Powershell window (see Create the agent section under the image below):
+    
+    - PS C:\Users\carol\Automation\Pipeline> cd Agent_X
+   
+6. Enter the following command in the Powershell window (see Create the agent section under the image below):
+   
+    - PS C:\Users\Default\Automation\Pipelines\Agent_X> Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x643.238.0.zip", "$PWD")
+
 
 #### Configure the Self-Hosted Agent:
 Follow these steps to complete the configuration to create an interactive self-hosted build agent:
