@@ -675,21 +675,14 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
 
 <!--  Change Browser Zoom if Web page does not fit on screen  -->    
-<script type='text/javascript'>
-  function setZoom() {
-    if (window.matchMedia(&#39;(min-width: 780px) and (max-width: 1280px)&#39;).matches) {
-      document.body.style.zoom = &quot;80%&quot;;
-    } else {
-      document.body.style.zoom = &quot;100%&quot;;
-    }
+@media (min-width: 780px) and (max-width: 1280px) {
+  body {
+    font-size: 0.9rem; /* slightly smaller text */
+    transform: scale(0.9); /* cross-browser scaling */
+    transform-origin: top left;
   }
- 
-  // Call the function to set the zoom on page load
-  setZoom();
- 
-  // Handle the window resize event
-  window.addEventListener(&#39;resize&#39;, setZoom);
-</script>
+}
+
 
 
     
