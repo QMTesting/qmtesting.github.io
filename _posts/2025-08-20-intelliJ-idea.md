@@ -79,8 +79,15 @@ If you’re new to IntelliJ IDEA, here’s how to get started:
 
 1. Download and Install
 
-Visit the official IntelliJ IDEA download page
-.
+IntelliJ IDEA Community Edition Download[https://www.jetbrains.com/idea/download/?section=windows#section=windows]
+
+On that page:
+
+Choose your operating system (Windows, macOS, or Linux).
+
+Under Community, click Download.
+
+This edition is completely free and perfect for Java, Kotlin, and basic development projects.
 
 Choose Community Edition (free) or Ultimate Edition (paid with advanced features).
 
