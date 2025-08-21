@@ -16,5 +16,11 @@ category: "Azure DevOps"
     "url": "/_posts/2025-05-22-azure-devops-tools.md",
     "thumb": "/assets/images/DevOps/Azure-DevOps-Tools.png",
     "label": "Azure DevOps"
+  },
+  {
+    "title": "Know How To Run Tests on an Azure Pipeline",
+    "url": "/_posts/2025-08-18-know-how-to-run-tests-in-an-azure-pipeline.md",
+    "thumb": "/assets/images/DevOps/DevOps/Azure-Pipeline-Build.webp",
+    "label": "Azure DevOps"
   }
 ]
