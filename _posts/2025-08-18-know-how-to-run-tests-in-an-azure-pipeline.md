@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Know How To Run Tests in an Azure Pipeline"
+title: "Know How To Run Tests on an Azure Pipeline"
 categories: ["Azure DevOps"]
 image: "/assets/images/DevOps/Azure-Pipeline-Build.webp"
 ---
