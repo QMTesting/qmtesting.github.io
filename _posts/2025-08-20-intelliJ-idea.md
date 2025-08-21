@@ -130,18 +130,22 @@ Integrate Git by clicking on VCS → Enable Version Control Integration.
 Debugging in IntelliJ IDEA with breakpoints and variable inspection.
 
 IntelliJ IDEA vs. Eclipse vs. Visual Studio Code
-Feature/Aspect	IntelliJ IDEA	Eclipse	Visual Studio Code (VS Code)
-Type	Full IDE	Full IDE	Lightweight code editor
-Primary Languages	Java, Kotlin, Scala, Groovy, Python, JavaScript	Java, C/C++, Python, others via plugins	JavaScript, Python, Java, and many via extensions
-Code Completion	Smart, context-aware	Basic, requires plugins for enhancements	Basic, powered by extensions
-Refactoring Tools	Advanced and safe	Basic	Limited, requires extensions
-Framework Support	Built-in support for Spring, Hibernate, Maven, Gradle	Requires plugins for frameworks	Requires extensions/plugins
-Version Control Integration	Built-in Git, Mercurial, SVN	Built-in Git, Mercurial (plugins)	Built-in Git, others via extensions
-Debugging & Profiling	Advanced debugger, profiling tools	Basic debugger, plugins needed	Basic debugger, plugins needed
-Ease of Setup	Easy, ready-to-use out-of-the-box	Moderate, may require setup & plugins	Very easy, lightweight setup
-Performance	Heavy on resources, handles large projects well	Moderate, can slow on big projects	Lightweight, fast for small/medium projects
-Cost	Community Edition: Free; Ultimate: Paid	Free	Free
-Best For	Enterprise projects, full-stack, advanced development	Java development, flexible IDE needs	Lightweight projects, scripting, multi-language editing
+
+| Feature/Aspect                  | IntelliJ IDEA                                         | Eclipse                                  | Visual Studio Code (VS Code)                            |
+| ------------------------------- | ----------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------- |
+| **Type**                        | Full IDE                                              | Full IDE                                 | Lightweight code editor                                 |
+| **Primary Languages**           | Java, Kotlin, Scala, Groovy, Python, JavaScript       | Java, C/C++, Python, others via plugins  | JavaScript, Python, Java, and many via extensions       |
+| **Code Completion**             | Smart, context-aware                                  | Basic, requires plugins for enhancements | Basic, powered by extensions                            |
+| **Refactoring Tools**           | Advanced and safe                                     | Basic                                    | Limited, requires extensions                            |
+| **Framework Support**           | Built-in support for Spring, Hibernate, Maven, Gradle | Requires plugins for frameworks          | Requires extensions/plugins                             |
+| **Version Control Integration** | Built-in Git, Mercurial, SVN                          | Built-in Git, Mercurial (plugins)        | Built-in Git, others via extensions                     |
+| **Debugging & Profiling**       | Advanced debugger, profiling tools                    | Basic debugger, plugins needed           | Basic debugger, plugins needed                          |
+| **Ease of Setup**               | Easy, ready-to-use out-of-the-box                     | Moderate, may require setup & plugins    | Very easy, lightweight setup                            |
+| **Performance**                 | Heavy on resources, handles large projects well       | Moderate, can slow on big projects       | Lightweight, fast for small/medium projects             |
+| **Cost**                        | Community Edition: Free; Ultimate: Paid               | Free                                     | Free                                                    |
+| **Best For**                    | Enterprise projects, full-stack, advanced development | Java development, flexible IDE needs     | Lightweight projects, scripting, multi-language editing |
+
+
 Final Thoughts
 
 IntelliJ IDEA is more than just an IDE — it’s a productivity powerhouse for developers. With its smart features, seamless integrations, and strong support for modern frameworks, it enhances coding efficiency and improves project quality. Whether you’re a beginner learning Java or a professional building enterprise applications, IntelliJ IDEA provides the tools you need to code smarter and faster.
