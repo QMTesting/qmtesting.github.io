@@ -1573,7 +1573,14 @@ h4 {
 	font-weight: 700;
 }	
 
-
+/* Convert bullets to 👉 */
+article ul > li::before, main ul > li::before {
+  content: "👉";
+  position: absolute;
+  left: 0;
+  top: 0.15em; /* adjust to taste */
+  line-height: 1;
+}
 
 
 
