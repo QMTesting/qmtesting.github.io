@@ -61,7 +61,7 @@ You will need a user account that has the following permission to register the s
     PS C:\Users\Default\Automation\Pipelines\Agent_X> Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-3.238.0.zip", "$PWD")
 DevOps
 
-#### Configure the Self-Hosted Agent
+#### Configure the Self-Hosted Agent:
 Follow these steps to complete the configuration to create an interactive self-hosted build agent:
 
 Refer to the following information on the Microsoft website regarding configuring a Self-Hosted Agent and creating a personal access code (PAT) to authenticate a Self-Hosted Agent.
