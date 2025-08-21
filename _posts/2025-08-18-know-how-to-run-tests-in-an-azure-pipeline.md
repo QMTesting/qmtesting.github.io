@@ -31,33 +31,41 @@ Get a free Azure DevOps account [here](https://azure.microsoft.com/en-us/pricing
 9. Complete the Organization Name, Country, "Enter the characters you see", and then select the Continue button to create the Organization.
 
 ## Create a Project Under Your Organization
+
 Enter your project name, then select the Create project button.
 
 ## Create a Self-Hosted Agent
+
 Create a self-hosted agent on a Windows machine. The agent will execute the automated UI tests.
 
 ### Requred User Permission:
+
 You will need a user account that has the following permission to register the self-hosted agent:
+
 - an Azure DevOps organization owner or TFS or
+  
 - an Azure DevOps Server administrator
 
 ### Create an Agent Pool:
+
 1. Select the Project settings link in the bottom left corner of the screen.
    
-3. Select Agent pool under the Pipelines menu in the left-hand menu.
+2. Select Agent pool under the Pipelines menu in the left-hand menu.
    
-5. Select the Add pool button in the top right corner of the screen.
+3. Select the Add pool button in the top right corner of the screen.
    
-7. Complete the Add agent pool form. Select Self-hosted under Pool type, enter the pool Name field, select the Grant access permission to all pipelines for the Pipeline permissions checkbox, and select the Create button.
+4. Complete the Add agent pool form. Select Self-hosted under Pool type, enter the pool Name field, select the Grant access permission to all pipelines for the Pipeline permissions checkbox, and select the Create button.
 
 ### Create a Self-Hosted Agent:
+
 1. Select the Name of the agent pool you just created ("Agent_Pool_X") under the list of Agent pools
    
-3. Select the New agent button in the top right corner of the Agent_Pool_X screen.
+2. Select the New agent button in the top right corner of the Agent_Pool_X screen.
    
-5. On the Get the agent dialog box, perform the following actions 
+3. On the Get the agent dialog box, perform the following actions 
 
 #### Choose the Windows tab:
+
 1. Select Agent version x64 if you have a 64-bit Windows machine or select Agent version x86 if you have a 32-bit Windows machine.
    
 2. Select the Download button to download the Agent software.
@@ -80,6 +88,7 @@ You will need a user account that has the following permission to register the s
 
 
 #### Configure the Self-Hosted Agent:
+
 Follow these steps to complete the configuration to create an interactive self-hosted build agent:
 
 Refer to the following information on the Microsoft website regarding configuring a Self-Hosted Agent and creating a personal access code (PAT) to authenticate a Self-Hosted Agent.
@@ -131,9 +140,13 @@ This action will trigger a connection to the agent server and then prompt you to
   - PS C:\Users\Default\Automation\Pipelines\Agent_X>
 
 #### Important Notes:
+
 - It is strongly recommend that you configure the agent from an elevated PowerShell window. This is required if you want to configure it as a service.
+
 - It is preferred to configure the agent to run the Agent in Interactive mode if you intend to run UI tests. See the following Agent information on the Microsoft website.
+
 - Windows PowerShell ISE should not be used to configure the agent.
+
 - For security reasons, we strongly recommend making sure that the agent's folder (C:\agents) is only editable by administrators.
 
 ### Run the Agent 
@@ -148,20 +161,29 @@ This action will trigger a connection to the agent server and then prompt you to
    2025-08-18 14:27:07Z: Listening for Jobs
 
 ## Create a YAML Build Pipeline
+
 1. On your Azure DevOps project, on the left-hand menu, select the Pipelines menu item.
+
 2. Select the Create pipeline button.
+
 3. Select Azure Repos Git under Where is your code?
+
 4. Choose the name of your repository
+
 5. Select Existing Azure Pipeline YAML file under the Configure your pipeline window.
+
 6. In the Select an existing YAML file window, select your Branch and the Path to the YAML file that you will be using to run your UI test script. Then select the Continue button.
+
 7. Select the Save and run button to run the Azure Pipeline
 
 The Pipeline will execute the UI test scripts and publish the test build artifacts.
 
 ### Note: 
+
 Remember to customize the YAML file according to your project’s specific requirements.
 
 ## Conclusion
+
 By following these steps, you’ve successfully set up UI test scripts in an Azure DevOps build pipeline using a self-hosted agent. Happy testing!
 
 
