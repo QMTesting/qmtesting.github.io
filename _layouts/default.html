@@ -506,19 +506,41 @@
 
 <!--ISTQB Certigication text-->
 {% if page.url == "/" %}
-  <div style="text-align:center; font-weight: 600;"> 
-     <a href="/ISTQB-certification/">
-       <img src="/assets/images/Test/ISTQB.webp" 
-            alt="ISTQB Icon" 
-            style="width: 150px; margin-top: 100px;">
-     </a>
-    
-     <p class="welcome-text">
-       Supercharge your testing career with a globally recognized ISTQB certification—unlock top-tier job opportunities and stand out in the QA world. 
-       Dive into my <a href="/ISTQB-certification/">ISTQB Certification post to learn how!</a>.
-     </p>  
+  <div class="home-hero">
+    <a href="/ISTQB-certification/">
+      <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}" alt="ISTQB Icon" class="hero-logo">
+    </a>
+    <p class="welcome-text">
+      Supercharge your testing career with a globally recognized ISTQB certification—unlock top-tier job opportunities and stand out in the QA world.
+      Dive into my <a href="/ISTQB-certification/">ISTQB Certification post to learn how!</a>.
+    </p>
   </div>
 {% endif %}
+
+<style>    
+  /* Mobile first (works for phones) */
+  .home-hero {
+    text-align: center;
+    font-weight: 600;
+  }
+  .hero-logo {
+    width: 150px;
+    display: block;
+    margin: 40px auto 0;   /* centers on mobile too */
+    float: none;
+  }
+  
+  /* Desktop and larger */
+  @media (min-width: 992px) {
+    .home-hero {
+      max-width: 760px;    /* keep content narrow and centered */
+      margin: 0 auto;      /* center the whole block */
+    }
+    .hero-logo {
+      margin-top: 100px;   /* your original top spacing */
+    }
+  }  
+</style>  
 
    
     
