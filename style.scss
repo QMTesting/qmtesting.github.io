@@ -1403,7 +1403,16 @@ figcaption {
 		  margin-left: 215px;
 		  margin-right: -50px;	
 		  text-align: center;	
-		}	
+		}
+
+		/* Change Browser Zoom if Web page does not fit on screen */  
+		@media (min-width: 780px) and (max-width: 1280px) {
+		  body {
+		    font-size: 0.9rem; /* slightly smaller text */
+		    transform: scale(0.9); /* cross-browser scaling */
+		    transform-origin: top left;
+		  }
+		}   
 
        } /* End Desktop */  
 
