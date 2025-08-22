@@ -14,3 +14,26 @@ We are passionate about sharing knowledge and empowering newcomers to excel in s
 
 Join us on this exciting journey as we demystify the world of software testing, quality assurance, and automation, making it accessible and enjoyable for beginners. Let's learn, grow, and innovate together!
 
+<style>
+  @media only screen and (min-width: 820px) and (max-width: 2000px) {
+  /* Indent Content  */  
+  .site-name {
+    margin-top: -10px;
+  }  
+
+ .page {
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 50px;
+  }
+
+  } /*End Desktop */
+
+   @media only screen and (max-width: 780px) { 
+    .page {
+    margin-left: 15px;
+    margin-right: 20px;
+    }
+
+  } /* End Mobile */  
+</style>
