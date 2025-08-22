@@ -298,5 +298,5 @@ Here’s how STLC activities align with SDLC phases:
 | 🚀 Deployment              | Test Cycle Closure - Analyzing test results, documenting best practices, and ensuring release readiness.       |
 | 🔧 Maintenance             | Regression Testing - Retesting the software after updates to ensure no new defects are introduced.             |
 
-## 🏁 Conclusion
+## 🚀 Conclusion
 The Software Testing Life Cycle (STLC) is a structured framework that enhances testing efficiency, enables defect detection, and ensures software quality before release. By following each phase of the STLC, adopting best practices, and involving the right team members, organizations can deliver reliable, high-quality software that meets user expectations. Incorporating the STLC into your development workflow is a key step toward achieving excellence in software quality and building user trust.
