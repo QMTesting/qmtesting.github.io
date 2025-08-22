@@ -245,6 +245,7 @@ Here’s how STLC activities align with SDLC phases:
     }
     th {
         text-align: center; 
+        font-weight: 900; 
     }
     td:first-child {
        /* font-weight: 900; */
