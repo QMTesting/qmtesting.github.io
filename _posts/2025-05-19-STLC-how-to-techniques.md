@@ -241,7 +241,7 @@ Business Analysts act as a bridge between technical teams and stakeholders. They
 
 The Software Testing Life Cycle (STLC) is an essential component of the broader Software Development Life Cycle (SDLC). While the SDLC covers the entire journey of software creation — from gathering requirements through design, development, testing, deployment, and ongoing maintenance — the STLC focuses specifically on testing activities. Its purpose is to verify and validate that the software is functional, reliable, and ready for release.
 
-### Here’s how the STLC fits into and strengthens the SDLC:
+Here’s how the STLC fits into and strengthens the SDLC:
 
 ### 1. Quality Assurance Across All Stages
 
