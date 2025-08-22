@@ -504,7 +504,54 @@
       
     </div>
 
+<!--ISTQB Certigication text - START-->
+{% if page.url == "/" %}
+  <div class="home-hero">
+    <a href="/ISTQB-certification/">
+      <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}" alt="ISTQB Icon" class="hero-logo">
+    </a>
+    <p class="welcome-text">
+      Supercharge your testing career with a globally recognized ISTQB certification—unlock top-tier job opportunities and stand out in the QA world.
+      Dive into my <a href="/ISTQB-certification/">ISTQB Certification post to learn how!</a>.
+    </p>
+  </div>
+{% endif %}
 
+<style>    
+  /* Mobile first (works for phones) */
+   @media (max-width: 780px) {
+  .home-hero {
+    text-align: center;
+    font-weight: 600;
+  }
+  .hero-logo {
+    width: 250px;
+    display: block;
+    margin: 40px auto 0;   /* centers on mobile too */
+    float: none;
+  }
+}
+  
+  /* Desktop and larger */
+  @media (min-width: 992px) {
+    .home-hero {
+      text-align: center;
+      font-weight: 600;
+    }
+    .hero-logo {
+      margin-top: 100px;   /* your original top spacing */
+      width: 250px;
+      display: block;
+      margin: 300px auto 0;   /* centers on mobile too */
+      float: none;
+    }
+    .welcome-text {
+     text-align: center;
+     font-weight: 600;
+    }  
+  }  
+</style>       
+<!--ISTQB Certigication text - END-->
 
    
     
@@ -666,53 +713,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- Ensure Layout Links the Script for copy button in posts for script snippets -->            
 <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
 
-<!--ISTQB Certigication text-->
-{% if page.url == "/" %}
-  <div class="home-hero">
-    <a href="/ISTQB-certification/">
-      <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}" alt="ISTQB Icon" class="hero-logo">
-    </a>
-    <p class="welcome-text">
-      Supercharge your testing career with a globally recognized ISTQB certification—unlock top-tier job opportunities and stand out in the QA world.
-      Dive into my <a href="/ISTQB-certification/">ISTQB Certification post to learn how!</a>.
-    </p>
-  </div>
-{% endif %}
 
-<style>    
-  /* Mobile first (works for phones) */
-   @media (max-width: 780px) {
-  .home-hero {
-    text-align: center;
-    font-weight: 600;
-  }
-  .hero-logo {
-    width: 250px;
-    display: block;
-    margin: 40px auto 0;   /* centers on mobile too */
-    float: none;
-  }
-}
-  
-  /* Desktop and larger */
-  @media (min-width: 992px) {
-    .home-hero {
-      text-align: center;
-      font-weight: 600;
-    }
-    .hero-logo {
-      margin-top: 100px;   /* your original top spacing */
-      width: 250px;
-      display: block;
-      margin: 300px auto 0;   /* centers on mobile too */
-      float: none;
-    }
-    .welcome-text {
-     text-align: center;
-     font-weight: 600;
-    }  
-  }  
-</style>      
 
   
   </body>
