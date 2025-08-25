@@ -4,6 +4,8 @@ title: "Effective Test Case How to Techniques"
 categories: ["Software Testing"]
 image: "/assets/images/Test/software-testing-effective-test-cases.webp"
 permalink: /software-testing-write-effective-test-cases/
+tags: [software testing, QA, QC, test cases]
+description: "A guide on learning techniques to write test cases to test software application effectively."
 ---
 
 <figure>
