@@ -3,6 +3,8 @@ layout: post
 title: "Know the Fundamentals of Sanity Testing"
 categories: ["Types of Testing"]##
 image: "/assets/images/Types/Sanity-Testing.webp"
+tags: [software testing, types of testing, QA, QC, sanity testing]
+description: "A guide to software testing using sanity testing fundamentals."
 ---
 
 <figure>
