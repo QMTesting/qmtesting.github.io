@@ -4,6 +4,8 @@ title: "Smoke Testing Best How To Techniques"
 categories: ["Types of Testing"]
 image: /assets/images/Types/smoke-testing.webp
 permalink: /smoke-testing-how-to-techniques/
+tags: [software testing, types of testing, QA, QC, Quality Control, Quality Assurance, smoke testing]
+description: "A guide on learning Smoke Testing Best How To Techniques."
 ---
 
 <figure>
