@@ -32,23 +32,6 @@
         location.replace("{{ site.url }}" + location.pathname + location.search + location.hash);
       }
     </script>
-
-    <!-- Add logo as site logo in browser searches  - start -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://qmstesting.com/",
-      "logo": "https://qmstesting.com/images/logo-bug.webp"
-    }
-    </script>
-
-    <link rel="icon" href="/images/logo-bug.webp" type="image/webp">
-    <meta property="og:image" content="https://qmstesting.com/images/logo-bug.webp" />
-    <meta property="og:logo" content="https://qmstesting.com/images/logo-bug.webp" />
-    <!-- Add logo as site logo in browser searches  - end -->
-
-
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -76,6 +59,18 @@
 
   <!--Umami Cloud! ANALYTICS -->  
    <script defer src="https://cloud.umami.is/script.js" data-website-id="eb2e6d3b-7570-48bf-9274-47d9a7db25c2"></script>
+
+   <!-- Add logo as site logo in browser searches  - start --> 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://qmstesting.com/",
+      "logo": "https://qmstesting.com/images/logo-bug.webp"
+    }
+    </script>
+    <!-- Add logo as site logo in browser searches  - end -->
+ 
     
   </head>
 
