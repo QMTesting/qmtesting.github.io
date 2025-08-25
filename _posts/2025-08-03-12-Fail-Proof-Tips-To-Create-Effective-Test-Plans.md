@@ -4,6 +4,9 @@ title: "12 Fail Proof Tips To Create Effective Test Plans"
 categories: ["Software Testing"]
 image: /assets/images/Test/Test-Plan.webp
 permalink: /12-Fail-Proof-Tips-To-Create-Effective-Test-Plans/
+tags: [software testing, QA, QC, Quality Control, Quality Assurance,Test Plan]
+description: "A guide on learning the 12 Fail Proof Tips To Create Effective Test Plans for a successful testing endeavor."
+
 ---
 
 <figure>
