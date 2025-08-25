@@ -4,6 +4,8 @@ title: "Software Testing Life Cycle-Know The Best How To Techniques"
 categories: ["Software Testing"]
 image: "/assets/images/Test/STLC.png"
 permalink: /STLC-how-to-techniques/
+tags: [software testing, QA, QC, STLC, software testing life cycle]
+description: "A guide on the software life cycle, best techniques."
 redirect_from:
   - /STLC/
   - /2025/05/19/STLC/
