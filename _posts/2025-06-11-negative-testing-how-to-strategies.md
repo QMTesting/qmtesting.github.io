@@ -3,6 +3,8 @@ layout: post
 title: "Negative Testing How To Strategies"
 categories: ["Types of Testing"]
 image: "/assets/images/Types/Negative Testing.webp"
+tags: [software testing, QA, QC, Types of Testing, Negative Testing]
+description: "A guide on negative testing techniques and strategies in the software testing life cycle (STLC)."
 ---
 
 <figure>
