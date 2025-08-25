@@ -3,6 +3,8 @@ layout: post
 title: "Black Box Testing in the STLC Best How To Techniques"
 categories: ["Types of Testing"]##
 image: "/assets/images/Types/black-box-testing.webp"
+tags: [software testing, Types of Testing, QA, QC, Black Box Testing]
+description: "A guide on black box software testing techniques in the software testing life cycle (STLC)."
 ---
 
 <figure>
