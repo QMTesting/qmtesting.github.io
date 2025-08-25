@@ -3,6 +3,8 @@ layout: post
 title: "Test Basis: Know How To Build Software Testing Success"
 categories: ["Software Testing"]
 image: "/assets/images/Test/Test-Basis.webp"
+tags: [software testing, QA, QC, Test Basis]
+description: "A guide on how to build a foundation for software testing success with a solid test basis."
 ---
 
 <figure>
