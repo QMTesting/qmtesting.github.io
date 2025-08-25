@@ -3,6 +3,8 @@ layout: post
 title: "Know How To Run Tests on an Azure Pipeline"
 categories: ["Azure DevOps"]
 image: "/assets/images/DevOps/Azure-Pipeline-Build.webp"
+tags: [software testing, automation, Azure DevOps, Azure DevOps Pipeline, QA, QC, Quality Control]
+description: "A guide on learning how to Run Tests on an Azure DevOps Pipeline."
 ---
 
 <figure>
