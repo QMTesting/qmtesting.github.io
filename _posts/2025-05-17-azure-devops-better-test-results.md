@@ -4,7 +4,7 @@ title: "Leverage Azure DevOps for Better Test Results"
 categories: ["Azure DevOps"]
 image: /assets/images/DevOps/Azure-DevOps-Testing.png
 permalink: /azure-devops-better-test-results/
-tags: [software testing, QA, QC, Azure DevOps]
+tags: [software testing, QA, QC, Azure DevOps, automation]
 description: "A guide on software testing automation using Azure DevOps."
 redirect_from:
   - /devops-better-test-results/
