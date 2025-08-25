@@ -3,6 +3,8 @@ layout: post
 title: "Setting Up IntelliJ IDEA for Selenium WebDriver"
 categories: ["Automation"]
 image: "/assets/images/Auto/Intellij_Selenium.webp"
+tags: [software testing, automation, inteDEA, Selenium, QA, QC, Quality Control]
+description: "A guide on learning how to Set Up IntelliJ IDEA for Selenium WebDriver."
 ---
 
 <figure>
