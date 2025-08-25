@@ -4,6 +4,8 @@ title: "Quality Control vs Quality Assurance: What is the Difference"
 categories: ["Software Testing"]
 image: "/assets/images/Quality-Assurance.webp"
 permalink: /quality-assurance-quality-control/
+tags: [software testing, QA, QC, Quality Control, Quality Assurance]
+description: "A guide on learning the difference between quality assurance and quality control in the STLC to achieve the goal of a superior final product."
 redirect_from:
   - /quality-assurance/
   - /2025/07/30/quality-assurance/
