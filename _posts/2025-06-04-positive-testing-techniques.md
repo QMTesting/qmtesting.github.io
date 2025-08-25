@@ -3,6 +3,8 @@ layout: post
 title: "Positive Testing in the STLC Best How To Techniques"
 categories: ["Types of Testing"]
 image: "/assets/images/Types/positive-testing.webp"
+tags: [software testing, QA, QC, Types of Testing, Positive Testing]
+description: "A guide on positive testing techniques in the software testing life cycle (STLC)."
 ---
 
 <figure>
