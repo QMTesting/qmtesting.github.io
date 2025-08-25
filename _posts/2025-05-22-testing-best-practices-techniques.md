@@ -3,6 +3,8 @@ layout: post
 title: "Testing Best Practices and Techniques"
 categories: ["Types of Testing"]
 image: "/assets/images/Types/software-testing-types.webp"
+tags: [software testing, Types of Testing, QA, QC, Testing Best Practices, Testing Techniques]
+description: "A guide on the best practices and techniques related to the types of software testing."
 ---
 
 <figure>
