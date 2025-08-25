@@ -3,6 +3,8 @@ layout: post
 title: "Regression Testing Know the Fundamentals in the STLC"
 categories: ["Types of Testing"]
 image: "/assets/images/Types/regression-testing.webp"
+tags: [software testing, QA, QC, Types of Testing, Regression Testing]
+description: "A guide on regression testing fundamentals in the software testing life cycle (STLC)."
 ---
 
 <figure>
