@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/assets/images/Types/Functional-Testing.png" alt="Functional Testing" />
+  <img src="/assets/images/Types/Functional-Testing.png" width="700" height="500" alt="Functional Testing" />
   <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
