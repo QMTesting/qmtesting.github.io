@@ -16,6 +16,23 @@ redirect_from:
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Software testing is a vital component within the software development lifecycle. It ensures that the software product is free from defects and performs as expected. The principles of software testing provide a framework for designing effective test cases and strategies. This blog post will explore the seven principles of software testing, each accompanied by a practical example.
