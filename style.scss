@@ -112,12 +112,6 @@ strong, b {
   font-weight: bold;
 }
 
-img {
-  width: 700px;
-  height: 500px;
-}
-
-
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -1028,7 +1022,7 @@ th, td {
     margin-bottom: 15px;
   }
 
-  .site-avatar img {
+  .site-avatar {
 	display: block;
     text-align: center; 
     width: 70px;
