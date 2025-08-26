@@ -12,6 +12,23 @@ description: "A guide on learning how to Set Up IntelliJ IDEA for Selenium WebDr
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 If you’re planning to automate browser testing with Selenium WebDriver, pairing it with IntelliJ IDEA offers one of the smoothest development experiences available. IntelliJ provides intelligent code completion, real-time error detection, integrated debugging tools, and seamless integration with build tools like Maven or Gradle. All of this makes it easier to write, organize, and maintain test automation projects.
