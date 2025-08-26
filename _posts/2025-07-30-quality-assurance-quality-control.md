@@ -16,6 +16,23 @@ redirect_from:
   <figcaption>Image by upklyak on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Ensuring the quality of the final product is paramount in software development. Two essential processes that contribute to achieving this goal are Quality Assurance (QA) and Quality Control (QC). While these terms are often incorrectly used interchangeably, they represent distinct phases in the software development lifecycle (SDLC) with different objectives and methodologies.
