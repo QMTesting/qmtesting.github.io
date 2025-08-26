@@ -19,8 +19,8 @@ redirect_from:
 <style>
 @media (max-width: 767px) {
   img {
-    width: 380px;
-    height: 280px;
+    width: 387px;
+    height: 287px;
     
   }
 }
