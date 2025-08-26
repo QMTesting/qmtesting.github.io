@@ -12,6 +12,23 @@ description: "A guide on software testing using Azure DevOps Tools and Services 
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Azure DevOps offers an extensive range of services empowering developers to streamline the development, testing, and deployment processes on Microsoft's cloud platform. With Azure DevOps, developers can automate the entire software development lifecycle, ensuring swift delivery, superior quality, and enhanced reliability. This explores ten indispensable Azure DevOps services pivotal in constructing effective CI/CD pipelines.
