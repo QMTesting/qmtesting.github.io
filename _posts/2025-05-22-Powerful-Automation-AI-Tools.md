@@ -16,6 +16,23 @@ redirect_from:
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 In the ever-evolving landscape of software development, regression testing remains a critical process to ensure the stability and reliability of applications across successive iterations. Automation tools play a pivotal role in streamlining regression testing. These tools empower QA teams to attain extensive test coverage. Thus, allowing QA teams to detect and mitigate potential defects efficiently to ensure the delivery of top-notch software products.
