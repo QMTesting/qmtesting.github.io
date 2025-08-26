@@ -13,6 +13,23 @@ description: "A guide on learning techniques to write test cases to test softwar
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 To ensure a software application functions as intended, a series of structured steps, called Test Cases, are followed. Each test case step has a defined expectation for the outcome. This process helps verify that the system behaves correctly and meets its specified requirements. These procedures are typically developed by software testers or quality assurance professionals, drawing from the application's design and documented objectives.
