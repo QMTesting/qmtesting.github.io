@@ -20,7 +20,7 @@ description: "A guide on regression testing fundamentals in the software testing
     
   }
 }
-
+  
 @media (min-width: 1000px) {
   img {
     width: 700px;
