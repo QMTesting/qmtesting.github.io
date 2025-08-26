@@ -12,6 +12,23 @@ description: "A guide on the best practices and techniques related to the types 
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 From functional testing to non-functional testing, software testing is aimed at ensuring the quality, functionality, and performance of software applications. In this blog, we will explore the various software testing types, examining their objectives, methodologies, advantages, and best practices.
