@@ -1029,11 +1029,12 @@ th, td {
   }
 
   .site-avatar img {
-	display:block;  
+	display: block;
+    margin: 0 auto;  
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin-left: 700px;
+   
   }
 
   .site-info {
