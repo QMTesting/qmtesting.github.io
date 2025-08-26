@@ -13,6 +13,23 @@ description: "A guide on learning Smoke Testing Best How To Techniques."
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## 🧭 Introduction
 
 In software development, catching issues early can save teams time, money, and frustration. One of the most effective ways to ensure a new build is ready for deeper testing is through smoke testing—a quick, high-level check that confirms the application’s most essential features are functioning.
