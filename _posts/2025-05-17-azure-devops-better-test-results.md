@@ -16,6 +16,23 @@ redirect_from:
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Test automation, when combined with a robust DevOps platform like Azure DevOps, can elevate software testing to new heights, enabling teams to achieve more powerful results while streamlining their development processes. In this comprehensive guide, we'll explore the benefits of leveraging Azure DevOps with test automation and how it can revolutionize your software testing efforts.
