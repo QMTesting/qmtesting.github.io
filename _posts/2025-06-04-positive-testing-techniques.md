@@ -12,6 +12,23 @@ description: "A guide on positive testing techniques in the software testing lif
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Quality Control (QC) is the cornerstone of software development, ensuring the final product meets the desired functionality standards, reliability, and user experience. Traditionally, QC testing has been perceived as a process of identifying defects and weaknesses in software. However, embracing a more proactive approach is known as positive testing. In this blog, we will cover the essence of Positive Testing, its principles, methodologies, and practical implementation strategies.
