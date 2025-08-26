@@ -12,6 +12,23 @@ description: "A guide on how to build a foundation for software testing success 
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 As a software testing engineer, I know that ensuring the quality and reliability of a product is paramount in the realm of software development. Moreover, effective software testing is a critical component of achieving this goal. However, your success largely hinges on having a well-defined test basis. In this blog post, I will explore what a test basis is, why it is essential, and how you can build a solid foundation for your software testing success.
