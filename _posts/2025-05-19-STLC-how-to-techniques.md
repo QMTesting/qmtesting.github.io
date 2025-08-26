@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/assets/images/Test/STLC.png" alt="Software Testing Life Cycle" />
+  <img src="/assets/images/Test/STLC.png" width="700" height="500" alt="Software Testing Life Cycle" />
   <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
