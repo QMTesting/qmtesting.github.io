@@ -12,6 +12,23 @@ description: "A guide to software testing using sanity testing fundamentals."
   <figcaption>Image by pch.vector on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 In the ever-evolving landscape of software testing, where meticulous attention to detail reigns supreme, there exists a lesser-known yet highly effective type of testing: Sanity Testing. Despite its unassuming name, sanity testing plays a crucial role in ensuring the stability, functionality, and sanity of software systems before they are unleashed into the wild. 
