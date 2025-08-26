@@ -14,6 +14,23 @@ description: "A guide on learning the 12 Fail Proof Tips To Create Effective Tes
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+  
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Software testing is an indispensable part of the software development lifecycle. This ensures that the final product meets quality standards, functions as intended, and satisfies user expectations. At the heart of every successful testing endeavor lies a meticulously crafted test plan. A well-designed test plan not only outlines the testing approach but also serves as a roadmap for the entire testing process. In this blog, we will delve into fail-proof tips for creating effective test plans that can elevate your software testing projects to new heights of success.
