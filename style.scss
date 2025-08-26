@@ -171,23 +171,6 @@ img {
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
 .site-info {
   float: left;
 
@@ -925,15 +908,6 @@ th, td {
   display: none;
   height: 0px;	
 }
-
-/* SITE AVATAR/LOGO */
-.site-avatar img {
-  display:block;	
-  border-radius: 100%;
-  width: 100px;
-  height: 70px;
-  border: none;	
-} 
 
   /* BREADCRUMBS */  
 .breadcrumbs .current-page-title {
