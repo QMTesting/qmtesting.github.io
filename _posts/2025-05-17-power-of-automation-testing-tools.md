@@ -16,6 +16,23 @@ redirect_from:
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 The demand for efficient and effective testing solutions has never been higher in today's fast-paced software development landscape. As technology continues to advance, AI Testing Tools have emerged as a game-changer in the realm of software testing automation. In this blog post, we'll explore the intersection of AI and software testing, examining the benefits, challenges, and innovative tools shaping the future of automated testing.
