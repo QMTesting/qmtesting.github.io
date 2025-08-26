@@ -12,6 +12,23 @@ description: "A guide on regression testing fundamentals in the software testing
   <figcaption>Image by vector4stock on Freepik</figcaption>
 </figure>
 
+<style>
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 290px;
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  img {
+    width: 700px;
+    height: 500px;
+  }
+}
+</style>
+
 ## Introduction
 
 Ensuring the stability and reliability of applications is of utmost importance. Among the many pillars upholding software quality, regression testing stands tall as a crucial safeguard against unintended consequences of code changes. In this comprehensive guide, we will explore the intricacies of regression testing, from its fundamentals to best practices, common challenges, and a blueprint for a successful regression testing strategy.
