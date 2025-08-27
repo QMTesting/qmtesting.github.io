@@ -127,35 +127,30 @@ After the component registration has been updated, the following screen will be 
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture5.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+Click the <b>Close</b> button.
 
-
-
-Click the Close button.
-
-Now that the JDK installation is complete, verify the installation by opening a command prompt and typing  java -version at the prompt, as shown in the screen capture below.
+Now that the JDK installation is complete, verify the installation by opening a command prompt and typing <b>java -version</b> at the prompt, as shown in the screen capture below.
 
 You will know that the JDK installation was successful if the current version of the JDK you are installing (in my case version 22.0.1) is displayed, as per the screen capture below.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture6.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+#### Note: 
+This JDK version comes bundled with Java Runtime Environment (JRE), so you don’t have to download and install the JRE separately.
 
+## Set Up the Environmental Variables for JDK in Microsoft Windows
 
-
-Note: This JDK version comes bundled with Java Runtime Environment (JRE), so you don’t have to download and install the JRE separately.
-
-Set Up the Environmental Variables for JDK in Microsoft Windows
 After installing the JDK, you must set environment variables to ensure the Selenium scripts can locate your Java libraries.
 
-Set the JAVA_HOME and PATH environment variables in Microsoft Windows:
+Set the <b>JAVA_HOME</b> and <b>PATH</b> environment variables in Microsoft Windows:
 
-Type Control Panel in the Windows search box, then select the Control Panel icon. See the screen capture below.
+Type <b>Control Panel</b> in the Windows search box, then select the Control Panel icon. See the screen capture below.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture7.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+Select <b>System and Security</b> from the Control Panel items list
 
-
-
-
-Select System and Security from the Control Panel items list
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture8.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 
