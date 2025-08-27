@@ -43,7 +43,7 @@ Selenium WebDriver is a powerful, open-source tool designed to automate web brow
 
 Here are the advantages that make Selenium WebDriver a popular choice for web application testing:
 
-### - Supports Multiple Browsers:
+- ### Supports Multiple Browsers:
   Compatible with major browsers like Chrome, Firefox, Safari, and Edge.
   
 ### - Cross-Platform Compatibility: 
