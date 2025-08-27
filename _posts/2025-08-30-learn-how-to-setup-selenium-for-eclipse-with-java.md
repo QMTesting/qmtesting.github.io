@@ -65,7 +65,7 @@ Download and Install the JDK version based on your system requirements from here
 
 Example: If you want to install it on Windows, you can download the Windows x64 Installer JDK from the list as per the screen capture below:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/tree/master/assets/images/Auto/eclipse/Capture3.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture3.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 
