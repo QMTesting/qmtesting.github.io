@@ -152,23 +152,17 @@ Select <b>System and Security</b> from the Control Panel items list
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture8.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+Select <b>System</b> on the <b>System and Security</b> window, below.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture9.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+Select <b>Advanced System Settings</b> on the <b>Settings</b> window, below.
 
-Select System on the System and Security window, below.
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture10.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+On the <b>System Properties</b> window, select the <b>Environment Variables</b> button
 
-
-
-
-Select Advanced System Settings on the Settings window, below.
-
-
-
-
-
-On the System Properties window, select the Environment Variables button
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture11.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 
