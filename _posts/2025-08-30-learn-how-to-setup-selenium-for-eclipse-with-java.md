@@ -60,8 +60,10 @@ Framework Compatibility: Works with test frameworks like TestNG and JUnit.
 Cross-Platform: Java’s portability allows tests to run on any JVM-supported platform.
 Build Tool Integration: Compatible with tools like Maven and Gradle for managing and executing tests.
 Community and Resources: Offers extensive support and resources through its large ecosystem.
-JDK Installation
-Download and Install the JDK version based on your system requirements from here. Click on the Download link to download the JDK .exe file.
+
+## JDK Installation
+
+Download and Install the JDK version based on your system requirements from [here](https://www.oracle.com/java/technologies/downloads/). Click on the Download link to download the JDK .exe file.
 
 Example: If you want to install it on Windows, you can download the Windows x64 Installer JDK from the list as per the screen capture below:
 
