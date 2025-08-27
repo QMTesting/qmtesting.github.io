@@ -105,10 +105,10 @@ Download and Install the JDK version based on your system requirements from [her
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
-Once the download is complete, double click the installer file called jdk-22_windows-x64_bin.exe to begin the installation process. The following screen will be displayed.
+Once the download is complete, double click the installer file called <u><b>jdk-22_windows-x64_bin.exe</b></u> to begin the installation process. The following screen will be displayed.
 
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture2.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Click on the Next button. This will display the following screen where you will select the path to store the JDK files.
