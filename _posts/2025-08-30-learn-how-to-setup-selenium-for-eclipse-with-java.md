@@ -30,28 +30,53 @@ description: "A guide on how to setup selenium webdriver for eclipse with java t
 }
 </style>
 
-Introduction
+## Introduction
+
 Setting up Selenium in Eclipse can streamline your web testing process, making it more efficient and effective. If you’re eager to automate your web application tests using Selenium, this guide will walk you through a straightforward setup process. By the end, you’ll have Selenium configured in Eclipse for Java, ready to start writing and executing tests with ease. Whether you’re new to
 Selenium or looking to refine your setup, this tutorial will provide the clear, step-by-step instructions you need to get up and running quickly.
 
-What is Selenium WebDriver
+## What is Selenium WebDriver
+
 Selenium WebDriver is a powerful, open-source tool designed to automate web browsers. As a key part of the Selenium suite, it offers a programming interface that enables developers and testers to interact with browsers effortlessly. Selenium WebDriver supports multiple programming languages, including Java, Python, Ruby, and C#, allowing users to write tests that simulate user interactions, navigate web pages, and conduct functional testing of web applications. Its capability to automate browser actions makes it an indispensable tool for maintaining the quality and reliability of web applications.
 
-Selenium WebDriver Advantages
+## Selenium WebDriver Advantages
+
 Here are the advantages that make Selenium WebDriver a popular choice for web application testing:
 
-Supports Multiple Browsers: Compatible with major browsers like Chrome, Firefox, Safari, and Edge.
-Cross-Platform Compatibility: Works on various operating systems including Windows, macOS, and Linux.
-Language Flexibility: Allows test scripts to be written in multiple programming languages such as Java, Python, C#, and Ruby.
-Rich Set of Features: Provides advanced capabilities for handling various web elements and interactions, including JavaScript alerts, file uploads, and more.
-Parallel Test Execution: Supports running tests in parallel, which speeds up the testing process.
-Integration Capabilities: Easily integrates with popular testing frameworks and tools like TestNG, JUnit, and CI/CD systems such as Jenkins.
-User Interaction Simulation: Accurately simulates user interactions with web elements, including clicks, form submissions, and navigations.
-Robust and Flexible: Offers a high level of flexibility in test script design and can handle dynamic web elements.
-Open Source: Free to use and backed by a strong community of contributors and users.
-Extensive Documentation: Well-documented with a large number of resources, tutorials, and community support.
-Installation Steps
-Step 1: Install Java SE Development Kit (JDK) and Setup 
+### - Supports Multiple Browsers:
+  Compatible with major browsers like Chrome, Firefox, Safari, and Edge.
+  
+### - Cross-Platform Compatibility: 
+Works on various operating systems including Windows, macOS, and Linux.
+
+### - Language Flexibility: 
+Allows test scripts to be written in multiple programming languages such as Java, Python, C#, and Ruby.
+
+### - Rich Set of Features: 
+Provides advanced capabilities for handling various web elements and interactions, including JavaScript alerts, file uploads, and more.
+
+### - Parallel Test Execution: 
+Supports running tests in parallel, which speeds up the testing process.
+
+### - Integration Capabilities: 
+Easily integrates with popular testing frameworks and tools like TestNG, JUnit, and CI/CD systems such as Jenkins.
+
+### - User Interaction Simulation: 
+Accurately simulates user interactions with web elements, including clicks, form submissions, and navigations.
+
+### - Robust and Flexible: 
+Offers a high level of flexibility in test script design and can handle dynamic web elements.
+
+### - Open Source: 
+Free to use and backed by a strong community of contributors and users.
+
+### - Extensive Documentation: 
+Well-documented with a large number of resources, tutorials, and community support.
+
+## Installation Steps
+
+### Step 1: Install Java SE Development Kit (JDK) and Setup 
+
 Java enables the creation, execution, and management of Selenium WebDriver tests effectively. It is essential for running Selenium WebDriver scripts because:
 
 Language Support: It is one of the primary languages for writing Selenium tests.
