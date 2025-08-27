@@ -117,7 +117,7 @@ Click on the <b>Next</b> button. This will display the following screen where yo
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture3.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
-Select the default path indicated or click the <b>Change</b>… button to select your desired file path. Now select the Next button. The Progress screen will be displayed, as per the screen capture below.
+Select the default path indicated or click the <b>Change</b>… button to select your desired file path. Now select the <b>Next</b> button. The Progress screen will be displayed, as per the screen capture below.
 
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture4.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
