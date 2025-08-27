@@ -111,21 +111,21 @@ Once the download is complete, double click the installer file called <u><b>jdk-
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture2.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
-Click on the Next button. This will display the following screen where you will select the path to store the JDK files.
+Click on the <b>Next</b> button. This will display the following screen where you will select the path to store the JDK files.
 
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture3.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
-
-Select the default path indicated or click the Change… button to select your desired file path. Now select the Next button. The Progress screen will be displayed, as per the screen capture below.
-
+Select the default path indicated or click the <b>Change</b>… button to select your desired file path. Now select the Next button. The Progress screen will be displayed, as per the screen capture below.
 
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture4.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 After the component registration has been updated, the following screen will be displayed, indicating that the Java SE Development Kit has been successfully Installed.
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture5.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 
