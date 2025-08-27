@@ -164,17 +164,14 @@ On the <b>System Properties</b> window, select the <b>Environment Variables</b> 
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture11.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+On the <b>Environment</b> Variables window, add the <b>JAVA_HOME</b> environment variable as follows (see screen capture below):
 
+1. Click <b>New</b> in the <b>System Variables</b> section.
+2. Enter <b>JAVA_HOME</b> in the <b>Variable name</b> field.
+3. In the <b>Variable value</b> field, enter the location where the JDK software is installed (for example, <b>C:\Program Files\Java\<jdk_version></b>). If the <b>JAVA_HOME</b> variable already exists, click <b>Edit</b> and replace the old variable value with <b>C:\Program Files\Java\<jdk_version</b>>).
+4. Click the <b>OK</b> button.
 
-
-On the Environment Variables window, add the JAVA_HOME environment variable as follows (see screen capture below):
-
-Click New in the System Variables section.
-Enter JAVA_HOME in the Variable name field.
-In the Variable value field, enter the location where the JDK software is installed (for example, C:\Program Files\Java\<jdk_version>). If the JAVA_HOME variable already exists, click Edit and replace the old variable value with C:\Program Files\Java\<jdk_version>).
-Click the OK button.
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture12.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Create or Update the PATH environment variable to include the location of the Java executable files:
