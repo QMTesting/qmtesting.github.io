@@ -47,31 +47,31 @@ Here are the advantages that make Selenium WebDriver a popular choice for web ap
   Compatible with major browsers like Chrome, Firefox, Safari, and Edge.
   
 ### - Cross-Platform Compatibility: 
-Works on various operating systems including Windows, macOS, and Linux.
+  Works on various operating systems including Windows, macOS, and Linux.
 
 ### - Language Flexibility: 
-Allows test scripts to be written in multiple programming languages such as Java, Python, C#, and Ruby.
+  Allows test scripts to be written in multiple programming languages such as Java, Python, C#, and Ruby.
 
 ### - Rich Set of Features: 
-Provides advanced capabilities for handling various web elements and interactions, including JavaScript alerts, file uploads, and more.
+  Provides advanced capabilities for handling various web elements and interactions, including JavaScript alerts, file uploads, and more.
 
 ### - Parallel Test Execution: 
-Supports running tests in parallel, which speeds up the testing process.
+  Supports running tests in parallel, which speeds up the testing process.
 
 ### - Integration Capabilities: 
-Easily integrates with popular testing frameworks and tools like TestNG, JUnit, and CI/CD systems such as Jenkins.
+  Easily integrates with popular testing frameworks and tools like TestNG, JUnit, and CI/CD systems such as Jenkins.
 
 ### - User Interaction Simulation: 
-Accurately simulates user interactions with web elements, including clicks, form submissions, and navigations.
+  Accurately simulates user interactions with web elements, including clicks, form submissions, and navigations.
 
 ### - Robust and Flexible: 
-Offers a high level of flexibility in test script design and can handle dynamic web elements.
+  Offers a high level of flexibility in test script design and can handle dynamic web elements.
 
 ### - Open Source: 
-Free to use and backed by a strong community of contributors and users.
+  Free to use and backed by a strong community of contributors and users.
 
 ### - Extensive Documentation: 
-Well-documented with a large number of resources, tutorials, and community support.
+  Well-documented with a large number of resources, tutorials, and community support.
 
 ## Installation Steps
 
@@ -79,12 +79,12 @@ Well-documented with a large number of resources, tutorials, and community suppo
 
 Java enables the creation, execution, and management of Selenium WebDriver tests effectively. It is essential for running Selenium WebDriver scripts because:
 
-Language Support: It is one of the primary languages for writing Selenium tests.
-API Integration: Provides a Java API for interacting with browsers.
-Framework Compatibility: Works with test frameworks like TestNG and JUnit.
-Cross-Platform: Java’s portability allows tests to run on any JVM-supported platform.
-Build Tool Integration: Compatible with tools like Maven and Gradle for managing and executing tests.
-Community and Resources: Offers extensive support and resources through its large ecosystem.
+- Language Support: It is one of the primary languages for writing Selenium tests.
+- API Integration: Provides a Java API for interacting with browsers.
+- Framework Compatibility: Works with test frameworks like TestNG and JUnit.
+- Cross-Platform: Java’s portability allows tests to run on any JVM-supported platform.
+- Build Tool Integration: Compatible with tools like Maven and Gradle for managing and executing tests.
+- Community and Resources: Offers extensive support and resources through its large ecosystem.
 
 ## JDK Installation
 
