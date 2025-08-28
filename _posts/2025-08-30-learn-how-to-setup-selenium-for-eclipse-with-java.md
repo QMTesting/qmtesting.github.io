@@ -274,76 +274,65 @@ By following these steps, you can ensure that your Selenium tests are properly s
 
 Below are the links to the more popular Selenium-supported browsers that will have their own drivers available.
 
-Chrome:	https://chromedriver.chromium.org/downloads
-Edge:	https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
-Firefox:	https://github.com/mozilla/geckodriver/releases
-Safari:	https://webkit.org/blog/6900/webdriver-support-in-safari-10/
-Step 5: Configure Eclipse with Selenium WebDriver for a Java Project
-Create a New Eclipse Java Project, Package, and Class
+- **Chrome**:	https://chromedriver.chromium.org/downloads
+- **Edge**:	https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+- **Firefox**:	https://github.com/mozilla/geckodriver/releases
+- **Safari**:	https://webkit.org/blog/6900/webdriver-support-in-safari-10/
+
+### Step 5: Configure Eclipse with Selenium WebDriver for a Java Project
+
+#### Create a New Eclipse Java Project, Package, and Class
+
 Launch the eclipse.exe file inside the Eclipse folder located on C:\eclipse\eclipse.exe.
 
 If asked to select a workspace, keep the default workspace location and select OK.
 
-ConfigureEclipse
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture29.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Launch Eclipse, then select File -> New -> Java Project.
 
-ConfigureEclipse1
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture30.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The following new pop-up window will open. Enter the Project name (Example: ProjectLogin). Keep the default values for all other fields and click the Finish button.
 
-
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture31.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Add a new Package to your project:
 
 Right-click on your newly created project name (Example: ProjectLogin) and select New > Package
 
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture32.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 A new window called Java Package will appear.
 
-Enter the name of your package in the Name field (Example: PackageLogin)
-Click on the Finish button
-ConfigureEclipse4
+- Enter the name of your package in the Name field (Example: PackageLogin)
+- Click on the Finish button
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture33.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Create a new Java class under PackageLogin.
 
-Right click on PackageLogin
-Then select New > Class
+- Right click on PackageLogin
+- Then select New > Class
 
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture34.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 A new window will open called Java Class
 
-Enter the name of your class in the Name field (Example: ClassLogin)
-Click the Finish button
+- Enter the name of your class in the Name field (Example: ClassLogin)
+- Click the Finish button
 
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture35.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Eclipse Package Explorer will now look like this:
 
-ConfigureEclipse7
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture36.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Now, delete the module-info.java file and any other file under the srs node that may have been created at the time of creating your Java project. These files can cause an error when importing certain selenium modules.
 
 Your Eclipse Package Explorer should now look like this:
 
-ConfigureEclipse8
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture37.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Configure Selenium WebDriver Libraries
 Right-click on your newly created project (Example: ProjectLogin) and select Properties.
