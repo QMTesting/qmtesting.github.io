@@ -254,25 +254,23 @@ To automate tests with Selenium on Chrome, you need to set up ChromeDriver. Here
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture25.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
-- #### Install Chrome:
-  Ensure that Chromium or Google Chrome is installed in a recognized location on your system.
+- **Install Chrome:** Ensure that Chromium or Google Chrome is installed in a recognized location on your system.
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture26.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
-Download ChromeDriver: Download the ChromeDriver binary that corresponds to your operating system and matches the version of Google Chrome you have installed. You can find the appropriate version under the downloads section on the ChromeDriver site.
-Selenium3
+- **Download ChromeDriver:** Download the ChromeDriver binary that corresponds to your operating system and matches the version of Google Chrome you have installed. You can find the appropriate version under the downloads section on the ChromeDriver site.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture27.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+### Configure the PATH Environment Variable:
 
-Configure the PATH Environment Variable:
-Add to PATH: Include the full path to the ChromeDriver executable in the system environment variable PATH to make it accessible.
-Selenium9
+- **Add to PATH:** Include the full path to the ChromeDriver executable in the system environment variable PATH to make it accessible.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture28.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+- **Java Configuration:** For Java projects, specify the path to ChromeDriver using the **webdriver.chrome.driver** system property in your Selenium script. Here’s an example:
 
-Java Configuration: For Java projects, specify the path to ChromeDriver using the webdriver.chrome.driver system property in your Selenium script. Here’s an example:
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture29.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 By following these steps, you can ensure that your Selenium tests are properly set up to run with ChromeDriver, allowing for effective web automation and testing.
