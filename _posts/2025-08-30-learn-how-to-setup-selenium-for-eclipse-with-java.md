@@ -192,55 +192,49 @@ The JAVA_HOME system variable should look like this:
 Click on the PATH variable under the System variables section in the Edit Environment variables window. You should see %JAVA_HOME%\bin on the Edit environment variable window, as per the screen capture below.
 
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture15.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Exit the Control Panel.
 
-Step 2: Install Eclipse IDE
+### Step 2: Install Eclipse IDE
 Download the latest version of Eclipse IDE for Java Developers here. Be sure to choose correctly between Windows 32 Bit and 64 Bit versions for your machine.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture16.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+
 Install Eclipse IDE
+
 The .exe file, named eclipse-inst-jre-win64.exe, will be downloaded.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture17.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+Double-click on the eclipse-inst-jre-win64.exe file to install Eclipse. A new window will open. Select Eclipse IDE for Java Developers.
 
-
-
-
-Double-click on the eclipse-inst-jre-win64.exe file to Install Eclipse. A new window will open. Select Eclipse IDE for Java Developers.
-
-
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture18.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Another window will open, per the screen capture below. Click the INSTALL button.
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture19.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 After the installation is completed, click Launch on the window that appears. This will start the Eclipse IDE.
 
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture20.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Select a directory as workspace window will open. Keep the default location and select Launch.
 
-
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture21.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Welcome to the Eclipse IDE for Java Developers window will open.
 
-Eclipse11
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture22.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Now, close the Welcome to the Eclipse IDE for Java Developers. You must install Selenium and configure Eclipse for Java projects before you can create your first Selenium Java project in Eclipse.
 
-Step 3: Install Selenium WebDriver
-To install Selenium WebDriver for Java on your system, download the latest version of the Selenium WebDriver for Java zip file from here.
+### Step 3: Install Selenium WebDriver
 
+To install Selenium WebDriver for Java on your system, download the latest version of the Selenium WebDriver for Java zip file from [here](https://www.selenium.dev/downloads/).
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture23.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 
