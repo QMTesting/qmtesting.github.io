@@ -104,12 +104,12 @@ Click on the <b>Next</b> button. This will display the following screen, where y
 Select the default path indicated or click the <b>Change</b>… button to select your desired file path. Now select the <b>Next</b> button. The Progress screen will be displayed, as per the screen capture below.
 
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture4.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture4.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 After the component registration has been updated, the following screen will be displayed, indicating that the Java SE Development Kit has been successfully Installed.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture5.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture5.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Click the <b>Close</b> button.
 
@@ -117,7 +117,7 @@ Now that the JDK installation is complete, verify the installation by opening a 
 
 You will know that the JDK installation was successful if the current version of the JDK you are installing (in my case version 22.0.1) is displayed, as per the screen capture below.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture6.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture6.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 #### Note: 
 This JDK version comes bundled with Java Runtime Environment (JRE), so you don’t have to download and install the JRE separately.
@@ -130,23 +130,23 @@ Set the <b>JAVA_HOME</b> and <b>PATH</b> environment variables in Microsoft Wind
 
 Type <b>Control Panel</b> in the Windows search box, then select the Control Panel icon. See the screen capture below.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture7.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture7.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Select <b>System and Security</b> from the Control Panel items list
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture8.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture8.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Select <b>System</b> on the <b>System and Security</b> window, below.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture9.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture9.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Select <b>Advanced System Settings</b> on the <b>Settings</b> window, below.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture10.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture10.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 On the <b>System Properties</b> window, select the <b>Environment Variables</b> button
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture11.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture11.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 On the <b>Environment</b> Variables window, add the <b>JAVA_HOME</b> environment variable as follows (see screen capture below):
 
@@ -155,7 +155,7 @@ On the <b>Environment</b> Variables window, add the <b>JAVA_HOME</b> environment
 3. In the <b>Variable value</b> field, enter the location where the JDK software is installed (for example, <b>C:\Program Files\Java\<jdk_version></b>). If the <b>JAVA_HOME</b> variable already exists, click <b>Edit</b> and replace the old variable value with <b>C:\Program Files\Java\<jdk_version</b>>).
 4. Click the <b>OK</b> button.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture12.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture12.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Create or update the <b>PATH</b> environment variable to include the location of the Java executable files:
@@ -164,19 +164,19 @@ Create or update the <b>PATH</b> environment variable to include the location of
 2. In the Variable value field, insert %JAVA_HOME%\bin. If there are existing directories, add %JAVA_HOME%\bin at the end of all the existing directories. Do not delete any existing entries; otherwise, some existing applications may no longer run.
 3. Click <b>OK</b>.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture13.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture13.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 The JAVA_HOME system variable should look like this:
 
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture14.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture14.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Click on the PATH variable under the System variables section in the Edit Environment variables window. You should see %JAVA_HOME%\bin on the Edit environment variable window, as per the screen capture below.
 
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture15.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture15.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Exit the Control Panel.
@@ -184,33 +184,33 @@ Exit the Control Panel.
 ### Step 2: Install Eclipse IDE
 Download the latest version of Eclipse IDE for Java Developers here. Be sure to choose correctly between Windows 32 Bit and 64 Bit versions for your machine.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture16.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture16.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Install Eclipse IDE
 
 The .exe file, named eclipse-inst-jre-win64.exe, will be downloaded.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture17.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture17.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Double-click on the eclipse-inst-jre-win64.exe file to install Eclipse. A new window will open. Select Eclipse IDE for Java Developers.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture18.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture18.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Another window will open, per the screen capture below. Click the INSTALL button.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture19.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture19.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 After the installation is completed, click Launch on the window that appears. This will start the Eclipse IDE.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture20.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture20.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Select a directory as workspace window will open. Keep the default location and select Launch.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture21.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture21.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Welcome to the Eclipse IDE for Java Developers window will open.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture22.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture22.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Now, close the Welcome to the Eclipse IDE for Java Developers. You must install Selenium and configure Eclipse for Java projects before you can create your first Selenium Java project in Eclipse.
 
@@ -218,11 +218,11 @@ Now, close the Welcome to the Eclipse IDE for Java Developers. You must install 
 
 To install Selenium WebDriver for Java on your system, download the latest version of the Selenium WebDriver for Java zip file from [here](https://www.selenium.dev/downloads/).
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture23.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture23.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Extract the ZIP file to the desired folder on the c: drive. The contents should look like the screen capture below:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture24.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture24.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 To prevent a slf4j error, download and add the following 2 jar files to your selenium-java-<java version> folder that you just downloaded and extracted to the C: drive.
 
@@ -238,21 +238,21 @@ To automate tests with Selenium on Chrome, you need to set up ChromeDriver. Here
 
 - **Install Chrome:** Ensure that Chromium or Google Chrome is installed in a recognized location on your system.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture25.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture25.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 - **Download ChromeDriver:** Download the ChromeDriver binary that corresponds to your operating system and matches the version of Google Chrome you have installed. You can find the appropriate version under the downloads section on the ChromeDriver site.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture26.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture26.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 ### Configure the PATH Environment Variable:
 
 - **Add to PATH:** Include the full path to the ChromeDriver executable in the system environment variable PATH to make it accessible.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture27.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture27.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 - **Java Configuration:** For Java projects, specify the path to ChromeDriver using the **webdriver.chrome.driver** system property in your Selenium script. Here’s an example:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture28.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture28.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 By following these steps, you can ensure that your Selenium tests are properly set up to run with ChromeDriver, allowing for effective web automation and testing.
 
@@ -271,58 +271,58 @@ Launch the eclipse.exe file inside the Eclipse folder located on C:\eclipse\ecli
 
 If asked to select a workspace, keep the default workspace location and select OK.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture29.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture29.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Launch Eclipse, then select File -> New -> Java Project.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture30.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture30.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The following new pop-up window will open. Enter the Project name (Example: ProjectLogin). Keep the default values for all other fields and click the Finish button.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture31.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture31.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Add a new Package to your project:
 
 Right-click on your newly created project name (Example: ProjectLogin) and select New > Package
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture32.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture32.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 A new window called Java Package will appear.
 
 - Enter the name of your package in the Name field (Example: PackageLogin)
 - Click on the Finish button
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture33.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture33.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Create a new Java class under PackageLogin.
 
 - Right click on PackageLogin
 - Then select New > Class
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture34.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture34.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 A new window will open called Java Class
 
 - Enter the name of your class in the Name field (Example: ClassLogin)
 - Click the Finish button
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture35.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture35.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Eclipse Package Explorer will now look like this:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture36.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture36.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Now, delete the module-info.java file and any other file under the srs node that may have been created at the time of creating your Java project. These files can cause an error when importing certain selenium modules.
 
 Your Eclipse Package Explorer should now look like this:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture37.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture37.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 ### Configure Selenium WebDriver Libraries
 
 Right-click on your newly created project (Example: ProjectLogin) and select Properties.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture38.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture38.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 On the project Properties window, perform the following actions:
 
@@ -331,7 +331,7 @@ On the project Properties window, perform the following actions:
 - and click on Classpath,
 - and click on Add External JARs…
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture39.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture39.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 When you click on Add External JARs.., the Jar Selection window will appear. Now perform the following:
 
@@ -339,20 +339,20 @@ When you click on Add External JARs.., the Jar Selection window will appear. Now
 - Select all of the jar files in the selenium-java-<version> folder, including the logback-classic-1.2.9.jar and the slf4j-simple/2.0.7.jar files that you added in Step 3.
 - Click the Open button
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture40.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture40.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 On the Java Build Path window, click the Apply and Close button.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture41.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture41.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Referenced Libraries folder should appear under your Project in the Package Explorer:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture42.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture42.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Verify that Selenium Webdriver is configured correctly.
 Click on your Project (Example: ProjectLogin)->Reference Libraries. All of the jar files from your selenium-java-<version> folder under the c: drive should appear in the Referenced Libraries folder.
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture43.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture43.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Congratulations! You’ve successfully installed and configured Selenium WebDriver and Eclipse for your first Java project.
 
