@@ -87,18 +87,18 @@ Download and Install the JDK version based on your system requirements from [her
 - #### Example:
   If you want to install it on Windows, you can download the Windows x64 Installer JDK from the list as per the screen capture below:
 
-<img src="https://github.com/QMTesting/qmtesting.github.io/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:100%;" />
 
 Once the download is complete, double click the installer file called <u><b>jdk-22_windows-x64_bin.exe</b></u> to begin the installation process. The following screen will be displayed.
 
 
-<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture2.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture2.webp" alt="Alt text" style="display:block; margin:auto; width:100%;" />
 
 
-Click on the <b>Next</b> button. This will display the following screen where you will select the path to store the JDK files.
+Click on the <b>Next</b> button. This will display the following screen, where you will select the path to store the JDK files.
 
 
-<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture3.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture3.webp" alt="Alt text" style="display:block; margin:auto; width:100%;" />
 
 
 Select the default path indicated or click the <b>Change</b>… button to select your desired file path. Now select the <b>Next</b> button. The Progress screen will be displayed, as per the screen capture below.
