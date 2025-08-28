@@ -99,14 +99,14 @@ Java enables the creation, execution, and management of Selenium WebDriver tests
 
 ### JDK Installation
 
-Download and Install the JDK version based on your system requirements from [here](https://www.oracle.com/java/technologies/downloads/). Click on the Download link to download the JDK .exe file.
+Download and install the JDK version based on your system requirements from [here](https://www.oracle.com/java/technologies/downloads/). Click on the Download link to download the JDK .exe file.
 
 - #### Example:
   If you want to install it on Windows, you can download the Windows x64 Installer JDK from the list as per the screen capture below:
 
-<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:75%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:100%;" />
 
-Once the download is complete, double click the installer file called <u><b>jdk-22_windows-x64_bin.exe</b></u> to begin the installation process. The following screen will be displayed.
+Once the download is complete, double-click the installer file called <u><b>jdk-22_windows-x64_bin.exe</b></u> to begin the installation process. The following screen will be displayed.
 
 
 <img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Capture2.webp" alt="Alt text" style="display:block; margin:auto; width:75%;" />
