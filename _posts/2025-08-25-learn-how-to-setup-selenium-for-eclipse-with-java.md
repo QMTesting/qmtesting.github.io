@@ -104,7 +104,7 @@ Download and install the JDK version based on your system requirements from [her
 - #### Example:
   If you want to install it on Windows, you can download the Windows x64 Installer JDK from the list as per the screen capture below:
 
-<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:100%;" />
+<img src="{{ site.baseurl }}/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:75%;" />
 
 Once the download is complete, double-click the installer file called <u><b>jdk-22_windows-x64_bin.exe</b></u> to begin the installation process. The following screen will be displayed.
 
