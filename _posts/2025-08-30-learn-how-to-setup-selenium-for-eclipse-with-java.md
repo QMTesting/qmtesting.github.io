@@ -43,37 +43,37 @@ Selenium WebDriver is a powerful, open-source tool designed to automate web brow
 
 Here are the advantages that make Selenium WebDriver a popular choice for web application testing:
 
-- ### Supports Multiple Browsers:
+- #### Supports Multiple Browsers:
   Compatible with major browsers like Chrome, Firefox, Safari, and Edge.
   
-- ### Cross-Platform Compatibility: 
+- #### Cross-Platform Compatibility: 
   Works on various operating systems including Windows, macOS, and Linux.
 
-- ### Language Flexibility: 
+- #### Language Flexibility: 
   Allows test scripts to be written in multiple programming languages such as Java, Python, C#, and Ruby.
 
-- ### Rich Set of Features: 
+- #### Rich Set of Features: 
   Provides advanced capabilities for handling various web elements and interactions, including JavaScript alerts, file uploads, and more.
 
-- ### Parallel Test Execution: 
+- #### Parallel Test Execution: 
   Supports running tests in parallel, which speeds up the testing process.
 
 - ### Integration Capabilities: 
   Easily integrates with popular testing frameworks and tools like TestNG, JUnit, and CI/CD systems such as Jenkins.
 
-- ### User Interaction Simulation: 
+- #### User Interaction Simulation: 
   Accurately simulates user interactions with web elements, including clicks, form submissions, and navigations.
 
-- ### Robust and Flexible: 
+- #### Robust and Flexible: 
   Offers a high level of flexibility in test script design and can handle dynamic web elements.
 
-- ### Open Source: 
+- #### Open Source: 
   Free to use and backed by a strong community of contributors and users.
 
-- ### Extensive Documentation: 
+- #### Extensive Documentation: 
   Well-documented with a large number of resources, tutorials, and community support.
 
-## Installation Steps
+### Installation Steps
 
 ### Step 1: Install Java SE Development Kit (JDK) and Setup 
 
@@ -81,26 +81,26 @@ Java enables the creation, execution, and management of Selenium WebDriver tests
 
 - ### Language Support: It is one of the primary languages for writing Selenium tests.
   
-- ### API Integration:
+- #### API Integration:
   Provides a Java API for interacting with browsers.
   
-- ### Framework Compatibility:
+- #### Framework Compatibility:
   Works with test frameworks like TestNG and JUnit.
   
-- ### Cross-Platform:
+- #### Cross-Platform:
   Java’s portability allows tests to run on any JVM-supported platform.
   
-- ### Build Tool Integration:
+- #### Build Tool Integration:
   Compatible with tools like Maven and Gradle for managing and executing tests.
   
-- ### Community and Resources:
+- #### Community and Resources:
   Offers extensive support and resources through its large ecosystem.
 
-## JDK Installation
+### JDK Installation
 
 Download and Install the JDK version based on your system requirements from [here](https://www.oracle.com/java/technologies/downloads/). Click on the Download link to download the JDK .exe file.
 
-- ### Example:
+- #### Example:
   If you want to install it on Windows, you can download the Windows x64 Installer JDK from the list as per the screen capture below:
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Eclipse1.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
@@ -174,19 +174,19 @@ On the <b>Environment</b> Variables window, add the <b>JAVA_HOME</b> environment
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture12.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
-Create or Update the PATH environment variable to include the location of the Java executable files:
+Create or update the <b>PATH</b> environment variable to include the location of the Java executable files:
 
-In the System Variables section, select the PATH variable, and click Edit if the PATH variable exists or click New if the PATH variable does not exist. It would be rare for the PATH to not already exist.
-In the Variable value field, insert %JAVA_HOME%\bin. If there are existing directories, add %JAVA_HOME%\bin at the end of all the existing directories. Do not delete any existing entries; otherwise, some existing applications may no longer run.
-Click OK.
+1. In the System Variables section, select the PATH variable, and click Edit if the PATH variable exists or click New if the PATH variable does not exist. It would be rare for the PATH not to already exist.
+2. In the Variable value field, insert %JAVA_HOME%\bin. If there are existing directories, add %JAVA_HOME%\bin at the end of all the existing directories. Do not delete any existing entries; otherwise, some existing applications may no longer run.
+3. Click <b>OK</b>.
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture13.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 The JAVA_HOME system variable should look like this:
 
 
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture14.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 
 Click on the PATH variable under the System variables section in the Edit Environment variables window. You should see %JAVA_HOME%\bin on the Edit environment variable window, as per the screen capture below.
