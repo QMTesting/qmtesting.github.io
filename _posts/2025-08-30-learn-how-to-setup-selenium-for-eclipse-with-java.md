@@ -334,54 +334,45 @@ Your Eclipse Package Explorer should now look like this:
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture37.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
-Configure Selenium WebDriver Libraries
+### Configure Selenium WebDriver Libraries
+
 Right-click on your newly created project (Example: ProjectLogin) and select Properties.
 
-ConfigureEclipse9
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture38.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 On the project Properties window, perform the following actions:
 
-click on Java Build Path, then,
-click on the Libraries tab,
-and click on Classpath,
-and click on Add External JARs…
+- click on Java Build Path, then,
+- click on the Libraries tab,
+- and click on Classpath,
+- and click on Add External JARs…
 
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture39.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 When you click on Add External JARs.., the Jar Selection window will appear. Now perform the following:
 
-Browse to select your selenium-java-<version> folder under the c: drive.
-Select all of the jar files in the selenium-java-<version> folder, including the logback-classic-1.2.9.jar and the slf4j-simple/2.0.7.jar files that you added in Step 3.
-Click the Open button
+- Browse to select your selenium-java-<version> folder under the c: drive.
+- Select all of the jar files in the selenium-java-<version> folder, including the logback-classic-1.2.9.jar and the slf4j-simple/2.0.7.jar files that you added in Step 3.
+- Click the Open button
 
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture40.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 On the Java Build Path window, click the Apply and Close button.
 
-ConfigureEclipse13
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture41.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 The Referenced Libraries folder should appear under your Project in the Package Explorer:
 
-
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture42.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Verify that Selenium Webdriver is configured correctly.
 Click on your Project (Example: ProjectLogin)->Reference Libraries. All of the jar files from your selenium-java-<version> folder under the c: drive should appear in the Referenced Libraries folder.
 
-ConfigureEclipse15
-
-
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture43.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Congratulations! You’ve successfully installed and configured Selenium WebDriver and Eclipse for your first Java project.
 
-Here is a link to the Selenium website where you can find instructions on how to write your first Selenium script in Java.
+[Here](https://www.selenium.dev/documentation/webdriver/getting_started/first_script/) is a link to the Selenium website where you can find instructions on how to write your first Selenium script in Java.
 
 ## Conclusion
 In conclusion, setting up Selenium for Eclipse with Java is a straightforward process that opens the door to powerful web automation and testing capabilities. By following the steps outlined in this guide, you can seamlessly integrate Selenium WebDriver with your Eclipse IDE, enabling you to write and execute automated test scripts with ease. As you become familiar with the setup process and begin creating your first test cases, you’ll quickly appreciate the efficiency and reliability Selenium brings to web testing.
