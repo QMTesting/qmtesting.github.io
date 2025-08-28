@@ -236,29 +236,28 @@ To install Selenium WebDriver for Java on your system, download the latest versi
 
 <img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture23.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
-
-
 Extract the ZIP file to the desired folder on the c: drive. The contents should look like the screen capture below:
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture24.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+To prevent a slf4j error, download and add the following 2 jar files to your selenium-java-<java version> folder that you just downloaded and extracted to the C: drive.
 
+Download slf4j-simple/2.0.7 at the following [link](https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.7/).
 
+Download logback-classic-1.2.9.jar at the following [link](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/src/zabbix_java/lib/logback-classic-1.2.9.jar?at=6.0.5rc1).
 
-To prevent a slf4j error, download and add the following 2 jar files to your selenium-java-<java version> folder that you just downloaded and extracted to the c: drive.
+### Step 4: Install ChromeDriver
 
-Download slf4j-simple/2.0.7 at the following link.
-
-Download logback-classic-1.2.9.jar at the following link.
-
-Step 4: Install ChromeDriver
 ChromeDriver is essential for executing Selenium test scripts, as it enables automation of the Chrome browser. It allows your tests to simulate user interactions with the browser, such as clicking buttons, filling out forms, and navigating between pages, just as a real user would.
 
 To automate tests with Selenium on Chrome, you need to set up ChromeDriver. Here’s how you can get started:
 
-Install Chrome: Ensure that Chromium or Google Chrome is installed in a recognized location on your system.
-Selenium8
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture25.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
+- #### Install Chrome:
+  Ensure that Chromium or Google Chrome is installed in a recognized location on your system.
 
+<img src="https://github.com/QMTesting/qmtesting.github.io/blob/master/assets/images/Auto/eclipse/Capture26.webp" alt="Alt text" style="display:block; margin:auto; width:50%;" />
 
 Download ChromeDriver: Download the ChromeDriver binary that corresponds to your operating system and matches the version of Google Chrome you have installed. You can find the appropriate version under the downloads section on the ChromeDriver site.
 Selenium3
@@ -400,7 +399,7 @@ Congratulations! You’ve successfully installed and configured Selenium WebDriv
 
 Here is a link to the Selenium website where you can find instructions on how to write your first Selenium script in Java.
 
-Conclusion
+## Conclusion
 In conclusion, setting up Selenium for Eclipse with Java is a straightforward process that opens the door to powerful web automation and testing capabilities. By following the steps outlined in this guide, you can seamlessly integrate Selenium WebDriver with your Eclipse IDE, enabling you to write and execute automated test scripts with ease. As you become familiar with the setup process and begin creating your first test cases, you’ll quickly appreciate the efficiency and reliability Selenium brings to web testing.
 
 With this solid foundation, you are well-equipped to explore more advanced features and techniques, driving your testing efforts towards more robust and reliable software applications.
