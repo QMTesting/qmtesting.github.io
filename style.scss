@@ -1393,20 +1393,7 @@ figcaption {
 		  }
 		}   
 
-		/* Fix layout shift in Chrome 
-		html {
-		  overflow-y: scroll; /* Fix #1 */
-		  scroll-behavior: auto; /* Optional Fix #4 */
-		}
 		
-		img[loading="lazy"] {
-		  contain-intrinsic-size: 700px 500px; /* Fix #3 — adjust size to match your images */
-		}   
-
-		html {
-		  scroll-behavior: auto;
-		}  */ 
-
        } /* End Desktop */  
 
        @media only screen and (max-width: 767px) {
