@@ -2,7 +2,7 @@
 layout: post
 title: "Software Testing Life Cycle-Know The Best How To Techniques"
 categories: ["Software Testing"]
-image: "/assets/images/Test/STLC.png"
+image: "/assets/images/Test/STLC.webp"
 permalink: /STLC-how-to-techniques/
 tags: [software testing, QA, QC, STLC, software testing life cycle]
 description: "A guide on the software life cycle, best techniques."
@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/assets/images/Test/STLC.png" alt="Software Testing Life Cycle" />
+  <img src="/assets/images/Test/STLC.webp" alt="Software Testing Life Cycle" />
   <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
