@@ -2,13 +2,13 @@
 layout: post
 title: "Best DevOps Tools & Services To Build Powerful Pipelines"
 categories: ["Azure DevOps"]
-image: "/assets/images/DevOps/Azure-DevOps-Tools.png"
+image: "/assets/images/DevOps/Azure-DevOps-Tools.webp"
 tags: [software testing, QA, QC, Automation, Azure DevOps Tools, Azure DevOps Pipeline]
 description: "A guide on software testing using Azure DevOps Tools and Services To Build Powerful Azure DevOps Pipelines."
 ---
 
 <figure>
-  <img src="/assets/images/DevOps/Azure-DevOps-Tools.png" alt="DevOps Pipeline Tools" />
+  <img src="/assets/images/DevOps/Azure-DevOps-Tools.webp" alt="DevOps Pipeline Tools" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
