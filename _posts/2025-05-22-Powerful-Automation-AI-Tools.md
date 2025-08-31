@@ -2,7 +2,7 @@
 layout: post
 title: "Powerful Automation Tools in the World of Regression Testing"
 categories: ["Automation"]
-image: "/assets/images/Auto/Automation-AI-Tools.png"
+image: "/assets/images/Auto/Automation-AI-Tools.webp"
 permalink: /Powerful-Automation-AI-Tools/
 tags: [software testing, QA, QC, Automation, AI Tools, Regression Testing]
 description: "A guide on software testing using AI Automation Tools for Regression Testing."
@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 <figure>
-  <img src="/assets/images/Auto/Automation-AI-Tools.png" alt="Automation Testing Tools" />
+  <img src="/assets/images/Auto/Automation-AI-Tools.webp" alt="Automation Testing Tools" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
