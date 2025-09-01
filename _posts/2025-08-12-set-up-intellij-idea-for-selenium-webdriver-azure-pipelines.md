@@ -8,26 +8,14 @@ description: "A guide on learning how to Set Up IntelliJ IDEA for Selenium WebDr
 ---
 
 <figure>
-  <img src="/assets/images/Auto/Intellij_Selenium.webp" alt="set up Intellij IDEA for Selenium WebDriver" />
-  <figcaption>Image by vectorjuice on Freepik</figcaption>
+  <img
+    src="/assets/images/Auto/Intellij_Selenium-700.webp"
+    srcset="/assets/images/Auto/Intellij_Selenium-300.webp 300w, /assets/images/Auto/Intellij_Selenium-390.webp 390w, /assets/images/Auto/Intellij_Selenium-700.webp 700w"
+    sizes="(max-width: 767px) 390px, (min-width: 1000px) 700px, 100vw"
+    alt="Set Up IntelliJ IDEA for Selenium WebDriver"
+  />
+   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
-
-<style>
-@media (max-width: 767px) {
-  img {
-    width: 390px;
-    height: 290px;
-    
-  }
-}
-  
-@media (min-width: 1000px) {
-  img {
-    width: 700px;
-    height: 500px;
-  }
-}
-</style>
 
 ## Introduction
 
