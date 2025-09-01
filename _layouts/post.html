@@ -12,22 +12,7 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   
-  {% if page.image %}
-  <figure>
-    <img
-      src="{{ page.image | replace: '.webp', '-700.webp' | relative_url }}"
-      srcset="
-        {{ page.image | replace: '.webp', '-300.webp' | relative_url }} 300w,
-        {{ page.image | replace: '.webp', '-390.webp' | relative_url }} 390w,
-        {{ page.image | replace: '.webp', '-700.webp' | relative_url }} 700w
-      "
-      sizes="(max-width: 767px) 390px, (min-width: 1000px) 700px, 100vw"
-      alt="{{ page.title }}"
-    />
-    <figcaption>Image credit or caption here</figcaption>
-  </figure>
-{% endif %}
-
+  
 
   <div class="entry">
     {{ content }}
