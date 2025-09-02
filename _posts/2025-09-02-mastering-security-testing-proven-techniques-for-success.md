@@ -68,7 +68,7 @@ Identify and evaluate all integration points with external systems, services, an
 
 - **Assess Security of Integrations**: Ensure that secure communication protocols are used, and validate the integrity and authenticity of data exchanged with external systems.
 
-#### Error Handling and Logging**:
+#### Error Handling and Logging:
 
 **Review Error Handling**: Understand how the application handles errors and exceptions. Ensure that error messages do not expose sensitive information or system details that could aid an attacker.
 
