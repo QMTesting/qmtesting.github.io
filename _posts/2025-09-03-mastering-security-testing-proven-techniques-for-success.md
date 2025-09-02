@@ -36,10 +36,10 @@ Before diving into security testing, it’s crucial to understand the applicatio
 
 #### Application Mapping:
 
-- #### Document Architecture: 
+- Document Architecture: 
 Create detailed documentation of the application’s architecture, including diagrams that show how different components interact (e.g., front-end, back-end, databases, APIs). This documentation should include network diagrams, data flow diagrams, and component diagrams.
 
-- #### Identify Components: 
+- Identify Components: 
 List all the components involved, such as web servers, application servers, databases, third-party services, and external APIs. Understanding each component’s role and interactions is crucial for identifying where security issues might arise.
 
 #### Technology Stack Awareness:
