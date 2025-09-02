@@ -151,7 +151,9 @@ SAST involves analyzing your application’s source code, binaries, or bytecode 
 ### Best Practices:
 
 - Use automated tools to scan code continuously.
+
 - Regularly update and configure your tools to ensure they are up-to-date with the latest vulnerability signatures.
+
 - Ensure code reviews complement automated scanning for thorough analysis.
 
 ## 4. Perform Dynamic Application Security Testing (DAST)
@@ -167,7 +169,9 @@ DAST provides insight into how an application behaves in the wild, uncovering is
 ### Best Practices:
 
 - Conduct DAST tests regularly, especially after major updates.
+
 - Use a variety of tools to cover different attack vectors.
+
 - Analyze and prioritize vulnerabilities based on their risk and impact.
 
 - **Tools**: Use dynamic scanners like OWASP ZAP, Burp Suite, or Acunetix.
@@ -189,7 +193,9 @@ IAST provides a comprehensive view by monitoring the application’s behavior as
 ### Best Practices:
 
 - Continuously refine and update testing criteria based on evolving threats.
+
 - Integrate IAST tools into the development and testing environments.
+
 - Focus on high-risk areas and business-critical functionalities.
 
 ## 6. Engage in Penetration Testing
@@ -205,7 +211,9 @@ Penetration testing provides an in-depth assessment of your security posture and
 ### Best Practices:
 
 - Conduct regular pen tests, especially after major changes or new deployments.
+
 - Engage experienced testers or reputable third-party firms.
+
 - Act on the findings promptly and reassess your security measures.
 
 - **Approach**: Perform both black-box (no prior knowledge) and white-box (with knowledge of the application) testing.
@@ -227,7 +235,9 @@ Threat modeling helps prioritize security efforts by focusing on the most signif
 ### Best Practices:
 
 - Involve cross-functional teams in the threat modelling process.
+
 - Regularly update threat models based on new threats and changes in the system.
+
 - Use tools and frameworks to guide the threat modelling process.
 
 - **Methodologies**: Use frameworks like STRIDE or PASTA to systematically identify threats based on the application’s architecture.
@@ -249,7 +259,9 @@ A manual review can identify complex vulnerabilities and logic errors that autom
 ### Best Practices:
 
 - Regularly update review practices based on new security insights and techniques.
+
 - Use a checklist to ensure comprehensive coverage of security concerns.
+
 - Encourage peer reviews and collaborative analysis.
 
 - **Peer Reviews**: Conduct peer reviews to leverage collective expertise and different perspectives.
