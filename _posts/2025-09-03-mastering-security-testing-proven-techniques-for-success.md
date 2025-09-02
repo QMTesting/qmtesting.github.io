@@ -40,7 +40,7 @@ Before diving into security testing, it’s crucial to understand the applicatio
 Create detailed documentation of the application’s architecture, including diagrams that show how different components interact (e.g., front-end, back-end, databases, APIs). This documentation should include network diagrams, data flow diagrams, and component diagrams.
 
 - **Identify Components**: 
-List all the components involved, such as web servers, application servers, databases, third-party services, and external APIs. Understanding each component’s role and interactions is crucial for identifying where security issues might arise.
+List all the components involved, such as web servers, application servers, databases, third-party services, and external APIs. Understanding the role and interactions of each component is crucial for identifying potential security issues.
 
 #### Technology Stack Awareness:
 
@@ -52,38 +52,37 @@ Stay informed about the security advisories and updates related to the technolog
 
 #### Data Flow and Storage:
 
-- Map Data Flow:
-Trace how data moves through the application, from user input to processing and storage. Understanding data flow helps in identifying potential data leaks, insecure data handling, and exposure points.
+- **Map Data Flow**: Trace how data moves through the application, from user input to processing and storage. Understanding data flow helps in identifying potential data leaks, insecure data handling, and exposure points.
 
-- Review Data Storage: Examine how data is stored, including database configurations and file storage mechanisms. Ensure that sensitive data is encrypted both in transit and at rest, and access controls are properly implemented.
+- **Review Data Storage**: Examine how data is stored, including database configurations and file storage mechanisms. Ensure that sensitive data is encrypted both in transit and at rest, and access controls are properly implemented.
 
 #### User Roles and Permissions:
 
-- #### Define Roles:
+- **Define Roles**:
 Document and understand different user roles and their associated permissions within the application. This includes administrative roles, regular users, and any external entities with access.
 
-- #### Review Access Controls:
+- **Review Access Controls**:
 Assess the implementation of access controls and ensure that users have the minimum necessary permissions. Implement role-based access control (RBAC) or attribute-based access control (ABAC) as appropriate.
 
 #### Integration Points:
 
-- #### Identify Integrations:
+- **Identify Integrations**:
 Identify and evaluate all integration points with external systems, services, and APIs. Each integration point can be a potential attack vector and needs to be secured.
-Assess Security of Integrations: Ensure that secure communication protocols are used, and validate the integrity and authenticity of data exchanged with external systems.
 
-- #### Error Handling and Logging:
-Review Error Handling: Understand how the application handles errors and exceptions. Ensure that error messages do not expose sensitive information or system details that could aid an attacker.
+- **Assess Security of Integrations**: Ensure that secure communication protocols are used, and validate the integrity and authenticity of data exchanged with external systems.
 
-#### Analyze Logging Practices: 
-Examine logging practices to ensure that logs are generated for important events and are stored securely. Logs should help in detecting and investigating security incidents without exposing sensitive information.
+#### Error Handling and Logging**:
+
+**Review Error Handling**: Understand how the application handles errors and exceptions. Ensure that error messages do not expose sensitive information or system details that could aid an attacker.
+
+**Analyze Logging Practices**: Examine logging practices to ensure that logs are generated for important events and are stored securely. Logs should help in detecting and investigating security incidents without exposing sensitive information.
 
 #### Security Design Principles:
 
 - #### Apply Security Principles:
 Ensure that the application design incorporates key security principles such as least privilege, separation of duties, and defense in depth. These principles help in reducing the potential impact of security vulnerabilities.
 
-- #### Evaluate Threats and Vulnerabilities:
-Regularly review the application’s architecture with a focus on identifying and addressing potential threats and vulnerabilities.
+- #### Evaluate Threats and Vulnerabilities: Regularly review the application’s architecture with a focus on identifying and addressing potential threats and vulnerabilities.
 
 ## 2. Implement a Secure Development Lifecycle (SDL)
 What It Is: The Secure Development Lifecycle (SDL) is a structured approach that integrates security practices into each phase of software development. From initial planning and design through development, testing, and deployment, SDL emphasizes building security into the product from the ground up, rather than addressing security issues as an afterthought.
