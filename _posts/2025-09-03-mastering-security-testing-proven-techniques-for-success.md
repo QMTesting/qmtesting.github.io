@@ -36,25 +36,26 @@ Before diving into security testing, it’s crucial to understand the applicatio
 
 #### Application Mapping:
 
-- Document Architecture: 
+- **Document Architecture**: 
 Create detailed documentation of the application’s architecture, including diagrams that show how different components interact (e.g., front-end, back-end, databases, APIs). This documentation should include network diagrams, data flow diagrams, and component diagrams.
 
-- Identify Components: 
+- **Identify Components**: 
 List all the components involved, such as web servers, application servers, databases, third-party services, and external APIs. Understanding each component’s role and interactions is crucial for identifying where security issues might arise.
 
 #### Technology Stack Awareness:
 
-- #### Understand Technologies: 
+- **Understand Technologies**: 
 Familiarize yourself with the technologies used in the application, including programming languages, frameworks, libraries, and databases. Different technologies have unique security concerns and best practices.
 
-- #### Keep Up with Updates: 
+- **Keep Up with Updates**: 
 Stay informed about the security advisories and updates related to the technologies in use. This knowledge helps in addressing known vulnerabilities and applying appropriate patches.
 
 #### Data Flow and Storage:
 
-- #### Map Data Flow:
+- Map Data Flow:
 Trace how data moves through the application, from user input to processing and storage. Understanding data flow helps in identifying potential data leaks, insecure data handling, and exposure points.
-Review Data Storage: Examine how data is stored, including database configurations and file storage mechanisms. Ensure that sensitive data is encrypted both in transit and at rest, and access controls are properly implemented.
+
+- Review Data Storage: Examine how data is stored, including database configurations and file storage mechanisms. Ensure that sensitive data is encrypted both in transit and at rest, and access controls are properly implemented.
 
 #### User Roles and Permissions:
 
