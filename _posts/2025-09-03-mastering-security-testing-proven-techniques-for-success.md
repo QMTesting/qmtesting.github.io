@@ -79,51 +79,84 @@ Identify and evaluate all integration points with external systems, services, an
 
 #### Security Design Principles:
 
-- #### Apply Security Principles:
-Ensure that the application design incorporates key security principles such as least privilege, separation of duties, and defense in depth. These principles help in reducing the potential impact of security vulnerabilities.
+- **Apply Security Principles**: Ensure that the application design incorporates key security principles such as least privilege, separation of duties, and defense in depth. These principles help in reducing the potential impact of security vulnerabilities.
 
-- #### Evaluate Threats and Vulnerabilities: Regularly review the application’s architecture with a focus on identifying and addressing potential threats and vulnerabilities.
+- **Evaluate Threats and Vulnerabilities**: Regularly review the application’s architecture with a focus on identifying and addressing potential threats and vulnerabilities.
 
 ## 2. Implement a Secure Development Lifecycle (SDL)
-What It Is: The Secure Development Lifecycle (SDL) is a structured approach that integrates security practices into each phase of software development. From initial planning and design through development, testing, and deployment, SDL emphasizes building security into the product from the ground up, rather than addressing security issues as an afterthought.
 
-Why It’s Important: Incorporating security practices throughout the development lifecycle helps identify and mitigate vulnerabilities early, reducing the risk of security breaches. SDL ensures that security is a core component of the development process, leading to more resilient and secure applications.
+### What It Is: 
+The Secure Development Lifecycle (SDL) is a structured approach that integrates security practices into each phase of software development. From initial planning and design through development, testing, and deployment, SDL emphasizes building security into the product from the ground up, rather than addressing security issues as an afterthought.
 
-Best Practices:
-Requirements Gathering:
-Define Security Requirements: Begin by specifying security requirements alongside functional requirements. Consider industry standards, regulatory requirements, and specific security needs based on the application’s purpose and target audience.
-Risk Assessment: Conduct a risk assessment to identify potential threats and vulnerabilities. This will help prioritize security requirements and guide the development process.
-Design:
-Threat Modeling: Perform threat modeling to visualize potential attack vectors and design countermeasures. Use models to identify security flaws and address them before coding begins.
-Secure Design Principles: Apply secure design principles such as least privilege, defense in depth, and fail-safe defaults to enhance security at the architectural level.
-Development:
-Secure Coding Practices: Adopt secure coding standards and practices to avoid common vulnerabilities like SQL injection, XSS, and buffer overflows. Provide training for developers on secure coding techniques.
-Code Reviews: Incorporate regular code reviews with a focus on security. Both automated tools and manual reviews should be used to identify and rectify vulnerabilities.
-Testing:
-Security Testing: Integrate various security testing techniques, such as SAST, DAST, and IAST, into your testing phase. Ensure that security tests are part of the CI/CD pipeline.
-Penetration Testing: Conduct periodic penetration tests to simulate real-world attacks and identify vulnerabilities that automated tools might miss.
-Deployment:
-Configuration Management: Secure configurations should be verified before deployment. Ensure that the security settings are correctly applied and that the default configurations are hardened.
-Monitoring and Logging: Implement robust monitoring and logging to detect and respond to security incidents in real time. Make sure logs are stored securely and regularly reviewed.
-Maintenance:
-Patch Management: Regularly update and patch software to fix security vulnerabilities and address newly discovered threats. Maintain an up-to-date inventory of software components and their respective patches.
-Incident Responses: Develop and maintain an incident response plan to address and mitigate security incidents as quickly as possible. Regularly test and update the plan based on emerging threats and lessons learned.
-Training and Awareness:
-Developer Training: Provide ongoing training for developers on the latest security practices, tools, and emerging threats. This helps ensure that security considerations remain a priority throughout the development process.
-Awareness Programs: Implement security awareness programs for all team members to foster a culture of security. Encourage employees to stay informed about security best practices and potential threats.
-3. Conduct Static Application Security Testing (SAST)
-What It Is: SAST involves analyzing the source code or binary code of an application to find vulnerabilities without executing the code. This method is performed early in the development lifecycle, which allows developers to catch issues before they become problematic.
+### Why It’s Important: 
+Incorporating security practices throughout the development lifecycle helps identify and mitigate vulnerabilities early, reducing the risk of security breaches. SDL ensures that security is a core component of the development process, leading to more resilient and secure applications.
 
-Why It’s Important: SAST helps identify security flaws such as SQL injection, cross-site scripting (XSS), and other vulnerabilities early in the development process. By integrating SAST into the CI/CD pipeline, organizations can reduce the risk of vulnerabilities making it to production.
+### Best Practices:
+
+#### Requirements Gathering:
+
+- **Define Security Requirements**: Begin by specifying security requirements alongside functional requirements. Consider industry standards, regulatory requirements, and specific security needs based on the application’s purpose and target audience.
+  
+- **Risk Assessment**: Conduct a risk assessment to identify potential threats and vulnerabilities. This will help prioritize security requirements and guide the development process.
+
+#### Design:
+
+- **Threat Modeling**: Perform threat modeling to visualize potential attack vectors and design countermeasures. Use models to identify security flaws and address them before coding begins.
+
+- **Secure Design Principles**: Apply secure design principles such as least privilege, defense in depth, and fail-safe defaults to enhance security at the architectural level.
+
+#### Development:
+
+- Secure Coding Practices: Adopt secure coding standards and practices to avoid common vulnerabilities like SQL injection, XSS, and buffer overflows. Provide training for developers on secure coding techniques.
+
+- Code Reviews: Incorporate regular code reviews with a focus on security. Both automated tools and manual reviews should be used to identify and rectify vulnerabilities.
+
+#### Testing:
+
+- **Security Testing**: Integrate various security testing techniques, such as SAST, DAST, and IAST, into your testing phase. Ensure that security tests are part of the CI/CD pipeline.
+
+- **Penetration Testing**: Conduct periodic penetration tests to simulate real-world attacks and identify vulnerabilities that automated tools might miss.
+
+#### Deployment:
+
+- **Configuration Management**: Secure configurations should be verified before deployment. Ensure that the security settings are correctly applied and that the default configurations are hardened.
+
+- **Monitoring and Logging**: Implement robust monitoring and logging to detect and respond to security incidents in real time. Make sure logs are stored securely and regularly reviewed.
+
+#### Maintenance:
+
+- **Patch Management**: Regularly update and patch software to fix security vulnerabilities and address newly discovered threats. Maintain an up-to-date inventory of software components and their respective patches.
+
+- **Incident Responses**: Develop and maintain an incident response plan to address and mitigate security incidents as quickly as possible. Regularly test and update the plan based on emerging threats and lessons learned.
+  
+#### Training and Awareness:
+
+- **Developer Training**: Provide ongoing training for developers on the latest security practices, tools, and emerging threats. This helps ensure that security considerations remain a priority throughout the development process.
+
+- **Awareness Programs**: Implement security awareness programs for all team members to foster a culture of security. Encourage employees to stay informed about security best practices and potential threats.
+
+## 3. Conduct Static Application Security Testing (SAST)
+
+### What It Is: 
+
+SAST involves analyzing the source code or binary code of an application to find vulnerabilities without executing the code. This method is performed early in the development lifecycle, which allows developers to catch issues before they become problematic.
+
+### Why It’s Important: 
+
+SAST helps identify security flaws such as SQL injection, cross-site scripting (XSS), and other vulnerabilities early in the development process. By integrating SAST into the CI/CD pipeline, organizations can reduce the risk of vulnerabilities making it to production.
 
 SAST involves analyzing your application’s source code, binaries, or bytecode to identify vulnerabilities without executing the code.
 
-Tools: Use static analysis tools like Checkmarx, SonarQube, or Fortify to automatically scan for code vulnerabilities.
-Focus Areas: Look for common issues such as SQL injection, cross-site scripting (XSS), and insecure data storage.
-Best Practices:
-Use automated tools to scan code continuously.
-Regularly update and configure your tools to ensure they are up-to-date with the latest vulnerability signatures.
-Ensure code reviews complement automated scanning for thorough analysis.
+- **Tools**: Use static analysis tools like Checkmarx, SonarQube, or Fortify to automatically scan for code vulnerabilities.
+
+- **Focus Areas**: Look for common issues such as SQL injection, cross-site scripting (XSS), and insecure data storage.
+
+### Best Practices:
+
+- Use automated tools to scan code continuously.
+- Regularly update and configure your tools to ensure they are up-to-date with the latest vulnerability signatures.
+- Ensure code reviews complement automated scanning for thorough analysis.
+
 4. Perform Dynamic Application Security Testing (DAST)
 What It Is: DAST involves testing a running application to identify vulnerabilities in real time. Unlike SAST, which examines the code, DAST interacts with the application from an external perspective, simulating attacks to find vulnerabilities like authentication issues and session management flaws.
 
