@@ -70,9 +70,9 @@ Identify and evaluate all integration points with external systems, services, an
 
 #### Error Handling and Logging:
 
-**Review Error Handling**: Understand how the application handles errors and exceptions. Ensure that error messages do not expose sensitive information or system details that could aid an attacker.
+- **Review Error Handling**: Understand how the application handles errors and exceptions. Ensure that error messages do not expose sensitive information or system details that could aid an attacker.
 
-**Analyze Logging Practices**: Examine logging practices to ensure that logs are generated for important events and are stored securely. Logs should help in detecting and investigating security incidents without exposing sensitive information.
+- **Analyze Logging Practices**: Examine logging practices to ensure that logs are generated for important events and are stored securely. Logs should help in detecting and investigating security incidents without exposing sensitive information.
 
 #### Security Design Principles:
 
