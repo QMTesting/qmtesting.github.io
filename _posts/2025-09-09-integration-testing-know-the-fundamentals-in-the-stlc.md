@@ -121,10 +121,10 @@ After addressing the issues, review and update your test cases and environment a
 ### 10. Perform Regression Testing
 Conduct regression testing to verify that recent changes or fixes have not affected existing functionality. This ensures that the modifications made during integration testing do not introduce new issues or regressions in the application.
 
-11. Document and Communicate Results
+### 11. Document and Communicate Results
 Prepare a comprehensive report detailing the results of the integration testing, including any issues found and their resolutions. Share this report with relevant stakeholders to keep everyone informed about the state of the integration and any actions taken.
 
-12. Continuous Integration
+### 12. Continuous Integration
 Integrate the testing process into a continuous integration (CI) pipeline if possible. This allows for regular and automated integration testing, providing ongoing feedback and catching issues early in the development cycle.
 
 ## Conclusion
