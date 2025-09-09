@@ -14,7 +14,7 @@ description: "A guide on learning how to Master Integration Testing with Proven 
     sizes="(max-width: 767px) 390px, (min-width: 1000px) 700px, 100vw"
     alt="Mastering Integration Testing with Proven Techniques for Success"
   />
-   <figcaption>Image by Freepik</figcaption>
+   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
 ## Introduction
