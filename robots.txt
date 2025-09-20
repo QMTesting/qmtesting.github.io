@@ -1,5 +1,30 @@
+# Allow major search engines
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+# Allow GPTBot (OpenAI) - may show your content in ChatGPT
+User-agent: GPTBot
+Disallow:
+
+# Block aggressive AI scrapers
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Default: allow everyone else
 User-agent: *
-Disallow: 
+Disallow:
 
 Sitemap: https://qmstesting.com/sitemap.xml
 
