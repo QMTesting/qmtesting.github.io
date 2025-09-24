@@ -1,4 +1,8 @@
-{% capture compressed %}
-  {{ content | strip_newlines | replace: "  ", "" }}
-{% endcapture %}
-{{ compressed }}
+{% if page.output == "html" %}
+  {% capture compressed %}
+    {{ content | strip_newlines | replace: "  ", "" }}
+  {% endcapture %}
+  {{ compressed }}
+{% else %}
+  {{ content }}
+{% endif %}
