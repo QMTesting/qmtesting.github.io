@@ -1,0 +1,4 @@
+{% capture compressed %}
+  {{ content | strip_newlines | replace: "  ", "" }}
+{% endcapture %}
+{{ compressed }}
