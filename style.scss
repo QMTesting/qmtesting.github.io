@@ -412,15 +412,20 @@ footer {
        .AutoCat p {margin-left: 15px; margin-right: 10px; color: #000000;}
        .DevOpsCat p {margin-left: 10px; margin-right: 10px; color: #000000;}
 
-
+// Mobile
 @media only screen and (max-width: 780px) {
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
+/* Avatar /
+.site-avatar {
+  margin-top: -50px;
+}	
+	
 /* Site Text Log */	
 .title-img img{
   height: 70px !important;
   width: 275px !important;
-  margin-top: 70px !important; 
+  margin-top: 0px !important; 
   margin-left: 60px !important;	
 }	
 
