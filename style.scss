@@ -298,17 +298,19 @@ footer {
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
 .header-stack {
-  margin-left: 100px;	
-}
-
- .header-stack {
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
 margin-top: 20px;
+margin-left: 100px;		 
 }
+
+.site-avatar {
+ margin-left: 100px;
+}	
+
 	
 /* Site Text Logo */
 .title-img img{
