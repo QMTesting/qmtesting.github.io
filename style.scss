@@ -297,6 +297,7 @@ footer {
 // Desktop
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
+/* Site Text Logo */
 .title-img img{
   height: 75px !important;
   width: 300px !important;
@@ -415,11 +416,12 @@ footer {
 @media only screen and (max-width: 780px) {
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
+/* Site Text Log */	
 .title-img img{
   height: 70px !important;
   width: 275px !important;
   margin-top: 70px !important; 
-  margin-left: 80px !important;	
+  margin-left: 70px !important;	
 }	
 
 .CategoryContainer{
