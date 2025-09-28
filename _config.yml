@@ -9,7 +9,7 @@
 description: "Welcome to QMSTesting (Quality Management System Testing) — your go-to resource for software testing, test automation, and DevOps testing insights."
 
 # Site Avatar
-avatar: ""
+avatar: "logo-bug.webp"
 
 #
 # Flags below are optional
@@ -56,8 +56,6 @@ plugins:
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
-
-avatar: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
