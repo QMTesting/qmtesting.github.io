@@ -1021,11 +1021,11 @@ th, td {
   font-weight: bold;
 }
 
-/* .site-avatar img {
+ .site-avatar img {
     width: 60px;
     height: 60px;
-	border-radius: 50%; 
-  }	*/
+	border-radius: 100%; 
+  }	
 	 
  } /* End Mobile */   
 
@@ -1176,11 +1176,11 @@ html, body {
   overflow-x: hidden;
 }
 
-/* .site-avatar img {
+ .site-avatar img {
    margin-top: 60px; 	  
  }	
 
- .site-name {
+ /* .site-name {
    margin-top: 60px; 	 
   }	 */
 	  
@@ -1288,12 +1288,12 @@ figcaption {
             margin-bottom: 15px;
           }
         
-         /* .site-avatar img {
+          .site-avatar img {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            margin-left: 250px;
-          } */
+            margin-left: 500px;
+          } 
         
           .site-info {
             display: flex;
