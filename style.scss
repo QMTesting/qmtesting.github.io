@@ -424,7 +424,13 @@ footer {
 .header-stack {
   margin-top: -50px;
   margin-left: 0px;	
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
  }	
+	
 /* Avatar */
 .site-avatar {
   margin-top: -50px;
