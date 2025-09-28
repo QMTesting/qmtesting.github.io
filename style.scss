@@ -409,6 +409,14 @@ footer {
 @media only screen and (max-width: 780px) {
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
+.title-img {
+  height: 30px;
+  width: 150px;
+  border: none;
+  margin-top: 30px;
+
+	}	
+
 .CategoryContainer{
             display: flex;
             flex-direction: column;
