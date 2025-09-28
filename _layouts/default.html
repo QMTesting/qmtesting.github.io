@@ -147,13 +147,15 @@ layout: compress
 
           
           <div class="header-top">
-           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }} avatar" width="60" height="60" /></a>
-
-            <!-- QMS Testing Log Link -->
-            <a class="title-img" href="{{ site.baseurl }}/">
-              <img src="{{ '/images/TextLog-Final.png' | relative_url }}" alt="QM System Testing Logo" style="border: none; margin-top: 70px; height: 70px; width: 250px;">
-            </a>
-                    
+             <div class="header-stack"> 
+                <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }} avatar" width="60" height="60" /></a>
+    
+                <!-- QMS Testing Log Link -->
+                <a class="title-img" href="{{ site.baseurl }}/">
+                  <img src="{{ '/images/TextLog-Final.png' | relative_url }}" alt="QM System Testing Logo" style="border: none; margin-top: 70px; height: 70px; width: 250px;">
+                </a>
+             </div>   
+            
            <div class="site-info">
               <h1 class="site-name">
                 <a href="{{ site.baseurl }}/">
@@ -240,6 +242,20 @@ layout: compress
             border-radius: 100%;
             margin-left: 500px;
           } 
+
+          .header-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+          }
+
+          .header-stack .site-avatar,
+          .header-stack .title-img {
+            margin-bottom: 20px;
+          }
         
           .site-info {
             display: flex;
