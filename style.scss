@@ -310,11 +310,10 @@ margin-left: 100px;
 .site-avatar {
  margin-left: 500px;
  width: 60px;         /* or any fixed size */
-  height: 60px;        /* make sure it's square */
-  border-radius: 50%;   /* this makes it circular */
-  object-fit: cover;    /* ensures the image fills the shape without distortion */
-  display: block;
-  margin: 0 auto; 		
+ height: 60px;        /* make sure it's square */
+ border-radius: 50%;   /* this makes it circular */
+ object-fit: cover;    /* ensures the image fills the shape without distortion */
+ display: block;		
  border-radius: 50%;		
 }	
 
