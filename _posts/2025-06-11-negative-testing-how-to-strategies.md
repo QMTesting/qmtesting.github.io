@@ -12,22 +12,6 @@ description: "A guide on negative testing techniques and strategies in the softw
   <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
-<style>
-@media (max-width: 767px) {
-  img {
-    width: 390px;
-    height: 290px;
-    
-  }
-}
-  
-@media (min-width: 1000px) {
-  img {
-    width: 700px;
-    height: 500px;
-  }
-}
-</style>
 
 ## Introduction
 In software quality assurance (QA) and quality control (QC), testing is the backbone of ensuring a stable and reliable application. While positive testing is often the primary focus—verifying that a system works as expected with valid inputs—negative testing is just as critical. Negative testing examines how a system responds to invalid, unexpected, or incorrect inputs, exposing weaknesses that could lead to application failures, security vulnerabilities, or poor user experience.
