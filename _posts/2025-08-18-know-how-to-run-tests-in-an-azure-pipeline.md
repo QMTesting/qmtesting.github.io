@@ -12,22 +12,6 @@ description: "A guide on learning how to Run Tests on an Azure DevOps Pipeline."
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
-<style>
-@media (max-width: 767px) {
-  img {
-    width: 390px;
-    height: 290px;
-    
-  }
-}
-  
-@media (min-width: 1000px) {
-  img {
-    width: 700px;
-    height: 500px;
-  }
-}
-</style>
 
 ## Introduction
 
