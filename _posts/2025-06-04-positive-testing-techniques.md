@@ -12,22 +12,6 @@ description: "A guide on positive testing techniques in the software testing lif
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
-<style>
-@media (max-width: 767px) {
-  img {
-    width: 390px;
-    height: 290px;
-    
-  }
-}
-  
-@media (min-width: 1000px) {
-  img {
-    width: 700px;
-    height: 500px;
-  }
-}
-</style>
 
 ## Introduction
 
