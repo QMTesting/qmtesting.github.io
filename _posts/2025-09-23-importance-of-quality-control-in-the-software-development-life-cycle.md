@@ -13,27 +13,6 @@ description: "A guide on the importance of quality control in the software devel
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
-<style>
-@media (max-width: 767px) {
-  img {
-    width: 390px;
-    height: 290px;
-    
-  }
-}
-
-.site-avatar {
-  width: 60px;
-  height: 60px;
-}
-
-@media (min-width: 1000px) {
-  img {
-    width: 700px;
-    height: 500px;
-  }
-}
-</style>
 
 ## Introduction
 
