@@ -309,6 +309,12 @@ margin-left: 100px;
 
 .site-avatar {
  margin-left: 500px;
+ width: 60px;         /* or any fixed size */
+  height: 60px;        /* make sure it's square */
+  border-radius: 50%;   /* this makes it circular */
+  object-fit: cover;    /* ensures the image fills the shape without distortion */
+  display: block;
+  margin: 0 auto; 		
  border-radius: 50%;		
 }	
 
@@ -433,7 +439,7 @@ margin-left: 100px;
 /* Format post category image list  --------------------------------------------------------------------------------------------------*/
 
 .header-stack {
-  margin-top: 25px;
+  margin-top: 40px;
   margin-left: 0px;	
   display: flex;
   flex-direction: column;
@@ -444,9 +450,15 @@ margin-left: 100px;
 	
 /* Avatar */
 .site-avatar {
-  margin-top: -30px;
+  margin-top: 30px;
   margin-left: 30px;	
   margin-bottom: 0px;
+  width: 60px;         /* or any fixed size */
+  height: 60px;        /* make sure it's square */
+  border-radius: 50%;   /* this makes it circular */
+  object-fit: cover;    /* ensures the image fills the shape without distortion */
+  display: block;
+  margin: 0 auto; 	
   border-radius: 50%;	
 }	
 	
