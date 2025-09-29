@@ -308,12 +308,12 @@ margin-left: 100px;
 }
 
 .site-avatar {
- margin-left: 500px;
+ margin-left: 800px;
  width: 60px;         /* or any fixed size */
  height: 60px;        /* make sure it's square */
  border-radius: 50%;   /* this makes it circular */
  object-fit: cover;    /* ensures the image fills the shape without distortion */
- display: block;			
+ display: block	
 }	
 
 	
@@ -1624,7 +1624,14 @@ article ul ul, main ul ul {
   margin-left: 1.6em;
 }
 
-
+.site-avatar {
+ width: 60px;         /* or any fixed size */
+ height: 60px;        /* make sure it's square */
+ border-radius: 50%;   /* this makes it circular */
+ object-fit: cover;    /* ensures the image fills the shape without distortion */
+ display: block	
+ border: none;	 
+}	
 
 
 
