@@ -15,7 +15,7 @@ description: "A guide on the 12 common mistakes to avoid when writing test cases
 
 <style>
 @media (max-width: 767px) {
-  img {
+  .entry img {
     width: 390px;
     height: 290px;
     
@@ -23,7 +23,7 @@ description: "A guide on the 12 common mistakes to avoid when writing test cases
 }
 
 @media (min-width: 1000px) {
-  img {
+  .entry img {
     width: 700px;
     height: 500px;
   }
