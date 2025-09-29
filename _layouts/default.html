@@ -148,7 +148,7 @@ layout: compress
           
           <div class="header-top">
              <div class="header-stack"> 
-                <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }} avatar" width="60" height="60" /></a>
+                <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }} avatar" width="60" height="60" style="border-radius: 50%; object-fit: cover; display: block; border: none;" /></a>
     
                 <!-- QMS Testing Log Link -->
                 <a class="title-img" href="{{ site.baseurl }}/">
@@ -755,20 +755,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>  
 
 <!-- SEARCH RESULTS JAVA - DESKTOP-END -->    
-
-
-!-- Style Avatar -->      
-<style>
-  .site-avatar {
-   width: 60px;         /* or any fixed size */
-   height: 60px;        /* make sure it's square */
-   border-radius: 50%;   /* this makes it circular */
-   object-fit: cover;    /* ensures the image fills the shape without distortion */
-   display: block;	
-   border: none;	 
-  }	
-</style>    
-    
 
 
 <!-- Ensure Layout Links the Script for copy button in posts for script snippets -->            
