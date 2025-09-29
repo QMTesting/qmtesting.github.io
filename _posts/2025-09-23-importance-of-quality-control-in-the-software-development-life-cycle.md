@@ -22,6 +22,11 @@ description: "A guide on the importance of quality control in the software devel
   }
 }
 
+.site-avatar {
+  width: 60px;
+  height: 60px;
+}
+
 @media (min-width: 1000px) {
   img {
     width: 700px;
