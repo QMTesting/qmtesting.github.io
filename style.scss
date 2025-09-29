@@ -1622,17 +1622,6 @@ article ul ul, main ul ul {
     height: 60px !important;
     width: 60px !important;	
   }	
-
-@media only screen and (min-width: 820px) and (max-width: 2000px) {
-  .post-card img {
-	width: 320px;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 6px;
-	align-items: center;
-	margin-bottom: 0px;
-  }
-}
  
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
