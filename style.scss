@@ -1236,7 +1236,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   margin-left: 8px;
-  background: white;
+  background: #fce8b2;
 }
 
 /* Input field styling */
@@ -1463,7 +1463,7 @@ figcaption {
           position: fixed;
           top: 10px;
           right: 10px;
-          background: white;
+          background: #fce8b2;
           padding: 10px;
           border-radius: 8px;
           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -1471,7 +1471,7 @@ figcaption {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-	  background: #fce8b2;	
+	      background: #fce8b2;	
         }
 
         #mobile-search-close {
