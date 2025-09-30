@@ -50,35 +50,37 @@ This phase is the foundation of the entire development cycle. Business analysts 
 
 - Documenting the requirements in formats like Business Requirement Documents (BRD) or User Stories.
 
-*Example:* For an online shopping app, requirements might include features like product search, shopping cart, payment integration, and order tracking.
+##### Example: 
+For an online shopping app, requirements might include features like product search, shopping cart, payment integration, and order tracking.
 
-2. System Design
+### 2. System Design
 
 Once the requirements are clear, architects and developers create a blueprint of how the system will work. This is where creativity meets structure.
 
-Key aspects of this phase:
+#### Key aspects of this phase:
 
-High-Level Design (HLD): Defines the system architecture, data flow, and major components.
+- High-Level Design (HLD): Defines the system architecture, data flow, and major components.
 
-Low-Level Design (LLD): Focuses on detailed specifications for modules, database schema, APIs, and user interfaces.
+- Low-Level Design (LLD): Focuses on detailed specifications for modules, database schema, APIs, and user interfaces.
 
-Tools like UML diagrams, ER diagrams, and wireframes are often used here.
+- Tools like UML diagrams, ER diagrams, and wireframes are often used here.
 
-Example: Designing a database for the shopping app that stores user profiles, product details, and order history.
+##### Example: 
+Designing a database for the shopping app that stores user profiles, product details, and order history.
 
-3. Implementation (Coding)
+### 3. Implementation (Coding)
 
 With the design in place, developers begin writing the code. This is often the most resource-intensive phase.
 
-Highlights include:
+#### Highlights include:
 
-Following coding standards and best practices.
+- Following coding standards and best practices.
 
-Using version control systems like Git to manage code.
+- Using version control systems like Git to manage code.
 
-Performing unit testing to validate individual components.
+- Performing unit testing to validate individual components.
 
-Example: Developers code the shopping cart functionality, ensuring it can add, remove, and update products smoothly.
+##### Example: Developers code the shopping cart functionality, ensuring it can add, remove, and update products smoothly.
 
 4. Testing
 
@@ -136,7 +138,7 @@ Closing: Finalize documentation, gather feedback, and prepare for long-term main
 
 This process ensures that no phase is skipped and that teams can measure progress against clear goals.
 
-SDLC Models
+## SDLC Models
 
 Different projects have different needs. That’s why multiple SDLC models exist. Each provides a unique way to execute the same core phases.
 
