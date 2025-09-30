@@ -1233,6 +1233,7 @@ html, body {
 /* Hide search form by default */
 #mobile-search-form {
   display: none;
+  color: #fce8b2;	
   flex-direction: row;
   align-items: center;
   margin-left: 8px;
@@ -1471,7 +1472,7 @@ figcaption {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-	      background: #fce8b2;	
+	      
         }
 
         #mobile-search-close {
