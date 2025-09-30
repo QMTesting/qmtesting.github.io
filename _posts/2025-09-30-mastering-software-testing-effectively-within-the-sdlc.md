@@ -8,13 +8,8 @@ description: "A guide on Mastering Software Testing Effectively Within the Softw
 ---
 
 <figure>
-  <img
-    src="/assets/images/Test/SDLC-Testing.webp"
-    srcset="/assets/images/Types/SDLC-Testing.webp 700w"
-    sizes="(max-width: 767px) 390px, (min-width: 1000px) 700px, 100vw"
-    alt="A guide on Mastering Software Testing Effectively Within the Software Development Life Cycle."
-  />
-   <figcaption>Image by vectorjuice on Freepik</figcaption>
+  <img src="/assets/images/Test/SDLC-Testing.webp" alt="A guide on Mastering Software Testing Effectively Within the Software Development Life Cycle." />
+  <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
 
