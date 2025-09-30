@@ -2,15 +2,15 @@
 layout: post
 title: "Mastering Software Testing Effectively Within the Software Development Life Cycle"
 categories: ["Software Testing"]
-image: "/assets/images/Test/Integration-Testing.webp"
+image: "/assets/images/Test/SDLC-Testing.webp"
 tags: [software testing, SDLC, QA, QC, Quality Control, Quality Assurance]
 description: "A guide on Mastering Software Testing Effectively Within the Software Development Life Cycle."
 ---
 
 <figure>
   <img
-    src="/assets/images/Test/Integration-Testing.webp"
-    srcset="/assets/images/Test/Integration-Testing-300.webp 300w, /assets/images/Types/Integration-Testing-390.webp 390w, /assets/images/Types/Integration-Testing-700.webp 700w"
+    src="/assets/images/Test/SDLC-Testing.webp"
+    srcset="/assets/images/Types/SDLC-Testing.webp 700w"
     sizes="(max-width: 767px) 390px, (min-width: 1000px) 700px, 100vw"
     alt="A guide on Mastering Software Testing Effectively Within the Software Development Life Cycle."
   />
