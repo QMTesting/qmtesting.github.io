@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Azure DevOps"
-permalink: /azure-devops/
+permalink: "/Azure DevOps/"
 ---
 
 <nav class="breadcrumbs">
@@ -14,15 +14,83 @@ permalink: /azure-devops/
 <h2 class="post-title" style="font-size: 40px; line-height: 40px; text-align: center;">Showing posts for:</h2>
 <h2 class="post-label" style="font-size: 37px; line-height: 30px; text-align: center;">Azure DevOps</h2>
 
-<div id="related-posts-cat">
-  {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Azure DevOps'" %}
-  {% for post in software_posts %}
-    <a href="{{ post.url | relative_url }}" style="text-decoration:  underline; text-align: center;">
-     <img class="related-img" src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
-      <div style="color: #000; font-size: 18px; font-weight: bold;">{{ post.title }}</div>
-    </a>
-  {% endfor %}
-</div>
+<div id="related-posts-cat"></div>
+<div id="pagination" class="pagination"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const posts = [
+    {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Azure DevOps'" %}
+    {% for post in software_posts %}
+      {
+        "title": {{ post.title | jsonify }},
+        "url": "{{ post.url | relative_url }}",
+        "image": "{{ post.image | relative_url }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  const resultsPerPage = 8; // 🔹 Change to how many per page
+  let currentPage = 1;
+
+  function updateURL(page) {
+    const newParams = new URLSearchParams(window.location.search);
+    newParams.set("page", page);
+    window.history.replaceState({}, "", `${window.location.pathname}?${newParams}`);
+  }
+
+  function renderPage(page) {
+    const container = document.getElementById("related-posts-cat");
+    const start = (page - 1) * resultsPerPage;
+    const end = start + resultsPerPage;
+    const paginatedResults = posts.slice(start, end);
+
+    container.innerHTML = paginatedResults.map(post => `
+      <a href="${post.url}" style="text-decoration: underline; text-align: center;">
+        <img class="related-img" src="${post.image}" alt="${post.title}" />
+        <div style="color: #000; font-size: 18px; font-weight: bold;">${post.title}</div>
+      </a>
+    `).join("");
+
+    renderPagination();
+    updateURL(page);
+  }
+
+  function renderPagination() {
+    const pagination = document.getElementById("pagination");
+    const totalPages = Math.ceil(posts.length / resultsPerPage);
+
+    let html = "";
+    if (currentPage > 1) {
+      html += `<button class="prev-btn">⬅ Previous</button>`;
+    }
+    html += `<span> Page ${currentPage} of ${totalPages} </span>`;
+    if (currentPage < totalPages) {
+      html += `<button class="next-btn">Next ➡</button>`;
+    }
+
+    pagination.innerHTML = html;
+
+    if (document.querySelector(".prev-btn")) {
+      document.querySelector(".prev-btn").addEventListener("click", () => {
+        currentPage--;
+        renderPage(currentPage);
+      });
+    }
+    if (document.querySelector(".next-btn")) {
+      document.querySelector(".next-btn").addEventListener("click", () => {
+        currentPage++;
+        renderPage(currentPage);
+      });
+    }
+  }
+
+  // Load initial page (from ?page= if available)
+  const params = new URLSearchParams(window.location.search);
+  currentPage = parseInt(params.get("page")) || 1;
+  renderPage(currentPage);
+});
+</script>
 
 <style>
 #related-posts-cat {
@@ -34,58 +102,51 @@ permalink: /azure-devops/
   flex-wrap: wrap;	
   margin-left: -5px;
 }
-  .related-img {
+.related-img {
   width: 250px;
   height: 200px;
   border-radius: 5px;
-} 
+  object-fit: cover;
+}
 
+/* 🔹 Pagination styles */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination button {
+  margin: 0 8px;
+  padding: 8px 16px;
+  border: none;
+  background: #ff6600; /* Button color */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.pagination button:hover {
+  background: #cc5200; /* Hover color */
+}
+.pagination span {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 12px;
+}
+
+/* Mobile view */
 @media only screen and (max-width: 780px) {
   #related-posts-cat {
-  display: grid;
-  gap: 0px;
-  grid-template-columns: repeat(1, 1fr); /* 1 equal-width columns */
-  width: 325px;
-  font-weight: 900;
-  flex-wrap: wrap; 
-  margin-left: 30px;  
-} 
-
- .related-img {
+    grid-template-columns: repeat(1, 1fr);
+    width: 325px;
+    margin-left: 30px;
+  }
+  .related-img {
     width: 320px;
     height: 200px;
     margin-top: 30px;
-  }  
-  
-} /* End Mobile */
-
-
-  @media only screen and (min-width: 820px) and (max-width: 2000px) {
-  /* Change Page Size */
-  body {
-    width: 1400px; /* makes body full width */
-    margin-left: 100px;   /* centers the content if max-width is limited */
-    margin-right: 100px; 	
   }
-  
-  .container, .wrapper, .content {
-    width: 1025px; /* or whatever width you want */
-    margin-left: 25px;   /* centers the content if max-width is limited */
-    margin-right: 25px; 	
-  }
-
-   .post-title {
-    margin-left: 325px;
-    margin-right: -75px;
-  } 
-  .post-label {
-    margin-left: 300px;
-    margin-right: -75px;
-    font-weight: 700px;
-  } 
-  
-  } / * End Desktop */	
-
-
-  
+}
 </style>
+
