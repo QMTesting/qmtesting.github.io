@@ -14,33 +14,30 @@ redirect_from:
 <br/><br/>
 
 <div id="search-results-wrapper">
-  
   <h2 id="search-query-title"></h2>
   <div id="search-results" class="search-grid"></div>
+  <div id="pagination" class="pagination"></div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const query = params.get("q");
+  const resultsPerPage = 8; // 🔹 Change this to how many results per page
+  let currentPage = parseInt(params.get("page")) || 1;
 
   if (!query) return;
 
-  // Set the heading before loading posts
+  // Set search title
   const queryTitle = document.getElementById("search-query-title");
   if (queryTitle) {
     queryTitle.textContent = `Search Results for: "${query}"`;
   }
 
   fetch("/search.json")
-    .then(response => {
-      if (!response.ok) throw new Error("Failed to load search.json");
-      return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
-      const resultsContainer = document.getElementById("search-results");
       const lowerQuery = query.toLowerCase();
-
       const results = data.filter(post =>
         post.title?.toLowerCase().includes(lowerQuery) ||
         post.content?.toLowerCase().includes(lowerQuery) ||
@@ -48,35 +45,81 @@ document.addEventListener("DOMContentLoaded", function () {
         (post.categories && post.categories.join(" ").toLowerCase().includes(lowerQuery))
       );
 
-      if (!resultsContainer) return;
-
       if (results.length === 0) {
-        resultsContainer.innerHTML = "<p>No results found.</p>";
+        document.getElementById("search-results").innerHTML = "<p>No results found.</p>";
         return;
       }
 
-      resultsContainer.innerHTML = results.map(post => `
-        <div class="post-card">
-          <a href="${post.url}">
-            <img src="${post.image}" alt="${post.title}" />
-            <h3>${post.title}</h3>
-          </a>
-        </div>
-      `).join("");
+      function updateURL(page) {
+        const newParams = new URLSearchParams(window.location.search);
+        newParams.set("page", page);
+        window.history.replaceState({}, "", `${window.location.pathname}?${newParams}`);
+      }
+
+      function renderPage(page) {
+        const resultsContainer = document.getElementById("search-results");
+        const start = (page - 1) * resultsPerPage;
+        const end = start + resultsPerPage;
+        const paginatedResults = results.slice(start, end);
+
+        resultsContainer.innerHTML = paginatedResults.map(post => `
+          <div class="post-card">
+            <a href="${post.url}">
+              <img src="${post.image}" alt="${post.title}" />
+              <h3>${post.title}</h3>
+            </a>
+          </div>
+        `).join("");
+
+        renderPagination();
+        updateURL(page); // 🔹 Keep page number in the URL
+      }
+
+      function renderPagination() {
+        const pagination = document.getElementById("pagination");
+        const totalPages = Math.ceil(results.length / resultsPerPage);
+
+        let html = "";
+
+        if (currentPage > 1) {
+          html += `<button class="prev-btn">⬅ Previous</button>`;
+        }
+
+        html += `<span> Page ${currentPage} of ${totalPages} </span>`;
+
+        if (currentPage < totalPages) {
+          html += `<button class="next-btn">Next ➡</button>`;
+        }
+
+        pagination.innerHTML = html;
+
+        if (document.querySelector(".prev-btn")) {
+          document.querySelector(".prev-btn").addEventListener("click", () => {
+            currentPage--;
+            renderPage(currentPage);
+          });
+        }
+        if (document.querySelector(".next-btn")) {
+          document.querySelector(".next-btn").addEventListener("click", () => {
+            currentPage++;
+            renderPage(currentPage);
+          });
+        }
+      }
+
+      // Initial render
+      renderPage(currentPage);
     })
     .catch(error => {
       console.error("Search failed:", error);
-      const resultsContainer = document.getElementById("search-results");
-      if (resultsContainer) {
-        resultsContainer.innerHTML = "<p>There was an error loading results.</p>";
-      }
+      document.getElementById("search-results").innerHTML = "<p>There was an error loading results.</p>";
     });
 });
 </script>
 
 <style>
   .site-name {
-   margin-top:-10px;
+    margin-top:-10px;
   } 
 
   .post-card h3 {
@@ -85,17 +128,28 @@ document.addEventListener("DOMContentLoaded", function () {
     line-height: 19px;
   }
 
-  .post-card h3 {
+  .post-card img {
+    width: 250px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .pagination {
+    margin-top: 20px;
     text-align: center;
-    font-size: 18px;
-    line-height: 19px;
-
-    @media only screen and (min-width: 900px) {
-    .post-card img {
-      width: 250px;
-      height: 175px;
-     }
-   }  
-
+  }
+  .pagination button {
+    margin: 0 10px;
+    padding: 6px 12px;
+    border: none;
+    background: #0073e6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .pagination button:hover {
+    background: #005bb5;
+  }
 </style>
 
