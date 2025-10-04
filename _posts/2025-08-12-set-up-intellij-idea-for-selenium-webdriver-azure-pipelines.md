@@ -39,6 +39,8 @@ By the end, you’ll have a functioning local Selenium project that’s pipeline
 
 ## ⚙ IntelliJ IDEA System Requirements (Windows / macOS / Linux)
 
+Here is the minimum(Nin) and recommended(Rec) to install IntelliJ IDEA for Windows, macOS, and Linux.
+
 | Category            | Windows (Min / Rec) | macOS (Min / Rec) | Linux (Min / Rec) |
 |---------------------|----------------------|--------------------|--------------------|
 | **Operating System** | Win 10 (64-bit) / Win 11 (latest) | macOS 12 (Monterey) / macOS 13–14 (Ventura, Sonoma) | Modern 64-bit distro / Latest stable distro (Ubuntu LTS, Fedora, Debian, etc.) |
@@ -48,6 +50,37 @@ By the end, you’ll have a functioning local Selenium project that’s pipeline
 | **Display**         | 1024×768 / 1920×1080+ | 1024×768 / Retina (1920×1080+) | 1024×768 / 1920×1080+ |
 | **Java Runtime**    | Bundled JetBrains Runtime (OpenJDK) / Same (latest JBR or custom JDK) | Bundled JetBrains Runtime / Same (latest JBR or custom JDK) | Bundled JetBrains Runtime / Same (latest JBR or custom JDK) |
 | **Other Requirements** | .NET Framework 4.7.2+ / Latest version | — | GLIBC 2.17+, GTK+ 2.18+ / Latest versions |
+
+---
+
+## 🔹 Quick Reference Checklist
+
+### 🖥 Windows
+- Windows 10 or 11 (64-bit)  
+- CPU: Any 64-bit CPU (4+ cores recommended)  
+- RAM: 2 GB (8 GB+ recommended)  
+- Disk: 2.5 GB free (SSD strongly recommended)  
+- Display: 1024×768 (1920×1080 recommended)  
+- Java Runtime: Bundled JetBrains Runtime  
+- .NET Framework: 4.7.2+  
+
+### 🍎 macOS
+- macOS 12 Monterey (minimum), Ventura/Sonoma recommended  
+- CPU: Intel Core 2 Duo or Apple Silicon (M1) minimum, Apple Silicon M1/M2/M3 recommended  
+- RAM: 2 GB (8 GB+ recommended)  
+- Disk: 2.5 GB free (SSD strongly recommended)  
+- Display: 1024×768 minimum, Retina/1920×1080+ recommended  
+- Java Runtime: Bundled JetBrains Runtime  
+
+### 🐧 Linux
+- Modern 64-bit distro (Ubuntu LTS, Fedora, Debian recommended)  
+- CPU: Any 64-bit CPU (4+ cores recommended)  
+- RAM: 2 GB (8 GB+ recommended)  
+- Disk: 2.5 GB free (SSD strongly recommended)  
+- Display: 1024×768 minimum, 1920×1080+ recommended  
+- Java Runtime: Bundled JetBrains Runtime  
+- Libraries: GLIBC 2.17+, GTK+ 2.18+  
+
 
 ## 1. Installing IntelliJ IDEA
 ### Step 1 – Download the IDE
