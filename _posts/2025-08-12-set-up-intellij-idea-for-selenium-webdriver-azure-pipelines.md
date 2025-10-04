@@ -39,48 +39,47 @@ By the end, you’ll have a functioning local Selenium project that’s pipeline
 
 ## ⚙ IntelliJ IDEA System Requirements (Windows / macOS / Linux)
 
-Here is the minimum(Nin) and recommended(Rec) to install IntelliJ IDEA for Windows, macOS, and Linux.
+Before providing the installation instructions, here are the minimum(Min) and recommended(Rec) requirements to install IntelliJ IDEA for Windows, macOS, and Linux.
 
-| Category            | Windows (Min / Rec) | macOS (Min / Rec) | Linux (Min / Rec) |
-|---------------------|----------------------|--------------------|--------------------|
-| **Operating System** | Win 10 (64-bit) / Win 11 (latest) | macOS 12 (Monterey) / macOS 13–14 (Ventura, Sonoma) | Modern 64-bit distro / Latest stable distro (Ubuntu LTS, Fedora, Debian, etc.) |
-| **CPU**             | Any 64-bit CPU / 4+ cores | Intel Core 2 Duo or Apple Silicon (M1) / Apple Silicon (M1/M2/M3) or Intel 4+ cores | Any 64-bit CPU / 4+ cores |
-| **RAM**             | 2 GB / 8+ GB (16 GB+ for large projects) | 2 GB / 8+ GB (16 GB+ for large projects) | 2 GB / 8+ GB (16 GB+ for large projects) |
-| **Disk Space**      | 2.5 GB free / SSD with extra project space | 2.5 GB free / SSD with extra project space | 2.5 GB free / SSD with extra project space |
-| **Display**         | 1024×768 / 1920×1080+ | 1024×768 / Retina (1920×1080+) | 1024×768 / 1920×1080+ |
-| **Java Runtime**    | Bundled JetBrains Runtime (OpenJDK) / Same (latest JBR or custom JDK) | Bundled JetBrains Runtime / Same (latest JBR or custom JDK) | Bundled JetBrains Runtime / Same (latest JBR or custom JDK) |
-| **Other Requirements** | .NET Framework 4.7.2+ / Latest version | — | GLIBC 2.17+, GTK+ 2.18+ / Latest versions |
+🖥 Windows
+## IntelliJ IDEA System Requirements – Windows
+
+| Category            | Minimum Requirement | Recommended Requirement |
+|---------------------|----------------------|-------------------------|
+| Operating System    | Windows 10 (64-bit) | Windows 11 (64-bit, latest updates) |
+| CPU                 | Any 64-bit CPU      | 4+ cores processor |
+| RAM                 | 2 GB                | 8 GB or more (16 GB+ for large projects) |
+| Disk Space          | 2.5 GB free space   | SSD with additional space for projects and caches |
+| Display             | 1024×768            | 1920×1080 (Full HD) or higher |
+| Java Runtime        | Bundled JetBrains Runtime (OpenJDK-based) | Latest JetBrains Runtime or custom JDK |
+| .NET Framework      | 4.7.2 or later      | Latest version available |
+
+🍎 macOS
+## IntelliJ IDEA System Requirements – macOS
+
+| Category            | Minimum Requirement | Recommended Requirement |
+|---------------------|----------------------|-------------------------|
+| Operating System    | macOS 12 (Monterey) | macOS 13–14 (Ventura, Sonoma) with latest updates |
+| CPU                 | Intel Core 2 Duo or Apple Silicon (M1) | Apple Silicon (M1/M2/M3) or Intel 4+ cores |
+| RAM                 | 2 GB                | 8 GB or more (16 GB+ for large projects) |
+| Disk Space          | 2.5 GB free space   | SSD with additional space for projects and caches |
+| Display             | 1024×768            | Retina display (1920×1080 or higher) |
+| Java Runtime        | Bundled JetBrains Runtime (OpenJDK-based) | Latest JetBrains Runtime or custom JDK |
+
+🐧 Linux
+## IntelliJ IDEA System Requirements – Linux
+
+| Category            | Minimum Requirement | Recommended Requirement |
+|---------------------|----------------------|-------------------------|
+| Operating System    | Modern 64-bit Linux distribution (Gnome, KDE, or Unity) | Latest stable 64-bit Linux distribution (e.g., Ubuntu LTS, Fedora, Debian) |
+| CPU                 | Any 64-bit CPU      | 4+ cores processor |
+| RAM                 | 2 GB                | 8 GB or more (16 GB+ for large projects) |
+| Disk Space          | 2.5 GB free space   | SSD with additional space for projects and caches |
+| Display             | 1024×768            | 1920×1080 (Full HD) or higher |
+| Java Runtime        | Bundled JetBrains Runtime (OpenJDK-based) | Latest JetBrains Runtime or custom JDK |
+| Libraries           | GLIBC 2.17+, GTK+ 2.18+ | Latest versions available |
 
 ---
-
-## 🔹 Quick Reference Checklist
-
-### 🖥 Windows
-- Windows 10 or 11 (64-bit)  
-- CPU: Any 64-bit CPU (4+ cores recommended)  
-- RAM: 2 GB (8 GB+ recommended)  
-- Disk: 2.5 GB free (SSD strongly recommended)  
-- Display: 1024×768 (1920×1080 recommended)  
-- Java Runtime: Bundled JetBrains Runtime  
-- .NET Framework: 4.7.2+  
-
-### 🍎 macOS
-- macOS 12 Monterey (minimum), Ventura/Sonoma recommended  
-- CPU: Intel Core 2 Duo or Apple Silicon (M1) minimum, Apple Silicon M1/M2/M3 recommended  
-- RAM: 2 GB (8 GB+ recommended)  
-- Disk: 2.5 GB free (SSD strongly recommended)  
-- Display: 1024×768 minimum, Retina/1920×1080+ recommended  
-- Java Runtime: Bundled JetBrains Runtime  
-
-### 🐧 Linux
-- Modern 64-bit distro (Ubuntu LTS, Fedora, Debian recommended)  
-- CPU: Any 64-bit CPU (4+ cores recommended)  
-- RAM: 2 GB (8 GB+ recommended)  
-- Disk: 2.5 GB free (SSD strongly recommended)  
-- Display: 1024×768 minimum, 1920×1080+ recommended  
-- Java Runtime: Bundled JetBrains Runtime  
-- Libraries: GLIBC 2.17+, GTK+ 2.18+  
-
 
 ## 1. Installing IntelliJ IDEA
 ### Step 1 – Download the IDE
