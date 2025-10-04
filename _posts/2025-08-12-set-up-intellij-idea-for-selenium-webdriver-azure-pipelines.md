@@ -41,7 +41,7 @@ By the end, you’ll have a functioning local Selenium project that’s pipeline
 
 Before providing the installation instructions, here are the minimum(Min) and recommended(Rec) requirements to install IntelliJ IDEA for Windows, macOS, and Linux.
 
-## 💻IntelliJ IDEA System Requirements – Windows
+## 💻IntelliJ IDEA System Requirements   – Windows
 
 | Category            | Minimum Requirement | Recommended Requirement |
 |---------------------|----------------------|-------------------------|
@@ -53,7 +53,7 @@ Before providing the installation instructions, here are the minimum(Min) and re
 | Java Runtime        | Bundled JetBrains Runtime (OpenJDK-based) | Latest JetBrains Runtime or custom JDK |
 | .NET Framework      | 4.7.2 or later      | Latest version available |
 
-## 🍎IntelliJ IDEA System Requirements – macOS
+## 🍎IntelliJ IDEA System Requirements   – macOS
 
 | Category            | Minimum Requirement | Recommended Requirement |
 |---------------------|----------------------|-------------------------|
@@ -64,7 +64,7 @@ Before providing the installation instructions, here are the minimum(Min) and re
 | Display             | 1024×768            | Retina display (1920×1080 or higher) |
 | Java Runtime        | Bundled JetBrains Runtime (OpenJDK-based) | Latest JetBrains Runtime or custom JDK |
 
-## 🐧IntelliJ IDEA System Requirements – Linux
+## 🐧IntelliJ IDEA System Requirements   – Linux
 
 | Category            | Minimum Requirement | Recommended Requirement |
 |---------------------|----------------------|-------------------------|
