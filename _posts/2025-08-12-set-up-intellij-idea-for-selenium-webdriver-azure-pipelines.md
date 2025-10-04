@@ -37,6 +37,18 @@ In this guide, you’ll learn how to:
 
 By the end, you’ll have a functioning local Selenium project that’s pipeline-ready and can be scaled into a more robust automation framework.
 
+## ⚙ IntelliJ IDEA System Requirements (Windows / macOS / Linux)
+
+| Category            | Windows (Min / Rec) | macOS (Min / Rec) | Linux (Min / Rec) |
+|---------------------|----------------------|--------------------|--------------------|
+| **Operating System** | Win 10 (64-bit) / Win 11 (latest) | macOS 12 (Monterey) / macOS 13–14 (Ventura, Sonoma) | Modern 64-bit distro / Latest stable distro (Ubuntu LTS, Fedora, Debian, etc.) |
+| **CPU**             | Any 64-bit CPU / 4+ cores | Intel Core 2 Duo or Apple Silicon (M1) / Apple Silicon (M1/M2/M3) or Intel 4+ cores | Any 64-bit CPU / 4+ cores |
+| **RAM**             | 2 GB / 8+ GB (16 GB+ for large projects) | 2 GB / 8+ GB (16 GB+ for large projects) | 2 GB / 8+ GB (16 GB+ for large projects) |
+| **Disk Space**      | 2.5 GB free / SSD with extra project space | 2.5 GB free / SSD with extra project space | 2.5 GB free / SSD with extra project space |
+| **Display**         | 1024×768 / 1920×1080+ | 1024×768 / Retina (1920×1080+) | 1024×768 / 1920×1080+ |
+| **Java Runtime**    | Bundled JetBrains Runtime (OpenJDK) / Same (latest JBR or custom JDK) | Bundled JetBrains Runtime / Same (latest JBR or custom JDK) | Bundled JetBrains Runtime / Same (latest JBR or custom JDK) |
+| **Other Requirements** | .NET Framework 4.7.2+ / Latest version | — | GLIBC 2.17+, GTK+ 2.18+ / Latest versions |
+
 ## 1. Installing IntelliJ IDEA
 ### Step 1 – Download the IDE
 
