@@ -43,7 +43,7 @@ Before providing the installation instructions, here are the minimum(Min) and re
 
 ## 💻IntelliJ IDEA System Requirements   – Windows
 
-| *Category*            | *Minimum Requirement* | *Recommended Requirement* |
+| **Category**            | **Minimum Requirement** | **Recommended Requirement** |
 |---------------------|----------------------|-------------------------|
 | Operating System    | Windows 10 (64-bit) | Windows 11 (64-bit, latest updates) |
 | CPU                 | Any 64-bit CPU      | 4+ cores processor |
@@ -55,7 +55,7 @@ Before providing the installation instructions, here are the minimum(Min) and re
 
 ## 🍎IntelliJ IDEA System Requirements   – macOS
 
-| Category            | Minimum Requirement | Recommended Requirement |
+| **Category**            | **Minimum Requirement** | **Recommended Requirement** |
 |---------------------|----------------------|-------------------------|
 | Operating System    | macOS 12 (Monterey) | macOS 13–14 (Ventura, Sonoma) with latest updates |
 | CPU                 | Intel Core 2 Duo or Apple Silicon (M1) | Apple Silicon (M1/M2/M3) or Intel 4+ cores |
@@ -66,7 +66,7 @@ Before providing the installation instructions, here are the minimum(Min) and re
 
 ## 🐧IntelliJ IDEA System Requirements   – Linux
 
-| Category            | Minimum Requirement | Recommended Requirement |
+| **Category**            | **Minimum Requirement** | **Recommended Requirement** |
 |---------------------|----------------------|-------------------------|
 | Operating System    | Modern 64-bit Linux distribution (Gnome, KDE, or Unity) | Latest stable 64-bit Linux distribution (e.g., Ubuntu LTS, Fedora, Debian) |
 | CPU                 | Any 64-bit CPU      | 4+ cores processor |
