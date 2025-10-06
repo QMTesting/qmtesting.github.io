@@ -43,7 +43,7 @@ Before providing the installation instructions, here are the minimum(Min) and re
 
 ## 💻IntelliJ IDEA System Requirements   – Windows
 
-| *Category*            | Minimum Requirement* | *Recommended Requirement* |
+| *Category*            | *Minimum Requirement* | *Recommended Requirement* |
 |---------------------|----------------------|-------------------------|
 | Operating System    | Windows 10 (64-bit) | Windows 11 (64-bit, latest updates) |
 | CPU                 | Any 64-bit CPU      | 4+ cores processor |
