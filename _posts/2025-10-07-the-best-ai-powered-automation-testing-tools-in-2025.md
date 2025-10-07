@@ -37,11 +37,11 @@ TestDriver.ai introduces “selectorless” automation — no fragile CSS or XPa
 
 ### Key Features
 
-🚀 **Natural language test creation** – describe flows in plain English<br>
-🖥️ **Cross-platform support** – Web, mobile, and desktop<br>
-🔍 **Visual debugging** – test replays with overlays and screenshots<br>
-♻️ **Auto-maintenance** – adapts to layout and UI changes<br>
-🔗 **CI/CD ready** – integrates with modern pipelines<br>
+>🚀 **Natural language test creation** – describe flows in plain English<br>
+>🖥️ **Cross-platform support** – Web, mobile, and desktop<br>
+>🔍 **Visual debugging** – test replays with overlays and screenshots<br>
+>♻️ **Auto-maintenance** – adapts to layout and UI changes<br>
+>🔗 **CI/CD ready** – integrates with modern pipelines<br>
 
 ### Pros & Cons
 
@@ -66,11 +66,11 @@ CodeceptJS is a popular open-source test automation framework, and its **AI add-
 
 ### Key Features
 
-🤖 **AI-based self-healing** – automatically updates failing selectors<br>
-📝 **AI test generation** – generate page objects and test steps with prompts<br>
-⚙️ **Multi-engine support** – works with Playwright, Puppeteer, WebDriver, etc.<br>
-🛑 **Interactive debugging** – pause tests and get AI suggestions<br>
-🌍 **Open-source & flexible** – fully customizable with a growing community<br>
+>🤖 **AI-based self-healing** – automatically updates failing selectors<br>
+>📝 **AI test generation** – generate page objects and test steps with prompts<br>
+>⚙️ **Multi-engine support** – works with Playwright, Puppeteer, WebDriver, etc.<br>
+>🛑 **Interactive debugging** – pause tests and get AI suggestions<br>
+>🌍 **Open-source & flexible** – fully customizable with a growing community<br>
 
 ### Pros & Cons
 
@@ -95,11 +95,11 @@ Stagehand focuses on **web UI testing with Playwright**, enhanced by AI for smar
 
 ### Key Features
 
-✍️ **AI-assisted authoring** – write tests faster with natural prompts<br>
-🧩 **Playwright-based** – modern web app support<br>
-🔄 **Self-healing** – adapts selectors when the DOM changes<br>
-📊 **Rich reporting** – dashboards and analytics for test results<br>
-⚡ **CI/CD integration** – GitHub Actions, Jenkins, and more<br>
+>✍️ **AI-assisted authoring** – write tests faster with natural prompts<br>
+>🧩 **Playwright-based** – modern web app support<br>
+>🔄 **Self-healing** – adapts selectors when the DOM changes<br>
+>📊 **Rich reporting** – dashboards and analytics for test results<br>
+>⚡ **CI/CD integration** – GitHub Actions, Jenkins, and more<br>
 
 ### Pros & Cons
 
@@ -124,11 +124,11 @@ testRigor lets you create **end-to-end tests in plain English**. Its AI engine t
 
 ### Key Features
 
-📖 **Natural language test creation** – no coding required<br>
-📱 **Cross-platform** – web, mobile, and API testing<br>
-🔁 **Self-healing tests** – resilient against UI changes<br>
-📂 **Reusable steps** – modular test building with AI assistance<br>
-☁️ **Cloud execution** – scalable test runs across environments<br>
+>📖 **Natural language test creation** – no coding required<br>
+>📱 **Cross-platform** – web, mobile, and API testing<br>
+>🔁 **Self-healing tests** – resilient against UI changes<br>
+>📂 **Reusable steps** – modular test building with AI assistance<br>
+>☁️ **Cloud execution** – scalable test runs across environments<br>
 
 ### Pros & Cons
 
@@ -153,11 +153,11 @@ ACCELQ uses AI to deliver **codeless, autonomous test automation** for enterpris
 
 ### Key Features
 
-🖊️ **Codeless automation** – drag-and-drop with natural language<br>
-🔮 **AI-powered test design** – predicts and suggests test scenarios<br>
-♻️ **Self-healing locators** – reduces maintenance headaches<br>
-🔌 **DevOps integration** – Jira, Jenkins, GitHub, and more<br>
-🌐 **End-to-end coverage** – UI, API, and data layers<br>
+>🖊️ **Codeless automation** – drag-and-drop with natural language<br>
+>🔮 **AI-powered test design** – predicts and suggests test scenarios<br>
+>♻️ **Self-healing locators** – reduces maintenance headaches<br>
+>🔌 **DevOps integration** – Jira, Jenkins, GitHub, and more<br>
+>🌐 **End-to-end coverage** – UI, API, and data layers<br>
 
 ### Pros & Cons
 
@@ -182,11 +182,11 @@ Alumnium builds on Selenium — the most widely used web automation tool — by 
 
 ### Key Features
 
-🖥️ **Selenium-compatible** – works with existing test suites<br>
-🔁 **Self-healing** – adapts selectors when UI changes<br>
-📊 **AI analytics** – identifies flaky tests and redundant steps<br>
-⚙️ **Flexible integrations** – CI/CD, cloud platforms, and Selenium Grid<br>
-💡 **Lower maintenance** – less time fixing broken locators<br>
+>🖥️ **Selenium-compatible** – works with existing test suites<br>
+>🔁 **Self-healing** – adapts selectors when UI changes<br>
+>📊 **AI analytics** – identifies flaky tests and redundant steps<br>
+>⚙️ **Flexible integrations** – CI/CD, cloud platforms, and Selenium Grid<br>
+>💡 **Lower maintenance** – less time fixing broken locators<br>
 
 ### Pros & Cons
 
@@ -220,12 +220,12 @@ Alumnium builds on Selenium — the most widely used web automation tool — by 
 
 Choosing the right AI-powered QA tool depends on your **project type, team skills, and testing needs**:
 
-🖥️ **For multi-platform testing (web + mobile + desktop):** **TestDriver.ai**<br>
-🌍 **For open-source flexibility:** **CodeceptJS + AI Helpers**<br>
-🎭 **For teams already using Playwright:** **Stagehand**<br>
-🗣️ **For no-code, plain English testing:** **testRigor**<br>
-🏢 **For enterprise-grade coverage and DevOps integration:** **ACCELQ Autopilot**<br>
-⚙️ **For teams invested in Selenium:** **Alumnium**<br>
+>🖥️ **For multi-platform testing (web + mobile + desktop):** **TestDriver.ai**<br>
+>🌍 **For open-source flexibility:** **CodeceptJS + AI Helpers**<br>
+>🎭 **For teams already using Playwright:** **Stagehand**<br>
+>🗣️ **For no-code, plain English testing:** **testRigor**<br>
+>🏢 **For enterprise-grade coverage and DevOps integration:** **ACCELQ Autopilot**<br>
+>⚙️ **For teams invested in Selenium:** **Alumnium**<br>
 
 ---
 
