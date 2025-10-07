@@ -2,7 +2,7 @@
 layout: post
 title: "The Best AI-Powered QA Testing Tools in 2025"
 categories: ["Automation"]
-image: /assets/images/Auto/automation-testing-tools.webp
+image: /assets/images/Auto/ai-qatesting-tools.webp
 permalink: /the-best-ai-powered-automation-testing-tools-in-2025/
 tags: [software testing, QA, QC, automation, testing tools, AI]
 description: "A guide on selecting the Best AI-Powered QA Testing Tools in 2025"
