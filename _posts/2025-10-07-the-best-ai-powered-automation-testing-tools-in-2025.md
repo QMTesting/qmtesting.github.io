@@ -20,7 +20,6 @@ In modern software development, delivering high-quality applications quickly is 
 
 These tools leverage artificial intelligence to:
 
-| Icon | Benefit                                                                           |
 | ---- | --------------------------------------------------------------------------------- |
 | ⚡    | Speed up test creation – generate tests from natural language or user flows       |
 | 🛠️  | Self-heal broken tests – AI adapts locators and selectors when UIs change         |
