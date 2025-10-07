@@ -39,7 +39,7 @@ By the end, you’ll have a functioning local Selenium project that’s pipeline
 
 ## ⚙ IntelliJ IDEA System Requirements (Windows / macOS / Linux)
 
-Before providing the installation instructions, here are the minimum(Min) and recommended(Rec) requirements to install IntelliJ IDEA for Windows, macOS, and Linux.
+Before we get into the installation steps, here are the minimum (Min) and recommended (Rec) system requirements for installing IntelliJ IDEA on Windows, macOS, and Linux operating systems.
 
 ## 💻IntelliJ IDEA System Requirements   – Windows
 
