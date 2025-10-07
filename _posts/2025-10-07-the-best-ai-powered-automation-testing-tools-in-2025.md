@@ -19,10 +19,10 @@ In modern software development, delivering high-quality applications quickly is 
 
 These tools leverage artificial intelligence to:
 
- ⚡ **Speed up test creation** – >> generate tests from natural language or user flows<br>
- 🛠️ **Self-heal broken tests** – >> AI adapts locators and selectors when UIs change<br>
- 📊 **Optimize coverage** – >> identify gaps, hidden bugs, and edge cases<br>
- 🔄 **Integrate with DevOps** – >> plug directly into CI/CD pipelines for continuous quality<br>
+ >⚡ **Speed up test creation** – generate tests from natural language or user flows<br>
+ >🛠️ **Self-heal broken tests** – AI adapts locators and selectors when UIs change<br>
+ >📊 **Optimize coverage** – identify gaps, hidden bugs, and edge cases<br>
+ >🔄 **Integrate with DevOps** – plug directly into CI/CD pipelines for continuous quality<br>
 
 
 Let’s explore the **top AI-driven QA automation tools** in 2025.
