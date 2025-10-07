@@ -197,12 +197,14 @@ ReportPortal is an AI-powered test reporting and analysis tool that helps QA tea
 
 ## 🎯 Which Tool Should You Pick?
 
-| 🖥️ | **For multi-platform testing (web + mobile + desktop):** **TestDriver.ai** |
-| 🌍 | **For open-source flexibility:** **CodeceptJS + AI Helpers** |
-| 🎭 | **For teams already using Playwright:** **Stagehand** |
-| 🗣️ | **For no-code, plain English testing:** **testRigor** |
-| 🏢 | **For enterprise-grade coverage and DevOps integration:** **ACCELQ Autopilot** |
-| ⚙️ | **For teams invested in Selenium:** **Alumnium** |
+<table style="border-collapse: collapse; border: none;">
+  <tr><td style="border:none; padding-right:8px;">🖥️</td><td style="border:none;">For multi-platform testing (web + mobile + desktop): <strong>TestDriver.ai</strong></td></tr>
+  <tr><td style="border:none; padding-right:8px;">🌍</td><td style="border:none;">For open-source flexibility: <strong>CodeceptJS + AI Helpers</strong></td></tr>
+  <tr><td style="border:none; padding-right:8px;">🎭</td><td style="border:none;">For teams already using Playwright: <strong>Stagehand</strong></td></tr>
+  <tr><td style="border:none; padding-right:8px;">🗣️</td><td style="border:none;">For no-code, plain English testing: <strong>testRigor</strong></td></tr>
+  <tr><td style="border:none; padding-right:8px;">🏢</td><td style="border:none;">For enterprise-grade coverage and DevOps integration: <strong>ACCELQ Autopilot</strong></td></tr>
+  <tr><td style="border:none; padding-right:8px;">⚙️</td><td style="border:none;">For teams invested in Selenium: <strong>Alumnium</strong></td></tr>
+</table>
 
 ---
 
