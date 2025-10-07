@@ -184,15 +184,14 @@ ReportPortal is an AI-powered test reporting and analysis tool that helps QA tea
 
 ## 📊 Comparison of AI Testing Tools
 
-<table style="border-collapse: collapse; border: none;">
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>Selenium IDE</strong> – Best for web UI testing with AI self-healing extensions</td></tr>
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>Appium</strong> – Ideal for AI-powered mobile testing on Android/iOS</td></tr>
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>Testim</strong> – Great for fast, low-maintenance test creation</td></tr>
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>Mabl</strong> – Cloud-native with strong visual and end-to-end testing</td></tr>
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>ACCELQ</strong> – Codeless, AI-driven, covers web, mobile, API, desktop</td></tr>
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>Katalon Studio</strong> – All-in-one solution with AI self-healing</td></tr>
-  <tr><td style="border:none; padding-right:8px;">🔹</td><td style="border:none;"><strong>ReportPortal</strong> – Best for AI-powered reporting and analytics</td></tr>
-</table>
+| **Tool**                | **Best For**             | **Key AI Features**                                                  |
+| ------------------- | -------------------- | ---------------------------------------------------------------- |
+| **TestDriver.ai**   | Web, desktop, mobile | Selectorless AI automation, NLP test authoring, visual debugging |
+| **CodeceptJS + AI** | Web testing          | AI self-healing, test generation, multi-engine support           |
+| **Stagehand**       | Web UI (Playwright)  | AI-assisted authoring, self-healing selectors                    |
+| **testRigor**       | Web, mobile, API     | Natural language test creation, reusable steps                   |
+| **ACCELQ**          | Enterprise QA        | Codeless AI automation, end-to-end coverage                      |
+| **Alumnium**        | Selenium users       | AI-powered locator healing, test analytics                       |
 
 ---
 
