@@ -629,7 +629,7 @@ img {
  .search-grid {
   display: grid;
   gap: 0px;
-  grid-template-columns: repeat(1, 1fr); /* 4 equal-width columns */
+  grid-template-columns: repeat(2, 1fr); /* 4 equal-width columns */
   margin-top: 1rem;
   margin-left: 20px;		
 }
@@ -645,12 +645,12 @@ img {
 }
 .post-card h3 {
   text-align: center;
-  font-size: 18px;	
+  font-size: 16px;	
   line-height: 19px;	 
 }		
 .post-card img {
-  width: 320px;
-  height: 200px;
+  width: 160px;
+  height: 100px;
   object-fit: cover;
   border-radius: 6px;
   align-items: center;	
