@@ -769,15 +769,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   .search-grid {
   display: grid;
-  gap: 10px;
+  gap: 0px;
   grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */  
   margin-top: 1rem;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0 10px; /* add slight inner spacing */
+  margin-left: 0px;
+  margin-right: 0px;
   box-sizing: border-box;
   width: 500px;
-  overflow-x: hidden; /* prevent scroll overflow */
+  /* overflow-x: hidden;  prevent scroll overflow */
 }
 
 /* Post card styling */
@@ -787,8 +786,7 @@ document.addEventListener("DOMContentLoaded", function () {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s;
-  width: 360px; /* responsive width */
+  width: 400px; /* responsive width */
   box-sizing: border-box;
 }
 
@@ -807,19 +805,6 @@ document.addEventListener("DOMContentLoaded", function () {
   margin-bottom: 0px;
   margin-left: 8px;
 }
-
-.search-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
-    gap: 8px;
-    margin-left: 10px;
-  }
-  .post-card img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-
-
 
 #search-query-title {
    text-align: center;
