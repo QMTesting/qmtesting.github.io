@@ -767,6 +767,19 @@ document.addEventListener("DOMContentLoaded", function () {
     height: 290px;    
   }
 
+  .search-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-top: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 10px; /* add slight inner spacing */
+  box-sizing: border-box;
+  width: 360px;
+  overflow-x: hidden; /* prevent scroll overflow */
+}
+
 /* Post card styling */
 .post-card {
   background: #fce8b2;
