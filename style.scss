@@ -617,8 +617,7 @@ img {
  /* margin-left: 10px;*/
 }
 
-#search-query-title {
-   margin-top: -50px;	
+#search-query-title {	
    text-align: center;
    margin-left: 20px;
    margin-right: 20px;	
@@ -846,6 +845,10 @@ img {
    justify-content: left;	 
    margin-left: 475px; 
   }
+
+  #search-query-title {
+    margin-top: -50px;
+  }	  
   
 } /* End Desktop */
 
