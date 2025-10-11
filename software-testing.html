@@ -75,14 +75,23 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".prev-btn").addEventListener("click", () => {
         currentPage--;
         renderPage(currentPage);
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"  // smooth scroll to top
+        });
       });
     }
-    if (document.querySelector(".next-btn")) {
+   if (document.querySelector(".next-btn")) {
       document.querySelector(".next-btn").addEventListener("click", () => {
         currentPage++;
         renderPage(currentPage);
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
       });
     }
+    
   }
 
   // Load initial page (from ?page= if available)
