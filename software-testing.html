@@ -71,26 +71,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pagination.innerHTML = html;
 
-    if (document.querySelector(".prev-btn")) {
-      document.querySelector(".prev-btn").addEventListener("click", () => {
-        currentPage--;
-        renderPage(currentPage);
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"  // smooth scroll to top
+    if (document.querySelector(".next-btn")) {
+        document.querySelector(".next-btn").addEventListener("click", () => {
+          currentPage++;
+          renderPage(currentPage);
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }, 50); // slight delay fixes Firefox
         });
-      });
-    }
-   if (document.querySelector(".next-btn")) {
-      document.querySelector(".next-btn").addEventListener("click", () => {
-        currentPage++;
-        renderPage(currentPage);
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
+      }
+      if (document.querySelector(".prev-btn")) {
+        document.querySelector(".prev-btn").addEventListener("click", () => {
+          currentPage--;
+          renderPage(currentPage);
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }, 50);
         });
-      });
-    }
+      }
+
     
   }
 
