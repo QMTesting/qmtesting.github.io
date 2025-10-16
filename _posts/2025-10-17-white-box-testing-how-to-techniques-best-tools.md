@@ -1,4 +1,17 @@
+---
+layout: post
+title: "White Box Testing: How To Techniques & Best Tools"
+categories: ["Types of Testing"]
+image: /assets/images/Types/Functional-Testing.webp
+permalink: /white-box-testing-how-to-techniques-best-tools/
+tags: [software testing, QA, QC, white box testing]
+description: "A guide on how to techniques and best testing tools for white box testing."
+---
 
+<figure>
+  <img src="/assets/images/Types/Functional-Testing.webp" alt="Functional Testing" />
+  <figcaption>Image by storyset on Freepik</figcaption>
+</figure>
 
 Introduction
 In the realm of software development, ensuring the reliability and functionality of applications is paramount. One crucial aspect of this process is testing, which comes in various forms such as black box testing, grey box testing, and white box testing. Among these, white box testing holds a special place as it tests the internal workings of the software, examining the code and structure to validate its correctness. In this blog post, we will explore white box testing in depth: its techniques, examples of its application, and the tools that facilitate its implementation.
