@@ -2,7 +2,7 @@
 layout: post
 title: "White Box Testing: How To Techniques & Best Tools"
 categories: ["Types of Testing"]
-image: /assets/images/Types/white-box-testing.web
+image: /assets/images/Types/white-box-testing.webp
 permalink: /white-box-testing-how-to-techniques-best-tools/
 tags: [software testing, types of testing, QA, QC, white box testing]
 description: "A guide on how to techniques and best testing tools for white box testing."
