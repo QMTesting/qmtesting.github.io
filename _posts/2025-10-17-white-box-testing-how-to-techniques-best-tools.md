@@ -2,14 +2,14 @@
 layout: post
 title: "White Box Testing: How To Techniques & Best Tools"
 categories: ["Types of Testing"]
-image: /assets/images/Types/Functional-Testing.webp
+image: /assets/images/Types/white-box-testing.web
 permalink: /white-box-testing-how-to-techniques-best-tools/
-tags: [software testing, QA, QC, white box testing]
+tags: [software testing, types of testing, QA, QC, white box testing]
 description: "A guide on how to techniques and best testing tools for white box testing."
 ---
 
 <figure>
-  <img src="/assets/images/Types/Functional-Testing.webp" alt="Functional Testing" />
+  <img src="/assets/images/Types/white-box-testing.web" alt="white box testing" />
   <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
