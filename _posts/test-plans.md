@@ -148,6 +148,3 @@ This structure improves collaboration between testers and developers, provides c
 
 ---
 
-*Author’s Note:*  
-If you’d like, I can also provide a **YAML pipeline snippet** or **PowerShell script example** to automate Test Plan creation and test result updates for each sprint. Would you like me to include that as a follow-up post?
-
