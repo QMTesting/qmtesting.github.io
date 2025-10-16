@@ -202,10 +202,12 @@ You can easily integrate the script above in your YAML pipeline as a QA setup st
       env:
         SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 
-Make sure your pipeline settings include:
+
+
+### Make sure your pipeline settings include:
 ✅ “Allow scripts to access OAuth token” → Enabled
 
-8. Benefits of Automating Test Plan Creation
+## 8. Benefits of Automating Test Plan Creation
 
 | **Benefit**      | **Description**                                                                  |
 | ---------------- | -------------------------------------------------------------------------------- |
