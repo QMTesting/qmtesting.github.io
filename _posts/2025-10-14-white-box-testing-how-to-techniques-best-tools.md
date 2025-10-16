@@ -117,7 +117,7 @@ Detects errors in compound logical expressions.
 
 ## 🧩 Example of White Box Testing
 
-Let’s consider a simple function that calculates the factorial of a number:
+### Let’s consider a simple function that calculates the factorial of a number:
 
 def factorial(n):
     if n < 0:
@@ -144,7 +144,7 @@ Example inputs: n = -1, n = 5.
 
 #### Path Coverage:
 
-Explore all possible execution paths:
+##### Explore all possible execution paths:
 
 Invalid input path (n < 0).
 
@@ -166,11 +166,14 @@ Implementing white box testing effectively requires a combination of code covera
 
 ### 1. Code Coverage Tools
 
-JaCoCo (Java): Measures how much of your code has been tested and provides detailed coverage reports (statement, branch, and line coverage).
+#### JaCoCo (Java): 
+Measures how much of your code has been tested and provides detailed coverage reports (statement, branch, and line coverage).
 
-Coverage.py (Python): A powerful tool that tracks which parts of your code were executed during testing.
+#### Coverage.py (Python): 
+A powerful tool that tracks which parts of your code were executed during testing.
 
-Istanbul (JavaScript/Node.js): Generates visual coverage reports and integrates easily with CI/CD pipelines.
+#### Istanbul (JavaScript/Node.js): 
+Generates visual coverage reports and integrates easily with CI/CD pipelines.
 
 ### 2. Static Code Analysis Tools
 
