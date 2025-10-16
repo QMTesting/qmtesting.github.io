@@ -9,7 +9,7 @@ description: "A guide on how to techniques and best testing tools for white box 
 ---
 
 <figure>
-  <img src="/assets/images/Types/white-box-testing.web" alt="white box testing" />
+  <img src="/assets/images/Types/white-box-testing.webp" alt="white box testing" />
   <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
