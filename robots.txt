@@ -1,6 +1,7 @@
-# Default: allow everyone else
+# Allow all crawlers to access the site, except for the feed file
 User-agent: *
-Disallow:
+Disallow: /feed.xml
 
+# Sitemap for better indexing
 Sitemap: https://qmstesting.com/sitemap.xml
 
