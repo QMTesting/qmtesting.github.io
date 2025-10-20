@@ -1271,7 +1271,10 @@ figcaption {
             margin-bottom: 15px;
           }
         
-        
+          .welcome-heding {
+            text-align: center;
+			margin-top: 0px;  
+            }
         
           .site-info {
             display: flex;
@@ -1401,6 +1404,7 @@ figcaption {
             margin-left: 15px;
             font-size: 30px;
             width: 350px;
+			margin-top: 0px;  
             }
            .welcome-text {
              text-align: center;
