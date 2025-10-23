@@ -1613,6 +1613,12 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+body.post-page img {
+	width: 700px;
+	height: 500px;
+}
+	
 }	
 
 /* Helps avoid page shift or jump - end */
