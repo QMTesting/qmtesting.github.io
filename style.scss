@@ -14,9 +14,9 @@
 /**************/
 
 /* Helps avoid page shift or jump */
-/*html {  
-  overflow-y: scroll;  
-}*/
+html {
+  scrollbar-gutter: stable;
+}
 
 
 html {
