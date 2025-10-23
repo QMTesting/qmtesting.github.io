@@ -1603,6 +1603,15 @@ html {
 html {
   overflow-y: scroll;
 }
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Helps avoid page shift or jump - end */
  
 
