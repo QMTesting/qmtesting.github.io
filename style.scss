@@ -13,16 +13,6 @@
 /* BASE RULES */
 /**************/
 
-/* Helps avoid page shift or jump */
-html {
-  scrollbar-gutter: stable;
-}
-html {
-  overflow-y: scroll;
-}
-/* Helps avoid page shift or jump - end */
-
-
 html {
   font-size: 100%;
 }
@@ -1605,6 +1595,15 @@ article ul ul, main ul ul {
     height: 60px !important;
     width: 60px !important;	
   }	
+
+/* Helps avoid page shift or jump */
+html {
+  scrollbar-gutter: stable;
+}
+html {
+  overflow-y: scroll;
+}
+/* Helps avoid page shift or jump - end */
  
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
