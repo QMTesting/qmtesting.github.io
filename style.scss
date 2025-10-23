@@ -17,6 +17,10 @@
 html {
   scrollbar-gutter: stable;
 }
+html {
+  overflow-y: scroll;
+}
+/* Helps avoid page shift or jump - end */
 
 
 html {
