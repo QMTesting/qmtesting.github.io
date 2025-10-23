@@ -23,12 +23,12 @@ body {
   color: $darkGray;
 }
 
-/*.container {
+.container {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-}*/ /*CHANGE*/
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
@@ -1153,7 +1153,7 @@ a {
 
 /* Prevent entire page from horizontal overflow */
 html, body {
- /* max-width: 100%;*/ /*CHANGE*/
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -1610,8 +1610,8 @@ body {
 
 @media (min-width: 780px) and (max-width: 1280px) {
 .container {
- /* max-width: 1000px;*/ /*CHANGE*/
- /* margin: 0 auto;*/
+  max-width: 1000px;
+  margin: 0 auto;
 }
 }	
 
