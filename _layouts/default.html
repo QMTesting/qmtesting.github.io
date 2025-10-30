@@ -21,7 +21,13 @@ layout: compress
 
     <!--Umami Web Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="f120136b-9fbd-46b7-8ec1-77e176fbdd37"></script>
-    
+
+    <script>
+  if (window.location.hostname.includes("github.io")) {
+    window.location.replace("https://qmstesting.com" + window.location.pathname);
+  }
+</script>
+
     {% comment %}
     Set your domain in _config.yml:
     url: "https://qmstesting.com"
