@@ -19,13 +19,14 @@ description: "A guide on how to Structure Test Plans, Suites, and Pipelines."
 Designing a clean, scalable structure for your Azure DevOps Test Plans is critical for maintaining traceability, managing automation, and aligning with Agile sprint cycles.
 In this post, we’ll cover how to organize Test Plans, Test Suites, and pipelines around User Stories and Sprints — and show how to automate it using PowerShell and Azure DevOps REST APIs.
 
-🔹 1. Recommended Structure Overview
+## 1. Recommended Structure Overview
 Element	Recommended Practice	Purpose
 Test Plan	One per Sprint	Keeps testing aligned to sprint scope and timelines
 Test Suite	One per User Story	Maintains story-level traceability and organization
 Test Cases	Linked to User Story & Suite	Ensures accurate reporting and automation targeting
 Pipeline	One pipeline per User Story (optional hybrid)	Enables faster feedback and parallel execution
-🔹 2. Why One Test Plan per Sprint Works Best
+
+2. Why One Test Plan per Sprint Works Best
 
 Creating a dedicated Test Plan for each sprint aligns test execution directly with sprint goals and deliverables.
 
