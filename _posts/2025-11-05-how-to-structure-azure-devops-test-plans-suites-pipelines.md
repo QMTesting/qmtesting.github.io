@@ -9,7 +9,7 @@ description: "A guide on how to Structure Test Plans, Suites, and Pipelines."
 ---
 
 <figure>
-  <img src="/assets/images/TestPlans-Suites-Pipelines.webp" alt="Azure DevOps Test Plans, Suites, and Pipelines" />
+  <img src="/assets/images/DevOps/TestPlans-Suites-Pipelines.webp" alt="Azure DevOps Test Plans, Suites, and Pipelines" />
   <figcaption>Image by Freepik</figcaption>
 </figure>
 
