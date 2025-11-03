@@ -1,8 +1,20 @@
+---
+layout: post
+title: "How to Structure Test Plans, Suites, and Pipelines"
+categories: ["Azure DevOps"]
+image: /assets/images/DevOps/Azure-DevOps-Testing.webp
+permalink: /how-to-structure-azure-devops-test-plans-suites-pipelines/
+tags: [software testing, QA, QC, Azure DevOps, automation, test plans, suites, pipelines]
+description: "A guide on how to Structure Test Plans, Suites, and Pipelines."
+---
+
+<figure>
+  <img src="/assets/images/DevOps/Azure-DevOps-Testing.webp" alt="Azure DevOps Testing" />
+  <figcaption>Image by vectorjuice on Freepik</figcaption>
+</figure>
 
 
-
-
-Azure DevOps Best Practices: How to Structure Test Plans, Suites, and Pipelines
+## Introduction
 
 Designing a clean, scalable structure for your Azure DevOps Test Plans is critical for maintaining traceability, managing automation, and aligning with Agile sprint cycles.
 In this post, we’ll cover how to organize Test Plans, Test Suites, and pipelines around User Stories and Sprints — and show how to automate it using PowerShell and Azure DevOps REST APIs.
