@@ -187,3 +187,17 @@ foreach ($story in $userStories.workItems) {
         Write-Host "🔗 Linked Test Case $tcId to Suite $suiteId"
     }
 }
+
+| Element               | Best Practice                                                      |
+| --------------------- | ------------------------------------------------------------------ |
+| **Test Plan**         | One per sprint                                                     |
+| **Test Suite**        | One per user story                                                 |
+| **Test Cases**        | Linked to stories & added to suites                                |
+| **Tags**              | Use for filtering (e.g., “UI”, “Regression”, “Smoke”)              |
+| **Pipeline Strategy** | Per story for faster feedback, plus nightly regression runs        |
+| **Automation**        | Use PowerShell or REST APIs to create plans and suites dynamically |
+
+🧭 Conclusion
+
+Adopting a per sprint Test Plan and per user story Test Suite model gives your QA process clarity, flexibility, and automation-readiness.
+By aligning your test management structure with your Agile workflow — and leveraging scripts to automate repetitive setup — you’ll achieve faster releases, clearer traceability, and higher confidence in your test coverage.
