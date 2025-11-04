@@ -1623,25 +1623,25 @@ body.post-page img {
 
 /* Helps avoid page shift or jump - end */
 
-/* Improve code block aesthetics on mobile and desktop */
-.highlight pre, pre {
-  background-color: #f5f5f5;       // Light gray background
-  border: 1px solid #ccc;          // Subtle border
-  padding: 1em;                    // Comfortable spacing
-  border-radius: 6px;              // Rounded corners
-  overflow-x: auto;                // Horizontal scroll
-  font-size: 0.9em;                // Slightly smaller font
+/* Force scrollable, bordered code blocks on all devices */
+.highlight, .highlight pre, pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9em;
   line-height: 1.5;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1); // Soft shadow
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
 }
 
 /* Ensure mobile responsiveness */
 @media screen and (max-width: 768px) {
-  .highlight pre, pre {
-    white-space: pre;              // Preserve formatting
+  .highlight, .highlight pre, pre {
+    white-space: pre;
     word-wrap: normal;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; // Smooth scroll on iOS
   }
 }
 
