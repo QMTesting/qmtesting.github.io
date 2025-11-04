@@ -1623,9 +1623,9 @@ body.post-page img {
 
 /* Helps avoid page shift or jump - end */
 
-/* 🔧 Unified styling for code blocks across all devices */
+/* Unified styling for code blocks across all devices */
 .highlight {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5 !important;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 1em;
@@ -1635,6 +1635,7 @@ body.post-page img {
 }
 
 .highlight pre {
+  background-color: inherit !important;
   margin: 0;
   white-space: pre;
   overflow-x: auto;
@@ -1644,12 +1645,13 @@ body.post-page img {
 }
 
 .highlight code {
+  background-color: inherit !important;
   display: block;
   white-space: inherit;
   word-wrap: normal;
-  background: none;
   padding: 0;
 }
+
 
 
 
