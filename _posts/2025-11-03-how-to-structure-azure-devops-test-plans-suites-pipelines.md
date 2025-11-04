@@ -117,7 +117,7 @@ Below is a PowerShell template that:
 - Adds linked test cases automatically
 
 
-## Azure DevOps Test Plan Automation PowerShell Script
+## 🔹 7. Azure DevOps Test Plan Automation PowerShell Script
 
 ```powershell
 # ==============================
@@ -197,7 +197,7 @@ foreach ($story in $userStories.workItems) {
 ```
 
 
-💡 Final Recommendations
+## 💡 Final Recommendations
 
 | Element               | Best Practice                                                      |
 | --------------------- | ------------------------------------------------------------------ |
@@ -208,7 +208,7 @@ foreach ($story in $userStories.workItems) {
 | **Pipeline Strategy** | Per story for faster feedback, plus nightly regression runs        |
 | **Automation**        | Use PowerShell or REST APIs to create plans and suites dynamically |
 
-🧭 Conclusion
+## 🧭 Conclusion
 
 Adopting a per-sprint Test Plan and per-story Test Suite model gives your QA process clarity, flexibility, and automation-readiness.
 By aligning your test management structure with your Agile workflow — and leveraging scripts to automate repetitive setup — you’ll achieve faster releases, clearer traceability, and higher confidence in your test coverage.
