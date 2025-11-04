@@ -119,8 +119,12 @@ Below is a PowerShell template that:
 
 ## Azure DevOps Test Plan Automation PowerShell Script
 
-### Define environment variables
+```powershell
+# ==============================
+# Azure DevOps Test Plan Automation Script
+# ==============================
 
+# Define environment variables
 $orgUrl = "https://dev.azure.com/carolineshewchuk0785"
 $project = "FWSEP_0785_Eclipse"
 $sprintName = "Sprint 18"
@@ -128,14 +132,13 @@ $iterationPath = "$project\$sprintName"
 $areaPath = "$project"
 $token = $env:SYSTEM_ACCESSTOKEN  # Use System.AccessToken in Azure Pipelines
 
-### Authorization header
-
+# Authorization header
 $headers = @{
     Authorization = "Bearer $token"
     "Content-Type" = "application/json"
 }
 
-### Create Test Plan for Sprint
+# Create Test Plan for Sprint
 $planBody = @{
     name      = "$sprintName - Test Plan"
     area      = @{ path = $areaPath }
@@ -145,10 +148,9 @@ $planBody = @{
 $planUri = "$orgUrl/$project/_apis/test/plans?api-version=7.1-preview.1"
 $plan = Invoke-RestMethod -Uri $planUri -Method Post -Headers $headers -Body $planBody
 $planId = $plan.id
-Write-Host "Created Test Plan ID: $planId"
+Write-Host "✅ Created Test Plan ID: $planId"
 
-### Get all active User Stories in Sprint
-
+# Get all active User Stories in Sprint
 $queryUri = "$orgUrl/$project/_apis/wit/wiql?api-version=7.1-preview.1"
 $query = @{
     query = @"
@@ -162,9 +164,9 @@ AND [System.IterationPath] = '$iterationPath'
 
 $userStories = Invoke-RestMethod -Uri $queryUri -Method Post -Headers $headers -Body $query
 
-### Create Test Suite per User Story and Add Linked Test Cases
-
-foreach ($story in $userStories.workItems) {    $storyId = $story.id
+# Create Test Suite per User Story and Add Linked Test Cases
+foreach ($story in $userStories.workItems) {
+    $storyId = $story.id
     $storyDetails = Invoke-RestMethod -Uri "$orgUrl/$project/_apis/wit/workitems/$storyId?api-version=7.1-preview.3" -Headers $headers
     $storyTitle = $storyDetails.fields.'System.Title'
 
@@ -177,25 +179,23 @@ foreach ($story in $userStories.workItems) {    $storyId = $story.id
     $suiteUri = "$orgUrl/$project/_apis/test/plans/$planId/suites?api-version=7.1-preview.3"
     $suite = Invoke-RestMethod -Uri $suiteUri -Method Post -Headers $headers -Body $suiteBody
     $suiteId = $suite.id
-    Write-Host "Created Suite for User Story $storyId: $suiteId"
+    Write-Host "🧩 Created Suite for User Story $storyId: $suiteId"
 
-    ### Get linked test cases
-
+    # Get linked test cases
     $relations = Invoke-RestMethod -Uri "$orgUrl/$project/_apis/wit/workitems/$storyId/relations?api-version=7.1-preview.3" -Headers $headers
     $testCaseIds = $relations.relations `
         | Where-Object { $_.rel -eq "System.LinkTypes.Hierarchy-Forward" -and $_.url -match "/workItems/(\d+)" } `
         | ForEach-Object { ($_ -match "/workItems/(\d+)") | Out-Null; $Matches[1] }
 
-    ### Add each test case to suite
-
+    # Add each test case to suite
     foreach ($tcId in $testCaseIds) {
         $addUri = "$orgUrl/$project/_apis/test/plans/$planId/suites/$suiteId/testcases/$tcId?api-version=7.1-preview.3"
         Invoke-RestMethod -Uri $addUri -Method Post -Headers $headers
         Write-Host "🔗 Linked Test Case $tcId to Suite $suiteId"
     }
 }
+```
 
-----
 
 💡 Final Recommendations
 
