@@ -13,13 +13,6 @@ description: "A guide on how to Structure Test Plans, Suites, and Pipelines."
   <figcaption>Image by Freepik</figcaption>
 </figure>
 
----
-layout: post
-title: "Azure DevOps Best Practices: How to Structure Test Plans, Suites, and Pipelines"
-description: "Learn how to structure Azure DevOps Test Plans, Test Suites, and Pipelines around Agile sprints and user stories — and automate it using PowerShell and REST APIs."
-tags: [Azure DevOps, QA Automation, PowerShell, Test Management, Agile]
----
-
 ## 🧭 Introduction
 
 Designing a clean, scalable structure for your **Azure DevOps Test Plans** is critical for maintaining traceability, managing automation, and aligning with Agile sprint cycles.  
