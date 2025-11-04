@@ -196,6 +196,9 @@ foreach ($story in $userStories.workItems) {
 }
 ```
 
+```powershell
+# This is a very long line that should trigger horizontal scrolling on mobile devices: https://dev.azure.com/carolineshewchuk0785/FWSEP_0785_Eclipse/_apis/test/plans/1234567890/suites/9876543210/testcases/1234567890?api-version=7.1-preview.3
+```
 
 ## 💡 Final Recommendations
 
