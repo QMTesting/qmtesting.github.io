@@ -1623,15 +1623,16 @@ body.post-page img {
 
 /* Helps avoid page shift or jump - end */
 
-/* 🔧 Force background and scroll styling for code blocks */
+/* 🔧 Clean, scrollable code block styling for all devices */
 div.highlight {
   background-color: #f5f5f5 !important;
-  background: #f5f5f5 !important;
-  border: 5px solid #ccc !important;
+  background: #f5f5f5 !important;	
+  border: 1px solid #ccc !important;
   border-radius: 6px !important;
   padding: 1em !important;
   margin: 1em 0 !important;
   overflow-x: auto !important;
+  overflow-y: hidden !important; /* ✅ Remove vertical scrollbar */
   box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
 }
 
@@ -1641,6 +1642,7 @@ div.highlight code {
   margin: 0 !important;
   white-space: pre !important;
   overflow-x: auto !important;
+  overflow-y: hidden !important; /* ✅ Remove vertical scrollbar */
   font-size: 0.9em !important;
   line-height: 1.5 !important;
   display: block !important;
