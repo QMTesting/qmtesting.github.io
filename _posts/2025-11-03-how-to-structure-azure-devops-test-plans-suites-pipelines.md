@@ -120,12 +120,12 @@ Below is a PowerShell template that:
 ## 🔹 7. Azure DevOps Test Plan Automation PowerShell Script
 
 ```powershell
-# ==============================
+# ==========================================
 # Azure DevOps Test Plan Automation Script
-# ==============================
+# ==========================================
 
 # Define environment variables
-$orgUrl = "https://dev.azure.com/carolineshewchuk0785"
+$orgUrl = "https://dev.azure.com/cams0785"
 $project = "FWSEP_0785_Eclipse"
 $sprintName = "Sprint 18"
 $iterationPath = "$project\$sprintName"
