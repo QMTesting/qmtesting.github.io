@@ -117,11 +117,10 @@ Below is a PowerShell template that:
 - Adds linked test cases automatically
 
 ```powershell
-# ==============================
-# Azure DevOps Test Plan Automation Script
-# ==============================
+## Azure DevOps Test Plan Automation Script
 
-# Define environment variables
+### Define environment variables
+
 $orgUrl = "https://dev.azure.com/carolineshewchuk0785"
 $project = "FWSEP_0785_Eclipse"
 $sprintName = "Sprint 18"
