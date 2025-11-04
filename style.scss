@@ -1649,6 +1649,11 @@ div.highlight code {
   max-width: 100% !important;
   -webkit-overflow-scrolling: touch !important;
 }
+/* Add padding to prevent scroll bar overlap */
+div.highlight pre,
+div.highlight code {
+  padding-bottom: 1.5em !important; /* ✅ Extra space below last line */
+}
 
 
 
