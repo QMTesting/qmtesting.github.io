@@ -1623,7 +1623,7 @@ body.post-page img {
 
 /* Helps avoid page shift or jump - end */
 
-/* Target all layers of code block */
+/* Unified styling for code blocks on all devices */
 .highlight, .highlight pre, .highlight code, pre, code {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
@@ -1633,18 +1633,13 @@ body.post-page img {
   font-size: 0.9em;
   line-height: 1.5;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  -webkit-overflow-scrolling: touch;
+  white-space: pre;
+  word-wrap: normal;
+  display: block;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
 }
 
-/* Mobile-specific tweaks */
-@media screen and (max-width: 768px) {
-  .highlight, .highlight pre, .highlight code, pre, code {
-    white-space: pre;
-    word-wrap: normal;
-    overflow-x: auto;
-    display: block;
-  }
-}
 
 
 
