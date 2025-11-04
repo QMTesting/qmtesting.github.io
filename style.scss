@@ -1622,6 +1622,24 @@ body.post-page img {
 }	
 
 /* Helps avoid page shift or jump - end */
+
+/* Ensure code blocks retain styling on mobile */
+.highlight pre, pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+/* Fix for mobile view */
+@media screen and (max-width: 768px) {
+  .highlight pre, pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
  
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
