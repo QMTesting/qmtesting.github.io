@@ -116,8 +116,8 @@ Below is a PowerShell template that:
 - Creates a Test Suite for each active User Story  
 - Adds linked test cases automatically
 
-```powershell
-## Azure DevOps Test Plan Automation Script
+
+## Azure DevOps Test Plan Automation PowerShell Script
 
 ### Define environment variables
 
