@@ -212,3 +212,11 @@ foreach ($story in $userStories.workItems) {
 
 Adopting a per-sprint Test Plan and per-story Test Suite model gives your QA process clarity, flexibility, and automation-readiness.
 By aligning your test management structure with your Agile workflow — and leveraging scripts to automate repetitive setup — you’ll achieve faster releases, clearer traceability, and higher confidence in your test coverage.
+
+<style>
+  @media only screen and (max-width: 780px) {
+    .language-powershell highlighter-rouge {
+       width: 400px;
+    }
+  }
+</style>  
