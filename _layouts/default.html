@@ -30,6 +30,15 @@ layout: compress
       }
     </script>
 
+   <script>
+      if (location.hostname === "qmtesting.github.io") {
+        document.write('<meta name="robots" content="noindex">');
+      }
+   </script>
+  
+
+    
+
     {% comment %}
     Set your domain in _config.yml:
     url: "https://qmstesting.com"
@@ -93,7 +102,8 @@ layout: compress
 
     
     <!-- Add logo as site logo in browser searches  - end -->
- 
+
+    
     
   </head>
 
