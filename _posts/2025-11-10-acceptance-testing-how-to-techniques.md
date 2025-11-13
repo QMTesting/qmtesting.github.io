@@ -2,13 +2,13 @@
 layout: post
 title: "Acceptance Testing in the STLC Best How To Techniques"
 categories: ["Types of Testing"]
-image: "/assets/images/Types/acceptance-testing-techniques.webp"
+image: "/assets/images/Types/Acceptance-Testing-techniques.webp"
 tags: [software testing, QA, QC, Types of Testing, Acceptance Testing]
 description: "A guide on acceptance testing techniques in the software testing life cycle (STLC)."
 ---
 
 <figure>
-  <img src="/assets/images/Types/acceptance-testing-techniques.webp" alt="Acceptance Testing How To Techniques" />
+  <img src="/assets/images/Types/Acceptance-Testing-techniques.webp" alt="Acceptance Testing How To Techniques" />
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
 
