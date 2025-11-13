@@ -825,7 +825,7 @@ img {
 
 .recent-post-card {
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 0px;
   overflow: hidden;
   text-align: center;
   width: 250px;	
@@ -843,7 +843,7 @@ img {
 }
 
 .recent-thumbnail img {
-  width: 245px;
+  width: 248px;
   height: 200px;
   /*object-fit: cover;*/
 }
