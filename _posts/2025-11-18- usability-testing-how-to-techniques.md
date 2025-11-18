@@ -3,7 +3,7 @@ layout: post
 title: "Usability Testing How To Techniques & Best Tools"
 categories: ["Types of Testing"]
 image: /assets/images/Types/usabilty-testing.webp
-permalink: /usability-testing-how to-techniques/
+permalink: /usability-testing-how-to-techniques/
 tags: [software testing, QA, QC, usability testing best practices, usability testing techniques]
 description: "A guide on software testing using usability testing, best practices and techniques."
 ---
