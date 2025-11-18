@@ -43,6 +43,14 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+   {% if page.tags %}
+  <div class="post-tags">
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   
 
   {% include disqus.html %}
