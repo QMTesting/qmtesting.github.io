@@ -44,11 +44,10 @@ layout: default
   </div>
 
    {% if page.tags %}
-    <div class="post-tags">
-      <strong>Keywords:</strong>
-      {{ page.tags | join: ", " }}
-    </div>
-   {% endif %}
+  <div class="post-tags">
+    <strong>Keywords:</strong> {{ page.tags | join: ", " }}
+  </div>
+  {% endif %}
 
   
 
