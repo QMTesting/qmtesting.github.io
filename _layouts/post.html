@@ -45,15 +45,25 @@ layout: default
 
    {% if page.tags %}
   <div class="post-tags">
-    <strong>Keywords:</strong> {{ page.tags | join: ", " }}
+    <strong>Keywords:</strong><br>
+    {{ page.tags | join: ", " }}
   </div>
   {% endif %}
 
-  <style>
+    <style>
+     @media only screen and (min-width: 820px) and (max-width: 2000px) {
     .post-tags {
       margin-top: 20px;
-      margin-left: 100px;
+      margin-left: 150px;
     }
+     }  
+     @media only screen and (max-width: 780px) {   
+     .post-tags {
+      margin-top: 20px;
+     } 
+     }   
+       
+     
   </style>  
 
   {% include disqus.html %}
