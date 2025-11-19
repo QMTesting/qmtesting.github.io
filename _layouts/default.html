@@ -86,6 +86,10 @@ layout: compress
     
     <!-- Add logo as site logo in browser searches  - end -->
 
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+    {% endif %}
+
     
     
   </head>
