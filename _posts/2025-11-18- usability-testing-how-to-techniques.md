@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Usability Testing How To Techniques & Best Tools"
+title: "Usability Testing How To Techniques"
 categories: ["Types of Testing"]
 image: /assets/images/Types/usabilty-testing.webp
 permalink: /usability-testing-how-to-techniques/
