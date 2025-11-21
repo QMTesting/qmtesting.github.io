@@ -163,10 +163,10 @@ layout: compress
             </div>
           </div>
 
- <!-- Desktop Navigation -->
+          <!-- Desktop Navigation -->
 <div class="desktop-header-nav"
      style="
-       width: 100vw;
+       width: 100%;
        background: #bc960d;
        display: flex;
        justify-content: center;
@@ -174,25 +174,28 @@ layout: compress
   
   <nav id="desk-header-nav"
        style="
-         width: 1800px;               /* Match your grid width exactly */
+         width: 100%;
+         max-width: 1800px;              /* Match your grid width */
          display: flex;
          align-items: center;
-         justify-content: flex-start; /* Align nav items to the left */
-         gap: 20px;
-         padding: 15px 30px 25px 30px;
+         justify-content: space-between;
+         padding: 15px 30px 25px 30px;   /* Prevent clipping */
          box-sizing: border-box;
+         overflow-x: auto;               /* Ensures full visibility */
        ">
     
     <!-- Navigation Links -->
-    <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
-    <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
-    <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
-    <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
-    <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
+    <div style="display: flex; gap: 20px;">
+      <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
+      <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
+      <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
+      <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
+      <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
+    </div>
 
     <!-- Search Toggle and Form -->
     <div class="desktop-search"
-         style="display: flex; align-items: center; gap: 10px; margin-left: auto;">
+         style="display: flex; align-items: center; gap: 10px;">
       
       <button id="desktop-search-toggle" aria-label="Search"
               style="font-size: 18px; background: none; border: none; cursor: pointer;">
@@ -215,6 +218,7 @@ layout: compress
     </div>
   </nav>
 </div>
+
 
     
           
