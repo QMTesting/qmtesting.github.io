@@ -164,24 +164,37 @@ layout: compress
           </div>
 
      <!-- Desktop Navigation -->
-       <!-- Desktop Navigation -->
-<div class="desktop-header-nav">
-  <nav id="desk-header-nav">
-    <div class="nav-links">
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/software-testing" class="head-test">Software Testing</a>
-      <a href="{{ site.baseurl }}/types-of-testing" class="head-types">Types of Testing</a>
-      <a href="{{ site.baseurl }}/automation" class="head-auto">Automation</a>
-      <a href="{{ site.baseurl }}/azure-devops" class="head-devops">Azure DevOps</a>
-    </div>
+<div class="desktop-header-nav" 
+     style="width: 100%; background: #bc960d; display: flex; justify-content: center;">
+  
+  <nav id="desk-header-nav" 
+       style="width: 95%; max-width: 2000px; display: flex; justify-content: flex-start; align-items: center; gap: 20px; margin: 0 auto; padding: 15px 0 25px 0;">
+    
+    <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
+    <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
+    <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
+    <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
+    <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
 
-    <div class="desktop-search">
-      <button id="desktop-search-toggle" aria-label="Search">🔍</button>
-      <div id="desktop-search-form">
-        <button id="desktop-search-close" aria-label="Close Search">❌</button>
-        <form id="desktop-search-form-element">
-          <input type="text" id="desktop-search-input" placeholder="Search..." />
-          <button type="submit" id="desktop-submit-btn">🔍</button>
+    <!-- Search -->
+    <div class="desktop-search" 
+         style="position: relative; display: flex; align-items: center; margin-left: auto; gap: 10px;">
+      
+      <button id="desktop-search-toggle" aria-label="Search" 
+              style="font-size: 18px; background: none; border: none; cursor: pointer;">
+        🔍
+      </button>
+      
+      <div id="desktop-search-form" style="display: none; align-items: center; gap: 5px;">
+        <button id="desktop-search-close" aria-label="Close Search" 
+                style="font-size: 18px; background: none; border: none; color: red; cursor: pointer;">❌</button>
+        
+        <form id="desktop-search-form-element" style="display: flex; gap: 5px;">
+          <input type="text" id="desktop-search-input" 
+                 style="padding: 4px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" 
+                 placeholder="Search..." />
+          <button type="submit" id="desktop-submit-btn" 
+                  style="font-size: 19px; background: none; border: none; cursor: pointer;">🔍</button>
         </form>
       </div>
     </div>
