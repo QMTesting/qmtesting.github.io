@@ -164,29 +164,29 @@ layout: compress
           </div>
 
      <!-- Desktop Navigation -->
-        <div class="desktop-header-nav">
-          <nav id="desk-header-nav">
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/software-testing" class="head-test">Software Testing</a>
-            <a href="{{ site.baseurl }}/types-of-testing" class="head-types">Types of Testing</a>
-            <a href="{{ site.baseurl }}/automation" class="head-auto">Automation</a>
-            <a href="{{ site.baseurl }}/azure-devops" class="head-devops">Azure DevOps</a>
-        
-            <div class="desktop-search">
-              <!-- Main nav magnifying glass icon -->
-              <button id="desktop-search-toggle" aria-label="Search">🔍</button>
-        
-              <!-- Container shown on toggle -->
-              <div id="desktop-search-form">
-                <button id="desktop-search-close" aria-label="Close Search">❌</button>
-                <form id="desktop-search-form-element">
-                  <input type="text" id="desktop-search-input" placeholder="Search..." />
-                  <button type="submit" id="desktop-submit-btn">🔍</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        </div>
+       <!-- Desktop Navigation -->
+<div class="desktop-header-nav">
+  <nav id="desk-header-nav">
+    <div class="nav-links">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/software-testing" class="head-test">Software Testing</a>
+      <a href="{{ site.baseurl }}/types-of-testing" class="head-types">Types of Testing</a>
+      <a href="{{ site.baseurl }}/automation" class="head-auto">Automation</a>
+      <a href="{{ site.baseurl }}/azure-devops" class="head-devops">Azure DevOps</a>
+    </div>
+
+    <div class="desktop-search">
+      <button id="desktop-search-toggle" aria-label="Search">🔍</button>
+      <div id="desktop-search-form">
+        <button id="desktop-search-close" aria-label="Close Search">❌</button>
+        <form id="desktop-search-form-element">
+          <input type="text" id="desktop-search-input" placeholder="Search..." />
+          <button type="submit" id="desktop-submit-btn">🔍</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
 
        
         <style>
@@ -197,59 +197,62 @@ layout: compress
           }  
 
          .desktop-header-nav {
-          width: 100%;
-          background: #bc960d;
-          display: flex;
-          justify-content: flex-start;   /* align nav to the left */
-          padding-left: 1.5cm;           /* shift everything inward */
-        }
-        
-        #desk-header-nav {
-          display: flex;
-          align-items: center;
-          gap: 20px;                     /* spacing between links */
-          margin: 0;
-          padding: 15px 0 25px 0;
-        }
-        
-        #desk-header-nav a {
-          text-decoration: none;
-          color: black;                  /* adjust to your theme */
-        }
-        
-        .desktop-search {
-          position: relative;
-          margin-left: auto;             /* pushes search to the far right */
-        }
-        
-        #desktop-search-toggle,
-        #desktop-search-close,
-        #desktop-submit-btn {
-          font-size: 18px;
-          background: none;
-          border: none;
-          cursor: pointer;
-        }
-        
-        #desktop-search-form {
-          display: none;
-          margin-left: 10px;
-          align-items: center;
-          gap: 5px;
-        }
-        
-        #desktop-search-form-element {
-          display: flex;
-          gap: 5px;
-        }
-        
-        #desktop-search-input {
-          padding: 4px;
-          font-size: 14px;
-          border-radius: 5px;
-          border: 1px solid #ccc;
-          width: 200px;
-        }
+  width: 100%;
+  background: #bc960d;
+  padding-left: 1.5cm; /* shifts nav left by 1.5 cm */
+}
+
+#desk-header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 25px 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.desktop-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#desktop-search-toggle,
+#desktop-search-close,
+#desktop-submit-btn {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#desktop-search-form {
+  display: none;
+  align-items: center;
+  gap: 5px;
+}
+
+#desktop-search-form-element {
+  display: flex;
+  gap: 5px;
+}
+
+#desktop-search-input {
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
 
        }  
           
