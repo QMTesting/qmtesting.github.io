@@ -168,17 +168,19 @@ layout: compress
      style="width: 100%; background: #bc960d; display: flex; justify-content: center;">
   
   <nav id="desk-header-nav" 
-       style="width: 95%; max-width: 2000px; display: flex; justify-content: flex-start; align-items: center; gap: 20px; margin: 0 auto; padding: 15px 0 25px 0;">
+       style="width: 100%; max-width: 2000px; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px 25px 30px; box-sizing: border-box;">
     
-    <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
-    <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
-    <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
-    <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
-    <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
+    <div style="display: flex; gap: 20px;">
+      <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
+      <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
+      <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
+      <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
+      <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
+    </div>
 
     <!-- Search -->
     <div class="desktop-search" 
-         style="position: relative; display: flex; align-items: center; margin-left: auto; gap: 10px;">
+         style="display: flex; align-items: center; gap: 10px;">
       
       <button id="desktop-search-toggle" aria-label="Search" 
               style="font-size: 18px; background: none; border: none; cursor: pointer;">
