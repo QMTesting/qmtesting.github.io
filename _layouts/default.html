@@ -164,36 +164,54 @@ layout: compress
           </div>
 
           <!-- Full-width Nav Bar -->
-
-           <div class="desktop-header-nav" style="width: 1800px; margin-right: 150px; background: #bc960d; display: inline">
-            <nav id="desk-header-nav" style="width: 1200px; border: 2px; padding-top: 0px; padding-bottom: 25px; padding-left: 15px; padding-right: 15px; display: inline; gap: 0px; margin-top: 15px; margin-right: 0px; margin-left: 500px;">
-                <a href="{{ site.baseurl }}/">Home</a>
-                <a href="{{ site.baseurl }}/software-testing" class="head-test">Software Testing</a>
-                <a href="{{ site.baseurl }}/types-of-testing" class="head-types">Types of Testing</a>
-                <a href="{{ site.baseurl }}/automation" class="head-auto">Automation</a>
-                <a href="{{ site.baseurl }}/azure-devops" class="head-devops">Azure DevOps</a>
-           
-              
-              <div class="desktop-search" style="position: relative; display: inline-block;">
-              <!-- Main nav magnifying glass icon -->
-              <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer; margin-left: 350px;">
-                🔍
-              </button>
-            
-              <!-- Container shown on toggle -->
-              <div id="desktop-search-form" style="display: none; margin-left: 75px; align-items: center; gap: 5px;">
-                <button id="desktop-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer;">❌</button>
-            
-                <form id="desktop-search-form-element" style="display: flex; gap: 5px;">
-                  <input type="text" id="desktop-search-input" style="padding: 0px 0px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;" placeholder="Search..." />
-                  <button type="submit" id="desktop-submit-btn" style="font-size: 19px; margin-left: 25px; background: none; border: none; cursor: pointer;">🔍</button>
-                </form>
-              </div>
-            </div>
+        
+<div class="desktop-header-nav"
+     style="width: 100vw; background: #bc960d; overflow-x: auto;">
   
-              
-            </nav>
-           </div>
+  <nav id="desk-header-nav"
+       style="
+         max-width: 1800px;              /* Match your grid width */
+         margin: 0 auto;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 15px 30px 25px 30px;
+         box-sizing: border-box;
+       ">
+    
+    <!-- Left-aligned nav links -->
+    <div class="nav-links" style="display: flex; gap: 20px;">
+      <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
+      <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
+      <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
+      <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
+      <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
+    </div>
+
+    <!-- Search toggle and form (restored IDs) -->
+    <div class="desktop-search" style="display: flex; align-items: center; gap: 10px;">
+      <button id="desktop-search-toggle" aria-label="Search"
+              style="font-size: 18px; background: none; border: none; cursor: pointer;">
+        🔍
+      </button>
+
+      <div id="desktop-search-form"
+           style="display: none; align-items: center; gap: 5px;">
+        <button id="desktop-search-close" aria-label="Close Search"
+                style="font-size: 18px; background: none; border: none; color: red; cursor: pointer;">❌</button>
+        <form id="desktop-search-form-element"
+              style="display: flex; gap: 5px;">
+          <input type="text" id="desktop-search-input"
+                 style="padding: 4px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;"
+                 placeholder="Search..." />
+          <button type="submit" id="desktop-submit-btn"
+                  style="font-size: 19px; background: none; border: none; cursor: pointer;">🔍</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
 
     
           
