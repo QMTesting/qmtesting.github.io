@@ -163,56 +163,47 @@ layout: compress
             </div>
           </div>
 
-           <!-- Full-width Nav Bar -->
-<div class="desktop-header-nav"
-     style="width: 100vw; background: #bc960d; overflow-x: hidden;">
-  
+          <!-- Full-width Nav Bar -->
+<div style="width:100%; background:#bc960d;">
   <nav id="desk-header-nav"
        style="
-         max-width: 1800px;         /* match your grid width */
-         margin: 0 auto;            /* center the nav bar */
-         display: flex;
-         align-items: center;
-         justify-content: flex-start;/* LEFT-align menu items */
-         gap: 0;
-         padding: 15px 30px 25px 30px;
-         box-sizing: border-box;
-         width: 100%;
+         max-width:1800px;        /* match your grid width */
+         margin:0 auto;           /* center the nav bar */
+         display:flex;
+         align-items:center;
+         padding:15px 30px 25px 30px;
+         box-sizing:border-box;
+         width:100%;
        ">
     
-    <!-- Left-aligned nav links (no flex-grow) -->
-    <div class="nav-links"
-         style="display: flex; gap: 20px; margin-right: 20px;">
+    <!-- Left-aligned links -->
+    <div style="display:flex; gap:20px; flex-shrink:0;">
       <a href="{{ site.baseurl }}/" style="text-decoration:none; color:black; font-weight:bold;">Home</a>
-      <a href="{{ site.baseurl }}/software-testing" class="head-test" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
-      <a href="{{ site.baseurl }}/types-of-testing" class="head-types" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
-      <a href="{{ site.baseurl }}/automation" class="head-auto" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
-      <a href="{{ site.baseurl }}/azure-devops" class="head-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
+      <a href="{{ site.baseurl }}/software-testing" style="text-decoration:none; color:black; font-weight:bold;">Software Testing</a>
+      <a href="{{ site.baseurl }}/types-of-testing" style="text-decoration:none; color:black; font-weight:bold;">Types of Testing</a>
+      <a href="{{ site.baseurl }}/automation" style="text-decoration:none; color:black; font-weight:bold;">Automation</a>
+      <a href="{{ site.baseurl }}/azure-devops" style="text-decoration:none; color:black; font-weight:bold;">Azure DevOps</a>
     </div>
 
-    <!-- Right-aligned search (auto pushes to far right) -->
-    <div class="desktop-search"
-         style="display: flex; align-items: center; gap: 10px; margin-left: auto;">
+    <!-- Right-aligned search -->
+    <div style="display:flex; align-items:center; gap:10px; margin-left:auto;">
       <button id="desktop-search-toggle" aria-label="Search"
-              style="font-size: 18px; background: none; border: none; cursor: pointer;">🔍</button>
-
-      <div id="desktop-search-form"
-           style="display: none; align-items: center; gap: 5px;">
+              style="font-size:18px; background:none; border:none; cursor:pointer;">🔍</button>
+      <div id="desktop-search-form" style="display:none; align-items:center; gap:5px;">
         <button id="desktop-search-close" aria-label="Close Search"
-                style="font-size: 18px; background: none; border: none; color: red; cursor: pointer;">❌</button>
-        <form id="desktop-search-form-element"
-              style="display: flex; gap: 5px;">
+                style="font-size:18px; background:none; border:none; color:red; cursor:pointer;">❌</button>
+        <form id="desktop-search-form-element" style="display:flex; gap:5px;">
           <input type="text" id="desktop-search-input"
-                 style="padding: 4px; font-size: 14px; border-radius: 5px; border: 1px solid #ccc; width: 200px;"
+                 style="padding:4px; font-size:14px; border-radius:5px; border:1px solid #ccc; width:200px;"
                  placeholder="Search..." />
           <button type="submit" id="desktop-submit-btn"
-                  style="font-size: 19px; background: none; border: none; cursor: pointer;">🔍</button>
+                  style="font-size:19px; background:none; border:none; cursor:pointer;">🔍</button>
         </form>
       </div>
     </div>
   </nav>
 </div>
-    
+
           
         </header>
       </div>
