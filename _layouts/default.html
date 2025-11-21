@@ -163,41 +163,35 @@ layout: compress
             </div>
           </div>
 
-       <!-- Desktop Navigation -->
-        <div class="desktop-header-nav">
-          <nav id="header-nav">
-            
-            <!-- Menu Items -->
-            <a href="/">Home</a>
-            <a href="/software-testing/">Software Testing</a>
-            <a href="/types-of-testing/">Types of Testing</a>
-            <a href="/automation/">Automation</a>
-            <a href="/azure-devops/">Azure DevOps</a>
-        
-            <!-- Spacer pushes search to right -->
-            <div class="nav-spacer"></div>
-        
-            <!-- Search -->
-            <div class="desktop-search">
-              
-              <!-- Search Form -->
-              <div id="desktop-search-form" class="search-form">
-                <form id="desktop-search-form-element">
-                  <input type="text" id="desktop-search-input" placeholder="Search..." />
-                  <button type="submit" id="desktop-submit-btn">🔍</button>
-                </form>
-                <button id="desktop-search-close" class="search-close-btn">❌</button>
+      <!-- Desktop Navigation -->
+          <div class="desktop-header-nav">
+            <nav id="header-nav" class="site-nav">
+          
+              <!-- Menu Items -->
+              <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/software-testing/">Software Testing</a>
+                <a href="/types-of-testing/">Types of Testing</a>
+                <a href="/automation/">Automation</a>
+                <a href="/azure-devops/">Azure DevOps</a>
               </div>
-        
-              <!-- Search Icon -->
-              <button id="desktop-search-toggle" class="search-toggle-btn">
-                🔍
-              </button>
-        
-            </div>
-
-        </nav>
-      </div>
+          
+              <!-- Spacer pushes search to far right -->
+              <div class="nav-spacer" aria-hidden="true"></div>
+          
+              <!-- Search (icon + inline expanding form) -->
+              <div class="desktop-search" id="desktop-search" aria-expanded="false">
+                <button id="desktop-search-toggle" class="search-toggle-btn" aria-label="Open search" aria-controls="desktop-search-form">🔍</button>
+          
+                <form id="desktop-search-form" class="search-form" role="search" action="/search" method="get">
+                  <input type="text" id="desktop-search-input" name="q" placeholder="Search..." autocomplete="off" />
+                  <button type="submit" id="desktop-submit-btn" class="search-submit" aria-label="Submit search">🔎</button>
+                  <button type="button" id="desktop-search-close" class="search-close-btn" aria-label="Close search">✖</button>
+                </form>
+              </div>
+          
+            </nav>
+          </div>
 
        
         <style>
@@ -206,7 +200,102 @@ layout: compress
           .desktop-header-nav {
             display: none
           }  
-         
+
+          /* container */
+        .desktop-header-nav { width:100%; background:#bc960d; }
+        .site-nav {
+          display:flex;
+          align-items:center;
+          gap:12px;
+          padding:10px 20px;
+        }
+        
+        /* left links */
+        .nav-links {
+          display:flex;
+          gap:18px;
+          align-items:center;
+        }
+        .nav-links a {
+          color:#000;
+          text-decoration:none;
+          font-weight:500;
+          font-size:16px;
+          white-space:nowrap;
+        }
+        
+        /* spacer pushes search to right */
+        .nav-spacer { flex:1 1 auto; }
+        
+        /* search area */
+        .desktop-search {
+          display:flex;
+          align-items:center;
+          gap:8px;
+        }
+        
+        /* search toggle (icon) */
+        .search-toggle-btn {
+          background:none;
+          border:none;
+          font-size:20px;
+          cursor:pointer;
+          padding:6px;
+        }
+        
+        /* the inline form (hidden by default via max-width) */
+        .search-form {
+          display:flex;
+          align-items:center;
+          gap:6px;
+          /* start collapsed so it takes no visible width */
+          max-width:0;
+          overflow:hidden;
+          transition: max-width 260ms ease, opacity 200ms ease, padding 160ms ease;
+          opacity:0;
+          padding:0;
+          border-radius:6px;
+          border:1px solid rgba(0,0,0,0.12);
+          background:#fff;
+        }
+        
+        /* when open, give it space and padding */
+        .desktop-search.open .search-form {
+          max-width:360px; /* expand width — change as needed */
+          opacity:1;
+          padding:6px;
+        }
+        
+        /* input styling */
+        .search-form input[type="text"]{
+          border:1px solid #ccc;
+          border-radius:4px;
+          padding:6px 8px;
+          font-size:14px;
+          min-width:140px;      /* ensures input has sensible minimum size */
+          width:100%;
+          box-sizing:border-box;
+        }
+        
+        /* submit & close buttons inline */
+        .search-submit,
+        .search-close-btn {
+          background:none;
+          border:none;
+          font-size:16px;
+          cursor:pointer;
+          padding:4px;
+        }
+        
+        /* ensure the form doesn't push content below on small screens — responsive tweak */
+        @media (max-width:720px){
+          /* adapt for small screens: stack or hide as desired */
+          .nav-links { display:none; } /* or choose a different behaviour for mobile */
+          .nav-spacer { display:none; }
+          .desktop-search { margin-left:auto; }
+        }
+        
+                 
 
        }  
           
