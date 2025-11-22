@@ -1429,10 +1429,7 @@ figcaption {
         }
         .head-devops {
           display: none;
-        } 
-        .desktop-header-nav {
-          display: none;
-        }     
+        }    
 
         } /* End Mobile*/
 
@@ -1558,6 +1555,13 @@ body.post-page img {
 	     
 
 /* Helps avoid page shift or jump - end */
+
+/* Hide desktop nav on small screens */
+@media screen and (max-width: 768px) {
+  .desktop-header-nav {
+    display: none !important;
+  }
+}
 
 /* 🔧 Clean, scrollable code block styling for all devices */
 div.highlight {
