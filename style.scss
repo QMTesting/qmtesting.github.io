@@ -1431,7 +1431,7 @@ figcaption {
           display: none;
         } 
         .desktop-header-nav {
-          display: none
+          display: none;
         }     
 
         } /* End Mobile*/
@@ -1555,17 +1555,6 @@ body.post-page img {
 }
 	
 }	
-
-
-
-       
-
-   /* Top navigation menu */
-   @media only screen and (max-width: 760px) { 
-          .desktop-header-nav {
-            display: none
-          }  
-   }
 	     
 
 /* Helps avoid page shift or jump - end */
