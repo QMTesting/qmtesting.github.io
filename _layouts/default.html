@@ -175,7 +175,7 @@ layout: compress
               
               <div class="desktop-search" style="position: relative; display: inline-block;">
               <!-- Main nav magnifying glass icon -->
-              <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer; margin-left: 320px;">
+              <button id="desktop-search-toggle" aria-label="Search" style="font-size: 18px; background: none; border: none; cursor: pointer;">
                 🔍
               </button>
             
@@ -198,6 +198,14 @@ layout: compress
         </header>
       </div>
     </div>
+
+    <style>
+    .desktop-header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    </style>  
 
     <div id="main" role="main" class="container">
       {{ content }}
