@@ -6,12 +6,13 @@ image: /assets/images/Auto/selenium-testing-automation.webp
 permalink: /automate-website-login-with-selenium-webdriver/
 tags: [software testing, QA, QC, automation, testing tools, AI]
 description: "A guide on how to automate a website login with Selenium WebDriver."
+---
 
 <figure>
   <img src="/assets/images/Auto/automation-testing-tools.webp" alt="Automation Testing Tools" />
   <figcaption>Image by vectorjuice on Freepik</figcaption>
 </figure>
----
+
 
 <!-- Jekyll Now Markdown Blog Post -->
 
