@@ -47,8 +47,6 @@ Selenium WebDriver is an open‑source tool that automates browser actions the s
 * **Selenium IDE** – Record/playback for beginners
 * **Selenium Grid** – Run tests on multiple machines and browsers in parallel
 
----
-
 ## Pre‑Setup Requirements
 
 Before writing your first login script, you must complete the following setup.
@@ -77,11 +75,9 @@ Add Selenium JAR files + WebDriver dependencies.
 
 At this point, your environment is ready.
 
----
-
 # Selenium Login Test Script (Beginner‑Friendly Version)
 
-Below is a corrected, clean, and modernized version of the login automation script using Java and Selenium.
+Below is a login automation script using Java and Selenium.
 
 ```java
 package PackageLogin;
@@ -150,7 +146,6 @@ public class ClassLogin {
 * Ensured consistent locator strategy
 * Clean, readable code for beginners
 
----
 
 # Step‑By‑Step Walkthrough (With Screenshot Suggestions)
 
@@ -165,7 +160,6 @@ You may add images such as:
 
 These can be created manually using your own browser and IDE.
 
----
 
 # Locating Web Elements (Quick Guide)
 
@@ -178,7 +172,6 @@ To interact with elements, Selenium provides locator strategies:
 | **CSS Selector** | `By.cssSelector("#username")`         | Flexible, fast               |
 | **XPath**        | `By.xpath("//input[@id='username']")` | Complex or dynamic elements  |
 
----
 
 # Common Challenges (And Solutions)
 
@@ -194,7 +187,6 @@ Use **Explicit Waits** for AJAX‑loaded content.
 
 Chrome versions frequently update—use WebDriverManager or built‑in driver support.
 
----
 
 # TestNG Version of the Login Script (Recommended for Real Testing)
 
@@ -254,7 +246,6 @@ public class ClassLoginTestNG {
 * Supports parallel testing
 * Better for real‑world test automation
 
----
 
 # Conclusion
 
