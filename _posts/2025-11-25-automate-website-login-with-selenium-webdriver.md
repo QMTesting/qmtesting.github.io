@@ -13,7 +13,7 @@ description: "A guide on how to automate a website login with Selenium WebDriver
   <figcaption>Image by macrovector_official on Freepik</figcaption>
 </figure>
 
-# Introduction
+## Introduction
 
 Automating repetitive website tasks, such as logging into web applications, can save huge amounts of time and reduce human error. Selenium WebDriver is one of the most powerful and popular tools for browser automation, used by developers, QA testers, and anyone looking to streamline workflows.
 
