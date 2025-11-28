@@ -9,12 +9,9 @@ description: "A guide on how to automate a website login with Selenium WebDriver
 ---
 
 <figure>
-  <img src="/assets/images/Auto/automation-testing-tools.webp" alt="Automation Testing Tools" />
-  <figcaption>Image by vectorjuice on Freepik</figcaption>
+  <img src="/assets/images/Auto/selenium-testing-automation.webp" alt="Automate a Login with Selenium WebDriver" />
+  <figcaption>Image by macrovector_official on Freepik</figcaption>
 </figure>
-
-
-<!-- Jekyll Now Markdown Blog Post -->
 
 # Introduction
 
