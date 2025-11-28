@@ -1597,4 +1597,11 @@ div.highlight code {
 @import "highlights";
 @import "svg-icons";
 
+/* Fix heading overlap issue in Jekyll Now */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2.2rem !important;
+  padding-top: 0 !important;
+  line-height: 1.3 !important;
+}
+
 
