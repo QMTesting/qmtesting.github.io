@@ -75,7 +75,7 @@ Add Selenium JAR files + WebDriver dependencies.
 
 At this point, your environment is ready.
 
-# Selenium Login Test Script (Beginner‑Friendly Version)
+## Selenium Login Test Script
 
 Below is a login automation script using Java and Selenium.
 
@@ -147,7 +147,7 @@ public class ClassLogin {
 * Clean, readable code for beginners
 
 
-# Step‑By‑Step Walkthrough (With Screenshot Suggestions)
+## Step‑By‑Step Walkthrough
 
 Below are the steps you can visually represent in your blog using screenshots.
 
@@ -161,7 +161,7 @@ You may add images such as:
 These can be created manually using your own browser and IDE.
 
 
-# Locating Web Elements (Quick Guide)
+## Locating Web Elements
 
 To interact with elements, Selenium provides locator strategies:
 
@@ -173,7 +173,7 @@ To interact with elements, Selenium provides locator strategies:
 | **XPath**        | `By.xpath("//input[@id='username']")` | Complex or dynamic elements  |
 
 
-# Common Challenges (And Solutions)
+## Common Challenges (And Solutions)
 
 ### CAPTCHA
 
@@ -188,7 +188,7 @@ Use **Explicit Waits** for AJAX‑loaded content.
 Chrome versions frequently update—use WebDriverManager or built‑in driver support.
 
 
-# TestNG Version of the Login Script (Recommended for Real Testing)
+## TestNG Version of the Login Script
 
 ```java
 package PackageLogin;
@@ -247,7 +247,7 @@ public class ClassLoginTestNG {
 * Better for real‑world test automation
 
 
-# Conclusion
+## Conclusion
 
 Selenium WebDriver is a powerful and flexible tool for automating browser interactions. Whether you’re logging into a website, testing user flows, or running regression tests, Selenium helps eliminate repetitive manual work while improving accuracy.
 
