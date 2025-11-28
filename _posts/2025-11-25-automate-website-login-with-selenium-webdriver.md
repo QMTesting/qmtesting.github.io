@@ -238,14 +238,38 @@ public class ClassLoginTestNG {
 }
 ```
 
-### Why Use TestNG?
+## ⭐ Why Use TestNG?
 
-* Built‑in reporting
-* Annotations (BeforeMethod, AfterMethod)
-* Automatic assertions
-* Supports parallel testing
-* Better for real‑world test automation
+If you're new to Selenium or automated testing, TestNG is one of the best tools to learn. It helps you organize your tests, run them more efficiently, and understand your results without extra setup.
 
+### ✅ 1. Built-In Test Reports
+
+TestNG automatically generates clean HTML reports every time you run your tests.  
+These reports show:
+
+- Which tests passed  
+- Which tests failed  
+- Error messages  
+- How long each test took  
+
+You don’t have to write any extra code — TestNG creates the `test-output` folder for you.
+
+### ✅ 2. Easy-to-Use Annotations  
+Annotations are special keywords TestNG uses to control **when** parts of your test code run.
+
+Common examples:
+
+- `@BeforeMethod` — runs before **each** test  
+- `@AfterMethod` — runs after **each** test  
+- `@BeforeClass` — runs once before all tests in the class  
+- `@AfterClass` — runs once after all tests
+
+These help you:
+
+- Open the browser before tests  
+- Clean up after each test  
+- Avoid copy-paste setup code  
+- Keep your test methods small and clea
 
 ## Conclusion
 
