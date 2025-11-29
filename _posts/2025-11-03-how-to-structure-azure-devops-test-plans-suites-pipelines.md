@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "How to Structure Test Plans, Suites, and Pipelines"
+title: "How to Structure Azure DevOps Test Plans, Suites, and Pipelines"
 categories: ["Azure DevOps"]
 image: /assets/images/DevOps/TestPlans-Suites-Pipelines.webp
 permalink: /how-to-structure-azure-devops-test-plans-suites-pipelines/
 tags: [software testing, QA, QC, Azure DevOps, automation, test plans, suites, pipelines]
-description: "A guide on how to Structure Test Plans, Suites, and Pipelines."
+description: "A guide on how to structure Azure DevOps Test Plans, Suites, and Pipelines."
 ---
 
 <figure>
