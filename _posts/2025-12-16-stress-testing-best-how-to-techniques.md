@@ -8,8 +8,8 @@ description: "A guide on stress testing best how to techniques."
 ---
 
 <figure>
-  <img src="/assets/images/Types/regression-testing.webp" alt="stress testing techniques" />
-  <figcaption>Image by vector4stock on Freepik</figcaption>
+  <img src="/assets/images/Types/Stress-testing.webp" alt="stress testing techniques" />
+  <figcaption>Image by storyset on Freepik</figcaption>
 </figure>
 
 Introduction
