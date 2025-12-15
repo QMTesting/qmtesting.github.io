@@ -109,10 +109,10 @@ Before you start stress testing, it is crucial to define what you aim to achieve
 ### 2. Develop a Comprehensive Stress Testing Test Plan
 A well-structured test plan outlines the scope, objectives, resources, and methodologies for stress testing. Include details such as:
 
-#### - Test scenarios and scripts.
-#### - Metrics to be measured (e.g., response time, error rates, system throughput).
-#### - Expected outcomes and success criteria.
-#### - Tools and technologies to be used for testing.
+#### -Test scenarios and scripts.
+#### -Metrics to be measured (e.g., response time, error rates, system throughput).
+#### -Expected outcomes and success criteria.
+#### -Tools and technologies to be used for testing.
 
 ### 3. Select Appropriate Stress Testing Tools
 Tools for software stress testing are recommended to systematically simulate high user loads and accurately measure system performance, ensuring stability and identifying potential issues before deployment.
