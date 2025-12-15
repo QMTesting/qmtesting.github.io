@@ -98,7 +98,8 @@ Many industries have performance standards and regulatory requirements that soft
 #### Verify Compliance: 
 Ensure the system meets the performance criteria outlined in regulatory standards and service level agreements (SLAs).
 
-#### Document Performance: Provide evidence of performance characteristics for audits or compliance assessments. Meeting these requirements is essential for legal and contractual obligations.
+#### Document Performance: 
+Provide evidence of performance characteristics for audits or compliance assessments. Meeting these requirements is essential for legal and contractual obligations.
 
 ## Best How-To Techniques for Stress Testing
 
