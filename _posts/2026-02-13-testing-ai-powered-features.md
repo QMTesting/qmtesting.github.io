@@ -2,14 +2,14 @@
 layout: post
 title: "Testing AI‑Powered Features: The New Frontier Every QA Team Must Master"
 categories: ["Software Testing"]
-image: "/assets/images/Test/STLC.webp"
+image: "/assets/images/Test/AI-Testing-Feautures.webp"
 permalink: /STLC-how-to-techniques/
 tags: [AI, QC, QA, software testing, machine learning, quality assurance]
 description: "A guide on testing AI‑Powered Features that every QA team must master."
 ---
 
 <figure>
-  <img src="/assets/images/Test/STLC.webp" alt="Testing AI‑Powered Features" />
+  <img src="/assets/images/Test/AI-Testing-Feautures.webp" alt="Testing AI‑Powered Features" />
   <figcaption></figcaption>
 </figure>
 
