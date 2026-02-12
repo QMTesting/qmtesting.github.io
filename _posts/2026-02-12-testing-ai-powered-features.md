@@ -2,15 +2,15 @@
 layout: post
 title: "Testing AI‑Powered Features: The New Frontier Every QA Team Must Master"
 categories: ["Software Testing"]
-image: "/assets/images/Test/AI-Testing-Feautures.webp"
+image: "/assets/images/Test/AI-Testing-Feautures-700.webp"
 permalink: /testing-ai-powered-features/
 tags: [AI, QC, QA, software testing, machine learning, quality assurance]
 description: "A guide on testing AI‑Powered Features that every QA team must master."
 ---
 
 <figure>
-  <img src="/assets/images/Test/AI-Testing-Feautures.webp" alt="Testing AI‑Powered Features" />
-  <figcaption>None</figcaption>
+  <img src="/assets/images/Test/AI-Testing-Feautures-700.webp" alt="Testing AI‑Powered Features" />
+  <figcaption></figcaption>
 </figure>
 
 Artificial intelligence isn’t “coming soon” anymore—it’s already woven into search, recommendations, fraud detection, customer support, and even the apps we test every day. As AI‑powered features become standard, Quality Assurance (QA) teams are being pushed into a new era where traditional testing alone isn’t enough.
