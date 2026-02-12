@@ -10,7 +10,7 @@ description: "A guide on testing AI‑Powered Features that every QA team must m
 
 <figure>
   <img src="/assets/images/Test/AI-Testing-Feautures.webp" alt="Testing AI‑Powered Features" />
-  <figcaption></figcaption>
+  <figcaption>None</figcaption>
 </figure>
 
 Artificial intelligence isn’t “coming soon” anymore—it’s already woven into search, recommendations, fraud detection, customer support, and even the apps we test every day. As AI‑powered features become standard, Quality Assurance (QA) teams are being pushed into a new era where traditional testing alone isn’t enough.
