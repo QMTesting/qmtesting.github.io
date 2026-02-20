@@ -13,6 +13,8 @@ description: "Learn how to use AI tools for test case creation in QA. Practical 
   <figcaption>I</figcaption>
 </figure>
 
+## Introduction
+
 Writing detailed test cases is one of the most important responsibilities in QA—but it can also be time-consuming and repetitive. As software systems grow more complex, manually drafting complete test coverage becomes harder to maintain.
 
 This is where **AI tools for test case creation** can help. Modern AI systems—including large language models and AI-powered testing platforms—can assist QA engineers in generating structured test cases, identifying edge cases, and improving clarity while keeping humans in control of quality.
