@@ -62,7 +62,7 @@ baseurl: ""
 #
 
 # Site Logo
-#logo: "/images/BugLogoFinal.webp"
+#logo: "/images/logo-bug.webp"
 
 permalink: /:title/
 
