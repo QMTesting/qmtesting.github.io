@@ -653,7 +653,7 @@ layout: compress
               </ul>
             </nav>
           </div>
-          <br><br/><br><br/>
+          <br><br/>
           <!-- Amazon Associates Disclaimer -->
           <div class="amazon-attr" style="text-align: center;">
           <strong><br>This site uses Amazon affiliate links, and I may earn a commission from qualifying purchases at no extra cost to you.</br></strong></div>
@@ -681,8 +681,13 @@ layout: compress
         margin-right: 100px; 	
       }
       
-      } /* End Desktop */	    
+      } /* End Desktop */	 
 
+      @media only screen and (max-width: 768px) {
+         .footer-nav {
+           gap: 0px;
+         }  
+      } /* end mobile */
 </style>    
 
 <!--HAMBURGER JAVASCRIPT FOR MOBILE-->
