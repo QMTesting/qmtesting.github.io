@@ -5,6 +5,7 @@ categories: ["Software Testing"]
 image: "/assets/images/Test/ISTQB.webp"
 tags: [software testing, QA, QC, ISTQB, International Software Testing Qualifications Board]
 description: "A guide on how to elevate your testing career with an ISTQB certification."
+hide_istqb_banner: true
 ---
 
 <figure>
