@@ -1606,9 +1606,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
- page {
-	  background: #f3efdf;
-	}	
+ .main-content {
+    background-color: #f3efdf;   
+}	
    }
 
 
