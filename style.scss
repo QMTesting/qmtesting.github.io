@@ -1606,22 +1606,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
-/* Full-width header background */
+/* Make the entire header area full-width with new background */
 .wrapper-masthead {
   background-color: #f3efdf;
 }
 
-/* Keep the inner content centered as usual */
-.wrapper-masthead .container {
-  max-width: 2000px;   /* or whatever your theme uses */
-  margin: 0 auto;
-  padding: 20px 0;    /* optional: space above/below logo/nav */
+/* Ensure the inner container doesn't override it with white */
+.wrapper-masthead .container,
+.wrapper-masthead .masthead,
+.wrapper-masthead .header-top {
+  background-color: transparent;
 }
 
-/* Optional: no special width tricks on .masthead */
+/* Remove the old centering hack if it's still there */
 .masthead {
-  background: none;   /* or remove background-color if you set it before */
+  width: auto;
+  margin: 0;
+  transform: none;
 }
+
 
 .wrapper-footer { width: 100%; margin: 0; padding: 0; background-color: #f3efdf; }
    }
