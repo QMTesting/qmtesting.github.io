@@ -1614,9 +1614,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Break header-top out of the fixed-width container */
 .header-top {
-  width: 100%;
+  width: 200%;
   max-width: none;
-  margin: 0;
+  margin: -400px;
   padding: 20px 0;
 }
 
