@@ -1606,11 +1606,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
-.header-top {
-    background-color: #f3efdf;   
-}
-.wrapper-footer {
-    background-color: #f3efdf;   
+
+.masthead {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #f3efdf;  
 }	
    }
 
