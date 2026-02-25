@@ -1606,26 +1606,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
-/* Make the entire header area full-width with new background */
-/* Make the entire header area full-width */
+
+/* 1. Make the header band full-width and colored */
 .wrapper-masthead {
-  background-color: #f3efdf;
+  background-color: #f3efdf !important;
 }
 
-/* Break header-top out of the fixed-width container */
-.header-top {
-  width: 200%;
-  max-width: none;
-  margin: -400px;
-  padding: 20px 0;
+/* 2. Let the container span full width *only inside the header* */
+.wrapper-masthead > .container {
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 
-/* Ensure no inner element forces a white background */
-.wrapper-masthead .container,
-.masthead,
-.header-top {
+/* 3. Re-center the actual header content to your usual width */
+.wrapper-masthead .masthead {
+  max-width: 2000px;      /* match your theme's content width */
+  margin: 0 auto;
+  padding: 20px 10px;    /* optional: inner spacing */
   background: transparent;
 }
+
 
 
 
