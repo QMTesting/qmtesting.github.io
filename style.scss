@@ -1605,14 +1605,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Change header and footer color */
-.container {
-  background-color: #f3efdf;
-  width: 1400px; 	
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
+    .masthead {
+        width: 1500px;
+        display: flex;
+        background-color: #f3efdf;
+		margin-left: 0px;
+    }
+	.wrapper-footer {
+	  background-color: #f3efdf;
+	  width: 1500px;	
+	}
 }
-.wrapper-footer {
-  background-color: #f3efdf;
-  width: 1400px;	
-}
+
 
 
 
