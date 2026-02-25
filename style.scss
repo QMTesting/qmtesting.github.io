@@ -1604,12 +1604,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3 !important;
 }
 
-/* Change header and foooter color */
-header {
+/* Change header and footer color */
+.container {
   background-color: #f3efdf;
+  width: 1400px; 	
 }
-footer {
+.wrapper-footer {
   background-color: #f3efdf;
+  width: 1400px;	
 }
 
 
