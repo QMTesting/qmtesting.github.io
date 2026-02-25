@@ -1607,24 +1607,26 @@ h1, h2, h3, h4, h5, h6 {
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
 /* Make the entire header area full-width with new background */
+/* Make the entire header area full-width */
 .wrapper-masthead {
   background-color: #f3efdf;
 }
 
-/* Ensure the inner container doesn't override it with white */
-.wrapper-masthead .container,
-.wrapper-masthead .masthead,
-.wrapper-masthead .header-top {
-  background-color: transparent;
+/* Break header-top out of the fixed-width container */
+.header-top {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px 0;
 }
 
-/* Remove the old centering hack if it's still there */
-.masthead {
-  width: auto;
-  margin: 0;
-  transform: none;
-  margin-left: -300px;	
+/* Ensure no inner element forces a white background */
+.wrapper-masthead .container,
+.masthead,
+.header-top {
+  background: transparent;
 }
+
 
 
 .wrapper-footer { width: 100%; margin: 0; padding: 0; background-color: #f3efdf; }
