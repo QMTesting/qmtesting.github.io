@@ -1606,16 +1606,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2500px) {
-	.masthead.clearfix {
-	width: 2o00px;
-	}		
+	
    .wrapper-masthead {
     background-color: #f3efdf;
 	width: 2000px; 	   
 }
-	 .masthead {
-	width: 2000px; 	   
-}
+
 	
 }
 
