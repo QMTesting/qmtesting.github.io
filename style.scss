@@ -1625,15 +1625,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .footer-nav { 
-   margin-right: 225px;		
-   margin-left: 225px;	  
-   width: 600px;
+   margin-right: 225px !important;		
+   margin-left: 225px !important;	  
+   width: 600px !important;
      
    }
    .amazon-attr {
-    width: 600px;
-	margin-right: 655px;		
-    margin-left: 280px;
+    width: 600px !important;
+	margin-right: 655px !important;		
+    margin-left: 280px !important;
 	 
   }	
 	
