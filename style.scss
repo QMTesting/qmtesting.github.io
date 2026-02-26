@@ -1628,11 +1628,15 @@ h1, h2, h3, h4, h5, h6 {
    margin-right: 300px;		
    margin-left: 200px;	  
    width: 500px;
+   width: 100vw; 
+   margin-left: calc(-50vw + 50%);	  
    }
    .amazon-attr {
     width: 500px;
 	margin-right: 300px;		
-    margin-left: 200px;   
+    margin-left: 200px;
+	width: 100vw; 
+    margin-left: calc(-50vw + 50%);   
   }	
 	
 }
