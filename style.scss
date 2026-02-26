@@ -1607,18 +1607,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Change header and footer color */
 @media only screen and (min-width: 820px) and (max-width: 2500px) {
 
-	.wrapper {
-      width: 2250px;
-	}	
-		
-	
-   .wrapper-masthead {
+	.wrapper-masthead {
     background-color: #f3efdf;
-	width: 100%;  
+    width: 100%;
+}
 
-	/* Break out of centered wrapper */
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);   
+.wrapper-masthead .container {
+    background: transparent;
 }
 
 	
