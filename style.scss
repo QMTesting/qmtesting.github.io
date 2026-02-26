@@ -1623,18 +1623,13 @@ h1, h2, h3, h4, h5, h6 {
    width: 100vw; 
    margin-left: calc(-50vw + 50%);
   }
-  .wrapper-footer {	
-   width: 100vw; 
-   margin-left: calc(-50vw + 50%);
-  }
-  .footer-nav {
-   margin-left: -25px; 
-   width: 600px;
-   }
-   .amazon-attr {
-    margin-left: 365px;
-    width: 600px;
+  footer {
+  padding: 20px 0;
+  text-align: center;
+  width: 100vw; 
+  margin-left: calc(-50vw + 50%);	  
   }	
+  
 	
 }
 	
