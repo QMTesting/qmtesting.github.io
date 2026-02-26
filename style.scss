@@ -1610,6 +1610,10 @@ h1, h2, h3, h4, h5, h6 {
    .wrapper-masthead {
     background-color: #f3efdf;
 	width: 150%;  
+
+	/* Break out of centered wrapper */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);   
 }
 
 	
