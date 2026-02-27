@@ -17,12 +17,6 @@ html {
   font-size: 100%;
 }
 
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
 .container {
   margin: 0 auto;
   max-width: 2000px;
@@ -1432,10 +1426,6 @@ figcaption {
 
         } /* End Mobile*/
 
-  body {
-    background-color: #f3efdf; /* Replace with your desired color */
-  }
-
 // Style buttons for script snippets in blog posts
 .copy-btn {
   background: #444;
@@ -1618,8 +1608,8 @@ h1, h2, h3, h4, h5, h6 {
  } 
 
   body {
-	width: 100vw; 
-	margin-left: calc(-50vw + 50%); 
+	/*width: 100vw; */
+	/*margin-left: calc(-50vw + 50%); */
 	background-color: #f3efdf; 
 	width: 1520px;
 	margin-left: 0px;
