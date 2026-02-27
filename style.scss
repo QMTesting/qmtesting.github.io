@@ -1620,7 +1620,10 @@ h1, h2, h3, h4, h5, h6 {
   body {
 	width: 100vw; 
 	margin-left: calc(-50vw + 50%); 
-	background-color: #f3efdf;       
+	background-color: #f3efdf; 
+	width: 1520px;
+	margin-left: 0px;
+	margin-right: 0px;  
   }	
 
  footer {
