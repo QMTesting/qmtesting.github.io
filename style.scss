@@ -1610,6 +1610,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper-masthead { 
 	width: 100vw; 
 	margin-left: calc(-50vw + 50%); 
+	background-color: #f3efdf;
  }
  .wrapper { 
 	width: 100vw; 
@@ -1618,7 +1619,8 @@ h1, h2, h3, h4, h5, h6 {
 
   body {
 	width: 100vw; 
-	margin-left: calc(-50vw + 50%);  
+	margin-left: calc(-50vw + 50%); 
+    background-color: #f3efdf;	  
   }	
   .footer-nav { 
    margin-right: 225px !important;		
