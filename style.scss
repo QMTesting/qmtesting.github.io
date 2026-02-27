@@ -592,7 +592,7 @@ img {
   align-items: center;
   transition: transform 0.2s;
   width: 250px;	
-  background: #fce8b2;	
+  background: #f3efdf;	
   	
 }
 .post-card h3 {
@@ -690,7 +690,7 @@ img {
   overflow: hidden;
   background: #fff;
   width: 185px;	
-  background: #fce8b2;	
+  background: #f3efdf;	
 }
 .related-post img {
   display: block;
@@ -726,7 +726,7 @@ img {
   background: #fff;
   width: 320px;	
   margin-bottom: 30px;	
-  background: #fce8b2;	
+  background: #f3efdf;	
 }	
 	
 
@@ -828,7 +828,7 @@ img {
   overflow: hidden;
   text-align: center;
   width: 255px;	
-  background: #fce8b2;	
+  background: #f3efdf;	
 }
 
 .recent-post-card a {
@@ -875,7 +875,7 @@ img {
   text-align: center;
   width: 320px;	
   margin-bottom: 30px;
-  background: #fce8b2;	
+  background: #f3efdf;	
 }
 
 .recent-thumbnail img {
@@ -1069,7 +1069,7 @@ a {
   position: fixed;
   top: 10px;
   left: 10px;
-  background: #fce8b2;
+  background: #f3efdf;
   border-radius: 5px;
 }
 
@@ -1085,7 +1085,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fce8b2;	
+  background: #f3efdf;	
 }
 
 /* Hide menu by default */
@@ -1190,11 +1190,11 @@ html, body {
 /* Hide search form by default */
 #mobile-search-form {
   display: none;
-  color: #fce8b2;	
+  color: #f3efdf;	
   flex-direction: row;
   align-items: center;
   margin-left: 8px;
-  background: #fce8b2;
+  background: #f3efdf;
 }
 
 /* Input field styling */
@@ -1370,7 +1370,7 @@ figcaption {
           position: fixed;
           top: 10px;
           right: 10px;
-          background: #fce8b2;
+          background: #f3efdf;
           padding: 10px;
           border-radius: 8px;
           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -1433,7 +1433,7 @@ figcaption {
         } /* End Mobile*/
 
   body {
-    background-color: #fce8b2; /* Replace with your desired color */
+    background-color: #f3efdf; /* Replace with your desired color */
   }
 
 // Style buttons for script snippets in blog posts
@@ -1620,6 +1620,7 @@ h1, h2, h3, h4, h5, h6 {
   body {
 	width: 100vw; 
 	margin-left: calc(-50vw + 50%); 
+	background-color: #f3efdf;  
      
   }	
   .footer-nav { 
