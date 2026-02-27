@@ -1635,6 +1635,11 @@ h1, h2, h3, h4, h5, h6 {
   .post h1 {
 	  width: 725px;
    }	  
+
+   .recent-posts-heading {
+	 width: 100vw; 
+	 margin-left: calc(-50vw + 50%);  
+	}	   
 	
 }
 	
