@@ -988,7 +988,7 @@ th, td {
    .breadcrumbs {
     text-align: left;
     margin-left: 0px;
-    padding-left: 1em;     /* Indentation width */
+    padding-left: -0.9em;     /* Indentation width */
     text-indent: -0.9em;     /* Negative indent pulls first line back */
     margin-right: 10px; 
   }
