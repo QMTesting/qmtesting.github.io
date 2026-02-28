@@ -240,7 +240,7 @@ We recommend reviewing this Privacy Policy periodically for any alterations. Cha
 
 ## Contact Us
 
-If you have any questions please contact us at Ask.TestingQM@outlook.com
+If you have any questions please contact us at contact@qmstesting.com.
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
