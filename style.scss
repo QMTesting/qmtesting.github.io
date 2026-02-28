@@ -1617,13 +1617,14 @@ h1, h2, h3, h4, h5, h6 {
 	}	  
 
 .social-share {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     padding: 20px 0;
     background-color: #f3efdf;
     margin-top: -1px;
 	width: 1500px;
-	margin-left: 0px;
+	margin-left: 500px;
+	margin-right: 500px;
 }
 
   .footer-nav { 
