@@ -24,7 +24,7 @@ The information provided in our articles is intended for general informational p
 
 ## Contact Us
 
-For inquiries, please contact QMSTesting / [https://qmstesting.com](https://qmstesting.com) via email at Ask.TestingQM@outlook.com
+For inquiries, please contact QMSTesting / [https://qmstesting.com](https://qmstesting.com) via email at contact@qmstesting.com.
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
