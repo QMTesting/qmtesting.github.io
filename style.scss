@@ -1626,15 +1626,22 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 0px;
 }
 
-  .Xbtn a {
-   margin-left: 380px;	 
-	}
-  .facebook a {
-   margin-left: 420px;	 
-	}
-  .pinterest a {
-   margin-left: 460px;	 
-	}	
+.social-share {
+  display: flex;   /* makes horizontal layout */
+  align-items: center;
+}
+
+.Xbtn {
+  margin-right: 20px;   /* move away from Facebook */
+}
+
+.facebook {
+  margin-right: 30px;   /* spacing before Pinterest */
+}
+
+.pinterest {
+  margin-right: 0;
+}
 
   .footer-nav { 
    margin-right: 225px !important;		
