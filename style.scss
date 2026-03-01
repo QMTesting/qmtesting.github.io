@@ -1703,6 +1703,8 @@ footer {
     }
 	 .footer-nav { 
        text-decoration: underline !important;
+	   border-bottom: none !important;
+    	border-top: none !important;   	 
 	}
 	.mobile-menu li {
 	 margin: 0px 0;
@@ -1713,5 +1715,19 @@ footer {
       height: 200px;
       object-fit: cover;
     }
+	.wrapper-footer {
+	border-bottom: none !important;
+	border-top: none !important;   
+	 	
+	}	
+   .footer-menu {
+	border-bottom: none !important;
+	border-top: none !important
+	}
+	footer {
+    border-bottom: none !important;
+	border-top: none !important;   
+	 
+}	
 } /* End Mobile */
 	
