@@ -1668,10 +1668,11 @@ h1, h2, h3, h4, h5, h6 {
 	
 } /* End Desktop */
 
-@media screen and (max-width: 768px) {
- body {
-	background-color: #f3efdf !important;;
-}
-
+@media (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        background-color: #f3efdf !important;
+    }
 } /* End Mobile */
 	
