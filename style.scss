@@ -1624,7 +1624,8 @@ h1, h2, h3, h4, h5, h6 {
 	width: 1500px;
 	margin-left: 0px;
 	margin-right: 0px;
-	border-top: none;
+	border-bottom: !important;
+	border-top: !important;
 }
 
 .social-share {
@@ -1646,14 +1647,17 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     padding: 20px 0;
     text-align: center;
-    border-bottom: none;
+    border-bottom: !important;
+	border-top: !important;
 }	
 
   .footer-nav { 
    margin-right: 225px !important;		
    margin-left: 225px !important;	  
    width: 600px !important;
-   text-decoration: underline !important;	  
+   text-decoration: underline !important;	
+   border-bottom: !important;
+   border-top: !important;	  
      
    }
    .amazon-attr {
@@ -1662,7 +1666,9 @@ footer {
     margin-left: 190px !important;
 	margin-top: 20px; 
 	font-size: 20px; 
-	font-weight: 500px;   
+	font-weight: 500px;  
+	border-bottom: !important;
+	border-top: !important;   
 	 
   }	
   .post h1 {
