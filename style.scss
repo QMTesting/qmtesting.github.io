@@ -1676,7 +1676,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 	 .footer-nav { 
        text-decoration: underline !important;
-	}	
+	}
+
+	.menu-header {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+		margin-bottom: 20px;
+    }
 	
 } /* End Mobile */
 	
