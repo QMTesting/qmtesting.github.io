@@ -1624,6 +1624,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 1500px;
 	margin-left: 0px;
 	margin-right: 0px;
+	border-top: none;
 }
 
 .social-share {
@@ -1642,9 +1643,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
 }
 
-	footer {
-	 border-top: none !important;	
-	}		
+footer {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: none;
+}	
 
   .footer-nav { 
    margin-right: 225px !important;		
