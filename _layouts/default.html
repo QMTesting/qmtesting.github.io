@@ -565,7 +565,7 @@ layout: compress
 
    <!--ISTQB Certification text - START-->
     {% unless page.hide_istqb_banner %}
-    <hr style="border: 2px solid #ccc;">
+    <hr class="hero-border" style="border: 2px solid #ccc;">
     <div class="home-hero" style="font-weight: 900; font-size: 20px;">
         <a href="/ISTQB-certification/">
           <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}" alt="ISTQB Icon" class="hero-logo">
@@ -586,6 +586,9 @@ layout: compress
     width: 250px;
     display: block;
   }
+  .hero-border {
+    display: none;
+  }  
   .hero-logo {
     width: 250px;
     display: block;
