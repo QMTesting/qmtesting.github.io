@@ -1678,8 +1678,13 @@ h1, h2, h3, h4, h5, h6 {
        text-decoration: underline !important;
 	}
 	.mobile-menu li {
-	margin: 0px 0;
-	margin-bottom: 40px;
-    }	
+	 margin: 0px 0;
+	 margin-bottom: 40px;
+    }
+	.recent-thumbnail img {
+      width: 318px;
+      height: 200px;
+      object-fit: cover;
+    }
 } /* End Mobile */
 	
