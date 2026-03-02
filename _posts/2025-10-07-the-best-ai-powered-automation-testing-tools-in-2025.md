@@ -12,7 +12,7 @@ description: "A guide on selecting the Leading AI‑Powered Tools for Quality As
   <img src="/assets/images/Auto/ai-qatesting-tools.webp" alt="Leading AI‑Powered Tools for Quality Assurance" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
-
+---
 
 ## 🚀 Introduction
 
