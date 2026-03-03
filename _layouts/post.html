@@ -306,6 +306,49 @@ layout: default
   fetchComments();
 </script>
 
+<!-- RETRIEVE MOBILE POST COMMENTS RESPONSES ONLY ****************************************-->
+
+
+<script>
+function submitComment(e) {
+  e.preventDefault();
+
+  const form = document.getElementById("customCommentForm");
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors"
+  })
+  .then(() => {
+    document.getElementById("thankyou_message").style.display = "block";
+
+    setTimeout(() => {
+      form.reset();
+      document.querySelectorAll(".star").forEach(s => s.style.color = "#aaa");
+      document.getElementById("thankyou_message").style.display = "none";
+      form.style.display = "block";
+      fetchComments(); // refresh comments safely on all devices
+    }, 1500);
+  })
+  .catch(err => console.error("Form submit error:", err));
+}
+
+
+  
+document.addEventListener("DOMContentLoaded", () => {
+  if (isMobile()) {
+    const form = document.getElementById("customCommentForm");
+
+    form.removeAttribute("target"); // prevent iframe submission
+    form.onsubmit = submitComment;  // use your new function
+  }
+});
+</script>
+
+<!-- RETRIEVE MOBILE POST COMMENTS RESPONSES ONLY ****************************************-->
+
 <!--Retrieve Comments Responses - End -->
 
 <style>
