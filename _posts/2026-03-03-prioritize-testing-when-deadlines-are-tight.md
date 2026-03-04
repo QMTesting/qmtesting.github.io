@@ -20,7 +20,6 @@ The challenge isn’t just *testing faster* — it’s *testing smarter*.
 
 This guide outlines a practical, structured approach to prioritizing QA efforts when time is limited, while still protecting product quality, business goals, and team morale.
 
----
 
 ## 🎯 Start With Risk-Based Testing
 
