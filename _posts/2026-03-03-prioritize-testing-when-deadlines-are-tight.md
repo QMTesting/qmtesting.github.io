@@ -12,7 +12,7 @@ description: "A practical guide for QA teams navigating high‑pressure release 
   <figcaption></figcaption>
 </figure>
 
-## Introduction
+## 🕛 Introduction
 
 Tight deadlines are a reality in modern software delivery. Whether it’s a last-minute feature request, a production hotfix, a regulatory update, or a release date that simply can’t move, QA teams are often expected to deliver meaningful test coverage in far less time than they’d like.
 
