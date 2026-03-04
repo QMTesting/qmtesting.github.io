@@ -18,7 +18,6 @@ Tight deadlines are a reality in modern software delivery. Whether it’s a last
 
 This guide breaks down how to prioritize effectively when the clock is working against you, while still protecting product quality and team sanity.
 
----
 
 ## 🎯 Focus on What Matters Most: Risk-Based Prioritization
 
@@ -32,7 +31,6 @@ When time is limited, **risk becomes your compass**. Instead of trying to test e
 A simple way to frame it:  
 > *If this breaks, who feels it—and how badly?*
 
----
 
 ## 🧩 Break the Scope Into Must-Test vs. Nice-to-Test
 
@@ -44,7 +42,6 @@ Not all tests are created equal. Categorizing them helps you make fast, defensib
 
 This structure keeps the team aligned and prevents scope creep disguised as “quick checks.”
 
----
 
 ## ⚡ Lean on the Fastest Feedback Loops
 
@@ -57,7 +54,6 @@ When time is tight, choose testing methods that deliver value quickly.
 
 Exploratory testing is especially powerful under pressure—it uncovers high-risk defects without requiring upfront scripting.
 
----
 
 ## 🤝 Collaborate Early and Often
 
@@ -69,7 +65,6 @@ Communication becomes a force multiplier when deadlines shrink.
 
 Fast, transparent communication prevents surprises and helps the team make informed trade-offs.
 
----
 
 ## 🧪 Test the Core Path End-to-End
 
@@ -82,7 +77,6 @@ Examples:
 
 End-to-end coverage of the core flow ensures the product’s most essential purpose still works.
 
----
 
 ## 📊 Document What You Didn’t Test (and Why)
 
@@ -96,7 +90,6 @@ Include:
 
 This protects the QA team, informs stakeholders, and guides future regression cycles.
 
----
 
 ## 🧘 Stay Calm, Stay Systematic
 
