@@ -1,8 +1,13 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
+
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">About</span>
+</nav>
 
 Welcome to our software testing, quality assurance, and automation blog - your go-to resource for beginners embarking on their journey into the fascinating world of ensuring software reliability and efficiency.
 
