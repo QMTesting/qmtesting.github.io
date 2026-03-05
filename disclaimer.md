@@ -1,8 +1,17 @@
 ---
-layout: page
+layout: default
 title: Disclaimer
 permalink: /disclaimer/
 ---
+
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">Disclaimer</span>
+</nav>
+
+<br /><br />
+
+<h1>Disclaimer</h1>
 
 ## Last Updated: 2025-05-19
 
