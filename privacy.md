@@ -1,12 +1,21 @@
 ---
-layout: page
+layout: default
 title: Privacy Policy
 permalink: /privacy/
 redirect_from:
   - /privacy/
 ---
 
-## Last Updated: 2025-05-19
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">Privacy Policy</span>
+</nav>
+
+<br /><br />
+
+<h1>Privacy Policy</h1>
+
+#### Last Updated: 2025-05-19
 
 Welcome to QMSTesting, located at [https://qmstesting.com](https://qmstesting.com) (the “Site”). We acknowledge the significance of online privacy to users of our website.
 
