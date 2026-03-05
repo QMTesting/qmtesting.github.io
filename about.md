@@ -9,7 +9,9 @@ permalink: /about/
   <span class="current">About</span>
 </nav>
 
-#About
+<br /><br />
+
+<h1>About</h1>
 
 Welcome to our software testing, quality assurance, and automation blog - your go-to resource for beginners embarking on their journey into the fascinating world of ensuring software reliability and efficiency.
 
