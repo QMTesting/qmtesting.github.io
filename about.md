@@ -9,6 +9,8 @@ permalink: /about/
   <span class="current">About</span>
 </nav>
 
+#About
+
 Welcome to our software testing, quality assurance, and automation blog - your go-to resource for beginners embarking on their journey into the fascinating world of ensuring software reliability and efficiency.
 
 At our blog, we understand that starting out in software testing can feel overwhelming, with many concepts, tools, and techniques to grasp. That's why we're here to guide you step-by-step, breaking down complex topics into easily digestible pieces tailored specifically for beginners.
