@@ -62,28 +62,51 @@ Before automating a test, QA engineers should evaluate it across five key dimens
 
 Together, these factors help determine whether automation will provide a meaningful return on investment.
 
-
 ## Automation Decision Tree
 
 The following decision tree helps QA teams quickly evaluate automation candidates.
 
-```mermaid
-flowchart TD
-    A[Test Scenario] --> B{Runs Frequently?}
-
-    B -- No --> C[Keep as Manual Test]
-    B -- Yes --> D{Business Critical?}
-
-    D -- Yes --> E{Feature Stable?}
-    E -- No --> F[Wait Until Feature Stabilizes]
-    E -- Yes --> G[Automate Test]
-
-    D -- No --> H{Easy to Automate?}
-    H -- No --> C
-    H -- Yes --> I{Low Maintenance Cost?}
-
-    I -- No --> C
-    I -- Yes --> G
+```
+                +----------------+
+                |  Test Scenario |
+                +--------+-------+
+                         |
+                         v
+                +------------------+
+                | Runs Frequently? |
+                +----+--------+----+
+                     |        |
+                    No       Yes
+                     |        |
+                     v        v
+            +--------------------+
+            |   Keep Manual Test |
+            +--------------------+
+                              |
+                              v
+                   +--------------------+
+                   | Business Critical? |
+                   +----+----------+----+
+                        |          |
+                       No         Yes
+                        |          |
+                        v          v
+               +----------------+  +------------------+
+               | Easy to        |  | Feature Stable?  |
+               | Automate?      |  +----+---------+---+
+               +----+-------+---+       |         |
+                    |       |          No        Yes
+                   No      Yes         |         |
+                    |       |          v         v
+                    v       v  +----------------------+
+        +----------------+   | Wait Until Feature     |
+        | Keep Manual    |   | Stabilizes             |
+        | Test           |   +------------------------+
+        +----------------+              |
+                                         v
+                                   +-----------+
+                                   | Automate  |
+                                   +-----------+
 ```
 
 ### How to Use This Decision Tree
