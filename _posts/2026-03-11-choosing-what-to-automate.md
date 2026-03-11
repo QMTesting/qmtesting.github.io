@@ -115,17 +115,7 @@ If a test fails multiple decision points, it is usually better suited for **manu
 
 ## The QA Automation Decision Framework
 
-Before automating a test, QA engineers should evaluate it across five key dimensions:
-
-1. Execution Frequency
-2. Business Impact
-3. Feature Stability
-4. Test Determinism
-5. Maintenance Cost
-
-Together, these factors help determine whether automation will provide a meaningful return on investment.
-
-### Key Criteria for Automation Candidates
+Before automating a test, QA engineers should evaluate it across five key dimensions. Together, the following factors help determine whether automation will provide a meaningful return on investment:
 
 ### 1. Execution Frequency
 
