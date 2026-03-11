@@ -54,11 +54,11 @@ The goal is to automate tests that:
 
 Before automating a test, QA engineers should evaluate it across five key dimensions:
 
-1. **Execution Frequency**
-2. **Business Impact**
-3. **Feature Stability**
-4. **Test Determinism**
-5. **Maintenance Cost**
+1. Execution Frequency
+2. Business Impact
+3. Feature Stability
+4. Test Determinism
+5. Maintenance Cost
 
 Together, these factors help determine whether automation will provide a meaningful return on investment.
 
