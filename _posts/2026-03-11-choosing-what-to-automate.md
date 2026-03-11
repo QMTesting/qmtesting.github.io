@@ -63,27 +63,51 @@ Before automating a test, QA engineers should evaluate it across five key dimens
 Together, these factors help determine whether automation will provide a meaningful return on investment.
 
 <h2>Automation Decision Tree</h2>
-
 <p>The following decision tree helps QA teams quickly evaluate automation candidates.</p>
 
-<div class="mermaid">
+<div style="position: relative; display: inline-block; background-color: #f6f4eb; border-radius: 6px; padding: 1em;">
+    <!-- Copy Button -->
+    <button onclick="copyMermaidCode(this)" style="
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 8px;
+        cursor: pointer;
+        font-size: 0.8em;">
+        Copy
+    </button>
+
+    <!-- Mermaid Diagram -->
+    <div class="mermaid" style="transform: scale(0.5); transform-origin: top left;">
 flowchart TD
     A[Test Scenario] --> B{Runs Frequently?}
-
     B -- No --> C[Keep as Manual Test]
     B -- Yes --> D{Business Critical?}
-
     D -- Yes --> E{Feature Stable?}
     E -- No --> F[Wait Until Feature Stabilizes]
     E -- Yes --> G[Automate Test]
-
     D -- No --> H{Easy to Automate?}
     H -- No --> C
     H -- Yes --> I{Low Maintenance Cost?}
-
     I -- No --> C
     I -- Yes --> G
+    </div>
 </div>
+
+<script>
+function copyMermaidCode(button) {
+    const mermaidDiv = button.nextElementSibling;
+    const code = mermaidDiv.textContent.trim();
+    navigator.clipboard.writeText(code).then(() => {
+        button.textContent = 'Copied!';
+        setTimeout(() => button.textContent = 'Copy', 2000);
+    });
+}
+</script>
 
 ### How to Use This Decision Tree
 
