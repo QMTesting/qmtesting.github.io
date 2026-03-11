@@ -13,7 +13,7 @@ description: "Learn how QA engineers can decide what tests to automate using a p
   <figcaption></figcaption>
 </figure>
 
-# How To Decide What Tests to Automate
+## Introduction
 
 Automation is one of the most powerful tools available to modern QA engineers. Done well, it accelerates feedback, reduces repetitive manual work, and protects critical functionality across every release.
 
