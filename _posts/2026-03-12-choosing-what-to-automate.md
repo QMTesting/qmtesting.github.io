@@ -1,21 +1,19 @@
 ---
+layout: post
 title: "Choosing What to Automate: A Practical Decision Framework"
-date: 2026-03-11
-layout: post
+categories: ["Automation"]
+image: "/assets/images/Auto/what-to-automate.webp"
+permalink: /choosing-what-to-automate/
+tags: [software testing, QA, QC, qa automation, test automation strategy, software testing, qa engineering, testing framework]
 description: "Learn how QA engineers can decide what tests to automate using a practical decision framework. Includes automation decision tree, scoring model, and best practices."
-tags: [qa automation, test automation strategy, software testing, qa engineering, testing framework]
 ---
 
----
+<figure>
+  <img src="/assets/images/Auto/what-to-automate.webp" alt="Choosing What to Automate" />
+  <figcaption></figcaption>
+</figure>
 
-title: "How QA Engineers Should Decide What Tests to Automate: A Practical Framework"
-date: 2026-03-11
-layout: post
-description: "Learn how QA engineers can decide what tests to automate using a practical decision framework. Includes automation decision tree, scoring model, and best practices."
-tags: [qa automation, test automation strategy, software testing, qa engineering, testing framework]
-----------------------------------------------------------------------------------------------------
-
-# How QA Engineers Should Decide What Tests to Automate
+# How To Decide What Tests to Automate
 
 Automation is one of the most powerful tools available to modern QA engineers. Done well, it accelerates feedback, reduces repetitive manual work, and protects critical functionality across every release.
 
