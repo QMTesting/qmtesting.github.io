@@ -1699,9 +1699,17 @@ footer {
 	article ul > li, main ul > li {
     position: relative;
     padding-left: 1.6em;
-	font-size: 16px;	
+	font-size: 18px;	
     line-height: 24px;
 }
+
+
+ul, ol {
+position: relative;
+padding-left: 1.6em;
+font-size: 18px;	
+line-height: 24px;
+} 	
 
 	
 } /* End Desktop */
@@ -1721,6 +1729,14 @@ footer {
 	 margin: 0px 0;
 	 margin-bottom: 40px;
     }
+	ul > li, main ul > li {
+     font-size: 18px;	
+	 line-height: 22px;
+	}	
+	ul, ol {
+	font-size: 18px;	
+	line-height: 22px;
+	} 	
 	.recent-thumbnail img {
       width: 318px;
       height: 200px;
