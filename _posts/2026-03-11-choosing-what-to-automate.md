@@ -222,7 +222,7 @@ UI tests typically run slower and are more sensitive to interface changes than l
 
 QA teams can also use a scoring model to evaluate potential automation candidates.
 
-| Criterion        | Score 1             | Score 5             |
+|    **Criterion**     |       **Score 1**       |       **Score 5**       |
 | ---------------- | ------------------- | ------------------- |
 | Frequency        | Rarely executed     | Runs every build    |
 | Business Impact  | Low impact          | Mission critical    |
