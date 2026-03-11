@@ -49,19 +49,6 @@ The goal is to automate tests that:
 * Provide fast, reliable feedback
 * Remain stable over time
 
-
-## The QA Automation Decision Framework
-
-Before automating a test, QA engineers should evaluate it across five key dimensions:
-
-1. Execution Frequency
-2. Business Impact
-3. Feature Stability
-4. Test Determinism
-5. Maintenance Cost
-
-Together, these factors help determine whether automation will provide a meaningful return on investment.
-
 <h2>Automation Decision Tree</h2>
 <p>The following decision tree helps QA teams quickly evaluate automation candidates.</p>
 
@@ -126,8 +113,19 @@ QA engineers can use this model during:
 
 If a test fails multiple decision points, it is usually better suited for **manual execution or exploratory testing**.
 
+## The QA Automation Decision Framework
 
-## Key Criteria for Automation Candidates
+Before automating a test, QA engineers should evaluate it across five key dimensions:
+
+1. Execution Frequency
+2. Business Impact
+3. Feature Stability
+4. Test Determinism
+5. Maintenance Cost
+
+Together, these factors help determine whether automation will provide a meaningful return on investment.
+
+### Key Criteria for Automation Candidates
 
 ### 1. Execution Frequency
 
