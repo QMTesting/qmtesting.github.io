@@ -82,7 +82,7 @@ Together, these factors help determine whether automation will provide a meaning
     </button>
 
     <!-- Mermaid Diagram -->
-    <div class="mermaid" style="transform: scale(0.5); transform-origin: top left;">
+    <div class="mermaid" style="transform: scale(0.75); transform-origin: top left;">
 flowchart TD
     A[Test Scenario] --> B{Runs Frequently?}
     B -- No --> C[Keep as Manual Test]
