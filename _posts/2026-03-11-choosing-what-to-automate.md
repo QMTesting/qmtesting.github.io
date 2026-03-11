@@ -68,19 +68,22 @@ Together, these factors help determine whether automation will provide a meaning
 The following decision tree helps QA teams quickly evaluate automation candidates.
 
 ```mermaid
-%%{init: {'themeVariables': { 'fontSize': '10px'}} }%%
 flowchart TD
-A[Test Scenario] --> B{Runs Often?}
-B -- No --> C[Manual Test]
-B -- Yes --> D{Business Critical?}
-D -- No --> E{Easy to Automate?}
-D -- Yes --> F{Feature Stable?}
-F -- No --> G[Wait for Stability]
-F -- Yes --> H[Automate]
-E -- No --> C
-E -- Yes --> I{Low Maintenance?}
-I -- No --> C
-I -- Yes --> H
+    A[Test Scenario] --> B{Runs Frequently?}
+
+    B -- No --> C[Keep as Manual Test]
+    B -- Yes --> D{Business Critical?}
+
+    D -- Yes --> E{Feature Stable?}
+    E -- No --> F[Wait Until Feature Stabilizes]
+    E -- Yes --> G[Automate Test]
+
+    D -- No --> H{Easy to Automate?}
+    H -- No --> C
+    H -- Yes --> I{Low Maintenance Cost?}
+
+    I -- No --> C
+    I -- Yes --> G
 ```
 
 ### How to Use This Decision Tree
