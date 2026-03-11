@@ -181,19 +181,19 @@ A strong QA automation strategy also respects the **test pyramid**.
 
 ### Key Principles
 
-**Unit and API tests should make up the majority of automation.**
+#### **Unit and API tests should make up the majority of automation.**
 
 When deciding what tests to automate, QA teams should first look for opportunities at the **unit or API layer**. These tests run quickly, are easier to maintain, and are less likely to break due to UI changes. If a feature’s behavior can be validated through an API call or service-level test, it is usually a better automation candidate than testing the same behavior through the UI. Prioritizing automation at this level allows teams to run large numbers of tests in every build and receive rapid feedback when something fails.
 
-**Integration tests verify interactions between components.**
+#### **Integration tests verify interactions between components.**
 
 Integration tests are valuable automation candidates when the risk lies in **how different parts of the system interact**. For example, a workflow might depend on an API calling another service, writing data to a database, or triggering a downstream process. These interactions are common sources of defects. When deciding what to automate, QA engineers should prioritize integration tests for scenarios where multiple services, systems, or data flows must work together correctly. Automating these interactions helps detect issues that unit tests alone may not catch.
 
-**UI tests should focus on critical end-to-end workflows.**
+#### **UI tests should focus on critical end-to-end workflows.**
 
 UI automation should be used selectively for **high-value user journeys** that validate the system from the user's perspective. When deciding what UI tests to automate, focus on workflows that are essential to the product, such as login, account creation, or completing a transaction. These tests confirm that the full stack—from the interface to backend services—works together as expected. Less critical UI scenarios can often be covered more efficiently through API or integration tests.
 
-**Over-reliance on UI automation often leads to slow and fragile pipelines.**
+#### **Over-reliance on UI automation often leads to slow and fragile pipelines.**
 
 UI tests typically run slower and are more sensitive to interface changes than lower-level tests. If too many tests are automated at the UI level, test pipelines can become slow and difficult to maintain. When deciding what to automate, QA teams should avoid automating every UI scenario and instead prioritize a smaller set of critical workflows. Keeping most automation at the unit and API levels helps maintain faster feedback cycles and more stable test suites.
 
