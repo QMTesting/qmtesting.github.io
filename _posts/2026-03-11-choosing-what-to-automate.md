@@ -71,18 +71,18 @@ Together, these factors help determine whether automation will provide a meaning
         position: absolute;
         top: 8px;
         right: 8px;
-        background-color: #444;
-        color: white;
+        background-color: white;
+        color: black;
         border: none;
         border-radius: 4px;
         padding: 4px 8px;
         cursor: pointer;
-        font-size: 0.8em;">
+        font-size: 14px;">
         Copy
     </button>
 
     <!-- Mermaid Diagram -->
-    <div class="mermaid" style="transform: scale(0.75); transform-origin: top left;">
+    <div class="mermaid" style="transform: scale(1.00); transform-origin: top left;">
 flowchart TD
     A[Test Scenario] --> B{Runs Frequently?}
     B -- No --> C[Keep as Manual Test]
