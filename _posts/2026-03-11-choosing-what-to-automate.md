@@ -62,11 +62,11 @@ Before automating a test, QA engineers should evaluate it across five key dimens
 
 Together, these factors help determine whether automation will provide a meaningful return on investment.
 
-## Automation Decision Tree
+<h2>Automation Decision Tree</h2>
 
-The following decision tree helps QA teams quickly evaluate automation candidates.
+<p>The following decision tree helps QA teams quickly evaluate automation candidates.</p>
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[Test Scenario] --> B{Runs Frequently?}
 
@@ -83,7 +83,7 @@ flowchart TD
 
     I -- No --> C
     I -- Yes --> G
-```
+</div>
 
 ### How to Use This Decision Tree
 
