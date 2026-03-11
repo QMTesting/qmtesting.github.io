@@ -65,7 +65,14 @@ Together, these factors help determine whether automation will provide a meaning
 <h2>Automation Decision Tree</h2>
 <p>The following decision tree helps QA teams quickly evaluate automation candidates.</p>
 
-<div style="position: relative; display: inline-block; background-color: #f6f4eb; border-radius: 6px; padding: 1em;">
+<div style="
+    position: relative;
+    width: 100%;
+    background-color: white; /* Change this to any color you like */
+    border-radius: 6px;
+    padding: 2em;
+    box-sizing: border-box;
+">
     <!-- Copy Button -->
     <button onclick="copyMermaidCode(this)" style="
         position: absolute;
