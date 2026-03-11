@@ -25,7 +25,7 @@ This guide introduces a **practical framework QA engineers can use to decide wha
 
 
 
-# Why Choosing the Right Tests to Automate Matters
+## Why Choosing the Right Tests to Automate Matters
 
 Automation requires ongoing investment. Every automated test introduces:
 
@@ -50,7 +50,7 @@ The goal is to automate tests that:
 * Remain stable over time
 
 
-# The QA Automation Decision Framework
+## The QA Automation Decision Framework
 
 Before automating a test, QA engineers should evaluate it across five key dimensions:
 
@@ -63,7 +63,7 @@ Before automating a test, QA engineers should evaluate it across five key dimens
 Together, these factors help determine whether automation will provide a meaningful return on investment.
 
 
-# Automation Decision Tree
+## Automation Decision Tree
 
 The following decision tree helps QA teams quickly evaluate automation candidates.
 
@@ -94,9 +94,9 @@ QA engineers can use this model during:
 If a test fails multiple decision points, it is usually better suited for **manual execution or exploratory testing**.
 
 
-# Key Criteria for Automation Candidates
+## Key Criteria for Automation Candidates
 
-## 1. Execution Frequency
+### 1. Execution Frequency
 
 The more frequently a test runs, the greater the benefit of automation.
 
@@ -110,7 +110,7 @@ The more frequently a test runs, the greater the benefit of automation.
 Tests executed on **every build or deployment** typically deliver the highest automation ROI.
 
 
-## 2. Business and User Impact
+### 2. Business and User Impact
 
 Automation should protect the most critical parts of the product.
 
@@ -125,7 +125,7 @@ Examples of **high-impact workflows**:
 If these areas fail, the impact on users and the business can be significant.
 
 
-## 3. Feature Stability
+### 3. Feature Stability
 
 Automating unstable features often leads to brittle tests.
 
@@ -138,7 +138,7 @@ Avoid automation when:
 It is usually better to **wait until the feature stabilizes** before investing in automation.
 
 
-## 4. Test Determinism
+### 4. Test Determinism
 
 A strong automation candidate should produce **predictable results**.
 
@@ -151,7 +151,7 @@ Good automated tests are:
 Tests that require **human interpretation or visual judgment** are typically poor candidates for automation.
 
 
-## 5. Maintenance Cost
+### 5. Maintenance Cost
 
 Every automated test must be maintained over time.
 
@@ -164,7 +164,7 @@ Tests that are expensive to maintain often include:
 Automation should reduce effort—not create long-term maintenance burdens.
 
 
-# Aligning Automation with the Test Pyramid
+## Aligning Automation with the Test Pyramid
 
 A strong QA automation strategy also respects the **test pyramid**.
 
@@ -179,7 +179,7 @@ A strong QA automation strategy also respects the **test pyramid**.
         (Many & Fast)
 ```
 
-Key principles:
+###Key principles:
 
 * **Unit and API tests** should make up the majority of automation.
 * **Integration tests** verify interactions between components.
@@ -188,7 +188,7 @@ Key principles:
 Over-reliance on UI automation often leads to **slow and fragile pipelines**.
 
 
-# A Simple Automation Scoring Model
+## A Simple Automation Scoring Model
 
 QA teams can also use a scoring model to evaluate potential automation candidates.
 
@@ -212,26 +212,26 @@ QA teams can also use a scoring model to evaluate potential automation candidate
 This method helps QA teams make **consistent and objective automation decisions**.
 
 
-# Common Automation Mistakes QA Teams Make
+## Common Automation Mistakes QA Teams Make
 
-## Automating Too Early
+### Automating Too Early
 
 Automating unstable features leads to constant test failures and wasted effort.
 
-## Automating Everything
+### Automating Everything
 
 Some tests are better suited for **manual or exploratory testing**.
 
-## Ignoring Maintenance Costs
+### Ignoring Maintenance Costs
 
 Automation that requires constant repair can become a liability.
 
-## Overusing UI Automation
+### Overusing UI Automation
 
 UI tests are valuable but should be **used sparingly and strategically**.
 
 
-# Practical Starting Points for QA Engineers
+## Practical Starting Points for QA Engineers
 
 If you're building or expanding an automation suite, start with:
 
@@ -244,7 +244,7 @@ If you're building or expanding an automation suite, start with:
 These tests usually provide the **fastest return on automation investment**.
 
 
-# Conclusion
+## Conclusion
 
 Effective test automation is not about achieving 100% automation coverage. It is about **strategically selecting the tests that deliver the greatest long-term value**.
 
@@ -261,17 +261,17 @@ QA engineers can build automation suites that are **reliable, scalable, and sust
 Thoughtful automation leads to faster feedback, more confident releases, and stronger software quality.
 
 
-# FAQ
+## FAQ
 
-## Should QA teams aim for 100% automation?
+### Should QA teams aim for 100% automation?
 
 No. Some tests require human judgment or exploratory investigation and are better executed manually.
 
-## When is UI automation appropriate?
+### When is UI automation appropriate?
 
 UI automation is most valuable for **critical end-to-end workflows** that validate the full user experience.
 
-## What tests should be automated first?
+### What tests should be automated first?
 
 Start with:
 
@@ -282,6 +282,6 @@ Start with:
 
 These typically deliver the fastest return.
 
-## How often should automation suites be reviewed?
+### How often should automation suites be reviewed?
 
 Automation suites should be reviewed regularly—ideally **every sprint**—to remove flaky tests, update outdated scenarios, and reassess priorities.
