@@ -179,7 +179,7 @@ A strong QA automation strategy also respects the **test pyramid**.
         (Many & Fast)
 ```
 
-###Key principles:
+### Key principles:
 
 * **Unit and API tests** should make up the majority of automation.
 * **Integration tests** verify interactions between components.
