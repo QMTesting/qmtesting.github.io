@@ -25,7 +25,7 @@ One of the most common mistakes teams make is attempting to automate too much, t
 
 This guide introduces a **practical framework QA engineers can use to decide what tests to automate**, along with a **decision tree and scoring model** that help teams prioritize automation efforts effectively.
 
----
+
 
 # Why Choosing the Right Tests to Automate Matters
 
@@ -51,7 +51,6 @@ The goal is to automate tests that:
 * Provide fast, reliable feedback
 * Remain stable over time
 
----
 
 # The QA Automation Decision Framework
 
@@ -65,7 +64,6 @@ Before automating a test, QA engineers should evaluate it across five key dimens
 
 Together, these factors help determine whether automation will provide a meaningful return on investment.
 
----
 
 # Automation Decision Tree
 
@@ -97,7 +95,6 @@ QA engineers can use this model during:
 
 If a test fails multiple decision points, it is usually better suited for **manual execution or exploratory testing**.
 
----
 
 # Key Criteria for Automation Candidates
 
@@ -114,7 +111,6 @@ The more frequently a test runs, the greater the benefit of automation.
 
 Tests executed on **every build or deployment** typically deliver the highest automation ROI.
 
----
 
 ## 2. Business and User Impact
 
@@ -130,7 +126,6 @@ Examples of **high-impact workflows**:
 
 If these areas fail, the impact on users and the business can be significant.
 
----
 
 ## 3. Feature Stability
 
@@ -144,7 +139,6 @@ Avoid automation when:
 
 It is usually better to **wait until the feature stabilizes** before investing in automation.
 
----
 
 ## 4. Test Determinism
 
@@ -158,7 +152,6 @@ Good automated tests are:
 
 Tests that require **human interpretation or visual judgment** are typically poor candidates for automation.
 
----
 
 ## 5. Maintenance Cost
 
@@ -172,7 +165,6 @@ Tests that are expensive to maintain often include:
 
 Automation should reduce effort—not create long-term maintenance burdens.
 
----
 
 # Aligning Automation with the Test Pyramid
 
@@ -197,7 +189,6 @@ Key principles:
 
 Over-reliance on UI automation often leads to **slow and fragile pipelines**.
 
----
 
 # A Simple Automation Scoring Model
 
@@ -222,7 +213,6 @@ QA teams can also use a scoring model to evaluate potential automation candidate
 
 This method helps QA teams make **consistent and objective automation decisions**.
 
----
 
 # Common Automation Mistakes QA Teams Make
 
@@ -242,7 +232,6 @@ Automation that requires constant repair can become a liability.
 
 UI tests are valuable but should be **used sparingly and strategically**.
 
----
 
 # Practical Starting Points for QA Engineers
 
@@ -256,7 +245,6 @@ If you're building or expanding an automation suite, start with:
 
 These tests usually provide the **fastest return on automation investment**.
 
----
 
 # Conclusion
 
@@ -274,7 +262,6 @@ QA engineers can build automation suites that are **reliable, scalable, and sust
 
 Thoughtful automation leads to faster feedback, more confident releases, and stronger software quality.
 
----
 
 # FAQ
 
