@@ -71,8 +71,8 @@ Together, these factors help determine whether automation will provide a meaning
         position: absolute;
         top: 8px;
         right: 8px;
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
         border: none;
         border-radius: 4px;
         padding: 4px 8px;
