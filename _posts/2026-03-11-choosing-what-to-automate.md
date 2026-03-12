@@ -189,11 +189,11 @@ Automation should reduce effort—not create long-term maintenance burdens.
 
 A strong QA automation strategy also respects the **test pyramid**.
 
-<div style="position: relative; width: 100%; margin: 20px auto; background: white; padding: 12px; border-radius: 6px;">
+<div style="position: relative; width: 500px; margin: 20px auto; background: white; padding: 12px; border-radius: 6px;">
 
   <!-- Copy Button -->
   <button onclick="copyPyramidImage()"
-          style="position: absolute; top: 10px; right: 10px; border-radius: 4px; padding: 4px 8px; font-size: 14px; cursor: pointer; background-color: #000000; color: #ffffff; font-size: 14px">
+          style="position: absolute; top: 10px; right: 10px; padding: 4px 8px; font-size: 14px; cursor: pointer; background-color: black; color: white;">
     Copy
   </button>
 
@@ -201,12 +201,15 @@ A strong QA automation strategy also respects the **test pyramid**.
   <svg id="testPyramidSVG" width="480" height="420" xmlns="http://www.w3.org/2000/svg">
 
     <!-- Outer pyramid -->
-    <polygon points="240,30 10,390 450,390"
+    <polygon points="240,30 10,390 470,390"
              fill="white" stroke="black" stroke-width="3" />
 
-    <!-- Horizontal lines -->
-    <line x1="145" y1="190" x2="315" y2="190" stroke="black" stroke-width="3" />
-    <line x1="95"  y1="260" x2="365" y2="260" stroke="black" stroke-width="3" />
+    <!-- Horizontal lines that meet the triangle edges -->
+    <!-- Line 1: intersects left and right triangle edges at y=190 -->
+    <line x1="92" y1="190" x2="388" y2="190" stroke="black" stroke-width="3" />
+
+    <!-- Line 2: intersects left and right triangle edges at y=260 -->
+    <line x1="55" y1="260" x2="425" y2="260" stroke="black" stroke-width="3" />
 
     <!-- UI Tests -->
     <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
@@ -240,7 +243,6 @@ async function copyPyramidImage() {
   const svg = document.getElementById("testPyramidSVG");
   const svgData = new XMLSerializer().serializeToString(svg);
 
-  // Convert SVG → PNG
   const canvas = document.createElement("canvas");
   canvas.width = svg.width.baseVal.value;
   canvas.height = svg.height.baseVal.value;
