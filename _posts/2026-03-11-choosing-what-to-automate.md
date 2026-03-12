@@ -189,37 +189,52 @@ Automation should reduce effort—not create long-term maintenance burdens.
 
 A strong QA automation strategy also respects the **test pyramid**.
 
-<svg width="320" height="260" xmlns="http://www.w3.org/2000/svg">
-  <!-- Outer pyramid -->
-  <polygon points="160,10 20,230 300,230"
-           fill="none" stroke="black" stroke-width="2" />
+<div style="position: relative; width: 420px; margin: 20px auto; background: white; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
 
-  <!-- Horizontal lines -->
-  <line x1="60" y1="150" x2="260" y2="150" stroke="black" stroke-width="2" />
-  <line x1="90" y1="190" x2="230" y2="190" stroke="black" stroke-width="2" />
+  <!-- Copy Button -->
+  <button onclick="navigator.clipboard.writeText(document.getElementById('testPyramidSVG').outerHTML)"
+          style="position: absolute; top: 10px; right: 10px; padding: 4px 8px; font-size: 12px; cursor: pointer;">
+    Copy
+  </button>
 
-  <!-- Labels -->
-  <text x="160" y="70" text-anchor="middle" font-size="14">
-    UI Tests
-  </text>
-  <text x="160" y="90" text-anchor="middle" font-size="12">
-    (Few &amp; Critical)
-  </text>
+  <!-- Pyramid SVG -->
+  <svg id="testPyramidSVG" width="400" height="340" xmlns="http://www.w3.org/2000/svg">
 
-  <text x="160" y="140" text-anchor="middle" font-size="14">
-    Integration Tests
-  </text>
-  <text x="160" y="160" text-anchor="middle" font-size="12">
-    (Moderate)
-  </text>
+    <!-- Outer pyramid -->
+    <polygon points="200,20 40,300 360,300"
+             fill="white" stroke="black" stroke-width="3" />
 
-  <text x="160" y="200" text-anchor="middle" font-size="14">
-    Unit / API Tests
-  </text>
-  <text x="160" y="220" text-anchor="middle" font-size="12">
-    (Many &amp; Fast)
-  </text>
-</svg>
+    <!-- Horizontal lines under UI and Integration sections -->
+    <line x1="90" y1="140" x2="310" y2="140" stroke="black" stroke-width="3" />
+    <line x1="70" y1="210" x2="330" y2="210" stroke="black" stroke-width="3" />
+
+    <!-- UI Tests -->
+    <text x="200" y="80" text-anchor="middle" font-size="20" font-weight="bold">
+      UI Tests
+    </text>
+    <text x="200" y="105" text-anchor="middle" font-size="16">
+      (Few &amp; Critical)
+    </text>
+
+    <!-- Integration Tests -->
+    <text x="200" y="175" text-anchor="middle" font-size="20" font-weight="bold">
+      Integration Tests
+    </text>
+    <text x="200" y="200" text-anchor="middle" font-size="16">
+      (Moderate)
+    </text>
+
+    <!-- Unit / API Tests -->
+    <text x="200" y="255" text-anchor="middle" font-size="20" font-weight="bold">
+      Unit / API Tests
+    </text>
+    <text x="200" y="280" text-anchor="middle" font-size="16">
+      (Many &amp; Fast)
+    </text>
+
+  </svg>
+</div>
+
 
 
 ### Key Principles
