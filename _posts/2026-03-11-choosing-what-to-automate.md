@@ -189,23 +189,38 @@ Automation should reduce effort—not create long-term maintenance burdens.
 
 A strong QA automation strategy also respects the **test pyramid**.
 
-```
-                 /\
-                /  \
-               / UI \
-              /Tests\
-             / (Few  \
-            / & Crit.)\
-           /----------\
-          / Integration\
-         /    Tests    \
-        /  (Moderate)  \
-       /----------------\
-      /   Unit / API    \
-     /      Tests       \
-    /   (Many & Fast)   \
-   /____________________\
-```
+<svg width="320" height="260" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer pyramid -->
+  <polygon points="160,10 20,230 300,230"
+           fill="none" stroke="black" stroke-width="2" />
+
+  <!-- Horizontal lines -->
+  <line x1="60" y1="150" x2="260" y2="150" stroke="black" stroke-width="2" />
+  <line x1="90" y1="190" x2="230" y2="190" stroke="black" stroke-width="2" />
+
+  <!-- Labels -->
+  <text x="160" y="70" text-anchor="middle" font-size="14">
+    UI Tests
+  </text>
+  <text x="160" y="90" text-anchor="middle" font-size="12">
+    (Few &amp; Critical)
+  </text>
+
+  <text x="160" y="140" text-anchor="middle" font-size="14">
+    Integration Tests
+  </text>
+  <text x="160" y="160" text-anchor="middle" font-size="12">
+    (Moderate)
+  </text>
+
+  <text x="160" y="200" text-anchor="middle" font-size="14">
+    Unit / API Tests
+  </text>
+  <text x="160" y="220" text-anchor="middle" font-size="12">
+    (Many &amp; Fast)
+  </text>
+</svg>
+
 
 ### Key Principles
 
