@@ -222,22 +222,73 @@ UI tests typically run slower and are more sensitive to interface changes than l
 
 QA teams can also use a scoring model to evaluate potential automation candidates.
 
-|    **Criterion**     |       **Score 1**       |       **Score 5**       |
-| ---------------- | ------------------- | ------------------- |
-| Frequency        | Rarely executed     | Runs every build    |
-| Business Impact  | Low impact          | Mission critical    |
-| Stability        | Frequently changing | Very stable         |
-| Determinism      | Hard to automate    | Fully deterministic |
-| Maintenance Cost | High cost           | Low cost            |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Criterion</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Score 1</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Score 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frequency</td>
+      <td>Rarely executed</td>
+      <td>Runs every build</td>
+    </tr>
+    <tr>
+      <td>Business Impact</td>
+      <td>Low impact</td>
+      <td>Mission critical</td>
+    </tr>
+    <tr>
+      <td>Stability</td>
+      <td>Frequently changing</td>
+      <td>Very stable</td>
+    </tr>
+    <tr>
+      <td>Determinism</td>
+      <td>Hard to automate</td>
+      <td>Fully deterministic</td>
+    </tr>
+    <tr>
+      <td>Maintenance Cost</td>
+      <td>High cost</td>
+      <td>Low cost</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### Interpreting the Score
 
-| Score        | Recommendation              |
-| ------------ | --------------------------- |
-| **20–25**    | Automate immediately        |
-| **14–19**    | Strong candidate            |
-| **10–13**    | Consider partial automation |
-| **Below 10** | Keep manual                 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Score</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>20–25</strong></td>
+      <td>Automate immediately</td>
+    </tr>
+    <tr>
+      <td><strong>14–19</strong></td>
+      <td>Strong candidate</td>
+    </tr>
+    <tr>
+      <td><strong>10–13</strong></td>
+      <td>Consider partial automation</td>
+    </tr>
+    <tr>
+      <td><strong>Below 10</strong></td>
+      <td>Keep manual</td>
+    </tr>
+  </tbody>
+</table>
+
 
 This method helps QA teams make **consistent and objective automation decisions**.
 
