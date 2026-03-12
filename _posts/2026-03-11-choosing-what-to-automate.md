@@ -189,7 +189,7 @@ Automation should reduce effort—not create long-term maintenance burdens.
 
 A strong QA automation strategy also respects the **test pyramid**.
 
-<div style="position: relative; width: 480px; margin: 20px auto; background: white; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
+<div style="position: relative; width: 100%; margin: 20px auto; background: white; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
 
   <!-- Copy Button -->
   <button onclick="navigator.clipboard.writeText(document.getElementById('testPyramidSVG').outerHTML)"
@@ -198,42 +198,43 @@ A strong QA automation strategy also respects the **test pyramid**.
   </button>
 
   <!-- Pyramid SVG -->
-  <svg id="testPyramidSVG" width="460" height="420" xmlns="http://www.w3.org/2000/svg">
+  <svg id="testPyramidSVG" width="480" height="420" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Outer pyramid (bigger) -->
-    <polygon points="230,30 40,380 420,380"
+    <!-- Outer pyramid: wider base so text fits -->
+    <polygon points="240,30 10,390 470,390"
              fill="white" stroke="black" stroke-width="3" />
 
-    <!-- Horizontal lines (shorter, inside triangle) -->
-    <line x1="120" y1="165" x2="340" y2="165" stroke="black" stroke-width="3" />
-    <line x1="95" y1="255" x2="365" y2="255" stroke="black" stroke-width="3" />
+    <!-- Horizontal lines (kept inside triangle) -->
+    <line x1="145" y1="190" x2="335" y2="190" stroke="black" stroke-width="3" />
+    <line x1="95"  y1="260" x2="385" y2="260" stroke="black" stroke-width="3" />
 
     <!-- UI Tests -->
-    <text x="230" y="95" text-anchor="middle" font-size="24" font-weight="bold">
+    <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
       UI Tests
     </text>
-    <text x="230" y="125" text-anchor="middle" font-size="18">
+    <text x="240" y="145" text-anchor="middle" font-size="18">
       (Few &amp; Critical)
     </text>
 
     <!-- Integration Tests -->
-    <text x="230" y="210" text-anchor="middle" font-size="24" font-weight="bold">
+    <text x="240" y="215" text-anchor="middle" font-size="24" font-weight="bold">
       Integration Tests
     </text>
-    <text x="230" y="235" text-anchor="middle" font-size="18">
+    <text x="240" y="240" text-anchor="middle" font-size="18">
       (Moderate)
     </text>
 
     <!-- Unit / API Tests -->
-    <text x="230" y="300" text-anchor="middle" font-size="24" font-weight="bold">
+    <text x="240" y="295" text-anchor="middle" font-size="24" font-weight="bold">
       Unit / API Tests
     </text>
-    <text x="230" y="330" text-anchor="middle" font-size="18">
+    <text x="240" y="320" text-anchor="middle" font-size="18">
       (Many &amp; Fast)
     </text>
 
   </svg>
 </div>
+
 
 
 
