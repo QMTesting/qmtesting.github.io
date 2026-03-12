@@ -193,7 +193,7 @@ A strong QA automation strategy also respects the **test pyramid**.
 
   <!-- Copy Button -->
   <button onclick="copyPyramidImage()"
-          style="position: absolute; top: 10px; right: 10px; padding: 4px 8px; font-size: 12px; cursor: pointer;">
+          style="position: absolute; top: 10px; right: 10px; padding: 4px 8px; font-size: 12px; cursor: pointer; background-color: #000000; color: #ffffff;">
     Copy
   </button>
 
