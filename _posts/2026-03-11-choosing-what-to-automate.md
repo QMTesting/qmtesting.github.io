@@ -220,7 +220,7 @@ UI tests typically run slower and are more sensitive to interface changes than l
 
 ## A Simple Automation Scoring Model
 
-QA teams can also use a scoring model to evaluate potential automation candidates.
+QA teams can often use a scoring model to evaluate potential automation candidates.
 
 <table>
   <thead>
@@ -262,6 +262,8 @@ QA teams can also use a scoring model to evaluate potential automation candidate
 
 ### Interpreting the Score
 
+The table below shows the two ends of the scoring scale. Scores of 2–4 represent intermediate values between these extremes, allowing teams to estimate how strongly each criterion applies to a particular test.
+
 <table>
   <thead>
     <tr>
@@ -291,6 +293,143 @@ QA teams can also use a scoring model to evaluate potential automation candidate
 
 
 This method helps QA teams make **consistent and objective automation decisions**.
+
+## Weighted Automation Scoring Model
+
+For many QA Teams, some criteria have a greater influence on automation value than others. A weighted scoring model reflects this by assigning higher importance to factors like business impact and execution frequency.
+
+Each criterion is scored from 1–5, then multiplied by its weight to produce a weighted score. The total score helps prioritize which tests should be automated first.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Criterion</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Description</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Weight</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Score (1–5)</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Weighted Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Execution Frequency</strong></td>
+      <td>How often the test is executed</td>
+      <td>3</td>
+      <td>1–5</td>
+      <td>Score × 3</td>
+    </tr>
+    <tr>
+      <td><strong>Business Impact</strong></td>
+      <td>Risk to users or the business if the feature fails</td>
+      <td>3</td>
+      <td>1–5</td>
+      <td>Score × 3</td>
+    </tr>
+    <tr>
+      <td><strong>Feature Stability</strong></td>
+      <td>How stable the feature or interface is</td>
+      <td>2</td>
+      <td>1–5</td>
+      <td>Score × 2</td>
+    </tr>
+    <tr>
+      <td><strong>Determinism</strong></td>
+      <td>How reliably the test can produce consistent results</td>
+      <td>2</td>
+      <td>1–5</td>
+      <td>Score × 2</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance Cost</strong></td>
+      <td>Expected long-term maintenance effort</td>
+      <td>2</td>
+      <td>1–5</td>
+      <td>Score × 2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Example Weighted Score Calculation
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Criterion</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Score</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Weight</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Weighted Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Execution Frequency</td>
+      <td>5</td>
+      <td>3</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Business Impact</td>
+      <td>4</td>
+      <td>3</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Feature Stability</td>
+      <td>4</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Determinism</td>
+      <td>5</td>
+      <td>2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Maintenance Cost</td>
+      <td>3</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td></td>
+      <td></td>
+      <td><strong>51</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+### Interpreting the Weighted Score
+
+This weighted approach helps QA teams prioritize automation efforts more effectively, ensuring that automation work focuses on tests that deliver the highest value and risk reduction.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Total Score</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>45+</strong></td>
+      <td>High priority for automation</td>
+    </tr>
+    <tr>
+      <td><strong>30–44</strong></td>
+      <td>Good candidate for automation</td>
+    </tr>
+    <tr>
+      <td><strong>20–29</strong></td>
+      <td>Consider partial or lower-priority automation</td>
+    </tr>
+    <tr>
+      <td><strong>Below 20</strong></td>
+      <td>Keep manual for now</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Common Automation Mistakes QA Teams Make
