@@ -189,11 +189,11 @@ Automation should reduce effort—not create long-term maintenance burdens.
 
 A strong QA automation strategy also respects the **test pyramid**.
 
-<div style="position: relative; width: 100$; margin: 20px auto; background: white; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
+<div style="position: relative; width: 100%; margin: 20px auto; background: white; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
 
   <!-- Copy Button -->
   <button onclick="copyPyramidImage()"
-          style="position: absolute; top: 10px; right: 10px; padding: 4px 8px; font-size: 12px; cursor: pointer; background-color: #000000; color: #ffffff;">
+          style="position: absolute; top: 10px; right: 10px; border-radius: 4px; padding: 4px 8px; font-size: 14px; cursor: pointer; background-color: #000000; color: #ffffff; font-size: 14px">
     Copy
   </button>
 
