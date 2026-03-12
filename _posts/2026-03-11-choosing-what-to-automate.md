@@ -206,10 +206,10 @@ A strong QA automation strategy also respects the **test pyramid**.
 
     <!-- Horizontal lines that meet the triangle edges -->
     <!-- Line 1: intersects left and right triangle edges at y=190 -->
-    <line x1="72" y1="150" x2="368" y2="150" stroke="black" stroke-width="3" />
+    <line x1="150" y1="170" x2="340" y2="170" stroke="black" stroke-width="3" />
 
     <!-- Line 2: intersects left and right triangle edges at y=260 -->
-    <line x1="75" y1="260" x2="405" y2="260" stroke="black" stroke-width="3" />
+    <line x1="80" y1="260" x2="400" y2="260" stroke="black" stroke-width="3" />
 
     <!-- UI Tests -->
     <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
