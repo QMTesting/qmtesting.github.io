@@ -190,16 +190,21 @@ Automation should reduce effort—not create long-term maintenance burdens.
 A strong QA automation strategy also respects the **test pyramid**.
 
 ```
-
-
-        UI Tests
-      (Few & Critical)
-
-     Integration Tests
-        (Moderate)
-
-      Unit / API Tests
-        (Many & Fast)
+                 /\
+                /  \
+               / UI \
+              /Tests\
+             / (Few  \
+            / & Crit.)\
+           /----------\
+          / Integration\
+         /    Tests    \
+        /  (Moderate)  \
+       /----------------\
+      /   Unit / API    \
+     /      Tests       \
+    /   (Many & Fast)   \
+   /____________________\
 ```
 
 ### Key Principles
@@ -222,7 +227,7 @@ UI tests typically run slower and are more sensitive to interface changes than l
 
 ## A Simple Automation Scoring Model
 
-QA teams often use a scoring model to evaluate potential automation candidates.
+QA teams often use this simple scoring model to evaluate potential automation candidates.
 
 <table>
   <thead>
