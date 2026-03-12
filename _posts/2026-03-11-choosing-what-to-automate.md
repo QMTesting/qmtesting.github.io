@@ -189,10 +189,10 @@ Automation should reduce effort—not create long-term maintenance burdens.
 
 A strong QA automation strategy also respects the **test pyramid**.
 
-<div style="position: relative; width: 100%; margin: 20px auto; background: white; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
+<div style="position: relative; width: 500px; margin: 20px auto; background: white; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
 
   <!-- Copy Button -->
-  <button onclick="navigator.clipboard.writeText(document.getElementById('testPyramidSVG').outerHTML)"
+  <button onclick="copyPyramidImage()"
           style="position: absolute; top: 10px; right: 10px; padding: 4px 8px; font-size: 12px; cursor: pointer;">
     Copy
   </button>
@@ -200,13 +200,13 @@ A strong QA automation strategy also respects the **test pyramid**.
   <!-- Pyramid SVG -->
   <svg id="testPyramidSVG" width="480" height="420" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Outer pyramid: wider base so text fits -->
-    <polygon points="240,30 10,390 470,390"
+    <!-- Outer pyramid -->
+    <polygon points="240,30 10,390 450,390"
              fill="white" stroke="black" stroke-width="3" />
 
-    <!-- Horizontal lines (kept inside triangle) -->
-    <line x1="145" y1="190" x2="335" y2="190" stroke="black" stroke-width="3" />
-    <line x1="95"  y1="260" x2="385" y2="260" stroke="black" stroke-width="3" />
+    <!-- Horizontal lines -->
+    <line x1="145" y1="190" x2="315" y2="190" stroke="black" stroke-width="3" />
+    <line x1="95"  y1="260" x2="365" y2="260" stroke="black" stroke-width="3" />
 
     <!-- UI Tests -->
     <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
@@ -235,8 +235,36 @@ A strong QA automation strategy also respects the **test pyramid**.
   </svg>
 </div>
 
+<script>
+async function copyPyramidImage() {
+  const svg = document.getElementById("testPyramidSVG");
+  const svgData = new XMLSerializer().serializeToString(svg);
 
+  // Convert SVG → PNG
+  const canvas = document.createElement("canvas");
+  canvas.width = svg.width.baseVal.value;
+  canvas.height = svg.height.baseVal.value;
+  const ctx = canvas.getContext("2d");
 
+  const img = new Image();
+  img.src = "data:image/svg+xml;base64," + btoa(svgData);
+
+  img.onload = async () => {
+    ctx.drawImage(img, 0, 0);
+
+    canvas.toBlob(async (blob) => {
+      try {
+        await navigator.clipboard.write([
+          new ClipboardItem({ "image/png": blob })
+        ]);
+        alert("Pyramid image copied!");
+      } catch (err) {
+        alert("Copy failed — your browser may not support image clipboard.");
+      }
+    }, "image/png");
+  };
+}
+</script>
 
 
 ### Key Principles
