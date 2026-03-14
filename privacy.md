@@ -11,6 +11,8 @@ permalink: /privacy/
 
 <br /><br />
 
+#### **Last updated:** March 14, 2026
+
 <h1>Privacy Policy</h1>
 
 ---
@@ -135,8 +137,6 @@ If you have questions about this Privacy Policy, contact **QMSTesting.com** at *
 ## 10. Updates to This Policy
 
 We may update this Privacy Policy periodically. The “last updated” date will reflect the most recent changes.
-
-**Last updated:** {{ site.time | date: "%B %d, %Y" }}
 
 
 <style>
