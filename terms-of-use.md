@@ -6,7 +6,7 @@ permalink: /terms-of-use
 
 <nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
-  <span class="current">Privacy Policy</span>
+  <span class="current">Terms of Use</span>
 </nav>
 
 <br /><br />
