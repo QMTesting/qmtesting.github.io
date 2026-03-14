@@ -198,44 +198,47 @@ A strong QA automation strategy also respects the **test pyramid**.
   </button>
 
   <!-- Pyramid SVG -->
-  <svg id="testPyramidSVG" width="480" height="420" xmlns="http://www.w3.org/2000/svg">
+<svg id="testPyramidSVG"
+     viewBox="0 0 480 420"
+     width="100%"
+     height="auto"
+     preserveAspectRatio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Outer pyramid -->
-    <polygon points="240,30 10,390 470,390"
-             fill="white" stroke="black" stroke-width="3" />
+  <!-- Outer pyramid -->
+  <polygon points="240,30 10,390 470,390"
+           fill="white" stroke="black" stroke-width="3" />
 
-    <!-- Horizontal lines that meet the triangle edges -->
-    <!-- Line 1: intersects left and right triangle edges at y=190 -->
-    <line x1="150" y1="170" x2="332" y2="170" stroke="black" stroke-width="3" />
+  <!-- Horizontal lines -->
+  <line x1="150" y1="170" x2="332" y2="170" stroke="black" stroke-width="3" />
+  <line x1="90" y1="260" x2="389" y2="260" stroke="black" stroke-width="3" />
 
-    <!-- Line 2: intersects left and right triangle edges at y=260 -->
-    <line x1="90" y1="260" x2="389" y2="260" stroke="black" stroke-width="3" />
+  <!-- UI Tests -->
+  <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
+    UI Tests
+  </text>
+  <text x="240" y="145" text-anchor="middle" font-size="18">
+    (Few &amp; Critical)
+  </text>
 
-    <!-- UI Tests -->
-    <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
-      UI Tests
-    </text>
-    <text x="240" y="145" text-anchor="middle" font-size="18">
-      (Few &amp; Critical)
-    </text>
+  <!-- Integration Tests -->
+  <text x="240" y="215" text-anchor="middle" font-size="24" font-weight="bold">
+    Integration Tests
+  </text>
+  <text x="240" y="240" text-anchor="middle" font-size="18">
+    (Moderate)
+  </text>
 
-    <!-- Integration Tests -->
-    <text x="240" y="215" text-anchor="middle" font-size="24" font-weight="bold">
-      Integration Tests
-    </text>
-    <text x="240" y="240" text-anchor="middle" font-size="18">
-      (Moderate)
-    </text>
+  <!-- Unit / API Tests -->
+  <text x="240" y="310" text-anchor="middle" font-size="24" font-weight="bold">
+    Unit / API Tests
+  </text>
+  <text x="240" y="340" text-anchor="middle" font-size="18">
+    (Many &amp; Fast)
+  </text>
 
-    <!-- Unit / API Tests -->
-    <text x="240" y="310" text-anchor="middle" font-size="24" font-weight="bold">
-      Unit / API Tests
-    </text>
-    <text x="240" y="340" text-anchor="middle" font-size="18">
-      (Many &amp; Fast)
-    </text>
+</svg>
 
-  </svg>
 </div>
 
 <script>
