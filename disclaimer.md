@@ -10,6 +10,7 @@ permalink: /disclaimer/
 </nav>
 
 <br /><br />
+<br /><br />
 
 <h1>Disclaimer</h1>
 
