@@ -6,7 +6,7 @@ permalink: /cookie-policy
 
 <nav class="breadcrumbs">
   <a href="/">🏠</a> &gt;
-  <span class="current">Contact</span>
+  <span class="current">Cookie Policy</span>
 </nav>
 
 <br /><br />
