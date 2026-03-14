@@ -372,6 +372,8 @@ For many QA Teams, some criteria have a greater influence on automation value th
 
 Each criterion is scored from 1–5, then multiplied by its weight to produce a weighted score. The total score helps prioritize which tests should be automated first.
 
+<div class="table-scroll">
+  
 <table>
   <thead>
     <tr>
@@ -420,6 +422,8 @@ Each criterion is scored from 1–5, then multiplied by its weight to produce a 
     </tr>
   </tbody>
 </table>
+
+</div>
 
 ### Example Weighted Score Calculation
 
