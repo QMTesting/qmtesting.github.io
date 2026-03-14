@@ -5,6 +5,8 @@ permalink: /cookie-policy
 ---
 #### Last updated: March 14, 2026
 
+<br />
+
 This Cookie Policy explains how **QMSTesting.com** (“we”, “our”, “the site”) uses cookies and similar technologies to provide, improve, and personalize your browsing experience. By using this website, you agree to the practices described in this policy.
 
 We aim to be transparent about what data we collect, why we collect it, and how you can control your preferences.
