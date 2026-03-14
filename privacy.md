@@ -10,6 +10,7 @@ permalink: /privacy/
 </nav>
 
 <br /><br />
+<br /><br />
 
 <h1>Privacy Policy</h1>
 
