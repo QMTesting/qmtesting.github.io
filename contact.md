@@ -9,9 +9,9 @@ permalink: /contact/
   <span class="current">Contact</span>
 </nav>
 
-<h1>Contact</h1>
-
 <br /><br />
+
+<h1>Contact</h1>
 
 #### Last Updated: May 19, 2025
 
