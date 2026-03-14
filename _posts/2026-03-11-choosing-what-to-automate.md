@@ -214,26 +214,26 @@ A strong QA automation strategy also respects the **test pyramid**.
   <line x1="90" y1="260" x2="389" y2="260" stroke="black" stroke-width="3" />
 
   <!-- UI Tests -->
-  <text x="240" y="120" text-anchor="middle" font-size="24" font-weight="bold">
+  <text x="240" y="120" text-anchor="middle" font-size="20" font-weight="bold">
     UI Tests
   </text>
-  <text x="240" y="145" text-anchor="middle" font-size="18">
+  <text x="240" y="145" text-anchor="middle" font-size="14">
     (Few &amp; Critical)
   </text>
 
   <!-- Integration Tests -->
-  <text x="240" y="215" text-anchor="middle" font-size="24" font-weight="bold">
+  <text x="240" y="215" text-anchor="middle" font-size="20" font-weight="bold">
     Integration Tests
   </text>
-  <text x="240" y="240" text-anchor="middle" font-size="18">
+  <text x="240" y="240" text-anchor="middle" font-size="14">
     (Moderate)
   </text>
 
   <!-- Unit / API Tests -->
-  <text x="240" y="310" text-anchor="middle" font-size="24" font-weight="bold">
+  <text x="240" y="310" text-anchor="middle" font-size="20" font-weight="bold">
     Unit / API Tests
   </text>
-  <text x="240" y="340" text-anchor="middle" font-size="18">
+  <text x="240" y="340" text-anchor="middle" font-size="14">
     (Many &amp; Fast)
   </text>
 
