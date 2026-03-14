@@ -92,7 +92,10 @@ These drafts can significantly reduce writing time. However, authentication and 
 
 ```
 
-    "The username must be between 3 and 20 characters and may contain letters, digits, underscores, and periods."
+
+    "The username must be between 3 and 20 characters and may contain
+      letters, digits, underscores, and periods."
+
 ```
 
 AI-assisted test design can quickly produce structured boundary test ideas such as:
