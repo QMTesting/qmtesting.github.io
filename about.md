@@ -9,12 +9,13 @@ permalink: /about/
   <span class="current">About</span>
 </nav>
 
-<br /><br />
-<br /><br />
-
 <h1>About</h1>
 
-#### Last 
+<br /><br />
+
+#### Last Updated: March 14, 2026
+
+<br /><br />
 
 Welcome to our software testing, quality assurance, and automation blog - your go-to resource for beginners embarking on their journey into the fascinating world of ensuring software reliability and efficiency.
 
