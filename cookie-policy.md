@@ -11,7 +11,7 @@ permalink: /cookie-policy
 
 <br /><br />
 
-<h2>Cookue Policy</h2>
+<h2>Cookie Policy</h2>
 
 #### Last updated: March 14, 2026
 
