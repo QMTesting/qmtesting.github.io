@@ -9,12 +9,13 @@ permalink: /disclaimer/
   <span class="current">Disclaimer</span>
 </nav>
 
-<br /><br />
-<br /><br />
-
 <h1>Disclaimer</h1>
 
+<br /><br />
+
 #### Last Updated: May 19, 2025
+
+<br /><br />
 
 QMSTesting / [https://qmstesting.com](https://qmstesting.com) (the “Site”), a personal blog I manage serves as an informational platform.
 
