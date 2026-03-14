@@ -9,9 +9,9 @@ permalink: /about/
   <span class="current">About</span>
 </nav>
 
-<h1>About</h1>
-
 <br /><br />
+
+<h1>About</h1>
 
 #### Last Updated: March 14, 2026
 
