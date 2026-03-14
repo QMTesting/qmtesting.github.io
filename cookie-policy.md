@@ -1,10 +1,17 @@
 ---
-layout: page
+layout: default
 title: Cookie Policy
 permalink: /cookie-policy
 ---
 
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">Contact</span>
+</nav>
+
 <br /><br />
+
+<h2>Cookue Policy</h2>
 
 #### Last updated: March 14, 2026
 
