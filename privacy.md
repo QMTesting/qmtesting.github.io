@@ -9,9 +9,9 @@ permalink: /privacy/
   <span class="current">Privacy Policy</span>
 </nav>
 
-<h1>Privacy Policy</h1>
-
 <br /><br />
+
+<h1>Privacy Policy</h1>
 
 #### **Last updated:** March 14, 2026
 
