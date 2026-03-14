@@ -11,17 +11,9 @@ permalink: /privacy/
 
 <br /><br />
 
-#### **Last updated:** March 14, 2026
-
 <h1>Privacy Policy</h1>
 
----
-layout: page
-title: Privacy Policy
-permalink: /privacy-policy
----
-
-# Privacy Policy
+#### **Last updated:** March 14, 2026
 
 This Privacy Policy explains how **QMSTesting.com** (“we”, “our”, “the site”) collects, uses, and protects your personal information. We are committed to transparency and to respecting your privacy.
 
