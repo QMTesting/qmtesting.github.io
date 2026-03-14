@@ -9,9 +9,9 @@ permalink: /disclaimer/
   <span class="current">Disclaimer</span>
 </nav>
 
-<h1>Disclaimer</h1>
-
 <br /><br />
+
+<h1>Disclaimer</h1>
 
 #### Last Updated: May 19, 2025
 
