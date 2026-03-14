@@ -10,6 +10,7 @@ permalink: /contact/
 </nav>
 
 <br /><br />
+<br /><br />
 
 <h1>Contact</h1>
 
