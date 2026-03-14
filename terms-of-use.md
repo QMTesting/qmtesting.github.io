@@ -1,10 +1,17 @@
 ---
-layout: page
+layout: default
 title: Terms of Use
 permalink: /terms-of-use
 ---
 
+<nav class="breadcrumbs">
+  <a href="/">🏠</a> &gt;
+  <span class="current">Privacy Policy</span>
+</nav>
+
 <br /><br />
+
+<h2>Terms of Use</h2>
 
 #### Last Updated: March 14, 2026
 
