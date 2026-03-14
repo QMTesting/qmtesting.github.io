@@ -9,12 +9,13 @@ permalink: /contact/
   <span class="current">Contact</span>
 </nav>
 
-<br /><br />
-<br /><br />
-
 <h1>Contact</h1>
 
+<br /><br />
+
 #### Last Updated: May 19, 2025
+
+<br /><br />
 
 We are always happy to answer any inquiries you may have.
 
