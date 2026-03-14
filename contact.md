@@ -13,7 +13,7 @@ permalink: /contact/
 
 <h1>Contact</h1>
 
-#### Last Updated: 2025-05-19
+#### Last Updated: May 19, 2025
 
 We are always happy to answer any inquiries you may have.
 
