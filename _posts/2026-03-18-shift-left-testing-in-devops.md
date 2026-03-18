@@ -67,6 +67,89 @@ In the shift‑left model, QA collaborates early with developers, product owners
 
 ---
 
+<svg width="900" height="420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 20px sans-serif; }
+    .label { font: 14px sans-serif; }
+    .box { fill: #f7f7f7; stroke: #333; stroke-width: 1.5; rx: 6; }
+    .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="50" y="35" class="title">Traditional Testing vs. Shift‑Left Testing</text>
+
+  <!-- Traditional Row -->
+  <text x="50" y="70" class="label">Traditional Testing</text>
+
+  <rect x="50" y="90" width="130" height="50" class="box"/>
+  <text x="65" y="120" class="label">Requirements</text>
+
+  <line x1="180" y1="115" x2="220" y2="115" class="arrow"/>
+
+  <rect x="220" y="90" width="130" height="50" class="box"/>
+  <text x="255" y="120" class="label">Design</text>
+
+  <line x1="350" y1="115" x2="390" y2="115" class="arrow"/>
+
+  <rect x="390" y="90" width="150" height="50" class="box"/>
+  <text x="410" y="120" class="label">Development</text>
+
+  <line x1="540" y1="115" x2="580" y2="115" class="arrow"/>
+
+  <rect x="580" y="90" width="130" height="50" class="box"/>
+  <text x="610" y="120" class="label">Testing</text>
+
+  <line x1="710" y1="115" x2="750" y2="115" class="arrow"/>
+
+  <rect x="750" y="90" width="120" height="50" class="box"/>
+  <text x="780" y="120" class="label">Release</text>
+
+  <text x="410" y="165" class="label" fill="#b30000">Bugs found late → costly</text>
+
+  <!-- Shift Left Row -->
+  <text x="50" y="230" class="label">Shift‑Left Testing</text>
+
+  <rect x="50" y="250" width="130" height="50" class="box"/>
+  <text x="65" y="280" class="label">Requirements</text>
+
+  <line x1="180" y1="275" x2="220" y2="275" class="arrow"/>
+
+  <rect x="220" y="250" width="150" height="50" class="box"/>
+  <text x="235" y="280" class="label">Design Review</text>
+
+  <line x1="370" y1="275" x2="410" y2="275" class="arrow"/>
+
+  <rect x="410" y="250" width="150" height="50" class="box"/>
+  <text x="430" y="280" class="label">Development</text>
+
+  <line x1="560" y1="275" x2="600" y2="275" class="arrow"/>
+
+  <rect x="600" y="250" width="150" height="50" class="box"/>
+  <text x="620" y="280" class="label">CI/CD Testing</text>
+
+  <line x1="750" y1="275" x2="790" y2="275" class="arrow"/>
+
+  <rect x="790" y="250" width="120" height="50" class="box"/>
+  <text x="820" y="280" class="label">Release</text>
+
+  <!-- Feedback Loop -->
+  <path d="M 600 250 C 600 200, 300 200, 300 250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="330" y="215" class="label">Continuous Feedback</text>
+
+  <!-- Early QA Labels -->
+  <text x="70" y="315" class="label">Early QA</text>
+  <text x="240" y="315" class="label">Collaboration</text>
+  <text x="430" y="315" class="label">Unit Tests + Static Analysis</text>
+  <text x="620" y="315" class="label">Automation</text>
+</svg>
+
+
 ## Strengthening Your Shift‑Left Approach
 
 As teams adopt shift‑left practices, it helps to refine how the concept is communicated—especially for testers transitioning from traditional QA roles.
@@ -113,6 +196,8 @@ As teams adopt shift‑left practices, it helps to refine how the concept is com
 </div>
 
 ---
+
+
 
 ## How QA Engineers Can Start Practicing Shift‑Left Testing
 
