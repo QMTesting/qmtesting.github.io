@@ -117,11 +117,39 @@ These services may process data outside of Canada. We ensure that any third‑pa
 
 Below is a general overview of the types of cookies that may be set:
 
-| Cookie Type | Purpose | Stored By | Duration |
-|-------------|---------|-----------|----------|
-| Necessary | Enables core site functionality | QMSTesting.com | Session / Short-term |
-| Analytics | Tracks site usage to improve content | Google Analytics | Varies (if accepted) |
-| Advertising | Supports personalized ads and measurement | Google Ads | Varies (if accepted) |
+<div class="table-scroll"> 
+  <table>
+  <thead>
+    <tr>
+      <th>Cookie Type</th>
+      <th>Purpose</th>
+      <th>Stored By</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Necessary</td>
+      <td>Enables core site functionality</td>
+      <td>QMSTesting.com</td>
+      <td>Session / Short-term</td>
+    </tr>
+    <tr>
+      <td>Analytics</td>
+      <td>Tracks site usage to improve content</td>
+      <td>Google Analytics</td>
+      <td>Varies (if accepted)</td>
+    </tr>
+    <tr>
+      <td>Advertising</td>
+      <td>Supports personalized ads and measurement</td>
+      <td>Google Ads</td>
+      <td>Varies (if accepted)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div/>
 
 Exact cookie names may change as services update their technology.
 
