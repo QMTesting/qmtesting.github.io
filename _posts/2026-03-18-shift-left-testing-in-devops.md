@@ -55,6 +55,7 @@ DevOps teams release software frequently using CI/CD pipelines. When testing hap
 ## Traditional vs. Shift‑Left Testing
 
 Here’s a simple visual comparison:
+<div style="overflow-x: auto; max-width: 100%;">
 <svg width="925" height="420" xmlns="http://www.w3.org/2000/svg" transform="translate(-50,0)">
   <style>
     .title { font: bold 20px sans-serif; }
@@ -137,7 +138,7 @@ In the shift‑left model, QA collaborates early with developers, product owners
   <text x="430" y="315" class="label">Unit Tests + Static Analysis</text>
   <text x="620" y="315" class="label">Automation</text>
 </svg>
-
+</div>
 
 ## Strengthening Your Shift‑Left Approach
 
