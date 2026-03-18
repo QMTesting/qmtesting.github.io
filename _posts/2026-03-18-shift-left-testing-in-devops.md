@@ -244,9 +244,63 @@ Automation is essential for shift‑left testing.
 - Run tests on every code commit  
 
 **Example workflow:**  
-`Code Commit → Build → Unit Tests → API Tests → UI Tests → Deploy`
 
----
+<div style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; display: block;">
+<div style="width: max-content;">
+<svg width="260" height="520" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 18px sans-serif; }
+    .label { font: 14px sans-serif; }
+    .box { fill: #f7f7f7; stroke: #333; stroke-width: 1.5; rx: 6; }
+    .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="30" class="title">Example CI/CD Workflow</text>
+
+  <!-- Code Commit -->
+  <rect x="55" y="60" width="150" height="45" class="box"/>
+  <text x="80" y="88" class="label">Code Commit</text>
+
+  <line x1="130" y1="105" x2="130" y2="135" class="arrow"/>
+
+  <!-- Build -->
+  <rect x="55" y="135" width="150" height="45" class="box"/>
+  <text x="115" y="163" class="label" text-anchor="middle">Build</text>
+
+  <line x1="130" y1="180" x2="130" y2="210" class="arrow"/>
+
+  <!-- Unit Tests -->
+  <rect x="55" y="210" width="150" height="45" class="box"/>
+  <text x="130" y="238" class="label" text-anchor="middle">Unit Tests</text>
+
+  <line x1="130" y1="255" x2="130" y2="285" class="arrow"/>
+
+  <!-- API Tests -->
+  <rect x="55" y="285" width="150" height="45" class="box"/>
+  <text x="130" y="313" class="label" text-anchor="middle">API Tests</text>
+
+  <line x1="130" y1="330" x2="130" y2="360" class="arrow"/>
+
+  <!-- UI Tests -->
+  <rect x="55" y="360" width="150" height="45" class="box"/>
+  <text x="130" y="388" class="label" text-anchor="middle">UI Tests</text>
+
+  <line x1="130" y1="405" x2="130" y2="435" class="arrow"/>
+
+  <!-- Deploy -->
+  <rect x="55" y="435" width="150" height="45" class="box"/>
+  <text x="130" y="463" class="label" text-anchor="middle">Deploy</text>
+</svg>
+
+</div>
+</div>
 
 ### 4. Collaborate Closely with Developers
 
