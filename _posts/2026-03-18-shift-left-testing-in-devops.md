@@ -55,8 +55,7 @@ DevOps teams release software frequently using CI/CD pipelines. When testing hap
 ## Traditional vs. Shift‑Left Testing
 
 Here’s a simple visual comparison:
-
-<svg width="900" height="420" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="420" xmlns="http://www.w3.org/2000/svg" transform="translate(-50,0)">
   <style>
     .title { font: bold 20px sans-serif; }
     .label { font: 14px sans-serif; }
@@ -73,10 +72,7 @@ Here’s a simple visual comparison:
 In the traditional model, QA enters the process late—when defects are harder and more expensive to fix.  
 In the shift‑left model, QA collaborates early with developers, product owners, and designers to build quality into every stage.
 
-
-  <!-- Title -->
-  <text x="50" y="35" class="title">Traditional Testing vs. Shift‑Left Testing</text>
-
+ 
   <!-- Traditional Row -->
   <text x="50" y="70" class="label">Traditional Testing</text>
 
