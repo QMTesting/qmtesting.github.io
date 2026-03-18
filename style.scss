@@ -1771,6 +1771,11 @@ line-height: 24px;
   border-collapse: collapse;
 }
 
+.diagram-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 /* table {
   display: block;
   overflow-x: auto;
