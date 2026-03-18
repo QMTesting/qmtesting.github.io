@@ -149,7 +149,7 @@ Below is a general overview of the types of cookies that may be set:
   </tbody>
 </table>
 
-<div/>
+</div>
 
 Exact cookie names may change as services update their technology.
 
