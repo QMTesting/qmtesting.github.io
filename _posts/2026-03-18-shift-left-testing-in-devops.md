@@ -98,7 +98,7 @@ In the traditional model, QA enters the process late—often when defects are ha
 As teams adopt shift‑left practices, it helps to refine how the concept is communicated—especially for testers who are transitioning from traditional QA roles. The table below highlights key areas that can make your shift‑left diagrams and processes clearer and more effective.
 
 ### Key Areas for Enhancement
-
+<div class="table-scroll"> 
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
     <tr>
@@ -135,6 +135,7 @@ As teams adopt shift‑left practices, it helps to refine how the concept is com
     </tr>
   </tbody>
 </table>
+</div>
 
 ## Bringing It All Together
 
