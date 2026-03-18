@@ -262,7 +262,7 @@ Automation is essential for shift‑left testing.
   </defs>
 
   <!-- Title -->
-  <text x="20" y="30" class="title">Example CI/CD Workflow</text>
+  <text x="70" y="30" class="title">Example CI/CD Workflow</text>
 
   <!-- Code Commit -->
   <rect x="55" y="60" width="150" height="45" class="box"/>
