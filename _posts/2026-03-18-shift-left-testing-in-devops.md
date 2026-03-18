@@ -242,8 +242,7 @@ Automation is essential for shift‑left testing.
 - Automate smoke tests first  
 - Add tests to your CI/CD pipeline  
 - Run tests on every code commit  
-
-**Example workflow:**  
+ 
 
 <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; display: block;">
 <div style="width: max-content;">
@@ -262,7 +261,7 @@ Automation is essential for shift‑left testing.
   </defs>
 
   <!-- Title -->
-  <text x="70" y="30" class="title">Example CI/CD Workflow</text>
+  <text x="45" y="30" class="title">Example CI/CD Workflow</text>
 
   <!-- Code Commit -->
   <rect x="55" y="60" width="150" height="45" class="box"/>
