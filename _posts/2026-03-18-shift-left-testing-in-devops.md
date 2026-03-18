@@ -54,14 +54,12 @@ In DevOps, teams use CI/CD pipelines to release software frequently. If testing 
 ## Shift-Left Testing Concept
 
 
-Traditional Approach (Testing Late):
+Traditional Approach:
+[Requirements] → [Design] → [Development] → [Testing 🐞🐞🐞] → [Release 🔥]
 
-[Requirements] → [Design] → [Development] → [Testing 🐞🐞🐞] → [Release]
-
-Shift-Left Approach (Testing Early):
-
-[QA 🔍 + Requirements] → [QA 🔍 + Design] → [QA 🔍 + Development] → [Testing ✅] → [Release 🚀]
-
+Shift-Left Approach:
+[Collaborative Planning 🔍] → [Design Reviews 🧠] → [Unit Tests + Static Analysis 🧪] → [CI/CD Testing ✅] → [Release 🚀]
+↖️ Continuous Feedback Loop ↩️
 
 ---
 
