@@ -55,7 +55,7 @@ DevOps teams release software frequently using CI/CD pipelines. When testing hap
 ## Traditional vs. Shift‑Left Testing
 
 Here’s a simple visual comparison:
-<div style="overflow-x: auto; max-width: 100%;">
+<div class="diagram-scroll">
 <svg width="925" height="420" xmlns="http://www.w3.org/2000/svg" transform="translate(-50,0)">
   <style>
     .title { font: bold 20px sans-serif; }
