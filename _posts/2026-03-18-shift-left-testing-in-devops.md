@@ -53,6 +53,45 @@ In DevOps, teams use CI/CD pipelines to release software frequently. If testing 
 
 ## Shift-Left Testing Concept
 
+<div class="table-scroll"> 
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Enhancement</th>
+      <th>Why It Matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QA Role</td>
+      <td>Replace “QA 🔍” with “QA + Dev + Product”</td>
+      <td>Shift-left is about <em>collaborative quality ownership</em>, not just early QA.</td>
+    </tr>
+    <tr>
+      <td>Testing Activities</td>
+      <td>Add icons for <strong>unit tests</strong>, <strong>static analysis</strong>, and <strong>CI/CD</strong></td>
+      <td>These are core to shift-left testing and DevOps automation.</td>
+    </tr>
+    <tr>
+      <td>Feedback Loop</td>
+      <td>Add a loop or arrows back from Testing to Requirements</td>
+      <td>Emphasizes <em>continuous improvement</em> and defect prevention.</td>
+    </tr>
+    <tr>
+      <td>Terminology</td>
+      <td>Use “Validation” or “Quality Checks” instead of just “Testing”</td>
+      <td>Broader scope includes design reviews, code analysis, and test-driven development.</td>
+    </tr>
+    <tr>
+      <td>Production Risks</td>
+      <td>Show a “bug escaping to production” in the traditional flow</td>
+      <td>Highlights the cost of late testing.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 Traditional Approach:
 [Requirements] → [Design] → [Development] → [Testing 🐞🐞🐞] → [Release 🔥]
@@ -60,6 +99,8 @@ Traditional Approach:
 Shift-Left Approach:
 [Collaborative Planning 🔍] → [Design Reviews 🧠] → [Unit Tests + Static Analysis 🧪] → [CI/CD Testing ✅] → [Release 🚀]
 ↖️ Continuous Feedback Loop ↩️
+
+
 
 ---
 
