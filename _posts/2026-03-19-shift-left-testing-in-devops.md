@@ -1,12 +1,18 @@
 ---
+layout: post
 title: "Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early"
+categories: ["Azure DevOps"]
+image: /assets/images/DevOps/shift-left-testing-in-devops-700.webp
+permalink: /shift-left-testing-in-devops/
+tags: [shift-left testing, DevOps testing, QA in DevOps, CI/CD testing, test automation, continuous testing]
 description: "Learn shift-left testing in DevOps with practical examples. Discover how QA engineers can catch defects earlier using automation, CI/CD, and collaboration."
-keywords: [shift-left testing, DevOps testing, QA in DevOps, CI/CD testing, test automation, continuous testing]
-date: 2026-03-18
-author: "Your Name"
 ---
 
-# Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early
+<figure>
+  <img src="/assets/images/DevOps/shift-left-testing-in-devops-700.webp" alt="Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early" />
+  <figcaption></figcaption>
+</figure>
+
 
 In today’s fast-paced DevOps world, releasing software quickly is important—but releasing **high-quality software** is critical. One of the most effective ways to improve quality without slowing down delivery is **shift-left testing**.
 
