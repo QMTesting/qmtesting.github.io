@@ -56,17 +56,6 @@ DevOps teams release software frequently using CI/CD pipelines. When testing hap
 
 Here’s a simple visual comparison:
 
-**Traditional Approach:**  
-`[Requirements] → [Design] → [Development] → [Testing 🐞🐞🐞] → [Release 🔥]`
-
-**Shift‑Left Approach:**  
-`[Collaborative Planning 🔍] → [Design Reviews 🧠] → [Unit Tests + Static Analysis 🧪] → [CI/CD Testing ✅] → [Release 🚀] ↖️ Continuous Feedback Loop`
-
-In the traditional model, QA enters the process late—when defects are harder and more expensive to fix.  
-In the shift‑left model, QA collaborates early with developers, product owners, and designers to build quality into every stage.
-
----
-
 <svg width="900" height="420" xmlns="http://www.w3.org/2000/svg">
   <style>
     .title { font: bold 20px sans-serif; }
@@ -80,6 +69,10 @@ In the shift‑left model, QA collaborates early with developers, product owners
       <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
     </marker>
   </defs>
+
+In the traditional model, QA enters the process late—when defects are harder and more expensive to fix.  
+In the shift‑left model, QA collaborates early with developers, product owners, and designers to build quality into every stage.
+
 
   <!-- Title -->
   <text x="50" y="35" class="title">Traditional Testing vs. Shift‑Left Testing</text>
@@ -140,7 +133,7 @@ In the shift‑left model, QA collaborates early with developers, product owners
 
   <!-- Feedback Loop -->
   <path d="M 600 250 C 600 200, 300 200, 300 250" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="330" y="215" class="label">Continuous Feedback</text>
+  <text x="330" y="200" class="label">Continuous Feedback</text>
 
   <!-- Early QA Labels -->
   <text x="70" y="315" class="label">Early QA</text>
