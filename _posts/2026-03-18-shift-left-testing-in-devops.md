@@ -102,9 +102,9 @@ As teams adopt shift‑left practices, it helps to refine how the concept is com
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
     <tr>
-      <th>Area</th>
-      <th>Enhancement</th>
-      <th>Why It Matters</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Area</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 225px;">Enhancement</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 300px;">Why It Matters</th>
     </tr>
   </thead>
   <tbody>
