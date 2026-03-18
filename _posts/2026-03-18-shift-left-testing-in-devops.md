@@ -247,7 +247,7 @@ Automation is essential for shift‑left testing.
 
 <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; display: block;">
 <div style="width: max-content;">
-<svg width="260" height="520" xmlns="http://www.w3.org/2000/svg">
+<svg width="260" height="520" xmlns="http://www.w3.org/2000/svg" transform="translate(-50,0)">
   <style>
     .title { font: bold 18px sans-serif; }
     .label { font: 14px sans-serif; }
