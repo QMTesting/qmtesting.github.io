@@ -123,8 +123,8 @@ Below is a general overview of the types of cookies that may be set:
     <tr>
       <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Cookie Type</th>
       <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Purpose</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d;>Stored By</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d;>Duration</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Stored By</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d;">Duration</th>
     </tr>
   </thead>
   <tbody>
