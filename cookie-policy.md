@@ -79,10 +79,10 @@ Our site uses **Google Consent Mode v2**, which adjusts how Google services beha
 
 Depending on your selection, we may send Google the following consent signals:
 
-- `analytics_storage`
-- `ad_storage`
-- `ad_user_data`
-- `ad_personalization`
+- analytics_storage
+- ad_storage
+- ad_user_data
+- ad_personalization
 
 If you reject optional cookies, Google receives a “denied” signal and will not use cookies for those purposes.
 
