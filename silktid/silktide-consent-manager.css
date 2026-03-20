@@ -81,7 +81,7 @@
 -------------------------------- */
 
 #silktide-wrapper .st-button {
-  color: var(--backgroundColor);
+  color: black;
   background-color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
   padding: 10px 20px;
@@ -99,17 +99,17 @@
 
 #silktide-wrapper .st-button--primary:hover {
   background-color: var(--backgroundColor);
-  color: var(--primaryColor);
+  color: black;
 }
 
 #silktide-wrapper .st-button--secondary {
   background-color: var(--backgroundColor);
-  color: var(--primaryColor);
+  color: black;
 }
 
 #silktide-wrapper .st-button--secondary:hover {
   background-color: var(--primaryColor);
-  color: var(--backgroundColor);
+  color: black;
 }
 
 /* --------------------------------
