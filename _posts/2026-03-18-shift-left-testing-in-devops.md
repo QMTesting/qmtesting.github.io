@@ -4,7 +4,13 @@ title: "Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects
 categories: ["Azure DevOps"]
 image: /assets/images/DevOps/shift-left-testing-in-devops-700.webp
 permalink: /shift-left-testing-in-devops/
-tags: [shift-left testing, DevOps testing, QA in DevOps, CI/CD testing, test automation, continuous testing]
+tags:
+  - "shift-left testing"
+  - "DevOps testing"
+  - "QA in DevOps"
+  - "CI/CD testing"
+  - "test automation"
+  - "continuous testing"
 description: "Learn shift-left testing in DevOps with practical examples. Discover how QA engineers can catch defects earlier using automation, CI/CD, and collaboration."
 ---
 
