@@ -580,7 +580,7 @@
 #silktide-wrapper .st-button--secondary:hover {
   color: #000000 !important;
 }
-.switch__on {
+#silktide-modal .switch input:checked ~ .switch__on {
   color: black;
 }
 
