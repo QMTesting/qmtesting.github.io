@@ -50,36 +50,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll_picture_tag
 
 picture:
-  source: /assets/images
-  output: /assets/generated
-  markup: picture
-
+  source: assets/images
+  output: assets/generated
   presets:
     default:
-      # Required by jekyll-picture-tag 0.3.0
-      width: 700
-
-      # Output formats
-      formats:
-        - webp
-        - original
-
-      # Responsive widths to generate
-      widths:
-        - 300
-        - 500
-        - 700
-        - 900
-
-      # Browser sizing rule
+      widths: [300, 600, 900, 1200]
+      formats: [webp, original]
       sizes: "(max-width: 700px) 100vw, 700px"
 
-      # Recommended attributes
-      attributes:
-        loading: lazy
-        decoding: async
 
 
 
