@@ -567,3 +567,10 @@
     transform: translate(0px, 0px);
   }
 }
+
+#silktide-wrapper .st-button,
+#silktide-wrapper .st-button--primary,
+#silktide-wrapper .st-button--secondary {
+  color: #000000 !important;
+}
+
