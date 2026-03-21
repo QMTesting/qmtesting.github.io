@@ -14,7 +14,6 @@ description: "Learn shift-left testing in DevOps with practical examples. Discov
 </figure>
 
 
-
 ## Introduction
 
 In today’s fast‑paced DevOps world, releasing software quickly is important—but releasing **high‑quality** software is essential. One of the most effective ways to improve quality without slowing down delivery is **shift‑left testing**.
