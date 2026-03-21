@@ -9,7 +9,7 @@ description: "Learn shift-left testing in DevOps with practical examples. Discov
 ---
 
 <figure>
-  <img src="/assets/images/DevOps/shift-left-testing-in-devops-700.webp" alt="Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early" />
+  {% picture DevOps/shift-left-testing-in-devops-700.webp alt="Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early" %}
   <figcaption></figcaption>
 </figure>
 
