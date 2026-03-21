@@ -56,14 +56,32 @@ picture:
   source: /assets/images
   output: /assets/generated
   markup: picture
+
   presets:
     default:
-      formats: [webp, original]
-      widths: [300, 500, 700, 900]
+      # Required by jekyll-picture-tag 0.3.0
+      width: 700
+
+      # Output formats
+      formats:
+        - webp
+        - original
+
+      # Responsive widths to generate
+      widths:
+        - 300
+        - 500
+        - 700
+        - 900
+
+      # Browser sizing rule
       sizes: "(max-width: 700px) 100vw, 700px"
+
+      # Recommended attributes
       attributes:
         loading: lazy
         decoding: async
+
 
 
 # If you're hosting your site at a Project repository on GitHub pages
