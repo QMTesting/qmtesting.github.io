@@ -573,4 +573,16 @@
 #silktide-wrapper .st-button--secondary {
   color: #000000 !important;
 }
+/* Force black text on all Silktide buttons */
+#silktide-wrapper .st-button,
+#silktide-wrapper .st-button--primary,
+#silktide-wrapper .st-button--secondary {
+  color: #000000 !important;
+}
+#silktide-wrapper .st-button:hover,
+#silktide-wrapper .st-button--primary:hover,
+#silktide-wrapper .st-button--secondary:hover {
+  color: #000000 !important;
+}
+
 
