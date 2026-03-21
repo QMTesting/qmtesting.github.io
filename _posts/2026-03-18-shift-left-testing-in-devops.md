@@ -14,11 +14,8 @@ tags:
 description: "Learn shift-left testing in DevOps with practical examples. Discover how QA engineers can catch defects earlier using automation, CI/CD, and collaboration."
 ---
 
-<figure>
-  {% picture DevOps/shift-left-testing-in-devops-700.webp %}
-  <figcaption>Shift-Left Testing in DevOps</figcaption>
-</figure>
-
+{% picture DevOps/shift-left-testing-in-devops-700.webp %}
+ 
 
 ## Introduction
 
