@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
-gem "jekyll-responsive-image"
+gem "jekyll_picture_tag"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-redirect-from"
