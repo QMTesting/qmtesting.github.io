@@ -419,6 +419,7 @@
 
 #silktide-modal .switch__on {
   opacity: 0;
+  color: black;
 }
 
 /* Checked Switch Styles */
@@ -580,14 +581,9 @@
   color: #000000 !important;
 }
 .switch__on {
-  right: calc(100% - 34px);
-  opacity: 1;
   color: black;
 }
-.switch__off {
-  right: calc(100% - 34px);
-  opacity: 1;
-  color: black;
-}
+
+
 
 
