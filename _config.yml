@@ -50,7 +50,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-picture-tag
+  #- jekyll-picture-tag
 
 picture:
   source: /assets/images
