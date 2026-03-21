@@ -53,8 +53,8 @@ plugins:
   - jekyll-picture-tag
 
 picture:
-  source: assets/images
-  output: assets/generated
+  source: /assets/images
+  output: /assets/generated
   markup: picture
   presets:
     default:
