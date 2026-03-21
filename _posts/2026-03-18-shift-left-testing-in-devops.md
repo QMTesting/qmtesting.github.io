@@ -15,7 +15,7 @@ description: "Learn shift-left testing in DevOps with practical examples. Discov
 ---
 
 
-{% cloudinary "DevOps/shift-left-testing-in-devops-700_uyivok" preset="default" alt="Shift-Left Testing in DevOps" %}
+
 
  
 
