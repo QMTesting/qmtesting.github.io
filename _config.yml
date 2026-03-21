@@ -45,23 +45,11 @@ google_fonts: 'Pacifico'
 # Used for Sitemap.xml and your RSS feed
 url: "https://qmstesting.com"
 
-cloudinary:
-  cloud_name: dig9gupue
-  verbose: false
-  presets:
-    default:
-      fetch_format: auto
-      quality: auto
-      width: auto
-      crop: scale
-
-
 # Plugins
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-cloudinary-responsive
 
 
 # If you're hosting your site at a Project repository on GitHub pages
