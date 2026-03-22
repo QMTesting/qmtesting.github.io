@@ -585,7 +585,7 @@
 #silktide-modal .switch input:checked ~ .switch__on {
   color: black;
 }
-#silktide-modal {
+#silktide-modal .switch {
   background-color: #fce8b2;
 }  
 
