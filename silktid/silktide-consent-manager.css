@@ -293,12 +293,12 @@
   padding: 13px;
   border: 0px;
   cursor: pointer;
-  background: var(--backgroundColor);
-  color: var(--primaryColor);
+  background: var(--cookieIconColor);
+  color: black);
 }
 
 #silktide-modal .modal-close svg {
-  fill: var(--primaryColor);
+  fill: var(--cookieIconColor);
 }
 
 /* --------------------------------
