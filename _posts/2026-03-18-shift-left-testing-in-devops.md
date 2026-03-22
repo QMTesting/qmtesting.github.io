@@ -189,7 +189,7 @@ As teams adopt shift‑left practices, it helps to refine how the concept is com
     <tr>
       <td><strong>Terminology</strong></td>
       <td>Use “Validation” or “Quality Checks” instead of only “Testing”</td>
-      <td>Quality work includes design reviews, code analysis, and TDD—not just test execution.</td>
+      <td>Quality work includes design reviews, code analysis, and Test-Driven Development(TDD), not just test execution.</td>
     </tr>
     <tr>
       <td><strong>Production Risks</strong></td>
@@ -369,7 +369,7 @@ Continuous testing ensures code is always validated.
 - Shift‑left testing means testing earlier  
 - It helps prevent defects instead of detecting them late  
 - Automation + CI/CD are key  
-- Collaboration is essential  
+- Collaboration is essential
 
 ---
 
