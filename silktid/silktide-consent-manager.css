@@ -574,6 +574,7 @@
 #silktide-wrapper .st-button--primary,
 #silktide-wrapper .st-button--secondary {
   color: #000000 !important;
+  background-color: #fce8b2;
 }
 #silktide-wrapper .st-button:hover,
 #silktide-wrapper .st-button--primary:hover,
