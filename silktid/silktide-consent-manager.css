@@ -298,7 +298,7 @@
 }
 
 #silktide-modal .modal-close svg {
-  fill: var(--cookieIconColor);
+  fill: black;
 }
 
 /* --------------------------------
