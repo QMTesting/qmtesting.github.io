@@ -575,6 +575,7 @@
 #silktide-wrapper .st-button--secondary {
   color: #000000 !important;
   font-size: 18px;
+  font-weight: 900;
 }
 #silktide-wrapper .st-button:hover,
 #silktide-wrapper .st-button--primary:hover,
@@ -583,6 +584,10 @@
 }
 #silktide-modal .switch input:checked ~ .switch__on {
   color: black;
+  font-weight: 900;
+}
+#silktide-modal .switch input:checked ~ .switch__off {
+  font-weight: 900;
 }
 
 
