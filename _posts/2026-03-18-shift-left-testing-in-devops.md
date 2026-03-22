@@ -316,18 +316,40 @@ Automation is essential for shift‑left testing.
 </div>
 </div>
 
-### 4. Collaborate Closely with Developers
+### 4. How Test-Driven Development (TDD) Fits in Shift-Left Testing
+
+You may come across the term **Test-Driven Development (TDD)** when learning about shift-left testing.
+
+TDD is a development practice where developers write tests before writing the actual code. While QA engineers typically do not perform TDD themselves, it plays an important role in a shift-left strategy.
+
+#### **How TDD supports QA:**
+
+* Catches bugs early at the unit level before QA testing begins
+* Improves code quality, reducing the number of defects QA encounters
+* Encourages clearer requirements and expected behavior
+
+#### **How QA contributes:**
+
+* Helps define acceptance criteria and edge cases
+* Collaborates with developers to identify test scenarios
+* Ensures coverage goes beyond unit tests (integration, UI, exploratory testing)
+
+👉 Think of TDD as an early safety net created by developers, while QA ensures the entire system works correctly from a user and business perspective.
+
+
+### 5. Collaborate Closely with Developers
 
 Shift‑left testing works best when QA and developers work together.
 
 **Practical ways:**
 - Join daily standups  
 - Pair on test scenarios  
-- Review pull requests  
+- Review pull requests
+- Test-Driven Development (TDD)
 
 ---
 
-### 5. Use CI/CD for Continuous Testing
+### 6. Use CI/CD for Continuous Testing
 
 Continuous testing ensures code is always validated.
 
