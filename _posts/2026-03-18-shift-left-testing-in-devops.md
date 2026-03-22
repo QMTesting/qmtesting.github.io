@@ -114,7 +114,7 @@ In the shift‑left model, QA collaborates early with developers, product owners
   <rect x="750" y="90" width="120" height="50" class="box"/>
   <text x="780" y="120" class="label">Release</text>
 
-  <text x="410" y="165" class="label" fill="#b30000">Bugs found late → costly</text>
+  <text x="580" y="165" class="label" fill="#b30000">Bugs found late → costly</text>
 
   <!-- Shift Left Row -->
   <text x="50" y="230" class="label">Shift‑Left Testing</text>
@@ -150,7 +150,7 @@ In the shift‑left model, QA collaborates early with developers, product owners
   <text x="70" y="315" class="label">Early QA</text>
   <text x="240" y="315" class="label">Collaboration</text>
   <text x="430" y="315" class="label">Unit Tests + Static Analysis</text>
-  <text x="620" y="315" class="label">Automation</text>
+  <text x="640" y="315" class="label">Automation</text>
 </svg>
 </div>
 </div>
