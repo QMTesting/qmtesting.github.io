@@ -23,7 +23,11 @@ description: "Learn shift-left testing in DevOps with practical examples. Discov
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774117871/shift-left-testing-in-devops-700_uyivok.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="500"
+  loading="lazy"
   alt="Shift-Left Testing in DevOps">
+
 
  
 
