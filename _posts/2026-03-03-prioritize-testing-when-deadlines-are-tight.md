@@ -7,10 +7,19 @@ tags: [software testing, testing, QA, QC, prioritize testing, risk-based testing
 description: "A practical guide for QA teams navigating high‑pressure release cycles without sacrificing quality."
 ---
 
-<figure>
-  <img src="/assets/images/Test/testing-tight-deadlines.webp" alt="prioritize testing when deadlines are tight" />
-  <figcaption></figcaption>
-</figure>
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774367644/testing-tight-deadlines_lopp0f.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774367644/testing-tight-deadlines_lopp0f.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="500"
+  loading="lazy"
+  alt="How to Prioritize Testing When Deadlines Are Tight"
+  fetchpriority="high">
 
 ## 🕛 Introduction
 
