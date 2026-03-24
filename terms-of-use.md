@@ -95,4 +95,4 @@ We may update these Terms of Use at any time. Continued use of the site indicate
 If you have questions about these Terms, contact:
 
 **QMSTesting.com**  
-Email: *[add your preferred contact email]*
+Email: contact@qmstesting.com
