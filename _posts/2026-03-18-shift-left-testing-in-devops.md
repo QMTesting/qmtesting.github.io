@@ -26,8 +26,8 @@ description: "Learn shift-left testing in DevOps with practical examples. Discov
   width="700"
   height="500"
   loading="lazy"
-  alt="Shift-Left Testing in DevOps">
-
+  alt="Shift-Left Testing in DevOps"
+  fetchpriority="high">
 
  
 
