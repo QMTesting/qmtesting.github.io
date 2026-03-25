@@ -12,16 +12,16 @@ tags:
   - "QA testing"
   - "Software Testing"
 description: "Discover how to eliminate flaky Selenium tests by mastering waits. Learn the differences between implicit, explicit, and fluent waits, and apply best practices to stabilize your automation scripts."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png" 
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png" 
 ---
 
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"
