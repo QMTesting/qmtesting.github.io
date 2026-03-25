@@ -2,7 +2,6 @@
 layout: post
 title: "Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early"
 categories: ["Azure DevOps"]
-image: /assets/images/DevOps/shift-left-testing-in-devops-700.webp
 permalink: /shift-left-testing-in-devops/
 tags:
   - "shift-left testing"
