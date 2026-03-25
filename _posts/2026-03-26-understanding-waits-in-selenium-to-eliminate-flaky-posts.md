@@ -162,9 +162,9 @@ When you match the right wait to the right condition, flakiness drops dramatical
 <table>
   <thead>
     <tr>
-      <th>Scenario</th>
-      <th>Best Wait</th>
-      <th>Why</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Scenario</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">Best Wait</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">Why</th>
     </tr>
   </thead>
   <tbody>
