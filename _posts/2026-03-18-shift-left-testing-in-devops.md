@@ -11,16 +11,16 @@ tags:
   - "test automation"
   - "continuous testing"
 description: "Learn shift-left testing in DevOps with practical examples. Discover how QA engineers can catch defects earlier using automation, CI/CD, and collaboration."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774117871/shift-left-testing-in-devops-700_uyivok.png"
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png"
 ---
 
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774117871/shift-left-testing-in-devops-700_uyivok.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774117871/shift-left-testing-in-devops-700_uyivok.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774117871/shift-left-testing-in-devops-700_uyivok.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774117871/shift-left-testing-in-devops-700_uyivok.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"
