@@ -4,6 +4,7 @@ title: "How to Prioritize Testing When Deadlines Are Tight"
 categories: ["Software Testing"]
 tags: [software testing, testing, QA, QC, prioritize testing, risk-based testing, test prioritization, agile testing, regression testing, software quality]
 description: "A practical guide for QA teams navigating high‑pressure release cycles without sacrificing quality."
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png"
 ---
 
 <img 
