@@ -8,28 +8,16 @@ layout: compress
 
     
 
-      <!-- Google tag (gtag.js) Configured off until Silktide consent given by user -->
+      <!-- Google tag (gtag.js) script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-2XX8QBYYZ6');
+    </script>
 
-       <script type="text/plain" data-cookie-category="analytics">
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-      
-        // Default = denied (important)
-        gtag('consent', 'default', {
-          analytics_storage: 'denied'
-        });
-      
-        // Load GA
-        var script = document.createElement('script');
-        script.src = "https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6";
-        script.async = true;
-        document.head.appendChild(script);
-      
-        gtag('js', new Date());
-        gtag('config', 'G-2XX8QBYYZ6');
-
-      </script>
 
     <!-- The Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a27039bfd35c4c13be8e19254ba6f985"}'></script><!-- End Cloudflare Web Analytics -->
