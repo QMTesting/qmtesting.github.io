@@ -11,6 +11,7 @@ tags:
   - "test automation"
   - "continuous testing"
 description: "Learn shift-left testing in DevOps with practical examples. Discover how QA engineers can catch defects earlier using automation, CI/CD, and collaboration."
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774117871/shift-left-testing-in-devops-700_uyivok.png"
 ---
 
 
