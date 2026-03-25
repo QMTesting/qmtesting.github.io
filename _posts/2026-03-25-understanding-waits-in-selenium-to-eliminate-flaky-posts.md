@@ -19,8 +19,8 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1
 <img 
   src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 500w,
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
