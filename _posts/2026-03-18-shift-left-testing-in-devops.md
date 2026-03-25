@@ -18,8 +18,8 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1
 <img 
   src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 500w,
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
