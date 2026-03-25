@@ -215,7 +215,7 @@ Imagine this test:
 
 
 driver.findElement(By.id("login")).click();
-driver.findElement(By.id("username")).sendKeys("caroline");
+driver.findElement(By.id("username")).sendKeys("CAMS");
 ```
 
 Sometimes it fails because the username field isn’t ready yet.
