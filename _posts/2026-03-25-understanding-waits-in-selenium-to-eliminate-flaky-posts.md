@@ -266,15 +266,7 @@ Understanding waits is one of the fastest ways to level up as an automation test
 - CI‑friendly  
 - Professional‑grade  
 
-Flaky tests aren’t a Selenium problem — they’re a timing problem. And waits are your solution.
+```Flaky tests aren’t a Selenium problem — they’re a timing problem. And waits are your solution.
 ```
 
 
-If you'd like, I can also generate:
-
-- A matching SEO‑friendly meta description  
-- A short intro paragraph for social media  
-- An SVG diagram of the three wait types  
-- A downloadable cheat sheet version  
-
-Just tell me what you want to add next.
