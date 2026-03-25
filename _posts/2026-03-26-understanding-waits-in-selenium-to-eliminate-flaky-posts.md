@@ -1,8 +1,33 @@
 ---
 layout: post
-title: "Understanding Waits in Selenium: The Key to Eliminating Flaky Tests"
-categories: Automation
+title: "Shift-Left Testing in DevOps: A Beginner’s Guide to Preventing Defects Early"
+categories: ["Automation"]
+permalink: /understanding-waits-in-selenium-to-eliminate-flaky-posts/
+tags:
+  - "flaky tests"
+  - "Automation"
+  - "QA in Automation"
+  - "Automation"
+  - "test automation"
+  - "QA testing"
+  - "Software Testing"
+description: "Discover how to eliminate flaky Selenium tests by mastering waits. Learn the differences between implicit, explicit, and fluent waits, and apply best practices to stabilize your automation scripts."
 ---
+
+
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/v1774457872/understanding-waits-in-selenium-to-eliminate-flaky-posts-700_x67yaa.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="500"
+  loading="lazy"
+  alt="how to eliminate flaky Selenium tests by mastering waits"
+  fetchpriority="high">
 
 
 
