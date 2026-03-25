@@ -78,6 +78,7 @@ Implicit waits tell Selenium:
 **Example (Java):**
 
 ```java
+
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 ```
 
@@ -103,6 +104,7 @@ This makes your tests faster and far more reliable.
 **Example (Java):**
 
 ```java
+
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
 button.click();
@@ -122,6 +124,7 @@ This is useful when dealing with elements that appear unpredictably or when the 
 **Example (Java):**
 
 ```java
+
 Wait<WebDriver> wait = new FluentWait<>(driver)
         .withTimeout(Duration.ofSeconds(20))
         .pollingEvery(Duration.ofMillis(500))
@@ -204,6 +207,7 @@ When you match the right wait to the right condition, flakiness drops dramatical
 Imagine this test:
 
 ```java
+
 driver.findElement(By.id("login")).click();
 driver.findElement(By.id("username")).sendKeys("caroline");
 ```
@@ -213,6 +217,7 @@ Sometimes it fails because the username field isn’t ready yet.
 **Fix with explicit wait:**
 
 ```java
+
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")))
         .sendKeys("caroline");
@@ -226,6 +231,7 @@ Now the test waits intelligently instead of guessing.
 Many beginners try to fix flakiness with:
 
 ```java
+
 Thread.sleep(5000);
 ```
 
