@@ -165,6 +165,8 @@ When you match the right wait to the right condition, flakiness drops dramatical
 
 ## 🛠️ Practical Examples: Choosing the Right Wait
 
+<div class="table-scroll">
+
 <table>
   <thead>
     <tr>
@@ -201,7 +203,7 @@ When you match the right wait to the right condition, flakiness drops dramatical
     </tr>
   </tbody>
 </table>
-
+</div>
 
 
 
