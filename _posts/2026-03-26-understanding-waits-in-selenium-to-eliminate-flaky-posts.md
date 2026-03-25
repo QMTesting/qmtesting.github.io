@@ -38,9 +38,8 @@ Modern web applications are dynamic. Elements load asynchronously, animations de
 
 This is where **waits** come in. Understanding waits is one of the most important skills for beginner and intermediate QA testers who want to write stable, trustworthy automation.
 
----
 
-# 🌟 Why Waits Matter
+## 🌟 Why Waits Matter
 
 Selenium executes commands much faster than a real user. Without waits, Selenium may:
 
@@ -51,9 +50,8 @@ Selenium executes commands much faster than a real user. Without waits, Selenium
 
 Waits help your script **pause intelligently** until the browser is ready — not too early, not too late.
 
----
 
-# 🧠 Types of Waits in Selenium
+## 🧠 Types of Waits in Selenium
 
 Selenium provides three main types of waits:
 
@@ -63,9 +61,8 @@ Selenium provides three main types of waits:
 
 Each has a purpose, and knowing when to use which one is the key to eliminating flakiness.
 
----
 
-# 1️⃣ Implicit Waits  
+## 1️⃣ Implicit Waits  
 Implicit waits tell Selenium:  
 > “Whenever you try to find an element, keep trying for X seconds before failing.”
 
