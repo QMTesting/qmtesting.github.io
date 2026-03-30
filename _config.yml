@@ -15,9 +15,6 @@ avatar: "/images/logo-bug.webp"
 # Flags below are optional
 #
 
-remote_theme: barryclark/jekyll-now
-
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   X:
