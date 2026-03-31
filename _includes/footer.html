@@ -1,0 +1,81 @@
+
+<!-- Social Share Buttons -->
+<div class='social-share'>
+  <a class='Xbtn' href='#' aria-label="social share X">
+    <svg viewBox='0 0 14 14'>
+      <image href='/images\X2.png' width="14" height="14" />
+    </svg>
+  </a>
+
+  <a class='facebook' href='#' aria-label="social share facebook">
+    <svg viewBox='0 0 14 14'>
+      <image href='/images\facebook2.png' width="14" height="14" />
+    </svg>
+  </a>
+
+  <a class='pinterest' href='#' aria-label="social share pinterest">
+    <svg viewBox='0 0 14 14'>
+      <image href='/images\pinterest2.png' width="14" height="14" />
+    </svg>
+  </a>
+</div>
+
+
+<script>
+  function shareOnFacebook() {
+    const title = document.title;
+    const url = window.location.href;
+    const shareUrl = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url) + '&t=' + encodeURIComponent(title);
+    window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  }
+
+  function shareOnPinterest() {
+    const title = document.title;
+    const url = window.location.href;
+    const shareUrl = 'https://www.pinterest.com/pin/create/button/?url=' + encodeURIComponent(url) + '&media=&description=' + encodeURIComponent(title);
+    window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  }
+
+  function shareOnX() {
+    let title = document.title;
+    title = "QM Test Management BLOG PAGE: " + title;
+    const url = window.location.href;
+    const shareUrl = 'https://x.com/intent/post?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+    window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.social-share a');
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        const shareType = this.classList[0];
+        if (shareType === 'facebook') shareOnFacebook();
+        else if (shareType === 'pinterest') shareOnPinterest();
+        else if (shareType === 'Xbtn') shareOnX();
+      });           
+    });
+  });
+</script>
+
+ <!-- Copyright Attribution -->
+  <div class="copyr" style="font-size:14px; color:#555; text-align:center; padding:12px 0;">
+  © <script>document.write(new Date().getFullYear());</script>
+  <span style="font-weight:500;">QMS Testing</span> · All Rights Reserved
+</div>
+
+<style>
+/* Change width only on desktop */ 
+@media (min-width: 1025px) { 
+.copyr {
+ width: 1045px; 
+ } 
+ }
+
+ /* Hide on tablets + mobile */ 
+@media (max-width: 800px) { 
+.copyr {
+ } 
+ }
+</style>       
+
