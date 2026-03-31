@@ -7,11 +7,7 @@ layout: none
 <head>
   {% include head.html %}
 </head>
-
 <body>
-
-  <!-- BEGIN: Your original default.html content -->
-  <!-- (All CSS, JS, HTML, and Liquid preserved exactly as provided) -->
 
   <!-- HAMBURGER MENU HTML -->
   <div id="hamburgerIcon" class="hamburger" onclick="toggleMenu()">
@@ -36,17 +32,21 @@ layout: none
     <div class="container">
       <header class="masthead clearfix">
 
-        <!-- MOBILE SEARCH + HEADER -->
+        <!-- MOBILE HEADER + SEARCH -->
         <div class="mobile-header-nav">
           <div class="mobile-search" style="position: relative; display: inline-block;">
-            <button id="mobile-search-toggle" aria-label="Search" style="font-size: 24px; background: none; border: none; cursor: pointer;"></button>
+            <button id="mobile-search-toggle" aria-label="Search"
+                    style="font-size:24px; background:none; border:none; cursor:pointer;"></button>
 
-            <div id="mobile-search-form" style="display: none; flex-direction: row; align-items: flex-start; gap: 5px;">
-              <button id="mobile-search-close" aria-label="Close Search" style="font-size: 18px; background: none; border: none; color: red; cursor: pointer; align-self: flex-end;">X</button>
+            <div id="mobile-search-form"
+                 style="display:none; flex-direction:row; align-items:flex-start; gap:5px;">
+              <button id="mobile-search-close" aria-label="Close Search"
+                      style="font-size:18px; background:none; border:none; color:red; cursor:pointer; align-self:flex-end;">X</button>
 
-              <form id="mobile-search-form-element" style="display: inline; gap: 5px;">
+              <form id="mobile-search-form-element" style="display:inline; gap:5px;">
                 <input type="text" id="mobile-search-input" placeholder="Search..." />
-                <button type="submit" id="mobile-submit-btn" style="font-size: 19px; background: none; border: none; cursor: pointer;"></button>
+                <button type="submit" id="mobile-submit-btn"
+                        style="font-size:19px; background:none; border:none; cursor:pointer;"></button>
               </form>
             </div>
           </div>
@@ -56,18 +56,22 @@ layout: none
         <div class="header-top">
           <div class="header-stack">
             <a href="{{ site.baseurl }}/" class="site-avatar">
-              <img src="{{ site.avatar }}" alt="{{ site.title }} avatar" style="object-fit: cover; display: block; border: none;" />
+              <img src="{{ site.avatar }}" alt="{{ site.title }} avatar"
+                   style="object-fit:cover; display:block; border:none;" />
             </a>
 
             <a class="title-img" href="{{ site.baseurl }}/">
-              <img src="{{ '/images/TextLogoFinal.webp' | relative_url }}" alt="QM System Testing Logo" style="border: none; margin-top: 70px; height: 200px; width: 250px;">
+              <img src="{{ '/images/TextLogoFinal.webp' | relative_url }}"
+                   alt="QM System Testing Logo"
+                   style="border:none; margin-top:70px; height:200px; width:250px;">
             </a>
           </div>
 
           <div class="site-info">
             <h1 class="site-name">
               <a href="{{ site.baseurl }}/">
-                <span class="highlight">{{ site.name | slice: 0, 3 }}</span><span class="rest">{{ site.name | slice: 3, 99 }}</span>
+                <span class="highlight">{{ site.name | slice: 0, 3 }}</span>
+                <span class="rest">{{ site.name | slice: 3, 99 }}</span>
               </a>
             </h1>
             <p class="site-description">{{ site.description }}</p>
@@ -105,21 +109,596 @@ layout: none
     </div>
   </div>
 
-  <!-- MAIN CONTENT AREA -->
+  <!-- DESKTOP NAV STYLES (from original) -->
+  <style>
+    .desktop-header-nav {
+      background: #bc960d;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+      padding-bottom: 15px;
+      width: 1450px;
+    }
+    .nav-wrapper {
+      width: 1450px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      width: 100%;
+      margin-left: 325px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 5px;
+    }
+    .nav-links a {
+      font-weight: 900;
+      text-decoration: none;
+      color: #000;
+    }
+    .nav-search {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 5px;
+    }
+    #desktop-search-toggle {
+      font-size: 18px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    #desktop-search-form {
+      display: none;
+      align-items: center;
+      gap: 5px;
+    }
+    #desktop-search-close {
+      font-size: 18px;
+      background: none;
+      border: none;
+      color: red;
+      cursor: pointer;
+    }
+    #desktop-search-input {
+      padding-left: 3px;
+      padding-right: 3px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+    #desktop-submit-btn {
+      font-size: 19px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- MAIN CONTENT -->
   <div id="main" role="main" class="container">
     {{ content }}
 
     {% if page.url == "/" or page.url == "/index.html" %}
-      <!-- Your entire homepage content stays exactly as-is -->
-      <!-- (Welcome message, category grid, recent posts, ISTQB banner, etc.) -->
-      <!-- I have preserved every line exactly where it was -->
+
+      <!-- WELCOME SECTION -->
+      <h2 class="welcome-heding">Welcome to QMS Testing</h2>
+      <br />
+      <p class="welcome-text">
+        Welcome to QMS Testing (Quality Management System Testing) - your go-to resource
+        for software testing, test automation, and DevOps testing insights.
+      </p>
+
+      <style>
+        .welcome-heding {
+          text-align: center;
+          margin-left: 150px;
+          width: 700px;
+          font-size: 36px;
+          margin-top: -15px;
+        }
+        .welcome-text {
+          text-align: center;
+          margin-left: 150px;
+          width: 700px;
+        }
+        .wrapper-masthead {
+          display: flex;
+          flex-direction: column;
+        }
+        @media only screen and (min-width: 820px) and (max-width: 2000px) {
+          .header-top {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            margin-bottom: 15px;
+          }
+          .site-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 250px;
+          }
+          .masthead {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .mobile-header-nav {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 767px) {
+          .mobile-header-nav {
+            display: block;
+          }
+          .welcome-heding {
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 30px;
+            width: 350px;
+            margin-top: 0px;
+          }
+          .welcome-text {
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 350px;
+          }
+          .mobile-search {
+            position: relative;
+            display: inline-block;
+            margin-left: 0px;
+          }
+          #mobile-search-toggle {
+            position: fixed;
+            top: 25px;
+            right: 10px;
+            font-size: 18px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 10001;
+          }
+          #mobile-search-form {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #f3efdf;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+          }
+          #mobile-search-close {
+            font-size: 18px;
+            background: none;
+            border: none;
+            color: red;
+            cursor: pointer;
+            align-self: flex-end;
+          }
+          #mobile-search-form-element {
+            display: flex;
+            gap: 5px;
+          }
+          #mobile-search-input {
+            display: inline-block;
+            width: 180px;
+            padding: 6px 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+            color: black;
+          }
+          #mobile-submit-btn {
+            font-size: 16px;
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+          .desktop-header-nav {
+            display: none;
+          }
+        }
+      </style>
+
+      <!-- CATEGORY GRID -->
+      <div class="CategoryContainer">
+        <style>
+          .Widget.title { font-size: 40px; font-weight: 700; }
+          .TestCat img,
+          .TypesCat img,
+          .AutoCat img,
+          .DevOpsCat img {
+            border: 2px solid #000000;
+          }
+        </style>
+
+        <div class="TestCat">
+          <a href="https://qmstesting.com/software-testing/">
+            <img src="https://qmstesting.com/assets/images/Software-Testing-Category.png"
+                 alt="Software Testing Category" />
+          </a>
+          <a class="text1" href="https://qmstesting.com/software-testing/">Software Testing</a>
+          <p style="font-size:8px;">Image by macrovector on Freepik</p>
+        </div>
+
+        <div class="TypesCat">
+          <a href="https://qmstesting.com/types-of-testing">
+            <img src="https://qmstesting.com/assets/images/Types-Testing-Category.png"
+                 alt="Types of Testing Category" />
+          </a>
+          <a class="text1" href="https://qmstesting.com/types-of-testing">Types of Testing</a>
+          <p style="font-size:8px;">Image by macrovector on Freepik</p>
+        </div>
+
+        <div class="AutoCat">
+          <a href="https://qmstesting.com/automation">
+            <img src="https://qmstesting.com/assets/images/Automation-Category.png"
+                 alt="Automation Category" />
+          </a>
+          <a class="text1" href="https://qmstesting.com/automation">Automation</a>
+          <p style="font-size:8px;">Image on Freepik</p>
+        </div>
+
+        <div class="DevOpsCat">
+          <a href="https://qmstesting.com/azure-devops">
+            <img src="https://qmstesting.com/assets/images/Azure-DevOps-Category.png"
+                 alt="DevOps Category" />
+          </a>
+          <a class="text1" href="https://qmstesting.com/azure-devops">Azure DevOps</a>
+          <p style="font-size:8px;">Image on Freepik</p>
+        </div>
+      </div>
+
+      <!-- RECENT POSTS -->
+      <h2 class="recent-posts-heading">Recent Posts</h2>
+      <div class="recent-post-grid">
+        {% for post in site.posts limit: 4 %}
+          <div class="recent-post-card">
+            <a href="{{ post.url | relative_url }}">
+              <div class="recent-thumbnail">
+                <img src="{{ post.image | default: '/assets/default-thumbnail.jpg' }}"
+                     alt="{{ post.title }}">
+              </div>
+              <h3 class="recent-post-title">{{ post.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      <style>
+        @media only screen and (min-width: 820px) and (max-width: 2000px) {
+          .recent-posts-heading {
+            margin-left: 275px;
+          }
+        }
+      </style>
+
     {% endif %}
   </div>
 
-  <!-- FOOTER -->
+  <!-- ISTQB BANNER -->
+  {% unless page.hide_istqb_banner %}
+    <hr class="hero-border" style="border:5px solid #bc960d; margin-top:25px;">
+    <div class="home-hero" style="font-weight:900; font-size:20px;">
+      <a href="/ISTQB-certification/">
+        <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}"
+             alt="ISTQB Icon" class="hero-logo">
+      </a>
+      <p class="welcome-text">
+        Read my <a href="/ISTQB-certification/">ISTQB Certification</a> post to learn how
+        to kickstart your QA journey with confidence!
+      </p>
+      <p class="welcome-text">
+        Check out this ISTQB exam prep book
+        <a href="https://amzn.to/4s5Jmj4">
+          Software Testing: An ISTQB-BCS Certified Tester Foundation Level guide (CTFL v4.0)
+        </a>
+        to build your core testing skills.
+      </p>
+    </div>
+  {% endunless %}
+
+  <style>
+    @media (max-width: 768px) {
+      .home-hero {
+        text-align: center;
+        font-weight: 600;
+        padding-top: 10px;
+        margin-top: 20px;
+        width: 250px;
+        display: block;
+      }
+      .hero-logo {
+        width: 250px;
+        display: block;
+        float: none;
+        margin-top: 20px;
+        margin-left: 75px;
+      }
+      .welcome-text {
+        margin-left: 25px;
+      }
+    }
+    @media (min-width: 992px) {
+      .hero-border {
+        display: none;
+      }
+      .home-hero {
+        margin-top: 100px;
+        text-align: center;
+        font-weight: 600;
+        margin-left: 50px;
+        padding-top: 10px;
+        border-top: 9px solid #bc960d;
+        width: 980px;
+      }
+      .hero-logo {
+        border-radius: 5px;
+        margin-top: 100px;
+        margin-left: 375px;
+        width: 250px;
+        display: block;
+        float: none;
+      }
+      .welcome-text {
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+    .hero-logo img {
+      border-radius: 5px;
+    }
+  </style>
+
+  <!-- FOOTER WRAPPER (from original default.html) -->
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        {% include svg-icons.html %}
+
+        <hr class="footer-top" style="border:5px solid #bc960d; margin-top:25px;">
+
+        <div class="footer-menu">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/disclaimer">Disclaimer</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms-of-use">Terms of Use</a></li>
+              <li><a href="/cookie-policy">Cookie Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <br><br/>
+
+        <div class="amazon-attr" style="text-align:center; line-height:24px;">
+          <br>
+          This site uses Amazon affiliate links, and I may earn a commission
+          from qualifying purchases at no extra cost to you.
+          <br>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- CLEANED FOOTER INCLUDE (social share + copyright) -->
   {% include footer.html %}
 
-  <!-- END: Your original default.html content -->
+  <!-- LAYOUT-SPECIFIC STYLES (from original default.html) -->
+  <style>
+    @media only screen and (min-width: 820px) and (max-width: 2000px) {
+      body {
+        width: 1290px;
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+      .container, .wrapper, .content {
+        width: 1025px;
+        margin-left: 25px;
+        margin-right: 100px;
+      }
+      .amazon-attr {
+        margin-top: 60px;
+        margin-left: 290px;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .footer-nav {
+        gap: 0px;
+        height: 20px;
+      }
+      .amazon-attr {
+        margin-top: 60px;
+      }
+    }
+  </style>
+
+  <!-- HAMBURGER JS -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      const hamburger = document.getElementById("hamburgerIcon");
+      const searchBox = document.getElementById("mobile-search-toggle");
+
+      menu.classList.toggle("hidden");
+      hamburger.classList.toggle("hidden");
+
+      if (searchBox) {
+        searchBox.style.display = menu.classList.contains("hidden") ? "block" : "none";
+      }
+    }
+  </script>
+
+  <!-- MOBILE SEARCH JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileToggleBtn = document.getElementById("mobile-search-toggle");
+      const mobileFormContainer = document.getElementById("mobile-search-form");
+      const mobileCloseBtn = document.getElementById("mobile-search-close");
+      const mobileInput = document.getElementById("mobile-search-input");
+      const mobileForm = document.getElementById("mobile-search-form-element");
+
+      mobileToggleBtn.addEventListener("click", function () {
+        mobileFormContainer.style.display = "flex";
+        mobileToggleBtn.style.display = "none";
+        mobileInput.focus();
+      });
+
+      mobileCloseBtn.addEventListener("click", function () {
+        hideSearchForm();
+      });
+
+      mobileForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const query = mobileInput.value.trim();
+        if (!query) return;
+
+        hideSearchForm();
+        window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+      });
+
+      function hideSearchForm() {
+        mobileFormContainer.style.display = "none";
+        mobileToggleBtn.style.display = "inline-block";
+        mobileInput.value = "";
+      }
+    });
+  </script>
+
+  <!-- DESKTOP SEARCH JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("desktop-search-toggle");
+      const formContainer = document.getElementById("desktop-search-form");
+      const closeBtn = document.getElementById("desktop-search-close");
+      const input = document.getElementById("desktop-search-input");
+      const form = document.getElementById("desktop-search-form-element");
+
+      toggleBtn.addEventListener("click", function () {
+        formContainer.style.display = "flex";
+        toggleBtn.style.display = "none";
+        input.focus();
+      });
+
+      closeBtn.addEventListener("click", function () {
+        hideSearchForm();
+      });
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const query = input.value.trim();
+        if (!query) return;
+
+        hideSearchForm();
+        window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+      });
+
+      function hideSearchForm() {
+        formContainer.style.display = "none";
+        toggleBtn.style.display = "inline-block";
+        input.value = "";
+      }
+    });
+  </script>
+
+  <!-- AVATAR + SEARCH RESULTS STYLES (from original) -->
+  <style>
+    @media (min-width: 1000px) {
+      .site-avatar {
+        height: 190px !important;
+        width: 190px !important;
+        margin-bottom: -25px;
+        margin-left: 500px;
+      }
+    }
+    @media (max-width: 767px) {
+      .title-img img {
+        margin-top: -455px !important;
+        margin-bottom: -75px !important;
+      }
+      .site-avatar {
+        margin-top: 10px;
+        margin-bottom: -40px;
+      }
+      .entry img {
+        width: 390px;
+        height: 290px;
+      }
+      .search-grid {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-sizing: border-box;
+        width: 425px;
+      }
+      .post-card {
+        background: #f3efdf;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        box-sizing: border-box;
+      }
+      .post-card h3 {
+        text-align: center;
+        width: 300px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 50px;
+      }
+      .post-card img {
+        width: 345px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+      }
+      #search-query-title {
+        text-align: center;
+        margin-top: -10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 30px;
+        width: 350px;
+      }
+    }
+    .site-avatar {
+      width: 130px !important;
+      height: 130px !important;
+    }
+  </style>
+
+  <!-- COPY-CODE SCRIPT -->
+  <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
+
+  <!-- SIMPLE ANALYTICS -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+  <!-- MERMAID -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 
 </body>
 </html>
+
