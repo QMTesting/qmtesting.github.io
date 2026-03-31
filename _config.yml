@@ -11,6 +11,8 @@ description: "Welcome to QMSTesting (Quality Management System Testing) — your
 # Site 
 avatar: "/images/logo-bug.webp"
 
+theme: null
+
 #
 # Flags below are optional
 #
