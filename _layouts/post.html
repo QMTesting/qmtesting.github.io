@@ -57,6 +57,412 @@ layout: default
 
   {% include disqus.html %}
 
+  <!-- COMMENT SYSTEM — BLOCK A (HTML ONLY) -->
+
+<h2 id="form-heading">Leave a Comment</h2>
+
+<div id="commentSection">
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfnM0iyn-3Pv-MEJLDqruBteB8cg7vT9fdko11sWueo4sLCVA/formResponse"
+        id="customCommentForm"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="return validateRating();">
+
+    <!-- Rating Field -->
+    <label style="display:block; margin-bottom:8px; font-weight:bold; color:#000;">Rating</label>
+
+    <div id="rating-stars" style="margin-bottom:20px;">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+
+    <input id="ratingField" name="entry.1611467638" type="hidden"/>
+
+    <!-- Name -->
+    <label for="nameField" style="display:block; margin-bottom:8px; font-weight:bold; color:#000;">Name *</label>
+    <input id="nameField"
+           name="entry.533251169"
+           placeholder="Your Name"
+           required
+           style="width:100%; padding:10px; margin-bottom:20px; border:1px solid #bc960d; border-radius:6px; background:#f3efdf;"
+           type="text"/>
+
+    <!-- Comment -->
+    <label for="commentField" style="display:block; margin-bottom:8px; font-weight:bold; color:#000;">Comment *</label>
+    <textarea id="commentField"
+              name="entry.1803333929"
+              placeholder="Your Comment"
+              required
+              rows="5"
+              style="width:100%; padding:10px; margin-bottom:20px; border:1px solid #bc960d; border-radius:6px; background:#f3efdf;"></textarea>
+
+    <!-- Post URL -->
+    <input id="postUrlField" name="entry.1243799819" value="{{ page.url | absolute_url }}" type="hidden"/>
+
+    <!-- Honeypot -->
+    <input id="honeypot" name="honeypot_field" style="display:none;" type="text"/>
+
+    <!-- Submit -->
+    <button type="submit"
+            style="width:100%; padding:12px; background:#bc960d; color:black; border:none; border-radius:6px; font-size:18px; cursor:pointer; font-weight:900;">
+      Post Comment
+    </button>
+
+    <iframe name="hidden_iframe" style="display:none;" onload="afterSubmit()"></iframe>
+  </form>
+
+  <div id="thankyou_message"
+       style="display:none; text-align:center; margin-top:20px; font-size:18px; color:#dd4472;">
+    Thank you for your comment!
+  </div>
+</div>
+
+<!-- COMMENT DISPLAY AREA -->
+<div id="commentsContainer" style="margin-top:40px;">
+  <h3>Reader Comments</h3>
+
+  <div style="margin:10px 0;">
+    <strong>Average Rating:</strong>
+    <span id="ratingDisplay">Loading...</span>
+    <span id="ratingStars" style="color:#bc960d; font-size:20px;"></span>
+  </div>
+
+  <div id="commentsList" style="margin-top:10px;"></div>
+</div>
+
+<!-- COMMENT SYSTEM — BLOCK B (CSS ONLY) -->
+
+<style>
+/* Rating stars */
+.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.selected,
+.star:hover,
+.star:hover ~ .star {
+  color: #bc960d;
+}
+
+/* Comment section container */
+#commentSection {
+  border: 5px solid #bc960d;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Desktop layout */
+@media only screen and (min-width: 820px) and (max-width: 2000px) {
+
+  #commentSection {
+    margin-left: 150px;
+    width: 700px;
+  }
+
+  #commentsList {
+    width: 700px;
+  }
+
+  #commentsContainer {
+    margin-left: 150px;
+  }
+
+  #form-heading {
+    margin-left: 150px;
+  }
+
+  .post-tags {
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 700px;
+  }
+
+  .related-posts-grid {
+    text-align: left;
+    margin-left: 150px;
+    width: 700px;
+  }
+
+  .related-post {
+    border-radius: 5px;
+    width: 170px;
+    background: #f3efdf;
+    border: none;
+    padding-bottom: 50px;
+  }
+
+  .related-post p {
+    margin-top: 0px;
+    padding: 0 !important;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 250px;
+    line-height: 40px;
+    width: 700px;
+  }
+
+  .related-posts-title {
+    text-align: left;
+    margin-left: 150px;
+  }
+
+  .date {
+    margin-left: 150px;
+  }
+
+  .site-name {
+    margin-top: -15px;
+  }
+
+  body {
+    width: 1100px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .container, .wrapper, .entry {
+    width: 700px;
+    margin-left: 150px;
+    margin-right: 200px;
+  }
+}
+
+/* Mobile layout */
+@media only screen and (max-width: 780px) {
+
+  #ratingDisplay {
+    font-size: 20px;
+  }
+
+  #ratingStars {
+    font-size: 20px;
+  }
+
+  .post .entry img {
+    width: 390px;
+    height: 290px;
+  }
+}
+
+/* Avatar override */
+.site-avatar {
+  width: 60px !important;
+  height: 60px !important;
+}
+</style>
+
+<!-- COMMENT SYSTEM — BLOCK C (JAVASCRIPT ONLY) -->
+
+<script>
+// Star rating logic
+const stars = document.querySelectorAll("#rating-stars .star");
+const ratingField = document.getElementById("ratingField");
+
+stars.forEach((star, idx) => {
+  star.addEventListener("click", () => {
+    // Remove selected class from all
+    stars.forEach(s => s.classList.remove("selected"));
+
+    // Add selected class to all up to the clicked one
+    for (let i = 0; i <= idx; i++) {
+      stars[i].classList.add("selected");
+    }
+
+    // Set rating value
+    ratingField.value = star.getAttribute("data-value");
+  });
+});
+
+// Validate rating before submit
+function validateRating() {
+  if (!ratingField.value) {
+    alert("Please select a rating before submitting.");
+    return false;
+  }
+
+  // Show thank you after short delay
+  setTimeout(() => {
+    document.getElementById("customCommentForm").style.display = "none";
+    document.getElementById("thankyou_message").style.display = "block";
+  }, 500);
+
+  return true;
+}
+
+// After iframe loads (Google Forms submission)
+function afterSubmit() {
+  document.getElementById("thankyou_message").style.display = "block";
+
+  setTimeout(() => {
+    document.getElementById("thankyou_message").style.display = "none";
+    document.getElementById("customCommentForm").reset();
+
+    // Reset stars
+    document.querySelectorAll(".star").forEach(s => s.style.color = "#aaa");
+
+    document.getElementById("customCommentForm").style.display = "block";
+
+    // Refresh comments
+    fetchComments();
+  }, 2000);
+}
+
+// Mobile override: submit without iframe
+function submitComment(e) {
+  e.preventDefault();
+
+  const form = document.getElementById("customCommentForm");
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors"
+  })
+  .then(() => {
+    document.getElementById("thankyou_message").style.display = "block";
+
+    setTimeout(() => {
+      form.reset();
+      document.querySelectorAll(".star").forEach(s => s.style.color = "#aaa");
+      document.getElementById("thankyou_message").style.display = "none";
+      form.style.display = "block";
+
+      // Refresh comments
+      fetchComments();
+    }, 1500);
+  })
+  .catch(err => console.error("Form submit error:", err));
+}
+
+// Detect mobile and override submission
+document.addEventListener("DOMContentLoaded", () => {
+  if (isMobile()) {
+    const form = document.getElementById("customCommentForm");
+    form.removeAttribute("target"); // prevent iframe submission
+    form.onsubmit = submitComment;  // use mobile function
+  }
+});
+
+// Simple mobile detection
+function isMobile() {
+  return window.innerWidth <= 780;
+}
+</script>
+
+<!-- COMMENT SYSTEM — BLOCK D (COMMENT RETRIEVAL + RENDERING) -->
+
+<script>
+// Google Apps Script endpoint
+const commentsEndpoint =
+  'https://script.google.com/macros/s/AKfycbyU6DqBnBwuoVGJUjLXdX7O-mZ7VW7VOQjiM9bmK1w1L6W3xLLOpQU4BXtkWBfmMJKO/exec';
+
+const currentPostUrl = "{{ page.url | absolute_url }}";
+
+// Fetch and display comments
+function fetchComments() {
+  const urlWithParam = `${commentsEndpoint}?url=${encodeURIComponent(currentPostUrl)}`;
+
+  fetch(urlWithParam)
+    .then(response => response.json())
+    .then(comments => {
+      const commentsList = document.getElementById('commentsList');
+      const ratingDisplay = document.getElementById('ratingDisplay');
+      const ratingStars = document.getElementById('ratingStars');
+
+      commentsList.innerHTML = "";
+
+      if (!comments || comments.length === 0) {
+        commentsList.innerHTML = "<p>No comments yet. Be the first to comment!</p>";
+        ratingDisplay.textContent = "No ratings yet.";
+        ratingStars.innerHTML = "";
+        return;
+      }
+
+      // Calculate average rating
+      const ratings = comments
+        .map(c => parseFloat(c.rating))
+        .filter(r => !isNaN(r));
+
+      const avgRating = ratings.reduce((a, b) => a + b, 0) / ratings.length;
+
+      ratingDisplay.textContent = `${avgRating.toFixed(1)} / 5`;
+
+      // Determine star icons using Font Awesome
+      const fullStars = Math.floor(avgRating);
+      const hasHalfStar = avgRating % 1 > 0;
+      const totalIcons = fullStars + (hasHalfStar ? 1 : 0);
+      const emptyStars = 5 - totalIcons;
+
+      let starsHtml = "";
+
+      for (let i = 0; i < fullStars; i++) {
+        starsHtml += `<i class="fas fa-star" style="color:#bc960d;"></i>`;
+      }
+
+      if (hasHalfStar) {
+        starsHtml += `<i class="fas fa-star-half-alt" style="color:#bc960d;"></i>`;
+      }
+
+      for (let i = 0; i < emptyStars; i++) {
+        starsHtml += `<i class="far fa-star" style="color:#bc960d;"></i>`;
+      }
+
+      ratingStars.innerHTML = starsHtml;
+
+      // Display each individual comment
+      comments.reverse().forEach(entry => {
+        const commentBlock = document.createElement('div');
+        commentBlock.style =
+          "border:1px solid #ddd; padding:12px; border-radius:8px; margin-bottom:15px; background:#f9f9f9;";
+
+        commentBlock.innerHTML = `
+          <p style="margin:0; font-weight:bold; color:#bc960d;">
+            ${entry.name}
+            <span style="font-weight:normal; color:#999;">
+              (${new Date(entry.timestamp).toLocaleString()})
+            </span>
+          </p>
+
+          <p style="margin:8px 0 0; color:#444;">${entry.comment}</p>
+
+          <p style="margin:6px 0 0; font-size:14px; color:#bc960d;">
+            Rating: ${"★".repeat(entry.rating)}${"☆".repeat(5 - entry.rating)}
+          </p>
+
+          ${
+            entry.reply
+              ? `<div style="margin-top:10px; padding:10px; background:#eee; border-left:4px solid #bc960d; color:#333;">
+                   <strong>Reply:</strong> ${entry.reply}
+                 </div>`
+              : ""
+          }
+        `;
+
+        commentsList.appendChild(commentBlock);
+      });
+    })
+    .catch(error => {
+      console.error("Error fetching comments:", error);
+      document.getElementById("commentsList").innerHTML =
+        "<p>Unable to load comments at this time.</p>";
+    });
+}
+
+// Load comments when page loads
+fetchComments();
+</script>
+  
+  
+
 </article>
 
 <!-- BEGIN: Your entire comment system (kept exactly as-is) -->
