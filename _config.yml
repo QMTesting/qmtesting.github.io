@@ -44,7 +44,6 @@ google_fonts: 'Pacifico'
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: "https://qmstesting.com"
-theme: null
 
 # Plugins
 plugins:
