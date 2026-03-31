@@ -1,17 +1,11 @@
 ---
-layout: home
+layout: page
 title: Welcome
 body_class: homepage
 ---
 
 <style>
-  .site-name {	 
+  .site-name {   
     margin-top: -10px;
-   	   
   } 
 </style>
-
-
-
- 
-
