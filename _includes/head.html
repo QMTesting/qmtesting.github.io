@@ -5,14 +5,127 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Initialize dataLayer and gtag ONCE -->
-<script>!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};var e=new URLSearchParams(document.location.search),n=document.createElement("script");n.type="text/javascript", n.src="https://global.ketchcdn.com/web/v3/config/qmstesting/website_smart_tag/boot.js", n.defer=n.async=!0,document.getElementsByTagName("head")[0].appendChild(n)}();</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag(){ dataLayer.push(arguments); }
+</script>
 
+<!-- Load Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6"></script>
+<script>
+  gtag('js', new Date());
   gtag('config', 'G-2XX8QBYYZ6');
+</script>
+
+<script>
+  // Regions requiring a banner
+  const regulatedRegions = [
+    // EU + UK
+    "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE",
+    "IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB",
+
+    // California
+    "US-CA",
+
+    // Quebec (Canada)
+    "CA-QC"
+  ];
+
+  function getCountryFromTrace(text) {
+    const lines = text.split('\n');
+    let country = null, region = null;
+
+    for (const line of lines) {
+      if (line.startsWith('loc=')) country = line.replace('loc=', '').trim();
+      if (line.startsWith('region=')) region = line.replace('region=', '').trim();
+    }
+
+    // Build combined code like US-CA or CA-QC
+    if (country && region) return `${country}-${region}`;
+    return country;
+  }
+
+  fetch('/cdn-cgi/trace')
+    .then(r => r.text())
+    .then(text => {
+      const loc = getCountryFromTrace(text);
+
+      if (regulatedRegions.includes(loc)) {
+        /* ---------------------------
+           REGULATED REGION → SHOW BANNER
+        --------------------------- */
+
+        gtag('consent', 'default', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+
+        // Load Silktide only for regulated regions
+        const css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = "/silktid/silktide-consent-manager.css";
+        document.head.appendChild(css);
+
+        const script = document.createElement("script");
+        script.src = "/silktid/silktide-consent-manager.js";
+        document.head.appendChild(script);
+
+        script.onload = function() {
+          silktideCookieBannerManager.updateCookieBannerConfig({
+            forceShow: false,
+            openPreferencesOnLoad: true,
+            cookieIcon: { position: "bottomLeft" },
+
+            cookieTypes: [
+              { id: "necessary", required: true },
+
+              {
+                id: "analytics",
+                defaultValue: false,
+                onAccept: () => gtag('consent', 'update', { analytics_storage: 'granted' }),
+                onReject: () => gtag('consent', 'update', { analytics_storage: 'denied' })
+              },
+
+              {
+                id: "advertising",
+                defaultValue: false,
+                onAccept: () => gtag('consent', 'update', {
+                  ad_storage: 'granted',
+                  ad_user_data: 'granted',
+                  ad_personalization: 'granted'
+                }),
+                onReject: () => gtag('consent', 'update', {
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied'
+                })
+              }
+            ]
+          });
+        };
+
+      } else {
+        /* ---------------------------
+           NON‑REGULATED REGION → ALLOW ALL
+        --------------------------- */
+
+        gtag('consent', 'default', {
+          analytics_storage: 'granted',
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+      }
+    })
+    .catch(() => {
+      // Fallback: allow all
+      gtag('consent', 'default', {
+        analytics_storage: 'granted',
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+    });
 </script>
