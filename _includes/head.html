@@ -18,26 +18,7 @@
 </script>
 
 <!-- GEO‑TARGETED CONSENT MODE USING /cdn-cgi/trace -->
-<script>
-window.silktide = window.silktide || {};
-window.silktide.categories = {
-  essential: {
-    title: "Essential cookies",
-    description: "Required for the website to function properly.",
-    required: true
-  },
-  analytics: {
-    title: "Analytics cookies",
-    description: "Help us understand how visitors use our website.",
-    required: false
-  },
-  advertising: {
-    title: "Advertising cookies",
-    description: "Used to deliver relevant ads and measure their performance.",
-    required: false
-  }
-};
-</script>
+
 <script>
   // Regions requiring a banner
   const regulatedRegions = [
@@ -99,31 +80,41 @@ window.silktide.categories = {
             openPreferencesOnLoad: true,
             cookieIcon: { position: "bottomLeft" },
 
-            cookieTypes: [
-              { id: "necessary", required: true },
+             cookieTypes: [
+                {
+                  id: "necessary",
+                  name: "Essential cookies",
+                  description: "Required for the website to function properly and cannot be disabled.",
+                  required: true
+                },
+              
+                {
+                  id: "analytics",
+                  name: "Analytics cookies",
+                  description: "Help us understand how visitors use our website so we can improve it.",
+                  defaultValue: false,
+                  onAccept: () => gtag('consent', 'update', { analytics_storage: 'granted' }),
+                  onReject: () => gtag('consent', 'update', { analytics_storage: 'denied' })
+                },
+              
+                {
+                  id: "advertising",
+                  name: "Advertising cookies",
+                  description: "Used to deliver relevant ads and measure their performance.",
+                  defaultValue: false,
+                  onAccept: () => gtag('consent', 'update', {
+                    ad_storage: 'granted',
+                    ad_user_data: 'granted',
+                    ad_personalization: 'granted'
+                  }),
+                  onReject: () => gtag('consent', 'update', {
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied'
+                  })
+                }
+              ]
 
-              {
-                id: "analytics",
-                defaultValue: false,
-                onAccept: () => gtag('consent', 'update', { analytics_storage: 'granted' }),
-                onReject: () => gtag('consent', 'update', { analytics_storage: 'denied' })
-              },
-
-              {
-                id: "advertising",
-                defaultValue: false,
-                onAccept: () => gtag('consent', 'update', {
-                  ad_storage: 'granted',
-                  ad_user_data: 'granted',
-                  ad_personalization: 'granted'
-                }),
-                onReject: () => gtag('consent', 'update', {
-                  ad_storage: 'denied',
-                  ad_user_data: 'denied',
-                  ad_personalization: 'denied'
-                })
-              }
-            ]
           });
         };
 
