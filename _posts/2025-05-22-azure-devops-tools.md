@@ -8,7 +8,7 @@ description: "A guide on software testing using Azure DevOps Tools and Services 
 ---
 
 <figure>
-  <img src="/assets/images/DevOps/Azure-DevOps-Tools.webp" alt="DevOps Pipeline Tools" />
+  <img src="/assets/images/DevOps/Azure-DevOps-Tools.webp" alt="Best DevOps Tools & Services To Build Powerful Pipelines" />
   <figcaption>Image on Freepik</figcaption>
 </figure>
 
