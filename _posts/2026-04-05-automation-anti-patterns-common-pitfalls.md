@@ -1,11 +1,4 @@
 ---
-title: "Automation Anti‑Patterns: Common Pitfalls and How to Avoid Them"
-date: 2026-04-08
-categories: [Automation, QA, DevOps]
-description: "A practical guide to the most common automation mistakes teams make—and how to build smarter, more resilient automation strategies."
----
-
----
 layout: post
 title: "Automation Anti‑Patterns: Common Pitfalls and How to Avoid Them"
 categories: ["Automation"]
