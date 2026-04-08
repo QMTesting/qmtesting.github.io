@@ -31,7 +31,7 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1
   fetchpriority="high">
 
 
-# Introduction
+## Introduction
 
 Automation is one of the most powerful accelerators in modern QA and DevOps workflows. When implemented thoughtfully, it reduces repetitive manual effort, improves consistency, and enables teams to release software faster and with greater confidence. However, automation is not a silver bullet. Without a clear strategy, proper structure, and long-term thinking, it can quickly become a source of frustration rather than a driver of efficiency.
 
