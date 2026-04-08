@@ -37,7 +37,6 @@ Automation is one of the most powerful accelerators in modern QA and DevOps work
 
 In this post, we’ll explore the most common **automation anti‑patterns**—the habits, shortcuts, and assumptions that quietly sabotage automation efforts. More importantly, we’ll look at how to avoid them so your automation remains scalable, maintainable, and genuinely valuable.
 
----
 
 ## 🚫 1. Automating Everything “Just Because You Can”
 
@@ -60,7 +59,6 @@ Prioritize automation using criteria like:
 - Stability of the feature  
 - ROI compared to manual execution  
 
----
 
 ## 🚫 2. Treating Automation Like a Side Project
 
@@ -83,7 +81,6 @@ Adopt the same engineering discipline you apply to production code:
 
 Automation is software. Treat it like software.
 
----
 
 ## 🚫 3. Over‑Reliance on UI Tests
 
@@ -104,7 +101,6 @@ Shift your automation pyramid toward:
 
 This creates a faster, more stable automation suite.
 
----
 
 ## 🚫 4. Ignoring Test Data Strategy
 
@@ -126,7 +122,6 @@ Design a test data strategy that includes:
 - Synthetic data generation  
 - Environment consistency checks  
 
----
 
 ## 🚫 5. Building Automation Without Observability
 
@@ -150,7 +145,6 @@ Make your automation self‑diagnosing:
 
 Good automation tells you *why* it failed—not just that it failed.
 
----
 
 ## 🚫 6. Writing Tests That Depend on Each Other
 
@@ -172,7 +166,6 @@ Design tests to be:
 If a test needs data, it should create it.  
 If it modifies data, it should clean up after itself.
 
----
 
 ## 🚫 7. Not Revisiting or Refactoring Automation
 
@@ -196,7 +189,6 @@ Schedule regular automation maintenance:
 
 Healthy automation is maintained automation.
 
----
 
 ## 🎯 Final Thoughts
 
