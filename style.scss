@@ -1711,7 +1711,13 @@ position: relative;
 padding-left: 1.6em;
 font-size: 20px;	
 line-height: 24px;
-} 	
+} 
+
+img.hero-logo {
+    width: 120%;
+	height: 120%;
+    margin-left: 300px;
+}	
 
 	
 } /* End Desktop */
@@ -1755,9 +1761,14 @@ line-height: 24px;
 	}
 	footer {
     border-bottom: none !important;
-	border-top: none !important;   
-	 
-}	
+	border-top: none !important;   	 
+    }
+
+	img.hero-logo {
+    margin-left: 10px;
+	margin-top: 40px;
+	margin-botton: -100px;	
+    }	
 } /* End Mobile */
 
 /* Enable scroll bar on tables */
