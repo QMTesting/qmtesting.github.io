@@ -1,3 +1,34 @@
+---
+layout: post
+title: "What Is QA in DevOps? A Simple Guide for New Testers"
+categories: ["Azure DevOps"]
+permalink: /guide-to-what-is-qa-in-devops/
+tags:
+  - "DevOps testing"
+  - "DevOps testing Guide"
+  - "QA in DevOps"
+  - "QC in DevOps"
+  - "CI/CD testing"
+  - "test automation"
+  - "continuous testing"
+description: "A beginner‑friendly guide that explains how QA fits into DevOps, why continuous testing matters, and what new testers need to succeed in a modern DevOps pipeline."
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png"
+---
+
+
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774462373/shift-left-testing-in-devOps-700_hm0gsu.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="500"
+  loading="lazy"
+  alt="Shift-Left Testing in DevOps"
+  fetchpriority="high">
 
 
 # What Is QA in DevOps? A Simple Guide for New Testers
