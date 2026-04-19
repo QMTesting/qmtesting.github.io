@@ -25,7 +25,7 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/v1776176202/guide-to-w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"
-  height="500"
+  height="438"
   loading="lazy"
   alt="Guide To What Is QA in DevOps"
   fetchpriority="high">
