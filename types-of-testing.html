@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         "title": {{ post.title | jsonify }},
         "url": "{{ post.url | relative_url }}",
-        "image": "{{ post.image | relative_url }}"
+        "image": "{{ post.image }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
@@ -47,7 +47,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     container.innerHTML = paginatedResults.map(post => `
       <a href="${post.url}" style="text-decoration: underline; text-align: center;">
-        <img class="related-img" src="${post.image}" alt="${post.title}" />
+        <img 
+            class="related-img"
+            src="${post.image.replace('/upload/', '/upload/f_auto,q_auto,c_fill,w_400,h_320/')}"
+            srcset="
+              ${post.image.replace('/upload/', '/upload/f_auto,q_auto,c_fill,w_320,h_256/')} 320w,
+              ${post.image.replace('/upload/', '/upload/f_auto,q_auto,c_fill,w_400,h_320/')} 400w,
+              ${post.image.replace('/upload/', '/upload/f_auto,q_auto,c_fill,w_600,h_480/')} 600w
+            "
+            sizes="(max-width: 780px) 320px, 250px"
+            width="250"
+            height="200"
+            loading="lazy"
+            alt="${post.title}"
+          />
         <div style="color: #000; font-size: 18px; font-weight: bold;">${post.title}</div>
       </a>
     `).join("");
@@ -159,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   .related-img {
     width: 320px;
-    height: 200px;
+    height: 256px;
     margin-top: 30px;
   }
 }
@@ -190,6 +203,6 @@ document.addEventListener("DOMContentLoaded", function () {
      margin-top: -40px;
    }     
   
-  } / * End Desktop */
+  } /* End Desktop */
 </style>
 
