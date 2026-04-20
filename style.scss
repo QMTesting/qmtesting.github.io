@@ -1768,11 +1768,20 @@ img.hero-logo {
 	max-width: 768px; 
 	margin: none;
     padding: none;
-	height: 200px; 
-    }	
- 
+	height: 20px; 
+    }
 
-	container {
+	img.hero-logo {
+	width: 100px;	
+    max-width: 768px;
+    height: auto;
+    border: none;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+	}	
+ 
+	.container {
     margin: 0 auto;
     margin-top: 0px;
     max-width: 2000px;
