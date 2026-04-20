@@ -1849,5 +1849,14 @@ img.hero-logo {
 .title-img {display: none;}
 .site-avatar {display: none}
 
+.recent-post-card .recent-thumbnail img {
+  margin-bottom: 0.1rem; /* tighten spacing */
+  display: block;        /* prevents inline spacing quirks */
+}
+.recent-post-card .recent-post-title {
+  margin-top: 0.1rem; /* or 0 if you want it very tight */
+}
+
+
 
 	
