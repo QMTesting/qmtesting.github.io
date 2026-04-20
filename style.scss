@@ -847,13 +847,14 @@ img {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700px;	
-  margin: 0.5em 0 0;
+  margin: 0.2em 0 0;
   text-align: center;
   line-height: 20px;
   text-decoration: underline;	
 }
 .recent-post-title a {
-  text-decoration: underline;	
+  text-decoration: underline;
+  margin: 0.2em 0 0;	
 }
 
 @media only screen and (max-width: 780px) {
@@ -885,7 +886,7 @@ img {
 
 .recent-post-title {
   font-size: 18px;
-  margin: 0.5em 0 0;
+  margin: 0.2em 0 0;
   text-align: center;
   line-height: 18px;	
 }
