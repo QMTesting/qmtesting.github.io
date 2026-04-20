@@ -1772,7 +1772,7 @@ img.hero-logo {
     }
 
 	img.hero-logo {
-	width: 100px;	
+	width: 100%;	
     max-width: 768px;
     height: auto;
     border: none;
@@ -1784,10 +1784,12 @@ img.hero-logo {
 	.container {
     margin: 0 auto;
     margin-top: 0px;
-    max-width: 2000px;
+	width: 100%;	
+    max-width: 768px;
     padding: 0 10px;
     width: 100%;
     margin-top: -40px;
+	margin-bottom: 20px;	
    }
 		
 	.wrapper-footer {
