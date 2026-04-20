@@ -758,7 +758,7 @@
   <h2 class="recent-posts-heading">Recent Posts</h2>    
   <div class="recent-post-grid">
   {% for post in site.posts limit:4 %}
-    <div class="recent-post-card">
+    <div class="recent-post-card" style="margin-top: 10px;">
       <a href="{{ post.url | relative_url }}">
         <div class="recent-thumbnail">
           <img 
