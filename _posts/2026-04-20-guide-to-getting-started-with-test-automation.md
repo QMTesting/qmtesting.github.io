@@ -26,7 +26,7 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1
   width="700"
   height="438"
   loading="lazy"
-  alt="A guide to getting started with automation testing"
+  alt="A simple, beginner‑friendly introduction to test automation."
   fetchpriority="high">
 
 
