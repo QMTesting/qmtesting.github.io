@@ -150,8 +150,7 @@ strong, b {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
+  
   @include mobile {
     text-align: center;
   }
@@ -1754,6 +1753,34 @@ img.hero-logo {
       height: 200px;
       object-fit: cover;
     }
+
+	.masthead {
+     padding: 0px 0;
+	 height: 20px;	
+	}
+
+	.wrapper-masthead {
+	margin-bottom: 15px;
+	background: #bc960d; 
+	background-color: #bc960d;
+	border-color: #bc960d; 
+	width: 100%; 
+	max-width: 768px; 
+	margin: none;
+    padding: none;
+	height: 200px; 
+    }	
+ 
+
+	container {
+    margin: 0 auto;
+    margin-top: 0px;
+    max-width: 2000px;
+    padding: 0 10px;
+    width: 100%;
+    margin-top: -40px;
+   }
+		
 	.wrapper-footer {
 	border-bottom: none !important;
 	border-top: none !important;   
@@ -1767,6 +1794,8 @@ img.hero-logo {
     border-bottom: none !important;
 	border-top: none !important;   	 
     }
+
+	
 
 	img.hero-logo {
 	width: 300px;
