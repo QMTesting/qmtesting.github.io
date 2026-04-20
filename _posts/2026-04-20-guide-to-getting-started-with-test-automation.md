@@ -13,7 +13,7 @@ tags:
 description: "A simple, beginner‑friendly introduction to test automation — what it is, why it matters, and how to start building your first automated tests."
 image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png" 
 ---
- https://res.cloudinary.com/dig9gupue/image/upload/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png       
+      
 
 <img 
   src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png"
