@@ -339,7 +339,8 @@ margin-left: 100px;
             
         }
          .TestCat a {
-	    color: #000000;	  
+	      color: #000000;
+		  font-size: 20px !important;	 
           }	
         .TestCat img {
 	  border-radius: 5px;	
@@ -360,13 +361,14 @@ margin-left: 100px;
            height: 280px
         }
           .TypesCat a {
-	    color: #000000;	  
+	       color: #000000;
+		   font-size: 20px !important;	  
           }		  
         .TypesCat img {
           border-radius: 5px;
           height: 200px;
           width: 250px;
-	  border: 2px solid;	
+	      border: 2px solid;	
         }
 
        .AutoCat {  
@@ -381,13 +383,14 @@ margin-left: 100px;
             height: 280px
         }
          .AutoCat a {
-	    color: #000000;	  
+	       color: #000000;	
+		   font-size: 20px !important;	 
           }	
         .AutoCat img {
           border-radius: 5px;
           height: 200px;
           width: 250px;
-	  border: 2px solid;	
+	      border: 2px solid;	
         }
 
       .DevOpsCat { 
@@ -402,13 +405,14 @@ margin-left: 100px;
             height: 280px
         }
         .DevOpsCat a {
-	    color: #000000;	  
+	      color: #000000;	
+		  font-size: 20px !important;	
           }	
         .DevOpsCat img {
           border-radius: 5px;
           height: 200px;
           width: 250px;
-	  border: 2px solid;
+	      border: 2px solid;
         }
 
        .TestCat .text1 { font-size: 20px; font-weight: 700; margin-left: 0px; color: #000000;}
@@ -1722,7 +1726,7 @@ img.hero-logo {
     border: none;
     margin-top: 20px;
     margin-bottom: 0px;
-    margin-left: 270px;
+    margin-left: 340px;
   }
 
 	
