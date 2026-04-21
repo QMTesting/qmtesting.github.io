@@ -801,10 +801,10 @@
 
    <!--ISTQB Certification text - START-->
     {% unless page.hide_istqb_banner %}
-    <hr class="hero-border" style="border: 5px solid #bc960d; margin-top: 25px; margin-bottom: 20px;">
-    <div class="home-hero" style="font-weight: 900; font-size: 20px;">
+    <hr class="istqb-border" style="border: 5px solid #bc960d; margin-top: 25px; margin-bottom: 20px;">
+    <div class="istqb-hero" style="font-weight: 900; font-size: 20px;">
         <a href="/ISTQB-certification/">
-          <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}" alt="ISTQB Icon" class="hero-logo">
+          <img src="{{ '/assets/images/Test/ISTQB.webp' | relative_url }}" alt="ISTQB Icon" class="istqb-logo">
         </a>
     <p class="welcome-text">Read my <a href="/ISTQB-certification/">ISTQB Certification post to learn how!</a> post on how to kickstart your QA journey with confidence!</p>   
     <p class="welcome-text">Check out this ISTQB exam prep book <a href="https://amzn.to/4s5Jmj4">Software Testing: An ISTQB-BCS Certified Tester Foundation Level guide (CTFL v4.0)</a> to build your core testing skills.</p>
@@ -815,7 +815,7 @@
 <style>    
   /* Mobile first (works for phones) */
    @media (max-width: 768px) {
-  .home-hero {
+  .istqb-hero {
     text-align: center;
     font-weight: 600;
     padding-top: 10px;          /* space below the line */
@@ -825,7 +825,7 @@
 	align-items: center !important;  
   }
    
-  .hero-logo {
+  .istqb-logo {
     width: 250px;
     display: block;
     float: none;
@@ -839,10 +839,10 @@
   
   /* Desktop and larger */
   @media (min-width: 992px) {
-    .hero-border {
+    .istqb-border {
     display: none;
     } 
-    .home-hero {
+    .istqb-hero {
       margin-top: 100px;  
       text-align: center;
       font-weight: 600;
@@ -852,7 +852,7 @@
       /* border-bottom: 5px solid #bc960d; */ 
       width: 980px;
     }
-    .hero-logo {
+    .istqb-logo {
       border-radius: 5px;
       margin-top: 100px;   /* your original top spacing */
       margin-left: 375px;
