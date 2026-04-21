@@ -1858,9 +1858,12 @@ img.hero-logo {
 }
 
 /* Test Results grid */
+.post-card img {
+  margin-bottom: 0.1rem !important; 
+  display: block !important; 
+}	
 .post-card h3 {
-	margin-bottom: 0.1rem !important; 
-    display: block !important;        
+	margin-top: 0.1rem !important;         
 }	
 
 
