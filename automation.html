@@ -157,7 +157,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
  #related-posts-cat a {
     margin-bottom: 20px;
-  }   
+  } 
+
+.TestCat img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid;
+}
+  
 
 /* Mobile view */
 @media only screen and (max-width: 780px) {
@@ -206,15 +216,17 @@ document.addEventListener("DOMContentLoaded", function () {
    .breadcrumbs {
      margin-top: -40px;
    }
+
+  .TestCat img {
+    width: 250px;
+    height: 200px;
+  }
+
+ 
   
   } / *End Desktop*/	
 
-  .related-img {
-    aspect-ratio: 5 / 4;
-    object-fit: cover;
-    height: auto;
-  }
-
+  
 
 </style>
 
