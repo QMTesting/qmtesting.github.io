@@ -1774,6 +1774,8 @@ img.hero-logo {
 	max-width: 768px; 
 	margin: none;
     padding: none; 
+	max-height: 20px;
+	height: 100%;	
     }
 
 	img.hero-logo {
@@ -1822,10 +1824,10 @@ img.hero-logo {
 	margin-bottom: 20px;	
     }
 
-	.masthead,
+	/*.masthead,
 	.wrapper-masthead {
 	  min-height: 20px;	
-	}
+	}*/
 
 	.mobile-header-nav {
 	  min-height: 40px;
