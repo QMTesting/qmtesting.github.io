@@ -1824,7 +1824,8 @@ img.hero-logo {
 
 	.masthead,
 	.wrapper-masthead {
-	  max-height: 20px;
+	  min-height: 20px;
+	  display: none;	
 	}
 
 	.mobile-header-nav {
