@@ -1777,13 +1777,13 @@ img.hero-logo {
     }
 
 	img.hero-logo {
-	width: 100%;	
-    max-width: 768px;
-    height: auto;
-    border: none;
-    margin-left: 36px;
-    margin-top: 80px;
-    margin-bottom: 20px;
+	  width: 100%;	
+	  max-width: 768px;
+	  height: auto;
+	  border: none;
+	  display: block;
+	  margin: 0 auto;
+	  padding-top: 20px;
 	}	
  
 	.container {
