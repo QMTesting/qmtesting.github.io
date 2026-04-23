@@ -1762,8 +1762,7 @@ img.hero-logo {
     }
 
 	.masthead {
-     padding: 0px 0;
-	 height: 20px;	
+     padding: 0px 0;	
 	}
 
 	.wrapper-masthead {
@@ -1774,8 +1773,7 @@ img.hero-logo {
 	width: 100%; 
 	max-width: 768px; 
 	margin: none;
-    padding: none;
-	height: 20px; 
+    padding: none; 
     }
 
 	img.hero-logo {
@@ -1822,7 +1820,13 @@ img.hero-logo {
     margin-left: 50px;
 	margin-top: 80px;
 	margin-bottom: 20px;	
-    }	
+    }
+
+	.masthead,
+	.wrapper-masthead {
+	  min-height: 120px; /* or 140px depending on your logo */
+	}
+
 } /* End Mobile */
 
 /* Enable scroll bar on tables */
