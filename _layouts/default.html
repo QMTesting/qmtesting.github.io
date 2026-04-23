@@ -24,6 +24,8 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+	<link rel="preload" as="image" href="/images/Logo-full-text1.webp" fetchpriority="high">  
+
     <link rel="preload" href="{{ '/style.css' | relative_url }}?v={{ site.github.build_revision }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v={{ site.github.build_revision }}">
@@ -35,8 +37,7 @@
 	<a href="https://qmstesting.com">
       <img class="hero-logo" src="/images/Logo-full-text1.webp" alt="QMS Testing Site Avatar" Testing" fetchpriority="high">
     </a>
-
-	  
+ 
 	<style>
 		@media only screen and (min-width: 820px) and (max-width: 2000px) {
 		 .hero-logo {
