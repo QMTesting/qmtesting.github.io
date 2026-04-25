@@ -1625,7 +1625,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f3efdf;
 	margin-left: calc(-50vw + 50%); 
 	background-color: #f3efdf;
-	width: 1520px;
+	width: 100%;  
+	max-width: 1520px;
 	margin-left: 270px;
 	margin-right: 270px;  
 	}	  
