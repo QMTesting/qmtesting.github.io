@@ -22,9 +22,9 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 500w,
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 700w
   "
-  sizes="(max-width: 768px) 100vw, 700px"
-  width="700"
-  height="438"
+  sizes="(max-width: 768px) 100vw, 309px"
+  width="309"
+  height="246"
   loading="lazy"
   alt="A simple, beginner‑friendly introduction to test automation."
   fetchpriority="high">
