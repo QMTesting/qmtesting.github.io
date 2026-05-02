@@ -1443,17 +1443,18 @@ div.highlight {
  background: #808080 !important;	
 }	
 .copy-btn {
-  background: white;
-  color: black;
-  border: none;
+  background: #808080;
+  color: white;
+  border: 2px;
+  border-color: #D3D3D3;	
   border-radius: 4px;
   font-family: "Montserrat", sans-serif !important;
   transition: background 0.3s ease;
 }
 
 .copy-btn:hover {
-  background: white;
-  color: black;
+  background: #808080;
+  color: white;
 }
 
 /* Style paragraph and headings font */
