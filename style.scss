@@ -1439,9 +1439,13 @@ figcaption {
         } /* End Mobile*/
 
 // Style buttons for script snippets in blog posts
+.highlight {
+ background: black;
+ color: white;	
+}	
 .copy-btn {
-  background: #444;
-  color: #fff;
+  background: white;
+  color: black;
   border: none;
   border-radius: 4px;
   font-family: "Montserrat", sans-serif !important;
@@ -1449,7 +1453,8 @@ figcaption {
 }
 
 .copy-btn:hover {
-  background: #666;
+  background: white;
+  color: black;
 }
 
 /* Style paragraph and headings font */
