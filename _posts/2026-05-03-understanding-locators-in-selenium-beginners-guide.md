@@ -1,6 +1,37 @@
+---
+layout: post
+title: "Understanding Locators in Selenium: A Beginner’s Guide"
+categories: ["Automation"]
+permalink: /understanding-locators-in-selenium-beginners-guide/
+tags:
+  - "locators"
+  - "selenium locators guide"
+  - "beginner selenium tutorial"
+  - "QA automation basics"
+  - "how to use locators"
+  - "selenium webdriver tips"
+  - "locator strategies for testers"
+description: "A simple, beginner‑friendly guide that explains what locators are in Selenium, why they matter, and how QA testers can choose the right locator strategy for stable, maintainable automated tests."
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png" 
+---
+        
 
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="500"
+  loading="lazy"
+  alt="A beginer-friendly guide to what locators are in Selenium"
+  fetchpriority="high">
+  
 
-# **Understanding Locators in Selenium: A Beginner’s Guide**
+## Introduction
 
 If you’re learning Selenium WebDriver, one of the first skills you need to master is **locators**. Locators are how Selenium finds elements on a webpage—buttons, text fields, links, dropdowns, checkboxes, and everything in between. Think of them as the “addresses” Selenium uses to interact with the UI.
 
