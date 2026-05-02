@@ -71,6 +71,8 @@ Below are the most commonly used locator strategies in Selenium WebDriver, with 
 IDs are the most reliable locator—if the element has one.
 
 ```java
+
+
 driver.findElement(By.id("username")).sendKeys("Jane");
 ```
 
@@ -83,6 +85,8 @@ driver.findElement(By.id("username")).sendKeys("Jane");
 Similar to ID, but less unique.
 
 ```java
+
+
 driver.findElement(By.name("email")).sendKeys("test@example.com");
 ```
 
@@ -95,6 +99,8 @@ driver.findElement(By.name("email")).sendKeys("test@example.com");
 Targets elements by their CSS class.
 
 ```java
+
+
 driver.findElement(By.className("btn-primary")).click();
 ```
 
@@ -107,6 +113,8 @@ driver.findElement(By.className("btn-primary")).click();
 Useful for grabbing groups of elements like links or inputs.
 
 ```java
+
+
 List<WebElement> links = driver.findElements(By.tagName("a"));
 ```
 
@@ -119,6 +127,8 @@ List<WebElement> links = driver.findElements(By.tagName("a"));
 Matches the exact visible text of a link.
 
 ```java
+
+
 driver.findElement(By.linkText("Forgot Password")).click();
 ```
 
@@ -131,6 +141,8 @@ driver.findElement(By.linkText("Forgot Password")).click();
 Matches part of a link’s visible text.
 
 ```java
+
+
 driver.findElement(By.partialLinkText("Forgot")).click();
 ```
 
@@ -143,6 +155,8 @@ driver.findElement(By.partialLinkText("Forgot")).click();
 One of the most powerful and flexible locator types.
 
 ```java
+
+
 driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
 ```
 
@@ -155,6 +169,8 @@ driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
 Extremely powerful, supports navigating the DOM structure.
 
 ```java
+
+
 driver.findElement(By.xpath("//button[@data-test='login']")).click();
 ```
 
