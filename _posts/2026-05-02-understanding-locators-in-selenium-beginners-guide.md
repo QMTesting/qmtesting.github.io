@@ -71,7 +71,7 @@ Below are the most commonly used locator strategies in Selenium WebDriver, with 
 IDs are the most reliable locator—if the element has one.
 
 ```java
-driver.findElement(By.id("username")).sendKeys("caroline");
+driver.findElement(By.id("username")).sendKeys("Jane");
 ```
 
 **Use when:** The element has a unique, stable ID.
@@ -205,12 +205,3 @@ Avoiding these mistakes early will save you hours of debugging later.
 Locators are the foundation of Selenium automation. Once you understand how to choose the right locator—and why it matters—you’ll write cleaner, more stable tests that your team can trust.
 
 As you continue building your automation skills, practice inspecting elements, experimenting with CSS and XPath, and refining your locator strategy. Strong locator skills will make every future automation task easier.
-
-If you’d like, I can also create:
-
-- a front‑matter description  
-- SEO keywords  
-- a cartoon‑style blog image (700×500)  
-- a follow‑up post like “XPath vs CSS: Which Should You Use?”  
-
-Just tell me what you want next.
