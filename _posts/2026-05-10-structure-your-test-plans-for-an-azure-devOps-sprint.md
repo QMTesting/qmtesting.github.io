@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Best Structure Your Azure DevOps Test Plans for an Azure DevOps Sprint"
+title: "How to Best Structure Your Test Plans for an Azure DevOps Sprint"
 categories: ["Azure DevOps"]
 permalink: /structure-your-test-plans-for-an-azure-devOps-sprint/
 tags:
