@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "How to Automate Azure DevOps Test Plans, Suites, and Pipelines"
+title: "How to Automate Test Plans and Suites With Azure DevOps Pipelines"
 categories: ["Automation"]
 image: /assets/images/DevOps/TestPlans-Suites-Pipelines.webp
 permalink: /how-to-structure-azure-devops-test-plans-suites-pipelines/
 tags: [software testing, QA, QC, Azure DevOps, automation, test plans, suites, pipelines]
-description: "A guide on how to automate Azure DevOps Test Plans, Suites, and Pipelines."
+description: "A guide on how to automate How to Automate Test Plans and Suites With Azure DevOps Pipelines."
 ---
 
 <figure>
-  <img src="/assets/images/DevOps/TestPlans-Suites-Pipelines.webp" alt="Automate Test Plans, Suites, and Pipelines" />
+  <img src="/assets/images/DevOps/TestPlans-Suites-Pipelines.webp" alt="Automate Test Plans and Suites With Pipelines" />
   <figcaption>Image by Freepik</figcaption>
 </figure>
 
