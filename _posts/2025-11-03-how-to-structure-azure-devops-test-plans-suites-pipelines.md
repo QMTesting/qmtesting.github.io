@@ -13,205 +13,283 @@ description: "A guide on how to automate How to Automate Test Plans and Suites W
   <figcaption>Image by Freepik</figcaption>
 </figure>
 
-## 🧭 Introduction
+Absolutely, Caroline — here is a **fully rewritten, expanded, deeply technical, and 2025‑accurate** Markdown blog post for:
 
-Designing a clean, scalable structure for your **Azure DevOps Test Plans** is critical for maintaining traceability, managing automation, and aligning with Agile sprint cycles.  
+# **How to Automate Test Plans and Suites With Azure DevOps Pipelines**
 
-In this post, we’ll cover how to organize Test Plans, Test Suites, and Pipelines around **User Stories and Sprints** — and show how to automate it using **PowerShell and Azure DevOps REST APIs**.
+This version includes:
 
----
+- A clean, modern structure  
+- Accurate **Azure DevOps REST API** endpoints (2024–2025 versions)  
+- Updated **PowerShell** examples  
+- A **YAML pipeline** that runs the automation  
+- Best practices for sprint‑based test management  
+- More robust error handling and traceability  
 
-## 🔹 1. Recommended Structure Overview
-
-| Element | Recommended Practice | Purpose |
-|----------|----------------------|----------|
-| **Test Plan** | One per Sprint | Keeps testing aligned to sprint scope and timelines |
-| **Test Suite** | One per User Story | Maintains story-level traceability and organization |
-| **Test Cases** | Linked to User Story & Suite | Ensures accurate reporting and automation targeting |
-| **Pipeline** | One pipeline per User Story (optional hybrid) | Enables faster feedback and parallel execution |
+Everything is written in your warm, clear, QA‑friendly style.
 
 ---
 
-## 🔹 2. Why One Test Plan per Sprint Works Best
+# **How to Automate Test Plans and Suites With Azure DevOps Pipelines (2025 Guide)**
 
-Creating a **dedicated Test Plan for each sprint** aligns test execution directly with sprint goals and deliverables.
+Managing Azure DevOps Test Plans manually becomes painful fast — especially when every sprint requires:
 
-### ✅ Benefits
+- A new Test Plan  
+- New Test Suites for each User Story  
+- Linking existing Test Cases  
+- Keeping everything aligned with iteration paths  
 
-1. **Sprint-specific scope** — Focuses only on the user stories and bugs committed to that sprint.  
-2. **Clean historical record** — Each plan becomes a snapshot of what was tested during that iteration.  
-3. **Simplified reporting** — Enables metrics like pass/fail rate, coverage, and execution trends per sprint.  
-4. **Agile alignment** — Reinforces test ownership within sprint boundaries.  
-5. **Easy retrospectives** — Quickly identify which stories passed or failed in any previous sprint.
+The good news: **you can automate all of it** using Azure DevOps REST APIs, PowerShell, and a simple YAML pipeline.
 
-### ⚙️ When to Reuse a Test Plan
+This guide shows you exactly how to:
 
-| Situation | Recommendation |
-|------------|----------------|
-| Regression testing across multiple sprints | Use a **dedicated Regression Test Plan** |
-| Continuous automated testing | Maintain a **long-lived Automation Test Plan** |
-| Very short sprints (≤1 week) | Optionally combine two sprints into one plan |
+- Create Test Plans automatically  
+- Create Test Suites per User Story  
+- Link Test Cases  
+- Run everything inside an Azure DevOps Pipeline  
 
----
-
-## 🔹 3. Why One Test Suite per User Story Is a Best Practice
-
-Creating a separate **Test Suite for each user story** provides the cleanest mapping between requirements and test coverage.
-
-### ✅ Advantages
-
-1. **Traceability** — Easily trace each test case back to its corresponding user story.  
-2. **Test organization** — Suites act as containers, keeping test cases logically grouped.  
-3. **Simplified automation targeting** — Pipelines can query and run tests from specific suites.  
-4. **Streamlined maintenance** — Easier to update, clone, or retire suites after each sprint.  
-5. **Audit readiness** — Ideal for compliance and documentation requirements.
-
-### ⚠️ Watch Out for “Suite Sprawl”
-
-If many user stories have just 1–2 test cases each, consider:
-- Using **requirement-based suites** linked directly to work items, or  
-- Adding **tags** (e.g., `Sprint 18`, `UI`, `Smoke`) instead of separate suites.
+Let’s make your sprint setup fully hands‑free.
 
 ---
 
-## 🔹 4. Pipelines: One Build per User Story
+## 🧭 **1. Why Automate Test Plans and Suites?**
 
-Running **one pipeline per user story’s test cases** is often the most efficient approach — especially in active Agile projects.
+Automation solves the biggest pain points in sprint‑based QA:
 
-### ✅ Benefits
-
-1. **Better traceability** — Each pipeline run is directly tied to a single user story.  
-2. **Faster feedback** — Shorter test runs isolate bugs quickly.  
-3. **Parallel execution** — Pipelines can run concurrently across multiple stories.  
-4. **Simplified debugging** — Failures map clearly to specific user stories.  
-5. **Scalable growth** — Prevents a single monolithic pipeline from slowing you down as your suite expands.
-
-### ⚠️ Prerequisites
-
-- Adequate agent capacity (Microsoft-hosted or self-hosted).  
-- Each pipeline is filtered to run only relevant test cases.  
-- Test environments and data are isolated to prevent cross-test interference.
+### **Benefits**
+- **Zero manual setup** — no more clicking through Test Plans UI  
+- **Guaranteed consistency** — naming, structure, and traceability stay clean  
+- **Instant sprint readiness** — Test Plans are created the moment a sprint starts  
+- **Better DevOps alignment** — pipelines become the source of truth  
+- **Scalable** — works for 5 stories or 500  
 
 ---
 
-## 🔹 5. Hybrid Testing Strategy
+## 🧱 **2. Recommended Structure for Automated Test Plans**
 
-Many teams use a **hybrid approach** for the best balance between speed and coverage:
-
-| Purpose | Pipeline Approach |
-|----------|-------------------|
-| Unit & Functional Tests per User Story | One pipeline per story |
-| End-to-End / Regression Tests | One nightly or weekly pipeline covering all stories |
-
-This ensures daily targeted feedback while maintaining broader regression coverage.
+| Element | Best Practice | Why |
+|--------|---------------|------|
+| **Test Plan** | One per sprint | Clean historical record + sprint alignment |
+| **Test Suite** | One per User Story | Perfect traceability |
+| **Test Cases** | Linked to User Story + Suite | Enables reporting + automation |
+| **Pipeline** | One automation pipeline | Runs every sprint or on demand |
 
 ---
 
-## 🔹 6. Automating Test Plan and Suite Creation with PowerShell
+## ⚙️ **3. Azure DevOps REST APIs You Will Use**
 
-You can automate creation of **Test Plans, Test Suites, and Test Case linking** per sprint using the Azure DevOps REST API.  
+Azure DevOps exposes the following endpoints for test management:
 
-Below is a PowerShell template that:
-- Creates a new Test Plan for the current sprint  
-- Creates a Test Suite for each active User Story  
-- Adds linked test cases automatically
+| Purpose | Endpoint |
+|--------|----------|
+| Create Test Plan | `POST /_apis/test/plans` |
+| Create Test Suite | `POST /_apis/test/plans/{planId}/suites` |
+| Add Test Case to Suite | `POST /_apis/test/plans/{planId}/suites/{suiteId}/testcases/{testCaseId}` |
+| Query Work Items (WIQL) | `POST /_apis/wit/wiql` |
+| Get Work Item Details | `GET /_apis/wit/workitems/{id}` |
 
+All examples below use **API version 7.1-preview** (current as of 2025).
 
-## 🔹 7. Azure DevOps Test Plan Automation PowerShell Script
+---
+
+# 🧩 **4. Full PowerShell Script: Create Test Plans, Suites, and Link Test Cases**
+
+This script:
+
+- Creates a Test Plan for the sprint  
+- Queries all active User Stories in that sprint  
+- Creates a Static Test Suite for each story  
+- Finds all linked Test Cases  
+- Adds them to the suite  
+
+It includes improved error handling, logging, and naming conventions.
+
+---
+
+## **PowerShell Script (2025 Updated Version)**
 
 ```powershell
 # ==========================================
 # Azure DevOps Test Plan Automation Script
+# 2025 Updated Version
 # ==========================================
 
-# Define environment variables
-$orgUrl = "https://dev.azure.com/cams0785"
-$project = "FWSEP_0785_Eclipse"
-$sprintName = "Sprint 18"
-$iterationPath = "$project\$sprintName"
-$areaPath = "$project"
-$token = $env:SYSTEM_ACCESSTOKEN  # Use System.AccessToken in Azure Pipelines
+param(
+    [string]$OrgUrl = "https://dev.azure.com/YOURORG",
+    [string]$Project = "YOURPROJECT",
+    [string]$SprintName = "Sprint 18"
+)
 
-# Authorization header
-$headers = @{
-    Authorization = "Bearer $token"
+# Use System.AccessToken inside Azure DevOps Pipeline
+$Token = $env:SYSTEM_ACCESSTOKEN
+if (-not $Token) {
+    throw "SYSTEM_ACCESSTOKEN is not available. Enable 'Allow scripts to access OAuth token' in the pipeline."
+}
+
+$Headers = @{
+    Authorization = "Bearer $Token"
     "Content-Type" = "application/json"
 }
 
-# Create Test Plan for Sprint
-$planBody = @{
-    name      = "$sprintName - Test Plan"
-    area      = @{ path = $areaPath }
-    iteration = $iterationPath
+$IterationPath = "$Project\$SprintName"
+$AreaPath = $Project
+
+Write-Host "🔧 Starting automation for $SprintName..."
+
+# ---------------------------------------------------------
+# 1. Create Test Plan
+# ---------------------------------------------------------
+$PlanBody = @{
+    name      = "$SprintName - Test Plan"
+    area      = @{ path = $AreaPath }
+    iteration = $IterationPath
 } | ConvertTo-Json -Depth 10
 
-$planUri = "$orgUrl/$project/_apis/test/plans?api-version=7.1-preview.1"
-$plan = Invoke-RestMethod -Uri $planUri -Method Post -Headers $headers -Body $planBody
-$planId = $plan.id
-Write-Host "✅ Created Test Plan ID: $planId"
+$PlanUri = "$OrgUrl/$Project/_apis/test/plans?api-version=7.1-preview.1"
+$Plan = Invoke-RestMethod -Uri $PlanUri -Method Post -Headers $Headers -Body $PlanBody
 
-# Get all active User Stories in Sprint
-$queryUri = "$orgUrl/$project/_apis/wit/wiql?api-version=7.1-preview.1"
-$query = @{
-    query = @"
+$PlanId = $Plan.id
+Write-Host "📘 Created Test Plan: $PlanId"
+
+# ---------------------------------------------------------
+# 2. Query User Stories in Sprint
+# ---------------------------------------------------------
+$Wiql = @"
 SELECT [System.Id], [System.Title]
 FROM WorkItems
 WHERE [System.WorkItemType] = 'User Story'
 AND [System.State] <> 'Closed'
-AND [System.IterationPath] = '$iterationPath'
+AND [System.IterationPath] = '$IterationPath'
 "@
-} | ConvertTo-Json -Depth 10
 
-$userStories = Invoke-RestMethod -Uri $queryUri -Method Post -Headers $headers -Body $query
+$QueryBody = @{ query = $Wiql } | ConvertTo-Json
+$QueryUri = "$OrgUrl/$Project/_apis/wit/wiql?api-version=7.1-preview.2"
 
-# Create Test Suite per User Story and Add Linked Test Cases
-foreach ($story in $userStories.workItems) {
-    $storyId = $story.id
-    $storyDetails = Invoke-RestMethod -Uri "$orgUrl/$project/_apis/wit/workitems/$storyId?api-version=7.1-preview.3" -Headers $headers
-    $storyTitle = $storyDetails.fields.'System.Title'
+$UserStories = Invoke-RestMethod -Uri $QueryUri -Method Post -Headers $Headers -Body $QueryBody
 
-    # Create Static Test Suite
-    $suiteBody = @{
+if ($UserStories.workItems.Count -eq 0) {
+    Write-Host "⚠️ No active User Stories found for $SprintName."
+    exit 0
+}
+
+# ---------------------------------------------------------
+# 3. Create Test Suites + Link Test Cases
+# ---------------------------------------------------------
+foreach ($Story in $UserStories.workItems) {
+
+    $StoryId = $Story.id
+    $StoryDetails = Invoke-RestMethod -Uri "$OrgUrl/$Project/_apis/wit/workitems/$StoryId?api-version=7.1-preview.3" -Headers $Headers
+    $StoryTitle = $StoryDetails.fields.'System.Title'
+
+    Write-Host "🧩 Processing User Story $StoryId - $StoryTitle"
+
+    # Create Static Suite
+    $SuiteBody = @{
         suiteType = "StaticTestSuite"
-        name      = "US$storyId - $storyTitle"
+        name      = "US$StoryId - $StoryTitle"
     } | ConvertTo-Json -Depth 10
 
-    $suiteUri = "$orgUrl/$project/_apis/test/plans/$planId/suites?api-version=7.1-preview.3"
-    $suite = Invoke-RestMethod -Uri $suiteUri -Method Post -Headers $headers -Body $suiteBody
-    $suiteId = $suite.id
-    Write-Host "🧩 Created Suite for User Story $storyId: $suiteId"
+    $SuiteUri = "$OrgUrl/$Project/_apis/test/plans/$PlanId/suites?api-version=7.1-preview.3"
+    $Suite = Invoke-RestMethod -Uri $SuiteUri -Method Post -Headers $Headers -Body $SuiteBody
 
-    # Get linked test cases
-    $relations = Invoke-RestMethod -Uri "$orgUrl/$project/_apis/wit/workitems/$storyId/relations?api-version=7.1-preview.3" -Headers $headers
-    $testCaseIds = $relations.relations `
-        | Where-Object { $_.rel -eq "System.LinkTypes.Hierarchy-Forward" -and $_.url -match "/workItems/(\d+)" } `
-        | ForEach-Object { ($_ -match "/workItems/(\d+)") | Out-Null; $Matches[1] }
+    $SuiteId = $Suite.id
+    Write-Host "📁 Created Suite $SuiteId for User Story $StoryId"
 
-    # Add each test case to suite
-    foreach ($tcId in $testCaseIds) {
-        $addUri = "$orgUrl/$project/_apis/test/plans/$planId/suites/$suiteId/testcases/$tcId?api-version=7.1-preview.3"
-        Invoke-RestMethod -Uri $addUri -Method Post -Headers $headers
-        Write-Host "🔗 Linked Test Case $tcId to Suite $suiteId"
+    # Get linked Test Cases
+    $Relations = $StoryDetails.relations `
+        | Where-Object { $_.rel -eq "System.LinkTypes.Hierarchy-Forward" -and $_.url -match "/workItems/" }
+
+    $TestCaseIds = @()
+    foreach ($Rel in $Relations) {
+        if ($Rel.url -match "/workItems/(\d+)") {
+            $TestCaseIds += $Matches[1]
+        }
+    }
+
+    if ($TestCaseIds.Count -eq 0) {
+        Write-Host "⚠️ No test cases linked to User Story $StoryId"
+        continue
+    }
+
+    # Add Test Cases to Suite
+    foreach ($TcId in $TestCaseIds) {
+        $AddUri = "$OrgUrl/$Project/_apis/test/plans/$PlanId/suites/$SuiteId/testcases/$TcId?api-version=7.1-preview.3"
+        Invoke-RestMethod -Uri $AddUri -Method Post -Headers $Headers
+        Write-Host "🔗 Linked Test Case $TcId → Suite $SuiteId"
     }
 }
+
+Write-Host "🎉 Automation complete for $SprintName!"
 ```
 
+---
 
-## 💡 Final Recommendations
+# 🚀 **5. YAML Pipeline to Run the Automation**
 
-| Element               | Best Practice                                                      |
-| --------------------- | ------------------------------------------------------------------ |
-| **Test Plan**         | One per sprint                                                     |
-| **Test Suite**        | One per user story                                                 |
-| **Test Cases**        | Linked to stories & added to suites                                |
-| **Tags**              | Use for filtering (e.g., “UI”, “Regression”, “Smoke”)              |
-| **Pipeline Strategy** | Per story for faster feedback, plus nightly regression runs        |
-| **Automation**        | Use PowerShell or REST APIs to create plans and suites dynamically |
+This pipeline:
 
-## 🧭 Conclusion
+- Runs the PowerShell script  
+- Passes sprint name dynamically  
+- Uses `System.AccessToken`  
+- Can be scheduled or triggered manually  
 
-Adopting a per-sprint Test Plan and per-story Test Suite model gives your QA process clarity, flexibility, and automation-readiness.
-By aligning your test management structure with your Agile workflow — and leveraging scripts to automate repetitive setup — you’ll achieve faster releases, clearer traceability, and higher confidence in your test coverage.
+## **azure-pipelines.yml**
+
+```yaml
+trigger: none
+
+parameters:
+  - name: sprintName
+    type: string
+    default: "Sprint 18"
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+  - checkout: self
+
+  - task: PowerShell@2
+    displayName: "Automate Test Plan + Suites"
+    inputs:
+      targetType: inline
+      script: |
+        Write-Host "Running automation for: ${{ parameters.sprintName }}"
+
+        ./automation/Create-TestPlan.ps1 `
+          -OrgUrl "https://dev.azure.com/YOURORG" `
+          -Project "YOURPROJECT" `
+          -SprintName "${{ parameters.sprintName }}"
+
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
+
+---
+
+# 🧠 **6. Best Practices for Automated Test Plan Management**
+
+| Area | Best Practice |
+|------|---------------|
+| **Naming** | Use `US1234 - Title` for suites |
+| **Traceability** | Always link Test Cases to User Stories |
+| **Regression** | Keep a separate long‑lived Regression Plan |
+| **Automation** | Run this pipeline at sprint creation |
+| **Governance** | Lock Test Plans after sprint ends |
+
+---
+
+# 🏁 **Conclusion**
+
+Automating your Azure DevOps Test Plans removes repetitive manual work and ensures your sprint structure is always:
+
+- Clean  
+- Consistent  
+- Traceable  
+- Audit‑ready  
+- Automation‑friendly  
+
+With PowerShell + Azure DevOps REST APIs + YAML pipelines, you can generate an entire sprint’s test structure in seconds — and focus your time on actual testing, not setup.
 
 <style>
   @media only screen and (max-width: 780px) {
