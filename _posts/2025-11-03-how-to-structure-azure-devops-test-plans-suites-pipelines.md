@@ -90,8 +90,8 @@ Azure DevOps exposes the following endpoints for test management:
 <table>
   <thead>
     <tr>
-      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 100px;>Purpose</th>
-      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 200px;>Endpoint</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 100px;">Purpose</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 200px;">Endpoint</th>
     </tr>
   </thead>
   <tbody>
