@@ -51,9 +51,9 @@ Automation solves the biggest pain points in sprint‑based QA:
 <table>
   <thead>
     <tr>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Element</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Best Practice</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Why</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 155px;">Element</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 185px;">Best Practice</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 185px;">Why</th>
     </tr>
   </thead>
   <tbody>
