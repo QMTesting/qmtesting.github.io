@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "How to Best Structure Your Azure DevOps Test Plans for an Azure DevOps Sprint"
-description: "Learn how to effectively structure, automate, and manage Azure DevOps Test Plans for each sprint using PowerShell and YAML pipelines."
-image: /assets/images/azure-devops-test-plans.jpg
-tags: [Azure DevOps, Test Plans, QA, Sprint Testing, Agile Testing, Test Management, PowerShell, YAML Pipeline]
+description: "Learn how to structure Azure DevOps Test Plans effectively for each sprint. This guide covers hierarchy setup, naming conventions, regression and exploratory suites, and automation integration to help QA teams improve traceability, coverage, and sprint efficiency."
+image:
+tags: [Azure DevOps, Test Plan, QA, QC, Sprint Testing, Sprint, Agile Testing, Test Management]
 ---
+
+
 
 ## Introduction
 
