@@ -252,7 +252,7 @@ Write-Host "🎉 Automation complete for $SprintName!"
 ```
 
 
-# 🚀 **5. YAML Pipeline to Run the Automation**
+## 🚀 **5. YAML Pipeline to Run the Automation**
 
 This pipeline:
 
@@ -294,7 +294,7 @@ steps:
 ```
 
 
-# 🧠 **6. Best Practices for Automated Test Plan Management**
+## 🧠 **6. Best Practices for Automated Test Plan Management**
 
 | Area | Best Practice |
 |------|---------------|
@@ -306,7 +306,7 @@ steps:
 
 ---
 
-# 🏁 **Conclusion**
+## 🏁 **Conclusion**
 
 Automating your Azure DevOps Test Plans removes repetitive manual work and ensures your sprint structure is always:
 
