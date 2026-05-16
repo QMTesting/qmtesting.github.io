@@ -47,12 +47,39 @@ Automation solves the biggest pain points in sprint‑based QA:
 
 ## 🧱 **2. Recommended Structure for Automated Test Plans**
 
-| Element | Best Practice | Why |
-|--------|---------------|------|
-| **Test Plan** | One per sprint | Clean historical record + sprint alignment |
-| **Test Suite** | One per User Story | Perfect traceability |
-| **Test Cases** | Linked to User Story + Suite | Enables reporting + automation |
-| **Pipeline** | One automation pipeline | Runs every sprint or on demand |
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Best Practice</th>
+      <th>Why</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Test Plan</strong></td>
+      <td>One per sprint</td>
+      <td>Clean historical record + sprint alignment</td>
+    </tr>
+    <tr>
+      <td><strong>Test Suite</strong></td>
+      <td>One per User Story</td>
+      <td>Perfect traceability</td>
+    </tr>
+    <tr>
+      <td><strong>Test Cases</strong></td>
+      <td>Linked to User Story + Suite</td>
+      <td>Enables reporting + automation</td>
+    </tr>
+    <tr>
+      <td><strong>Pipeline</strong></td>
+      <td>One automation pipeline</td>
+      <td>Runs every sprint or on demand</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 ## ⚙️ **3. Azure DevOps REST APIs You Will Use**
