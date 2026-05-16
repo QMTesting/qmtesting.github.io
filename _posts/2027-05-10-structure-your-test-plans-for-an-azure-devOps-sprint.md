@@ -1,10 +1,36 @@
 ---
 layout: post
 title: "How to Best Structure Your Azure DevOps Test Plans for an Azure DevOps Sprint"
+categories: ["Azure DevOps"]
+permalink: /structure-your-test-plans-for-an-azure-devOps-sprint/
+tags:
+  - "Azure DevOps"
+  - "Test Plan"
+  - "QA"
+  - "QC"
+  - "Sprint Testing"
+  - "Sprint"
+  - "Agile Testing"
+  - "Test Management"
 description: "Learn how to structure Azure DevOps Test Plans effectively for each sprint. This guide covers hierarchy setup, naming conventions, regression and exploratory suites, and automation integration to help QA teams improve traceability, coverage, and sprint efficiency."
-image:
-tags: [Azure DevOps, Test Plan, QA, QC, Sprint Testing, Sprint, Agile Testing, Test Management]
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png"
 ---
+
+
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="438"
+  loading="lazy"
+  alt="How to Best Structure Your Azure DevOps Test Plans for an Azure DevOps Sprint"
+  fetchpriority="high">
+
 
 
 
