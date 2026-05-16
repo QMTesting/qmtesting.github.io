@@ -13,7 +13,6 @@ description: "A guide on how to automate How to Automate Test Plans and Suites W
   <figcaption>Image by Freepik</figcaption>
 </figure>
 
-## 🧭 Introduction
 
 Managing Azure DevOps Test Plans manually becomes painful fast — especially when every sprint requires:
 
@@ -33,7 +32,6 @@ This guide shows you exactly how to:
 
 Let’s make your sprint setup fully hands‑free.
 
----
 
 ## 🧭 **1. Why Automate Test Plans and Suites?**
 
@@ -46,7 +44,6 @@ Automation solves the biggest pain points in sprint‑based QA:
 - **Better DevOps alignment** — pipelines become the source of truth  
 - **Scalable** — works for 5 stories or 500  
 
----
 
 ## 🧱 **2. Recommended Structure for Automated Test Plans**
 
@@ -57,7 +54,6 @@ Automation solves the biggest pain points in sprint‑based QA:
 | **Test Cases** | Linked to User Story + Suite | Enables reporting + automation |
 | **Pipeline** | One automation pipeline | Runs every sprint or on demand |
 
----
 
 ## ⚙️ **3. Azure DevOps REST APIs You Will Use**
 
@@ -73,7 +69,6 @@ Azure DevOps exposes the following endpoints for test management:
 
 All examples below use **API version 7.1-preview** (current as of 2025).
 
----
 
 # 🧩 **4. Full PowerShell Script: Create Test Plans, Suites, and Link Test Cases**
 
@@ -87,7 +82,6 @@ This script:
 
 It includes improved error handling, logging, and naming conventions.
 
----
 
 ## **PowerShell Script (2025 Updated Version)**
 
@@ -205,7 +199,6 @@ foreach ($Story in $UserStories.workItems) {
 Write-Host "🎉 Automation complete for $SprintName!"
 ```
 
----
 
 # 🚀 **5. YAML Pipeline to Run the Automation**
 
@@ -248,7 +241,6 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
----
 
 # 🧠 **6. Best Practices for Automated Test Plan Management**
 
