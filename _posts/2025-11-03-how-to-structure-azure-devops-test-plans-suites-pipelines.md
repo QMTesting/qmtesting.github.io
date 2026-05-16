@@ -86,13 +86,38 @@ Automation solves the biggest pain points in sprint‑based QA:
 
 Azure DevOps exposes the following endpoints for test management:
 
-| Purpose | Endpoint |
-|--------|----------|
-| Create Test Plan | `POST /_apis/test/plans` |
-| Create Test Suite | `POST /_apis/test/plans/{planId}/suites` |
-| Add Test Case to Suite | `POST /_apis/test/plans/{planId}/suites/{suiteId}/testcases/{testCaseId}` |
-| Query Work Items (WIQL) | `POST /_apis/wit/wiql` |
-| Get Work Item Details | `GET /_apis/wit/workitems/{id}` |
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 100px;>Purpose</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 200px;>Endpoint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Create Test Plan</td>
+      <td><code>POST /_apis/test/plans</code></td>
+    </tr>
+    <tr>
+      <td>Create Test Suite</td>
+      <td><code>POST /_apis/test/plans/{planId}/suites</code></td>
+    </tr>
+    <tr>
+      <td>Add Test Case to Suite</td>
+      <td><code>POST /_apis/test/plans/{planId}/suites/{suiteId}/testcases/{testCaseId}</code></td>
+    </tr>
+    <tr>
+      <td>Query Work Items (WIQL)</td>
+      <td><code>POST /_apis/wit/wiql</code></td>
+    </tr>
+    <tr>
+      <td>Get Work Item Details</td>
+      <td><code>GET /_apis/wit/workitems/{id}</code></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 All examples below use **API version 7.1-preview** (current as of 2025).
 
