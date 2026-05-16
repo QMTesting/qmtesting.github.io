@@ -296,13 +296,38 @@ steps:
 
 ## 🧠 **6. Best Practices for Automated Test Plan Management**
 
-| Area | Best Practice |
-|------|---------------|
-| **Naming** | Use `US1234 - Title` for suites |
-| **Traceability** | Always link Test Cases to User Stories |
-| **Regression** | Keep a separate long‑lived Regression Plan |
-| **Automation** | Run this pipeline at sprint creation |
-| **Governance** | Lock Test Plans after sprint ends |
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 100px;">Area</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 100px;">Best Practice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Naming</strong></td>
+      <td>Use <code>US1234 - Title</code> for suites</td>
+    </tr>
+    <tr>
+      <td><strong>Traceability</strong></td>
+      <td>Always link Test Cases to User Stories</td>
+    </tr>
+    <tr>
+      <td><strong>Regression</strong></td>
+      <td>Keep a separate long‑lived Regression Plan</td>
+    </tr>
+    <tr>
+      <td><strong>Automation</strong></td>
+      <td>Run this pipeline at sprint creation</td>
+    </tr>
+    <tr>
+      <td><strong>Governance</strong></td>
+      <td>Lock Test Plans after sprint ends</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ---
 
