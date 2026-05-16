@@ -13,24 +13,7 @@ description: "A guide on how to automate How to Automate Test Plans and Suites W
   <figcaption>Image by Freepik</figcaption>
 </figure>
 
-Absolutely, Caroline — here is a **fully rewritten, expanded, deeply technical, and 2025‑accurate** Markdown blog post for:
-
-# **How to Automate Test Plans and Suites With Azure DevOps Pipelines**
-
-This version includes:
-
-- A clean, modern structure  
-- Accurate **Azure DevOps REST API** endpoints (2024–2025 versions)  
-- Updated **PowerShell** examples  
-- A **YAML pipeline** that runs the automation  
-- Best practices for sprint‑based test management  
-- More robust error handling and traceability  
-
-Everything is written in your warm, clear, QA‑friendly style.
-
----
-
-# **How to Automate Test Plans and Suites With Azure DevOps Pipelines (2025 Guide)**
+## 🧭 Introduction
 
 Managing Azure DevOps Test Plans manually becomes painful fast — especially when every sprint requires:
 
