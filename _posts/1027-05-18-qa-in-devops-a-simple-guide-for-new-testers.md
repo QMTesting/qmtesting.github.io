@@ -1,4 +1,38 @@
+---
+layout: post
+title: "How to Get Started as a New QA Tester in DevOps"
+categories: ["Azure DevOps"]
+permalink: /qa-in-devops-a-simple-guide-for-new-testers/
+tags:
+  - "Azure DevOps"
+  - "quality assurance"
+  - "QA"
+  - "QC"
+  - "DevOps"
+  - "Software Testing"
+  - "Agile Testing"
+  - "Continuous Delivery (CD)"
+  - "Continuous Integration (CI)"
+  - "CI/CD"
+  - "Test Management"
+description: "A beginner‑friendly guide explaining how Quality Assurance fits into the DevOps process. Learn how testers collaborate across development and operations, use automation and continuous integration tools, and build quality into every stage of the pipeline. Perfect for new QA professionals transitioning to DevOps"
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1779290016/qa-in-devops-a-simple-guide-for-new-testers_etpwld.png"
+---
 
+
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1779290016/qa-in-devops-a-simple-guide-for-new-testers_etpwld.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1779290016/qa-in-devops-a-simple-guide-for-new-testers_etpwld.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1779290016/qa-in-devops-a-simple-guide-for-new-testers_etpwld.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1779290016/qa-in-devops-a-simple-guide-for-new-testers_etpwld.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="438"
+  loading="lazy"
+  alt="How to Get Started as a New QA Tester in DevOps"
+  fetchpriority="high">
 
 ## **Introduction**
 
