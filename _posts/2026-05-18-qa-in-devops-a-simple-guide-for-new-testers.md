@@ -118,8 +118,8 @@ QA plays a role in **every** stage:
 <table>
   <thead>
     <tr>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Pipeline Stage</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">QA Responsibilities</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 175px;">Pipeline Stage</th>
+      <th style="text-align:center; font-size: 20px; font-weight: 900; background-color: #bc960d; width: 175px;">QA Responsibilities</th>
     </tr>
   </thead>
   <tbody>
