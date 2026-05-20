@@ -38,7 +38,6 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/v1779290016/qa-in-devo
 
 Quality Assurance (QA) in DevOps is no longer about testing at the end of a project. In modern software teams, QA is woven into **every stage** of development — from planning to deployment. If you're a new tester entering a DevOps environment, this guide will help you understand your role, the tools you’ll use, and how to succeed.
 
----
 
 ## **Why QA Matters in DevOps**
 
@@ -54,7 +53,6 @@ This means:
 - Automated tests support **fast feedback loops**
 - Quality becomes a **shared responsibility**
 
----
 
 ## **What Does QA Do in a DevOps Team?**
 
@@ -66,7 +64,7 @@ As a QA tester in DevOps, your responsibilities expand beyond manual testing. Yo
 Automated tests are essential for CI/CD pipelines. They validate every code commit and catch regressions early.  
 Modern DevOps pipelines rely heavily on automated **unit, API, UI, and end‑to‑end tests** to support fast, safe deployments   [Medium](https://medium.com/@sanjanakoirala.official/devops-for-qa-beginners-a-hands-on-guide-to-integrating-qa-into-ci-cd-with-azure-devops-dd50645f5351).
 
-### ✔ **2. Supporting Continuous Integration (CI)**  
+### <span style="color: #28a745;">✔</span> **2. Supporting Continuous Integration (CI)**  
 Every time developers push code, automated tests run.  
 Your job is to ensure:
 
@@ -74,14 +72,14 @@ Your job is to ensure:
 - Failures are meaningful  
 - Results are easy to interpret  
 
-### ✔ **3. Supporting Continuous Delivery (CD)**  
+### <span style="color: #28a745;">✔</span> **3. Supporting Continuous Delivery (CD)**  
 QA helps ensure that deployments are safe by:
 
 - Defining quality gates  
 - Ensuring test coverage  
 - Monitoring release readiness  
 
-### ✔ **4. Providing Fast, Actionable Feedback**  
+### <span style="color: #28a745;">✔</span> **4. Providing Fast, Actionable Feedback**  
 DevOps thrives on **speed**.  
 Your feedback must be:
 
@@ -89,7 +87,7 @@ Your feedback must be:
 - Timely  
 - Actionable  
 
-### ✔ **5. Collaborating Across Teams**  
+### <span style="color: #28a745;">✔</span> **5. Collaborating Across Teams**  
 You’ll work closely with:
 
 - Developers  
@@ -98,7 +96,6 @@ You’ll work closely with:
 
 This collaboration ensures quality is built into the product — not inspected in at the end.
 
----
 
 ## **How QA Fits Into the DevOps Pipeline**
 
@@ -154,7 +151,7 @@ QA plays a role in **every** stage:
   </tbody>
 </table>
 </div>
----
+
 
 ## **QA Tools Commonly Used in DevOps**
 
@@ -178,7 +175,6 @@ For QA engineers, Azure DevOps provides everything needed to manage test cases, 
 - **Docker** – Containerized test environments  
 - **Kubernetes** – Deploying and testing at scale  
 
----
 
 ## **Manual Testing Still Matters**
 
@@ -192,7 +188,6 @@ Even in DevOps, manual testing is still important — especially for:
 
 Azure Test Plans, for example, is widely used for manual test case management and execution, especially for teams transitioning from manual to automated testing   [YouTube](https://www.youtube.com/watch?v=7dy0SFsWyuU).
 
----
 
 ## **How to Get Started as a New QA Tester in DevOps**
 
@@ -242,15 +237,14 @@ Learn how automated tests run in:
 Ask questions. Pair with developers. Join standups.  
 DevOps is built on communication.
 
----
 
 ## **Best Practices for QA in DevOps**
 
-### ✔ Shift Left  
+### <span style="color: #28a745;">✔</span> Shift Left  
 Test early and often.  
 Review requirements before development begins.
 
-### ✔ Automate the Right Tests  
+### <span style="color: #28a745;">✔</span> Automate the Right Tests  
 Automate:
 
 - Repetitive tests  
@@ -263,10 +257,10 @@ Avoid automating:
 - Highly visual tests  
 - Constantly changing UI elements  
 
-### ✔ Keep Tests Fast  
+### <span style="color: #28a745;">✔</span> Keep Tests Fast  
 Slow tests slow down the entire pipeline.
 
-### ✔ Maintain Traceability  
+### <span style="color: #28a745;">✔</span> Maintain Traceability  
 Link:
 
 - Test cases → User stories  
@@ -275,10 +269,9 @@ Link:
 
 Azure DevOps provides excellent traceability features for this purpose   [YouTube](https://www.youtube.com/watch?v=7dy0SFsWyuU).
 
-### ✔ Monitor Production  
+### <span style="color: #28a745;">✔</span> Monitor Production  
 Use logs, dashboards, and alerts to catch issues early.
 
----
 
 ## **Conclusion**
 
