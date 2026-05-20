@@ -114,16 +114,46 @@ A DevOps pipeline typically includes:
 
 QA plays a role in **every** stage:
 
-| Pipeline Stage | QA Responsibilities |
-|----------------|---------------------|
-| **Plan** | Review acceptance criteria, define test strategy |
-| **Code** | Pair with developers, prepare test data |
-| **Build** | Ensure automated tests run on every commit |
-| **Test** | Execute manual tests, maintain automated suites |
-| **Release** | Validate quality gates, review test results |
-| **Deploy** | Support smoke tests, verify environment readiness |
-| **Monitor** | Track bugs, analyze failures, improve tests |
-
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Pipeline Stage</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">QA Responsibilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Plan</strong></td>
+      <td>Review acceptance criteria, define test strategy</td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong></td>
+      <td>Pair with developers, prepare test data</td>
+    </tr>
+    <tr>
+      <td><strong>Build</strong></td>
+      <td>Ensure automated tests run on every commit</td>
+    </tr>
+    <tr>
+      <td><strong>Test</strong></td>
+      <td>Execute manual tests, maintain automated suites</td>
+    </tr>
+    <tr>
+      <td><strong>Release</strong></td>
+      <td>Validate quality gates, review test results</td>
+    </tr>
+    <tr>
+      <td><strong>Deploy</strong></td>
+      <td>Support smoke tests, verify environment readiness</td>
+    </tr>
+    <tr>
+      <td><strong>Monitor</strong></td>
+      <td>Track bugs, analyze failures, improve tests</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 ---
 
 ## **QA Tools Commonly Used in DevOps**
