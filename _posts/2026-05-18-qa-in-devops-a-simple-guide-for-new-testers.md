@@ -44,7 +44,7 @@ Quality Assurance (QA) in DevOps is no longer about testing at the end of a proj
 In traditional software development, QA acted as a **final checkpoint** before release. But DevOps changes that.  
 Today, QA is a **continuous partner** in the pipeline — ensuring quality from the moment code is written until it’s deployed to production.
 
-According to recent DevOps training resources, DevOps is a **cultural shift** where development, QA, and operations collaborate continuously to deliver software faster and more reliably   [Medium](https://medium.com/@sanjanakoirala.official/devops-for-qa-beginners-a-hands-on-guide-to-integrating-qa-into-ci-cd-with-azure-devops-dd50645f5351).
+According to recent DevOps training resources, DevOps is a **cultural shift** where development, QA, and operations collaborate continuously to deliver software faster and more reliably.
 
 This means:
 
@@ -62,7 +62,7 @@ As a QA tester in DevOps, your responsibilities expand beyond manual testing. Yo
 
 ### <span style="color: #28a745;">✔</span> **1. Writing and Managing Automated Tests**  
 Automated tests are essential for CI/CD pipelines. They validate every code commit and catch regressions early.  
-Modern DevOps pipelines rely heavily on automated **unit, API, UI, and end‑to‑end tests** to support fast, safe deployments   [Medium](https://medium.com/@sanjanakoirala.official/devops-for-qa-beginners-a-hands-on-guide-to-integrating-qa-into-ci-cd-with-azure-devops-dd50645f5351).
+Modern DevOps pipelines rely heavily on automated **unit, API, UI, and end‑to‑end tests** to support fast, safe deployments.
 
 ### <span style="color: #28a745;">✔</span> **2. Supporting Continuous Integration (CI)**  
 Every time developers push code, automated tests run.  
@@ -164,7 +164,7 @@ Azure DevOps is one of the most complete platforms for QA and DevOps collaborati
 - **Azure Test Plans** – Manual + exploratory testing  
 - **Azure Artifacts** – Package management  
 
-For QA engineers, Azure DevOps provides everything needed to manage test cases, run tests, log bugs, and integrate automated tests into pipelines   [innovatebits.com](https://www.innovatebits.com/insights/azure-devops-for-qa-engineers-beginner-guide).
+For QA engineers, Azure DevOps provides everything needed to manage test cases, run tests, log bugs, and integrate automated tests into pipelines.
 
 ### **Other Common Tools**
 
@@ -195,7 +195,7 @@ Here’s a simple roadmap to help you grow:
 
 ### **1. Learn the Basics of DevOps**  
 Understand CI/CD, pipelines, version control, and environments.  
-Beginner DevOps roadmaps emphasize learning Git, Linux basics, and CI/CD fundamentals early in your journey   [LinkedIn](https://www.linkedin.com/pulse/devops-roadmap-2025-zero-hero-guide-beginners-advanced-kiran-kumar-v-trk8c).
+Beginner DevOps roadmaps emphasize learning Git, Linux basics, and CI/CD fundamentals early in your journey.
 
 ### **2. Strengthen Your Testing Foundations**  
 Know the core testing types:
@@ -267,7 +267,7 @@ Link:
 - Bugs → Test cases  
 - Automated tests → Pipelines  
 
-Azure DevOps provides excellent traceability features for this purpose   [YouTube](https://www.youtube.com/watch?v=7dy0SFsWyuU).
+Azure DevOps provides excellent traceability features for this purpose.
 
 ### <span style="color: #28a745;">✔</span> Monitor Production  
 Use logs, dashboards, and alerts to catch issues early.
