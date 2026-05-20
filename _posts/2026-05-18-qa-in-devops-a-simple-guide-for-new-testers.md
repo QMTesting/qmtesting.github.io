@@ -62,7 +62,7 @@ As a QA tester in DevOps, your responsibilities expand beyond manual testing. Yo
 
 ### **Your key responsibilities include:**
 
-### ✔ **1. Writing and Managing Automated Tests**  
+### <span style="color: #28a745;">✔</span> **1. Writing and Managing Automated Tests**  
 Automated tests are essential for CI/CD pipelines. They validate every code commit and catch regressions early.  
 Modern DevOps pipelines rely heavily on automated **unit, API, UI, and end‑to‑end tests** to support fast, safe deployments   [Medium](https://medium.com/@sanjanakoirala.official/devops-for-qa-beginners-a-hands-on-guide-to-integrating-qa-into-ci-cd-with-azure-devops-dd50645f5351).
 
