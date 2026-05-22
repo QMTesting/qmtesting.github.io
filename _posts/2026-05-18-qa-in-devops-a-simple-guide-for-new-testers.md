@@ -186,7 +186,7 @@ Even in DevOps, manual testing is still important — especially for:
 - Visual checks  
 - Early-stage feature validation  
 
-Azure Test Plans, for example, is widely used for manual test case management and execution, especially for teams transitioning from manual to automated testing   [YouTube](https://www.youtube.com/watch?v=7dy0SFsWyuU).
+Azure Test Plans, for example, is widely used for manual test case management and execution, especially for teams transitioning from manual to automated testing.
 
 
 ## **How to Get Started as a New QA Tester in DevOps**
