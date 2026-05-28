@@ -242,23 +242,66 @@ CI/CD isn’t just a DevOps or developer responsibility — it’s a **quality p
 As a QA tester, your role in CI/CD is to ensure that quality is built into every stage of the pipeline — not just tested at the end.
 
 
+Here’s your expanded **FAQ section** with two new questions added — it now reads smoothly and gives testers a fuller understanding of CI/CD in practice.
+
+---
+
 ## FAQ
 
 ### **1. Do testers need to know how to write code for CI/CD?**
-Not always — but knowing basic scripting or automation frameworks helps significantly.
+Not always — but having a basic understanding of scripting languages (like Python, PowerShell, or Bash) and automation frameworks (such as Selenium or Playwright) can make a huge difference. It helps you read pipeline logs, debug test failures, and collaborate more effectively with developers. Even simple scripting skills let you automate repetitive tasks and contribute directly to pipeline improvements.
 
 ### **2. What tools are commonly used for CI/CD?**
-Popular tools include Azure DevOps, GitHub Actions, Jenkins, GitLab CI, and CircleCI.
+Popular CI/CD tools include **Azure DevOps**, **GitHub Actions**, **Jenkins**, **GitLab CI**, and **CircleCI**. Each tool automates builds, tests, and deployments but differs in setup and integration options. For example, Azure DevOps integrates tightly with Microsoft ecosystems, while GitHub Actions is ideal for open‑source projects. Testers should focus on understanding how these tools trigger tests, manage environments, and report results — not necessarily mastering every configuration detail.
 
 ### **3. What tests should run in CI?**
-Fast, reliable tests: unit, API, smoke, and some integration tests.
+CI focuses on **speed and reliability**, so it’s best for tests that run quickly and provide immediate feedback. These include:
+- **Unit tests** to verify individual components  
+- **API tests** to confirm backend logic  
+- **Smoke tests** to ensure basic functionality  
+- **Integration tests** for critical workflows  
+
+The goal is to catch defects early without slowing down the pipeline. Tests that take longer or require complex setups are usually reserved for later stages.
 
 ### **4. What tests should run in CD?**
-More extensive tests: regression, UI tests, performance tests, and security scans.
+CD pipelines handle **broader, deeper testing** before release. This includes:
+- **Regression tests** to confirm existing features still work  
+- **UI tests** to validate user experience  
+- **Performance tests** to check speed and scalability  
+- **Security scans** to detect vulnerabilities  
+
+These tests ensure the product is stable and production‑ready. Testers often collaborate with DevOps engineers to schedule these runs and analyze results before deployment approval.
+
 
 ### **5. How do testers help prevent flaky tests?**
-By improving test design, stabilizing environments, and reviewing logs to find root causes.
+Flaky tests — those that pass or fail inconsistently — undermine trust in automation. Testers prevent them by:
+- Designing tests with clear, stable conditions  
+- Using reliable test data and environment setups  
+- Reviewing logs and screenshots to pinpoint instability  
+- Collaborating with developers to fix timing or dependency issues  
+
+A consistent test environment and well‑structured test cases are key to maintaining pipeline confidence.
+
 
 ### **6. Is CI/CD only for automated testing?**
-No — manual testing still plays a role, especially in exploratory and usability testing.
+Not at all. While automation drives CI/CD efficiency, **manual testing still matters** — especially for exploratory, usability, and acceptance testing. Manual testers validate real‑world scenarios that automation can’t fully capture. In mature CI/CD setups, manual testing often happens after automated checks pass, ensuring both speed and human insight contribute to overall quality.
+
+
+### **7. How is test data managed in CI/CD pipelines?**
+Test data management is crucial for reliable automation. Testers often use **data provisioning tools** or **mock services** to ensure consistent inputs across environments. Good practices include:
+- Using versioned test data sets  
+- Masking sensitive information  
+- Resetting data between runs  
+- Automating data cleanup after tests  
+
+Proper test data management prevents false failures and keeps pipelines reproducible.
+
+
+### **8. What should testers do when a pipeline fails?**
+When a pipeline fails, testers act as **investigators**. They review logs, screenshots, and error messages to identify whether the issue is:
+- A genuine defect  
+- A flaky test  
+- An environment or configuration problem  
+
+Testers document findings, communicate with developers, and help refine pipeline stability. Over time, this collaboration improves both test reliability and deployment confidence.
 
