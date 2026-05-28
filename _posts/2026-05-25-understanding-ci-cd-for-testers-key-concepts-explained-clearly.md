@@ -244,7 +244,6 @@ As a QA tester, your role in CI/CD is to ensure that quality is built into every
 
 Here’s your expanded **FAQ section** with two new questions added — it now reads smoothly and gives testers a fuller understanding of CI/CD in practice.
 
----
 
 ## FAQ
 
