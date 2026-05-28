@@ -76,7 +76,6 @@ Every successful pipeline run automatically deploys to production — no manual 
 
 The goal: **fully automated, fast, repeatable releases**.
 
----
 
 ## Why CI/CD Matters for Testers
 
@@ -90,7 +89,6 @@ CI/CD changes how testing works — for the better. Here’s what it means for y
 
 Instead of waiting for a “testing phase,” you’re part of a continuous quality process.
 
----
 
 ## Key CI/CD Concepts Testers Should Understand
 
@@ -109,7 +107,6 @@ As a tester, you’ll often help define:
 - What counts as a pass/fail  
 - What blocks a deployment  
 
----
 
 ### **2. Quality Gates**
 Quality gates are rules that code must meet before moving to the next stage.
@@ -122,7 +119,6 @@ Examples:
 
 Testers help design and enforce these gates.
 
----
 
 ### **3. Automated Testing in CI/CD**
 Automation is the backbone of CI/CD. Common types of automated tests include:
@@ -138,7 +134,6 @@ Testers decide:
 - How to prioritize test execution  
 - How to reduce flaky tests  
 
----
 
 ### **4. Environments**
 CI/CD pipelines deploy to multiple environments:
@@ -150,7 +145,6 @@ CI/CD pipelines deploy to multiple environments:
 
 Understanding environment differences helps you design more reliable tests.
 
----
 
 ### **5. Artifacts**
 Artifacts are the packaged outputs of the build process — for example:
@@ -164,7 +158,6 @@ Testers often review artifacts to:
 - Troubleshoot failures  
 - Confirm test results  
 
----
 
 ### **6. Triggers**
 Triggers determine when a pipeline runs. Examples:
@@ -175,7 +168,6 @@ Triggers determine when a pipeline runs. Examples:
 
 Knowing triggers helps testers plan test coverage and timing.
 
----
 
 ### **7. Deployment Strategies**
 Modern pipelines use deployment strategies to reduce risk:
@@ -189,7 +181,6 @@ Testers validate these strategies by:
 - Monitoring logs  
 - Checking rollback behavior  
 
----
 
 ## What Testers Actually Do in CI/CD
 
@@ -232,7 +223,6 @@ You track:
 - Slow pipelines  
 - Repeated defects  
 
----
 
 ## Best Practices for Testers in CI/CD
 
@@ -244,7 +234,6 @@ You track:
 - **Review pipeline logs** to understand failures  
 - **Shift left** — test as early as possible  
 
----
 
 ## Conclusion
 
@@ -252,7 +241,6 @@ CI/CD isn’t just a DevOps or developer responsibility — it’s a **quality p
 
 As a QA tester, your role in CI/CD is to ensure that quality is built into every stage of the pipeline — not just tested at the end.
 
----
 
 ## FAQ
 
