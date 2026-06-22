@@ -1172,7 +1172,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- Prevent distorting web pages when zoom % is changed -->	
 <style>	  
-	min-width: 2000px;
+	html {
+  transform: scale(1);
+  transform-origin: top center;
+}
+body {
+  min-width: 2000px; /* or whatever width keeps your layout stable */
+  overflow-x: auto;
+}
+
 </style>		
 	
 
