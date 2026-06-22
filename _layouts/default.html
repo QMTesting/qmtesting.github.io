@@ -1171,19 +1171,24 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>  
 
 <!-- Prevent distorting web pages when zoom % is changed -->	
-	  
-<script>
-function enforceZoom() {
-  const zoom = Math.round(window.devicePixelRatio * 100);
-  if (zoom < 80) {
-    document.body.style.zoom = "100%";
+<!-- Change Browser Zoom if Web page does not fit on screen -->
+<script type="text/javascript">
+  function setZoom() {
+    // Adjust zoom based on screen width
+    if (window.matchMedia('(min-width: 780px) and (max-width: 1280px)').matches) {
+      document.body.style.zoom = "80%";
+    } else {
+      document.body.style.zoom = "100%";
+    }
   }
-}
-window.addEventListener("resize", enforceZoom);
-enforceZoom();
-</script>
 
-		
-	
+  // Run on page load
+  setZoom();
+
+  // Update when window is resized
+  window.addEventListener('resize', setZoom);
+</script>
+	  
+
   </body>
 </html>
