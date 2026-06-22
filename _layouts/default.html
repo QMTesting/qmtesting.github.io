@@ -1171,16 +1171,19 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>  
 
 <!-- Prevent distorting web pages when zoom % is changed -->	
-<style>	  
-	html {
-	  transform: scale(1);
-	  transform-origin: top center;
-	}
-	body {
-	  min-width: 2000px; /* or whatever width keeps your layout stable */
-	  overflow-x: auto;
-	}
-</style>		
+	  
+<script>
+function enforceZoom() {
+  const zoom = Math.round(window.devicePixelRatio * 100);
+  if (zoom < 80) {
+    document.body.style.zoom = "100%";
+  }
+}
+window.addEventListener("resize", enforceZoom);
+enforceZoom();
+</script>
+
+		
 	
   </body>
 </html>
