@@ -1170,6 +1170,14 @@ document.addEventListener("DOMContentLoaded", function () {
   mermaid.initialize({ startOnLoad: true });
 </script>  
 
+<!-- Prevent distorting web pages when zoom % is changed -->	  
+.page-wrapper {
+  transform-origin: top center;
+  min-width: 1200px;
+}
+	  
+	  
+
 
 
   
