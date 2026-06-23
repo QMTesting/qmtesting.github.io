@@ -1192,6 +1192,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 	function updateMobileNav() {
 	  const mobileNav = document.querySelector('#mobileMenu');
+	  const hamMenu = document.querySelector('#hamburger');	
 	  if (!mobileNav) return;
 	
 	  const deviceWidth = screen.width;
@@ -1202,9 +1203,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	  if (isDesktop) {
 	    // Hide mobile nav on desktop
 	    mobileNav.style.display = 'none';
+		hamMenu.style.display = 'none'; 
 	  } else {
 	    // Show mobile nav on real mobile devices
 	    mobileNav.style.display = '';
+		hamMenu.style.display = ''; 
 	  }
 	}
 	
