@@ -1181,14 +1181,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 	function updateMobileNav() {
-	  const mobileNav = document.querySelector('.mobile-nav');
+	  const mobileNav = document.querySelector('#mobileMenu');
 	  if (!mobileNav) return;
 	
 	  const cssWidth = window.innerWidth;     // affected by zoom
 	  const deviceWidth = screen.width;       // NOT affected by zoom
 	
-	  // If CSS width is < 1200 but device width is > 1200,
-	  // the user is on desktop but zoomed out.
+	  // Desktop devices have large physical screens (e.g., 1920px)
+	  // Zooming out shrinks cssWidth but NOT deviceWidth
 	  const zoomedOutDesktop = cssWidth < 1200 && deviceWidth > 1200;
 	
 	  if (zoomedOutDesktop) {
@@ -1203,6 +1203,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener('resize', updateMobileNav);
 	window.addEventListener('DOMContentLoaded', updateMobileNav);
 </script>
+
 	  
 
 	  
