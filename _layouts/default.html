@@ -1182,24 +1182,18 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 	function updateMobileNav() {
 	  const mobileNav = document.querySelector('#mobileMenu');
-	  console.log('mobileNav found?', !!mobileNav);
-	
 	  if (!mobileNav) return;
 	
-	  const cssWidth = window.innerWidth;     // affected by zoom
-	  const deviceWidth = screen.width;       // NOT affected by zoom
+	  const deviceWidth = screen.width;
 	
-	  console.log('cssWidth:', cssWidth);
-	  console.log('deviceWidth:', deviceWidth);
+	  // Desktop devices always have large physical screens
+	  const isDesktop = deviceWidth > 1200;
 	
-	  const zoomedOutDesktop = cssWidth < 1200 && deviceWidth > 1200;
-	  console.log('zoomedOutDesktop:', zoomedOutDesktop);
-	
-	  if (zoomedOutDesktop) {
-	    console.log('Hiding mobile nav');
+	  if (isDesktop) {
+	    // Hide mobile nav on desktop
 	    mobileNav.style.display = 'none';
 	  } else {
-	    console.log('Showing mobile nav');
+	    // Show mobile nav on real mobile devices
 	    mobileNav.style.display = '';
 	  }
 	}
@@ -1207,6 +1201,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener('resize', updateMobileNav);
 	window.addEventListener('DOMContentLoaded', updateMobileNav);
 </script>
+
 
 
 	  
