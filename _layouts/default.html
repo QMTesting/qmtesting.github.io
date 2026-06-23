@@ -387,34 +387,33 @@
     </div>
 
     <style>
-      .desktop-header-nav {
-        background: #bc960d;
-        display: flex;
-        justify-content: flex-start;
-        padding: 0;
-        padding-bottom: 15px; 
-        width: 1450px; /* Matches your grid width */      
-      }
+     .desktop-header-nav {
+	  background: #bc960d;
+	  width: 100%;
+	  padding-bottom: 15px;
+	}
+	
+	.nav-wrapper {
+	  width: 100%;
+	  max-width: 1450px;
+	  margin: 0 auto;
+	}
+	
+	.nav-container {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  width: 100%;
+	  max-width: 1200px;
+	  margin: 0 auto;	
+	}
       
-      .nav-wrapper {
-        width: 1450px; /* Matches your grid width */
-        display: flex;
-        justify-content: flex-start;
-      }
-      
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        width: 100%;
-        margin-left: 325px;
-      }
-      
-      .nav-links {
-        display: flex;
-        gap: 5px;
-        
-      }
+     .nav-links {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap: 30px;
+	  align-items: center;
+	}
       
       .nav-links a {
         font-weight: 900;
