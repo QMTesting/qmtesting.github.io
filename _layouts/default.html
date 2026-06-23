@@ -1185,12 +1185,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	}	
 
 	/* Remove bullets from footer menu list */
-	.footer-nav ul li {
+	.footer-menu ul {
           list-style: none;
 	      list-style-type: none;   /* hides the default bullets */
 		  padding-left: 0;         /* removes left indentation */
 		  margin: 0;               /* optional: aligns neatly with other elements */
-		}
+	}
+    .footer-menu ul {
+        list-style: none !important;
+        list-style-type: none !important;
+    }
+	 
 	}	
 </style>
 
