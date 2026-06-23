@@ -1175,8 +1175,36 @@ document.addEventListener("DOMContentLoaded", function () {
 @media only screen and (min-width: 820px) and (max-width: 2000px) {
      body {
         min-width: 1290px;
-     }	 
+     } 
 }	
-</style>	
+</style>
+
+<script>
+	function updateMobileNav() {
+	  const mobileNav = document.querySelector('.mobile-nav');
+	  if (!mobileNav) return;
+	
+	  const cssWidth = window.innerWidth;     // affected by zoom
+	  const deviceWidth = screen.width;       // NOT affected by zoom
+	
+	  // If CSS width is < 1200 but device width is > 1200,
+	  // the user is on desktop but zoomed out.
+	  const zoomedOutDesktop = cssWidth < 1200 && deviceWidth > 1200;
+	
+	  if (zoomedOutDesktop) {
+	    // Hide mobile nav on zoomed-out desktop
+	    mobileNav.style.display = 'none';
+	  } else {
+	    // Show mobile nav normally (mobile devices)
+	    mobileNav.style.display = '';
+	  }
+	}
+	
+	window.addEventListener('resize', updateMobileNav);
+	window.addEventListener('DOMContentLoaded', updateMobileNav);
+</script>
+	  
+
+	  
   </body>
 </html>
