@@ -1218,6 +1218,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	    // Hide mobile nav on desktop
 	    mobileNav.style.display = 'none';
 		hamMenu.style.display = 'none'; 
+		document.querySelectorAll('li').forEach(li => {
+		  li.style.listStyle = 'none';
+		  li.style.listStyleType = 'none';
+		});  
 	  } else {
 	    // Show mobile nav on real mobile devices
 	    mobileNav.style.display = '';
