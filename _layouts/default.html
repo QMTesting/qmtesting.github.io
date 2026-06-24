@@ -1253,8 +1253,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (mobileNav) mobileNav.style.width = '225px';  
 		if (mobileNav) mobileNav.style.marginRight = '455px'; 
 		if (mobileNav) mobileNav.style.fontWeight = '900';  
+
+		mobileNav.style.setProperty('width', '225px', 'important');
+        mobileNav.style.setProperty('margin-right', '455px', 'important');
+		mobileNav.style.setProperty('font-weight', '900', 'important');  
 		    
 		if (amazonAttr) amazonAttr.style.marginLeft = '400px';
+		amazonAttr.style.setProperty('margin-left', '400px', 'important');  
+		  
         if (copyR) copyR.style.marginRight = '25px';
 		  
 	  } else {
