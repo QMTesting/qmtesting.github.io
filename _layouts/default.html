@@ -1212,7 +1212,30 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	window.addEventListener('resize', updateMobileNav);
 	window.addEventListener('DOMContentLoaded', updateMobileNav);
+
+function centerElementsOnZoom() {
+  const layoutWidth = document.body.getBoundingClientRect().width;
+  const expectedWidth = 1290; // your fixed layout width
+  const zoomedOut = layoutWidth < expectedWidth * 0.8;
+
+  const footerMenu = document.querySelector('.footer-menu');
+  const socialMenu = document.querySelector('.social-share');
+  const footerTop = document.querySelector('.footer-top');
+  if (zoomedOut) {
+    if (footerMenu) footerMenu.style.margin = '0 auto';
+    if (socialMenu) socialMenu.style.margin = '0 auto';
+	if (footerTop) socialMenu.style.margin = '0 auto';  
+  } else {
+    if (footerMenu) footerMenu.style.margin = '';
+    if (socialMenu) socialMenu.style.margin = '';
+	if (footerTop) socialMenu.style.margin = '';  
+  }
+}
+
+window.addEventListener('resize', centerElementsOnZoom);
+window.addEventListener('DOMContentLoaded', centerElementsOnZoom);
 </script>
+	  
 
 
 
