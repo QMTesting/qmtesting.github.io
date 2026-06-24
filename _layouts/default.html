@@ -1234,11 +1234,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	  const footerMenu = document.querySelector('.footer-menu');
 	  const xbtnMenu = document.querySelector('.social-share');
 	  const footerTop = document.querySelector('.footer-top');
+	  const amazonAttr = document.querySelector('.amazon-attr');	
+	
+
 	  if (zoom < 0.80) {
 	    if (footerMenu) footerMenu.style.marginRight = '200px';
 	    if (xbtnMenu) xbtnMenu.style.width = '200px';
 		if (xbtnMenu) xbtnMenu.style.marginRight = '0px';  
 		if (footerTop) footerTop.style.marginRight = '200px';  
+		if (amazonAttr) amazonAttr.style.marginLeft = '100px';    
 	  } else {
 	    if (footerMenu) footerMenu.style.marginRight = '';
 	    if (xbtnMenu) xbtnMenu.style.marginRight = '';
