@@ -1219,16 +1219,16 @@ function centerElementsOnZoom() {
   const zoomedOut = layoutWidth < expectedWidth * 0.8;
 
   const footerMenu = document.querySelector('.footer-menu');
-  const socialMenu = document.querySelector('.social-share');
+  const xbtnMenu = document.querySelector('.Xbtn');
   const footerTop = document.querySelector('.footer-top');
   if (zoomedOut) {
     if (footerMenu) footerMenu.style.margin = '0 auto';
-    if (socialMenu) socialMenu.style.margin = '0 auto';
-	if (footerTop) socialMenu.style.margin = '0 auto';  
+    if (xbtnMenu) socialMenu.style.marginRight = '700px';
+	if (footerTop) footerTop.style.marginRight = '150px';  
   } else {
     if (footerMenu) footerMenu.style.margin = '';
-    if (socialMenu) socialMenu.style.margin = '';
-	if (footerTop) socialMenu.style.margin = '';  
+    if (xbtnMenu) socialMenu.style.margin = '';
+	if (footerTop) footerTop.style.margin = '';  
   }
 }
 
