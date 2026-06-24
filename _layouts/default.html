@@ -1191,7 +1191,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	  const deviceWidth = screen.width;
 	
 	  // Desktop devices always have large physical screens
-	  const isDesktop = deviceWidth > 1290;
+	  const isDesktop = deviceWidth > 1200;
 
 	  // Write to console 	
 	  console.log('getTheComputedStyle:', getComputedStyle(document.body).zoom);
@@ -1223,6 +1223,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	function centerElementsOnZoom() {
     const zoom = window.outerWidth / window.innerWidth;
 
+	const deviceWidth = screen.width;
+	
+	// Desktop devices always have large physical screens
+	const isDesktop = deviceWidth > 1200;	
+
 	console.log("Zoom:", zoom);
 	
 	if (zoom < 0.80) {
@@ -1238,7 +1243,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	  const amazonAttr = document.querySelector('.amazon-attr');
       const copyR = document.querySelector('.copyr');
 		
-
+     if (isDesktop) {
 	  if (zoom < 0.80) {
 	    if (footerMenu) footerMenu.style.marginRight = '200px';
 	    if (xbtnMenu) xbtnMenu.style.width = '200px';
@@ -1255,7 +1260,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (footerTop) footerTop.style.marginRight = '';  
 	  }
 	}
-	
+	}
 	window.addEventListener('resize', centerElementsOnZoom);
 	window.addEventListener('DOMContentLoaded', centerElementsOnZoom);     
 	
