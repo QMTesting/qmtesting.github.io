@@ -1213,32 +1213,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener('resize', updateMobileNav);
 	window.addEventListener('DOMContentLoaded', updateMobileNav);
 
-function centerElementsOnZoom() {
-  const layoutWidth = document.body.getBoundingClientRect().width;
-  const expectedWidth = 1290; // your fixed layout width
-  const zoomedOut = layoutWidth < expectedWidth * 0.8;
 
-  console.log('layoutWidth:', layoutWidth);
-  console.log('expectedWidth:', expectedWidth);
-  console.log('zoomedOut:', zoomedOut);	
-
-  const footerMenu = document.querySelector('.footer-menu');
-  const xbtnMenu = document.querySelector('.Xbtn');
-  const footerTop = document.querySelector('.footer-top');
-  if (zoomedOut) {
-    if (footerMenu) footerMenu.style.marginRight = '600px';
-    if (xbtnMenu) xbtnMenu.style.marginRight = '700px';
-	if (footerTop) footerTop.style.marginRight = '150px';  
-  } else {
-    if (footerMenu) footerMenu.style.marginRight = '';
-    if (xbtnMenu) xbtnMenu.style.marginRight = '';
-	if (footerTop) footerTop.style.marginRight = '';  
-  }
-}
-
-window.addEventListener('resize', centerElementsOnZoom);
-window.addEventListener('DOMContentLoaded', centerElementsOnZoom);
 </script>
+
+<style>
+	/* Desktop-only footer centering */
+@media (min-width: 1200px) {
+  .footer-menu,
+  .footer-menu ul,
+  .footer-menu li,
+  .footer-social,
+  .footer-social ul,
+  .footer-social li {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+  }
+</style>	
+	  
 	  
 
 
