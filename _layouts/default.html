@@ -1193,7 +1193,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	  // Desktop devices always have large physical screens
 	  const isDesktop = deviceWidth > 1290;
 
-	  console.log("Zoom value:", document.body.style.zoom);	
+	  console.log(getComputedStyle(document.body).zoom);
 	
 	  if (isDesktop) {
 	    // Hide mobile nav on desktop
