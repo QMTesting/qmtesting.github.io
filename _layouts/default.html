@@ -1218,6 +1218,10 @@ function centerElementsOnZoom() {
   const expectedWidth = 1290; // your fixed layout width
   const zoomedOut = layoutWidth < expectedWidth * 0.8;
 
+  console.log('layoutWidth:', layoutWidth);
+  console.log('expectedWidth:', expectedWidth);
+  console.log('zoomedOut:', zoomedOut);	
+
   const footerMenu = document.querySelector('.footer-menu');
   const xbtnMenu = document.querySelector('.Xbtn');
   const footerTop = document.querySelector('.footer-top');
