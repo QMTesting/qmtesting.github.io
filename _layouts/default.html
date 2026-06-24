@@ -1220,23 +1220,39 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener('DOMContentLoaded', updateMobileNav);
 
 
+	function centerElementsOnZoom() {
+    const zoom = window.outerWidth / window.innerWidth;
+
+	console.log("Zoom:", zoom);
+	
+	if (zoom < 0.80) {
+	    console.log("Zoom is less than 80%");
+	} else {
+	    console.log("Zoom is 80% or greater");
+	}	
+	
+	  const footerMenu = document.querySelector('.footer-menu');
+	  const xbtnMenu = document.querySelector('.Xbtn');
+	  const footerTop = document.querySelector('.footer-top');
+	  if (zoom < 0.80) {
+	    if (footerMenu) footerMenu.style.marginRight = '600px';
+	    if (xbtnMenu) xbtnMenu.style.marginRight = '700px';
+		if (footerTop) footerTop.style.marginRight = '150px';  
+	  } else {
+	    if (footerMenu) footerMenu.style.marginRight = '';
+	    if (xbtnMenu) xbtnMenu.style.marginRight = '';
+		if (footerTop) footerTop.style.marginRight = '';  
+	  }
+	}
+	
+	window.addEventListener('resize', centerElementsOnZoom);
+	window.addEventListener('DOMContentLoaded', centerElementsOnZoom);     
+	
+
+
 </script>
 
-<style>
-	/* Desktop-only footer centering */
-@media (min-width: 1200px) {
-  .footer-menu,
-  .footer-menu ul,
-  .footer-menu li,
-  .footer-social,
-  .footer-social ul,
-  .footer-social li {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: block;
-  }
-</style>	
+
 	  
 	  
 
