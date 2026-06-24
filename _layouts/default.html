@@ -1232,11 +1232,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	}	
 	
 	  const footerMenu = document.querySelector('.footer-menu');
-	  const xbtnMenu = document.querySelector('.Xbtn');
+	  const xbtnMenu = document.querySelector('.social-share');
 	  const footerTop = document.querySelector('.footer-top');
 	  if (zoom < 0.80) {
-	    if (footerMenu) footerMenu.style.marginRight = '600px';
-	    if (xbtnMenu) xbtnMenu.style.marginRight = '700px';
+	    if (footerMenu) footerMenu.style.marginRight = '300px';
+	    if (xbtnMenu) xbtnMenu.style.width = '200px';
+		if (xbtnMenu) xbtnMenu.style.marginRight = '500px';  
 		if (footerTop) footerTop.style.marginRight = '150px';  
 	  } else {
 	    if (footerMenu) footerMenu.style.marginRight = '';
