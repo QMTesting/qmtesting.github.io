@@ -991,6 +991,27 @@ html, body {
   display: none;
 }
 
+<script>
+const deviceWidth = screen.width;
+
+// Desktop devices always have large physical screens
+const isDesktop = deviceWidth > 1200;	
+const isMobile = deviceWidth < 769;	
+
+// Objects
+const mobileHeaderNav = document.querySelector('.mobile-header-nav');
+
+if (isDesktop) {
+  if (mobileHeaderNav) {
+     mobileHeaderNav.style.setProperty('display', 'none', 'important');  
+  }
+} // Desktop end
+
+if (isMobile) {
+ 
+}  
+
+<script>
   
 
 
