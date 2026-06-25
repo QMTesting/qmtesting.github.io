@@ -1245,23 +1245,34 @@ document.addEventListener("DOMContentLoaded", function () {
 		
      if (isDesktop) {
 	  if (zoom < 0.80) {
-	    if (footerMenu) footerMenu.style.marginRight = '200px';
-	    if (xbtnMenu) xbtnMenu.style.width = '200px';
-		if (xbtnMenu) xbtnMenu.style.marginRight = '0px';  
-		if (xbtnMenu) xbtnMenu.style.marginLeft = '195px';    
-		if (footerTop) footerTop.style.marginRight = '200px';
-		if (mobileNav) mobileNav.style.width = '225px';  
-		if (mobileNav) mobileNav.style.marginRight = '455px'; 
-		if (mobileNav) mobileNav.style.fontWeight = '900';  
-
+	    
+		if (footerMenu) {
+         footerMenu.style.setProperty('margin-right', '200px', 'important');  
+		}
+		    
+		if (xbtnMenu) {
+			xbtnMenu.style.setProperty('width', '200px', 'important');
+			xbtnMenu.style.setProperty('margin-right', '0px', 'important');
+			xbtnMenu.style.setProperty('margin-left', '195px', 'important');
+		}  
+		  
+		if (footerTop) {
+         footerTop.style.setProperty('margin-right', '200px', 'important');  
+		}
+		  
+       if (mobileNav) {
 		mobileNav.style.setProperty('width', '225px', 'important');
         mobileNav.style.setProperty('margin-right', '455px', 'important');
 		mobileNav.style.setProperty('font-weight', '900', 'important');  
-		    
-		if (amazonAttr) amazonAttr.style.marginLeft = '400px';
-		amazonAttr.style.setProperty('margin-left', '200px', 'important');  
+	   }    
+		
+		if (amazonAttr) {
+		  amazonAttr.style.setProperty('margin-left', '200px', 'important');  
+		}
 		  
-        if (copyR) copyR.style.marginRight = '25px';
+		if (copyR) {
+         copyR.style.setProperty('margin-right', '25px', 'important'); 
+		}	
 		  
 	  } else {
 	    if (footerMenu) footerMenu.style.marginRight = '';
