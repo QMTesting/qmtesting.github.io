@@ -2380,6 +2380,10 @@ img.hero-logo {
   }
 }
 
+.page-wrapper {
+  min-width: 1200px;   // or whatever width your desktop layout really needs
+  margin: 0 auto;
+}
 
 
 
