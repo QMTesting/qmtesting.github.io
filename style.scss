@@ -195,7 +195,7 @@ strong, b {
 .site-avatar {
   height: 60px !important;
   width: 60px !important;
-  display: block;
+  display: none;
 
   @include mobile {
     margin: 0 auto;
