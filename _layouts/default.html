@@ -1182,6 +1182,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}	
 </style>
 
+<!-- UPDATE CSS FOR BROWSER ZOOM BELOW 90% -->	  
 <script>
 	function updateMobileNav() {
 	  const mobileNav = document.querySelector('#mobileMenu');
@@ -1242,6 +1243,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	  const mobileNav = document.querySelector('.footer-nav');	
 	  const amazonAttr = document.querySelector('.amazon-attr');
       const copyR = document.querySelector('.copyr');
+	  const recentPostsHeading = document.querySelector('.recent-posts-heading');	
 		
      if (isDesktop) {
 	  if (zoom < 0.80) {
@@ -1272,7 +1274,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		  
 		if (copyR) {
          copyR.style.setProperty('margin-right', '25px', 'important'); 
-		}	
+		}
+
+		if (recentPostsHeading) {
+         recentPostsHeading.style.setProperty('margin-right', '225px', 'important'); 
+		}  
+		  
 		  
 	  } else {
 	    if (footerMenu) {
@@ -1295,7 +1302,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		} 
 		if (copyR) {
          copyR.style.setProperty('margin-right', '', 'important'); 
-		}  
+		} 
+		if (recentPostsHeading) {
+         recentPostsHeading.style.setProperty('margin-right', '', 'important'); 
+		}    
 	  }
 	}
 	}
