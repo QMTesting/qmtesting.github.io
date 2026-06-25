@@ -1736,16 +1736,6 @@ img.hero-logo {
     margin-bottom: 0px;
     margin-left: 340px;
   }
-
-  /* Keeps page format intact when browser is zoomed out */	
- .page-wrapper {
-  min-width: 1290px;
-  margin: 0 auto;
-  overflow-x: auto;
-  box-sizing: border-box;
-}
-	
-
 	
 } /* End Desktop */
 
@@ -1895,7 +1885,15 @@ img.hero-logo {
 }	
 .post-card h3 {
 	margin-top: 0.1rem !important;         
-}	
+}
+
+ /* Keeps page format intact when browser is zoomed out */	
+ .page-wrapper {
+  min-width: 1290px;
+  margin: 0 auto;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
 
 
 
