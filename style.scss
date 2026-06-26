@@ -854,10 +854,11 @@ footer {
   font-weight: 800;             /* optional: make links stand out */
 }
 
-.istqb-hero p.welcome-text {
+.istqb-hero p {
   margin: 0;                /* no default paragraph margin */
   padding: 3px 0;           /* small, even spacing */
   line-height: 1.4;         /* comfortable but compact */
+  display: inline;
 }
 
 
