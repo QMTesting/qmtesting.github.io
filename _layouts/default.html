@@ -590,7 +590,7 @@
         
         // Objects
         const mobileHeaderNav = document.querySelector('.mobile-header-nav');
-        const heroLogo = document.querySelector('.hero-logo');
+        const heroLogo = document.querySelector('img.hero-logo');
         
         if (isDesktop) {
           if (mobileHeaderNav) {
@@ -599,7 +599,9 @@
 
           if (heroLogo) {
              heroLogo.style.setProperty('max-width', '200px', 'important'); 
-             heroLogo.style.setProperty('max-height', '60px', 'important');
+             heroLogo.style.setProperty('height', 'auto', 'important');
+             heroLogo.style.setProperty('border', 'none', 'important');
+
           }
 
           
