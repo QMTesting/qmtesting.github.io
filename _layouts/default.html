@@ -624,5 +624,24 @@
     </script>
 
     </div>    
+
+	<!-- Function for mobile search form -->  
+    <script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const toggleBtn = document.getElementById("mobile-search-toggle");
+	  const closeBtn = document.getElementById("mobile-search-close");
+	  const formContainer = document.getElementById("mobile-search-form");
+	
+	  toggleBtn.addEventListener("click", () => {
+	    formContainer.classList.add("active");
+	  });
+	
+	  closeBtn.addEventListener("click", () => {
+	    formContainer.classList.remove("active");
+	  });
+	});
+	</script>
+
+	  
   </body>
 </html>
