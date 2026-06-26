@@ -590,11 +590,20 @@
         
         // Objects
         const mobileHeaderNav = document.querySelector('.mobile-header-nav');
+        const heroLogo = document.querySelector('.hero-logo');
         
         if (isDesktop) {
           if (mobileHeaderNav) {
              mobileHeaderNav.style.setProperty('display', 'none', 'important');  
           }
+
+          if (heroLogo) {
+             heroLogo.style.setProperty('max-width', '200px', 'important'); 
+             heroLogo.style.setProperty('max-height', '60px', 'important');
+          }
+
+          
+          
         } // Desktop end
         
         if (isMobile) {  
