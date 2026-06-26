@@ -969,7 +969,7 @@ p {
 }
 
 a {
-  block: inline;
+  display: inline !important; /* change link to inline */
 }
 
 h1 {
