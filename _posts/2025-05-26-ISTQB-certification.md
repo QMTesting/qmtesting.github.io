@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Know How To Elevate Your Testing Career with an ISTQB Certification"
 categories: ["Software Testing"]
 image: "/assets/images/Test/ISTQB.webp"
