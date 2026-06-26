@@ -507,3 +507,98 @@ body {
   }
 }
 </style>
+
+ <!-- SEARCH RESULTS JAVA - DESKTOP -->  
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("desktop-search-toggle");
+        const formContainer = document.getElementById("desktop-search-form");
+        const closeBtn = document.getElementById("desktop-search-close");
+        const input = document.getElementById("desktop-search-input");
+        const form = document.getElementById("desktop-search-form-element");
+
+        toggleBtn.addEventListener("click", function () {
+          formContainer.style.display = "flex";
+          toggleBtn.style.display = "none";
+          input.focus();
+        });
+
+        closeBtn.addEventListener("click", function () {
+          hideSearchForm();
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const query = input.value.trim();
+          if (!query) return;
+          hideSearchForm();
+          window.location.href = `/search-results/?q=${encodeURIComponent(query)}`;
+        });
+
+        function hideSearchForm() {
+          formContainer.style.display = "none";
+          toggleBtn.style.display = "inline-block";
+          input.value = "";
+        }
+      });
+      </script>  
+      <!-- SEARCH RESULTS JAVA - DESKTOP-END -->   
+
+      <!-- Ensure Layout Links the Script for copy button in posts for script snippets -->            
+      <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
+
+      <!-- 100% privacy-first analytics -->
+      <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+      <!-- Enable mermaid code for diagrams -->
+      <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      <script>
+        mermaid.initialize({ startOnLoad: true });
+      </script>  
+
+      <script>
+        const deviceWidth = screen.width;
+        
+        // Desktop devices always have large physical screens
+        const isDesktop = deviceWidth > 1200;	
+        const isMobile = deviceWidth < 769;	
+        
+        // Objects
+        const mobileHeaderNav = document.querySelector('.mobile-header-nav');
+        const heroLogo = document.querySelector('img.hero-logo');
+        const istqbImage = document.querySelector('img.istqb-logo');
+        const istqbHero = document.querySelector('.istqb-hero');
+        const shareMenu = document.querySelector('.social-share');
+
+ 
+        
+        
+        
+        if (isDesktop) {
+          if (mobileHeaderNav) {
+             mobileHeaderNav.style.setProperty('display', 'none', 'important');  
+          }
+
+          if (heroLogo) {
+             heroLogo.style.setProperty('max-width', '450px', 'important'); 
+             heroLogo.style.setProperty('height', 'auto', 'important');
+             heroLogo.style.setProperty('border', 'none', 'important');
+             heroLogo.style.setProperty('display', 'block', 'important');
+             heroLogo.style.setProperty('margin', '0 auto', 'important');
+
+          }
+
+          img.istqb-logo {
+	          max-width: 450px;
+            border: 2px solid;
+            margin: 0 auto;
+          }
+
+          
+        } // Desktop end
+        
+        if (isMobile) {  
+        } // Mobile end
+        
+    </script>
+
