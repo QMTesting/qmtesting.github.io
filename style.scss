@@ -1126,10 +1126,16 @@ html, body {
 }
 
 /* Position the search icon in the top-right */
+
+.mobile-header-nav {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}	
 #mobile-search-toggle {
   position: absolute;
-  margin-top: -60px;
-  margin-right: 80px;
+  top: 10px;
+  right: 10px;
   font-size: 26px;
   background: none;
   border: none;
