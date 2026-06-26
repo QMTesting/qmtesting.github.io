@@ -1076,35 +1076,32 @@ img.hero-logo {
   }
 } /* end Desktop */
 
-@media (max-device-width: 1199px) {
+@media (max-device-width: 780px) {
 
   .desktop-header-nav {
 	display: none !important;
   }
 
   body {
-  max-width: 1199px;      // prevents layout collapse on zoom out
-  width: 100%;
-  margin: 0 auto;         // centers the whole page
-  overflow-x: hidden;     // avoids horizontal scroll from minor overflows
-  font-family: $Montserrat;
-}
+    min-width: 100% !important;
+  }
 
-.page-wrapper {
-  max-width: 1199px;      // outer frame for the site
-  width: 100%;
-  margin: 0 auto;
-}
+  .page-wrapper {
+    min-width: 100% !important;
+  }	
 
-/* Main container system */
-.container,
-.wrapper,
-.content {
-  max-width: 768px;      // modern standard width
-  width: 100%;
-  margin: 0 auto;         // centers content
-  padding: 0 20px;        // breathing room on sides
-}
+  .TestCat,
+  .TypesCat,
+  .AutoCat,
+  .DevOpsCat,
+  .recent-post-card,
+  .post-card {
+    width: 100% !important;
+    max-width: 320px;
+    margin: 0 auto;
+  }	
+	
+
 	
   
 } /* end Mobile‑only CSS */
