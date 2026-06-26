@@ -852,9 +852,10 @@ footer {
 }
 
 .istqb-hero a {
-  display: inline;          /* ensures links stay inline */
+  display: inline;              /* ensures links stay inline */
   text-decoration: underline;
   color: #000;
+  font-weight: 900;	
 }
 
 img.istqb-logo {
