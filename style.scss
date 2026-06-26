@@ -380,6 +380,28 @@ strong, b {
 }
 
 /********************************/
+/* WELCOME HEADING & TEXT       */
+/********************************/
+
+.welcome-heding {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/********************************/
 /* DESKTOP ONLY RULES           */
 /********************************/
 
