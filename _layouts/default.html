@@ -220,24 +220,26 @@
         <img class="hero-logo" src="/images/Logo-full-text1.webp" alt="QMS Testing Site Avatar" fetchpriority="high">
       </a>  
 
+     
       <!-- HAMBURGER MENU HTML -->
-      <div id="hamburgerIcon" class="hamburger" onclick="toggleMenu()">
-        &#9776;
-      </div>
-      
-      <!-- Fullscreen hamburger Mobile Menu -->
-      <div id="mobileMenu" class="mobile-menu hidden">
-        <div class="menu-header">
-          <span class="close-icon" onclick="toggleMenu()">&#10006;</span>
-        </div>
-        <ul>
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-          <li><a href="{{ '/software-testing' | relative_url }}">Software Testing</a></li>
-          <li><a href="{{ '/types-of-testing' | relative_url }}">Types of Testing</a></li>
-          <li><a href="{{ '/automation' | relative_url }}">Automation</a></li>
-          <li><a href="{{ '/azure-devops' | relative_url }}">Azure DevOps</a></li>
-        </ul>
-      </div>   
+		<div id="hamburgerIcon" class="hamburger">
+		  &#9776;
+		</div>
+		
+		<!-- Fullscreen hamburger Mobile Menu -->
+		<div id="mobileMenu" class="mobile-menu">
+		  <div class="menu-header">
+		    <span class="close-icon">&#10006;</span>
+		  </div>
+		  <ul>
+		    <li><a href="{{ site.baseurl }}/">Home</a></li>
+		    <li><a href="{{ '/software-testing' | relative_url }}">Software Testing</a></li>
+		    <li><a href="{{ '/types-of-testing' | relative_url }}">Types of Testing</a></li>
+		    <li><a href="{{ '/automation' | relative_url }}">Automation</a></li>
+		    <li><a href="{{ '/azure-devops' | relative_url }}">Azure DevOps</a></li>
+		  </ul>
+		</div>
+
       <!-- HAMBURGER MENU HTML - END -->
     
       <div class="wrapper-masthead">
@@ -641,8 +643,7 @@
 	  });
 	});
 	</script>
-
-	<!-- Function for hamburger menu -->   
+<!-- Function for hamburger menu -->   
 	
   
 
