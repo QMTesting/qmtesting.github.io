@@ -1231,6 +1231,15 @@ html, body {
 /* Post Category Label */
 .post-label {
 	margin-top: 30px;
+}
+
+/* ISTQB Welcome Text */
+.istqb-hero p.welcome-text {
+  display: inline-block;        /* keeps each paragraph together */
+  margin: 0 0 5px 0;            /* small vertical spacing */
+  line-height: 1.4;
+  max-width: 38ppx;
+  padding: 5px;	
 }	
 	
 
