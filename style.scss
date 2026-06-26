@@ -425,7 +425,7 @@ strong, b {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  gap: 20px;
+  gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   font-weight: 900;
 }
@@ -479,16 +479,25 @@ strong, b {
   margin: 5px 0 0;
 }
 
-/************************************/
-/* RECENT POSTS GRID — DESKTOP (4 columns)
-/************************************/
+/*******************************************/
+/* RECENT POSTS GRID — DESKTOP (4 columns) */
+/*******************************************/
+
+.recent-posts-heading {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .recent-post-grid {
   max-width: 1200px;
   width: 100%;
   margin: 2em auto 0;
   display: grid;
-  gap: 20px;
+  gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   font-weight: 900;
 }
