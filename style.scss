@@ -1060,23 +1060,35 @@ html, body {
   display: none;
 }
 
-/* SITE AVATAR */
-img.hero-logo {
+
+
+@media (min-device-width: 1200px) {
+
+  /* SITE AVATAR */
+  img.hero-logo {
 	 max-width: 450px !important;
    height: auto !important;
    border: none !important;
    display: block !important;
    margin: 0 auto !important;
 
- }
-
-@media (min-device-width: 1200px) {
+ }	
   .mobile-header-nav {
     display: none !important;
   }
 } /* end Desktop */
 
 @media (max-device-width: 780px) {
+
+   /* SITE AVATAR */
+   img.hero-logo {
+   max-width: 250px !important;
+   height: auto !important;
+   border: none !important;
+   display: block !important;
+   margin: 0 auto !important;
+   margin-top: 40px;
+  }	
 
   .desktop-header-nav {
 	display: none !important;
