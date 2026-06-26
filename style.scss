@@ -846,15 +846,10 @@ footer {
   margin: 0 auto;
 }
 
-.istqb-hero p {
-  margin: 0;                   /* removes paragraph gaps */
-  padding: 5px 0;              /* small breathing space */
-}
-
 .istqb-hero a {
-  text-decoration: none;       /* removes underlines */
+  text-decoration: underline;   /* removes underlines */
   color: #000;                 /* keeps link color consistent */
-  font-weight: 600;            /* optional: make links stand out */
+  font-weight: 800;            /* optional: make links stand out */
 }
 
 .istqb-hero a:hover {
