@@ -848,13 +848,13 @@ footer {
 }
 
 .istqb-hero p.welcome-text {
-  display: inline-block;        /* keeps each paragraph together */
+  display: flex;        /* keeps each paragraph together */
   margin: 0 0 5px 0;            /* small vertical spacing */
   line-height: 1.4;
 }
 
 .istqb-hero a {
-  display: inline;              /* ensures links stay inline */
+  display: flex;              /* ensures links stay inline */
   text-decoration: underline;
   color: #000;
   font-weight: 900;	
@@ -1234,11 +1234,11 @@ html, body {
 }
 
 /* ISTQB Welcome Text */
-.istqb-hero p.welcome-text {
+.istqb-hero p {
   display: inline-block;        /* keeps each paragraph together */
   margin: 0 0 5px 0;            /* small vertical spacing */
   line-height: 1.4;
-  max-width: 38ppx;
+  max-width: 380px;
   padding: 5px;	
 }	
 	
