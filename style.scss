@@ -1059,6 +1059,7 @@ html, body {
   display: none;
 }
 
+/* SITE AVATAR */
 img.hero-logo {
 	 max-width: 450px !important;
    height: auto !important;
@@ -1072,8 +1073,15 @@ img.hero-logo {
   .mobile-header-nav {
     display: none !important;
   }
-}
+} /* end Desktop */
 
+@media (max-device-width: 1199px) {
+
+  .desktop-header-nav {
+	display: none !important;
+  }
+  
+} /* end Mobile‑only CSS */
 
 
 
