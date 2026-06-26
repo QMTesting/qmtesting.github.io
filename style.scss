@@ -841,32 +841,21 @@ footer {
 /************************************/
 
 .istqb-hero {
-  text-align: center;          
-  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.istqb-hero p.welcome-text {
+  display: inline-block;   /* keeps each paragraph together */
+  margin: 0 0 5px 0;       /* small vertical spacing */
+  line-height: 1.4;
 }
 
 .istqb-hero a {
-  display: inline;          /* critical: keep link inline */
-  text-decoration: underline;    /* remove underline */
-  margin: 0;
-  padding: 0;
-  color: #000;                  /* keeps link color consistent */
-  font-weight: 800;             /* optional: make links stand out */
+  display: inline;          /* ensures links stay inline */
+  text-decoration: underline;
+  color: #000;
 }
-
-.istqb-hero p {
-  margin: 0;                /* no default paragraph margin */
-  padding: 3px 0;           /* small, even spacing */
-  line-height: 1.4;         /* comfortable but compact */
-  display: inline;
-}
-
-
-.istqb-hero a:hover {
-  text-decoration: underline;  /* optional: underline on hover only */
-}
-
-
 
 
 /************************************/
@@ -967,10 +956,6 @@ p {
   line-height: 1.6;
   color: black;
   font-weight: 500;
-}
-
-a {
-  display: inline !important; /* change link to inline */
 }
 
 h1 {
