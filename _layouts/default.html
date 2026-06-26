@@ -643,7 +643,24 @@
 	  });
 	});
 	</script>
-<!-- Function for hamburger menu -->   
+	  
+    <!-- Function for hamburger menu -->  
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const hamburger = document.getElementById("hamburgerIcon");
+	  const menu = document.getElementById("mobileMenu");
+	  const closeIcon = document.querySelector(".close-icon");
+	
+	  hamburger.addEventListener("click", () => {
+	    menu.classList.add("active");
+	  });
+	
+	  closeIcon.addEventListener("click", () => {
+	    menu.classList.remove("active");
+	  });
+	});
+	</script>
+  
 	
   
 
