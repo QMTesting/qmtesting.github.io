@@ -848,13 +848,13 @@ footer {
 }
 
 .istqb-hero p.welcome-text {
-  display: flex;        /* keeps each paragraph together */
+  display: inline-block;        /* keeps each paragraph together */
   margin: 0 0 5px 0;            /* small vertical spacing */
   line-height: 1.4;
 }
 
 .istqb-hero a {
-  display: flex;              /* ensures links stay inline */
+  display: inline;              /* ensures links stay inline */
   text-decoration: underline;
   color: #000;
   font-weight: 900;	
