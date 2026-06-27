@@ -117,13 +117,13 @@ document.addEventListener("DOMContentLoaded", function () {
   display: grid;
   gap: 0px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
-  width: 1025px;
+  max-width: 1025px;
   font-weight: 900;
   flex-wrap: wrap;	
-  margin-left: -5px;
+  margin: 0 auto;
 }
 .related-img {
-  width: 250px;
+  max-width: 250px;
   height: 200px;
   border-radius: 5px;
   object-fit: cover;
@@ -181,11 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
   #related-posts-cat {
     grid-template-columns: repeat(1, 1fr);
-    width: 325px;
+    max-width: 325px;
     margin-left: 30px;
   }
   .related-img {
-    width: 320px;
+    max-width: 320px;
     height: 256px;
     margin-top: 30px;
   }
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
    }
 
   .TestCat img {
-    width: 250px;
+    max-width: 250px;
     height: 200px;
   }
 
