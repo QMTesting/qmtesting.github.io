@@ -1241,6 +1241,122 @@ html, body {
   max-width: 380px;
   padding: 5px;	
 }	
+
+/************************************/
+/* HOME PAGE GRIDS — DESKTOP (1200px)
+/************************************/
+
+/* CATEGORY GRID (4 columns) */
+.CategoryContainer {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: 900;
+}
+
+/* Flexible cards */
+.TestCat,
+.TypesCat,
+.AutoCat,
+.DevOpsCat {
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 380px;     /* flexible card width */
+  margin: 0 auto;       /* centers card inside grid cell */
+}
+
+/* Category images */
+.TestCat img,
+.TypesCat img,
+.AutoCat img,
+.DevOpsCat img {
+  border-radius: 5px;
+  height: auto;
+  width: 100%;
+  max-width: 350px;     /* preserves your preferred image size */
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+
+/* Category text */
+.text1,
+.text2,
+.text3,
+.text4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+/* Attribution text */
+.TestCat p,
+.TypesCat p,
+.AutoCat p,
+.DevOpsCat p {
+  font-size: 8px;
+  color: #000;
+  text-align: center;
+  margin: 5px 0 0;
+}
+
+/*******************************************/
+/* RECENT POSTS GRID — DESKTOP (4 columns) */
+/*******************************************/
+
+.recent-posts-heading {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.recent-post-grid {
+  max-width: 400px;
+  width: 100%;
+  margin: 2em auto 0;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: 900;
+}
+
+.recent-post-card {
+  background: #f3efdf;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 380px;     /* flexible card */
+  margin: 0 auto;
+}
+
+.recent-thumbnail img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.recent-post-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0.2em 0 0;
+  text-decoration: underline;
+  color: #000;
+}
+	
 	
 
 
