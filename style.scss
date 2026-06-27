@@ -1186,23 +1186,25 @@ html, body {
   width: 100%;
   height: 100%;
   background: white;
-  z-index: 3000;
+  z-index: 9999; /* ensure it's above everything */
   display: none;
-  padding: 20px;
+  padding: 0;
 }
 
+/* When active */
 .mobile-menu.active {
   display: block;
 }
 
 /* CLOSE ICON */
 .mobile-menu .close-icon {
-  font-size: 32px;
-  color: red;
-  cursor: pointer;
   position: absolute;
   top: 20px;
   left: 20px;
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+  z-index: 10000; /* ensure it's above menu content */
 }
 
 /* MENU LIST */
