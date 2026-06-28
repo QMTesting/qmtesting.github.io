@@ -127,23 +127,24 @@ layout: default
 <style>
   /* STYLE RATING FIELD IN COMMENT FORM */
   .star {
-    font-size: 28px;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-  
-  /* Outlined star */
-  .star.empty {
-    color: transparent;
-    -webkit-text-stroke: 1px #bc960d;
-    text-stroke: 1px #bc960d;
-  }
-  
-  /* Filled star */
-  .star.filled {
-    color: #bc960d;
-    -webkit-text-stroke: 0;
-  }
+      font-size: 28px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    
+    /* Outlined star (default state) */
+    .star.empty {
+      color: transparent;
+      -webkit-text-stroke: 1px #bc960d;
+      text-stroke: 1px #bc960d;
+    }
+    
+    /* Filled star (after selection) */
+    .star.filled {
+      color: #bc960d;
+      -webkit-text-stroke: 0;
+    }
+
 
 </style>  
 
