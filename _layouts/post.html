@@ -256,8 +256,9 @@ layout: default
   fetchComments();
 </script>
 
-<script>
+
   /* Mobile comment submission */
+ <script>
   function submitComment(e) {
     e.preventDefault();
     const form = document.getElementById("customCommentForm");
@@ -265,25 +266,32 @@ layout: default
 
     fetch(form.action, { method: "POST", body: formData, mode: "no-cors" })
       .then(() => {
+        // Show thank-you message
         document.getElementById("thankyou_message").style.display = "block";
+
+        // Reset form and hide message after delay
         setTimeout(() => {
           form.reset();
-          document.querySelectorAll(".star").forEach(s => s.style.color = "#aaa");
+          document.querySelectorAll(".star").forEach(s => s.classList.remove("filled"));
           document.getElementById("thankyou_message").style.display = "none";
           form.style.display = "block";
           fetchComments();
         }, 1500);
-      });
+      })
+      .catch(err => console.error("Form submit error:", err));
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-      const form = document.getElementById("customCommentForm");
-      form.removeAttribute("target");
-      form.onsubmit = submitComment;
-    }
+    const form = document.getElementById("customCommentForm");
+
+    // Always use JS submission for both desktop and mobile
+    form.removeAttribute("target");
+    form.onsubmit = submitComment;
   });
 </script>
+
+  
+
 
 <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
