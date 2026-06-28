@@ -1078,6 +1078,24 @@ html, body {
   padding: 0 20px;
   box-sizing: border-box;
 }
+
+/* Center post title on desktop */
+  .post h1 {
+    text-align: center;
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+
+  /* Center images inside blog posts on desktop */
+  .post .entry img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+	
+	
 	
 } /* end Desktop */
 
@@ -1362,6 +1380,21 @@ html, body {
   color: #000;
 }
 	
+/* MOBILE TITLE AND IMAGE SIZING FOR BLOG POSTS */
+   .post h1 {
+    text-align: center;
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+
+  .post .entry img {
+    display: block;
+    width: 100%;
+    max-width: 350px;   /* adjust if you want smaller/larger */
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+  }
 	
 
 
