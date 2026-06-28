@@ -80,6 +80,7 @@ layout: default
       </div>
       <input id="ratingField" name="entry.1611467638" type="hidden"/>
 
+
       <!-- Name -->
       <label for="nameField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Name *</label>
       <input id="nameField" name="entry.533251169" placeholder="Your Name" required
@@ -122,16 +123,51 @@ layout: default
 
 <!-- ⭐ ALL SCRIPTS BELOW (unchanged, but moved cleanly to bottom) -->
 
+
+<style>
+  /* STYLE RATING FIELD IN COMMENT FORM */
+  .star {
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  /* Outlined star */
+  .star.empty {
+    color: transparent;
+    -webkit-text-stroke: 1px #bc960d;
+    text-stroke: 1px #bc960d;
+  }
+  
+  /* Filled star */
+  .star.filled {
+    color: #bc960d;
+    -webkit-text-stroke: 0;
+  }
+
+</style>  
+
 <script>
-  /* Star rating selection */
   const stars = document.querySelectorAll("#rating-stars .star");
   const ratingField = document.getElementById("ratingField");
 
-  stars.forEach((star, idx) => {
+  function updateStars(selectedValue) {
+    stars.forEach((star, index) => {
+      if (index < selectedValue) {
+        star.classList.add("filled");
+        star.classList.remove("empty");
+      } else {
+        star.classList.add("empty");
+        star.classList.remove("filled");
+      }
+    });
+  }
+
+  stars.forEach((star) => {
     star.addEventListener("click", () => {
-      stars.forEach(s => s.classList.remove("selected"));
-      for (let i = 0; i <= idx; i++) stars[i].classList.add("selected");
-      ratingField.value = star.getAttribute("data-value");
+      const selectedValue = parseInt(star.getAttribute("data-value"));
+      ratingField.value = selectedValue;
+      updateStars(selectedValue);
     });
   });
 
@@ -140,13 +176,11 @@ layout: default
       alert("Please select a rating before submitting.");
       return false;
     }
-    setTimeout(() => {
-      document.getElementById("customCommentForm").style.display = "none";
-      document.getElementById("thankyou_message").style.display = "block";
-    }, 500);
     return true;
   }
 </script>
+
+
 
 <script>
   /* Fetch comments */
@@ -248,25 +282,5 @@ layout: default
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 
-<style>
-  /* Rating stars styling */
-.star {
-  font-size: 28px;
-  color: #bc960d;               /* base color */
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.star.empty {
-  color: transparent;           /* hides fill */
-  -webkit-text-stroke: 1px #bc960d; /* gold outline */
-  text-stroke: 1px #bc960d;
-}
-
-.star.selected {
-  color: #bc960d;               /* filled star */
-}
-
-</style>  
 <script>mermaid.initialize({ startOnLoad: true });</script>
 
