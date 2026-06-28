@@ -247,5 +247,26 @@ layout: default
 <script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+<style>
+  /* Rating stars styling */
+.star {
+  font-size: 28px;
+  color: #bc960d;               /* base color */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.star.empty {
+  color: transparent;           /* hides fill */
+  -webkit-text-stroke: 1px #bc960d; /* gold outline */
+  text-stroke: 1px #bc960d;
+}
+
+.star.selected {
+  color: #bc960d;               /* filled star */
+}
+
+</style>  
 <script>mermaid.initialize({ startOnLoad: true });</script>
 
