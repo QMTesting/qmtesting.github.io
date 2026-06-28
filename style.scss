@@ -1069,6 +1069,16 @@ html, body {
   .mobile-header-nav {
     display: none !important;
   }
+
+  /* POST.HTML CONTAINER */	
+  .post-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+	
 } /* end Desktop */
 
 @media (max-device-width: 780px) {
