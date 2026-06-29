@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ${post.image.replace('/upload/', '/upload/f_auto,q_auto,c_fill,w_600,h_480/')} 600w
           "
           sizes="(max-width: 780px) 320px, 250px"
-          width="250"
+          width="360"
           alt="${post.title}"
           loading="lazy"
         />
@@ -117,17 +117,19 @@ document.addEventListener("DOMContentLoaded", function () {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
-  max-width: 1025px;
+  width: 1025px;
   font-weight: 900;
   flex-wrap: wrap;	
   margin: 0 auto;
 }
 .related-img {
-  max-width: 250px;
+  width: 250px;
   height: 200px;
   border-radius: 5px;
   object-fit: cover;
 }
+
+
 
 /* Pagination styles */
 .pagination {
@@ -181,14 +183,16 @@ document.addEventListener("DOMContentLoaded", function () {
   
   #related-posts-cat {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 380px;
+    width: 360px;
     margin: 0 auto;
   }
   .related-img {
-    max-width: 350px;
+    width: 350px;
     height: auto;
     margin-top: 30px;
   }
+
+
 }
 
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
