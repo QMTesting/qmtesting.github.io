@@ -164,6 +164,7 @@ Dynamic testing happens **after the code is written and executable**.
     </tr>
   </tbody>
 </table>
+</div>
 
 
 
