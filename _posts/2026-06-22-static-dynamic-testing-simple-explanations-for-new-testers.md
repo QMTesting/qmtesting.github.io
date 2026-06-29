@@ -109,8 +109,6 @@ Dynamic testing begins **after the software can be executed**, whether it’s a 
 
 ## 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
 
-*(Table preserved exactly as requested.)*
-
 <div class="table-scroll"> 
   <table border="1" cellpadding="8" cellspacing="0">
     <thead>
