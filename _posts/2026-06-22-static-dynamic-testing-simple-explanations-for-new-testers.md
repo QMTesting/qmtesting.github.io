@@ -225,9 +225,3 @@ Static and dynamic testing work best when used together:
 
 Mastering both gives new testers a complete toolkit for preventing defects, improving reliability, and supporting smooth releases.
 
-If you’d like, I can also create:
-
-- A downloadable checklist  
-- SEO keywords  
-- A front‑matter summary  
-- A meta description  
