@@ -118,7 +118,7 @@ Dynamic testing happens **after the code is written and executable**.
 
 ## 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
 
-<div class="table-wrapper">
+
 <div class="table-scroll"> 
   <table border="1" cellpadding="8" cellspacing="0">
     <tr>
@@ -166,7 +166,7 @@ Dynamic testing happens **after the code is written and executable**.
   </tbody>
 </table>
 </div>
-</div>
+
 
 
 
