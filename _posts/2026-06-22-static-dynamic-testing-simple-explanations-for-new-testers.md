@@ -129,38 +129,38 @@ Dynamic testing happens **after the code is written and executable**.
   <tbody>
     <tr>
       <td><strong>Execution</strong></td>
-      <td>No code execution</td>
-      <td>Requires running the software</td>
+      <td>Evaluates artifacts without running the software</td>
+      <td>Assesses behavior by executing the application</td>
     </tr>
     <tr>
       <td><strong>When Used</strong></td>
-      <td>Requirements, design, coding phases</td>
-      <td>After build is available</td>
+      <td>During requirements, design, and coding stages</td>
+      <td>After a working build or executable is available</td>
     </tr>
     <tr>
       <td><strong>Goal</strong></td>
-      <td>Prevent defects early</td>
-      <td>Validate runtime behavior</td>
+      <td>Identify and prevent defects early in the lifecycle</td>
+      <td>Verify correct functionality and runtime performance</td>
     </tr>
     <tr>
       <td><strong>Finds</strong></td>
-      <td>Requirement, design, documentation, coding defects</td>
-      <td>Functional, runtime, performance, integration defects</td>
+      <td>Issues in requirements, design logic, documentation, and code structure</td>
+      <td>Defects related to functionality, behavior, performance, and integration</td>
     </tr>
     <tr>
       <td><strong>Techniques</strong></td>
-      <td>Reviews, walkthroughs, inspections, static analysis</td>
-      <td>Unit, integration, system, acceptance, performance testing</td>
+      <td>Reviews, walkthroughs, inspections, and static code analysis</td>
+      <td>Unit, integration, system, acceptance, and performance testing</td>
     </tr>
     <tr>
       <td><strong>Cost to Fix Defects</strong></td>
-      <td>Lower</td>
-      <td>Higher</td>
+      <td>Typically low because issues are caught early</td>
+      <td>Higher due to defects appearing later during execution</td>
     </tr>
     <tr>
       <td><strong>Automation</strong></td>
-      <td>Mostly manual (except static analysis tools)</td>
-      <td>Highly automatable</td>
+      <td>Partially automatable through static analysis tools</td>
+      <td>Highly automatable with modern test frameworks</td>
     </tr>
   </tbody>
 </table>
