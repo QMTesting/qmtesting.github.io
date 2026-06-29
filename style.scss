@@ -1398,14 +1398,30 @@ html, body {
     border-radius: 5px;
   }
 	
-
-
-	
-	
-
-	
   
 } /* end Mobile‑only CSS */
+
+
+
+/* Global table styling for all blog post tables */
+table {
+  width: 100%;
+  border-collapse: collapse;   /* ensures clean single-line borders */
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;      /* light grey grid lines */
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f7f7f7;   /* soft header background */
+  font-weight: 600;
+}
+
 
 
 
