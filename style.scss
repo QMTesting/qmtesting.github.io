@@ -1422,6 +1422,35 @@ table th {
   font-weight: 600;
 }
 
+/* Wrap tables in a scrollable container */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;       /* enables horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+}
+
+/* Optional: style the scrollbar for a cleaner look */
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+/* Ensure tables fit nicely inside the wrapper */
+.table-wrapper table {
+  width: 100%;
+  min-width: 600px;       /* allows scroll when table exceeds viewport */
+  border-collapse: collapse;
+}
+
+
 
 
 
