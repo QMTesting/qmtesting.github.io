@@ -50,7 +50,7 @@ Modern QA teams use static and dynamic testing together because:
 If you only use one approach, you’ll miss entire categories of defects.
 
 
-# 🛑 **Static Testing Explained Clearly**
+## 🛑 **Static Testing Explained Clearly**
 
 Static testing happens **early** in the development lifecycle—often before any code runs.
 
@@ -82,7 +82,7 @@ Static testing happens **early** in the development lifecycle—often before any
   [white-test.com](https://white-test.com/for-qa/useful-articles-for-qa/static-test-dynamic-test/)
 
 
-# 🚀 **Dynamic Testing Explained Clearly**
+## 🚀 **Dynamic Testing Explained Clearly**
 
 Dynamic testing happens **after the code is written and executable**.
 
@@ -116,7 +116,7 @@ Dynamic testing happens **after the code is written and executable**.
   [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
 
 
-# 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
+## 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
 
 | Aspect | Static Testing | Dynamic Testing |
 |--------|----------------|-----------------|
@@ -130,7 +130,7 @@ Dynamic testing happens **after the code is written and executable**.
   [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing)
 
 
-# 🧠 **How Modern QA Teams Use Both (2025–2026 Best Practices)**
+## 🧠 **How Modern QA Teams Use Both (2025–2026 Best Practices)**
 
 Recent QA guidance emphasizes **balancing** static and dynamic testing rather than choosing one.  
   [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/static-vs-dynamic-testing)
@@ -165,7 +165,7 @@ Dynamic tests validate:
   [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
 
 
-# 🧪 **Examples That Make It Easy**
+## 🧪 **Examples That Make It Easy**
 
 ### **Static Testing Example**
 You review a requirement document and notice the login feature doesn’t specify password complexity rules.  
@@ -178,7 +178,7 @@ You test the login feature by entering valid and invalid credentials.
   [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
 
 
-# 🎯 **When Should You Use Each?**
+## 🎯 **When Should You Use Each?**
 
 ### **Use Static Testing When:**
 - Requirements are being written  
@@ -196,7 +196,7 @@ You test the login feature by entering valid and invalid credentials.
 
 ---
 
-# 🏁 **Conclusion: New Testers Should Master Both**
+## 🏁 **Conclusion: New Testers Should Master Both**
 
 Static and dynamic testing are not competitors—they are partners.
 
