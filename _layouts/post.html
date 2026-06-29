@@ -70,7 +70,7 @@ layout: default
           onsubmit="return validateRating();">
 
       <!-- Rating -->
-      <label style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Rating</label>
+      <label style="display:block;margin-bottom:8px;font-weight:bold;color:#000; font-size: 16px;">Rating</label>
       <div id="rating-stars" style="margin-bottom: 20px;">
         <span class="star" data-value="1">&#9733;</span>
         <span class="star" data-value="2">&#9733;</span>
@@ -82,14 +82,14 @@ layout: default
 
 
       <!-- Name -->
-      <label for="nameField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Name *</label>
+      <label for="nameField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000; font-size: 16px;">Name *</label>
       <input id="nameField" name="entry.533251169" placeholder="Your Name" required
              style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background:#f3efdf;" type="text"/>
 
       <!-- Comment -->
-      <label for="commentField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000;">Comment *</label>
+      <label for="commentField" style="display:block;margin-bottom:8px;font-weight:bold;color:#000; font-size: 16px;">Comment *</label>
       <textarea id="commentField" name="entry.1803333929" placeholder="Your Comment" required rows="5"
-                style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background:#f3efdf;"></textarea>
+                style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #bc960d;border-radius:6px;background:#f3efdf; "></textarea>
 
       <!-- Hidden Fields -->
       <input id="postUrlField" name="entry.1243799819" value="{{ page.url | absolute_url }}" type="hidden"/>
@@ -113,7 +113,7 @@ layout: default
   <div id="commentsContainer" style="margin-top: 40px;">
     <h3>🗨️ Reader Comments</h3>
     <div style="margin: 10px 0;">
-      <strong>Average Rating: </strong><span id="ratingDisplay">Loading...</span>
+      <strong style="font-size: 16px;"> Average Rating: </strong><span id="ratingDisplay">Loading...</span>
       <span id="ratingStars" style="color: #bc960d; font-size: 20px;"></span>
     </div>
     <div id="commentsList" style="margin-top: 10px;"></div>
