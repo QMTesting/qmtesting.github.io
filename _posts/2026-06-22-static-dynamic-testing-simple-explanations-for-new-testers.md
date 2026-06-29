@@ -165,11 +165,6 @@ Dynamic testing happens **after the code is written and executable**.
   </tbody>
 </table>
 
-<p>References: 
-  <a href="https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/" target="_blank">GeeksForGeeks</a> | 
-  <a href="https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing" target="_blank">MasterSoftwareTesting.com</a>
-</p>
-
 
 
 ## 🧠 **How Modern QA Teams Use Both (2025–2026 Best Practices)**
