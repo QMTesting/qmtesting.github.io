@@ -118,16 +118,58 @@ Dynamic testing happens **after the code is written and executable**.
 
 ## 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
 
-| Aspect | Static Testing | Dynamic Testing |
-|--------|----------------|-----------------|
-| **Execution** | No code execution | Requires running the software |
-| **When Used** | Requirements, design, coding phases | After build is available |
-| **Goal** | Prevent defects early | Validate runtime behavior |
-| **Finds** | Requirement, design, documentation, coding defects | Functional, runtime, performance, integration defects |
-| **Techniques** | Reviews, walkthroughs, inspections, static analysis | Unit, integration, system, acceptance, performance testing |
-| **Cost to Fix Defects** | Lower | Higher |
-| **Automation** | Mostly manual (except static analysis tools) | Highly automatable |
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing)
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Static Testing</th>
+      <th>Dynamic Testing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Execution</strong></td>
+      <td>No code execution</td>
+      <td>Requires running the software</td>
+    </tr>
+    <tr>
+      <td><strong>When Used</strong></td>
+      <td>Requirements, design, coding phases</td>
+      <td>After build is available</td>
+    </tr>
+    <tr>
+      <td><strong>Goal</strong></td>
+      <td>Prevent defects early</td>
+      <td>Validate runtime behavior</td>
+    </tr>
+    <tr>
+      <td><strong>Finds</strong></td>
+      <td>Requirement, design, documentation, coding defects</td>
+      <td>Functional, runtime, performance, integration defects</td>
+    </tr>
+    <tr>
+      <td><strong>Techniques</strong></td>
+      <td>Reviews, walkthroughs, inspections, static analysis</td>
+      <td>Unit, integration, system, acceptance, performance testing</td>
+    </tr>
+    <tr>
+      <td><strong>Cost to Fix Defects</strong></td>
+      <td>Lower</td>
+      <td>Higher</td>
+    </tr>
+    <tr>
+      <td><strong>Automation</strong></td>
+      <td>Mostly manual (except static analysis tools)</td>
+      <td>Highly automatable</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>References: 
+  <a href="https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/" target="_blank">GeeksForGeeks</a> | 
+  <a href="https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing" target="_blank">MasterSoftwareTesting.com</a>
+</p>
+
 
 
 ## 🧠 **How Modern QA Teams Use Both (2025–2026 Best Practices)**
