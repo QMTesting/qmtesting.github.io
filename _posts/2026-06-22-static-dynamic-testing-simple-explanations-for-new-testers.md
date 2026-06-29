@@ -30,12 +30,10 @@ This guide breaks down both methods in simple terms, explains when to use each, 
 
 ### **Static Testing — “Check it before it runs.”**  
 Static testing examines software **without executing the code**. You review documents, requirements, designs, and source code to catch mistakes early.  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
+ 
 ### **Dynamic Testing — “Test it while it runs.”**  
 Dynamic testing evaluates software **by executing the application** and checking whether it behaves correctly.  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
+ 
 Both approaches are essential. Static testing prevents defects early, while dynamic testing validates real behavior.
 
 
@@ -45,8 +43,7 @@ Modern QA teams use static and dynamic testing together because:
 
 - Static testing catches requirement, design, and coding issues **before** they become expensive bugs.  
 - Dynamic testing finds functional, runtime, performance, and security issues that only appear when the software is running.  
-  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/static-vs-dynamic-testing)
-
+  
 If you only use one approach, you’ll miss entire categories of defects.
 
 
@@ -58,29 +55,25 @@ Static testing happens **early** in the development lifecycle—often before any
 - Requirements documentation  
 - Design specifications  
 - Architecture diagrams  
-- Source code  
-  [white-test.com](https://white-test.com/for-qa/useful-articles-for-qa/static-test-dynamic-test/)
 
 ### **Common Static Testing Techniques**
 - **Reviews** — informal checks of documents or code  
 - **Walkthroughs** — guided review sessions  
 - **Inspections** — formal, structured defect‑finding meetings  
 - **Static code analysis** — automated tools like SonarQube, ESLint, Checkstyle  
-  [white-test.com](https://white-test.com/for-qa/useful-articles-for-qa/static-test-dynamic-test/)
 
 ### **What Static Testing Finds**
 - Ambiguous or incomplete requirements  
 - Logical errors in design  
 - Coding standard violations  
 - Security vulnerabilities  
-  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing)
+ 
 
 ### **Why Static Testing Matters**
 - Defects found early cost **far less** to fix  
 - Prevents building the wrong feature  
 - Improves documentation and code quality  
-  [white-test.com](https://white-test.com/for-qa/useful-articles-for-qa/static-test-dynamic-test/)
-
+ 
 
 ## 🚀 **Dynamic Testing Explained Clearly**
 
@@ -91,8 +84,7 @@ Dynamic testing happens **after the code is written and executable**.
 - Runtime errors  
 - Integration between modules  
 - Performance, security, usability  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
+ 
 ### **Common Dynamic Testing Types**
 - **Unit testing**  
 - **Integration testing**  
@@ -100,21 +92,18 @@ Dynamic testing happens **after the code is written and executable**.
 - **Acceptance testing**  
 - **Performance testing**  
 - **Security testing**  
-  [Testsigma](https://testsigma.com/blog/static-testing-and-dynamic-testing/)
 
 ### **What Dynamic Testing Finds**
 - Functional defects  
 - Runtime failures  
 - Performance bottlenecks  
 - Integration issues  
-  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing)
+
 
 ### **Why Dynamic Testing Matters**
 - Confirms the software works as intended  
 - Validates user flows and real‑world scenarios  
 - Ensures the product meets functional and non‑functional requirements  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
 
 ## 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
 
@@ -174,8 +163,7 @@ Dynamic testing happens **after the code is written and executable**.
 ## 🧠 **How Modern QA Teams Use Both (2025–2026 Best Practices)**
 
 Recent QA guidance emphasizes **balancing** static and dynamic testing rather than choosing one.  
-  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/static-vs-dynamic-testing)
-
+ 
 ### **1. Start With Static Testing in Early Stages**
 - Review requirements before development begins  
 - Use static analysis tools in CI pipelines  
@@ -191,33 +179,26 @@ Modern pipelines automatically:
 - Run static analysis  
 - Execute automated tests  
 - Provide coverage and defect reports  
-  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/static-vs-dynamic-testing)
 
 ### **4. Use Static Testing for Security**
 Static analysis tools catch vulnerabilities early—before attackers can exploit them.  
-  [white-test.com](https://white-test.com/for-qa/useful-articles-for-qa/static-test-dynamic-test/)
-
+ 
 ### **5. Use Dynamic Testing for Real User Behavior**
 Dynamic tests validate:
 - Login flows  
 - Checkout processes  
 - API responses  
 - Mobile interactions  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
 
 ## 🧪 **Examples That Make It Easy**
 
 ### **Static Testing Example**
 You review a requirement document and notice the login feature doesn’t specify password complexity rules.  
 → You catch the defect before coding begins.  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
+ 
 ### **Dynamic Testing Example**
 You test the login feature by entering valid and invalid credentials.  
 → You discover the system crashes when the password contains special characters.  
-  [GeeksForGeeks](https://www.geeksforgeeks.org/software-engineering/difference-between-static-and-dynamic-testing/)
-
 
 ## 🎯 **When Should You Use Each?**
 
@@ -226,15 +207,14 @@ You test the login feature by entering valid and invalid credentials.
 - Designs are being created  
 - Code is being developed  
 - You want to prevent defects early  
-  [mastersoftwaretesting.com](https://mastersoftwaretesting.com/testing-fundamentals/testing-techniques/static-testing-vs-dynamic-testing)
+ 
 
 ### **Use Dynamic Testing When:**
 - You have an executable build  
 - You need to validate functionality  
 - You want to test performance or security  
 - You need to simulate user behavior  
-  [Testsigma](https://testsigma.com/blog/static-testing-and-dynamic-testing/)
-
+ 
 ---
 
 ## 🏁 **Conclusion: New Testers Should Master Both**
