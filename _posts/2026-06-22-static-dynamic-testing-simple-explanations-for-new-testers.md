@@ -118,12 +118,12 @@ Dynamic testing happens **after the code is written and executable**.
 
 ## 🔍 **Static vs. Dynamic Testing: Side‑by‑Side Comparison**
 
-<table>
-  <thead>
+<div class="table-scroll"> 
+  table border="1" cellpadding="8" cellspacing="0">
     <tr>
-      <th>Aspect</th>
-      <th>Static Testing</th>
-      <th>Dynamic Testing</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Aspect</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Static Testing</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Dynamic Testing</th>
     </tr>
   </thead>
   <tbody>
