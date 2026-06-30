@@ -336,6 +336,7 @@ strong, b {
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 2000;  
   }
 
   /* Hidden by default */
@@ -1284,18 +1285,6 @@ html, body {
   z-index: 2000;
 }
 	
-
-/* SEARCH ICON — top RIGHT */
-#mobile-search-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 2000;
-}
 
 /* FULLSCREEN MENU */
 .mobile-menu {
