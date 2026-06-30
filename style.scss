@@ -323,6 +323,8 @@ strong, b {
     display: none !important;
   }
 
+ 		
+
  #mobile-search-close {
   max-width: 32px !important;
   height: 32px !important;	
@@ -331,17 +333,17 @@ strong, b {
 }
 
 #mobile-search-form-element {
-  max-width: 150px !important;
+  max-width: 100px !important;
   height: 32px !important;	
   padding: 3px !important;	
-  border-color: #bc960d !important; 	
+  border-color: #bc960d !important; 
+  font-size: 16px !important;	
 }	
 
 #mobile-submit-btn {
   max-width: 32px !important;
   height: 32px !important;	
-  padding: 3px !important;	 
-	
+  padding: 3px !important;	 	
 }
 
 	
