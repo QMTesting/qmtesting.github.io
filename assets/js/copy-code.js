@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Inline styling (can be moved to CSS)
     button.style.position = "absolute";
-    button.style.right = "5px";
-    button.style.top = "5px";
-    button.style.padding = "2px 8px";
+    button.style.right = "2px";
+    button.style.top = "2px";
+    button.style.padding = "2px 2px";
     button.style.fontSize = "12px";
     button.style.cursor = "pointer";
 
