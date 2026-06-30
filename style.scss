@@ -795,6 +795,7 @@ footer {
   font-weight: 600;
   text-align: center;
   color: #000;
+  margin-top: -10px;	
 }
 
 .related-post a {
@@ -826,6 +827,16 @@ footer {
     height: 110px;
 	margin: 0 auto;  
   }
+
+  .related-post p {
+	  padding: 0.5em;
+	  font-size: 14px;
+	  font-weight: 600;
+	  text-align: center;
+	  color: #000;
+	  margin-top: -10px;
+	  margin-bottom: 0px;
+	}	
 
   .related-posts-title {
     width: 350px;
