@@ -325,6 +325,8 @@ strong, b {
 
   .mobile-header-nav {
     position: relative;
+	background-color: #f3efdf;
+	border: none;  
   }
 
   /* Search icon */
@@ -1242,16 +1244,7 @@ html, body {
    margin-top: 60px !important;
   }	
 
-  .mobile-header-nav {
-	  
-	  
-	  background-color: #f3efdf;
-	  border: none;
-	}	  
-
-  .desktop-header-nav {
-	display: none !important;
-  }
+  	  
 
   body {
     min-width: 100% !important;
