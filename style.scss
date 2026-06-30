@@ -317,75 +317,86 @@ strong, b {
 /* MOBILE NAVIGATION            */
 /********************************/
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
 
   .desktop-header-nav {
     display: none !important;
   }
 
- .mobile-header-nav {
-  position: relative;
-}
+  .mobile-header-nav {
+    position: relative;
+  }
 
-/* Position the search icon in the top-right */
-
-.mobile-header-nav {
-	position: absolute;
+  /* Search icon */
+  #mobile-search-toggle {
+    position: absolute;
     top: 10px;
     right: 10px;
-}	
-#mobile-search-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Hidden by default */
+  #mobile-search-form {
+    display: none;
+  }
+
+  /* Show when active */
+  #mobile-search-form.active {
+    display: block;
+  }
+
+  /* Search form container */
+  #mobile-search-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  /* Close button */
+  #mobile-search-close {
+    background-color: #bc960d !important;
+    padding: 6px 10px !important;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  /* Form layout */
+  #mobile-search-form-element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* Search input */
+  #mobile-search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #bc960d;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  /* Submit button */
+  #mobile-submit-btn {
+    padding: 10px 14px;
+    font-size: 20px;
+    background-color: #bc960d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
 	
-}
-
-/* Hide the search form + close button initially */
-#mobile-search-form {
-  display: none;
-}
-
-/* When active, show the search form */
-#mobile-search-form.active {
-  display: block;
-}
-
-	
-
- #mobile-search-form {
-	max-width: 175px !important;
-    height: auto !important;	 
- }		
-
- #mobile-search-close {
-  max-width: 32px !important;
-  height: auto !important;	
-  padding: 3px !important;
-  background-color: #bc960d !important; 		 
-}
-
-#mobile-search-form-element {
-  max-width: 100px !important;
-  height: auto !important;	
-  padding: 3px !important;	
-  border-color: #bc960d !important; 
-  font-size: 16px !important;	
-}	
-
-#mobile-submit-btn {
-  max-width: 32px !important;
-  height: auto !important;	
-  padding: 3px !important;	 	
-}
-
-	
-
-  /* Hamburger icon */
+  /**********************************/
+  /* Hamburger icon                 */
+  /**********************************/	  
   .hamburger {
     font-size: 30px;
     font-weight: 600;
