@@ -385,7 +385,6 @@ strong, b {
     padding: 10px 14px !important;
     font-size: 20px;
     border: none;
-    margin-bottom: 10px;
     border-radius: 6px;
     cursor: pointer;
   }
@@ -406,6 +405,7 @@ strong, b {
     border: 2px solid #bc960d;
     border-radius: 6px;
     box-sizing: border-box;
+	margin: 0 auto;  
   }
 
   /* Submit button */
