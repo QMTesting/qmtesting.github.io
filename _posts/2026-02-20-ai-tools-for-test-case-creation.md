@@ -59,11 +59,13 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
 
 
+
     As a registered user,
     I want to reset my password via email,
     So that I can regain access if I forget it.
 
 ### Example Prompt
+
 
 
 
