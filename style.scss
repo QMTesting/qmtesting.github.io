@@ -552,7 +552,7 @@ strong, b {
 .post-card img {
   width: 100%;
   max-width: 250px;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -563,6 +563,42 @@ strong, b {
   line-height: 20px;
   margin-top: 0.5em;
 }
+@media only screen and (max-width: 780px) {
+  .search-grid {
+  max-width: 380px;
+  width: 100%;
+  margin: 1rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}	
+ .post-card {
+  background: #f3efdf;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;	
+  width: 100%;
+  max-width: 380px;     /* flexible card */
+  margin: 0 auto;
+  transition: transform 0.2s;
+}
+
+	
+.post-card img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.post-card h3 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 0.5em;
+}	
+} /* Mobile end */
 
 /************************************/
 /* MOBILE LAYOUT (unchanged)
