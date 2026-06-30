@@ -55,11 +55,15 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
 ### User Story
 
+
+
     As a registered user,
     I want to reset my password via email,
     So that I can regain access if I forget it.
 
 ### Example Prompt
+
+
 
     Act as a QA engineer.
 
@@ -91,6 +95,7 @@ These drafts can significantly reduce writing time. However, authentication and 
 ### Requirement
 
 ```
+
 
 
     "The username must be between 3 and 20 characters and may contain
