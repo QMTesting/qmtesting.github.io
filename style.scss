@@ -317,16 +317,7 @@ strong, b {
 /* MOBILE NAVIGATION            */
 /********************************/
 
-
-
-  /**********************************/
-  /* Hamburger icon                 */
-  /**********************************/	  
-  .hamburger {
-    font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 10px;@media (max-width: 768px) {
+@media (max-width: 768px) {
 
   /* Hide desktop header */
   .desktop-header-nav {
@@ -426,6 +417,14 @@ strong, b {
   }
 
 
+  /**********************************/
+  /* Hamburger icon                 */
+  /**********************************/	  
+  .hamburger {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
     z-index: 1100;
     position: fixed;
     top: 10px;
