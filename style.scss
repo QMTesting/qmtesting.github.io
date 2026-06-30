@@ -317,7 +317,7 @@ strong, b {
 /* MOBILE NAVIGATION            */
 /********************************/
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 
   .desktop-header-nav {
     display: none !important;
@@ -331,14 +331,13 @@ strong, b {
 
   /* Search icon */
   #mobile-search-toggle {
-    position: relative;
+    position: absolute;
     top: 10px;
     right: 10px;
     font-size: 28px;
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 2000;  
   }
 
   /* Hidden by default */
