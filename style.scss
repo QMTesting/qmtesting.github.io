@@ -323,18 +323,21 @@ strong, b {
     display: none !important;
   }
 
- 		
+ #mobile-search-form {
+	max-width: 175px !important;
+    height: auto !important;	 
+ }		
 
  #mobile-search-close {
   max-width: 32px !important;
-  height: 32px !important;	
+  height: auto !important;	
   padding: 3px !important;
   background-color: #bc960d !important; 		 
 }
 
 #mobile-search-form-element {
   max-width: 100px !important;
-  height: 32px !important;	
+  height: auto !important;	
   padding: 3px !important;	
   border-color: #bc960d !important; 
   font-size: 16px !important;	
@@ -342,7 +345,7 @@ strong, b {
 
 #mobile-submit-btn {
   max-width: 32px !important;
-  height: 32px !important;	
+  height: auto !important;	
   padding: 3px !important;	 	
 }
 
