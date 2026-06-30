@@ -317,19 +317,43 @@ strong, b {
 /* MOBILE NAVIGATION            */
 /********************************/
 
-@media (max-width: 768px) {
 
+
+  /**********************************/
+  /* Hamburger icon                 */
+  /**********************************/	  
+  .hamburger {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;@media (max-width: 768px) {
+
+  /* Hide desktop header */
   .desktop-header-nav {
     display: none !important;
   }
 
+  /* Mobile header wrapper */
   .mobile-header-nav {
-    position: relative;
-	background-color: #f3efdf;
-	border: none;  
+    position: relative;        /* Anchor for absolute children */
+    background-color: #f3efdf;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
   }
 
-  /* Search icon */
+  /* Mobile search wrapper */
+  .mobile-search {
+    position: relative;        /* REQUIRED so the icon anchors correctly */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Search icon (magnifying glass) */
   #mobile-search-toggle {
     position: absolute;
     top: 10px;
@@ -338,14 +362,15 @@ strong, b {
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 50;               /* Ensures icon stays above everything */
   }
 
-  /* Hidden by default */
+  /* Search form hidden by default */
   #mobile-search-form {
     display: none;
   }
 
-  /* Show when active */
+  /* When active, show the search form */
   #mobile-search-form.active {
     display: block;
   }
@@ -357,6 +382,8 @@ strong, b {
     padding: 12px;
     background: #fff;
     box-sizing: border-box;
+    margin-top: 50px;          /* Push form below the icon */
+    border-bottom: 1px solid #ccc;
   }
 
   /* Close button */
@@ -366,9 +393,11 @@ strong, b {
     font-size: 18px;
     border: none;
     margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
   }
 
-  /* Form layout */
+  /* Search form layout */
   #mobile-search-form-element {
     display: flex;
     align-items: center;
@@ -376,7 +405,7 @@ strong, b {
     width: 100%;
   }
 
-  /* Search input */
+  /* Search input field */
   #mobile-search-input {
     flex: 1;
     padding: 10px;
@@ -395,15 +424,8 @@ strong, b {
     border-radius: 6px;
     cursor: pointer;
   }
-	
-  /**********************************/
-  /* Hamburger icon                 */
-  /**********************************/	  
-  .hamburger {
-    font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 10px;
+
+
     z-index: 1100;
     position: fixed;
     top: 10px;
