@@ -324,36 +324,36 @@ strong, b {
     display: none !important;
   }
 
-  /* Mobile header wrapper */
+  /* Mobile header wrapper — FIXED TO TOP OF PAGE */
   .mobile-header-nav {
-    position: relative;        /* Anchor for absolute children */
-    background-color: #f3efdf;
-    border: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    position: fixed;        /* ⭐ Forces header to top of screen */
     top: 0;
     left: 0;
+    width: 100%;
+    z-index: 9999;          /* Stays above all content */
+    background-color: #f3efdf;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
 
   /* Mobile search wrapper */
   .mobile-search {
-    position: relative;        /* REQUIRED so the icon anchors correctly */
+    position: relative;     /* ⭐ Required so icon anchors correctly */
     width: 100%;
     box-sizing: border-box;
   }
 
-  /* Search icon (magnifying glass) */
+  /* Magnifying glass icon */
   #mobile-search-toggle {
     position: absolute;
-    top: 10px;
+    top: 10px;              /* ⭐ Now truly top-right of the page */
     right: 10px;
     font-size: 28px;
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 50;               /* Ensures icon stays above everything */
+    z-index: 10000;
   }
 
   /* Search form hidden by default */
@@ -361,7 +361,7 @@ strong, b {
     display: none;
   }
 
-  /* When active, show the search form */
+  /* Show search form when active */
   #mobile-search-form.active {
     display: block;
   }
@@ -373,7 +373,9 @@ strong, b {
     padding: 12px;
     background: #fff;
     box-sizing: border-box;
-    margin-top: 50px;          /* Push form below the icon */
+
+    /* ⭐ Push form down so it doesn't overlap fixed header */
+    margin-top: 60px;
     border-bottom: 1px solid #ccc;
   }
 
