@@ -327,7 +327,7 @@ strong, b {
   /* Mobile header wrapper — FIXED TO TOP OF PAGE */
   .mobile-header-nav {
     position: fixed;        /* ⭐ Forces header to top of screen */
-    top: 0;
+    top: 15px;
     left: 0;
     width: 100%;
     z-index: 9999;          /* Stays above all content */
@@ -399,7 +399,7 @@ strong, b {
 
   /* Search input field */
   #mobile-search-input {
-    flex: 1;
+    flex: 1.1;
     padding: 10px;
     font-size: 18px;
     border: 2px solid #bc960d;
