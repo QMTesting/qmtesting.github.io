@@ -1177,6 +1177,9 @@ div.highlight code {
   border-radius: 4px;
   font-family: "Montserrat", sans-serif !important;
   transition: background 0.3s ease;
+  top: 0px !important;
+  right: 0px !important;	
+  z-index: 9999; 	
 }
 
 .copy-btn:hover {
