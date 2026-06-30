@@ -529,11 +529,11 @@ strong, b {
 /************************************/
 
 .search-grid {
-  max-width: 1200px;
+  max-width: 1025px;
   width: 100%;
   margin: 1rem auto 0;
+  gap: 5px;	
   display: grid;
-  gap: 20px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -542,7 +542,7 @@ strong, b {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;	
   width: 100%;
   max-width: 280px;     /* flexible card */
   margin: 0 auto;
@@ -581,7 +581,7 @@ strong, b {
   .TypesCat,
   .AutoCat,
   .DevOpsCat {
-    width: 320px;
+    width: 380px;
     height: auto;
     margin-bottom: 30px;
   }
@@ -590,8 +590,8 @@ strong, b {
   .TypesCat img,
   .AutoCat img,
   .DevOpsCat img {
-    width: 100%;
-    max-height: 256px;
+    width: 350px;
+    max-height: auto;
     padding: 2px;
   }
 
