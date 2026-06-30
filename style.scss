@@ -573,7 +573,7 @@ strong, b {
   .CategoryContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 380px;
     margin-left: 35px; /* your original mobile spacing */
   }
 
@@ -592,6 +592,7 @@ strong, b {
   .DevOpsCat img {
     width: 350px;
     max-height: auto;
+	margin: 0 auto;  
     padding: 2px;
   }
 
