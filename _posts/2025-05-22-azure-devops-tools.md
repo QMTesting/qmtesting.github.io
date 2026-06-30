@@ -28,8 +28,8 @@ Unlock the power of seamless software development and deployment with the ultima
 Azure Repos serves as a comprehensive source control management system enabling code management, collaboration, and application build and deployment. Supporting both Git and Team Foundation Version Control (TFVC) systems, Azure Repos facilitates seamless code management, fostering collaboration and effortless integration with other Azure DevOps tools. Here are the benefits it brings to the Software Development Life Cycle (SDLC):
 
 ### 1. Parallel Development and Conflict Minimization:
--By utilizing branching strategies within Azure Repos, teams can work on features independently.
--This promotes parallel development and minimizes conflicts during code merges.
+- By using branching strategies within Azure Repos, teams can work on features independently.
+- This promotes parallel development and minimizes conflicts during code merges.
 
 ### 2. Version Control and Collaboration:
 - Azure Repos ensures that your codebase is well-managed and versioned.
