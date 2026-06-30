@@ -399,7 +399,8 @@ strong, b {
 
   /* Search input field */
   #mobile-search-input {
-    flex: 1.4;
+	max-width: 175px; 
+	width: 100%;  
     padding: 10px;
     font-size: 18px;
     border: 2px solid #bc960d;
