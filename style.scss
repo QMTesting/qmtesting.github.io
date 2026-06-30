@@ -323,6 +323,18 @@ strong, b {
     display: none !important;
   }
 
+ #mobile-search-close {
+  max-width: 32px;
+  height: auto;	
+  padding: 3px;	 
+}
+
+#mobile-submit-btn {
+  max-width: 32px;
+  height: auto;	
+  padding: 3px;	 
+}	
+
   /* Hamburger icon */
   .hamburger {
     font-size: 30px;
