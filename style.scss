@@ -1157,6 +1157,7 @@ pre.highlight {
   position: relative;
   padding-top: 30px; /* pushes code text down */
   margin-top: 0;
+  background: white;	
 }
 
 /* Copy button styling */
@@ -1166,9 +1167,9 @@ pre.highlight {
   right: 0; /* stays at far right */
   padding: 0; /* removes extra space */
   background-color: #f5f5f5; /* optional for visibility */
-  border: none;
   font-size: 12px;
   cursor: pointer;
+  border: 1px solid; 	
 }
 
 /* Optional mobile adjustment */
