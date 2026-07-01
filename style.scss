@@ -1159,6 +1159,9 @@ h4 {
   overflow-x: auto;
   padding-top: 10px;
   background: #f8f8f8;
+  overflow-x: auto !important;
+  overflow-y: hidden !important; /* ✅ Remove vertical scrollbar */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */	
 }
 
 /* Code block container */
@@ -1171,7 +1174,7 @@ pre.highlight {
   background: white;	
   overflow-x: auto;     /* enables horizontal scrolling */
   white-space: pre;     /* preserves formatting */
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+ 
 }
 
 
