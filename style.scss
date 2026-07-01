@@ -1154,12 +1154,11 @@ h4 {
 
 .code-wrapper {
   display: flex;
-  justify-content: flex-end;   /* button stays on the right */
-  align-items: flex-start;      /* button stays at the top */
-  overflow-x: auto;             /* horizontal scrolling */
-  position: relative;
+  align-items: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 10px;
   background: #f8f8f8;
-  padding-top: 10px;            /* space above code */
 }
 
 /* Code block container */
@@ -1178,7 +1177,7 @@ pre.highlight {
 
 
 /* Make the code block scroll with the wrapper */
-.code-wrapper pre.highlight {
+.code-wrapper pre {
   margin: 0;
   white-space: pre;
 }
@@ -1201,17 +1200,6 @@ pre.highlight {
   cursor: pointer;
   flex-shrink: 0;               /* prevents button from shrinking */
   margin-right: 10px;           /* spacing before code */	
-}
-
-
-/* Optional mobile adjustment */
-@media (max-width: 768px) {
-  pre.highlight {
-    padding-top: 35px; /* slightly more space for smaller screens */
-  }
-  .copy-btn {
-    font-size: 11px;
-  }
 }
 
 
