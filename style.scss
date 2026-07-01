@@ -1156,23 +1156,20 @@ h4 {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  overflow-x: auto;
+  overflow-x: auto;     /* only this scrolls */
   padding-top: 10px;
   background: #f8f8f8;
 }
 
-/* Code block container */
 pre.highlight {
-  position: relative;
-  padding-top: 30px; /* pushes code text down */
+  margin: 0;
+  padding-top: 30px;
   padding-left: 15px;
-  padding-bottom: 15px;	
-  margin-top: 0;
-  background: white;	
-  overflow-x: auto;     /* enables horizontal scrolling */
-  white-space: pre;     /* preserves formatting */
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  padding-bottom: 15px;
+  background: white;
+  white-space: pre;
 }
+
 
 
 
