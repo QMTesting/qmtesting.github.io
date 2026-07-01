@@ -1152,50 +1152,36 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
-div.highlight {
-  background: #f5f5f5 !important;
-  border: 1px solid #ccc !important;
-  border-radius: 6px !important;
-  padding: 10px !important;	
-  padding-right: 0px !important; 	
-  margin: 1em 0 !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
-	
+/* Code block container */
+pre.highlight {
+  position: relative;
+  padding-top: 30px; /* pushes code text down */
+  margin-top: 0;
 }
 
-div.highlight pre,
-div.highlight code {
-  background-color: transparent !important;
-}
-
+/* Copy button styling */
 .copy-btn {
   position: absolute;
-  background: #808080;
-  color: white;
-  border: 2px solid #D3D3D3;
-  height: 30px;
-  font-weight: 900;
-  border-radius: 4px;
-  font-family: "Montserrat", sans-serif !important;
-  transition: background 0.3s ease;
-  top: 0px !important;
-  right: 0px !important;	
-  padding: 0px;	
-  z-index: 9999; 
-  margin-bottom: 30px;	
+  top: 0; /* stays at very top */
+  right: 0; /* stays at far right */
+  padding: 0; /* removes extra space */
+  background-color: #f5f5f5; /* optional for visibility */
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
 }
-/* Programming Code Script to be Copied */
-#text {
-	 margin-top: 30px;
-}	
+
+/* Optional mobile adjustment */
+@media (max-width: 768px) {
+  pre.highlight {
+    padding-top: 35px; /* slightly more space for smaller screens */
+  }
+  .copy-btn {
+    font-size: 11px;
+  }
+}
 
 
-.copy-btn:hover {
-  background: #808080;
-  color: white;
-}
 
 /************************************/
 /* MISC FIXES */
