@@ -1162,7 +1162,7 @@ h4 {
 }
 
 /* Code block container */
-pre.highlight {
+  pre.highlight {
   position: relative;
   padding-top: 30px; /* pushes code text down */
   padding-left: 15px;
@@ -1174,15 +1174,11 @@ pre.highlight {
   -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
 }
 
-
-
 /* Make the code block scroll with the wrapper */
 .code-wrapper pre {
   margin: 0;
   white-space: pre;
 }
-
-
 
 /* Copy button styling */
 .copy-btn {
