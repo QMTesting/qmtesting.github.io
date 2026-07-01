@@ -119,7 +119,7 @@ Azure DevOps exposes the following endpoints for test management:
 </table>
 </div>
 
-All examples below use **API version 7.1-preview** (current as of 2025).
+All examples below use **API version 7.1-preview**.
 
 
 ## 🧩 **4. Full PowerShell Script: Create Test Plans, Suites, and Link Test Cases**
@@ -135,7 +135,7 @@ This script:
 It includes improved error handling, logging, and naming conventions.
 
 
-## **PowerShell Script (2025 Updated Version)**
+## **PowerShell Script**
 
 ```powershell
 # ==========================================
