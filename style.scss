@@ -1186,21 +1186,19 @@ pre.highlight {
 
 /* Copy button styling */
 .copy-btn {
-  position: absolute;
-  top: 0; /* stays at very top */
-  right: 0; /* stays at far right */
-  padding: 4px 10px; /* removes extra space */
-  background-color: #f5f5f5; /* optional for visibility */
+  padding: 4px 10px;
+  background-color: #f5f5f5;
   font-size: 16px;
-  border: 2px solid #ccc; 
+  border: 2px solid #ccc;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   border-radius: 4px;
   color: #333;
   font-weight: 700;
   cursor: pointer;
-  flex-shrink: 0;               /* prevents button from shrinking */
-  margin-right: 10px;           /* spacing before code */	
+  flex-shrink: 0;
+  margin-right: 10px;
 }
+
 
 
 
