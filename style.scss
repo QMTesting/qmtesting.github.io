@@ -1156,18 +1156,25 @@ h4 {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  overflow-x: auto;     /* only this scrolls */
+  overflow-x: auto;
   padding-top: 10px;
   background: #f8f8f8;
 }
 
+/* Code block container */
 pre.highlight {
-  margin: 0;
-  padding-top: 30px;
+  position: relative;
+  padding-top: 30px; /* pushes code text down */
   padding-left: 15px;
-  padding-bottom: 15px;
-  background: white;
+  padding-bottom: 15px;	
+  margin-top: 0;
+  background: white;	
+  overflow-x: auto;     /* enables horizontal scrolling */
+  white-space: pre;     /* preserves formatting */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
 }
+
+
 
 /* Make the code block scroll with the wrapper */
 .code-wrapper pre {
@@ -1175,20 +1182,25 @@ pre.highlight {
   white-space: pre;
 }
 
+
+
 /* Copy button styling */
 .copy-btn {
-  padding: 4px 10px;
-  background-color: #f5f5f5;
+  position: relative;
+  top: 0; /* stays at very top */
+  right: 0; /* stays at far right */
+  padding: 4px 10px; /* removes extra space */
+  background-color: #f5f5f5; /* optional for visibility */
   font-size: 16px;
-  border: 2px solid #ccc;
+  border: 2px solid #ccc; 
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   border-radius: 4px;
   color: #333;
   font-weight: 700;
   cursor: pointer;
-  flex-shrink: 0;
-  margin-right: 10px;
-}
+  flex-shrink: 0;               /* prevents button from shrinking */
+  margin-right: 10px;           /* spacing before code */	
+}                                                                                                                                                                                     I updated the Js code as you mentioned above.
 
 
 /************************************/
