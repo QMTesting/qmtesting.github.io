@@ -18,8 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Make the parent <pre> relative so button positions correctly
     const pre = codeBlock.parentNode;
-    pre.style.position = "relative";
-    pre.appendChild(button);
+
+    // Create wrapper
+    const wrapper = document.createElement("div");
+    wrapper.className = "code-wrapper";
+    
+    // Insert wrapper before <pre>
+    pre.parentNode.insertBefore(wrapper, pre);
+    
+    // Move <pre> inside wrapper
+    wrapper.appendChild(pre);
+    
+    // Add button inside wrapper (NOT inside <pre>)
+    wrapper.appendChild(button);
+
 
     // Copy code to clipboard
     button.addEventListener("click", () => {
