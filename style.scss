@@ -1152,6 +1152,16 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
+.code-wrapper {
+  display: flex;
+  justify-content: flex-end;   /* button stays on the right */
+  align-items: flex-start;      /* button stays at the top */
+  overflow-x: auto;             /* horizontal scrolling */
+  position: relative;
+  background: #f8f8f8;
+  padding-top: 10px;            /* space above code */
+}
+
 /* Code block container */
 pre.highlight {
   position: relative;
@@ -1167,6 +1177,14 @@ pre.highlight {
 
 
 
+/* Make the code block scroll with the wrapper */
+.code-wrapper pre.highlight {
+  margin: 0;
+  white-space: pre;
+}
+
+
+
 /* Copy button styling */
 .copy-btn {
   position: absolute;
@@ -1175,13 +1193,16 @@ pre.highlight {
   padding: 4px 10px; /* removes extra space */
   background-color: #f5f5f5; /* optional for visibility */
   font-size: 16px;
-  cursor: pointer;
   border: 2px solid #ccc; 
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   border-radius: 4px;
   color: #333;
-  font-weight: 700;	
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;               /* prevents button from shrinking */
+  margin-right: 10px;           /* spacing before code */	
 }
+
 
 /* Optional mobile adjustment */
 @media (max-width: 768px) {
