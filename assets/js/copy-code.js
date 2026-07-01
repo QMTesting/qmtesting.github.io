@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.style.position = "absolute";
     button.style.right = "0px";
     button.style.top = "0px";
-    button.style.padding = "2px 2px";
+    button.style.padding = "0px 0px";
     button.style.fontSize = "12px";
     button.style.cursor = "pointer";
 
