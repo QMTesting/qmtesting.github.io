@@ -1185,7 +1185,8 @@ pre.highlight {
 
 
 /* Copy button styling */
-.copy-btn {	
+.copy-btn {
+  position: relative;	
   padding: 4px 10px; /* removes extra space */
   background-color: #f5f5f5; /* optional for visibility */
   font-size: 16px;
