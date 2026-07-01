@@ -1153,33 +1153,26 @@ h4 {
 /************************************/
 
 .code-wrapper {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: nowrap;
   align-items: flex-start;
   gap: 10px;
-  overflow-x: auto;     /* only this scrolls */
+  overflow-x: auto;
   padding-top: 10px;
   background: #f8f8f8;
+  width: 100%;
 }
 
-pre.highlight {
+.code-wrapper pre {
   margin: 0;
   padding-top: 30px;
   padding-left: 15px;
   padding-bottom: 15px;
   background: white;
   white-space: pre;
+  flex-shrink: 0;
+  min-width: max-content;
 }
-
-
-
-
-/* Make the code block scroll with the wrapper */
-.code-wrapper pre {
-  margin: 0;
-  white-space: pre;
-}
-
-
 
 /* Copy button styling */
 .copy-btn {
@@ -1195,8 +1188,6 @@ pre.highlight {
   flex-shrink: 0;
   margin-right: 10px;
 }
-
-
 
 
 /************************************/
