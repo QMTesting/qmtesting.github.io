@@ -1152,26 +1152,28 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
+Now the wrapper nor pre.highlight does not scroll at the and the text spills of the pre.highlight  canvas on the right. Here is my current CSS:
 .code-wrapper {
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
   align-items: flex-start;
   gap: 10px;
-  overflow-x: auto;
+  overflow-x: auto;     /* only this scrolls */
   padding-top: 10px;
   background: #f8f8f8;
-  width: 100%;
 }
 
-.code-wrapper pre {
+pre.highlight {
   margin: 0;
   padding-top: 30px;
   padding-left: 15px;
   padding-bottom: 15px;
   background: white;
+}
+
+/* Make the code block scroll with the wrapper */
+.code-wrapper pre {
+  margin: 0;
   white-space: pre;
-  flex-shrink: 0;
-  min-width: max-content;
 }
 
 /* Copy button styling */
