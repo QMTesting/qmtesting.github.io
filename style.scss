@@ -1160,7 +1160,12 @@ pre.highlight {
   padding-bottom: 15px;	
   margin-top: 0;
   background: white;	
+  overflow-x: auto;     /* enables horizontal scrolling */
+  white-space: pre;     /* preserves formatting */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
 }
+
+
 
 /* Copy button styling */
 .copy-btn {
