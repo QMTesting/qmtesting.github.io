@@ -116,7 +116,6 @@ Be aware of these common mistakes:
 
 AI output should always be validated against real system behavior and business rules.
 
-
 ## How to Start Using AI for Test Case Creation
 
 If you're new to AI-assisted test design, start small:
