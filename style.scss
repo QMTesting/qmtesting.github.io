@@ -1585,6 +1585,12 @@ table th {
   border-collapse: collapse;
 }
 
+/* Preserve white spaces */
+.highlight pre {
+  white-space: pre !important;
+}
+
+
 
 
 
