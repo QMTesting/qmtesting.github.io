@@ -1153,8 +1153,15 @@ h4 {
 /************************************/
 
 .code-wrapper {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5em;	
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
+
+.code-wrapper .highlight pre {
+  min-width: max-content;
+}
+
 
 .code-wrapper .copy-btn {
   display: block;
