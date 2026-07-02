@@ -1156,13 +1156,36 @@ h4 {
   margin: 1em 0;
 }
 
-
+/* Button centered above */
+.copy-btn {
+  display: block;
+  margin: 0 auto 6px auto;
+  padding: 4px 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
 
 /* Scrollable code area */
 .code-wrapper {
   overflow-x: auto;
   background: #f8f8f8;
 }
+
+/* Code block styling */
+.code-wrapper pre.highlight {
+  margin: 0;
+  padding: 15px;
+  background: white;
+  white-space: pre;
+  min-width: max-content; /* enables horizontal scroll */
+}
+
 
 /* Code block container */
 pre.highlight {
@@ -1179,21 +1202,6 @@ pre.highlight {
   -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */	
 }
 
-/* Button centered above */
-.copy-btn {
-  display: inline-block;
-  margin: 0 auto 6px auto;
-  padding: 4px 10px;
-  background-color: #f5f5f5;
-  font-size: 14px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  color: #333;
-  font-weight: 600;
-  cursor: pointer;
-  display: block;          /* allows centering with margin: 0 auto */
-  text-align: center;
-}
 
 
 /************************************/
