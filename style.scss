@@ -1152,7 +1152,29 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
-/* PLACE HOLDER */
+.copy-btn {
+  display: block;
+  margin: 0 auto 6px auto;
+  padding: 4px 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Scrollable code area */
+.highlight pre {
+  overflow-x: auto;
+  white-space: pre;
+  background: white;
+  padding: 15px;
+  min-width: max-content; /* enables horizontal scroll */
+}
+
 
 
 /************************************/
