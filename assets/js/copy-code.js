@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       navigator.clipboard.writeText(code.innerText).then(() => {
         button.innerText = "Copied!";
-        setTimeout(() => (button.innerText = "Copy"), 2000);
+        setTimeout(() => {
+          button.innerText = "Copy";
+        }, 2000);
+
       });
     });
   });
