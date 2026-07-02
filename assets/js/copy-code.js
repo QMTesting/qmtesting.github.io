@@ -2,13 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const blocks = document.querySelectorAll(".entry .highlight");
 
   blocks.forEach((block) => {
+    // Create wrapper
+    const wrapper = document.createElement("div");
+    wrapper.className = "code-wrapper";
+
+    // Insert wrapper before the highlight block
+    block.parentNode.insertBefore(wrapper, block);
+    wrapper.appendChild(block);
+
     // Create button
     const button = document.createElement("button");
     button.className = "copy-btn";
     button.innerText = "Copy";
 
     // Insert button ABOVE the highlight block
-    block.parentNode.insertBefore(button, block);
+    wrapper.insertBefore(button, block);
 
     // Copy logic
     const code = block.querySelector("code");
@@ -18,9 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           button.innerText = "Copy";
         }, 2000);
-
       });
     });
   });
 });
-
