@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Target all code blocks inside posts
   const codeBlocks = document.querySelectorAll(".post pre > code");
 
   codeBlocks.forEach((codeBlock) => {
