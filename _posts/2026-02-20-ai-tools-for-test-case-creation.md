@@ -55,16 +55,18 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
 ### User Story
 
-
+```
     
 
     As a registered user,
     I want to reset my password via email,
     So that I can regain access if I forget it.
 
+```
+
 ### Example Prompt
 
-
+```
     
     
     Act as a QA engineer.
@@ -78,6 +80,8 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
     Cover positive, negative, and edge cases for a web application.
 
+```
+
 ### Typical AI-Generated Scenarios
 
 An AI tool will often suggest scenarios such as:
@@ -90,7 +94,6 @@ An AI tool will often suggest scenarios such as:
 
 These drafts can significantly reduce writing time. However, authentication and security-related features must always be reviewed carefully for accuracy and compliance.
 
----
 
 ## Example 2: Using AI for Boundary and Edge Case Testing
 
