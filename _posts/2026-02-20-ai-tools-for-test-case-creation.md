@@ -62,8 +62,7 @@ Generate functional test cases including:
 - Steps
 - Expected Result
 
-  Cover positive, negative, and edge cases for a web application.
-
+Cover positive, negative, and edge cases for a web application.
 
 ### Typical AI-Generated Scenarios
 
