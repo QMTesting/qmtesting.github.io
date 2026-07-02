@@ -1152,11 +1152,6 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
-.code-block-container {
-  margin: 1em 0;
-}
-
-/* Button centered above */
 .copy-btn {
   display: block;
   margin: 0 auto 6px auto;
@@ -1172,20 +1167,13 @@ h4 {
 }
 
 /* Scrollable code area */
-.code-wrapper {
+.highlight pre {
   overflow-x: auto;
-  background: #f8f8f8;
-}
-
-/* Existing highlight block inside wrapper */
-.code-wrapper .highlight pre.highlight {
-  margin: 0;
-  padding: 15px;
-  background: white;
   white-space: pre;
-  min-width: max-content;
+  background: white;
+  padding: 15px;
+  min-width: max-content; /* enables horizontal scroll */
 }
-
 
 /************************************/
 /* MISC FIXES */
