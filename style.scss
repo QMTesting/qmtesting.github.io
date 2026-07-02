@@ -1158,7 +1158,6 @@ h4 {
 
 /* Button centered above */
 .copy-btn {
-  position: relative;	
   display: block;
   margin: 0 auto 6px auto;
   padding: 4px 10px;
@@ -1178,31 +1177,14 @@ h4 {
   background: #f8f8f8;
 }
 
-/* Code block styling */
-.code-wrapper pre.highlight {
+/* Existing highlight block inside wrapper */
+.code-wrapper .highlight pre.highlight {
   margin: 0;
   padding: 15px;
   background: white;
   white-space: pre;
-  min-width: max-content; /* enables horizontal scroll */
+  min-width: max-content;
 }
-
-
-/* Code block container */
-pre.highlight {
-  position: relative;
-  padding-top: 30px; /* pushes code text down */
-  padding-left: 15px;
-  padding-bottom: 15px;	
-  padding-right: 15px;		
-  margin-top: 0;
-  background: white;	
-  white-space: pre;     /* preserves formatting */
-  overflow-x: auto !important;
-  overflow-y: hidden !important; /* ✅ Remove vertical scrollbar */
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */	
-}
-
 
 
 /************************************/
