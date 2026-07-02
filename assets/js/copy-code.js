@@ -1,40 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Target all code blocks inside posts
   const codeBlocks = document.querySelectorAll(".post pre > code");
 
   codeBlocks.forEach((codeBlock) => {
     const pre = codeBlock.parentNode;
 
-    // Create wrapper
-    const wrapper = document.createElement("div");
-    wrapper.className = "code-wrapper";
+    // Create outer container for button + code
+    const container = document.createElement("div");
+    container.className = "code-block-container";
 
-    // Insert wrapper before <pre>
-    pre.parentNode.insertBefore(wrapper, pre);
+    // Insert container before <pre>
+    pre.parentNode.insertBefore(container, pre);
 
-    // Move <pre> inside wrapper
-    wrapper.appendChild(pre);
-
-    // Create copy button
+    // Create copy button (above)
     const button = document.createElement("button");
     button.innerText = "Copy";
     button.className = "copy-btn";
+    container.appendChild(button);
 
-    // Add button inside wrapper (NOT inside <pre>)
-    wrapper.appendChild(button);
+    // Create scrollable wrapper for code
+    const wrapper = document.createElement("div");
+    wrapper.className = "code-wrapper";
+    container.appendChild(wrapper);
 
-    // Copy code to clipboard
+    // Move <pre> into wrapper
+    wrapper.appendChild(pre);
+
+    // Copy logic
     button.addEventListener("click", () => {
       navigator.clipboard.writeText(codeBlock.innerText).then(() => {
         button.innerText = "Copied!";
         setTimeout(() => (button.innerText = "Copy"), 2000);
       });
-    });
-
-    // ⭐ Follow-the-scroll logic (keeps button in visible top-right)
-    wrapper.addEventListener("scroll", () => {
-      const scrollLeft = wrapper.scrollLeft;
-      button.style.transform = `translateX(${scrollLeft}px)`;
     });
   });
 
