@@ -1152,7 +1152,11 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
-.copy-btn {
+.code-wrapper {
+  margin-bottom: 1.5em;
+}
+
+.code-wrapper .copy-btn {
   display: block;
   margin: 0 auto 6px auto;
   padding: 4px 10px;
@@ -1174,6 +1178,8 @@ h4 {
   padding: 15px;
   min-width: max-content; /* enables horizontal scroll */
 }
+
+
 
 
 /************************************/
