@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const blocks = document.querySelectorAll(".entry .highlight");
 
