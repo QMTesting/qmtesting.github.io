@@ -1152,15 +1152,43 @@ h4 {
 /* CODE BLOCKS                      */
 /************************************/
 
-.code-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  overflow-x: auto;
-  padding-top: 10px;
-  background: #f8f8f8;
-  
+.code-block-container {
+  margin: 1em 0;
 }
+
+/* Button centered above */
+.copy-btn {
+  display: inline-block;
+  margin: 0 auto 6px auto;
+  padding: 4px 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;          /* allows centering with margin: 0 auto */
+  text-align: center;
+}
+
+/* Scrollable code area */
+.code-wrapper {
+  overflow-x: auto;
+  background: #f8f8f8;
+}
+
+/* Code block styling */
+.highlight {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  background: white;
+  white-space: pre;
+  min-width: max-content;  /* scroll when lines are long */
+}
+
 
 /* Code block container */
 pre.highlight {
@@ -1176,32 +1204,6 @@ pre.highlight {
   overflow-y: hidden !important; /* ✅ Remove vertical scrollbar */
   -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */	
 }
-
-
-
-/* Make the code block scroll with the wrapper */
-.code-wrapper pre {
-  margin: 0;
-  white-space: pre;
-}
-
-
-
-/* Copy button styling */
-.copy-btn {
-  position: relative;	
-  padding: 4px 10px; /* removes extra space */
-  background-color: #f5f5f5; /* optional for visibility */
-  font-size: 16px;
-  border: 2px solid #ccc; 
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  border-radius: 4px;
-  color: #333;
-  font-weight: 700;
-  cursor: pointer;
-  flex-shrink: 0;               /* prevents button from shrinking */
-  margin-right: 10px;           /* spacing before code */	
-}                                    
 
 
 /************************************/
