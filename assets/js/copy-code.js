@@ -37,4 +37,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Copy buttons added to code blocks:", codeBlocks.length);
 });
-
