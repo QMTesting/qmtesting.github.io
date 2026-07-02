@@ -55,10 +55,7 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
 ### User Story
 
-
-
-
-
+    <br><br><br><br>
 
     As a registered user,
     I want to reset my password via email,
@@ -66,11 +63,8 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
 ### Example Prompt
 
-
-
-
-
-
+    <br><br><br><br>
+    
     Act as a QA engineer.
 
     Generate functional test cases including:
@@ -102,7 +96,7 @@ These drafts can significantly reduce writing time. However, authentication and 
 
 ```
 
-
+    <br><br><br><br>
 
     "The username must be between 3 and 20 characters and may contain
       letters, digits, underscores, and periods."
