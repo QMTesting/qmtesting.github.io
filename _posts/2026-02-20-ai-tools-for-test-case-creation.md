@@ -57,18 +57,15 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
 
 ```
     
-
     As a registered user,
     I want to reset my password via email,
     So that I can regain access if I forget it.
-
 ```
 
 ### Example Prompt
 
 ```
-    
-    
+        
     Act as a QA engineer.
 
     Generate functional test cases including:
@@ -79,7 +76,6 @@ AI generates possibilities quickly. Human expertise ensures correctness, feasibi
     - Expected Result
 
     Cover positive, negative, and edge cases for a web application.
-
 ```
 
 ### Typical AI-Generated Scenarios
@@ -100,7 +96,6 @@ These drafts can significantly reduce writing time. However, authentication and 
 ### Requirement
 
 ```
-
 
     "The username must be between 3 and 20 characters and may contain
       letters, digits, underscores, and periods."
