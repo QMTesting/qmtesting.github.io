@@ -292,14 +292,43 @@ By detecting issues early and minimizing rework, the STLC significantly lowers t
 
 Here’s how STLC activities align with SDLC phases:
 
-| **SDLC Stage**             | **STLC Activity**                                                                                              |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| 📋 Requirement Gathering   | Requirement Analysis - Identifying testable requirements and planning test coverage.                           |
-| 🏗 System Design           | Test Planning - Developing the testing strategy, estimating resources, and defining test objectives.           |
-| 💻 Development             | Test Case Development - Creating test cases that will validate each functional and non-functional requirement. |
-| 🔍 Integration and Testing | Test Execution - Executing test cases, logging defects, and validating functionality and performance.          |
-| 🚀 Deployment              | Test Cycle Closure - Analyzing test results, documenting best practices, and ensuring release readiness.       |
-| 🔧 Maintenance             | Regression Testing - Retesting the software after updates to ensure no new defects are introduced.             |
+<div class="table-scroll"> 
+  <table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">SDLC Stage</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">STLC Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>📋 Requirement Gathering</td>
+      <td>Requirement Analysis - Identifying testable requirements and planning test coverage.</td>
+    </tr>
+    <tr>
+      <td>🏗 System Design</td>
+      <td>Test Planning - Developing the testing strategy, estimating resources, and defining test objectives.</td>
+    </tr>
+    <tr>
+      <td>💻 Development</td>
+      <td>Test Case Development - Creating test cases that validate each functional and non-functional requirement.</td>
+    </tr>
+    <tr>
+      <td>🔍 Integration and Testing</td>
+      <td>Test Execution - Executing test cases, logging defects, and validating functionality and performance.</td>
+    </tr>
+    <tr>
+      <td>🚀 Deployment</td>
+      <td>Test Cycle Closure - Analyzing test results, documenting best practices, and ensuring release readiness.</td>
+    </tr>
+    <tr>
+      <td>🔧 Maintenance</td>
+      <td>Regression Testing - Retesting the software after updates to ensure no new defects are introduced.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ## 🧠 Conclusion
 The Software Testing Life Cycle (STLC) is a structured framework that enhances testing efficiency, enables defect detection, and ensures software quality before release. By following each phase of the STLC, adopting best practices, and involving the right team members, organizations can deliver reliable, high-quality software that meets user expectations. Incorporating the STLC into your development workflow is a key step toward achieving excellence in software quality and building user trust.
