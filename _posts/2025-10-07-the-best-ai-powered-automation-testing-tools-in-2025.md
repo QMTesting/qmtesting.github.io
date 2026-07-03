@@ -185,14 +185,51 @@ ReportPortal is an AI-powered test reporting and analysis tool that helps QA tea
 ## 📊 Comparison of AI Testing Tools
 To help you quickly evaluate your AI-powered QA testing tool options and choose one that is best for your team, here’s a side-by-side comparison of the top AI testing tools. It highlights their main strengths and best use cases.
 
-| **Tool**                | **Best For**             | **Key AI Features**                                                  |
-| ------------------- | -------------------- | ---------------------------------------------------------------- |
-| **TestDriver.ai**   | Web, desktop, mobile | Selectorless AI automation, NLP test authoring, visual debugging |
-| **CodeceptJS + AI** | Web testing          | AI self-healing, test generation, multi-engine support           |
-| **Stagehand**       | Web UI (Playwright)  | AI-assisted authoring, self-healing selectors                    |
-| **testRigor**       | Web, mobile, API     | Natural language test creation, reusable steps                   |
-| **ACCELQ**          | Enterprise QA        | Codeless AI automation, end-to-end coverage                      |
-| **Alumnium**        | Selenium users       | AI-powered locator healing, test analytics                       |
+
+<div class="table-scroll"> 
+  <table border="2" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Tool</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Best For</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Key AI Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>TestDriver.ai</strong></td>
+      <td>Web, desktop, mobile</td>
+      <td>Selectorless AI automation, NLP test authoring, visual debugging</td>
+    </tr>
+    <tr>
+      <td><strong>CodeceptJS + AI</strong></td>
+      <td>Web testing</td>
+      <td>AI self-healing, test generation, multi-engine support</td>
+    </tr>
+    <tr>
+      <td><strong>Stagehand</strong></td>
+      <td>Web UI (Playwright)</td>
+      <td>AI-assisted authoring, self-healing selectors</td>
+    </tr>
+    <tr>
+      <td><strong>testRigor</strong></td>
+      <td>Web, mobile, API</td>
+      <td>Natural language test creation, reusable steps</td>
+    </tr>
+    <tr>
+      <td><strong>ACCELQ</strong></td>
+      <td>Enterprise QA</td>
+      <td>Codeless AI automation, end-to-end coverage</td>
+    </tr>
+    <tr>
+      <td><strong>Alumnium</strong></td>
+      <td>Selenium users</td>
+      <td>AI-powered locator healing, test analytics</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 
 
