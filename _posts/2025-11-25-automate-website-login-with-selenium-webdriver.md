@@ -167,12 +167,39 @@ These can be created manually using your own browser and IDE.
 
 To interact with elements, Selenium provides locator strategies:
 
-| Locator Type     | Example                               | When to Use                  |
-| ---------------- | ------------------------------------- | ---------------------------- |
-| **ID**           | `By.id("username")`                   | Most reliable and preferred  |
-| **Name**         | `By.name("LOGIN")`                    | Good when ID isn’t available |
-| **CSS Selector** | `By.cssSelector("#username")`         | Flexible, fast               |
-| **XPath**        | `By.xpath("//input[@id='username']")` | Complex or dynamic elements  |
+<div class="table-scroll"> 
+  <table border="2" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Locator Type</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">Example</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">When to Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ID</strong></td>
+      <td><code>By.id("username")</code></td>
+      <td>Most reliable and preferred</td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td><code>By.name("LOGIN")</code></td>
+      <td>Good when ID isn’t available</td>
+    </tr>
+    <tr>
+      <td><strong>CSS Selector</strong></td>
+      <td><code>By.cssSelector("#username")</code></td>
+      <td>Flexible, fast</td>
+    </tr>
+    <tr>
+      <td><strong>XPath</strong></td>
+      <td><code>By.xpath("//input[@id='username']")</code></td>
+      <td>Complex or dynamic elements</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 ## Common Challenges (And Solutions)
@@ -193,6 +220,8 @@ Chrome versions frequently update—use WebDriverManager or built‑in driver su
 ## TestNG Version of the Login Script
 
 ```java
+
+
 package PackageLogin;
 
 import org.openqa.selenium.By;
