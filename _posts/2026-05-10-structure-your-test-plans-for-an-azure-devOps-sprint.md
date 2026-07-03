@@ -99,6 +99,8 @@ Execution records that capture pass/fail results.
 Here is the structure that works best for most Agile teams:
 
 ```
+
+
 Sprint 5 – Authentication & Dashboard (Test Plan)
 │
 ├── User Story Suites (Requirement-based)
@@ -269,6 +271,8 @@ Automation should support your sprint — not clutter your test plan.
 (Kept short here since the blog’s focus is structure, not automation.)
 
 ```yaml
+
+
 - task: PublishTestResults@2
   inputs:
     testResultsFiles: '**/test-output/testng-results.xml'
