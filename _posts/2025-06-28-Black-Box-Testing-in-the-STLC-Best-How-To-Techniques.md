@@ -56,9 +56,9 @@ QA teams adopt Black Box Testing because it helps simulate **real user behavior*
 <div class="table-scroll">
 <table>
   <thead>
-    <tr style="background-color: #bc960d; color: #ffffff;">
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;>Type</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;>Purpose</th>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Type</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">Purpose</th>
     </tr>
   </thead>
   <tbody>
@@ -143,12 +143,35 @@ Here’s a practical process QA teams can adopt when conducting Black Box Testin
 
 ## ⚖️ Strengths and Challenges
 
-| **Strengths**                                        | **Challenges**                                        |
-|------------------------------------------------------|-------------------------------------------------------|
-| Can be conducted without knowing internal code       | May not detect hidden logic or structural bugs        |
-| Highly relevant for user-facing features             | Test design depends heavily on clear specifications   |
-| Allows non-developers to contribute to testing       | Can be time-consuming to cover all input combinations |
-| Supports automation of repetitive tasks              | Hard to pinpoint root causes without internal insights|
+<div class="table-scroll"> 
+  <table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">Strengths</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">Challenges</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Can be conducted without knowing internal code</td>
+      <td>May not detect hidden logic or structural bugs</td>
+    </tr>
+    <tr>
+      <td>Highly relevant for user-facing features</td>
+      <td>Test design depends heavily on clear specifications</td>
+    </tr>
+    <tr>
+      <td>Allows non-developers to contribute to testing</td>
+      <td>Can be time-consuming to cover all input combinations</td>
+    </tr>
+    <tr>
+      <td>Supports automation of repetitive tasks</td>
+      <td>Hard to pinpoint root causes without internal insights</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ## 🧩 How to Maximize Its Effectiveness
 
