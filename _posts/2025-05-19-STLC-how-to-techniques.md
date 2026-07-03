@@ -297,7 +297,7 @@ Here’s how STLC activities align with SDLC phases:
   <thead>
     <tr>
       <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">SDLC Stage</th>
-      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;">STLC Activity</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;">STLC Activity</th>
     </tr>
   </thead>
   <tbody>
