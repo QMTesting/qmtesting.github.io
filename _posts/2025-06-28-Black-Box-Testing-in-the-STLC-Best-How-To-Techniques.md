@@ -53,15 +53,42 @@ QA teams adopt Black Box Testing because it helps simulate **real user behavior*
 - Teams working on external-facing and business-critical systems
 
 ## 🧰 Common Types of Black Box Testing
-
-| **Type**                | **Purpose**                                                                 |
-|-------------------------|------------------------------------------------------------------------------|
-| Functional Testing       | Verifies that features meet intended specifications                         |
-| Non-functional Testing   | Examines performance, scalability, usability, and reliability                |
-| Regression Testing       | Ensures new changes don’t break existing functionality                      |
-| Compatibility Testing    | Confirms software performs across browsers, OS versions, or devices         |
-| End-to-End Testing       | Simulates complete user flows to validate system integration and coherence  |
-| Acceptance Testing       | Validates the system against business requirements and stakeholder approval |
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr style="background-color: #bc960d; color: #ffffff;">
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 175px;>Type</th>
+      <th style="text-align:center; font-weight: 900; background-color: #bc960d; width: 200px;>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Functional Testing</td>
+      <td>Verifies that features meet intended specifications</td>
+    </tr>
+    <tr>
+      <td>Non-functional Testing</td>
+      <td>Examines performance, scalability, usability, and reliability</td>
+    </tr>
+    <tr>
+      <td>Regression Testing</td>
+      <td>Ensures new changes don’t break existing functionality</td>
+    </tr>
+    <tr>
+      <td>Compatibility Testing</td>
+      <td>Confirms software performs across browsers, OS versions, or devices</td>
+    </tr>
+    <tr>
+      <td>End-to-End Testing</td>
+      <td>Simulates complete user flows to validate system integration and coherence</td>
+    </tr>
+    <tr>
+      <td>Acceptance Testing</td>
+      <td>Validates the system against business requirements and stakeholder approval</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 Each of these forms addresses a different layer of quality—ranging from system behavior to performance under stress.
 
