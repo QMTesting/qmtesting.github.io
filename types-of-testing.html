@@ -19,6 +19,13 @@ permalink: /types-of-testing/
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  // If user lands on the page without ?page=, force ?page=1
+  const initialParams = new URLSearchParams(window.location.search);
+  if (!initialParams.has("page")) {
+    initialParams.set("page", 1);
+    window.history.replaceState({}, "", `${window.location.pathname}?${initialParams}`);
+  }
+
   const posts = [
     {% assign software_posts = site.posts | where_exp: "post", "post.categories contains 'Types of Testing'" %}
     {% for post in software_posts %}
