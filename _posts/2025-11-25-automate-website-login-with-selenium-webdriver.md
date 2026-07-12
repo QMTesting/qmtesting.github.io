@@ -300,7 +300,7 @@ These help you:
 - Open the browser before tests  
 - Clean up after each test  
 - Avoid copy-paste setup code  
-- Keep your test methods small and clea
+- Keep your test methods small and clean
 
 ## Conclusion
 
