@@ -313,10 +313,5 @@ By following the steps in this guide and using the improved, modern scripts, you
 * An understanding of locators, waits, and best practices
 * A well‑structured workflow for building more complex automated tests
 
-If you’d like, I can also create:
-
-* A downloadable PDF version of this tutorial
-* A version styled specifically for Jekyll or Blogger
-* Additional examples (logout, two‑step login, data‑driven login)
 
   
