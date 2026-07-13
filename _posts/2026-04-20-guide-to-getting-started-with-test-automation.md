@@ -30,7 +30,7 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1
   fetchpriority="high">
 
 
-## Conclusion
+## Introduction
 
 If you’re new to software testing, you’ve probably heard the phrase **test automation** tossed around in team meetings, job descriptions, or DevOps discussions. And if you’re wondering what it actually means — and whether *you* need to learn it — you’re in the right place.
 
