@@ -9,6 +9,7 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/v1785173586/how-to-col
 
 <img 
   src="https://res.cloudinary.com/dig9gupue/image/upload/v1785173586/how-to-collaborate-effectively-with-developers_vgfg88.png"
+  srcset="
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1785173586/how-to-collaborate-effectively-with-developers_vgfg88.png 350w,
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1785173586/how-to-collaborate-effectively-with-developers_vgfg88.png 500w,
     https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1785173586/how-to-collaborate-effectively-with-developers_vgfg88.png 700w
