@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     button.className = "copy-btn";
     button.innerText = "Copy";
 
-    wrapper.style.position = "relative";
+    const highlightBox = wrapper.querySelector(".highlight");
+    if (highlightBox) highlightBox.style.position = "relative";
+
     wrapper.insertBefore(button, wrapper.firstChild);
 
     button.addEventListener("click", () => {
