@@ -112,7 +112,7 @@ Let’s walk through a beginner-friendly example.
 
 This is a full user journey — not just a single feature.
 
-### End-to-End User Journey Flow (Beginner-Friendly Diagram)
+### End-to-End User Journey Flow
 
 ```
 [User Action]
