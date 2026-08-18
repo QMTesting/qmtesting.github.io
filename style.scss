@@ -1169,8 +1169,9 @@ h4 {
 }
 
 .highlight {
-  position: relative;      /* keeps the button inside the white box */
-  text-align: left;        /* forces all text to align left */
+  position: relative;
+  text-align: left;
+  padding-top: 40px; /* adjust this value for spacing below the button */
 }
 
 .copy-btn {
