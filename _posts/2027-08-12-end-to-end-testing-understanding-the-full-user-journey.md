@@ -4,21 +4,21 @@ title: "End-to-End Testing: Understanding the Full User Journey"
 categories: ["Types of Testing"]
 tags: [types of testing, software testing, testing, end-to-end testing, end to end testing, QA, QC, quality assurance, quality control, software quality, static testing, dynamic testing]
 description: "A beginner-friendly guide to end-to-end testing. Learn how end-to-end tests validate full user journeys, ensure system reliability, and improve software quality."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/v1782752919/static-dynamic-testing-simple-explanations-for-new-testers_k8e56g.png"
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1787067255/end-to-end-testing-understanding-the-full-user-journey_ajgrap.webp"
 ---
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/v1782752919/static-dynamic-testing-simple-explanations-for-new-testers_k8e56g.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1787067255/end-to-end-testing-understanding-the-full-user-journey_ajgrap.webp"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1782752919/static-dynamic-testing-simple-explanations-for-new-testers_k8e56g.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1782752919/static-dynamic-testing-simple-explanations-for-new-testers_k8e56g.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1782752919/static-dynamic-testing-simple-explanations-for-new-testers_k8e56g.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1787067255/end-to-end-testing-understanding-the-full-user-journey_ajgrap.webp 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1787067255/end-to-end-testing-understanding-the-full-user-journey_ajgrap.webp 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1787067255/end-to-end-testing-understanding-the-full-user-journey_ajgrap.webp 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"
   height="500"
   loading="lazy"
-  alt="Static vs. Dynamic Testing: Simple Explanations for New Testers"
+  alt="End-to-End Testing: Understanding the Full User Journey"
   fetchpriority="high">
 
 
