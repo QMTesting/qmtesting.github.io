@@ -103,6 +103,7 @@ Let’s walk through a beginner-friendly example.
 
 ### End-to-End User Journey Flow (Beginner-Friendly Diagram)
 
+```
 [User Action]
      ↓
 [Frontend UI]
@@ -114,7 +115,7 @@ Let’s walk through a beginner-friendly example.
 [Third-Party Integrations]
      ↓
 [System Response Back to User]
-
+```
 
 **What you’re validating:**
 
