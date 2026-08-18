@@ -1597,7 +1597,7 @@ table th {
 
 /* Hide Copy button on blog code blocks */
 .language-plaintext.highlighter-rouge > .code-wrapper .copy-btn {
-  display: none;
+  display: none !important;
 }
 
 
