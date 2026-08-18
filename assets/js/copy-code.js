@@ -1,25 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Select ALL highlight blocks
-  const allHighlights = document.querySelectorAll("div.highlight");
+  const highlights = document.querySelectorAll("div.highlight");
 
-  allHighlights.forEach((wrapper) => {
-    // Only add a button if THIS highlight contains a <pre> directly
-    const pre = wrapper.querySelector(":scope > pre");
-    if (!pre) return; // skip nested highlight wrappers
+  highlights.forEach((wrapper) => {
+    // Skip if parent is .language-plaintext.highlighter-rouge
+    if (wrapper.parentElement.classList.contains("language-plaintext")) return;
 
-    // Prevent duplicates
     if (wrapper.querySelector(".copy-btn")) return;
 
-    // Create the button
     const button = document.createElement("button");
     button.className = "copy-btn";
     button.innerText = "Copy";
 
-    // Position the button
     wrapper.style.position = "relative";
     wrapper.insertBefore(button, wrapper.firstChild);
 
-    // Copy functionality
     button.addEventListener("click", () => {
       const codeBlock = wrapper.querySelector("pre code");
       if (!codeBlock) return;
