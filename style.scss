@@ -1168,9 +1168,15 @@ h4 {
   position: relative; /* makes the white box the positioning context */
 }
 
+.highlight {
+  position: relative;      /* keeps the button inside the white box */
+  text-align: left;        /* forces all text to align left */
+}
+
 .copy-btn {
   position: absolute;
-  inset: 10px 10px auto auto; /* shorthand for top/right without using 'top' directly */
+  top: 10px;
+  right: 10px;
   padding: 4px 10px;
   font-size: 13px;
   background-color: #f5f5f5;
@@ -1181,17 +1187,6 @@ h4 {
   font-weight: 600;
   z-index: 2;
 }
-
-
-.highlight {
-  display: flex;
-  justify-content: flex-end;  /* pushes content (the button) to the right */
-  align-items: flex-start;    /* keeps it at the top */
-  position: relative;         /* keeps existing layout stable */
-}
-
-
-
 
 
 /* 🔧 Clean, scrollable code block styling for all devices */
