@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Skip if parent is .language-plaintext.highlighter-rouge (outer wrapper)
     if (wrapper.parentElement.classList.contains("language-plaintext")) return;
 
+    // Skip if this highlight doesn't contain a <pre> (top-level container)
+    if (!wrapper.querySelector("pre")) return;
+
     // Avoid duplicates
     if (wrapper.querySelector(".copy-btn")) return;
 
@@ -12,10 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.className = "copy-btn";
     button.innerText = "Copy";
 
-    // Make the white box the positioning context
     wrapper.style.position = "relative";
-
-    // Put the button inside the white box
     wrapper.insertBefore(button, wrapper.firstChild);
 
     button.addEventListener("click", () => {
@@ -29,3 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
