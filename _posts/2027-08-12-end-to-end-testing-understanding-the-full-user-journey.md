@@ -101,6 +101,17 @@ Let’s walk through a beginner-friendly example.
 6. Log in using the new credentials  
 7. Verify the dashboard loads correctly
 
+**What you’re validating:**
+
+- UI elements behave correctly  
+- Form validation works  
+- Backend creates the user  
+- Email or confirmation logic triggers  
+- Login authentication works  
+- Dashboard loads with correct user data  
+
+This is a full user journey — not just a single feature.
+
 ### End-to-End User Journey Flow (Beginner-Friendly Diagram)
 
 ```
@@ -116,18 +127,6 @@ Let’s walk through a beginner-friendly example.
      ↓
 [System Response Back to User]
 ```
-
-**What you’re validating:**
-
-- UI elements behave correctly  
-- Form validation works  
-- Backend creates the user  
-- Email or confirmation logic triggers  
-- Login authentication works  
-- Dashboard loads with correct user data  
-
-This is a full user journey — not just a single feature.
-
 
 ## ⭐ Manual vs. Automated End-to-End Testing
 
