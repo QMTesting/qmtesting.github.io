@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const codeWrappers = document.querySelectorAll("div.highlight");
 
   codeWrappers.forEach((wrapper) => {
+    // Skip if a copy button already exists
+    if (wrapper.querySelector(".copy-btn")) return;
+
     // Create one copy button per wrapper
     const button = document.createElement("button");
     button.className = "copy-btn";
