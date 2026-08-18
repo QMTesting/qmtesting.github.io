@@ -1595,6 +1595,12 @@ table th {
   font-style: italic !important; 	
 }
 
+/* Hide Copy button on blog code blocks */
+.language-plaintext.highlighter-rouge > .copy-btn {
+  display: none;
+}
+
+
 
 
 
