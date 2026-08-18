@@ -1,26 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get just the first highlight box
-  const wrapper = document.querySelector("div.highlight");
-  if (!wrapper) return;
+  // Select ALL highlight blocks
+  const allHighlights = document.querySelectorAll("div.highlight");
 
-  // Create one copy button
-  const button = document.createElement("button");
-  button.className = "copy-btn";
-  button.innerText = "Copy";
+  allHighlights.forEach((wrapper) => {
+    // Only add a button if THIS highlight contains a <pre> directly
+    const pre = wrapper.querySelector(":scope > pre");
+    if (!pre) return; // skip nested highlight wrappers
 
-  // Position the button
-  wrapper.style.position = "relative";
-  wrapper.insertBefore(button, wrapper.firstChild);
+    // Prevent duplicates
+    if (wrapper.querySelector(".copy-btn")) return;
 
-  // Copy functionality
-  button.addEventListener("click", () => {
-    const codeBlock = wrapper.querySelector("pre code");
-    if (!codeBlock) return;
+    // Create the button
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.innerText = "Copy";
 
-    navigator.clipboard.writeText(codeBlock.innerText).then(() => {
-      button.innerText = "Copied!";
-      setTimeout(() => (button.innerText = "Copy"), 2000);
+    // Position the button
+    wrapper.style.position = "relative";
+    wrapper.insertBefore(button, wrapper.firstChild);
+
+    // Copy functionality
+    button.addEventListener("click", () => {
+      const codeBlock = wrapper.querySelector("pre code");
+      if (!codeBlock) return;
+
+      navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => (button.innerText = "Copy"), 2000);
+      });
     });
   });
 });
-
