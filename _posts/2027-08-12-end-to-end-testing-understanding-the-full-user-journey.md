@@ -127,6 +127,8 @@ This is a full user journey — not just a single feature.
      ↓
 [System Response Back to User]
 ```
+Explanation
+This simple flow shows how a user’s action travels through multiple layers of an application. An E2E test follows this entire path — from the moment a user clicks a button to the moment the system responds — ensuring every layer works together without breaking.
 
 ## ⭐ Manual vs. Automated End-to-End Testing
 
