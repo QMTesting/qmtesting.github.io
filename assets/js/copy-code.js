@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all code blocks rendered by Markdown
-  const codeBlocks = document.querySelectorAll("div.highlight pre, pre.highlight, pre > code");
+  // Select only the outermost .highlight containers
+  const codeWrappers = document.querySelectorAll("div.highlight");
 
-  codeBlocks.forEach((block) => {
-    // Create a copy button
+  codeWrappers.forEach((wrapper) => {
+    // Create one copy button per wrapper
     const button = document.createElement("button");
     button.className = "copy-btn";
     button.innerText = "Copy";
 
-    // Position the button above the code block
-    const wrapper = block.closest("div.highlight") || block.parentElement;
+    // Position the button in the top-right corner
     wrapper.style.position = "relative";
     wrapper.insertBefore(button, wrapper.firstChild);
 
     // Copy functionality
     button.addEventListener("click", () => {
-      const textToCopy = block.innerText;
-      navigator.clipboard.writeText(textToCopy).then(() => {
+      const codeBlock = wrapper.querySelector("pre code");
+      if (!codeBlock) return;
+
+      navigator.clipboard.writeText(codeBlock.innerText).then(() => {
         button.innerText = "Copied!";
         setTimeout(() => (button.innerText = "Copy"), 2000);
       });
     });
   });
 
-  console.log("Copy buttons added to all code blocks:", codeBlocks.length);
+  console.log("Copy buttons added to:", codeWrappers.length, "code blocks");
 });
-
