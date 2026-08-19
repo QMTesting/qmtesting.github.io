@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.copyCodeInitialized = true;
 
   // Select only highlight boxes
-  const highlights = document.querySelectorAll("div.highlight");
+  const highlights = document.querySelectorAll(".post div.highlight");
 
   highlights.forEach((wrapper) => {
     // Only add buttons to highlight boxes inside a .code-wrapper
