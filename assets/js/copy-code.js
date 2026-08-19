@@ -63,3 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelectorAll(".highlighter-rouge > .code-wrapper > .copy-btn")
+    .forEach(function (button) {
+      button.remove();
+    });
+});
+
+
+
+
