@@ -1190,6 +1190,11 @@ h4 {
   z-index: 2;
 }
 
+body > .copy-btn {
+  display: none !important;
+}
+
+
 
 /* 🔧 Clean, scrollable code block styling for all devices */
 div.highlight {
