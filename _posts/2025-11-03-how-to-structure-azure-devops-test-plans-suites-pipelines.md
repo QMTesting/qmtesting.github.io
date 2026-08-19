@@ -137,7 +137,7 @@ It includes improved error handling, logging, and naming conventions.
 
 ## **PowerShell Script**
 
-```powershell
+```
 
 
 # ==========================================
@@ -265,7 +265,7 @@ This pipeline:
 
 ## **azure-pipelines.yml**
 
-```yaml
+```
 
 
 trigger: none
