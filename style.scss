@@ -1643,6 +1643,30 @@ table th {
 .language-plaintext.highlighter-rouge:nth-of-type(5) > .code-wrapper > .copy-btn {
   display: none !important;
 }
+/* Hide Copy button on blog third code block */
+.language-plaintext.highlighter-rouge:nth-of-type(6) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fourth code block */
+.language-plaintext.highlighter-rouge:nth-of-type(7) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fifth code block */
+.language-plaintext.highlighter-rouge:nth-of-type(8) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog third code block */
+.language-plaintext.highlighter-rouge:nth-of-type(9) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fourth code block */
+.language-plaintext.highlighter-rouge:nth-of-type(10) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fifth code block */
+.language-plaintext.highlighter-rouge:nth-of-type(11) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
 
 
 /* Hide Copy button on blog code blocks */
