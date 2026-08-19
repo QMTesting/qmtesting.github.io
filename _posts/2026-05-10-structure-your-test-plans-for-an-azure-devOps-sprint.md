@@ -270,7 +270,7 @@ Automation should support your sprint — not clutter your test plan.
 ### **YAML Example: Publish Automated Results**
 (Kept short here since the blog’s focus is structure, not automation.)
 
-```yaml
+```
 
 
 - task: PublishTestResults@2
