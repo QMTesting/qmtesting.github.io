@@ -1,21 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Only target highlight boxes inside blog posts
-  const highlights = document.querySelectorAll(".post .highlight");
+  // Prevent script from running twice
+  if (window.copyCodeInitialized) return;
+  window.copyCodeInitialized = true;
 
-  highlights.forEach((wrapper) => {
-    // Skip if already has a button
-    if (wrapper.querySelector(".copy-btn")) return;
+  // Select only the outermost .highlight containers that contain code
+  const codeBoxes = document.querySelectorAll("div.highlight");
 
+  codeBoxes.forEach((box) => {
+    // Skip if a copy button already exists
+    if (box.querySelector(".copy-btn")) return;
+
+    // Skip nested highlights (Rouge creates these internally)
+    if (box.closest(".highlight") !== box) return;
+
+    // Create one copy button per visible white box
     const button = document.createElement("button");
     button.className = "copy-btn";
     button.innerText = "Copy";
 
-    // Ensure button stays inside the highlight box
-    wrapper.style.position = "relative";
-    wrapper.insertBefore(button, wrapper.firstChild);
+    // Position the button in the top-right corner
+    box.style.position = "relative";
+    box.insertBefore(button, box.firstChild);
 
+    // Copy functionality
     button.addEventListener("click", () => {
-      const codeBlock = wrapper.querySelector("pre code");
+      const codeBlock = box.querySelector("pre code");
       if (!codeBlock) return;
 
       navigator.clipboard.writeText(codeBlock.innerText).then(() => {
@@ -24,4 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  console.log("Copy buttons added to:", codeBoxes.length, "code boxes");
 });
