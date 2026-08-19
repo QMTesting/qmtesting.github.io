@@ -1174,7 +1174,12 @@ h4 {
   padding-top: 50px; /* adjust this value for spacing below the button */
   font-size: 20px;	
 }
-.code-wrapper.copy-btn {
+
+.language-java.highlighter-rouge.code-wrapper.copy-btn {
+  display: none;
+}	
+
+.copy-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1632,7 +1637,7 @@ table th {
 }
 
 #testng-version-of-the-login-script
-~ .highlighter-rouge
+~ .language-java.highlighter-rouge
 > .code-wrapper
 > .copy-btn {
   display: none !important;
