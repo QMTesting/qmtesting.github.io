@@ -1611,11 +1611,26 @@ table th {
   font-style: italic !important; 	
 }
 
-/* Hide Copy button on blog code blocks */
+/* Hide Copy button on blog first code block */
 .language-plaintext.highlighter-rouge > .code-wrapper > .copy-btn {
   display: none !important;
 }
-
+/* Hide Copy button on blog second code block */
+.language-java.highlighter-rouge:nth-of-type(2) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog third code block */
+.language-java.highlighter-rouge:nth-of-type(3) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fourth code block */
+.language-java.highlighter-rouge:nth-of-type(4) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fifth code block */
+.language-java.highlighter-rouge:nth-of-type(5) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
 
 
 
