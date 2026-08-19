@@ -1,40 +1,67 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Prevent the script from running twice
   if (window.copyCodeInitialized) return;
   window.copyCodeInitialized = true;
 
-  // Select only .highlight blocks that directly contain <pre><code>
-  const highlights = document.querySelectorAll("div.highlight");
+  // Find each actual code block
+  const codeBlocks = document.querySelectorAll(
+    ".highlighter-rouge .highlight pre code"
+  );
 
-  highlights.forEach((box) => {
-    // Skip if already has a button
-    if (box.querySelector(".copy-btn")) return;
+  codeBlocks.forEach((codeBlock) => {
+    // Find the closest container for this specific code block
+    const pre = codeBlock.closest("pre");
 
-    // Skip if this .highlight contains another .highlight (nested)
-    if (box.querySelector("div.highlight")) return;
+    const container =
+      pre.closest(".code-wrapper") ||
+      pre.closest(".highlight") ||
+      pre.parentElement;
 
-    // Skip if it doesn't contain a <pre><code> block
-    if (!box.querySelector("pre code")) return;
+    // Stop if no container was found
+    if (!container) return;
 
-    // Create the copy button
+    // Prevent duplicate buttons in this specific container
+    if (container.querySelector(":scope > .code-copy-button")) {
+      return;
+    }
+
+    // Create the Copy button
     const button = document.createElement("button");
-    button.className = "copy-btn";
-    button.innerText = "Copy";
+    button.className = "code-copy-button";
+    button.type = "button";
+    button.textContent = "Copy";
 
-    // Position the button
-    box.style.position = "relative";
-    box.insertBefore(button, box.firstChild);
+    // Make this container the positioning reference
+    container.style.position = "relative";
+
+    // Add the button directly inside this code container
+    container.insertBefore(button, container.firstChild);
 
     // Copy functionality
-    button.addEventListener("click", () => {
-      const codeBlock = box.querySelector("pre code");
-      if (!codeBlock) return;
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(codeBlock.innerText);
 
-      navigator.clipboard.writeText(codeBlock.innerText).then(() => {
-        button.innerText = "Copied!";
-        setTimeout(() => (button.innerText = "Copy"), 2000);
-      });
+        button.textContent = "Copied!";
+
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 2000);
+
+      } catch (error) {
+        console.error("Failed to copy code:", error);
+        button.textContent = "Error";
+
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 2000);
+      }
     });
   });
 
-  console.log("Copy buttons added to:", highlights.length, "code boxes");
+  console.log(
+    "Copy buttons added to:",
+    codeBlocks.length,
+    "code blocks"
+  );
 });
