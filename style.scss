@@ -1175,11 +1175,15 @@ h4 {
   font-size: 20px;	
 }
 
+#selenium-login-test-script.language-java.highlighter-rouge.code-wrapper.copy-btn {
+   display: none !important;
+}	
+
 #testng-version-of-the-login-script.language-java.highlighter-rouge.code-wrapper.copy-btn {
   display: none !important;
 }	
 
-.highlight.code-wrapper.copy-btn {
+.code-wrapper.copy-btn {
   position: absolute;
   top: 10px;
   right: 10px;
