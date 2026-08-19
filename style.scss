@@ -1175,7 +1175,7 @@ h4 {
   font-size: 20px;	
 }
 
-.copy-btn {
+.highlight .code-wrapper.copy-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1190,9 +1190,6 @@ h4 {
   z-index: 2;
 }
 
-body > .copy-btn {
-  display: none !important;
-}
 
 
 
@@ -1611,10 +1608,10 @@ table th {
   font-style: italic !important; 	
 }
 
-/* Hide Copy button on blog first code block */
+/* Hide Copy button on blog first code block
 .language-plaintext.highlighter-rouge > .code-wrapper > .copy-btn {
   display: none !important;
-}
+}  */
 /* Hide Copy button on blog second code block */
 .language-plaintext.highlighter-rouge:nth-of-type(1) > .code-wrapper > .copy-btn {
   display: none !important;
@@ -1636,7 +1633,7 @@ table th {
 }
 
 #testng-version-of-the-login-script
-~ .language-plaintext.highlighter-rouge
+~ .highlighter-rouge
 > .code-wrapper
 > .copy-btn {
   display: none !important;
