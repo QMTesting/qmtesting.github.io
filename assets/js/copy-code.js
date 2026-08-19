@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.copyCodeInitialized) return;
   window.copyCodeInitialized = true;
 
-  // Select only highlight boxes
+  // Select only highlight boxes in a blog post
   const highlights = document.querySelectorAll(".post div.highlight");
 
   highlights.forEach((wrapper) => {
