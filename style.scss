@@ -1617,6 +1617,34 @@ table th {
   font-style: italic !important; 	
 }
 
+/* Hide Copy button on blog first code block */
+.language-java.highlighter-rouge > .code-wrapper > .copy-btn {
+  display: none !important;
+}  
+/* Hide Copy button on blog second code block */
+.language-plaintext.highlighter-rouge:nth-of-type(0) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+.language-plaintext.highlighter-rouge:nth-of-type(1) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+.language-plaintext.highlighter-rouge:nth-of-type(2) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog third code block */
+.language-plaintext.highlighter-rouge:nth-of-type(3) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fourth code block */
+.language-plaintext.highlighter-rouge:nth-of-type(4) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+/* Hide Copy button on blog fifth code block */
+.language-plaintext.highlighter-rouge:nth-of-type(5) > .code-wrapper > .copy-btn {
+  display: none !important;
+}
+
+
 /* Hide Copy button on blog code blocks */
 #testng-version-of-the-login-script
 ~ .language-java.highlighter-rouge
