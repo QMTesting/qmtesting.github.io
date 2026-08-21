@@ -147,6 +147,7 @@ Current IntelliJ IDEA versions generally require considerably more resources tha
 
 A modern development computer should meet approximately the following requirements:
 
+<div class="table-scroll">
 <table>
   <thead>
     <tr>
@@ -177,7 +178,7 @@ A modern development computer should meet approximately the following requiremen
     </tr>
   </tbody>
 </table>
-
+</div>
 
 IntelliJ IDEA is available for:
 
