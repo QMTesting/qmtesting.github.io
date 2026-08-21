@@ -147,13 +147,37 @@ Current IntelliJ IDEA versions generally require considerably more resources tha
 
 A modern development computer should meet approximately the following requirements:
 
-| Component | Recommended Starting Point |
-|---|---|
-| **CPU** | x86_64 or ARM64 processor with 4+ cores |
-| **RAM** | 8 GB total RAM or more |
-| **Disk Space** | Approximately 10 GB available |
-| **Display** | 1280 × 720 or higher |
-| **Storage** | SSD strongly recommended |
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Recommended Starting Point</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CPU</strong></td>
+      <td>x86_64 or ARM64 processor with 4+ cores</td>
+    </tr>
+    <tr>
+      <td><strong>RAM</strong></td>
+      <td>8 GB total RAM or more</td>
+    </tr>
+    <tr>
+      <td><strong>Disk Space</strong></td>
+      <td>Approximately 10 GB available</td>
+    </tr>
+    <tr>
+      <td><strong>Display</strong></td>
+      <td>1280 × 720 or higher</td>
+    </tr>
+    <tr>
+      <td><strong>Storage</strong></td>
+      <td>SSD strongly recommended</td>
+    </tr>
+  </tbody>
+</table>
+
 
 IntelliJ IDEA is available for:
 
