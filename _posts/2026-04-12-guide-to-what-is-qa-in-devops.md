@@ -12,16 +12,16 @@ tags:
   - "test automation"
   - "continuous testing"
 description: "A beginner‑friendly guide that explains how QA fits into DevOps, why continuous testing matters, and what new testers need to succeed in a modern DevOps pipeline."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png"
+image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png"
 ---
 
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png"
+  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png 700w
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png 350w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png 500w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776176202/guide-to-what-is-qa-in-devops_fdietm.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

@@ -16,16 +16,16 @@ tags:
   - "CI/CD"
   - "Test Management"
 description: "A beginner‑friendly guide that explains CI/CD concepts clearly for QA testers. Learn how pipelines, automation, quality gates, and deployment strategies work — and how testers play a key role in modern DevOps workflows."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee.png"
+image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee.png"
 ---
 
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee.png"
+  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee 700w
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee 350w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee 500w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1779992035/understanding-ci-cd-for-testers-key-concepts-explained-clearly_aza0ee 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

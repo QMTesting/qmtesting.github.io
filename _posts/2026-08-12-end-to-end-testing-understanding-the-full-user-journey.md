@@ -4,15 +4,15 @@ title: "End-to-End Testing: Understanding the Full User Journey"
 categories: ["Types of Testing"]
 tags: [types of testing, software testing, testing, end-to-end testing, end to end testing, QA, QC, quality assurance, quality control, software quality, static testing, dynamic testing]
 description: "A beginner-friendly guide to end-to-end testing. Learn how end-to-end tests validate full user journeys, ensure system reliability, and improve software quality."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png"
+image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png"
 ---
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png"
+  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png 700w
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png 350w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png 500w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1787068531/end-to-end-testing-understanding-the-full-user-journey_zwd8oo.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

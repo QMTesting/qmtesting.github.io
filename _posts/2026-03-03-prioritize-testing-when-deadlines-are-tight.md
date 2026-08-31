@@ -4,15 +4,15 @@ title: "How to Prioritize Testing When Deadlines Are Tight"
 categories: ["Software Testing"]
 tags: [software testing, testing, QA, QC, prioritize testing, risk-based testing, test prioritization, agile testing, regression testing, software quality]
 description: "A practical guide for QA teams navigating high‑pressure release cycles without sacrificing quality."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png"
+image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png"
 ---
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png"
+  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774367644/testing-tight-deadlines_lopp0f.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774367644/testing-tight-deadlines_lopp0f.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png 700w
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1774367644/testing-tight-deadlines_lopp0f.png 350w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1774367644/testing-tight-deadlines_lopp0f.png 500w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1774367644/testing-tight-deadlines_lopp0f.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

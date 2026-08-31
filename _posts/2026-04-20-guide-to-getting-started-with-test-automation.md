@@ -11,16 +11,16 @@ tags:
   - "how to start automation testing"
   - "QA tester tips"
 description: "A simple, beginner‑friendly introduction to test automation — what it is, why it matters, and how to start building your first automated tests."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png" 
+image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png" 
 ---
       
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png"
+  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 700w
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 350w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 500w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1776697428/guide-to-getting-started-with-test-automation.md_ooddjc.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

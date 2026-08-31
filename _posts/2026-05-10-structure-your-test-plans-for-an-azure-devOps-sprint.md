@@ -13,16 +13,16 @@ tags:
   - "Agile Testing"
   - "Test Management"
 description: "Learn how to structure Azure DevOps Test Plans effectively for each sprint. This guide covers hierarchy setup, naming conventions, regression and exploratory suites, and automation integration to help QA teams improve traceability, coverage, and sprint efficiency."
-image: "https://res.cloudinary.com/dig9gupue/image/upload/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png"
+image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png"
 ---
 
 
 <img 
-  src="https://res.cloudinary.com/dig9gupue/image/upload/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png"
+  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png"
   srcset="
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 350w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 500w,
-    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 700w
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 350w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 500w,
+    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1778955313/structure-your-test-plans-for-an-azure-devOps-sprint_lfu1wt.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"
