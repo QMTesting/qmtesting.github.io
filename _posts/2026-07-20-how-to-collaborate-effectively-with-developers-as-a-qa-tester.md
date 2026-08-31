@@ -4,15 +4,15 @@ title: "How to Collaborate Effectively With Developers as a QA Tester"
 categories: ["Software Testing"]
 tags: [software testing, testing, QA, QC, quality assurance, quality control, software quality, static testing, dynamic testing]
 description: "Collaborate more effectively with developers as a QA tester using clear communication, early involvement, strong bug reporting, and DevOps‑friendly teamwork strategies."
-image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png"
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png"
 ---
 
 <img 
-  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png"
   srcset="
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png 350w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png 500w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1785176805/how-to-collaborate-effectively-with-developers_vgfg88.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

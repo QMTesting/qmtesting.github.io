@@ -12,16 +12,16 @@ tags:
   - "QA testing"
   - "Software Testing"
 description: "A practical guide to the most common automation mistakes teams make—and how to build smarter, more resilient automation strategies."
-image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png" 
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png" 
 ---
         
 
 <img 
-  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png"
   srcset="
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png 350w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png 500w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1775656831/automation-anti-patterns-common-pitfalls_mytblj.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

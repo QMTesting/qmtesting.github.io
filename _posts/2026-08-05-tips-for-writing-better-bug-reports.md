@@ -4,15 +4,15 @@ title: "Tips for Writing Better Bug Reports"
 categories: ["Software Testing"]
 tags: [software testing, testing, QA, QC, quality assurance, quality control, software quality, bug, defect, software defect, bug report, testing tips]
 description: "Clear, actionable tips for writing better bug reports. Learn how to communicate defects effectively with strong titles, steps, evidence, and environment details."
-image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png"
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png"
 ---
 
 <img 
-  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png"
   srcset="
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png 350w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png 500w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1786558094/tips-for-writing-better-bug-reports_aqglu8.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

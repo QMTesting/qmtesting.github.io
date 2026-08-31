@@ -12,16 +12,16 @@ tags:
   - "selenium webdriver tips"
   - "locator strategies for testers"
 description: "A simple, beginner‑friendly guide that explains what locators are in Selenium, why they matter, and how QA testers can choose the right locator strategy for stable, maintainable automated tests."
-image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png" 
+image: "https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png" 
 ---
         
 
 <img 
-  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png"
   srcset="
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 350w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 500w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1777732094/understanding-locators-in-selenium-beginners-guide_hm8gok.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"

@@ -4,15 +4,15 @@ title: "What Is Software Testing? A Beginner’s Guide to the Basics"
 categories: ["Software Testing"]
 tags: [software testing, testing, QA, QC, quality assurance, quality control, software quality]
 description: "A beginner‑friendly guide that explains what software testing is, why it matters, and the essential concepts every new tester should know. Learn the basics of manual and automated testing, key testing types, and how QA fits into modern Agile and DevOps teams."
-image: "https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png"
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png"
 ---
 
 <img 
-  src="https://no-cookie.cloudinary.com/dig9gupue/image/upload/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png"
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png"
   srcset="
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png 350w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png 500w,
-    https://no-cookie.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png 700w
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1781115117/a-guide-to-the-basics-for-beginners_tha5df.png 700w
   "
   sizes="(max-width: 768px) 100vw, 700px"
   width="700"
