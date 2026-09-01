@@ -116,11 +116,13 @@ Shifting coverage downward gives you **more coverage per hour** than any other s
 
 ### 🧩 Diagram: Smarter Test Coverage Flow
 
+```
+
 <div class="copy-image-wrapper">
   <img id="coverageImage" src="/assets/images/Test/test-coverage-flow.png" alt="Coverage Flow Diagram" width="700">
 </div>  
   
-
+```
 
 
 ## 🧪 5. Use Mutation Testing to Identify Coverage Gaps Automatically
