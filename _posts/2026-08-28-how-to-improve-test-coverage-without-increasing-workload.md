@@ -116,8 +116,10 @@ Shifting coverage downward gives you **more coverage per hour** than any other s
 
 ### 🧩 Diagram: Smarter Test Coverage Flow
 
-
-<img id="coverageImage" src="/assets/images/Test/test-coverage-flow.png" alt="Coverage Flow Diagram" width="700">
+<div class="copy-image-wrapper">
+  <img id="coverageImage" src="/assets/images/Test/test-coverage-flow.png" alt="Coverage Flow Diagram" width="700">
+</div>  
+  
 
 
 
