@@ -219,16 +219,16 @@ This approach increases meaningful coverage without increasing workload.
 
 Before wrapping up, here’s a practical checklist you can use to systematically improve test coverage while keeping your workload steady.
 
-- [ ] Identify high‑risk features and workflows  
-- [ ] Eliminate redundant or low‑value tests  
-- [ ] Convert repetitive tests to parameterized ones  
-- [ ] Shift UI tests to API or unit level  
-- [ ] Automate test data setup and cleanup  
-- [ ] Use mutation testing to find weak spots  
-- [ ] Review coverage reports for dead code  
-- [ ] Apply AI tools for boundary and edge cases  
-- [ ] Focus on meaningful coverage, not percentages  
-- [ ] Reassess coverage quarterly for efficiency gains
+ [ ] Identify high‑risk features and workflows  
+ [ ] Eliminate redundant or low‑value tests  
+ [ ] Convert repetitive tests to parameterized ones  
+ [ ] Shift UI tests to API or unit level  
+ [ ] Automate test data setup and cleanup  
+ [ ] Use mutation testing to find weak spots  
+ [ ] Review coverage reports for dead code  
+ [ ] Apply AI tools for boundary and edge cases  
+ [ ] Focus on meaningful coverage, not percentages  
+ [ ] Reassess coverage quarterly for efficiency gains
 
 
 
