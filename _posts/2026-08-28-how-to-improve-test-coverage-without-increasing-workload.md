@@ -118,6 +118,7 @@ Shifting coverage downward gives you **more coverage per hour** than any other s
 
 To help visualize how each part of the testing process contributes to better coverage without adding extra work, the following flow illustrates the key stages involved in building a smarter, more efficient strategy.
 
+
 <div class="copy-image-wrapper">
   <img id="coverageImage" src="/assets/images/Test/test-coverage-flow.png" alt="Coverage Flow Diagram" width="700">
 </div>
