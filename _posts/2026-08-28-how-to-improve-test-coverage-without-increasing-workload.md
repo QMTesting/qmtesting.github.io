@@ -114,7 +114,7 @@ If your coverage is UI‑heavy, you’re working harder than you need to.
 
 Shifting coverage downward gives you **more coverage per hour** than any other strategy.
 
-### 🧩 Diagram: Smarter Test Coverage Flow
+### 🧩 Diagram: Strategic Test Coverage Flow
 
 To help visualize how each part of the testing process contributes to better coverage without adding extra work, the following flow illustrates the key stages involved in building a smarter, more efficient strategy.
 
