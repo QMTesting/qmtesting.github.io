@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Improve Test Coverage Without Increasing Workload"
-categories: ["Types of Testing"]
+categories: ["Software Testing"]
 tags: [test coverage, QA automation, software testing, DevOps practices, risk-based testing, test optimization, testing strategy, unit testing, API testing, mutation testing, test data automation, coverage reports, testing efficiency, quality assurance, automation best practices]
 description: "A practical guide for QA teams to increase test coverage strategically—without adding more work, more stress, or more flaky tests."
 image: "https://res.cloudinary.com/dig9gupue/image/upload/v1788280447/how-to-improve-test-coverage-without-increasing-workload-700_xlqvbe.png"
