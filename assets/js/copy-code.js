@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const imageWrappers = document.querySelectorAll(".copy-image-wrapper");
+  const imageWrappers = document.querySelectorAll("div.copy-image-wrapper, .highlight .copy-image-wrapper");
 
   imageWrappers.forEach(wrapper => {
     const button = document.createElement("button");
