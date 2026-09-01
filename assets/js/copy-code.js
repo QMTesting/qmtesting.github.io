@@ -72,5 +72,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const imageWrappers = document.querySelectorAll(".copy-image-wrapper");
+
+  imageWrappers.forEach(wrapper => {
+    const button = document.createElement("button");
+    button.innerText = "Copy";
+    button.className = "copy-btn";
+
+    // Position button
+    wrapper.style.position = "relative";
+    button.style.position = "absolute";
+    button.style.top = "0px";
+    button.style.right = "0px";
+
+    wrapper.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      const img = wrapper.querySelector("img");
+
+      try {
+        const response = await fetch(img.src);
+        const blob = await response.blob();
+        await navigator.clipboard.write([
+          new ClipboardItem({ [blob.type]: blob })
+        ]);
+
+        button.innerText = "Copied!";
+        setTimeout(() => (button.innerText = "Copy"), 2000);
+      } catch (err) {
+        console.error(err);
+        alert("Failed to copy image.");
+      }
+    });
+  });
+});
+
 
 
