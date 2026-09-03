@@ -174,11 +174,11 @@ This can reveal problems such as:
 
 These problems may not appear during a short test.
 
-# Important Load-Testing Concepts
+## Important Load-Testing Concepts
 
 Before using a tool such as JMeter or k6, beginners should understand several basic concepts.
 
-## Virtual Users
+### Virtual Users
 
 A **virtual user**, often called a **VU**, represents a simulated user interacting with the system.
 
@@ -190,7 +190,7 @@ For example:
 
 A good load test attempts to make these virtual users behave somewhat like real users.
 
-## Concurrent Users
+### Concurrent Users
 
 Concurrent users are users interacting with the application during approximately the same period.
 
@@ -210,7 +210,7 @@ at a particular moment.
 
 This distinction is important when designing realistic tests.
 
-## Requests
+### Requests
 
 A request is an interaction sent to an application or server.
 
@@ -225,7 +225,7 @@ POST /checkout
 
 A single user action may generate several requests.
 
-## Requests per Second
+### Requests per Second
 
 **Requests per second (RPS)** measures how many requests a system processes each second.
 
@@ -241,7 +241,7 @@ RPS is a useful throughput measurement, but it is not the same as the number of 
 
 One user may generate several requests.
 
-## Transactions
+### Transactions
 
 A **transaction** represents a meaningful business activity that may contain one or more requests.
 
@@ -255,7 +255,7 @@ Examples include:
 
 For example, checkout may generate several HTTP requests, but testers may still want to measure the performance of the entire **Checkout transaction**.
 
-## Response Time
+### Response Time
 
 Response time measures how long the system takes to respond.
 
@@ -271,7 +271,7 @@ Response time is one of the most important load-testing metrics.
 
 However, beginners should avoid focusing only on averages.
 
-## Percentiles: p90, p95, and p99
+### Percentiles: p90, p95, and p99
 
 Suppose a report says:
 
@@ -305,7 +305,7 @@ This provides more useful information than the average alone.
 
 Most users may receive fast responses while a small percentage experience serious delays.
 
-## Throughput
+### Throughput
 
 **Throughput** measures how much work the system completes within a period.
 
@@ -323,7 +323,7 @@ For example:
 
 500 / 5 = 100 transactions per minute
 ```
-## Error Rate
+### Error Rate
 
 The **error rate** measures the percentage of requests that fail.
 
@@ -351,7 +351,7 @@ Errors might include:
 
 A system that responds quickly but returns errors is still failing.
 
-## Think Time
+### Think Time
 
 Real users do not continuously send requests.
 
@@ -383,7 +383,7 @@ Open checkout
 
 Without think time, a load test may generate much more traffic than real users would.
 
-## Ramp-Up and Ramp-Down
+### Ramp-Up and Ramp-Down
 
 Instead of immediately launching hundreds of users, load tests often increase traffic gradually.
 
@@ -406,7 +406,7 @@ Ramp-up can help identify the point at which performance begins to deteriorate.
 
 This can help determine whether the system recovers properly after heavy traffic.
 
-# Performance Requirements and Acceptance Criteria
+## Performance Requirements and Acceptance Criteria
 
 A useful load test should have clearly defined pass/fail criteria.
 
@@ -426,7 +426,7 @@ Without acceptance criteria, a tester may collect large amounts of data without 
 
 Performance requirements should ideally come from business expectations, service-level targets, historical performance, or technical requirements rather than arbitrary numbers.
 
-# What Should You Monitor?
+## What Should You Monitor?
 
 The load-testing tool provides important information, but it is also useful to monitor the infrastructure supporting the application.
 
@@ -474,7 +474,7 @@ The team could then investigate:
 * Inefficient queries
 * Connection limitations
 
-# Popular Load-Testing Tools
+## Popular Load-Testing Tools
 
 There are many performance-testing tools available.
 
@@ -485,7 +485,7 @@ Four common options are:
 3. Locust
 4. Gatling
 
-## Apache JMeter
+### Apache JMeter
 
 **Apache JMeter** is a popular open-source load-testing application.
 
@@ -504,7 +504,7 @@ JMeter includes a graphical interface that allows testers to create test plans c
 
 JMeter is often a good choice for beginners because basic tests can be created without much programming.
 
-## Grafana k6
+### Grafana k6
 
 **Grafana k6** is a load-testing tool where test scenarios are commonly written using JavaScript.
 
@@ -521,7 +521,7 @@ k6 is useful when performance tests will be:
 
 It is especially appealing to testers who are comfortable with basic JavaScript.
 
-## Locust
+### Locust
 
 **Locust** allows testers to create load tests using Python.
 
@@ -531,7 +531,7 @@ https://locust.io/
 
 It is a good choice for teams already working with Python.
 
-## Gatling
+### Gatling
 
 **Gatling** is another performance-testing platform that supports code-driven testing and automation.
 
@@ -556,7 +556,7 @@ For someone completely new to load testing, **JMeter is a reasonable place to st
 
 For someone interested in automated testing and CI/CD, **k6 is also worth learning**.
 
-# Beginner JMeter Example
+## Beginner JMeter Example
 
 Imagine we want to test this fictional page:
 
@@ -573,7 +573,7 @@ p95 response time: < 2 seconds
 Error rate: < 1%
 ```
 
-## Step 1: Create a Test Plan
+### Step 1: Create a Test Plan
 
 Open JMeter and create a new **Test Plan**.
 
@@ -583,7 +583,7 @@ Give it a descriptive name such as:
 Product Page Load Test
 ```
 
-## Step 2: Add a Thread Group
+### Step 2: Add a Thread Group
 
 Right-click the Test Plan:
 
@@ -607,7 +607,7 @@ This means:
 * Users introduced gradually over 60 seconds
 * Each user repeats the scenario 10 times
 
-## Step 3: Add an HTTP Request
+### Step 3: Add an HTTP Request
 
 Right-click the Thread Group:
 
@@ -626,7 +626,7 @@ Method: GET
 Path: /products
 ```
 
-## Step 4: Add Think Time
+### Step 4: Add Think Time
 
 Add a timer:
 
@@ -644,7 +644,7 @@ Thread Delay: 3000 milliseconds
 
 This creates a three-second pause between requests.
 
-## Step 5: Add an Assertion
+### Step 5: Add an Assertion
 
 Do not only verify that the server responded quickly.
 
@@ -658,7 +658,7 @@ Products
 
 This prevents an error page from being counted as a successful response simply because it loaded quickly.
 
-## Step 6: Review Results
+### Step 6: Review Results
 
 While creating the test, a listener such as **View Results Tree** can help inspect requests and responses.
 
@@ -669,7 +669,7 @@ A typical command is:
 ```
 jmeter -n -t product-test.jmx -l results.jtl -e -o report
 ```
-# Simple k6 Example
+## Simple k6 Example
 
 A basic k6 load test might look like this:
 
@@ -726,7 +726,7 @@ p95 response time < 2 seconds
 
 This allows the test to automatically determine whether performance requirements were met.
 
-# Create Realistic User Journeys
+## Create Realistic User Journeys
 
 A good load test should model realistic user behaviour.
 
@@ -775,7 +775,7 @@ Browsing a cached product page may use few resources, while checkout may involve
 
 The more closely the test represents real behaviour, the more useful the results become.
 
-# Example Load-Test Results
+## Example Load-Test Results
 
 Suppose a test produces these results:
 
@@ -801,7 +801,7 @@ However, performance deteriorates substantially at 750 users.
 
 This is useful information if traffic is expected to increase in the future.
 
-# Look for Performance Trends
+## Look for Performance Trends
 
 Performance testing is often about identifying patterns rather than looking at one number.
 
@@ -830,9 +830,9 @@ Possibilities include:
 
 This is where load testing becomes an investigative activity rather than simply generating traffic.
 
-# Common Load-Testing Mistakes
+## Common Load-Testing Mistakes
 
-## 1. Starting With Too Much Load
+### 1. Starting With Too Much Load
 
 Do not immediately simulate 10,000 users.
 
@@ -848,29 +848,29 @@ Start small:
 
 This makes performance problems easier to diagnose.
 
-## 2. Forgetting Think Time
+### 2. Forgetting Think Time
 
 Virtual users that continuously send requests may generate unrealistic traffic.
 
-## 3. Looking Only at Average Response Time
+### 3. Looking Only at Average Response Time
 
 Always consider percentiles such as p95 and p99.
 
-## 4. Ignoring Errors
+### 4. Ignoring Errors
 
 A response time of 100 milliseconds is meaningless if 20% of requests fail.
 
-## 5. Using Unrealistic Test Scenarios
+### 5. Using Unrealistic Test Scenarios
 
 Repeatedly requesting the homepage may not represent how real customers use the application.
 
-## 6. Overloading the Load Generator
+### 6. Overloading the Load Generator
 
 The computer running JMeter, k6, Locust, or Gatling also has limits.
 
 If your load generator reaches 100% CPU, it may become the bottleneck instead of the application being tested.
 
-## 7. Testing Without Requirements
+### 7. Testing Without Requirements
 
 A result such as:
 
@@ -882,7 +882,7 @@ means very little unless you know what was considered acceptable.
 
 Define performance expectations before running the test.
 
-# Never Load Test a Website Without Permission
+## Never Load Test a Website Without Permission
 
 Beginners sometimes install a tool and experiment against a random public website.
 
@@ -906,7 +906,7 @@ Load testing production systems should also be carefully planned because a poorl
 * Generate unexpected cloud costs
 * Overload third-party services
 
-# Load Testing and Functional Testing
+## Load Testing and Functional Testing
 
 Load testing does not replace functional testing.
 
@@ -936,7 +936,7 @@ Performance tests should therefore include checks or assertions whenever possibl
 
 A **fast incorrect response is still a failed test**.
 
-# Load Testing in CI/CD
+## Load Testing in CI/CD
 
 Performance testing can also be incorporated into automated development pipelines.
 
@@ -965,49 +965,49 @@ Error rate < 1%
 
 This can help identify performance regressions before software reaches production.
 
-# A Beginner Load-Testing Checklist
+## A Beginner Load-Testing Checklist
 
 Before running a load test, ask:
 
-## Objective
+### Objective
 
 * What am I trying to learn?
 * How many users should the system support?
 
-## Workload
+### Workload
 
 * How many virtual users should be simulated?
 * Should users ramp up gradually?
 * What activities should they perform?
 * How long should the test run?
 
-## Requirements
+### Requirements
 
 * What response time is acceptable?
 * What error rate is acceptable?
 * What throughput is required?
 
-## Environment
+### Environment
 
 * Am I authorized to test this system?
 * Is the test environment appropriate?
 * Could the test affect real users?
 
-## Monitoring
+### Monitoring
 
 * Am I measuring response times?
 * Am I monitoring errors?
 * Can I monitor CPU and memory?
 * Can I monitor the database?
 
-## Analysis
+### Analysis
 
 * When did performance begin to deteriorate?
 * Which resource reached its limit?
 * Did errors increase?
 * Did the system recover when traffic decreased?
 
-# Final Thoughts
+## Final Thoughts
 
 Load testing answers an important question that normal functional testing cannot:
 
