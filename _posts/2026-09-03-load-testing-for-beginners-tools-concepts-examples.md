@@ -21,7 +21,7 @@ image: "https://res.cloudinary.com/dig9gupue/image/upload/v1788461902/load-testi
   alt="Load Testing for Beginners: Tools, Concepts, and Examples"
   fetchpriority="high">
 
-A website or application may work perfectly when one person is using it—but what happens when 1,000, 100,000, or even 100,000 people try to use it at the same time?
+A website or application may work perfectly when one person is using it—but what happens when 1,000, 10,000, or even 100,000 people try to use it at the same time?
 
 Pages may begin loading slowly. Requests may time out. Databases may struggle to keep up. In extreme cases, the application may stop responding entirely.
 
