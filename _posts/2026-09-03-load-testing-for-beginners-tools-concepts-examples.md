@@ -140,7 +140,7 @@ Spike testing evaluates sudden increases in traffic.
 For example:
 
 | Time | Users |
-| ---- | ----: |
+| ---- | ----- |
 | 9:00 |   100 |
 | 9:05 |   100 |
 | 9:06 | 2,000 |
@@ -779,13 +779,13 @@ The more closely the test represents real behaviour, the more useful the results
 
 Suppose a test produces these results:
 
-| Users | p95 Response Time | Error Rate |
-| ----: | ----------------: | ---------: |
-|   100 |           0.8 sec |       0.0% |
-|   250 |           1.1 sec |       0.1% |
-|   500 |           1.7 sec |       0.3% |
-|   750 |           3.9 sec |       1.8% |
-| 1,000 |           8.2 sec |       7.4% |
+| Users   | p95 Response Time | Error Rate |
+| -----   | ----------------- | ---------- |
+|   100   | 0.8 sec           | 0.0%       |
+|   250   | 1.1 sec           | 0.1%       |
+|   500   | 1.7 sec           | 0.3%       |
+|   750   | 3.9 sec           | 1.8%       |
+| 1,000   | 8.2 sec           | 7.4%       |
 
 Suppose the requirement is:
 
