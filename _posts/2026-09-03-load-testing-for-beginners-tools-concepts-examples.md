@@ -98,7 +98,7 @@ Load testing can help discover these problems **before real users encounter them
 Load testing is one type of performance testing.
 
 | Test Type           | Main Question                                                    |
-| ------------------- | ---------------------------------------------------------------- |
+| :-----------------: | :--------------------------------------------------------------: |
 | Load testing        | Can the system handle the expected workload?                     |
 | Stress testing      | What happens when the system is pushed beyond expected capacity? |
 | Spike testing       | What happens when traffic suddenly increases?                    |
@@ -139,13 +139,13 @@ Spike testing evaluates sudden increases in traffic.
 
 For example:
 
-| Time | Users |
-| ---- | ----- |
-| 9:00 |   100 |
-| 9:05 |   100 |
-| 9:06 | 2,000 |
-| 9:15 | 2,000 |
-| 9:16 |   100 |
+| Time   | Users    |
+| :----: | :------: |
+| 9:00   |   100    |
+| 9:05   |   100    |
+| 9:06   | 2,000    |
+| 9:15   | 2,000    |
+| 9:16   |   100    |
 
 This is useful for applications such as:
 
@@ -545,12 +545,12 @@ It can be particularly useful for development teams incorporating performance te
 
 There is no single correct choice.
 
-| Tool    | Best Fit                                             |
-| ------- | ---------------------------------------------------- |
-| JMeter  | Beginners who prefer a graphical interface           |
-| k6      | Testers interested in JavaScript and test automation |
-| Locust  | Testers who already know Python                      |
-| Gatling | Teams interested in code-driven performance testing  |
+| Tool      | Best Fit                                               |
+| :-------: | :----------------------------------------------------: |
+| JMeter    | Beginners who prefer a graphical interface             |
+| k6        | Testers interested in JavaScript and test automation   |
+| Locust    | Testers who already know Python                        |
+| Gatling   | Teams interested in code-driven performance testing    |
 
 For someone completely new to load testing, **JMeter is a reasonable place to start**.
 
@@ -779,13 +779,13 @@ The more closely the test represents real behaviour, the more useful the results
 
 Suppose a test produces these results:
 
-| Users   | p95 Response Time | Error Rate |
-| -----   | ----------------- | ---------- |
-|   100   | 0.8 sec           | 0.0%       |
-|   250   | 1.1 sec           | 0.1%       |
-|   500   | 1.7 sec           | 0.3%       |
-|   750   | 3.9 sec           | 1.8%       |
-| 1,000   | 8.2 sec           | 7.4%       |
+| Users     | p95 Response Time   | Error Rate   |
+| :-------: | :-----------------: | :----------: |
+|   100     | 0.8 sec             | 0.0%         |
+|   250     | 1.1 sec             | 0.1%         |
+|   500     | 1.7 sec             | 0.3%         |
+|   750     | 3.9 sec             | 1.8%         |
+| 1,000     | 8.2 sec             | 7.4%         |
 
 Suppose the requirement is:
 
