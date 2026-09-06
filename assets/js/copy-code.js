@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.copyCodeInitialized) return;
   window.copyCodeInitialized = true;
 
-  // Find the actual code blocks
+  // Find actual code blocks
   const codeBlocks = document.querySelectorAll(
     ".highlighter-rouge .highlight > pre > code"
   );
