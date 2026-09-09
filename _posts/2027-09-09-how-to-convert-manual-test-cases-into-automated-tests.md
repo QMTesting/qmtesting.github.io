@@ -66,8 +66,8 @@ If any of these terms are unfamiliar, don't worry. They are explained as they ar
 28. Automation Conversion Checklist
 29. From Manual Tester to Automation Tester
 30. Final Example: The Entire Thought Process
-    Final Thoughts
-    [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)
+31. Final Thoughts
+32.  [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)
 
 ---
 
@@ -2220,7 +2220,7 @@ That is the real process of converting a manual test case into an automated test
 
 ---
 
-## Final Thoughts
+## 31. Final Thoughts
 
 Converting manual tests into automation is not primarily a copy-and-paste exercise.
 
@@ -2285,7 +2285,7 @@ The goal is to create repeatable feedback that helps the development team discov
 
 ---
 
-## Appendix: Tools and Concepts Used in This Tutorial
+## 32. Appendix: Tools and Concepts Used in This Tutorial
 
 Before we begin converting a manual test case into automation, it helps to understand the main tools and concepts used throughout this tutorial.
 
