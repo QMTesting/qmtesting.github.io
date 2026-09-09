@@ -2695,8 +2695,6 @@ As you work through the examples, their roles will become much clearer.
 .single-box {
   width: 100%;
   border: 2px solid #c9b98f;
-  border-collapse: separate;
-  border-spacing: 0;
   border-radius: 8px;
   background-color: #fffaf0;
 }
