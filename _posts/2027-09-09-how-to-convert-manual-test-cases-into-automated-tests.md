@@ -1,12 +1,28 @@
 ---
-
 layout: post
 title: "How to Convert Manual Test Cases into Automated Tests"
-date: 2026-09-09
-categories: [Test Automation, Software Testing]
+categories: ["Automation"]
 tags: [Manual Testing, Test Automation, Selenium, Java, TestNG, QA, Automated Testing]
 description: "A beginner-friendly step-by-step guide to converting manual test cases into maintainable automated tests using Selenium, Java, and TestNG."
+image: "https://res.cloudinary.com/dig9gupue/image/upload/v1788970199/how-to-convert-manual-test-cases-into-automated-tests_qzyuve.png" 
 ---
+        
+
+<img 
+  src="https://res.cloudinary.com/dig9gupue/image/upload/v1788970199/how-to-convert-manual-test-cases-into-automated-tests_qzyuve.png"
+  srcset="
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_350/v1788970199/how-to-convert-manual-test-cases-into-automated-tests_qzyuve.png 350w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_500/v1788970199/how-to-convert-manual-test-cases-into-automated-tests_qzyuve.png 500w,
+    https://res.cloudinary.com/dig9gupue/image/upload/f_auto,q_auto,w_700/v1788970199/how-to-convert-manual-test-cases-into-automated-tests_qzyuve.png 700w
+  "
+  sizes="(max-width: 768px) 100vw, 700px"
+  width="700"
+  height="500"
+  loading="lazy"
+  alt="How to Convert Manual Test Cases into Automated Tests"
+  fetchpriority="high">
+  
+
 
 Manual testing and automated testing are not competing approaches. In a mature software testing process, they complement each other.
 
