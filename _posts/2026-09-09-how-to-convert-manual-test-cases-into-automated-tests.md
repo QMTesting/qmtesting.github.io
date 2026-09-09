@@ -51,7 +51,7 @@ If any of these terms are unfamiliar, don't worry. They are explained as they ar
 
 ## Table of Contents
 
-1. What Does It Mean to Automate a Manual Test Case?
+1. * What Does It Mean to Automate a Manual Test Case? *
 2. Manual Testing vs. Automated Testing
 3. Should Every Manual Test Be Automated?
 4. Step 1 — Understand the Manual Test Case
