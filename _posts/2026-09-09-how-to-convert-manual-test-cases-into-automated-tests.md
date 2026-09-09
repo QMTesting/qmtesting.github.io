@@ -111,13 +111,21 @@ You might translate those steps directly into:
 <td markdown="1">
         
 Open browser
+
 Navigate to website
+
 Find username field
+
 Enter username
+
 Find password field
+
 Enter password
+
 Click Login
+
 Verify dashboard
+
 Close browser
 
 </td>
