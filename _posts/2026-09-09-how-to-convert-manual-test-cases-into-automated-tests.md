@@ -106,9 +106,10 @@ At first glance, automation appears simple.
 
 You might translate those steps directly into:
 
-<table class="single-box-tools">
+<table class="single-box">
 <tr>
 <td markdown="1">
+        
 Open browser
 Navigate to website
 Find username field
@@ -118,8 +119,9 @@ Enter password
 Click Login
 Verify dashboard
 Close browser
-</td>        
-</tr> 
+
+</td>
+</tr>
 </table>       
 
 
