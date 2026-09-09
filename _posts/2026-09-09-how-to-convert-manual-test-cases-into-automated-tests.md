@@ -1696,11 +1696,7 @@ A tester may notice unexpected behaviour that was never included in a scripted t
 
 ### Usability Testing
 
-Questions such as:
-
-> Is this workflow confusing?
-
-are difficult to answer with ordinary functional automation.
+Questions such as ***Is this workflow confusing?*** are difficult to answer with ordinary functional automation.
 
 ### Visual Review
 
@@ -1714,13 +1710,9 @@ When functionality is still changing rapidly, exploratory manual testing may pro
 
 If a test will only run once, automation development may cost more than simply performing the test manually.
 
-The objective should not be:
+**The objective should not be:** *Automate everything.*
 
-> Automate everything.
-
-A better objective is:
-
-> Automate the repetitive, predictable testing so testers can spend more time on testing that requires investigation and judgment.
+**A better objective is:** *Automate the repetitive, predictable testing so testers can spend more time on testing that requires investigation and judgment.*
 
 ---
 
@@ -1728,9 +1720,9 @@ A better objective is:
 
 Imagine you inherit 500 manual regression tests.
 
-Do not start automating Test Case #1 and continue sequentially through Test Case #500.
+*Do not start automating Test Case #1 and continue sequentially through Test Case #500.*
 
-Prioritize them.
+Instead, Prioritize them.
 
 One simple approach is to score tests based on:
 
