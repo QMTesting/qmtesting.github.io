@@ -133,7 +133,7 @@ For example:
 * Can it run unattended in GitHub Actions or another CI system?
 * Can another tester understand the test six months from now?
 
-Automating a test case therefore means converting the **intent** of the manual test into reliable executable logic—not simply translating every manual step literally.
+Automating a test case therefore means converting the **intent** of the manual test into reliable executable logic:not simply translating every manual step literally.
 
 ---
 
@@ -228,7 +228,7 @@ Automation should provide value, not simply increase the number of automated tes
 
 ---
 
-## 4. Step 1 — Understand the Manual Test Case
+## 4. Step 1 : Understand the Manual Test Case
 
 Never automate a test case you do not understand.
 
@@ -284,7 +284,7 @@ Automating obsolete manual tests only creates obsolete automated tests.
 
 ---
 
-## 5. Step 2 — Decide Whether the Test Is a Good Automation Candidate
+## 5. Step 2 : Decide Whether the Test Is a Good Automation Candidate
 
 Our login test is a strong candidate because it is:
 
@@ -303,7 +303,7 @@ That makes it much more suitable for automation than something such as:
 
 ---
 
-## 6. Step 3 — Separate Preconditions, Actions, and Expected Results
+## 6. Step 3 : Separate Preconditions, Actions, and Expected Results
 
 Manual tests often mix several types of information together.
 
@@ -374,7 +374,7 @@ Thinking this way makes automation substantially easier.
 
 ---
 
-## 7. Step 4 — Prepare the Test Data
+## 7. Step 4 : Prepare the Test Data
 
 Manual testers frequently type whatever data is convenient during execution.
 
@@ -416,7 +416,7 @@ For a public GitHub repository, this is particularly important.
 
 ---
 
-## 8. Step 5 — Identify the Application Elements
+## 8. Step 5 : Identify the Application Elements
 
 A human tester sees:
 
@@ -523,7 +523,7 @@ data-testid="login-submit"
 
 ---
 
-## 9. Step 6 — Translate Manual Actions into Automation Commands
+## 9. Step 6 : Translate Manual Actions into Automation Commands
 
 Now we can begin translating actions.
 
@@ -595,7 +595,7 @@ Because the script has not verified anything.
 
 ---
 
-## 10. Step 7 — Convert Expected Results into Assertions
+## 10. Step 7 : Convert Expected Results into Assertions
 
 Assertions are one of the most important differences between an automation script and an automated test.
 
@@ -688,7 +688,7 @@ Whenever you read an expected result in a manual test, ask:
 
 ---
 
-## 11. Step 8 — Add Synchronization and Explicit Waits
+## 11. Step 8 : Add Synchronization and Explicit Waits
 
 Web applications are asynchronous.
 
@@ -764,7 +764,7 @@ This produces faster and generally more reliable tests.
 
 ---
 
-## 12. Step 9 — Add Setup and Cleanup
+## 12. Step 9 : Add Setup and Cleanup
 
 Tests need predictable starting and ending conditions.
 
@@ -830,7 +830,7 @@ WebDriver driver = new ChromeDriver();
 
 ---
 
-## 13. Step 10 — Refactor the Test Using Page Objects
+## 13. Step 10 : Refactor the Test Using Page Objects
 
 Our test currently contains all of its Selenium commands directly inside the test method.
 
@@ -979,7 +979,7 @@ That separation becomes increasingly valuable as the test suite grows.
 
 ---
 
-## 14. Step 11 — Make the Test Data-Driven
+## 14. Step 11 : Make the Test Data-Driven
 
 A manual test suite often contains several nearly identical tests:
 
@@ -1046,7 +1046,7 @@ This is often an excellent way to convert repetitive manual test cases.
 
 ---
 
-## 15. Step 12 — Add Negative Test Scenarios
+## 15. Step 12 : Add Negative Test Scenarios
 
 Automation should not test only the happy path.
 
@@ -1095,7 +1095,7 @@ A larger suite could move these combinations into a DataProvider as well.
 
 ---
 
-## 16. Step 13 — Run the Test Independently
+## 16. Step 13 : Run the Test Independently
 
 Automated tests should generally be independent.
 
@@ -1159,7 +1159,7 @@ Use UI automation primarily for the behaviour you actually want the UI test to v
 
 ---
 
-## 17. Step 14 — Add the Test to Continuous Integration
+## 17. Step 14 : Add the Test to Continuous Integration
 
 One of the major advantages of automated testing is unattended execution.
 
@@ -1532,7 +1532,7 @@ Simply getting an automated test to run is not enough.
 
 Several common mistakes make automation difficult to maintain.
 
-### Mistake 1 — Translating Every Manual Step Literally
+### Mistake 1 : Translating Every Manual Step Literally
 
 Suppose the manual test says:
 
@@ -1554,7 +1554,7 @@ Automation can sometimes navigate directly to:
 
 Focus on the behaviour being tested.
 
-### Mistake 2 — Using `Thread.sleep()`
+### Mistake 2 : Using `Thread.sleep()`
 
 Avoid:
 
@@ -1568,7 +1568,7 @@ when the real requirement is:
 
 Use an appropriate wait condition instead.
 
-### Mistake 3 — Using Fragile XPath Locators
+### Mistake 3 : Using Fragile XPath Locators
 
 Avoid unnecessarily structural selectors such as:
 
@@ -1580,7 +1580,7 @@ They are easy to break.
 
 Prefer stable identifiers.
 
-### Mistake 4 — Hard-Coding Credentials
+### Mistake 4 : Hard-Coding Credentials
 
 Avoid:
 
@@ -1592,7 +1592,7 @@ inside source code.
 
 Use controlled test accounts and secure configuration or CI secrets.
 
-### Mistake 5 — Creating One Giant Test
+### Mistake 5 : Creating One Giant Test
 
 Avoid:
 
@@ -1614,7 +1614,7 @@ If something fails halfway through, diagnosing the failure becomes difficult.
 
 Create focused tests around meaningful behaviours.
 
-### Mistake 6 — Making Tests Depend on Each Other
+### Mistake 6 : Making Tests Depend on Each Other
 
 Avoid:
 
@@ -1624,13 +1624,13 @@ Test B requires Test A to run first.
 
 Tests should generally be executable independently and in different orders.
 
-### Mistake 7 — Automating an Unstable Feature Too Early
+### Mistake 7 : Automating an Unstable Feature Too Early
 
 If a user interface changes every day, automation may require constant repair.
 
 It can be more efficient to wait until the workflow becomes reasonably stable.
 
-### Mistake 8 — Automating Without Assertions
+### Mistake 8 : Automating Without Assertions
 
 This:
 
@@ -1646,7 +1646,7 @@ It is not necessarily a test.
 
 A test needs verification.
 
-### Mistake 9 — Testing Implementation Instead of Behaviour
+### Mistake 9 : Testing Implementation Instead of Behaviour
 
 Suppose the requirement is:
 
@@ -1662,7 +1662,7 @@ Verify product appears in cart
 
 It usually should not be tightly coupled to internal implementation details that the user never sees.
 
-### Mistake 10 — Expecting Zero Maintenance
+### Mistake 10 : Expecting Zero Maintenance
 
 Automated tests are software.
 
