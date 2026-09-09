@@ -2705,6 +2705,7 @@ As you work through the examples, their roles will become much clearer.
   padding: 18px 22px;
   background-color: #fffaf0;
   border: none;
+  text-align: center;
 }
 </style>
 
