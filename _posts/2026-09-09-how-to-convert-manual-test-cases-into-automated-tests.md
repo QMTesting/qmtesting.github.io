@@ -2657,7 +2657,7 @@ because an explicit wait continues as soon as the required condition becomes tru
 
 The easiest way to understand the main tools is:
 
-| Java |
+> Java >
 ↓ 
  Programming language used to write the tests 
 |          |
