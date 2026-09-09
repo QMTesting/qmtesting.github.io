@@ -2657,7 +2657,7 @@ because an explicit wait continues as soon as the required condition becomes tru
 
 The easiest way to understand the main tools is:
 
-<table class="single-box">
+<table class="single-box-tools">
 <tr>
 <td markdown="1">
 
@@ -2692,14 +2692,14 @@ As you work through the examples, their roles will become much clearer.
 ---
 
 <style>
-.single-box {
+.single-box-tools {
   width: 100% !important;
-  border: 2px solid #c9b98f !important;
-  border-radius: 6px !important;
+  border: 4px solid #c9b98f !important;
+  border-radius: 20px !important;
   background-color: #fffaf0 !important;
 }
 
-.single-box td {
+.single-box-tools td {
   padding: 18px 22px;
   background-color: #fffaf0;
   border: none;
