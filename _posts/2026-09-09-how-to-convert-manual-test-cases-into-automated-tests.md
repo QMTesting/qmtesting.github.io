@@ -47,7 +47,6 @@ This tutorial uses tools and concepts such as **Java, Selenium WebDriver, TestNG
 
 If any of these terms are unfamiliar, don't worry. They are explained as they are introduced throughout the tutorial. You can also refer to the [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial) for quick beginner-friendly definitions.
 
----
 
 
 ## Table of Contents
@@ -85,7 +84,7 @@ If any of these terms are unfamiliar, don't worry. They are explained as they ar
                                 31. Final Thoughts
                                 32.  [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)
 
----
+
 
 ## 1. What Does It Mean to Automate a Manual Test Case?
 
