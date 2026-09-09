@@ -110,28 +110,19 @@ You might translate those steps directly into:
 <tr>
 <td markdown="1">
         
-Open browser
-
-Navigate to website
-
-Find username field
-
-Enter username
-
-Find password field
-
-Enter password
-
-Click Login
-
-Verify dashboard
-
+Open browser<br>
+Navigate to website<br>
+Find username field<br>
+Enter username<br>
+Find password field<br>
+Enter password<br>
+Click Login<br>
+Verify dashboard<br>
 Close browser
 
 </td>
 </tr>
 </table>       
-
 
 
 That is the basic idea, but a production-quality automated test must answer several additional questions.
