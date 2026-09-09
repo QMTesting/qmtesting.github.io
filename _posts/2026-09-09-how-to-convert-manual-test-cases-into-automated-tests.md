@@ -2693,10 +2693,10 @@ As you work through the examples, their roles will become much clearer.
 
 <style>
 .single-box {
-  width: 100%;
-  border: 2px solid #c9b98f;
-  border-radius: 8px;
-  background-color: #fffaf0;
+  width: 100% !important;
+  border: 2px solid #c9b98f !important;
+  border-radius: 6px !important;
+  background-color: #fffaf0 !important;
 }
 
 .single-box td {
