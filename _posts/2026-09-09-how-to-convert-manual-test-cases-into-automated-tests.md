@@ -2692,18 +2692,19 @@ As you work through the examples, their roles will become much clearer.
 ---
 
 <style>
-.single-box {
+table {
+  width: 100%;
   border: 2px solid #c9b98f;
-  background-color: #fffaf0;
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: 8px;
-  overflow: hidden;
+  background-color: #fffaf0;
 }
 
-.single-box th,
-.single-box td {
+table td {
+  padding: 18px 22px;
   background-color: #fffaf0;
-  border-color: #c9b98f;
-  padding: 14px 18px;
+  border: none;
 }
 </style>
 
