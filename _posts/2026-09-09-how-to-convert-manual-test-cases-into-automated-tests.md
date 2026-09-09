@@ -106,7 +106,9 @@ At first glance, automation appears simple.
 
 You might translate those steps directly into:
 
-```text
+<table class="single-box-tools">
+<tr>
+<td markdown="1">
 Open browser
 Navigate to website
 Find username field
@@ -116,7 +118,11 @@ Enter password
 Click Login
 Verify dashboard
 Close browser
-```
+</td>        
+</tr> 
+</table>       
+
+
 
 That is the basic idea, but a production-quality automated test must answer several additional questions.
 
