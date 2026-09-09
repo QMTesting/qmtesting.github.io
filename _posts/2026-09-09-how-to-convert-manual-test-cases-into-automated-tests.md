@@ -2657,20 +2657,7 @@ because an explicit wait continues as soon as the required condition becomes tru
 
 The easiest way to understand the main tools is:
 
- | **Java** <br><br> ↓ <br><br> Programming language used to write the tests <br><br>
-  <br><br>        
- Selenium <br><br>
-  ↓ <br><br>
- Controls the web browser <br><br>      
- TestNG <br><br>
-  ↓ <br><br>
- Organizes tests and determines pass/fail results <br><br>     
- Maven <br><br>
-  ↓ <br><br>
-Manages dependencies and runs the project <br><br>                                        
-GitHub Actions <br><br>
-  ↓  <br><br>
-Runs the tests automatically in CI/CD | 
+ | **Java** <br><br> ↓ <br><br> Programming language used to write the tests <br><br> Selenium <br><br>↓ <br><br>Controls the web browser <br><br> TestNG <br><br>↓ <br><br>Organizes tests and determines pass/fail results <br><br>  Maven <br><br> ↓ <br><br>Manages dependencies and runs the project <br><br> GitHub Actions <br><br> ↓  <br><br>Runs the tests automatically in CI/CD | 
 
 You do not need to memorize all of these tools now.
 
