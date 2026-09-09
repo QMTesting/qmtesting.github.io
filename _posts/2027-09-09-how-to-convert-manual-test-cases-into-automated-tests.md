@@ -66,8 +66,8 @@ If any of these terms are unfamiliar, don't worry. They are explained as they ar
 28. Automation Conversion Checklist
 29. From Manual Tester to Automation Tester
 30. Final Example: The Entire Thought Process
-Final Thoughts
-[Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)
+- Final Thoughts
+- [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)
 
 ---
 
