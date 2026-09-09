@@ -2666,3 +2666,19 @@ As you work through the examples, their roles will become much clearer.
 
 ---
 
+<style>
+.single-box {
+  border: 2px solid #c9b98f;
+  background-color: #fffaf0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.single-box th,
+.single-box td {
+  background-color: #fffaf0;
+  border-color: #c9b98f;
+  padding: 14px 18px;
+}
+</style>
+
