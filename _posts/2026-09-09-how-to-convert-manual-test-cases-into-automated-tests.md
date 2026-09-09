@@ -47,27 +47,27 @@ This tutorial uses tools and concepts such as **Java, Selenium WebDriver, TestNG
 
 If any of these terms are unfamiliar, don't worry. They are explained as they are introduced throughout the tutorial. You can also refer to the [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial) for quick beginner-friendly definitions.
 
-
+---
 
 ## Table of Contents
 
 1.   *What Does It Mean to Automate a Manual Test Case?*
 2.   *Manual Testing vs. Automated Testing*
 3.   *Should Every Manual Test Be Automated?*
-4.   *Step 1 — Understand the Manual Test Case*
-5.   *Step 2 — Decide Whether the Test Is a Good Automation Candidate*
-6.   *Step 3 — Separate Preconditions, Actions, and Expected Results*
-7.   *Step 4 — Prepare the Test Data*
-8.   *Step 5 — Identify the Application Elements*
-9.   *Step 6 — Translate Manual Actions into Automation Commands*
-10.  *Step 7 — Convert Expected Results into Assertions*
-11.  *Step 8 — Add Synchronization and Explicit Waits*
-12.  *Step 9 — Add Setup and Cleanup*
-13.  *Step 10 — Refactor the Test Using Page Objects*
-14.  *Step 11 — Make the Test Data-Driven*
-15.  *Step 12 — Add Negative Test Scenarios*
-16.  *Step 13 — Run the Test Independently*
-17.  *Step 14 — Add the Test to Continuous Integration*
+4.   *Step  1: Understand the Manual Test Case*
+5.   *Step  2: Decide Whether the Test Is a Good Automation Candidate*
+6.   *Step  3: Separate Preconditions, Actions, and Expected Results*
+7.   *Step  4: Prepare the Test Data*
+8.   *Step  5: Identify the Application Elements*
+9.   *Step  6: Translate Manual Actions into Automation Commands*
+10.  *Step  7: Convert Expected Results into Assertions*
+11.  *Step  8: Add Synchronization and Explicit Waits*
+12.  *Step  9: Add Setup and Cleanup*
+13.  *Step 10: Refactor the Test Using Page Objects*
+14.  *Step 11: Make the Test Data-Driven*
+15.  *Step 12: Add Negative Test Scenarios*
+16.  *Step 13: Run the Test Independently*
+17.  *Step 14: Add the Test to Continuous Integration*
 18.  *Complete Selenium and TestNG Example*
 19.  *Manual Test vs. Final Automated Test*
 20.  *Common Mistakes When Converting Manual Tests*
@@ -84,7 +84,7 @@ If any of these terms are unfamiliar, don't worry. They are explained as they ar
 31.  *Final Thoughts*
 32.  *[Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)*
 
-
+---
 
 ## 1. What Does It Mean to Automate a Manual Test Case?
 
