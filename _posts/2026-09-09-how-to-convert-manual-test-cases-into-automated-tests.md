@@ -2657,26 +2657,25 @@ because an explicit wait continues as soon as the required condition becomes tru
 
 The easiest way to understand the main tools is:
 
-### Java
-  ↓
-Programming language used to write the tests
-
-### Selenium
-  ↓
-Controls the web browser
-
-### TestNG
-  ↓
-Organizes tests and determines pass/fail results
-
-### Maven
-  ↓
-Manages dependencies and runs the project
-
-### GitHub Actions
-  ↓
-Runs the tests automatically in CI/CD 
-
+> Java
+>  ↓
+> Programming language used to write the tests
+>
+> Selenium
+>  ↓
+> Controls the web browser
+>
+> TestNG
+>  ↓
+> Organizes tests and determines pass/fail results
+>
+> Maven
+>  ↓
+> Manages dependencies and runs the project
+>
+> GitHub Actions
+>  ↓
+> Runs the tests automatically in CI/CD 
 
 You do not need to memorize all of these tools now.
 
