@@ -27,402 +27,12 @@ A good automated test should be:
 
 This guide explains how to take a traditional manual test case and systematically transform it into an automated test.
 
-We will use **Java, Selenium WebDriver, and TestNG** for the examples, but the methodology applies to most modern test automation frameworks.
+This tutorial uses tools and concepts such as **Java, Selenium WebDriver, TestNG, Maven, Selenium Manager, Page Objects, GitHub Actions, and CI/CD**.
+
+If any of these terms are unfamiliar, don't worry. They are explained as they are introduced throughout the tutorial. You can also refer to the [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial) for quick beginner-friendly definitions.
 
 ---
 
-## Tools and Concepts Used in This Tutorial
-
-Before we begin converting a manual test case into automation, it helps to understand the main tools and concepts used throughout this tutorial.
-
-You do not need to be an expert in any of these before continuing.
-
-### Java
-
-**Java** is the programming language used to write the automated tests in this tutorial.
-
-It is widely used for Selenium-based test automation and has a large ecosystem of testing frameworks, libraries, build tools, and development tools.
-
-For example:
-
-```java
-String username = "testuser@example.com";
-```
-
-Java provides the programming logic, while tools such as Selenium and TestNG provide specialized testing capabilities.
-
----
-
-### Selenium WebDriver
-
-**Selenium WebDriver** is a browser automation tool.
-
-It allows automated tests to control browsers such as Chrome, Edge, and Firefox.
-
-Selenium can perform actions that a user would normally perform manually, including:
-
-* Opening a web page
-* Clicking buttons
-* Entering text
-* Selecting options
-* Navigating between pages
-* Reading information displayed on a page
-
-For example:
-
-```java
-driver.get("https://example.com");
-
-driver.findElement(By.id("login-button")).click();
-```
-
-Selenium is responsible primarily for interacting with the browser.
-
----
-
-### TestNG
-
-**TestNG** is a testing framework for Java.
-
-It helps organize, execute, and manage automated tests.
-
-TestNG provides features such as:
-
-* Test annotations
-* Assertions
-* Setup and cleanup methods
-* Data-driven testing
-* Test grouping
-* Parallel execution
-* Test reporting
-
-For example:
-
-```java
-@Test
-public void validUserCanLogin() {
-
-    // Automated test steps
-
-}
-```
-
-TestNG also provides assertions that determine whether the test passed or failed.
-
-For example:
-
-```java
-Assert.assertEquals(actualResult, expectedResult);
-```
-
----
-
-### Maven
-
-**Maven** is a Java build and dependency-management tool.
-
-It can:
-
-* Download Selenium
-* Download TestNG
-* Manage project dependencies
-* Compile Java code
-* Run automated tests
-* Package applications
-
-Instead of manually downloading every library required by your project, Maven stores dependency information inside a file called:
-
-```text
-pom.xml
-```
-
-Tests can then be executed using:
-
-```bash
-mvn test
-```
-
----
-
-### Selenium Manager
-
-**Selenium Manager** is included with modern versions of Selenium.
-
-It helps automatically manage the browser drivers Selenium needs to communicate with browsers such as:
-
-* Chrome
-* Edge
-* Firefox
-
-Older Selenium tutorials often instruct users to manually download files such as:
-
-```text
-chromedriver.exe
-```
-
-and configure the file path themselves.
-
-For most normal modern Selenium projects, this is no longer necessary.
-
-For example:
-
-```java
-WebDriver driver = new ChromeDriver();
-```
-
-Selenium Manager can normally locate or obtain the required browser driver automatically.
-
----
-
-### Page Object Model
-
-The **Page Object Model**, often abbreviated as **POM**, is a way of organizing automation code.
-
-Instead of placing all Selenium locators and browser interactions directly inside your tests, you create classes that represent pages or important parts of the application.
-
-For example:
-
-```text
-LoginPage
-DashboardPage
-SearchPage
-CheckoutPage
-```
-
-A `LoginPage` class could contain:
-
-* Username locator
-* Password locator
-* Login button locator
-* Methods for entering credentials
-* Method for submitting the Login form
-
-This keeps page-specific code separate from the actual test logic.
-
-> **Important:** Page Object Model is unrelated to Maven's `pom.xml` file. They both use the abbreviation **POM**, but they refer to completely different concepts.
-
----
-
-### TestNG DataProvider
-
-A **DataProvider** is a TestNG feature that allows the same automated test to run several times using different sets of test data.
-
-For example, rather than writing three separate login tests, you could provide three sets of credentials:
-
-```java
-@DataProvider(name = "users")
-public Object[][] users() {
-
-    return new Object[][] {
-
-        {"user1@example.com", "password1"},
-        {"user2@example.com", "password2"},
-        {"user3@example.com", "password3"}
-
-    };
-}
-```
-
-The same test can then run once for each user.
-
-This is known as **data-driven testing**.
-
----
-
-### GitHub Actions
-
-**GitHub Actions** is GitHub's automation and continuous-integration service.
-
-It can automatically perform tasks when something happens in a GitHub repository.
-
-For example:
-
-```text
-Developer pushes code
-        ↓
-GitHub Actions starts
-        ↓
-Automated tests run
-        ↓
-Results are reported
-```
-
-Tests can automatically run when:
-
-* Code is pushed
-* A pull request is created
-* A branch is updated
-* A schedule is reached
-
-This means testers do not always need to manually start the automation suite.
-
----
-
-### CI/CD
-
-**CI/CD** commonly stands for:
-
-* **Continuous Integration**
-* **Continuous Delivery**
-* or **Continuous Deployment**
-
-Continuous Integration means developers regularly merge code changes and automated checks are performed against those changes.
-
-A simplified CI process might look like:
-
-```text
-Code change
-    ↓
-Build application
-    ↓
-Run automated tests
-    ↓
-Report result
-```
-
-Automated testing is an important part of CI/CD because it provides rapid feedback about whether a code change introduced a problem.
-
----
-
-### API
-
-An **API**, or **Application Programming Interface**, allows software systems to communicate directly with each other.
-
-An API does not require a tester to interact with the application's graphical user interface.
-
-In test automation, APIs can sometimes be used to quickly prepare test data.
-
-For example:
-
-```text
-API
- ↓
-Create test customer
-
-Selenium
- ↓
-Test customer checkout
-
-API
- ↓
-Delete test customer
-```
-
-This may be significantly faster than using Selenium to perform every setup and cleanup step through the browser.
-
----
-
-### Assertion
-
-An **assertion** is a check that compares the actual behaviour of the application with the expected behaviour.
-
-For example:
-
-```java
-Assert.assertEquals(
-    actualUsername,
-    "Automation User"
-);
-```
-
-If the actual and expected values match, the assertion passes.
-
-If they do not match, the test fails.
-
-Assertions are extremely important because they allow the automation to determine whether the application behaved correctly.
-
----
-
-### Locator
-
-A **locator** tells Selenium how to find an element on a web page.
-
-For example:
-
-```java
-By.id("username")
-```
-
-tells Selenium to find the element whose HTML `id` is:
-
-```text
-username
-```
-
-Common Selenium locator types include:
-
-```text
-ID
-Name
-Class Name
-CSS Selector
-XPath
-Link Text
-Partial Link Text
-Tag Name
-```
-
-Choosing stable locators is one of the most important parts of creating reliable Selenium tests.
-
----
-
-### Explicit Wait
-
-An **explicit wait** tells Selenium to wait until a particular condition occurs.
-
-For example:
-
-```java
-wait.until(
-    ExpectedConditions.visibilityOfElementLocated(
-        By.id("dashboard-heading")
-    )
-);
-```
-
-Selenium waits until the Dashboard heading becomes visible, or until the configured timeout is reached.
-
-This is generally better than using a fixed delay such as:
-
-```java
-Thread.sleep(5000);
-```
-
-because an explicit wait continues as soon as the required condition becomes true.
-
----
-
-### How the Main Tools Work Together
-
-The easiest way to understand the main tools is:
-
-```text
-Java
-  ↓
-Programming language used to write the tests
-
-Selenium
-  ↓
-Controls the web browser
-
-TestNG
-  ↓
-Organizes tests and determines pass/fail results
-
-Maven
-  ↓
-Manages dependencies and runs the project
-
-GitHub Actions
-  ↓
-Runs the tests automatically in CI/CD
-```
-
-You do not need to memorize all of these tools now.
-
-As you work through the examples, their roles will become much clearer.
-
----
 
 ## Table of Contents
 
@@ -458,6 +68,7 @@ As you work through the examples, their roles will become much clearer.
 * 29. From Manual Tester to Automation Tester
 * 30. Final Example: The Entire Thought Process
 * Final Thoughts
+* [Appendix: Tools and Concepts Used in This Tutorial](#appendix-tools-and-concepts-used-in-this-tutorial)
 
 ---
 
@@ -2672,3 +2283,399 @@ They are the ones containing tests that are:
 The goal of automation is not simply to replace manual execution.
 
 The goal is to create repeatable feedback that helps the development team discover problems faster and gives testers more time to perform the investigative testing that humans do best.
+
+---
+
+## Appendix: Tools and Concepts Used in This Tutorial
+
+Before we begin converting a manual test case into automation, it helps to understand the main tools and concepts used throughout this tutorial.
+
+You do not need to be an expert in any of these before continuing.
+
+### Java
+
+**Java** is the programming language used to write the automated tests in this tutorial.
+
+It is widely used for Selenium-based test automation and has a large ecosystem of testing frameworks, libraries, build tools, and development tools.
+
+For example:
+
+```java
+String username = "testuser@example.com";
+```
+
+Java provides the programming logic, while tools such as Selenium and TestNG provide specialized testing capabilities.
+
+---
+
+### Selenium WebDriver
+
+**Selenium WebDriver** is a browser automation tool.
+
+It allows automated tests to control browsers such as Chrome, Edge, and Firefox.
+
+Selenium can perform actions that a user would normally perform manually, including:
+
+* Opening a web page
+* Clicking buttons
+* Entering text
+* Selecting options
+* Navigating between pages
+* Reading information displayed on a page
+
+For example:
+
+```java
+driver.get("https://example.com");
+
+driver.findElement(By.id("login-button")).click();
+```
+
+Selenium is responsible primarily for interacting with the browser.
+
+---
+
+### TestNG
+
+**TestNG** is a testing framework for Java.
+
+It helps organize, execute, and manage automated tests.
+
+TestNG provides features such as:
+
+* Test annotations
+* Assertions
+* Setup and cleanup methods
+* Data-driven testing
+* Test grouping
+* Parallel execution
+* Test reporting
+
+For example:
+
+```java
+@Test
+public void validUserCanLogin() {
+
+    // Automated test steps
+
+}
+```
+
+TestNG also provides assertions that determine whether the test passed or failed.
+
+For example:
+
+```java
+Assert.assertEquals(actualResult, expectedResult);
+```
+
+---
+
+### Maven
+
+**Maven** is a Java build and dependency-management tool.
+
+It can:
+
+* Download Selenium
+* Download TestNG
+* Manage project dependencies
+* Compile Java code
+* Run automated tests
+* Package applications
+
+Instead of manually downloading every library required by your project, Maven stores dependency information inside a file called:
+
+```text
+pom.xml
+```
+
+Tests can then be executed using:
+
+```bash
+mvn test
+```
+
+---
+
+### Selenium Manager
+
+**Selenium Manager** is included with modern versions of Selenium.
+
+It helps automatically manage the browser drivers Selenium needs to communicate with browsers such as:
+
+* Chrome
+* Edge
+* Firefox
+
+Older Selenium tutorials often instruct users to manually download files such as:
+
+```text
+chromedriver.exe
+```
+
+and configure the file path themselves.
+
+For most normal modern Selenium projects, this is no longer necessary.
+
+For example:
+
+```java
+WebDriver driver = new ChromeDriver();
+```
+
+Selenium Manager can normally locate or obtain the required browser driver automatically.
+
+---
+
+### Page Object Model
+
+The **Page Object Model**, often abbreviated as **POM**, is a way of organizing automation code.
+
+Instead of placing all Selenium locators and browser interactions directly inside your tests, you create classes that represent pages or important parts of the application.
+
+For example:
+
+```text
+LoginPage
+DashboardPage
+SearchPage
+CheckoutPage
+```
+
+A `LoginPage` class could contain:
+
+* Username locator
+* Password locator
+* Login button locator
+* Methods for entering credentials
+* Method for submitting the Login form
+
+This keeps page-specific code separate from the actual test logic.
+
+> **Important:** Page Object Model is unrelated to Maven's `pom.xml` file. They both use the abbreviation **POM**, but they refer to completely different concepts.
+
+---
+
+### TestNG DataProvider
+
+A **DataProvider** is a TestNG feature that allows the same automated test to run several times using different sets of test data.
+
+For example, rather than writing three separate login tests, you could provide three sets of credentials:
+
+```java
+@DataProvider(name = "users")
+public Object[][] users() {
+
+    return new Object[][] {
+
+        {"user1@example.com", "password1"},
+        {"user2@example.com", "password2"},
+        {"user3@example.com", "password3"}
+
+    };
+}
+```
+
+The same test can then run once for each user.
+
+This is known as **data-driven testing**.
+
+---
+
+### GitHub Actions
+
+**GitHub Actions** is GitHub's automation and continuous-integration service.
+
+It can automatically perform tasks when something happens in a GitHub repository.
+
+For example:
+
+```text
+Developer pushes code
+        ↓
+GitHub Actions starts
+        ↓
+Automated tests run
+        ↓
+Results are reported
+```
+
+Tests can automatically run when:
+
+* Code is pushed
+* A pull request is created
+* A branch is updated
+* A schedule is reached
+
+This means testers do not always need to manually start the automation suite.
+
+---
+
+### CI/CD
+
+**CI/CD** commonly stands for:
+
+* **Continuous Integration**
+* **Continuous Delivery**
+* or **Continuous Deployment**
+
+Continuous Integration means developers regularly merge code changes and automated checks are performed against those changes.
+
+A simplified CI process might look like:
+
+```text
+Code change
+    ↓
+Build application
+    ↓
+Run automated tests
+    ↓
+Report result
+```
+
+Automated testing is an important part of CI/CD because it provides rapid feedback about whether a code change introduced a problem.
+
+---
+
+### API
+
+An **API**, or **Application Programming Interface**, allows software systems to communicate directly with each other.
+
+An API does not require a tester to interact with the application's graphical user interface.
+
+In test automation, APIs can sometimes be used to quickly prepare test data.
+
+For example:
+
+```text
+API
+ ↓
+Create test customer
+
+Selenium
+ ↓
+Test customer checkout
+
+API
+ ↓
+Delete test customer
+```
+
+This may be significantly faster than using Selenium to perform every setup and cleanup step through the browser.
+
+---
+
+### Assertion
+
+An **assertion** is a check that compares the actual behaviour of the application with the expected behaviour.
+
+For example:
+
+```java
+Assert.assertEquals(
+    actualUsername,
+    "Automation User"
+);
+```
+
+If the actual and expected values match, the assertion passes.
+
+If they do not match, the test fails.
+
+Assertions are extremely important because they allow the automation to determine whether the application behaved correctly.
+
+---
+
+### Locator
+
+A **locator** tells Selenium how to find an element on a web page.
+
+For example:
+
+```java
+By.id("username")
+```
+
+tells Selenium to find the element whose HTML `id` is:
+
+```text
+username
+```
+
+Common Selenium locator types include:
+
+```text
+ID
+Name
+Class Name
+CSS Selector
+XPath
+Link Text
+Partial Link Text
+Tag Name
+```
+
+Choosing stable locators is one of the most important parts of creating reliable Selenium tests.
+
+---
+
+### Explicit Wait
+
+An **explicit wait** tells Selenium to wait until a particular condition occurs.
+
+For example:
+
+```java
+wait.until(
+    ExpectedConditions.visibilityOfElementLocated(
+        By.id("dashboard-heading")
+    )
+);
+```
+
+Selenium waits until the Dashboard heading becomes visible, or until the configured timeout is reached.
+
+This is generally better than using a fixed delay such as:
+
+```java
+Thread.sleep(5000);
+```
+
+because an explicit wait continues as soon as the required condition becomes true.
+
+---
+
+### How the Main Tools Work Together
+
+The easiest way to understand the main tools is:
+
+```text
+Java
+  ↓
+Programming language used to write the tests
+
+Selenium
+  ↓
+Controls the web browser
+
+TestNG
+  ↓
+Organizes tests and determines pass/fail results
+
+Maven
+  ↓
+Manages dependencies and runs the project
+
+GitHub Actions
+  ↓
+Runs the tests automatically in CI/CD
+```
+
+You do not need to memorize all of these tools now.
+
+As you work through the examples, their roles will become much clearer.
+
+---
+
