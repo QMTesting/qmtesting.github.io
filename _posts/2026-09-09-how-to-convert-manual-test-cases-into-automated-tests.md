@@ -164,13 +164,19 @@ The requirement must become measurable.
 
 For example:
 
-```text
+<table class="single-box">
+<tr>
+<td markdown="1">
+
 Verify that:
-- the page title is "Login"
-- the username field is visible
-- the password field is visible
-- the Login button is enabled
-```
+- the page title is "Login" <br>
+- the username field is visible <br>
+- the password field is visible <br>
+- the Login button is enabled <br>
+
+</td>
+</tr>
+</table>  
 
 These conditions can be evaluated programmatically.
 
@@ -268,10 +274,16 @@ Consider this example.
 
 **Test Data:**
 
-```text
-Username: automation.user@example.com
-Password: valid test password
-```
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+Username: automation.user@example.com <br>
+Password: valid test password <br>
+
+</td>
+</tr>
+</table>  
 
 **Steps:**
 
