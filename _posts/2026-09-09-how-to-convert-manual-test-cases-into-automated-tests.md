@@ -133,7 +133,7 @@ For example:
 * Can it run unattended in GitHub Actions or another CI system?
 * Can another tester understand the test six months from now?
 
-Automating a test case therefore means converting the **intent** of the manual test into reliable executable logic:not simply translating every manual step literally.
+Automating a test case therefore means converting the **intent** of the manual test into reliable executable logic, not simply translating every manual step literally.
 
 ---
 
