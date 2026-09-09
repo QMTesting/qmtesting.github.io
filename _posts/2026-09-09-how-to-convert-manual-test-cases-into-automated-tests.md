@@ -2656,10 +2656,10 @@ because an explicit wait continues as soon as the required condition becomes tru
 ### How the Main Tools Work Together
 
 The easiest way to understand the main tools is:
-|:-----:|
+
 | Java |
-| ↓ |
-| Programming language used to write the tests |
+↓ 
+ Programming language used to write the tests 
 |          |
 | Selenium | 
 |  ↓
