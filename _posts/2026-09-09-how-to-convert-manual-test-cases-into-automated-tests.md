@@ -105,26 +105,17 @@ A manual tester might perform these steps:
 At first glance, automation appears simple.
 
 You might translate those steps directly into:
-
-<table class="single-box">
-<tr>
-<td markdown="1">
         
-Open browser<br>
-Navigate to website<br>
-Find username field<br>
-Enter username<br>
-Find password field<br>
-Enter password<br>
-Click Login<br>
-Verify dashboard<br>
-Close browser
-
-</td>
-</tr>
-</table>       
-
-
+1. Open browser
+2. Navigate to website
+3. Find username field
+4. Enter username
+5. Find password field
+6. Enter password
+7. Click Login
+8. Verify dashboard
+9. Close browser
+    
 That is the basic idea, but a production-quality automated test must answer several additional questions.
 
 For example:
@@ -162,21 +153,13 @@ Automation cannot.
 
 The requirement must become measurable.
 
-For example:
-
-<table class="single-box">
-<tr>
-<td markdown="1">
+**For example:**
 
 Verify that:
-- the page title is "Login" <br>
-- the username field is visible <br>
-- the password field is visible <br>
-- the Login button is enabled <br>
-
-</td>
-</tr>
-</table>  
+- the page title is "Login" 
+- the username field is visible 
+- the password field is visible 
+- the Login button is enabled 
 
 These conditions can be evaluated programmatically.
 
@@ -274,16 +257,8 @@ Consider this example.
 
 **Test Data:**
 
-<table class="single-box">
-<tr>
-<td markdown="1">
-
-Username: automation.user@example.com <br>
-Password: valid test password <br>
-
-</td>
-</tr>
-</table>  
+Username: automation.user@example.com 
+Password: valid test password 
 
 **Steps:**
 
@@ -332,62 +307,53 @@ For automation, separate them.
 
 Things that must already be true:
 
-```text
-User account exists
-User account is active
-User is logged out
-Application is available
-```
+- User account exists
+- User account is active
+- User is logged out
+- Application is available
+
 
 ### Actions
 
 Things the automation performs:
 
-```text
-Open Login page
-Enter username
-Enter password
-Click Login
-```
+- Open Login page
+- Enter username
+- Enter password
+- Click Login
+
 
 ### Assertions
 
 Things the automation verifies:
 
-```text
-Dashboard URL is displayed
-Dashboard heading is visible
-Correct account name appears
-```
+- Dashboard URL is displayed
+- Dashboard heading is visible
+- Correct account name appears
 
 This creates a useful pattern:
 
-```text
-ARRANGE
+**ARRANGE**
 Prepare the environment and data
 
-ACT
+**ACT**
 Perform the user actions
 
-ASSERT
+**ASSERT**
 Verify the result
-```
+
 
 You may also see this described as:
 
-```text
 Given
 When
 Then
-```
 
 For example:
 
-```text
 Given an active registered user
 When the user enters valid credentials
 Then the dashboard should be displayed
-```
 
 Thinking this way makes automation substantially easier.
 
@@ -518,19 +484,25 @@ If a developer inserts another `<div>`, the test might fail even though the Logi
 
 A reasonable general priority is:
 
-```text
-Stable unique ID
+<table class="single-box-tools">
+<tr>
+<td markdown="1">
+
+**Stable unique ID**
 ↓
-Dedicated test attribute
+**Dedicated test attribute**
 ↓
-Stable semantic attribute
+**Stable semantic attribute**
 ↓
-CSS selector
+**CSS selector**
 ↓
-Carefully designed XPath
+**Carefully designed XPath**
 ↓
-Absolute XPath
-```
+**Absolute XPath**
+
+</td>
+</tr>
+</table>
 
 The exact choice depends on the application.
 
@@ -659,9 +631,8 @@ Assert.assertTrue(
 
 Manual expected result:
 
-```text
 Login page appears.
-```
+
 
 Possible automation assertion:
 
@@ -674,9 +645,7 @@ Assert.assertEquals(
 
 Manual expected result:
 
-```text
 Login button is enabled.
-```
 
 Automation:
 
@@ -688,9 +657,7 @@ Assert.assertTrue(
 
 Manual expected result:
 
-```text
 Error message appears.
-```
 
 Automation:
 
@@ -1002,12 +969,11 @@ That separation becomes increasingly valuable as the test suite grows.
 
 A manual test suite often contains several nearly identical tests:
 
-```text
-Login with User A
-Login with User B
-Login with User C
-Login with Administrator
-```
+1. Login with User A
+2. Login with User B
+3. Login with User C
+4. Login with Administrator
+
 
 Writing a separate automation method for each data combination creates duplication.
 
@@ -1120,12 +1086,10 @@ Automated tests should generally be independent.
 
 Avoid designs such as:
 
-```text
 Test 1: Create account
 Test 2: Login using account created by Test 1
 Test 3: Edit account used by Test 2
 Test 4: Delete account used by Test 3
-```
 
 What happens if Test 1 fails?
 
@@ -1137,21 +1101,17 @@ Instead, each test should establish the state it requires whenever reasonably po
 
 Conceptually:
 
-```text
-Test A
-Create required data
-Perform test
-Verify result
-Clean up
-```
+**Test A:**
+1. Create required data
+2. Perform test
+3. Verify result
+4. Clean up
 
-```text
-Test B
-Create required data
-Perform test
-Verify result
-Clean up
-```
+**Test B**
+1. Create required data
+2. Perform test
+3. Verify result
+4. Clean up
 
 Test independence improves:
 
@@ -1167,12 +1127,10 @@ For example, if you are testing order cancellation, you may not need Selenium to
 
 Instead:
 
-```text
-API → create test order
-Selenium → cancel order
-Assertion → verify cancellation
-API → remove test data
-```
+**API** → create test order
+**Selenium** → cancel order
+**Assertion** → verify cancellation
+**API** → remove test data
 
 Use UI automation primarily for the behaviour you actually want the UI test to validate.
 
@@ -1184,9 +1142,7 @@ One of the major advantages of automated testing is unattended execution.
 
 Instead of someone manually clicking:
 
-```text
-Run Tests
-```
+*Run Tests*
 
 every morning, the tests can run automatically when:
 
@@ -1200,9 +1156,7 @@ For a GitHub project, this can be accomplished with **GitHub Actions**.
 
 A basic Maven workflow might be stored at:
 
-```text
-.github/workflows/test.yml
-```
+*.github/workflows/test.yml*
 
 Example:
 
@@ -1242,17 +1196,16 @@ jobs:
 
 Now the basic flow becomes:
 
-```text
-Developer pushes code
+**Developer pushes code**
         ↓
-GitHub Actions starts
+**GitHub Actions starts**
         ↓
-Project is built
+**Project is built**
         ↓
-Automated tests execute
+**Automated tests execute**
         ↓
-Pass or failure is reported
-```
+**Pass or failure is reported**
+
 
 This is where automation begins delivering much more value than simply replacing repetitive manual clicking.
 
@@ -1479,14 +1432,12 @@ public class LoginTest extends BaseTest {
 
 The original manual workflow:
 
-```text
-Open application
-Enter username
-Enter password
-Click Login
-Verify dashboard
-Verify username
-```
+1. Open application
+2. Enter username
+3 .Enter password
+4. Click Login
+5. Verify dashboard
+6. Verify username
 
 has now become a reusable automated test architecture.
 
@@ -1498,8 +1449,7 @@ It helps to compare the transformation.
 
 ### Manual Test
 
-```text
-Precondition:
+**Precondition:**
 User account exists.
 
 1. Open Login page.
@@ -1508,38 +1458,37 @@ User account exists.
 4. Click Login.
 5. Verify dashboard appears.
 6. Verify correct username appears.
-```
+
 
 ### Automated Representation
 
-```text
-SETUP
+**SETUP**
 Create browser
 
-DATA
+**DATA**
 Load test credentials
 
-ACTION
+**ACTION**
 Open Login page
 
-ACTION
+**ACTION**
 Enter credentials
 
-ACTION
+**ACTION**
 Submit form
 
-WAIT
+**WAIT**
 Wait for dashboard
 
-ASSERT
+**ASSERT**
 Dashboard is visible
 
-ASSERT
+**ASSERT**
 Expected user is displayed
 
-CLEANUP
+**CLEANUP**
 Close browser
-```
+
 
 This is the key mental model for converting manual tests into automation.
 
@@ -1555,21 +1504,17 @@ Several common mistakes make automation difficult to maintain.
 
 Suppose the manual test says:
 
-```text
 1. Open browser.
 2. Open Home page.
 3. Click Account.
 4. Click Login.
 5. Enter credentials.
-```
 
 If the actual purpose is testing login, navigating through several unrelated screens may provide no additional value.
 
 Automation can sometimes navigate directly to:
 
-```text
-/login
-```
+*/login*
 
 Focus on the behaviour being tested.
 
@@ -1613,19 +1558,17 @@ Use controlled test accounts and secure configuration or CI secrets.
 
 ### Mistake 5 : Creating One Giant Test
 
-Avoid:
+**Avoid:**
 
-```text
-Register
-Login
-Search
-Add Item
-Checkout
-Edit Profile
-Logout
-Login Again
-Delete Account
-```
+1. Register
+2. Login
+3. Search
+4. Add Item
+5. Checkout
+6. Edit Profile
+7. Logout
+8. Login Again
+9. Delete Account
 
 all within one massive test.
 
@@ -1637,9 +1580,7 @@ Create focused tests around meaningful behaviours.
 
 Avoid:
 
-```text
-Test B requires Test A to run first.
-```
+*Test B requires Test A to run first.*
 
 Tests should generally be executable independently and in different orders.
 
@@ -1651,7 +1592,7 @@ It can be more efficient to wait until the workflow becomes reasonably stable.
 
 ### Mistake 8 : Automating Without Assertions
 
-This:
+**This:**
 
 ```java
 click();
@@ -1667,39 +1608,30 @@ A test needs verification.
 
 ### Mistake 9 : Testing Implementation Instead of Behaviour
 
-Suppose the requirement is:
+**Suppose the requirement is:**
 
 > User can successfully add a product to the cart.
 
-The automation should focus on observable behaviour:
+**The automation should focus on observable behaviour:**
 
-```text
-Select product
-Add product
-Verify product appears in cart
-```
+1. Select product
+2. Add product
+3. Verify product appears in cart
 
 It usually should not be tightly coupled to internal implementation details that the user never sees.
 
 ### Mistake 10 : Expecting Zero Maintenance
 
-Automated tests are software.
+>Automated tests are software.
+>Software requires maintenance.
+>Applications change.
+>Browsers change.
+>Requirements change.
+>Test data changes.
+>Dependencies change.
+>Selectors change.
 
-Software requires maintenance.
-
-Applications change.
-
-Browsers change.
-
-Requirements change.
-
-Test data changes.
-
-Dependencies change.
-
-Selectors change.
-
-A good automation framework reduces maintenance; it does not eliminate it.
+*A good automation framework reduces maintenance; it does not eliminate it.*
 
 ---
 
@@ -1745,19 +1677,17 @@ Instead, Prioritize them.
 
 One simple approach is to score tests based on:
 
-```text
-Business Risk
-+
-Execution Frequency
-+
-Manual Execution Time
-+
-Repeatability
-+
-Technical Feasibility
-```
+>  **Business Risk**
+>          +
+>**Execution Frequency**
+>          +    
+>**Manual Execution Time**
+>          +
+>   **Repeatability**
+>          +
+>**Technical Feasibility**
 
-For example:
+**For example:**
 
 | Test                            | Frequency     | Risk     | Automation Value |
 | ------------------------------- | ------------- | -------- | ---------------- |
@@ -1775,25 +1705,22 @@ Start where automation provides the greatest return.
 
 A common misconception is:
 
-```text
 1 manual test = 1 automated test
-```
 
 That does not have to be true.
 
 A manual login case might eventually become:
 
-```text
-validUserCanLogin()
-invalidPasswordShowsError()
-unknownUserShowsError()
-emptyUsernameShowsValidation()
-emptyPasswordShowsValidation()
-lockedUserCannotLogin()
-disabledUserCannotLogin()
-userCanLogout()
-sessionExpiresCorrectly()
-```
+>validUserCanLogin()
+>invalidPasswordShowsError()
+>unknownUserShowsError()
+>emptyUsernameShowsValidation()
+>emptyPasswordShowsValidation()
+>lockedUserCannotLogin()
+>disabledUserCannotLogin()
+>userCanLogout()
+>sessionExpiresCorrectly()
+
 
 Automation frequently exposes opportunities to reorganize manual test coverage into smaller, more focused scenarios.
 
@@ -1805,12 +1732,10 @@ The reverse is also possible.
 
 Suppose the manual suite contains:
 
-```text
-TC-101 Login as administrator
-TC-102 Login as manager
-TC-103 Login as employee
-TC-104 Login as customer
-```
+>TC-101 Login as administrator
+>TC-102 Login as manager
+>TC-103 Login as employee
+>TC-104 Login as customer
 
 A data-driven automated test could potentially cover all four:
 
@@ -1835,9 +1760,8 @@ Not every test needs to execute through a browser.
 
 Suppose you need to validate this business rule:
 
-```text
-Orders greater than $100 receive free shipping.
-```
+>Orders greater than $100 receive free shipping.
+
 
 You could test 30 combinations through the browser.
 
@@ -1845,29 +1769,26 @@ But that may be slow.
 
 A better architecture might use:
 
-```text
-Unit tests
-       ↓
-API tests
-       ↓
-A smaller number of UI tests
-```
+>Unit tests
+>       ↓
+>API tests
+>       ↓
+>A smaller number of UI tests
 
-For example:
+**For example:**
 
-```text
-Unit/API tests:
-$90
-$99.99
-$100
-$100.01
-$150
-$500
+>Unit/API tests:
+>$90
+>$99.99
+>$100
+>$100.01
+>$150
+>$500
 
-UI tests:
-One representative free-shipping scenario
-One representative paid-shipping scenario
-```
+>UI tests:
+>One representative free-shipping scenario
+>One representative paid-shipping scenario
+
 
 UI automation is powerful, but browser-based end-to-end tests are usually more expensive and slower than lower-level automated tests.
 
@@ -1879,27 +1800,26 @@ Use the right layer for the behaviour you want to verify.
 
 The basic conversion process remains the same regardless of framework:
 
-```text
-Manual Test
-     ↓
-Identify intent
-     ↓
-Identify test data
-     ↓
-Identify actions
-     ↓
-Identify expected results
-     ↓
-Create locators/interactions
-     ↓
-Create assertions
-     ↓
-Handle synchronization
-     ↓
-Run independently
-     ↓
-Integrate into CI/CD
-```
+>	Manual Test
+>	↓
+>	Identify intent
+>	↓
+>	Identify test data
+>	↓
+>	Identify actions
+>	↓
+>	Identify expected results
+>	↓
+>	Create locators/interactions
+>	↓
+>	Create assertions
+>	↓
+>	Handle synchronization
+>	↓
+>	Run independently
+>	↓
+>	Integrate into CI/CD
+
 
 What changes is the syntax.
 
