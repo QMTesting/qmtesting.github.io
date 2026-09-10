@@ -1946,60 +1946,62 @@ This forces you to think about the test as an automation engineer rather than si
 
 Before considering the conversion complete, check the following.
 
+```
 ### Test Selection
 
-* [ ] The scenario benefits from automation.
-* [ ] The functionality is reasonably stable.
-* [ ] The scenario is likely to be executed repeatedly.
-* [ ] The expected result can be objectively measured.
+[ ] The scenario benefits from automation.
+[ ] The functionality is reasonably stable.
+[ ] The scenario is likely to be executed repeatedly.
+[ ] The expected result can be objectively measured.
 
 ### Manual Test Review
 
-* [ ] The manual test is current.
-* [ ] Preconditions are documented.
-* [ ] Test data is known.
-* [ ] Expected results are clear.
-* [ ] Business rules are understood.
+[ ] The manual test is current.
+[ ] Preconditions are documented.
+[ ] Test data is known.
+[ ] Expected results are clear.
+[ ] Business rules are understood.
 
 ### Test Design
 
-* [ ] The test has a clear purpose.
-* [ ] The test performs only necessary actions.
-* [ ] Assertions verify meaningful results.
-* [ ] Test data is controlled.
-* [ ] Sensitive information is not hard-coded.
+[ ] The test has a clear purpose.
+[ ] The test performs only necessary actions.
+[ ] Assertions verify meaningful results.
+[ ] Test data is controlled.
+[ ] Sensitive information is not hard-coded.
 
 ### Selenium Design
 
-* [ ] Locators are stable.
-* [ ] Absolute XPath is avoided where possible.
-* [ ] Appropriate waits are used.
-* [ ] Arbitrary sleeps are minimized or eliminated.
-* [ ] Page Objects or equivalent abstractions are used where useful.
+[ ] Locators are stable.
+[ ] Absolute XPath is avoided where possible.
+[ ] Appropriate waits are used.
+[ ] Arbitrary sleeps are minimized or eliminated.
+[ ] Page Objects or equivalent abstractions are used where useful.
 
 ### Reliability
 
-* [ ] The test can run independently.
-* [ ] The test does not rely unnecessarily on another test.
-* [ ] Test data does not conflict with parallel tests.
-* [ ] Cleanup occurs when necessary.
-* [ ] Browser sessions are properly closed.
+[ ] The test can run independently.
+[ ] The test does not rely unnecessarily on another test.
+[ ] Test data does not conflict with parallel tests.
+[ ] Cleanup occurs when necessary.
+[ ] Browser sessions are properly closed.
 
 ### Maintainability
 
-* [ ] Repeated logic has been refactored.
-* [ ] Test names describe expected behaviour.
-* [ ] Code is readable.
-* [ ] Page-specific logic is separated from test logic.
-* [ ] Test data can be changed without rewriting the entire test.
+[ ] Repeated logic has been refactored.
+[ ] Test names describe expected behaviour.
+[ ] Code is readable.
+[ ] Page-specific logic is separated from test logic.
+[ ] Test data can be changed without rewriting the entire test.
 
 ### Execution
 
-* [ ] The test runs locally.
-* [ ] The test produces a clear pass/fail result.
-* [ ] Failures are understandable.
-* [ ] The test can run from Maven or the project build tool.
-* [ ] The test can run in CI/CD.
+[ ] The test runs locally.
+[ ] The test produces a clear pass/fail result.
+[ ] Failures are understandable.
+[ ] The test can run from Maven or the project build tool.
+[ ] The test can run in CI/CD.
+```
 
 ---
 
