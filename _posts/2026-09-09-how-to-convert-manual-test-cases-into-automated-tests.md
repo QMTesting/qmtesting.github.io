@@ -484,21 +484,21 @@ If a developer inserts another `<div>`, the test might fail even though the Logi
 
 A reasonable general priority is:
 
-<table class="single-box-tools">
+<table class="single-box">
 <tr>
 <td markdown="1">
 
-**Stable unique ID**
-↓
-**Dedicated test attribute**
-↓
-**Stable semantic attribute**
-↓
-**CSS selector**
-↓
-**Carefully designed XPath**
-↓
-**Absolute XPath**
+**Stable unique ID**<br>
+↓<br>
+**Dedicated test attribute**<br>
+↓<br>
+**Stable semantic attribute**<br>
+↓<br>
+**CSS selector**<br>
+↓<br>
+**Carefully designed XPath**<br>
+↓<br>
+**Absolute XPath**<br>
 
 </td>
 </tr>
@@ -1689,15 +1689,15 @@ One simple approach is to score tests based on:
 <tr>
 <td markdown="1">
 
-**Business Risk**
-+
-**Execution Frequency**
-+    
-**Manual Execution Time**
-+
-**Repeatability**
-+
-**Technical Feasibility**
+**Business Risk**<br>
++<br>
+**Execution Frequency**<br>
++<br>
+**Manual Execution Time**<br>
++<br>
+**Repeatability**<br>
++<br>
+**Technical Feasibility**<br>
 </td>
 </tr>
 </table>
@@ -1789,11 +1789,11 @@ A better architecture might use:
 <tr>
 <td markdown="1">
 
-**Unit tests**
-       ↓
-**API tests**
-       ↓
-**A smaller number of UI tests**
+**Unit tests**<br>
+       ↓<br>
+**API tests**<br>
+       ↓<br>
+**A smaller number of UI tests**<br>
 
 </td>
 </tr>
@@ -1805,17 +1805,17 @@ A better architecture might use:
 <tr>
 <td markdown="1">
 
-**Unit/API tests:**
-$90
-$99.99
-$100
-$100.01
-$150
-$500
+**Unit/API tests:**<br>
+$90<br>
+$99.99<br>
+$100<br>
+$100.01<br>
+$150<br>
+$500<br><br>
 
-**UI tests:**
-One representative free-shipping scenario
-One representative paid-shipping scenario
+**UI tests:**<br>
+One representative free-shipping scenario<br>
+One representative paid-shipping scenario<br>
 
 </td>
 </tr>
@@ -1836,25 +1836,25 @@ The basic conversion process remains the same regardless of framework:
 <tr>
 <td markdown="1">
 
-Manual Test
-↓
-Identify intent
-↓
-Identify test data
-↓
-Identify actions
-↓
-Identify expected results
-↓
-Create locators/interactions
-↓
-Create assertions
-↓
-Handle synchronization
-↓
-Run independently
-↓
-Integrate into CI/CD
+**Manual Test**<br>
+↓<br>
+**Identify intent**<br>
+↓<br>
+**Identify test data**<br>
+↓<br>
+**Identify actions**<br>
+↓<br>
+**Identify expected results**<br>
+↓<br>
+**Create locators/interactions**<br>
+↓<br>
+**Create assertions**<br>
+↓<br>
+**Handle synchronization**<br>
+↓<br>
+**Run independently**<br>
+↓<br>
+**Integrate into CI/CD**<br>
 
 </td>
 </tr>
@@ -1897,64 +1897,64 @@ When you are ready to automate a manual test case, copy this template.
 <tr>
 <td markdown="1">
 
-**MANUAL TEST CASE**
-----------------
+**MANUAL TEST CASE**<br>
+----------------<br><br>
 
-Test ID:
+Test ID:<br>
 
-Title:
+Title:<br>
 
-Business purpose:
+Business purpose:<br>
 
-Preconditions:
+Preconditions:<br>
 
-Test data:
+Test data:<br>
 
-Manual actions:
+Manual actions:<br>
 
-Expected results:
+Expected results:<br><br>
 
 
-AUTOMATION ANALYSIS
--------------------
+AUTOMATION ANALYSIS<br>
+-------------------<br><br>
 
-Should this test be automated?
+Should this test be automated?<br><br>
 
-Why?
+Why?<br><br>
 
-Automation layer:
-[ ] Unit
-[ ] API
-[ ] UI
-[ ] Combination
+Automation layer:<br>
+[ ] Unit<br>
+[ ] API<br>
+[ ] UI<br>
+[ ] Combination<br><br>
 
-Required test data:
+Required test data:<br>
 
-Required environment:
+Required environment:<br>
 
-Elements/locators:
+Elements/locators:<br>
 
-Setup requirements:
+Setup requirements:<br>
 
-Cleanup requirements:
+Cleanup requirements:<br>
 
-Actions to automate:
+Actions to automate:<br>
 
-Assertions:
+Assertions:<br>
 
-Synchronization requirements:
+Synchronization requirements:<br>
 
-External dependencies:
+External dependencies:<br>
 
-Negative scenarios:
+Negative scenarios:<br>
 
-Data-driven opportunities:
+Data-driven opportunities:<br>
 
-Page objects/components required:
+Page objects/components required:<br>
 
-CI/CD execution:
+CI/CD execution:<br>
 
-Potential maintenance risks:
+Potential maintenance risks:<br>
 
 </td>
 </tr>
@@ -2037,19 +2037,19 @@ A manual tester already understands concepts such as:
 <tr>
 <td markdown="1">
         
-Requirements
-      ↓
-Risk
-      ↓
-Test conditions
-      ↓
-Test cases
-      ↓
-Test data
-      ↓
-Expected results
-      ↓
-Defects
+**Requirements**<br>
+      ↓<br>
+**Risk**<br>
+      ↓<br>
+**Test conditions**<br>
+      ↓<br>
+**Test cases**<br>
+      ↓<br>
+**Test data**<br>
+      ↓<br>
+**Expected results**<br>
+      ↓<br>
+**Defects**<br>
 
 </td>
 </tr>
@@ -2061,23 +2061,23 @@ Automation adds another layer:
 <tr>
 <td markdown="1">
 
-**Requirements**
-      ↓
-**Risk**
-      ↓
-**Test conditions**
-      ↓
-**Test design**
-      ↓
-**Automation design**
-      ↓
-**Code**
-      ↓
-**Execution**
-      ↓
-**Assertions**
-      ↓
-**Results**
+**Requirements**<br>
+      ↓<br>
+**Risk**<br>
+      ↓<br>
+**Test conditions**<br>
+      ↓<br>
+**Test design**<br>
+      ↓<br>
+**Automation design**<br>
+      ↓<br>
+**Code**<br>
+      ↓<br>
+**Execution**<br>
+      ↓<br>
+**Assertions**<br>
+      ↓<br>
+**Results**<br>
 
 </td>
 </tr>
@@ -2195,21 +2195,21 @@ into a repeatable automated test with:
 <tr>
 <td markdown="1">
 
-**Controlled setup**
-+
-**Controlled test data**
-+
-**Automated actions**
-+
-**Synchronization**
-+
-**Assertions**
-+
-**Cleanup**
-+
-**Reusable architecture**
-+
-**CI/CD capability**
+**Controlled setup**<br>
++<br>
+**Controlled test data**<br>
++<br>
+**Automated actions**<br>
++<br>
+**Synchronization**<br>
++<br>
+**Assertions**<br>
++<br>
+**Cleanup**<br>
++<br>
+**Reusable architecture**<br>
++<br>
+**CI/CD capability**<br>
 
 </td>
 </tr>
@@ -2243,29 +2243,29 @@ A useful transformation is:
 <tr>
 <td markdown="1">
  
-**Manual Test Case**
-        ↓
-**Understand the intent**
-        ↓
-**Decide whether automation adds value**
-        ↓
-**Identify preconditions and test data**
-        ↓
-**Translate user actions**
-        ↓
-**Create stable element locators**
-        ↓
-**Add synchronization**
-        ↓
-**Convert expected results into assertions**
-        ↓
-**Separate reusable page logic**
-        ↓
-**Make tests independent**
-        ↓
-**Add data-driven coverage where useful**
-        ↓
-**Run automatically through CI/CD**
+**Manual Test Case**<br>
+        ↓<br>
+**Understand the intent**<br>
+        ↓<br>
+**Decide whether automation adds value**<br>
+        ↓<br>
+**Identify preconditions and test data**<br>
+        ↓<br>
+**Translate user actions**<br>
+        ↓<br>
+**Create stable element locators**<br>
+        ↓<br>
+**Add synchronization**<br>
+        ↓<br>
+**Convert expected results into assertions**<br>
+        ↓<br>
+**Separate reusable page logic**<br>
+        ↓<br>
+**Make tests independent**<br>
+        ↓<br>
+**Add data-driven coverage where useful**<br>
+        ↓<br>
+**Run automatically through CI/CD**<br>
 
 </td>
 </tr>
@@ -2494,13 +2494,13 @@ For example:
 <tr>
 <td markdown="1">
  
-**Developer pushes code**
-        ↓
-**GitHub Actions starts**
-        ↓
-**Automated tests run**
-        ↓
-**Results are reported**
+**Developer pushes code**<br>
+        ↓<br>
+**GitHub Actions starts**<br>
+        ↓<br>
+**Automated tests run**<br>
+        ↓<br>
+**Results are reported**<br>
 
 </td>
 </tr>
@@ -2533,13 +2533,13 @@ A simplified CI process might look like:
 <tr>
 <td markdown="1">
 
-**Code change**
-    ↓
-**Build application**
-    ↓
-**Run automated tests**
-    ↓
-**Report result**
+**Code change**<br>
+    ↓<br>
+**Build application**<br>
+    ↓<br>
+**Run automated tests**<br>
+    ↓<br>
+**Report result**<br>
 
 </td>
 </tr>
@@ -2563,17 +2563,17 @@ For example:
 <tr>
 <td markdown="1">
  
-**API**
- ↓
-**Create test customer**
+**API**<br>
+ ↓<br>
+Create test customer<br><br>
 
-**Selenium**
- ↓
-**Test customer checkout**
+**Selenium**<br>
+ ↓<br>
+Test customer checkout<br><br>
 
-**API**
+**API**<br>
  ↓
-Delete test customer
+Delete test customer<br>
 
 </td>
 </tr>
@@ -2664,29 +2664,29 @@ because an explicit wait continues as soon as the required condition becomes tru
 
 The easiest way to understand the main tools is:
 
-<table class="single-box-tools">
+<table class="single-box">
 <tr>
 <td markdown="1">
 
-**Java**  
-↓  
-Programming language used to write the tests
+**Java**<br>  
+↓<br>
+Programming language used to write the tests<br><br>
 
-**Selenium**  
-↓  
-Controls the web browser
+**Selenium**<br>  
+↓<br>
+Controls the web browser<br><br>
 
-**TestNG**  
-↓  
-Organizes tests and determines pass/fail results
+**TestNG**<br> 
+↓<br>  
+Organizes tests and determines pass/fail results<br><br>
 
-**Maven**  
-↓  
-Manages dependencies and runs the project
+**Maven**<br> 
+↓<br>  
+Manages dependencies and runs the project<br><br>
 
-**GitHub Actions**  
-↓  
-Runs the tests automatically in CI/CD
+**GitHub Actions**<br>  
+↓<br>
+Runs the tests automatically in CI/CD<br><br>
 
 </td>
 </tr>
@@ -2699,7 +2699,7 @@ As you work through the examples, their roles will become much clearer.
 ---
 
 <style>
-.single-box-tools {
+.single-box {
   width: 100% !important;
   border: 4px solid #c9b98f !important;
   border-radius: 20px !important;
