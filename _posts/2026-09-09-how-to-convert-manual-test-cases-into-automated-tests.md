@@ -1893,7 +1893,7 @@ The testing principles do not.
 
 When you are ready to automate a manual test case, copy this template.
 
-<table class="single-box">
+<table class="single-box-auto">
 <tr>
 <td markdown="1">
 
