@@ -1262,10 +1262,15 @@ div.highlight code {
 .single-box-auto td {
   padding: 18px 22px !important;
   background-color: #fffaf0 !important;
-  border: none !important;
-  white-space: pre-line;
-  line-height: 1.25;	
+  border: none !important;	
 }
+.single-box-auto td p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.4;
+}
+
+
 
 
 /************************************/
