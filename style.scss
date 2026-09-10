@@ -1252,17 +1252,18 @@ div.highlight code {
   padding-bottom: 2em !important; /* ✅ Extra space below last line */
 }
 
-.single-box {
+.single-box-auto {
   width: 100% !important;
   border: 4px solid #c9b98f !important;
   border-radius: 20px !important;
   background-color: #fffaf0 !important;
 }
 
-.single-box td {
+.single-box-auto td {
   padding: 18px 22px !important;
   background-color: #fffaf0 !important;
   border: none !important;
+  white-space: pre-line;	
 }
 
 
