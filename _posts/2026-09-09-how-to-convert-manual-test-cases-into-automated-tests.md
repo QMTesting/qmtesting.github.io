@@ -1897,8 +1897,7 @@ When you are ready to automate a manual test case, copy this template.
 <tr>
 <td markdown="1">
 
-**MANUAL TEST CASE**<br>
-----------------<br><br>
+**MANUAL TEST CASE:**<br>
 
 Test ID:<br>
 
@@ -1915,8 +1914,7 @@ Manual actions:<br>
 Expected results:<br><br>
 
 
-AUTOMATION ANALYSIS<br>
--------------------<br><br>
+**AUTOMATION ANALYSIS:**<br>
 
 Should this test be automated?<br><br>
 
@@ -2706,7 +2704,7 @@ As you work through the examples, their roles will become much clearer.
   background-color: #fffaf0 !important;
 }
 
-.single-box-tools td {
+.single-box td {
   padding: 18px 22px;
   background-color: #fffaf0;
   border: none;
