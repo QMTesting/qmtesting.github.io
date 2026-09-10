@@ -1946,7 +1946,10 @@ This forces you to think about the test as an automation engineer rather than si
 
 Before considering the conversion complete, check the following.
 
-```
+<table class="single-box-checklist">
+<tr>
+<td markdown="1">
+
 **Test Selection**
 
 ☐ The scenario benefits from automation.
@@ -2001,7 +2004,10 @@ Before considering the conversion complete, check the following.
 ☐ Failures are understandable.
 ☐ The test can run from Maven or the project build tool.
 ☐ The test can run in CI/CD.
-```
+
+</td>
+</tr>
+</table> 
 
 
 ---
@@ -2691,7 +2697,32 @@ As you work through the examples, their roles will become much clearer.
   padding: 18px 22px;
   background-color: #fffaf0;
   border: none;
-  text-align: center;
+  text-align: center;      
 }
+
+.single-box-checklist {
+  width: 100% !important;
+  border: 4px solid #c9b98f !important;
+  border-radius: 20px !important;
+  background-color: #fffaf0 !important;
+}
+
+.single-box-checklist td {
+  padding: 18px 22px;
+  background-color: #fffaf0;
+  border: none;
+  text-align: center;  
+  white-space: pre-line;      
+}
+
+.single-box-checklist td p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.4;
+    font-size: 25px;
+        
+}        
+
+         
 </style>
 
