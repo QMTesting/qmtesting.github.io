@@ -1196,15 +1196,23 @@ jobs:
 
 Now the basic flow becomes:
 
-**Developer pushes code**
-        ↓
-**GitHub Actions starts**
-        ↓
-**Project is built**
-        ↓
-**Automated tests execute**
-        ↓
-**Pass or failure is reported**
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**Developer pushes code**<br>
+        ↓<br>
+**GitHub Actions starts**<br>
+        ↓<br>
+**Project is built**<br>
+        ↓<br>
+**Automated tests execute**<br>
+        ↓<br>
+**Pass or failure is reported**<br>
+
+</td>
+</tr>
+</table> 
 
 
 This is where automation begins delivering much more value than simply replacing repetitive manual clicking.
@@ -1462,32 +1470,32 @@ User account exists.
 
 ### Automated Representation
 
-**SETUP**
-Create browser
+**SETUP**<br>
+Create browser<br><br>
 
-**DATA**
-Load test credentials
+**DATA**<br>
+Load test credentials<br><br>
 
-**ACTION**
-Open Login page
+**ACTION**<br>
+Open Login page<br><br>
 
-**ACTION**
-Enter credentials
+**ACTION**<br>
+Enter credentials<br><br>
 
-**ACTION**
-Submit form
+**ACTION**<br>
+Submit form<br><br>
 
-**WAIT**
-Wait for dashboard
+**WAIT**<br>
+Wait for dashboard<br><br>
 
-**ASSERT**
-Dashboard is visible
+**ASSERT**<br>
+Dashboard is visible<br><br>
 
-**ASSERT**
-Expected user is displayed
+**ASSERT**<br>
+Expected user is displayed<br><br>
 
-**CLEANUP**
-Close browser
+**CLEANUP**<br>
+Close browser<br><br>
 
 
 This is the key mental model for converting manual tests into automation.
@@ -1677,15 +1685,23 @@ Instead, Prioritize them.
 
 One simple approach is to score tests based on:
 
->  **Business Risk**
->          +
->**Execution Frequency**
->          +    
->**Manual Execution Time**
->          +
->   **Repeatability**
->          +
->**Technical Feasibility**
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**Business Risk**
++
+**Execution Frequency**
++    
+**Manual Execution Time**
++
+**Repeatability**
++
+**Technical Feasibility**
+</td>
+</tr>
+</table>
+
 
 **For example:**
 
@@ -1769,25 +1785,41 @@ But that may be slow.
 
 A better architecture might use:
 
->Unit tests
->       ↓
->API tests
->       ↓
->A smaller number of UI tests
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**Unit tests**
+       ↓
+**API tests**
+       ↓
+**A smaller number of UI tests**
+
+</td>
+</tr>
+</table> 
 
 **For example:**
 
->Unit/API tests:
->$90
->$99.99
->$100
->$100.01
->$150
->$500
+<table class="single-box">
+<tr>
+<td markdown="1">
 
->UI tests:
->One representative free-shipping scenario
->One representative paid-shipping scenario
+**Unit/API tests:**
+$90
+$99.99
+$100
+$100.01
+$150
+$500
+
+**UI tests:**
+One representative free-shipping scenario
+One representative paid-shipping scenario
+
+</td>
+</tr>
+</table>
 
 
 UI automation is powerful, but browser-based end-to-end tests are usually more expensive and slower than lower-level automated tests.
@@ -1800,26 +1832,33 @@ Use the right layer for the behaviour you want to verify.
 
 The basic conversion process remains the same regardless of framework:
 
->	Manual Test
->	↓
->	Identify intent
->	↓
->	Identify test data
->	↓
->	Identify actions
->	↓
->	Identify expected results
->	↓
->	Create locators/interactions
->	↓
->	Create assertions
->	↓
->	Handle synchronization
->	↓
->	Run independently
->	↓
->	Integrate into CI/CD
+<table class="single-box">
+<tr>
+<td markdown="1">
 
+Manual Test
+↓
+Identify intent
+↓
+Identify test data
+↓
+Identify actions
+↓
+Identify expected results
+↓
+Create locators/interactions
+↓
+Create assertions
+↓
+Handle synchronization
+↓
+Run independently
+↓
+Integrate into CI/CD
+
+</td>
+</tr>
+</table>
 
 What changes is the syntax.
 
@@ -1854,8 +1893,11 @@ The testing principles do not.
 
 When you are ready to automate a manual test case, copy this template.
 
-```text
-MANUAL TEST CASE
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**MANUAL TEST CASE**
 ----------------
 
 Test ID:
@@ -1913,7 +1955,10 @@ Page objects/components required:
 CI/CD execution:
 
 Potential maintenance risks:
-```
+
+</td>
+</tr>
+</table>  
 
 This forces you to think about the test as an automation engineer rather than simply translating instructions into code.
 
@@ -1988,7 +2033,10 @@ In fact, strong manual testing skills are extremely valuable when learning autom
 
 A manual tester already understands concepts such as:
 
-```text
+<table class="single-box">
+<tr>
+<td markdown="1">
+        
 Requirements
       ↓
 Risk
@@ -2002,29 +2050,39 @@ Test data
 Expected results
       ↓
 Defects
-```
+
+</td>
+</tr>
+</table>  
 
 Automation adds another layer:
 
-```text
-Requirements
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**Requirements**
       ↓
-Risk
+**Risk**
       ↓
-Test conditions
+**Test conditions**
       ↓
-Test design
+**Test design**
       ↓
-Automation design
+**Automation design**
       ↓
-Code
+**Code**
       ↓
-Execution
+**Execution**
       ↓
-Assertions
+**Assertions**
       ↓
-Results
-```
+**Results**
+
+</td>
+</tr>
+</table>
+
 
 The difficult part is often not learning how to write:
 
@@ -2055,13 +2113,12 @@ Let's finish with a simple example.
 
 ### Manual Test
 
-```text
 1. Open the Login page.
 2. Enter valid username.
 3. Enter valid password.
 4. Click Login.
 5. Verify Dashboard appears.
-```
+
 
 ### Automation Analysis
 
@@ -2077,30 +2134,25 @@ Login is frequently used and business-critical.
 
 #### What Test Data Is Required?
 
-```text
-Valid test account
-Valid password
-Expected display name
-```
+1. Valid test account
+2. Valid password
+3. Expected display name
+
 
 #### What UI Elements Are Required?
 
-```text
-Username input
-Password input
-Login button
-Dashboard heading
-Account name
-```
+1. Username input
+2. Password input
+3. Login button
+4. Dashboard heading
+5. Account name
 
 #### What Actions Are Required?
 
-```text
-Open page
-Enter username
-Enter password
-Click Login
-```
+1. Open page
+2. Enter username
+3. Enter password
+4. Click Login
 
 #### What Synchronization Is Required?
 
@@ -2108,17 +2160,14 @@ Wait for the dashboard after submitting the Login form.
 
 #### What Assertions Are Required?
 
-```text
-Dashboard appears
-Correct user appears
-```
+1. Dashboard appears
+2. Correct user appears
+
 
 #### What Reusable Objects Are Appropriate?
 
-```text
-LoginPage
-DashboardPage
-```
+1. LoginPage
+2. DashboardPage
 
 #### What Setup Is Required?
 
@@ -2138,29 +2187,33 @@ Yes.
 
 We have now converted the test from a human instruction:
 
-```text
-Verify that login works.
-```
+>Verify that login works.
 
 into a repeatable automated test with:
 
-```text
-Controlled setup
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**Controlled setup**
 +
-Controlled test data
+**Controlled test data**
 +
-Automated actions
+**Automated actions**
 +
-Synchronization
+**Synchronization**
 +
-Assertions
+**Assertions**
 +
-Cleanup
+**Cleanup**
 +
-Reusable architecture
+**Reusable architecture**
 +
-CI/CD capability
-```
+**CI/CD capability**
+
+</td>
+</tr>
+</table> 
 
 That is the real process of converting a manual test case into an automated test.
 
@@ -2176,43 +2229,47 @@ A manual test tells a human:
 
 An automated test must instead define exactly:
 
-```text
-WHAT state is required
-WHAT data is required
-WHAT actions should occur
-WHEN the application is ready
-WHAT result is expected
-HOW that result will be measured
-HOW the test returns to a clean state
-```
+1. WHAT state is required
+2. WHAT data is required
+3. WHAT actions should occur
+4. WHEN the application is ready
+5. WHAT result is expected
+6. HOW that result will be measured
+7. HOW the test returns to a clean state
 
 A useful transformation is:
 
-```text
-Manual Test Case
+<table class="single-box">
+<tr>
+<td markdown="1">
+ 
+**Manual Test Case**
         ↓
-Understand the intent
+**Understand the intent**
         ↓
-Decide whether automation adds value
+**Decide whether automation adds value**
         ↓
-Identify preconditions and test data
+**Identify preconditions and test data**
         ↓
-Translate user actions
+**Translate user actions**
         ↓
-Create stable element locators
+**Create stable element locators**
         ↓
-Add synchronization
+**Add synchronization**
         ↓
-Convert expected results into assertions
+**Convert expected results into assertions**
         ↓
-Separate reusable page logic
+**Separate reusable page logic**
         ↓
-Make tests independent
+**Make tests independent**
         ↓
-Add data-driven coverage where useful
+**Add data-driven coverage where useful**
         ↓
-Run automatically through CI/CD
-```
+**Run automatically through CI/CD**
+
+</td>
+</tr>
+</table> 
 
 The most successful automation suites are not necessarily those containing the greatest number of tests.
 
@@ -2332,9 +2389,8 @@ It can:
 
 Instead of manually downloading every library required by your project, Maven stores dependency information inside a file called:
 
-```text
 pom.xml
-```
+
 
 Tests can then be executed using:
 
@@ -2356,9 +2412,7 @@ It helps automatically manage the browser drivers Selenium needs to communicate 
 
 Older Selenium tutorials often instruct users to manually download files such as:
 
-```text
 chromedriver.exe
-```
 
 and configure the file path themselves.
 
@@ -2382,12 +2436,11 @@ Instead of placing all Selenium locators and browser interactions directly insid
 
 For example:
 
-```text
-LoginPage
-DashboardPage
-SearchPage
-CheckoutPage
-```
+- LoginPage
+- DashboardPage
+- SearchPage
+- CheckoutPage
+
 
 A `LoginPage` class could contain:
 
@@ -2437,15 +2490,21 @@ It can automatically perform tasks when something happens in a GitHub repository
 
 For example:
 
-```text
-Developer pushes code
+<table class="single-box">
+<tr>
+<td markdown="1">
+ 
+**Developer pushes code**
         ↓
-GitHub Actions starts
+**GitHub Actions starts**
         ↓
-Automated tests run
+**Automated tests run**
         ↓
-Results are reported
-```
+**Results are reported**
+
+</td>
+</tr>
+</table> 
 
 Tests can automatically run when:
 
@@ -2470,15 +2529,21 @@ Continuous Integration means developers regularly merge code changes and automat
 
 A simplified CI process might look like:
 
-```text
-Code change
+<table class="single-box">
+<tr>
+<td markdown="1">
+
+**Code change**
     ↓
-Build application
+**Build application**
     ↓
-Run automated tests
+**Run automated tests**
     ↓
-Report result
-```
+**Report result**
+
+</td>
+</tr>
+</table>  
 
 Automated testing is an important part of CI/CD because it provides rapid feedback about whether a code change introduced a problem.
 
@@ -2494,19 +2559,25 @@ In test automation, APIs can sometimes be used to quickly prepare test data.
 
 For example:
 
-```text
-API
+<table class="single-box">
+<tr>
+<td markdown="1">
+ 
+**API**
  ↓
-Create test customer
+**Create test customer**
 
-Selenium
+**Selenium**
  ↓
-Test customer checkout
+**Test customer checkout**
 
-API
+**API**
  ↓
 Delete test customer
-```
+
+</td>
+</tr>
+</table> 
 
 This may be significantly faster than using Selenium to perform every setup and cleanup step through the browser.
 
@@ -2545,22 +2616,19 @@ By.id("username")
 
 tells Selenium to find the element whose HTML `id` is:
 
-```text
 username
-```
+
 
 Common Selenium locator types include:
 
-```text
-ID
-Name
-Class Name
-CSS Selector
-XPath
-Link Text
-Partial Link Text
-Tag Name
-```
+- ID
+- Name
+- Class Name
+- CSS Selector
+- XPath
+- Link Text
+- Partial Link Text
+- Tag Name
 
 Choosing stable locators is one of the most important parts of creating reliable Selenium tests.
 
