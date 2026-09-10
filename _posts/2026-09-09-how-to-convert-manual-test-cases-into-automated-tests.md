@@ -2277,7 +2277,7 @@ The goal is to create repeatable feedback that helps the development team discov
 
 ## 32. Appendix: Tools and Concepts Used in This Tutorial
 
-Before we begin converting a manual test case into automation, it helps to understand the main tools and concepts used throughout this tutorial.
+Before converting a manual test case into automation, it helps to understand the main tools and concepts used throughout this tutorial.
 
 You do not need to be an expert in any of these before continuing.
 
