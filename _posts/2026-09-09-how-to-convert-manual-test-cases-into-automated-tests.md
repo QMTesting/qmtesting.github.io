@@ -1900,24 +1900,16 @@ When you are ready to automate a manual test case, copy this template.
 **MANUAL TEST CASE:**
 
 Test ID:
-
 Title:
-
 Business purpose:
-
 Preconditions:
-
 Test data:
-
 Manual actions:
-
 Expected results:
-
 
 **AUTOMATION ANALYSIS:**
 
 Should this test be automated?
-
 Why?
 
 Automation layer:
@@ -1927,31 +1919,18 @@ Automation layer:
 [ ] Combination
 
 Required test data:
-
 Required environment:
-
 Elements/locators:
-
 Setup requirements:
-
 Cleanup requirements:
-
 Actions to automate:
-
 Assertions:
-
 Synchronization requirements:
-
 External dependencies:
-
 Negative scenarios:
-
 Data-driven opportunities:
-
 Page objects/components required:
-
 CI/CD execution:
-
 Potential maintenance risks:
 
 </td>
