@@ -1897,66 +1897,67 @@ When you are ready to automate a manual test case, copy this template.
 <tr>
 <td markdown="1">
 
-**MANUAL TEST CASE:**<br>
+**MANUAL TEST CASE:**
 
-Test ID:<br>
+Test ID:
 
-Title:<br>
+Title:
 
-Business purpose:<br>
+Business purpose:
 
-Preconditions:<br>
+Preconditions:
 
-Test data:<br>
+Test data:
 
-Manual actions:<br>
+Manual actions:
 
-Expected results:<br><br>
+Expected results:
 
 
-**AUTOMATION ANALYSIS:**<br>
+**AUTOMATION ANALYSIS:**
 
-Should this test be automated?<br><br>
+Should this test be automated?
 
-Why?<br><br>
+Why?
 
-Automation layer:<br>
-[ ] Unit<br>
-[ ] API<br>
-[ ] UI<br>
-[ ] Combination<br><br>
+Automation layer:
+[ ] Unit
+[ ] API
+[ ] UI
+[ ] Combination
 
-Required test data:<br>
+Required test data:
 
-Required environment:<br>
+Required environment:
 
-Elements/locators:<br>
+Elements/locators:
 
-Setup requirements:<br>
+Setup requirements:
 
-Cleanup requirements:<br>
+Cleanup requirements:
 
-Actions to automate:<br>
+Actions to automate:
 
-Assertions:<br>
+Assertions:
 
-Synchronization requirements:<br>
+Synchronization requirements:
 
-External dependencies:<br>
+External dependencies:
 
-Negative scenarios:<br>
+Negative scenarios:
 
-Data-driven opportunities:<br>
+Data-driven opportunities:
 
-Page objects/components required:<br>
+Page objects/components required:
 
-CI/CD execution:<br>
+CI/CD execution:
 
-Potential maintenance risks:<br>
+Potential maintenance risks:
 
 </td>
 </tr>
 </table>  
+
 
 This forces you to think about the test as an automation engineer rather than simply translating instructions into code.
 
