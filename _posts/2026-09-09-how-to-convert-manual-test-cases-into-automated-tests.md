@@ -2710,8 +2710,7 @@ As you work through the examples, their roles will become much clearer.
 .single-box-checklist td {
   padding: 18px 22px;
   background-color: #fffaf0;
-  border: none;
-  text-align: center;  
+  border: none; 
   white-space: pre-line;      
 }
 
