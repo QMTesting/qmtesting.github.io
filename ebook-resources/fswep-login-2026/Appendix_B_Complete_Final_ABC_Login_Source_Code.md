@@ -1,5 +1,15 @@
 # Appendix B — Complete Final ABC_Login Source Code
 
+UPDATE THE FOOLLOWING SCRIPTS:
+1. Add Screenshot to BG002 and Test Run Result Test Case 007 for retest failed TC007:
+azure-retest-pipeline_UPDATED.yml
+Attach-TestResultScreenshot_UPDATED.ps1
+Attach-BugScreenshot_UPDATED.ps1CodeOpen file
+
+2. Add retest failed TC007 screenshot to Published artifacts:
+ABC_Login_RetestPipeline.yml
+ABC_Login_CollectTestEvidence.ps1
+
 This appendix contains the complete source-controlled code required to reconstruct the current ABC_Login Regression and Retest framework.
 
 Publication-safety note: The two JSON test-data files are reproduced with placeholder credentials, and the private training login URL in the Java source is replaced with https://your-login-url.example/login. Nonblank usernames are shown as YOUR_TEST_USERNAME; valid and intentionally invalid passwords are shown as YOUR_VALID_TEST_PASSWORD and YOUR_INVALID_TEST_PASSWORD. Blank username/password values used by negative Test Cases remain blank. Apart from these publication-safety substitutions, the core listings are taken from the current uploaded ABC_Login project files.
