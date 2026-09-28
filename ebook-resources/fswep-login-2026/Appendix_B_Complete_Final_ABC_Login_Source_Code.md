@@ -1,14 +1,14 @@
 # Appendix B — Complete Final ABC_Login Source Code
 
-UPDATE THE FOOLLOWING SCRIPTS:
+UPDATE THE FOLLOWING SCRIPTS:
 1. Add Screenshot to BG002 and Test Run Result Test Case 007 for retest failed TC007:
-azure-retest-pipeline_UPDATED.yml
-Attach-TestResultScreenshot_UPDATED.ps1
-Attach-BugScreenshot_UPDATED.ps1CodeOpen file
+- azure-retest-pipeline_UPDATED.yml
+- Attach-TestResultScreenshot_UPDATED.ps1
+- Attach-BugScreenshot_UPDATED.ps1CodeOpen file
 
 2. Add retest failed TC007 screenshot to Published artifacts:
-ABC_Login_RetestPipeline.yml
-ABC_Login_CollectTestEvidence.ps1
+- ABC_Login_RetestPipeline.yml
+- ABC_Login_CollectTestEvidence.ps1
 
 This appendix contains the complete source-controlled code required to reconstruct the current ABC_Login Regression and Retest framework.
 
