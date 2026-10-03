@@ -75,18 +75,17 @@
     <meta name="keywords" content="{{ page.tags | join: ', ' }}">
     {% endif %}
 
-    ```html
-<!-- SILKTIDE CONSENT MANAGER - START -->
+ 
+    <!-- SILKTIDE CONSENT MANAGER - START -->
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <!-- ============================================================
-     1. PERFORMANCE PRELOADS
+     1. PERFORMANCE PRELOAD
      ============================================================ -->
 
-<!-- Preload Silktide CSS -->
 <link
   rel="preload"
   href="/silktid/silktide-consent-manager.css"
@@ -103,10 +102,10 @@
 
 
 <!-- ============================================================
-     3. GOOGLE ANALYTICS
+     3. GOOGLE ANALYTICS LOADER
      
-     Google Analytics is NOT loaded until the visitor accepts
-     Analytics through the Silktide consent manager.
+     GA4 does NOT load until Analytics consent is granted.
+     Measurement ID: G-2XX8QBYYZ6
      ============================================================ -->
 
 <script>
@@ -117,14 +116,9 @@
     dataLayer.push(arguments);
   }
 
-
   let googleAnalyticsLoaded = false;
 
 
-  /**
-   * Load Google Analytics only after the visitor
-   * grants Analytics consent.
-   */
   function loadGoogleAnalytics() {
 
     if (googleAnalyticsLoaded) {
@@ -135,11 +129,8 @@
 
 
     /*
-     * Analytics consent has been granted.
-     *
-     * Advertising-related consent remains denied because
-     * qmstesting.com is not currently using personalized
-     * advertising through this configuration.
+     * Analytics has been granted.
+     * Advertising-related consent remains denied.
      */
     gtag('consent', 'default', {
 
@@ -156,8 +147,7 @@
 
 
     /*
-     * Load the Google Analytics script only now,
-     * after Analytics consent has been granted.
+     * Load Google Analytics only after consent.
      */
     const gaScript = document.createElement('script');
 
@@ -166,43 +156,42 @@
     gaScript.src =
       'https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6';
 
-
-    gaScript.onload = function () {
-
-      gtag('js', new Date());
-
-      gtag('config', 'G-2XX8QBYYZ6', {
-        send_page_view: true
-      });
-
-      console.log('[CONSENT] Google Analytics loaded');
-
-    };
-
-
     document.head.appendChild(gaScript);
+
+
+    /*
+     * Queue GA initialization.
+     */
+    gtag('js', new Date());
+
+    gtag('config', 'G-2XX8QBYYZ6', {
+      send_page_view: true
+    });
+
+
+    console.log('[CONSENT] QMSTesting Google Analytics enabled');
 
   }
 
 
-  /**
-   * Deny future Analytics storage if consent is
-   * rejected or later withdrawn.
-   */
   function disableGoogleAnalytics() {
 
-    gtag('consent', 'update', {
+    if (googleAnalyticsLoaded) {
 
-      analytics_storage: 'denied',
+      gtag('consent', 'update', {
 
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied'
+        analytics_storage: 'denied',
 
-    });
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+
+      });
+
+    }
 
 
-    console.log('[CONSENT] Google Analytics disabled');
+    console.log('[CONSENT] QMSTesting Google Analytics disabled');
 
   }
 
@@ -222,14 +211,21 @@
     preferencesButton: true,
 
 
+    /*
+     * IMPORTANT:
+     *
+     * This creates a fresh consent-storage version.
+     *
+     * Visitors see the FULL banner once after this update.
+     *
+     * After making a choice, later visits show only the
+     * cookie/preferences icon.
+     */
+    bannerSuffix: "v2",
+
+
     cookieTypes: [
 
-      /*
-       * Necessary
-       *
-       * Used for essential website functionality and
-       * remembering the visitor's privacy preferences.
-       */
       {
         id: "necessary",
 
@@ -242,14 +238,6 @@
       },
 
 
-      /*
-       * Analytics
-       *
-       * OFF by default.
-       *
-       * Google Analytics is loaded only when the visitor
-       * accepts this category.
-       */
       {
         id: "analytics",
 
@@ -273,15 +261,12 @@
           disableGoogleAnalytics();
 
         }
+
       }
 
     ],
 
 
-    /*
-     * Text displayed in the Silktide banner
-     * and preferences window.
-     */
     text: {
 
       banner: {
@@ -319,10 +304,7 @@
 
 
 <!-- ============================================================
-     5. LOAD SILKTIDE CONSENT MANAGER
-     
-     "defer" ensures the HTML document has been parsed before
-     Silktide attempts to create the banner in document.body.
+     5. LOAD SILKTIDE
      ============================================================ -->
 
 <script
@@ -332,7 +314,7 @@
 
 
 <!-- ============================================================
-     6. LISTEN FOR CHANGES TO COOKIE PREFERENCES
+     6. LISTEN FOR CONSENT CHANGES
      ============================================================ -->
 
 <script>
@@ -360,10 +342,7 @@
 
 </script>
 
-
 <!-- SILKTIDE CONSENT MANAGER - END -->
-
-
   </head>
 
   <body>
