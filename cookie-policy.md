@@ -11,19 +11,6 @@ permalink: /cookie-policy
 
 <br /><br />
 
----
-layout: default
-title: Cookie Policy
-permalink: /cookie-policy
----
-
-<nav class="breadcrumbs">
-  <a href="/">🏠</a> &gt;
-  <span class="current">Cookie Policy</span>
-</nav>
-
-<br /><br />
-
 <h2>Cookie Policy</h2>
 
 #### Last updated: October 3, 2026
