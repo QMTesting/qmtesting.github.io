@@ -627,7 +627,8 @@ ol {
 .footer-menu nav {
     justify-content: center;
     margin-bottom: 20px;
-    width: 675px !important;
+    width: 975px !important;
+    
   }	      
  
  
