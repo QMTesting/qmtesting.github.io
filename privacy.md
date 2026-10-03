@@ -558,8 +558,7 @@ contact:
 </p>
 
 <p>
-<strong>QMSTesting.com</strong><br />
-<strong>contact@qmstesting.com</strong>
+<strong> QMSTesting.com</strong> at <strong>contact@qmstesting.com</strong>
 </p>
 
 <p>
