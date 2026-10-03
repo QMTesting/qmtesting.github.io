@@ -294,7 +294,4 @@ The **Last updated** date at the top of this page identifies the most recent rev
 
 ## 17. Contact Us
 
-If you have questions about this Cookie Policy or how QMSTesting uses cookies and similar technologies, please contact:
-
-**QMSTesting.com**  
-*contact@qmstesting.com*
+If you have questions about this Cookie Policy or how QMSTesting uses cookies and similar technologies, please contact **QMSTesting.com** at **contact@qmstesting.com**
