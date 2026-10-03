@@ -554,12 +554,9 @@ The "Last updated" date at the top of this page identifies the latest revision.
 
 <p>
 For questions about this Privacy Policy or to make a privacy-related request,
-contact:
+contact <strong> QMSTesting.com</strong> at <strong>contact@qmstesting.com</strong>
 </p>
 
-<p>
-<strong> QMSTesting.com</strong> at <strong>contact@qmstesting.com</strong>
-</p>
 
 <p>
 We may request enough information to understand or verify a request where
