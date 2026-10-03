@@ -572,9 +572,11 @@ contact <strong> QMSTesting.com</strong> at <strong>contact@qmstesting.com</stro
     }
 
    .page-container {
-     margin-left: 100px;
-     margin-right: -150px;
-   }  
+      margin-left: 100px;
+      margin-right: 50px;
+      max-width: 900px;
+      box-sizing: border-box;
+    }
 
    h1 {
   font-size: 36px;
