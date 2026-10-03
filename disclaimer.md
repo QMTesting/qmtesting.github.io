@@ -168,11 +168,7 @@ This Disclaimer should be read together with any other policies published on QMS
 
 ## Contact Us
 
-For questions about this Disclaimer, please contact:
-
-**QMSTesting.com**  
-[https://qmstesting.com](https://qmstesting.com)  
-**contact@qmstesting.com**
+For questions about this Disclaimer, please contact **QMSTesting.com** at **contact@qmstesting.com**
 
 <style>
   @media only screen and (min-width: 820px) and (max-width: 2000px) {
