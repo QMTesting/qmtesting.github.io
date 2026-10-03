@@ -558,11 +558,7 @@ contact <strong> QMSTesting.com</strong> at <strong>contact@qmstesting.com</stro
 </p>
 
 
-<p>
-We may request enough information to understand or verify a request where
-appropriate. Please do not send unnecessary identification documents or
-sensitive information unless specifically requested.
-</p>
+<p> We may request enough information to understand or verify a request where appropriate. Please do not send unnecessary identification documents or sensitive information unless specifically requested.</p>
 
 </div>
 
