@@ -277,8 +277,4 @@ A failure by QMSTesting to enforce any provision of these Terms does not constit
 
 ## 18. Contact Us
 
-If you have questions about these Terms of Use, contact:
-
-**QMSTesting.com**  
-[https://qmstesting.com](https://qmstesting.com)  
-**contact@qmstesting.com**
+If you have questions about these Terms of Use, contact **QMSTesting.com** at **contact@qmstesting.com**
