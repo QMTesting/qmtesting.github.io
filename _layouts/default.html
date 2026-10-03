@@ -76,20 +76,25 @@
     {% endif %}
 
  
-    <!-- SILKTIDE CONSENT MANAGER - START -->
+     <!-- SILKTIDE CONSENT MANAGER - START -->
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <!-- ============================================================
-     1. PERFORMANCE PRELOAD
+     1. PERFORMANCE PRELOADS
      ============================================================ -->
 
 <link
   rel="preload"
   href="/silktid/silktide-consent-manager.css"
   as="style">
+
+<link
+  rel="preload"
+  href="https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6"
+  as="script">
 
 
 <!-- ============================================================
@@ -102,10 +107,7 @@
 
 
 <!-- ============================================================
-     3. GOOGLE ANALYTICS LOADER
-     
-     GA4 does NOT load until Analytics consent is granted.
-     Measurement ID: G-2XX8QBYYZ6
+     3. GOOGLE CONSENT MODE + GA4
      ============================================================ -->
 
 <script>
@@ -116,67 +118,94 @@
     dataLayer.push(arguments);
   }
 
-  let googleAnalyticsLoaded = false;
+
+  /*
+   * Default privacy state.
+   */
+  gtag('consent', 'default', {
+
+    analytics_storage: 'denied',
+
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+
+    wait_for_update: 1000
+
+  });
+
+</script>
 
 
-  function loadGoogleAnalytics() {
-
-    if (googleAnalyticsLoaded) {
-      return;
-    }
-
-    googleAnalyticsLoaded = true;
+<!-- Load Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6">
+</script>
 
 
-    /*
-     * Analytics has been granted.
-     * Advertising-related consent remains denied.
-     */
-    gtag('consent', 'default', {
+<script>
 
-      analytics_storage: 'granted',
-
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-
-      functionality_storage: 'granted',
-      security_storage: 'granted'
-
-    });
+  gtag('js', new Date());
 
 
-    /*
-     * Load Google Analytics only after consent.
-     */
-    const gaScript = document.createElement('script');
+  gtag('config', 'G-2XX8QBYYZ6', {
 
-    gaScript.async = true;
+    send_page_view: false,
 
-    gaScript.src =
-      'https://www.googletagmanager.com/gtag/js?id=G-2XX8QBYYZ6';
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
 
-    document.head.appendChild(gaScript);
+  });
 
 
-    /*
-     * Queue GA initialization.
-     */
-    gtag('js', new Date());
-
-    gtag('config', 'G-2XX8QBYYZ6', {
-      send_page_view: true
-    });
+  let consentPageViewSent = false;
 
 
-    console.log('[CONSENT] QMSTesting Google Analytics enabled');
+  function setAnalyticsConsent(allowed) {
 
-  }
+    if (allowed === true) {
+
+      gtag('consent', 'update', {
+
+        analytics_storage: 'granted',
+
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+
+      });
 
 
-  function disableGoogleAnalytics() {
+      if (!consentPageViewSent) {
 
-    if (googleAnalyticsLoaded) {
+        consentPageViewSent = true;
+
+
+        gtag('event', 'page_view', {
+
+          page_title: document.title,
+
+          page_location: window.location.href,
+
+          page_path:
+            window.location.pathname +
+            window.location.search
+
+        });
+
+      }
+
+
+      console.log(
+        '[CONSENT] QMSTesting Analytics granted'
+      );
+
+
+    } else {
 
       gtag('consent', 'update', {
 
@@ -188,10 +217,12 @@
 
       });
 
+
+      console.log(
+        '[CONSENT] QMSTesting Analytics denied'
+      );
+
     }
-
-
-    console.log('[CONSENT] QMSTesting Google Analytics disabled');
 
   }
 
@@ -199,7 +230,118 @@
 
 
 <!-- ============================================================
-     4. SILKTIDE CONFIGURATION
+     4. COUNTRY COOKIE
+     
+     Your existing Cloudflare configuration places the visitor's
+     country code in a cookie called "country".
+     ============================================================ -->
+
+<script>
+
+  function getCookie(name) {
+
+    const value =
+      "; " + document.cookie;
+
+
+    const parts =
+      value.split("; " + name + "=");
+
+
+    if (parts.length === 2) {
+
+      return decodeURIComponent(
+        parts.pop().split(";").shift()
+      );
+
+    }
+
+
+    return null;
+
+  }
+
+
+  function getVisitorCountry() {
+
+    const country =
+      getCookie('country');
+
+
+    if (
+      country &&
+      /^[A-Za-z]{2}$/.test(country)
+    ) {
+
+      return country.toUpperCase();
+
+    }
+
+
+    /*
+     * No valid Cloudflare country cookie.
+     *
+     * Fail closed.
+     */
+    return 'XX';
+
+  }
+
+
+  function requiresAnalyticsConsent(country) {
+
+    const consentRequiredCountries = [
+
+      /*
+       * Canada
+       */
+      'CA',
+
+
+      /*
+       * European Union
+       */
+      'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE',
+      'GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT',
+      'RO','SK','SI','ES','SE',
+
+
+      /*
+       * Additional EEA countries
+       */
+      'IS','LI','NO',
+
+
+      /*
+       * United Kingdom
+       */
+      'GB',
+
+
+      /*
+       * Switzerland
+       */
+      'CH'
+
+    ];
+
+
+    if (country === 'XX') {
+      return true;
+    }
+
+
+    return consentRequiredCountries.includes(
+      country
+    );
+
+  }
+
+</script>
+
+
+<!-- ============================================================
+     5. SILKTIDE CONFIGURATION
      ============================================================ -->
 
 <script>
@@ -210,17 +352,6 @@
 
     preferencesButton: true,
 
-
-    /*
-     * IMPORTANT:
-     *
-     * This creates a fresh consent-storage version.
-     *
-     * Visitors see the FULL banner once after this update.
-     *
-     * After making a choice, later visits show only the
-     * cookie/preferences icon.
-     */
     bannerSuffix: "v2",
 
 
@@ -251,14 +382,14 @@
 
         onAccept: function () {
 
-          loadGoogleAnalytics();
+          setAnalyticsConsent(true);
 
         },
 
 
         onReject: function () {
 
-          disableGoogleAnalytics();
+          setAnalyticsConsent(false);
 
         }
 
@@ -272,7 +403,7 @@
       banner: {
 
         description:
-          "<p>QMSTesting uses necessary technologies to operate the website. With your permission, we also use Google Analytics to understand how visitors use the site. Analytics is optional and is disabled unless you choose to allow it.</p>",
+          "<p>QMSTesting uses necessary technologies to operate the website. With your permission, we also use Google Analytics to understand how visitors use the site. Analytics is optional.</p>",
 
         acceptAllButtonText:
           "Accept all",
@@ -292,7 +423,7 @@
           "Cookie preferences",
 
         description:
-          "<p>You can choose whether QMSTesting may use optional analytics technologies. Necessary technologies are required for the website and to remember your privacy preferences.</p>"
+          "<p>You can choose whether QMSTesting may use optional analytics technologies. Necessary technologies are required for website operation and to remember your privacy preferences.</p>"
 
       }
 
@@ -304,43 +435,67 @@
 
 
 <!-- ============================================================
-     5. LOAD SILKTIDE
-     ============================================================ -->
-
-<script
-  defer
-  src="/silktid/silktide-consent-manager.js">
-</script>
-
-
-<!-- ============================================================
-     6. LISTEN FOR CONSENT CHANGES
+     6. REGIONAL BOOTSTRAP
      ============================================================ -->
 
 <script>
 
-  document.addEventListener(
-    'silktideCookieBannerManager:consentChanged',
+  (function bootstrapConsent() {
 
-    function (event) {
-
-      const consent = event.detail || {};
+    const country =
+      getVisitorCountry();
 
 
-      if (consent.analytics === true) {
+    const consentRequired =
+      requiresAnalyticsConsent(country);
 
-        loadGoogleAnalytics();
 
-      } else {
+    console.log(
+      '[CONSENT] Visitor country:',
+      country
+    );
 
-        disableGoogleAnalytics();
 
-      }
+    console.log(
+      '[CONSENT] Explicit consent required:',
+      consentRequired
+    );
+
+
+    /*
+     * Consent-required country.
+     */
+    if (consentRequired) {
+
+      const silktideScript =
+        document.createElement('script');
+
+
+      silktideScript.src =
+        '/silktid/silktide-consent-manager.js';
+
+
+      silktideScript.defer = true;
+
+
+      document.head.appendChild(
+        silktideScript
+      );
+
+
+    /*
+     * Other countries.
+     */
+    } else {
+
+      setAnalyticsConsent(true);
 
     }
-  );
+
+  })();
 
 </script>
+
 
 <!-- SILKTIDE CONSENT MANAGER - END -->
   </head>
