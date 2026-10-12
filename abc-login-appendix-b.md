@@ -2112,7 +2112,7 @@ public class LoginPage {
 
 ### `src/test/java/ABC_LoginP/LoginResult.java`
 
-> Purpose: Carries the actual result and actual message from the Page Object to the validator.
+> **Purpose:** Carries the actual result and actual message from the Page Object to the validator.
 
 {% raw %}
 ```java
@@ -2372,7 +2372,7 @@ public class SeleniumLoginDataDrivenTest extends BaseTest {
 
 ### `src/test/java/ABC_LoginP/TestListener.java`
 
-> Purpose: Responds to TestNG pass/fail events and captures a screenshot automatically on failure.
+> **Purpose:** Responds to TestNG pass/fail events and captures a screenshot automatically on failure.
 
 {% raw %}
 ```java
@@ -2437,7 +2437,7 @@ public class TestListener implements ITestListener {
 
 ### `src/test/resources/testdata/loginData-regression.json`
 
-> Purpose: Canonical Test Case definitions and complete Regression execution data; publication credentials are replaced with placeholders.
+> **Purpose:** Canonical Test Case definitions and complete Regression execution data; publication credentials are replaced with placeholders.
 
 {% raw %}
 ```json
@@ -2511,7 +2511,7 @@ public class TestListener implements ITestListener {
 
 ### `src/test/resources/testdata/loginData-retest.json`
 
-> Purpose: Training-only Retest fixture used to simulate one successful and one unsuccessful developer fix; publication credentials are replaced with placeholders.
+> **Purpose:** Training-only Retest fixture used to simulate one successful and one unsuccessful developer fix; publication credentials are replaced with placeholders.
 
 {% raw %}
 ```json
@@ -2587,7 +2587,7 @@ public class TestListener implements ITestListener {
 
 ### `scripts/azure-devops/Add-ExecutionTraceability.ps1`
 
-> Purpose: Adds verified clickable Test Run and pipeline-build hyperlinks to participating Test Plans, Test Suites, Test Cases, and Bugs.
+> **Purpose:** Adds verified clickable Test Run and pipeline-build hyperlinks to participating Test Plans, Test Suites, Test Cases, and Bugs.
 
 {% raw %}
 ```powershell
@@ -3109,7 +3109,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Add-RegressionPassComments.ps1`
 
-> Purpose: Adds verified human-readable Regression PASS comments to passed Test Cases and records comment evidence.
+> **Purpose:** Adds verified human-readable Regression PASS comments to passed Test Cases and records comment evidence.
 
 {% raw %}
 ```powershell
