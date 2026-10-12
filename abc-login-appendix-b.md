@@ -73,7 +73,7 @@ This appendix is the code companion to the ABC_Login eBook. The main eBook expla
 
 ### `.gitignore`
 
-> Purpose: Excludes generated Maven output, IDE metadata, screenshots, TestNG output, and local environment files from source control.
+> **Purpose:** Excludes generated Maven output, IDE metadata, screenshots, TestNG output, and local environment files from source control.
 
 {% raw %}
 ```
@@ -129,7 +129,7 @@ test-output/
 
 ### `pom.xml`
 
-> Purpose: Defines the Java 17 Maven project and the Selenium, TestNG, Jackson, and SLF4J dependencies.
+> **Purpose:** Defines the Java 17 Maven project and the Selenium, TestNG, Jackson, and SLF4J dependencies.
 
 {% raw %}
 ```xml
