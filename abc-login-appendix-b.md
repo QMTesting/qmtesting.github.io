@@ -13,7 +13,7 @@ description: "Source code reference for the ABC_Login Selenium, TestNG, Maven, A
 
 > All listings below are regenerated from the attached current IntelliJ ABC_Login project. Publication-sensitive login credentials and the private training URL are replaced with placeholders.
 
-This appendix is the code companion to the rewritten eBook. The main eBook explains why the files exist and how the workflow operates. This document focuses on reconstructing the source accurately.
+This appendix is the code companion to the ABC_Login eBook. The main eBook explains why the files exist and how the workflow operates. This document focuses on reconstructing the source accurately.
 
 > **Publication-safety note:  The real training login URL is replaced with https://your-login-url.example/login. Nonblank usernames are replaced with YOUR_TEST_USERNAME; the valid password with YOUR_VALID_TEST_PASSWORD; and the intentionally invalid password with YOUR_INVALID_TEST_PASSWORD. Blank fields remain blank because they are part of negative Test Cases. Azure DevOps organization/project/team/pool values are retained so the listings match the current training project; readers should replace environment-specific values in their own copy.**
 
