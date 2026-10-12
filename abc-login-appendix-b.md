@@ -11238,7 +11238,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Update-TestRunResults.ps1`
 
-> Purpose: Parses Surefire/TestNG XML and updates the corresponding Azure Test Results and Test Run.
+> **Purpose:** Parses Surefire/TestNG XML and updates the corresponding Azure Test Results and Test Run.
 
 {% raw %}
 ```powershell
@@ -11806,7 +11806,7 @@ Write-Host "============================================================"
 
 ### `xScripts/delete_tc_wit.ps1`
 
-> Purpose: Optional destructive training/reset script used to remove Test Case work items. Not required for normal Regression/Retest operation.
+> **Purpose:** Optional destructive training/reset script used to remove Test Case work items. Not required for normal Regression/Retest operation.
 
 {% raw %}
 ```powershell
@@ -11992,7 +11992,7 @@ Write-Host "============================================"
 
 ### `xYaml_files/delete_test_cases.yml`
 
-> Purpose: Optional pipeline definition for the Test Case deletion/reset utility. Not required for normal Regression/Retest operation.
+> **Purpose:** Optional pipeline definition for the Test Case deletion/reset utility. Not required for normal Regression/Retest operation.
 
 {% raw %}
 ```yaml
