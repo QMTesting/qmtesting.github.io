@@ -3543,7 +3543,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Attach-BugScreenshot.ps1`
 
-> Purpose: Attaches the matching Regression or Retest failure screenshot to the appropriate Bug and records attachment evidence.
+> **Purpose:** Attaches the matching Regression or Retest failure screenshot to the appropriate Bug and records attachment evidence.
 
 {% raw %}
 ```powershell
@@ -3915,7 +3915,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Attach-TestResultScreenshot.ps1`
 
-> Purpose: Attaches the matching Regression or Retest failure screenshot to the exact Azure Test Result.
+> **Purpose:** Attaches the matching Regression or Retest failure screenshot to the exact Azure Test Result.
 
 {% raw %}
 ```powershell
@@ -4273,7 +4273,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Attach-TestRunLog.ps1`
 
-> Purpose: Attaches the Maven Selenium/TestNG execution log to a Regression or Retest Test Run using a build-numbered filename.
+> **Purpose:** Attaches the Maven Selenium/TestNG execution log to a Regression or Retest Test Run using a build-numbered filename.
 
 {% raw %}
 ```powershell
@@ -4516,7 +4516,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Clean-Screenshots.ps1`
 
-> Purpose: Removes stale screenshots before a new execution.
+> **Purpose:** Removes stale screenshots before a new execution.
 
 {% raw %}
 ```powershell
@@ -4578,7 +4578,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Collect-TestEvidence.ps1`
 
-> Purpose: Collects JSON maps, Surefire output, screenshots, Maven logs, pom.xml, and the current pipeline YAML into the evidence directory.
+> **Purpose:** Collects JSON maps, Surefire output, screenshots, Maven logs, pom.xml, and the current pipeline YAML into the evidence directory.
 
 {% raw %}
 ```powershell
@@ -4803,7 +4803,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Create-Or-Reuse-Bugs.ps1`
 
-> Purpose: Creates or reuses Automation Bugs for failed Regression Test Cases, writes detailed verified Bug and Test Case comments, and records expected/actual failure evidence and Bug mappings.
+> **Purpose:** Creates or reuses Automation Bugs for failed Regression Test Cases, writes detailed verified Bug and Test Case comments, and records expected/actual failure evidence and Bug mappings.
 
 {% raw %}
 ```powershell
@@ -5967,7 +5967,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Create-TestRun.ps1`
 
-> Purpose: Creates a full or selective Azure Test Run from the Test Points associated with the requested Test Cases.
+> **Purpose:** Creates a full or selective Azure Test Run from the Test Points associated with the requested Test Cases.
 
 {% raw %}
 ```powershell
@@ -6588,7 +6588,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Ensure-Iteration.ps1`
 
-> Purpose: Finds or creates Sprint 001 and assigns/exposes the iteration path used by later work items.
+> **Purpose:** Finds or creates Sprint 001 and assigns/exposes the iteration path used by later work items.
 
 {% raw %}
 ```powershell
@@ -6885,7 +6885,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Ensure-TestCases.ps1`
 
-> Purpose: Creates or reuses Azure Test Cases from the canonical Regression JSON while preserving existing lifecycle state.
+> **Purpose:** Creates or reuses Azure Test Cases from the canonical Regression JSON while preserving existing lifecycle state.
 
 {% raw %}
 ```powershell
@@ -7785,7 +7785,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Ensure-TestPlan.ps1`
 
-> Purpose: Finds or creates TP001 and records the Test Plan mapping.
+> **Purpose:** Finds or creates TP001 and records the Test Plan mapping.
 
 {% raw %}
 ```powershell
@@ -8318,7 +8318,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Ensure-TestSuite.ps1`
 
-> Purpose: Finds or creates TS001 and links it into the training test-management structure.
+> **Purpose:** Finds or creates TS001 and links it into the training test-management structure.
 
 {% raw %}
 ```powershell
@@ -8919,7 +8919,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Ensure-UserStory.ps1`
 
-> Purpose: Finds or creates US001 and establishes the initial requirement/work-item structure.
+> **Purpose:** Finds or creates US001 and establishes the initial requirement/work-item structure.
 
 {% raw %}
 ```powershell
@@ -9403,7 +9403,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Find-Resolved-Automation-Bugs.ps1`
 
-> Purpose: Finds qualifying Resolved Automation Bugs, follows Related Test Case links, and builds the dynamic Retest queue.
+> **Purpose:** Finds qualifying Resolved Automation Bugs, follows Related Test Case links, and builds the dynamic Retest queue.
 
 {% raw %}
 ```powershell
@@ -9925,7 +9925,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Link-BugToTestResult.ps1`
 
-> Purpose: Associates Regression Bugs with the exact failed Azure Test Results that exposed the defects.
+> **Purpose:** Associates Regression Bugs with the exact failed Azure Test Results that exposed the defects.
 
 {% raw %}
 ```powershell
@@ -10175,7 +10175,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Link-RetestBugsToTestResults.ps1`
 
-> Purpose: Associates existing Bugs with the exact RT001 Test Results produced during selective verification.
+> **Purpose:** Associates existing Bugs with the exact RT001 Test Results produced during selective verification.
 
 {% raw %}
 ```powershell
@@ -10649,7 +10649,7 @@ Write-Host "============================================================"
 
 ### `scripts/azure-devops/Process-RetestLifecycle.ps1`
 
-> Purpose: Closes a Resolved Bug after a passing Retest or reactivates it after a failed Retest, while adding verified Bug and Test Case comments and lifecycle evidence.
+> **Purpose:** Closes a Resolved Bug after a passing Retest or reactivates it after a failed Retest, while adding verified Bug and Test Case comments and lifecycle evidence.
 
 {% raw %}
 ```powershell
