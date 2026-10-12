@@ -191,7 +191,7 @@ test-output/
 
 ### `mvnw`
 
-> Purpose: Maven Wrapper launcher for Unix-like environments.
+> **Purpose:** Maven Wrapper launcher for Unix-like environments.
 
 {% raw %}
 ```bash
@@ -495,7 +495,7 @@ exec_maven "$@"
 
 ### `mvnw.cmd`
 
-> Purpose: Maven Wrapper launcher used on Windows and by the Azure Pipeline jobs.
+> **Purpose:** Maven Wrapper launcher used on Windows and by the Azure Pipeline jobs.
 
 {% raw %}
 ```bat
@@ -693,7 +693,7 @@ Write-Output "MVN_CMD=$MAVEN_HOME/bin/$MVN_CMD"
 
 ### `.mvn/wrapper/maven-wrapper.properties`
 
-> Purpose: Configures the Maven Wrapper distribution.
+> **Purpose:** Configures the Maven Wrapper distribution.
 
 {% raw %}
 ```properties
@@ -707,7 +707,7 @@ distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-mav
 
 ### `azure-pipelines.yml`
 
-> Purpose: Runs the complete seven-Test-Case Regression workflow, Azure Test Result mapping, PASS/FAIL comments, Bug processing, evidence attachments, traceability, and TestEvidence publication.
+> **Purpose:** Runs the complete seven-Test-Case Regression workflow, Azure Test Result mapping, PASS/FAIL comments, Bug processing, evidence attachments, traceability, and TestEvidence publication.
 
 {% raw %}
 ```yaml
@@ -1048,7 +1048,7 @@ steps:
 
 ### `azure-retest-pipeline.yml`
 
-> Purpose: Discovers Resolved Automation Bugs, runs only their related Test Cases, attaches the Retest Maven log and fresh failed-Retest screenshots, updates Bug lifecycle, and publishes RetestEvidence.
+> **Purpose:** Discovers Resolved Automation Bugs, runs only their related Test Cases, attaches the Retest Maven log and fresh failed-Retest screenshots, updates Bug lifecycle, and publishes RetestEvidence.
 
 {% raw %}
 ```yaml
@@ -1486,7 +1486,7 @@ steps:
 
 ### `src/main/java/org/example/Main.java`
 
-> Purpose: Default IntelliJ/Maven scaffold. It is not used by the Selenium Regression or Retest workflow.
+> **Purpose:** Default IntelliJ/Maven scaffold. It is not used by the Selenium Regression or Retest workflow.
 
 {% raw %}
 ```java
@@ -1514,7 +1514,7 @@ public class Main {
 
 ### `src/test/java/ABC_LoginP/BaseTest.java`
 
-> Purpose: Creates and cleans up the Chrome WebDriver environment for each TestNG execution.
+> **Purpose:** Creates and cleans up the Chrome WebDriver environment for each TestNG execution.
 
 {% raw %}
 ```java
@@ -1572,7 +1572,7 @@ public class BaseTest {
 
 ### `src/test/java/ABC_LoginP/LoggerUtility.java`
 
-> Purpose: Provides consistent execution logging and summaries.
+> **Purpose:** Provides consistent execution logging and summaries.
 
 {% raw %}
 ```java
