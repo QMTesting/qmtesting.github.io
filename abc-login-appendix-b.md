@@ -1701,7 +1701,7 @@ public class LoggerUtility {
 
 ### `src/test/java/ABC_LoginP/LoginData.java`
 
-> Purpose: Represents one data-driven login Test Case and preserves its stable logical TCxxx identifier.
+> **Purpose:** Represents one data-driven login Test Case and preserves its stable logical TCxxx identifier.
 
 {% raw %}
 ```java
@@ -1789,7 +1789,7 @@ public class LoginData {
 
 ### `src/test/java/ABC_LoginP/LoginDataProvider.java`
 
-> Purpose: Loads JSON data, supports runtime data-file selection, and filters Test Cases by dynamically supplied IDs.
+> **Purpose:** Loads JSON data, supports runtime data-file selection, and filters Test Cases by dynamically supplied IDs.
 
 {% raw %}
 ```java
@@ -1936,7 +1936,7 @@ public class LoginDataProvider {
 
 ### `src/test/java/ABC_LoginP/LoginPage.java`
 
-> Purpose: Page Object that interacts with the login page and captures the application response.
+> **Purpose:** Page Object that interacts with the login page and captures the application response.
 
 {% raw %}
 ```java
@@ -2143,7 +2143,7 @@ public class LoginResult {
 
 ### `src/test/java/ABC_LoginP/LoginValidator.java`
 
-> Purpose: Performs TestNG assertions comparing expected versus actual application behavior.
+> **Purpose:** Performs TestNG assertions comparing expected versus actual application behavior.
 
 {% raw %}
 ```java
@@ -2215,7 +2215,7 @@ public class LoginValidator {
 
 ### `src/test/java/ABC_LoginP/ScreenshotUtility.java`
 
-> Purpose: Creates timestamped browser screenshots under Screenshots/.
+> **Purpose:** Creates timestamped browser screenshots under Screenshots/.
 
 {% raw %}
 ```java
@@ -2278,7 +2278,7 @@ public class ScreenshotUtility {
 
 ### `src/test/java/ABC_LoginP/SeleniumLoginDataDrivenTest.java`
 
-> Purpose: Coordinates the high-level data-driven Selenium login test flow.
+> **Purpose:** Coordinates the high-level data-driven Selenium login test flow.
 
 {% raw %}
 ```java
