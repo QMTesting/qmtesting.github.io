@@ -15,9 +15,11 @@ description: "Source code reference for the ABC_Login Selenium, TestNG, Maven, A
 
 This appendix is the code companion to the ABC_Login eBook. The main eBook explains why the files exist and how the workflow operates. This document focuses on reconstructing the source accurately.
 
-> **Publication-safety note:  The real training login URL is replaced with https://your-login-url.example/login. Nonblank usernames are replaced with YOUR_TEST_USERNAME; the valid password with YOUR_VALID_TEST_PASSWORD; and the intentionally invalid password with YOUR_INVALID_TEST_PASSWORD. Blank fields remain blank because they are part of negative Test Cases. Azure DevOps organization/project/team/pool values are retained so the listings match the current training project; readers should replace environment-specific values in their own copy.**
+> **Publication-safety note:**
+> *The real training login URL is replaced with https://your-login-url.example/login. Nonblank usernames are replaced with YOUR_TEST_USERNAME; the valid password with YOUR_VALID_TEST_PASSWORD; and the intentionally invalid password with YOUR_INVALID_TEST_PASSWORD. Blank fields remain blank because they are part of negative Test Cases. Azure DevOps organization/project/team/pool values are retained so the listings match the current training project; readers should replace environment-specific values in their own copy.*
 
-> **Current-code update:  This edition includes detailed Regression Bug comments, Regression PASS/FAIL Test Case comments, Regression/Retest execution traceability, fresh failed-Retest screenshots attached to RT001 Test Results and existing Bugs, Retest screenshot publication under RetestEvidence/Screenshots, and the Maven execution log attached to RT001.**
+> **Current-code update:**
+> *This edition includes detailed Regression Bug comments, Regression PASS/FAIL Test Case comments, Regression/Retest execution traceability, fresh failed-Retest screenshots attached to RT001 Test Results and existing Bugs, Retest screenshot publication under RetestEvidence/Screenshots, and the Maven execution log attached to RT001.*
 
 ## Master source-code index
 
