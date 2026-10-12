@@ -76,7 +76,7 @@ This appendix is the code companion to the ABC_Login eBook. The main eBook expla
 > Purpose: Excludes generated Maven output, IDE metadata, screenshots, TestNG output, and local environment files from source control.
 
 {% raw %}
-```gitignore
+```
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
