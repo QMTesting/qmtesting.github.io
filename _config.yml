@@ -92,3 +92,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - _private/
+
