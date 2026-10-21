@@ -1,4 +1,9 @@
-# How to Push an IntelliJ IDEA Project to a New Azure DevOps Git Repository
+---
+layout: default
+title: "How to Push an IntelliJ IDEA Project to a New Azure DevOps Git Repository"
+permalink: /push-intellif-to-azure-dev.mdops/
+description: "Guide on how to Push an IntelliJ IDEA Project to a New Azure DevOps Git Repository."
+---
 
 ## 1. Purpose
 
