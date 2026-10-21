@@ -1,6 +1,7 @@
 ---
-layout: default
-title: "How to Push an IntelliJ IDEA Project to a New Azure DevOps Git Repository"
+layout: page
+title: "Private File"
+robots: noindex
 permalink: /push-intellif-to-azure-dev.mdops/
 description: "Guide on how to Push an IntelliJ IDEA Project to a New Azure DevOps Git Repository."
 ---
