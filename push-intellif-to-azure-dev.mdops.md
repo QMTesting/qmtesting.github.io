@@ -18,7 +18,7 @@ This procedure explains how to upload an existing IntelliJ IDEA project to a new
 |---|---|
 | IntelliJ project name | ABC_Login |
 | Local project directory | `C:\Users\User\IdeaProjects\ABC_Login` |
-| Azure DevOps organization | `carolineshewchuk0317` |
+| Azure DevOps organization | `cams39car` |
 | Azure DevOps project | `ABC_Login` |
 | Azure DevOps Git repository | `ABC_Login` |
 | Git branch | `main` |
@@ -58,13 +58,13 @@ Copy the HTTPS clone URL from the Azure DevOps repository page.
 For this example, the URL copied from Azure DevOps is:
 
 ```text
-https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 ```
 
 The username prefix before `@dev.azure.com` is optional. The equivalent repository URL without it is:
 
 ```text
-https://dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+https://dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 ```
 
 Both URLs refer to the same Git repository.
@@ -215,7 +215,7 @@ Use the HTTPS URL copied directly from the destination Azure DevOps repository.
 For the ABC_Login example:
 
 ```powershell
-git remote add origin https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+git remote add origin https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 ```
 
 Verify the remote configuration:
@@ -227,8 +227,8 @@ git remote -v
 **Expected result:**
 
 ```text
-origin  https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login (fetch)
-origin  https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login (push)
+origin  https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login (fetch)
+origin  https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login (push)
 ```
 
 **Important:** If `origin` already exists, do not use `git remote add origin` again.
@@ -236,7 +236,7 @@ origin  https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Logi
 Instead, update the existing remote:
 
 ```powershell
-git remote set-url origin https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+git remote set-url origin https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 ```
 
 Run `git remote -v` again to confirm the correction.
@@ -312,7 +312,7 @@ git push
 You can also open the repository directly using:
 
 ```text
-https://dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+https://dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 ```
 
 This URL should display the Azure DevOps repository page when accessed with an authorized account.
@@ -363,7 +363,7 @@ error: remote origin already exists.
 **Solution:**
 
 ```powershell
-git remote set-url origin https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+git remote set-url origin https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 ```
 
 Verify:
@@ -442,7 +442,7 @@ git status
 git commit -m "Initial ABC_Login project"
 
 # Connect to Azure DevOps
-git remote add origin https://carolineshewchuk0317@dev.azure.com/carolineshewchuk0317/ABC_Login/_git/ABC_Login
+git remote add origin https://cams39car@dev.azure.com/cams39car/ABC_Login/_git/ABC_Login
 
 # Verify remote
 git remote -v
